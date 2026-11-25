@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | Prof. Dr. M. Fatih Amasyalı | [sube_1/](sube_1/) |
-| 2 | Bahar | Prof. Dr. M. Fatih Amasyalı | [sube_2/](sube_2/) |
+| 2 | Bahar | Öğr. Gör. Dr. Ahmet Elbir | [sube_2/](sube_2/) |

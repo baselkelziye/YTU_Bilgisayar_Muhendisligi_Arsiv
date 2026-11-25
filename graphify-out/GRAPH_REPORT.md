@@ -1,17 +1,17 @@
 # Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-11-25)
 
 ## Corpus Check
-- 13138 files · ~77,810,743 words
+- 13164 files · ~77,955,615 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 12088 file(s) not represented in the graph (top: .srt 6460, .xml 855, .meta 712)
 
 ## Summary
-- 197283 nodes · 294652 edges · 11663 communities (7760 shown, 3903 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 30014 edges (avg confidence: 0.77)
+- 197870 nodes · 295245 edges · 11735 communities (7830 shown, 3905 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 30020 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f1cd64a2`
+- Built from commit: `a791a7db`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,7 +37,7 @@
 - .statement
 - a2/cs231n/layers.py
 - Symbol Table Applications (3.5)
-- org.springframework.data.domain.Page
+- List
 - Customer
 - 101 ObjectCategories - Airplanes Dataset
 - ActionResult
@@ -74,21 +74,21 @@
 - org.junit.jupiter.api.Test
 - Ders 6 Genişletilmiş Notu: Fonksiyonlar, Ters Fonksiyon, Taban ve Tavan, Bölüm Soru Çözümü ve Algoritmalara Giriş: Arama, Sıralama, Öklid
 - Distributor
-- java.awt.event.ActionEvent
+- javax.swing.JFrame
 - Kiyafet
-- EducationInfo
+- Student
 - Ders 7 Genişletilmiş Notu: Veri Yapıları, Prefix-Infix-Postfix Gösterimleri, Algoritma Analizi ve Asimptotik Gösterimler
 - DauUser
 - Car
 - java.sql.Connection
 - blm_3120termproject/main.py
-- org.opencv.core.Mat
-- Bölüm 12 Veritabanları, Kontroller ve Güvenlik
+- .initialize
+- Chapter 8 Securing Information Systems
 - Scheduling
 - 101 ObjectCategories - leopards dataset
 - Ders 8 Genişletilmiş Notu: Ayrık Konvolüsyonda Sıfır Noktası, Fourier Serisi Örnekleri, Gibbs Olayı ve Fourier Dönüşümüne Giriş
 - Ders 10 Genişletilmiş Notu: Proses Senkronizasyonu: Kritik Kesim Problemi, Peterson Çözümü, Donanım Desteği, Mutex Kilitleri, Semaforlar, Klasik Problemler ve Monitörler
-- surum_cikar.py
+- hüsamettin_ışıktaş/src/experiments/tracking.py
 - W
 - 101_ObjectCategories - watch dataset klasörü
 - Flight
@@ -105,7 +105,7 @@
 - teslim/src/methods/common_neighbors.py
 - Panoramik Diş Röntgeni Hata Tespiti YOLOv8 Test Görüntü Seti
 - Lisansüstü/README.md
-- 2000-2024 yıl sınıflandırması (25 sınıf, title/abstract/concat)
+- Ödev 2: Tez Yılı Tahmininde Kolektif Öğrenme
 - Data Compression (JPEG, MPEG, MP3, TIFF)
 - Ders 2 Genişletilmiş Notu: Mantıksal Denklik, Niceleyiciler, İspat Yöntemleri ve Tümevarım
 - Ders 7 Genişletilmiş Notu: Strategy, State, Template Method ve Visitor Kalıpları
@@ -134,7 +134,7 @@
 - Genetik algoritma
 - Bachelor Programme in Computer Engineering (2023, %30 English)
 - Ders 2 Genişletilmiş Notu: Direnç ve İletkenlik, Devre Topolojisi, Kirchhoff Akım ve Gerilim Yasaları, Seri-Paralel Bağlama ve Eşdeğer Direnç
-- Sözlük (Glossary)
+- Reinforcement Learning
 - Süreçler Arası Haberleşme (Ders 6 Lab)
 - Ders 10 Genişletilmiş Notu: Fazörlere Giriş: Karmaşık Sayılar, Sinüzoidal İşaretler, RMS, Faz Farkı ve Fazör Dönüşümü
 - ref_express
@@ -157,7 +157,7 @@
 - jquery.min.js
 - İşletim Sistemleri Ders 7: Thread'ler (2020-2021 altyazı)
 - Structure chart
-- dosya_islemleri.py
+- compress_huff.py
 - Faces Easy Dataset (Caltech-101, ödev 2)
 - Buffer Overflow
 - Principle of least privilege
@@ -167,8 +167,8 @@
 - im2col_cython.c
 - blm_5227/Scripts/bootstrap.bundle.js
 - Binary search tree
-- TESLİM/scripts/run_phase1.py
-- Analysis framework (time and space efficiency)
+- pandas
+- Chapter 5 C Functions
 - JsonDatabase
 - gezirehberi_admin/Scripts/bootstrap.bundle.js
 - Androidmanifest xml
@@ -179,7 +179,7 @@
 - BLM 2012 Object Oriented Programming Lecture Notes (Aktaş, 2023)
 - gezirehberi/Scripts/bootstrap.bundle.js
 - Bandpass filter
-- android.support.v4.app.Fragment
+- AdaptiveCompressor
 - Chapter 4 Networking and the Internet
 - Ders 25 Genişletilmiş Notu: Hafıza Birimleri ve 8086 Hafıza Arayüzü
 - Ders 9 Genişletilmiş Notu: Web Tarayıcıları: Mimari, Gerçekleştirme Sorunları ve Tercihli Tarama
@@ -194,14 +194,14 @@
 - android.media.MediaPlayer
 - Laudon & Laudon - Management Information Systems 13th Edition (bölüm 9/11: Ch.13 sonu, Ch.14, Ch.15 girişi, References)
 - word2vec
-- scanner
+- android.media.MediaPlayer
 - NavMeshLink
 - Bilgisayar Bilimlerine Giriş BLM1011 (2020-2021, Doç. Dr. M. Amaç Güvensan)
-- tn
+- an
 - Ders 13 Genişletilmiş Notu: 8251 Proteus Örnekleri ve 8254 Programlanabilir Zamanlayıcıya Giriş
 - hüsamettin_ışıktaş/src/methods/common_neighbors.py
 - Ders 4 Genişletilmiş Notu: Bilgi Teorisi ve Entropi, Veri Modelleri (Olasılık ve Markov) ve Move-to-Front Kodlama
-- hüsamettin_ışıktaş/src/ui/page_graph_explorer.py
+- State machine diagram
 - Ders 1 altyazısı (5 Ekim 2020)
 - stdbool
 - Silberschatz Ch.12 File System Implementation
@@ -215,7 +215,7 @@
 - İlişkisel cebir
 - Ders 6 Genişletilmiş Notu: Web Güvenlik Modeli: HTTP, Çerezler ve Aynı Köken Politikası
 - Trigger (event, condition, action)
-- Settings
+- Chapter 2 Basic Components and Electric Circuits
 - Ders 4 Genişletilmiş Notu: Sıralı Örüntü Madenciliği, Gözetimli Öğrenme ve K-Means Kümeleme
 - apiFunctions.js
 - show_success
@@ -246,7 +246,7 @@
 - Week 5: Database and Data Center Security (2.4)
 - android.content.Context
 - ref_express
-- Kitap
+- 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 - EquationClass
 - ref_react
 - org.apache.hadoop.io.Text
@@ -254,7 +254,7 @@
 - CRS
 - ref_next
 - Ders 5 Genişletilmiş Notu: Öğrenci Sunumları: CQRS Görünüm Tasarımı, Uçtan Uca Testler, Güvenli Servisler ve Microservice Chassis
-- Software life cycle
+- Chapter 24 Exception Handling
 - unityengine
 - Yapay Zekâ Destekli Gerçekçiliği Artırılmış Ciddi Oyun ile Deprem Sonrası Müdahale Ekibi Eğitimi
 - BMÖK-3 Dijital Görüntü İşleme Ders Notu (106 slayt)
@@ -267,7 +267,7 @@
 - Caltech-101 Brain Kategorisi Veri Seti
 - Ders 10 Genişletilmiş Notu: Proje Önerisi Sunumları I: Sağlıkta Yapay Zekâ, Blok Zincir Diploma ve Mobil Robotlar
 - Fundamentals of Digital Logic with Verilog Design (Bölüm 7.14-9)
-- FetchUtil.java
+- ns
 - Ders 4 Genişletilmiş Notu: Derleme Makalesi ve Trafik Akış Tahmini; Mobil Hesaplama ve Mobil İşletim Sistemleri
 - blm_3061_msad/ödev_1/ödev_1_visualstudio/stb_image.h
 - Pima Indians Diabetes Veri Seti Üzerinde Sınıflandırma Analizi
@@ -290,7 +290,7 @@
 - Bit operatörleri (& | ^ << >> ~)
 - Ders 5 Genişletilmiş Notu: Çoklu Programlama, İkili Mod, İşletim Sistemi Görevleri, Koruma ve Sistem Çağrıları
 - Ders 8 Genişletilmiş Notu: Lab 3 (Thevenin-Norton), Vize Çözümleri, Kaynaksız RC/RL Devreleri, Zaman Sabiti, Tekillik Fonksiyonları ve Basamak Cevabı
-- Chapter 10 Structure and Union Types
+- String Buffer Overflow
 - Lisans Ders Planı Modül Kitapçığı (Course Information Forms, part 2)
 - 101 ObjectCategories - laptop dataset klasörü
 - Detaylı Açıklamalar
@@ -329,7 +329,7 @@
 - Kütüphane Otomasyonu dönem projesi (BLM1031)
 - Detaylı Açıklamalar
 - Ders 3 Genişletilmiş Notu: MapReduce İyileştirmeleri, Shingling ve MinHashing
-- a2/cs231n/data_utils.py
+- User
 - Ders 13 Genişletilmiş Notu: Proje Önerisi Sunumları IV ve Final Duyurusu: Tarım, Galeri, Banka Dokümanları ve Sahte Haber
 - Veri kümesi: minaret (101_ObjectCategories - Görüntü İşleme ödev 2)
 - Ders 3 Genişletilmiş Notu: Sayı Sistemleri, İkiye Tümleme, IEEE 754 ve İyi Algoritmanın Ölçütleri
@@ -341,13 +341,13 @@
 - Scripts/popper.js
 - Ders 10 Genişletilmiş Notu: Öğrenci Sunumları: Hannibal Barka, E-Spor, Nesnelerin İnterneti, Manhattan Projesi, Oyun Konsolları ve Vanite Akımı
 - Electric guitar dataset (101_ObjectCategories)
-- android.widget.ImageView
+- androidx.appcompat.app.AppCompatActivity
 - Gauss Elimination
 - Ders 3 Genişletilmiş Notu: UML Diyagramları ve Nesneye Yönelik Analiz
 - Chapter 18 The Linux System
 - .BuildNavMesh
 - PyObject
-- MainApp
+- va
 - Ders 6 Genişletilmiş Notu: Davranış Modellemesi, Durum Diyagramları ve Mimari Stillere Giriş
 - slaytlar.pdf
 - Sayısal Analiz (BLM1022)
@@ -400,7 +400,7 @@
 - Phasor
 - Bölüm 17: Linear-Digital ICs
 - Elektronik Devreler Kitabı (FET ve BJT bölümleri 6-9)
-- PostgresContext
+- DepoYonetimSistemiEntities
 - Ders 2 Genişletilmiş Notu: Metin Görüntüleyici Örneğiyle Analiz Modeli ve Temel Tasarım Kavramları
 - Reservation
 - Ders 7 Genişletilmiş Notu: Kelime Gösterimleri, Kelime Gömmeleri ve Metin Sınıflandırma
@@ -513,8 +513,8 @@
 - Log
 - Ders 17 Genişletilmiş Notu: Heap İşlemleri, Öncelikli Kuyruk ve Huffman Kodlaması
 - Ders 3 Genişletilmiş Notu: Temel Trigonometrik Limit, Ara Değer Teoremi ve Süreksizlik Türleri
-- JobFinder/Controllers/AccountController.cs
-- Question
+- ErrorViewModel
+- Adapter
 - blm_3061_msad/ödev_1/ödev_1_visualstudio/stb_image_write.h
 - Probability and Statistics for Computer Scientists (Michael Baron, 2nd ed.)
 - Caltech-101 'sea_horse' object category dataset
@@ -609,7 +609,7 @@
 - Ders 12 Genişletilmiş Notu: Dönem Projesi Sunumları 1: Restoran, Lastik Oteli, Sinema, Fitness, Pet Shop, Otel, Araç Kiralama
 - stbi__context
 - Ders 2 Genişletilmiş Notu: Önyükleme, Bilgisayar Sistemi Organizasyonu, Kesmeler, Depolama Hiyerarşisi, Çok İşlemcili Sistemler ve İşletim Sistemi Görevleri
-- Floyd-Warshall Algorithm
+- Warshall's algorithm
 - ignite_greenhouse/package.json
 - As-is business process
 - Gramophone (Caltech-101) Görüntü Veri Kümesi
@@ -664,13 +664,13 @@
 - Ders 3 Genişletilmiş Notu: typedef, İfadeler ve Operatörler (Kalan, Bit, Koşul), Kontrol Akışı, switch ve Döngüler, Makrolar ve Koşullu Derleme
 - Derslerin Detaylı Özetleri ve Kazanımları
 - Ders 10 Genişletilmiş Notu: İndeksleme (Disk Erişimi, Sıralı İndeksler, B+ Ağacı, Hash ve Çok Nitelikli İndeksler)
-- Car
+- Add
 - Ders 2 Genişletilmiş Notu: Eğitmenli Öğrenme ve Karar Ağaçları: Entropi, Bilgi Kazancı ve ID3
 - Treatment
 - Hesaplama Kuramı dersi (BLM2502)
 - Ders 1 Genişletilmiş Notu: Lojik Kapılar ve Boole Cebri Tekrarı, Multiplexer, Decoder ve Encoder
 - Ders 9 Genişletilmiş Notu: Merkezi Limit Teoremi, Süreklilik Düzeltmesi ve İstatistiğe Giriş: Örneklem Ortalaması, Medyan ve Kantiller
-- User
+- cn
 - Ders 4 Genişletilmiş Notu: K En Yakın Komşu, Mesafe Ölçüleri ve Normalizasyon
 - Detaylı Açıklamalar
 - Ders 11 Genişletilmiş Notu: Fourier ile LTI Sistem Analizi, Filtreler, Örnekleme ve Örtüşme, FIR Filtreler
@@ -718,7 +718,7 @@
 - QGIS
 - Urun
 - Customer
-- Veritabanı güvenliği
+- zt
 - 101_ObjectCategories - ewer dataset
 - flamingo_head dataset (101_ObjectCategories)
 - Stop Sign Image Dataset (Caltech-101 stop_sign category)
@@ -727,7 +727,7 @@
 - Ders 11 Genişletilmiş Notu: Ulusal İSG Politika Belgesi, Kaza Nedenleri, Mesleki Solunum Hastalıkları, Meslek Hastalıkları Listesi ve Radyasyon
 - Akış diyagramı
 - Matematik 2 ders sayfası
-- Answers to Exercises sections 4.6.2-4.7
+- mt
 - Bölüm 2: Limit ve Süreklilik
 - Ders 10 Genişletilmiş Notu: Web Taraması: Tarayıcı Türleri, Uygulama Sorunları ve Tercihli Tarama
 - Tooltip
@@ -740,7 +740,7 @@
 - library_management_system.c
 - Kesme Vektör Tablosu
 - Lab 1 - EXE Tipi Program (OBP)
-- at
+- Ni
 - gazi_canbolat_ytu_ce_proje/Packages/manifest.json
 - dependencies
 - Tooltip
@@ -786,7 +786,7 @@
 - Ders 13 Genişletilmiş Notu: Seminer Sunumları: Dil Modeliyle Metin Sıkıştırma, DeepZip, Çok Katmanlı Görüntü Temsili, BWT-MTF-Aritmetik Kodlama ve Akıllı Sözlük Tabanlı Kodlama
 - esm/popper.min.js
 - Ders 10 Genişletilmiş Notu: Kişisel Koruyucu Donanımlar, Elektrik ve İş Makinelerinde Güvenlik, Kaza Nedensellik Modelleri
-- path
+- ReadWrite.java
 - Ders 12 Genişletilmiş Notu: Dürtü Cevabı, Frekans Cevabı, Transfer Fonksiyonu ve Laplace Dönüşümüne Giriş: Yakınsama Bölgesi ve Temel Dönüşümler
 - dependencies
 - Ders 13 Genişletilmiş Notu: Laplace Dönüşümünün Özellikleri, Yakınsama Bölgesi Kuralları, Diferansiyel Denklem Çözümü ve Kısmi Kesirler
@@ -888,6 +888,7 @@
 - Cinema
 - Ders 13 - İstatistiksel Veri Analizi
 - file-service/package.json
+- jquery-3.0.0.js
 - Ders 8 Genişletilmiş Notu: Kural Tabanlı Sınıflandırma, Naive Bayes ve Weka
 - Ders 3 Genişletilmiş Notu: Bilgi Çıkarımı ve İstatistiksel Dil Modelleri
 - Ders 17 Genişletilmiş Notu: Konkavlık, Büküm Noktası, Eğik Asimptot, Belirsiz İntegral ve Yerine Koyma Yöntemi
@@ -917,7 +918,7 @@
 - 8251 USART (Universal Synchronous/Asynchronous Receiver/Transmitter)
 - OSI Reference Model (7 layers)
 - Ders 12 Genişletilmiş Notu: Euler ve Hamilton Çizgeleri, Dijkstra Algoritması, Çizge Modelleri, Eşyapı ve Kromatik Polinomlar
-- Boole cebri
+- Chapter 1: From Zero to One (Harris & Harris)
 - Konu Tanımı ve Senaryolar
 - Ders 10 Genişletilmiş Notu: ALU, Kaydırıcı, Kontrol Kelimesi ve Tek Çevrimli Bilgisayar
 - java.awt.event.MouseEvent
@@ -974,7 +975,7 @@
 - Introduction to Probability, Statistics, and Random Processes (Hossein Pishro-Nik)
 - Ders 3 Genişletilmiş Notu: Aksiyomatik Olasılık, Koşullu Olasılık, Bayes Teoremi ve Kesikli Rastgele Değişkenler
 - Kitap
-- Community
+- Chapter 3 Processes
 - Ders 9_2: 8259A Kesme Kontrol Devresi (PIC) Konusu
 - Abstract data type (ADT)
 - Kod Blokları
@@ -1153,7 +1154,7 @@
 - gamescreen.dart
 - Ders 6 Genişletilmiş Notu: Sayısal İntegral: Trapez (Yamuk) Yöntemi, Simpson 1/3 ve 3/8 Kuralları
 - Ders 13 Genişletilmiş Notu: Pekiştirmeli Öğrenme, RLHF ve Yapay Zekanın Etik/Hukuk İlişkileri
-- remove
+- Collapse
 - Modal
 - Modal
 - Ders 3 Çalışma Özeti
@@ -1261,7 +1262,7 @@
 - Resources
 - com.unity.2d.common
 - CharacterMovement
-- Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_1/README.md
+- Ders 35 Genişletilmiş Notu: İşletim Sistemleri ve Bilgisayar Ağlarına Giriş
 - Vergi beyannamesinde son tarih belli oldu
 - com.unity.modules.imgui
 - Ders 18 Genişletilmiş Notu: Dizilerde Temel İşlemler: Arama, Ekleme, Silme ve Bubble Sort
@@ -1448,7 +1449,7 @@
 - Ders 6 Genişletilmiş Notu: Kollektif Öğrenme Metotları: Bagging, AdaBoost, Rastsal Altuzaylar ve Rastsal Ormanlar
 - Ders 5 Genişletilmiş Notu: Öğrenci Sunumları: Zaman Ölçümünden Elo Sistemine
 - Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik
-- Gereksinim mühendisliği
+- Pe
 - Final Test Uygulama-3 Cevapları (Matematik 1)
 - Ders 13 Genişletilmiş Notu: Operatör Aşırı Yükleme, Interface'ler, Enum'lar, Generic Sınıflar ve ArrayList
 - ScrollSpy
@@ -1459,7 +1460,7 @@
 - 21st Century Skills
 - Ders 4 Genişletilmiş Notu: Kenar Bulma Tekrarı, İlgi Noktaları ve Harris Köşe Bulucusu
 - Biçimbilimsel Analiz
-- com.google.android.gms.tasks.Task
+- NoteActivity
 - Offcanvas
 - ScrollSpy
 - Offcanvas
@@ -1579,7 +1580,7 @@
 - Ders 13 Genişletilmiş Notu: Proje Sunumları: Hough Çemberleri, Stil Aktarımı, Bölütleme, Gürbüz En Küçük Kareler ve Stereo SLAM
 - com.unity.2d.path
 - 3. 2. Sunum: Monte Carlo Simülasyonuyla Yazılım Projesi Zaman Yönetimi
-- İlişkisel model
+- Pe
 - __Pyx_memviewslice
 - Ders 9 Genişletilmiş Notu: Yığın Uygulamaları, Infix-Prefix Dönüşümü ve Kuyruk Yapıları
 - Ders 3 Genişletilmiş Notu: Asimptotik Gösterimler: Büyük-O, Büyük-Omega, Büyük-Teta ve Büyüme Dereceleri
@@ -1707,7 +1708,7 @@
 - Detaylı Açıklamalar
 - Ders 26 Genişletilmiş Notu: Makefile, Thread'ler ve pthread Kütüphanesi
 - Ders 5 Genişletilmiş Notu: Eşikleme, Bağlantılı Bileşen Etiketleme ve Matematiksel Morfoloji
-- Ders 5 Genişletilmiş Notu: Paketler, Sarmalayıcı Sınıflar, String, Math ve Random, Scanner, Parametre Aktarımı ve toString
+- Sistem
 - Ders 24 Genişletilmiş Notu: Tekrar Dersi: Sütun Silme, Kümelerde Bağıntı Özellikleri ve Polinomlar
 - ASP Proje 2 - DEBUG Bellek Dökümü Serisi
 - VT Sistem Gerçekleme Ders Notları #7: Hareket Yönetimi
@@ -1853,7 +1854,7 @@
 - ALU_32.v
 - Ders 14 Genişletilmiş Notu: Kesişim Kümesi, Akış Diyagramından C'ye ve Matrisler
 - Ders 25 Genişletilmiş Notu: Alt Dizgi Arama: Kaba Kuvvet, Horspool, Boyer-Moore ve Rabin-Karp
-- .UIFrame
+- MainFrame
 - Chapter 1: Introduction
 - Ders 20 Genişletilmiş Notu: Insertion Sort, Histogram, Sezar Şifreleme ve İki Sıralı Diziyi Birleştirme
 - Ders 27 Genişletilmiş Notu: Canlı C Kodlama: Min/Max ve Kısmi Sıralama ile Medyan
@@ -1930,7 +1931,7 @@
 - Stack ADT Implementation
 - gezirehberi/Scripts/modernizr-2.8.3.js
 - Ders 25 Genişletilmiş Notu: Dal ve Sınır ile Sırt Çantası Problemi, Gezgin Satıcı, Durma Problemi, P, NP, NP-Tam ve NP-Zor
-- a.py
+- MusteriMenu
 - Ders 7 Genişletilmiş Notu: Proje Planlama: Aktiviteler, WBS, Tahmin, Kaynak Atama, Bütçe, Proje Planı ve Risk Yönetimi
 - Ders 19 Genişletilmiş Notu: Sıralama Algoritmaları: Bubble Sort İyileştirmesi, Selection Sort ve Insertion Sort
 - Alt Seviye Programlama Ders Kayıtları 2020-2021 - Dizin ve Özetler
@@ -1957,7 +1958,7 @@
 - The Surgery of the Skull and Brain (L. Bathe Rawling, 1912)
 - Ders 11 Genişletilmiş Notu: Fazör Uzayında Pasif Elemanlar: Empedans, Admitans, Seri-Paralel Eşdeğer ve Fazör Devre Çözümü
 - jquery.slim.min.js
-- Chapter 7 BJT Transistor Modeling
+- BJT Small-Signal Analysis (Chapter 8)
 - Ders 4 Genişletilmiş Notu: Görüntü Sıkıştırma: RLE, Faks Standartları, JPEG-LS, JPEG, JPEG 2000 ve Görüntü Formatları
 - Ders 10 Genişletilmiş Notu: Filogenetik Ağaç Kurma Yöntemleri ve İstatistiğe Giriş
 - Basket
@@ -2064,7 +2065,7 @@
 - Ders 4 Genişletilmiş Notu: Deterministik Olmayan Sonlu Otomatlar, Hesaplama Ağaçları ve NFA-DFA Denkliği
 - Ders 5 Genişletilmiş Notu: NFA'dan DFA'ya Dönüşümün Tamamlanması, Pompalama Önsavı ve Düzenli Olmayan Dillerin İspatı
 - Ders 10 Genişletilmiş Notu: Topluluk Öğrenme: Bagging, Boosting (AdaBoost) ve Random Forest
-- LoginPage
+- gezirehberi/Scripts/bootstrap.bundle.min.js
 - Ders 8 Genişletilmiş Notu: İki Boyutlu Faks Kodlaması ve Aritmetik Kodlama
 - Ders 1 Genişletilmiş Notu: Sezgisel Arama: En İyi İlk Arama ve A* Algoritması
 - blm_2512/lablar/lab_3.c
@@ -2197,8 +2198,8 @@
 - Ders 1 Genişletilmiş Notu: Tanışma: Dersin Müfredattaki Yeri, Algoritma Öğrenmek ve Programlama Ortamı
 - 101_ObjectCategories - umbrella dataset klasörü
 - ScrollSpy
-- Collapse
-- ScrollSpy
+- remove
+- BaseComponent
 - Collapse
 - Ders 22 Genişletilmiş Notu: 2. Vize Hazırlık: Temel Teorem, Riemann Toplamı, Grafik Çizimi ve Mazeret Sınavı Soruları
 - HADOOP
@@ -2234,7 +2235,7 @@
 - Detaylı Açıklamalar
 - Hocalar
 - Matematik 1/ders_kayitlari/2020-2021/README.md
-- ImageDao
+- KNN
 - Detaylı Açıklamalar
 - Ders 1 Genişletilmiş Notu: Veriyi Tanımak: Veri Nesneleri, Öznitelik Türleri ve Veri Seti Türleri
 - Foundations of Analog and Digital Electronic Circuits
@@ -2496,7 +2497,7 @@
 - DFS ile Çokgen Tespiti (algoritma)
 - Ders 1 Genişletilmiş Notu: Mobil Teknolojilere Giriş: Pervasive Computing ve Mobil Uygulama Geliştirme Yaklaşımları
 - Detaylı Açıklamalar
-- 1. Feature Envy (Özellik Kıskançlığı)
+- ht
 - BLM3011 İşletim Sistemleri Not İstatistikleri (2023-2024)
 - Ders 2 Genişletilmiş Notu: Ağ Çekirdeği, Gecikme, Kayıp, Verim ve Protokol Katmanları
 - Detaylı Açıklamalar
@@ -2591,7 +2592,7 @@
 - ödev 1/halil_uluoglu/kod.c
 - algorithm_analysis/ödev_3/ödev_3.c
 - Company (Lab1 UML Class)
-- stbi_uc
+- stbi__load_main
 - Ders 3 Genişletilmiş Notu: Delta Kuralından Regresyon ve Optimizasyonun Temellerine
 - Ders 2 Genişletilmiş Notu: Yazılım Geliştirme ve Kalite Yaklaşımı, McCall Kalite Modeli ve Kalite Sağlama Aktiviteleri
 - compilerOptions
@@ -2759,7 +2760,7 @@
 - 2022-2023 Bahar Dönemi
 - 2022-2023 Bahar Dönemi
 - Detaylı Açıklamalar
-- 🎯 Derslerin Detaylı Özetleri ve Kazanımları
+- AnimatedRoutes.tsx
 - struct ders/struct.c
 - ViewDatabase
 - Ders 7 Genişletilmiş Notu: Kalite Ölçütleri, Test Yönetimi, Risk ve Konfigürasyon Yönetimi
@@ -2784,14 +2785,14 @@
 - Ders 10 Genişletilmiş Notu: Makine Öğrenmesine Giriş: Problem Türleri ve Uygulamalar
 - Ders 11 Genişletilmiş Notu: Makine Öğrenmesi 2: Özellik Seçimi ve Çıkarımı, Karar Ağaçları ve En Yakın K Komşu
 - Detaylı Açıklamalar
-- Chapter 16 Introduction to Classes and Objects
+- ht
 - Detaylı Açıklamalar
 - Ders 1 Genişletilmiş Notu: Araştırma Yöntem ve Teknikleri: Temel Kavramlar, Yöntemler ve Veri Toplama
 - petrolPumpsQueue.c
 - queue_example.c
 - editdistance.c
 - Answers to Exercises sections 4.6.2-4.7
-- math
+- string
 - Chapter 4 Analysis of Nonlinear Circuits
 - compare_commits_old_vs_min.c
 - directory_handlr/main.c
@@ -2854,7 +2855,7 @@
 - Ders 14 Genişletilmiş Notu: Konum Servisleri ve Geofence
 - Ders 7 Genişletilmiş Notu: Hough Dönüşümü, RANSAC ve İki Boyutlu Geometrik Dönüşümler
 - linked_list_6_add_sequential.cpp
-- Ders 1 Altyazısı (14 Ekim 2020)
+- Örnekleme (sampling)
 - Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/README.md
 - Detaylı Açıklamalar
 - İstatistik ve Olasılık Hesapları/ders_kayitlari/2020-2021/README.md
@@ -2996,7 +2997,7 @@
 - compilerOptions
 - Chapter 9: Methods for collecting data on business innovation
 - 2024-2025/README.md
-- Determinant
+- iOS ve Android karşılaştırması
 - BLM3580 Proje Konuları ve Genel Beklentiler
 - ÖDEV 2 - 8259 kesme devresi (8251A ile)
 - Ders 2 Genişletilmiş Notu: Abstract Factory Kalıbı ve Switch-Case, Kalıtım ve Kalıp Çözümlerinin Karşılaştırılması
@@ -3119,7 +3120,7 @@
 - ödev 1/lib_gates.v
 - Detaylı Açıklamalar
 - Ders 23 Genişletilmiş Notu: FET Kutuplama (Sabit, Kendinden ve Gerilim Bölücü Kutuplama, E Tipi MOSFET)
-- BaseComponent
+- ScrollSpy
 - Sinyaller ve Sistemler Ödev 2 (2025) tanımı (BLM2041)
 - Ders 1 Genişletilmiş Notu: Matris Tanımı, Özel Matrisler, Temel Matris İşlemleri ve Devrik Matris
 - Ders 3 Genişletilmiş Notu: Bilişim Suçları
@@ -3140,7 +3141,7 @@
 - Chapter 24 Exception Handling
 - Detaylı Açıklamalar
 - blm_2512_codes/queue.c
-- blm_1022_proje/code.c
+- Ders 11 Genişletilmiş Notu: Veri Saklama, Negatif ve Kesirli Sayıların Gösterimi
 - Ödev1 (malişen) sıralı bağlı liste programı - çalıştırma çıktıları
 - Ders 5 Genişletilmiş Notu: DTFT ile Frekans Cevabı, Örtüşme, DFT ve DTMF Uygulaması
 - Ders 25 Genişletilmiş Notu: Dizilerin Bellek Yerleşimi ve Linkli Listeler
@@ -3194,7 +3195,7 @@
 - Konunun önemi, projenin özgün değeri ve araştırma sorusu (deprem ciddi oyun)
 - Personality ders notu (Organizational Behavior)
 - Yapısal Programlama Ders-Öğrenci Kayıt Sistemi Raporu (çıktı)
-- Ders 7 Genişletilmiş Notu: Tek Yönlü, Çift Yönlü ve Dairesel Bağlı Listeler
+- tqdm
 - Ders 12 Genişletilmiş Notu: Proje Gösterimleri (1. Hafta)
 - Veri Sıkıştırma 1. Ödev Raporu
 - Multi-Processor Scheduling
@@ -3417,12 +3418,12 @@
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - FileManager
-- Örüntü Tanıma Makale Özeti
+- BLM4830 Hafta 11
 - Ders 9 Genişletilmiş Notu: Yığın, İfade Değerlendirme ve Kuyruk Yapıları
 - Ders 10 Genişletilmiş Notu: Araştırma ve Yayın Etiği (Devam) ve Sosyal Ağlarda Etik
 - Ders 3 Genişletilmiş Notu: İşaretlerin Sınıflandırılması ve İşaretler Üzerinde Temel İşlemler
 - Ders 4 Genişletilmiş Notu: Shell Sort Ayrıntıları ve Sıralama Algoritması Seçimi
-- .initialize
+- java.awt.event.ActionEvent
 - Activity yaşam döngüsü
 - Detaylı Açıklamalar
 - Ders 10 Genişletilmiş Notu: Geri Yayılımın Türetilmesi ve Çok Katmanlı Algılayıcı Uygulama Notları
@@ -3432,7 +3433,7 @@
 - Detaylı Açıklamalar
 - Euler Formülü
 - Ders 9 Genişletilmiş Notu: Yığın, İnfix-Postfix Dönüşümü ve Kuyruk
-- ALU (Arithmetic Logic Unit)
+- Ders 21 Genişletilmiş Notu: C Programlama Diline Giriş
 - HMW4 Kevin Bacon/17011086.c
 - Ders 4 Genişletilmiş Notu: Proje Planlama, Fizibilite Analizi, Gantt ve PERT Diyagramları
 - ht
@@ -3471,7 +3472,7 @@
 - linkedlist_with_2arrays.c
 - Ders 11 Genişletilmiş Notu: Proje İlerleme Sunumları: Tıbbi Görüntü Bölütleme ve Sınıflandırma Projelerine Yöntem Önerileri
 - Detaylı Açıklamalar
-- Shell Programlama (OS_Shell)
+- Quality factor Q
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - div_conq.c
@@ -3482,7 +3483,7 @@
 - Detaylı Açıklamalar
 - Ders 2 Genişletilmiş Notu: İSG Kavramları, Ergonomi ve İş Kazası
 - System calls (UNIX and Win32)
-- Section 9.6 Partial Orderings
+- Scripts/popper.min.js
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
@@ -3671,7 +3672,7 @@
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
-- 2024-2025_Bahar Lisans Haftalık Ders Programı
+- .AdminMenu
 - 4. Sağlıklı Diyet Programı Hazırlama
 - Ders 1 Genişletilmiş Notu: Dersin Kapsamı, Algoritmaya Bakış ve Öğrenme Stilleri
 - Fizibilite çalışması
@@ -3703,7 +3704,7 @@
 - gamecode.c
 - Detaylı Açıklamalar
 - Chapter 7: Deadlocks
-- FIFA 18 Complete Player Dataset (Kaggle)
+- Makine Öğrenmesi ders notları 2024 (Elif Karslıgil)
 - 📚 Elektronik Devreler
 - Ders 11 Genişletilmiş Notu: Şifreleme Araçları
 - Ros Gazebo Multi Robot Tutorial
@@ -3745,7 +3746,7 @@
 - Populism / People's Party principles
 - Simplex / Half Duplex / Full Duplex
 - Detaylı Açıklamalar
-- registry.py
+- run_opt.py
 - botocore_parsers.py - botocore response parsers
 - Profil sınıflandırıcı değerlendirme raporu
 - TouchDesigner External Data Reference
@@ -3753,7 +3754,7 @@
 - q_2/PC.v
 - gezirehberi_admin/Scripts/bootstrap.bundle.min.js
 - Object Oriented Programming Term Project
-- Chapter 4 File Systems (sections 4.4-4.7)
+- Ch.11 File-System Interface (Silberschatz)
 - 2024-2025 Bahar Dönemi
 - Detaylı Açıklamalar
 - src/main.cpp
@@ -3774,7 +3775,7 @@
 - com.unity.modules.video
 - com.unity.modules.wind
 - database_without_struct/database_without_struct.c
-- HttpApplication
+- Ideal Transformer
 - Tourex 'neden biz' bölümü görseli - görsel grubu (img/chose)
 - Ödev 2 Yapay Zeka 2024/2: Sorudan cevaba, hangisi iyi
 - SQL Injection Lab Report (BLM4011 Lab 2)
@@ -3820,6 +3821,7 @@
 - Student Registration System Implementation
 - Author
 - 13. Akademik Araştırmalarda Kötü Davranışlar
+- .on
 - Program
 - Detaylı Açıklamalar
 - Ders 4 Genişletilmiş Notu: Monitörler ve Koşul Değişkenleri (Hoare ve Mesa Makaleleri)
@@ -4500,7 +4502,7 @@
 - 2026/ödev 1/regfile.v
 - client/postcss.config.mjs
 - Ders 3 Genişletilmiş Notu: Bileşen Tabanlı Geliştirme, Artımsal Modeller ve Çevik Süreçler (XP, Scrum)
-- RSA şifreleme
+- Ders 10 altyazısı (4 Mayıs 2023) - Makine öğrenmesine giriş
 - createCache
 - getDefaultDisplay
 - KategoriForm.cshtml
@@ -4737,7 +4739,7 @@
 - ADC/DAC Timer Control
 - inspectPrefiltersOrTransports
 - Detaylı Açıklamalar
-- 22011641_burak_atalay/stb_image.h
+- Ders 17 Genişletilmiş Notu: Algoritmaya Giriş ve Akış Diyagramları
 - Ders 8 Genişletilmiş Notu: Sistem Tasarımı: Ön Tasarım, Yapı Diyagramı ve Ayrıntılı Tasarım
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
@@ -5245,7 +5247,7 @@
 - 📚 Gömülü Sistemler
 - 📚 Hesaplamalı Anlambilim
 - 2024-2025 Güz Dönemi
-- 9. Görsel Programlamaya Giriş: C# ile Pencere ve Olaylar
+- Utils
 - 7. Phase 4: End-to-End Compression Pipeline
 - Effective address
 - 📚 İleri Bilgisayar Ağları
@@ -5627,7 +5629,7 @@
 - Making Single-Threaded Code Multithreaded
 - Certification Authority and PKI
 - 2. Uygulama 1: Üç Zarın Toplam ve Olasılık Matrisi
-- Tanzimat'ta ekonomi, toplum ve kültür
+- FIFA 18 Complete Player Dataset (Kaggle)
 - Detaylı Açıklamalar
 - Date ADT (BasicDate implementation)
 - Algoritma Tasarım Teknikleri (Brute-Force, Greedy, Divide&Conquer, Dynamic Programming, Backtracking)
@@ -6067,7 +6069,7 @@
 - Next.js / Vercel frontend framework & dağıtım platformu
 - tailwind.config.ts
 - Detaylı Açıklamalar
-- ders_6_ozet (PDF özeti)
+- Shell Programlama (OS_Shell)
 - E-ticaret ürünlerinin çok sınıflı metin sınıflandırması
 - bioinfo_08-statistics.pdf
 - Detaylı Açıklamalar
@@ -6247,7 +6249,7 @@
 - OCR-free Document Understanding Transformer
 - cs231n notebook_images dataset
 - American Time Use Survey Processing Project
-- Product
+- Customer
 - Lectures
 - Homeworks
 - İleri Algoritma Analizi ve Tasarımı/slaytlar_notlar/2024/7.pdf
@@ -6315,7 +6317,7 @@
 - sınav_kodları/README.md
 - Result
 - Çok Disiplinli Tasarım Projesi 2022 görsel seti (m_isa_gul)
-- run_random_forest.py
+- LU decomposition
 - Ders 22 Çalışma Özeti
 - README - Efe Girgin Yapısal Programlama Ders Kodları Notu
 - Some Plots
@@ -6391,7 +6393,7 @@
 - Limit Hesaplama Teknikleri (Sıkıştırma, Trigonometrik Limitler)
 - Fonksiyonların Görüntü Kümesi (Range) Bulma
 - Logaritma Yardımıyla Türev Alma (x^x, f(x)^g(x))
-- BLM4800 Project Proposal Form: TechTalk
+- Ahmet Elbir
 - Paralel Devre Simülasyonu: R1, R2 Akım Ölçümü (R3 Yok)
 - Soru 1 Köprü Devresi Simülasyonu: R1-R5 AC Akım Ölçümleri
 - Lab2 Soru2 RLC Devre Simülasyonu
@@ -6620,7 +6622,7 @@
 - Listopia Logo (SVG)
 - Kaynak - tariktskn/YTU-NOTLAR
 - TODO: Amacı nedir?
-- MainWindow
+- jn
 - alt seviye programlama/ders_kayitlari/2020-2021/sube_2/README.md
 - 10. IEEE 802.5 Token Ring
 - B-trees (external search)
@@ -6726,7 +6728,7 @@
 - TODO: Amacı nedir?
 - TODO: Conclusion
 - TODO: Deneysel çalışmalarda ne elde edilmiş?
-- Potential method
+- van Emde Boas tree
 - Ders 12 Çalışma Özeti
 - Ders 21 Çalışma Özeti
 - Ders 23 Çalışma Özeti
@@ -6737,7 +6739,7 @@
 - ANA PROC: Word Dizide Çiftlerin ve Tekli Ortalamasını Bulan EXE Tip Program
 - MAIN PROC: Byte Tanımlı Dizide Sıralılık Kontrolü (EXE tip)
 - ReportPanel
-- Chapter 9 Recursion
+- Ders 27 Genişletilmiş Notu: Dizi Algoritmaları, Karakter Sabitleri ve Karakter Dizileri
 - Ders 6 Genişletilmiş Notu: Sanallaştırma Makaleleri Tartışması: Xen, Disco, VMware G/Ç ve Konteyner-KVM Karşılaştırması
 - TODO: Hangi konu ile alakalı?
 - 2 Boyutlu Konvolüsyon (Kernel ile Matris Taraması)
@@ -6897,7 +6899,7 @@
 - file_recursive.c
 - Detaylı Açıklamalar
 - Ders 10 Genişletilmiş Notu: Örneklem Ortalaması, Örneklem Varyansı, Medyan ve Kantiller
-- Hocalar
+- 👨‍🏫 Prof. Dr. M. Fatih Amasyalı
 - 12. Ağ Topolojileri
 - Yapay Zeka/ders_kayitlari/2025-2026/README.md
 - Korunma Politikaları
@@ -6934,12 +6936,12 @@
 - Ders 5 Genişletilmiş Notu: Sıralamanın Biçimsel Belirtimi ve OCL (Object Constraint Language)
 - Detaylı Açıklamalar
 - Ders 11 Genişletilmiş Notu: Uygulama 2: Dizi ve Matris Soruları
-- Bölüm 3: C'de yapısal program geliştirme
+- .MusteriMenu
 - Ders 2 Genişletilmiş Notu: Yazılım Süreçlerinin Genel Adımları, CASE Araçları ve Süreç Modelleri
 - 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 - Ders 9 Genişletilmiş Notu: Eğrisel, Gregory-Newton ve Lagrange Enterpolasyonu
 - Ders 28 Çalışma Özeti
-- Ders 15 Genişletilmiş Notu: Uygulama 1: Shell Programlamaya Giriş, Dosya İşlemleri, İzinler, Değişkenler ve Echo
+- İşletim Sistemleri/ders_kayitlari/2021-2022/sube_3/README.md
 - 03_13_03_2023.md
 - Homework 1 Requirements
 - Paper_01.md
@@ -7014,7 +7016,7 @@
 - İleri Optimizasyon (Lisansüstü dersi)
 - İleri Programlama Dilleri (Lisansüstü dersi)
 - İleri Yazılım Mimarisi 2025 Güz Proje (Kayra) README
-- storageService.js
+- Multiplexing
 - İleri İşletim Sistemleri/slaytlar_notlar/2023/onder_gormez markdown/05_30_03_2023.md
 - İleri İşletim Sistemleri/slaytlar_notlar/2023/onder_gormez markdown/06_06_04_2023.md
 - İleri İşletim Sistemleri/slaytlar_notlar/2023/onder_gormez markdown/07_13_04_2023.md
@@ -7103,7 +7105,7 @@
 - Detaylı Açıklamalar
 - Nesneye Yönelik Programlama/ders_kayitlari/2020-2021/sube_3/README.md
 - Ders 6 Genişletilmiş Notu: Pompalama Önsavı Uygulamaları ve Bağlamdan Bağımsız Gramerler
-- .showError
+- repo/blm_2042_savt_proje/src/main/java/savtproje/Utils.java
 - Matematik 1
 - Örnek Sorular
 - Detaylı Açıklamalar
@@ -7121,7 +7123,7 @@
 - 2026-2027 Güz Dönemi
 - I2B-HW2 Dot plot ödevi
 - psoriasis_10genes.txt - sedef hastalığı 10 gen verisi
-- AdminDashboard
+- .getPriceCode
 - Derleyici Tasarımı README
 - Adresler.txt (Regex Folder)
 - 3. Küresel Yazılım Geliştirmede Genişletilmiş COCOMO II Tabanlı Maliyet Tahmin Modeli
@@ -7165,7 +7167,7 @@
 - Kaynak: parsakaz/ytu-robotics
 - ytu-robotics README
 - Sayısal Analiz/projeler/2023/mehmet_ali_duran/kod.c
-- run_bagging.py
+- Geometric Distribution
 - Ders 8 Genişletilmiş Notu: Bağlı Listeden Silme, Dairesel ve Çift Yönlü Bağlı Listeler
 - Euler İlişkisiyle Sinyali Fourier Serisine Açma (x(t) Çözümü)
 - DTFT Convolution Theorem Proof
@@ -7173,7 +7175,7 @@
 - Inverse DTFT of X(e^jw)=cos^2(w)
 - Detaylı Açıklamalar
 - ödev 2/malişen/README.md
-- Customer
+- SubscriptionPlan
 - Kaynak: AbdullahKayahan/kitapOneriSistemi
 - Ders 19 Genişletilmiş Notu: Özyinelemeli (Recursive) Fonksiyonlar: Beş Uygulama Örneği
 - Beni Oku (kurulum notları)
@@ -7233,7 +7235,7 @@
 - Ders 14 Genişletilmiş Notu: Baz Değişimi ve Geçiş Matrisleri, Özdeğerler ve Özvektörler, Karakteristik Polinom ve Cayley-Hamilton Teoremi
 - Regresyon (En Küçük Kareler)
 - Ders 3 Çalışma Özeti
-- DPO Ensembles
+- Bölüm 7 Görsel Anlambilim
 - .union
 - k-fold cross validation
 - Ders 3 Genişletilmiş Notu: Proje Yönetimi, Fizibilite Çalışması ve Proje Zamanlaması
@@ -7243,7 +7245,7 @@
 - bul/3
 - Ders 1 Genişletilmiş Notu: Ders Tanıtımı, Yazılımın Tanımı, Yazılım Türleri ve Eski Yazılım
 - Gamma Distribution
-- os
+- argparse
 - Boyer-Moore algorithm
 - Ders 6 Çalışma Özeti
 - Ders 13 Genişletilmiş Notu: Simetrik Şifreleme ve Mesaj Gizliliği
@@ -7271,7 +7273,7 @@
 - Ders 4 Genişletilmiş Notu: Proje Kavramı, Proje Başarısı ve Proje Yönetimi Yol Haritası
 - 4. Dördüncü Sunum: BERT Tabanlı Türkçe Soru Cevaplama Sistemi
 - Kombinezonsal Devreler
-- Chapter 15 C++ as a Better C
+- OSI Referans Modeli
 - Makine Öğrenmesi Ders Kayıtları Altyazıları
 - veri_yapıları_ve_algoritmalar/ödev_3/21011022.c
 - Bölüm 5 Lojik Kapılar ve Lojik Devreler
@@ -7316,7 +7318,7 @@
 - Ders 4 Genişletilmiş Notu: Sonuç, Kaynaklara Atıf ve Tablo-Grafik Kullanımı
 - matrisAdimla.c
 - Doğal Eksponansiyel Fonksiyon (e^x)
-- proje/ml.py
+- datapath
 - Detaylı Açıklamalar
 - Ders 4 Genişletilmiş Notu: BT Güvenlik Kontrolleri, Planları ve Prosedürleri
 - Ders 3 Genişletilmiş Notu: MapReduce İyileştirmeleri: Combiner, Bölümleme Fonksiyonu ve Hadoop Ekosistemi
@@ -7340,7 +7342,7 @@
 - .not
 - Ders 13 Genişletilmiş Notu: Disco: Hazır İşletim Sistemlerini Ölçeklenebilir Çok İşlemcilerde Çalıştırmak
 - 2022 Harf Notları README
-- Faz 1: Data Exploration ve Profil Belirleme
+- Eşdizimlilik (Collocation)
 - 2021-2022 Bahar Lisans Ders Programı (YTÜ Bilgisayar Mühendisliği)
 - Appendix A Operator Precedence Charts
 - Index
@@ -7365,7 +7367,7 @@
 - 3. Emojiler İçin Gözetimsiz Duygu Sözlüğü
 - 7. Beşinci Sunum: Çift Yönlü LSTM ile Kelime Anlamı Belirginleştirme
 - 3. Üçüncü Sunum: Özgeçmişlerde Yarı Denetimli Varlık İsmi Tanıma
-- Digital System Design
+- Information hiding
 - Ders 12 Lab Çalışma Özeti
 - Ders 4 Genişletilmiş Notu: Elementer Satır İşlemleriyle Ters Matris Bulma, Tekil Matrisler, Determinant, Sarrus Kuralı ve Laplace Açılımı
 - Devre++ ödev talimatı e-postası (diziler: ters çevirme, obeb/ebob)
@@ -7567,7 +7569,7 @@
 - Person-Employee-Manager inheritance example
 - typing
 - Numerical Analysis BLM1022 Course Details
-- Algorithms 1.4 Analysis of Algorithms (Sedgewick & Wayne)
+- Ders 6 Genişletilmiş Notu: Bilgisayarın Tarihçesi, Bilgisayar Organizasyonu ve Programlama Dilleri
 - maxHeapify.c
 - Harf Notları 2025 README
 - New_dataset_v2.txt (öğrenci-bölüm kayıtları)
@@ -7601,7 +7603,7 @@
 - ödev_4_21011084.c
 - Ders 6 Genişletilmiş Notu: Sayısal İntegrale Giriş ve Yamuk (Trapez) Yöntemi
 - Ders 13 Genişletilmiş Notu: Anahtarların Sayıya Dönüştürülmesi, Çakışma ve Doğrusal Yoklama
-- Veritabanı yönetim sistemi (DBMS)
+- Sezgisel Arama ders notu
 - 3. İkinci Sunum: Twitter'daki Finansal Topluluktan Şirket Olaylarının Tespiti
 - Ders 10 Çalışma Özeti
 - 2. Yaşam Boyu Öğrenme
@@ -7664,7 +7666,7 @@
 - Ders 8 Genişletilmiş Notu: Dönem Sonu Proje Sunumları: Dengesiz Veri, Segmentasyon, Hiperparametre Optimizasyonu ve Üretici Modeller
 - 10. Özyinelemesiz Algoritmaların Analizi
 - ConnectionWidget
-- Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_3/README.md
+- Detaylı Açıklamalar
 - stbi__malloc_mad3
 - BLM3010 Bilgisayar Projesi
 - skippitygame.c
@@ -7736,7 +7738,7 @@
 - Kayra Not Bilgileri README
 - Ödev 2: İçerik Tabanlı Görüntü Erişimi (2019)
 - Trigonometric Fourier series
-- Chapter 5: Number Representation and Arithmetic Circuits
+- Ders 25 Genişletilmiş Notu: Dizilerle Algoritmalar: Rakam Tekrarı, Asal Sayı ve Temel Dizi İşlemleri
 - 11011027_mustafa_berkay_mutlu_ödev_3.c
 - Drone ile 9x9 alan tarama ödevi
 - Dağılım tabloları (A1-A9)
@@ -7745,7 +7747,7 @@
 - Seçilmiş alıştırma cevapları
 - ödev_3/20011047.c
 - Mikroişlemci Sistemleri ve Assembly Dili Ders Kayıtları Altyazıları
-- Euler's theorem
+- Ders 29 Genişletilmiş Notu: Çok Boyutlu Diziler ve Çok Boyutlu Karakter Dizileri
 - Lojik Devre Tasarımı - Dr. Taner Aslan & Dr. Rifat Çölkesen
 - Sayı Tabanları ve Dönüşümleri (Binary, Octal, Decimal, Hexadecimal)
 - 1'e ve 2'ye Tümleyen (Signed Representation)
@@ -7757,7 +7759,7 @@
 - YPG_Uyg4_File_Management.c
 - Bilgisayar Bilimlerine Giriş Ders Kayıtları Altyazıları
 - Bilgisayar Bilimlerine Giriş Ders Kayıtları Altyazıları
-- Bilgisayar Bilimlerine Giriş Ders Kayıtları
+- Bilgisayar Bilimlerine Giriş/ders_kayitlari/2021-2022/sube_3/README.md
 - 5_LINEER_DONUSUM_SN_SS.pdf
 - SchoolBranch
 - blm_2512_data_structures/ödevler/ödev_3/22011641.c
@@ -7826,7 +7828,7 @@
 - Matematik 2 Ders Kayıtları Altyazıları
 - Lojik Devreler Ders Kayıtları
 - directory.c
-- string
+- in to post2.cpp
 - Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 - Detaylı Açıklamalar
 - linear_equation_sets.c
@@ -7880,7 +7882,7 @@
 - Artıklar (residuals)
 - api-gateway/src/server.js
 - Ders 2 - 8086 Pin Bağlantıları ve Kontrol Sinyalleri
-- Yüksek mertebe lineer homojen denklem
+- ref_express
 - 18. Bilişim Yoluyla da İşlenen Suçlar
 - shell_2.c
 - Ders 3 - Basit I/O ve 8255 PPI Entegresi
@@ -7914,7 +7916,7 @@
 - Yazılım Mühendisliği Ders Kayıtları Altyazıları
 - Data compression
 - Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Kayıtları Altyazıları
-- Bölüm 3 Kodlama ve Kodlar
+- Temel Ayrık-Zamanlı İşaretler ve Özellikleri
 - Ders 14 Genişletilmiş Notu: Quiz Hataları, Yığınla Kuyruk ve First Child / Next Sibling Ağaç Gösterimi
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
@@ -7938,7 +7940,7 @@
 - Ders 11: Eğiticisiz öğrenme ve kümeleme
 - ListOfLists
 - Ders 12: Hiyerarşik kümeleme
-- JK Flip-Flop
+- Lojik Devreler Ders 10 (2020-2021) - Flip-flop'lar
 - Hesaplama Kuramı Course
 - Ders 13: Birliktelik kuralları
 - Ders 14: Birliktelik kuralları devamı
@@ -8046,7 +8048,7 @@
 - Dictionary Word List (ödev 2)
 - dictionary.txt (word list dataset)
 - İngilizce Kelime Listesi (dictionary.txt)
-- IndividualUI
+- CorporationUI
 - Domain Data List
 - English Dictionary File
 - Nasrullah Toprak Data Structures Kaynak Atfı (Nasrullah-Toprak/YTU_Labs)
@@ -8228,7 +8230,7 @@
 - Basit Arayüz Devreleri
 - Araştırma Yöntemleri ve Bilimsel Etik
 - Prime number
-- MainFrame
+- ReportPage
 - Katkıda Bulunanlar
 - Akış Şeması - Öğrenci Obp (Ortalama Başarı Puanı) Hesaplama ve Sıralama (Selection Sort)
 - Akış Şeması - Pisagor Üçlüsü (c Kare) Bulma, Asal/Çift Sayı Toplamları Hesaplama
@@ -8284,7 +8286,7 @@
 - Sonlu fark tabloları
 - Matematik 1 Ders Kayıtları Altyazıları
 - Lineer Cebir Ders Kayıtları Altyazıları
-- 7. Fonksiyon işaretçileri
+- Ders 19 Genişletilmiş Notu: Döngü Türleri, Diziler ve Akış Diyagramı Örnekleri
 - Ders 7 Genişletilmiş Notu: Dinamik Bellek Yönetimi Uygulamaları (malloc, calloc, realloc, free)
 - Lineer Cebir Ders Kayıtları
 - Ders 5 Genişletilmiş Notu: Veritabanı Tasarım Süreci ve Varlık-Bağıntı (ER) Modeli
@@ -8299,7 +8301,7 @@
 - binTreeOlustur.c
 - Matematik 1 Ders Kayıtları
 - Matematik 1 Ders Kayıtları Altyazıları
-- ReportGenerator
+- BMÖK 2026 Vize Çözümlü Çıkmış Sorular
 - 17. İnternet Bankacılığı Soygunları ve Sosyal Mühendislik
 - Ders 9 Genişletilmiş Notu: Laboratuvar 1: Ardışık Dizide Kayıp Sayıyı Bulma
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
@@ -8329,7 +8331,7 @@
 - BLM3051 Değerlendirme Sistemi (Evaluation System)
 - Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 - Nesneye Yönelik Programlama Ders Kayıtları
-- Doğal Dil İşleme
+- Chatbot
 - Ders 9 Genişletilmiş Notu: İşletim Sistemi Yapıları, Süreç Kavramı, Süreç Durumları, PCB ve Zamanlayıcılar
 - İş Sağlığı ve Güvenliği 2 Ders Kayıtları Altyazıları
 - İş Sağlığı ve Güvenliği 2 Ders Kayıtları
@@ -8351,7 +8353,7 @@
 - 3. Hafta Uygulama Soruları Çözümleri
 - 3. Haftanın Ödev Cevapları
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
-- SaS-10 Z Transform 2020
+- BBG Slayt 10 - Ağlar ve İnternet (Brookshear Ch.4)
 - Kaynaksız Paralel RLC Devresi
 - Veri Madenciliği ve Bilgi Keşfi Ders Kayıtları Altyazıları
 - Veri Madenciliği ve Bilgi Keşfi Ders Kayıtları
@@ -8422,7 +8424,7 @@
 - 📘 Sayısal İşaret İşleme
 - Veritabanı Yönetimi Ders Kayıtları Altyazıları
 - Veritabanı Yönetimi Ders Kayıtları
-- .exec
+- NP-completeness
 - Veritabanı Yönetimi Ders Kayıtları Altyazıları
 - result.html (boş şablon)
 - ar5iv (arXiv HTML rendering tool) logo/reference
@@ -8434,12 +8436,12 @@
 - Kaggle Site Logo
 - İleri Algoritma Analizi ve Tasarımı Ders Kayıtları Altyazıları
 - İleri Algoritma Analizi ve Tasarımı/ders_kayitlari/2022-2023/README.md
-- CENG 222 Hafta 8 - İstatistiğe giriş
+- Hipotez testi
 - GeoBusiness Android app - mail/zarf ikonu
 - GeoBusiness Android app kayıt ekranı arka plan dokusu
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
 - Geo-Business-Android-App README
-- proje/gui.py
+- .detach
 - robots.txt (tüm tarayıcılara izin)
 - Geo-Business-Travel-Module README
 - matrisAdimlaRecursiveVersion.c
@@ -8474,8 +8476,8 @@
 - Algoritma ve Akış Diyagramı Pratiği
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Mesleki Staj
-- AirlineException
-- 18011019.c
+- Ders 33 Genişletilmiş Notu: Sıralama Algoritmaları: Bubble Sort, Selection Sort ve Temel Yöntemler
+- locale
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
@@ -8503,7 +8505,7 @@
 - Lineer Cebir Ders Kayıtları Altyazıları
 - Türkçe 2 Ders Kayıtları
 - Lineer Cebir Ders Kayıtları
-- Mobil Programlamaya Giriş Ders 1 (2020-2021)
+- Ders 2 Çalışma Özeti
 - Ağ Teknolojileri 2020-2021 ders kayıtları özeti
 - Ders 17 Genişletilmiş Notu: Struct Sınav Sorusu: Oda Dizisi, Komşu Taraması ve Hacme Göre Sıralama
 - Elektronik Devreler/ders_kayitlari/2020-2021/README.md
@@ -8518,11 +8520,11 @@
 - with_aux_heap.c
 - Veri Madenciliği Ders Kayıtları
 - Veri Madenciliğine Giriş/ders_kayitlari/2021-2022/sube_1/README.md
-- logging
+- gutenberg_downloader.py
 - Matematik 2 Ders Kayıtları
 - Hafta VII: SQL ile Veri Bütünlüğü ve Güvenlik
 - Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları
-- Empirical tests
+- Lojik Devreler Ders 13 (2020-2021)
 - Fibonacci heap
 - Seminer ve Meslek Etiği/Seminer/ders_kayitlari/2020-2021/README.md
 - Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları
@@ -8536,7 +8538,7 @@
 - İş Sağlığı ve Güvenliği 1 Ders Kayıtları
 - Devre Teorisi ve Elektronik Devreler Ders Kayıtları Altyazıları
 - Yazılım Mühendisliği/ders_kayitlari/2022-2023/sube_1/README.md
-- LLM-MedQA Makale Raporu (Kayra Bulut, Nisan 2025)
+- Bölüm 5: Bağlam Farkında Sinirsel Dil Modelleri
 - Yazılım Mühendisliği/ders_kayitlari/2022-2023/sube_2/README.md
 - 9. Ortalama ve Varyansa Dayalı Öz Nitelik Seçimi
 - orderTree.c
@@ -8548,7 +8550,7 @@
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Büyük Veri İşleme ve Analizi Ders Kayıtları Altyazıları
-- Dersler: haftalık içerik listesi
+- Ders 31 Genişletilmiş Notu: Arama Algoritmaları: Doğrusal Arama, İkili Arama ve Karmaşıklık
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - Ders 11 Genişletilmiş Notu: Öğrenci Makale Sunumları: Veri Madenciliği Uygulamaları
 - 2. Deney Düzeni
@@ -8599,7 +8601,7 @@
 - HMW4 Kevin Bacon
 - İşletim Sistemleri ders sayfası (README)
 - Ders 15 Genişletilmiş Notu: Dosya Sistemi Arayüzü (Dosya Kavramı, Erişim Yöntemleri, Dizin Yapıları, Paylaşım ve Koruma) ve Dosya Sistemi Gerçeklemesi (Katmanlı Mimari, FCB, Blok Tahsis Yöntemleri ve Boş Alan Yönetimi)
-- Ödev 1: Optimizasyon algoritmalarını karşılaştırma
+- main.yml (dSYM relocations)
 - İleri İngilizce 2
 - Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 - Lineer Cebir Ders Kayıtları Altyazıları
@@ -8638,7 +8640,7 @@
 - 6. Eğiticili Öğrenme: Karar Ağacı Örneği
 - 8. Sınıflandırma, Kestirim ve Öngörü
 - 5. Yöntem 2: Mesafeye Dayalı Çözüm
-- BaseComponent
+- AdminGirisEkrani
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Ders 1 Genişletilmiş Notu: Derse Giriş: Araştırma Sürecinin Aşamaları ve Dersin Kapsamı
@@ -8763,7 +8765,7 @@
 - Nesneye Dayalı Tasarım ve Modelleme Ders Kayıtları Altyazıları
 - Ayrık Matematik Ders Kayıtları
 - Veri Sıkıştırma Ders Kayıtları Altyazıları
-- rungekutta_4.c
+- pt
 - Veri Sıkıştırma/ders_kayitlari/2021-2022/README.md
 - Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 - Veri Sıkıştırma Ders Kayıtları Altyazıları
@@ -8773,7 +8775,7 @@
 - Matematik 2 Ders Kayıtları Altyazıları
 - Chapter 4: Measuring business innovation activities
 - Sayısal Analiz Ders Kayıtları Altyazıları
-- minMax
+- ViewEvent
 - Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 - Nesneye Yönelik Programlama Ders Kayıtları
 - Yapay Zeka Ders Kayıtları Altyazıları
@@ -8804,7 +8806,7 @@
 - Makine Öğrenmesi Ders Bilgileri
 - 19. REST request/response için sözleşme testleri ve Spring Cloud Contract
 - 7. Günlük Hayattaki Diğer Uygulamalar
-- switch Statement
+- Ders 27 Genişletilmiş Notu: Uygulama: Acil Servis Öncelikli Hasta Kuyruğu (Yapı, Bağlı Liste, Dosya) ve Makefile
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
 - Sayısal Analiz Ders Kayıtları
 - Malişen Application Video
@@ -8965,7 +8967,7 @@
 - default Android Studio placeholder launcher icon (unmodified Android robot template)
 - default Android Studio placeholder launcher icon (unmodified Android robot template)
 - default Android Studio placeholder launcher icon (unmodified Android robot template)
-- Bitirme Çalışması Ders Kayıtları
+- .end
 - Ders 1 Genişletilmiş Notu: Asimptotik Notasyonlar ve Özyinelemeli Algoritmaların Analizine Giriş
 - Sistem Analizi ve Tasarımı Ders Kayıtları Altyazıları
 - Duyuru (Announcement) İkonu - YTU Mezun App
@@ -9038,7 +9040,7 @@
 - Derin Öğrenme ve Yapay Sinir Ağları/ders_kayitlari/2023-2024/README.md
 - İleri İşletim Sistemleri Ders Kayıtları Altyazıları
 - Onder Gormez HW1 Requirements
-- Endüktör (bobin)
+- ERP
 - İleri İşletim Sistemleri/ders_kayitlari/2020-2021/README.md
 - Kollektif Öğrenme Ders Kayıtları Altyazıları
 - İstatistik ve Olasılık Hesapları Ders Kayıtları Altyazıları
@@ -9086,7 +9088,7 @@
 - İntegral-3 (Pınar Albayrak)
 - Yazılım Kalite ve Test Süreci Ders Kayıtları Altyazıları
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
-- Detaylı Açıklamalar
+- BLM3041 Hafta I: VTYS Giriş, Temel Kavramlar
 - 1. CQRS: motivasyon ve sorgu gerçekleştirmenin zorlukları
 - stbi__parse_png_file
 - Bilgisayar Organizasyonu/ders_kayitlari/2021-2022/README.md
@@ -9108,8 +9110,8 @@
 - Ayrık Matematik/ders_kayitlari/2020-2021/sube_2/README.md
 - Türkçe 2 Ders Kayıtları Altyazıları
 - Sistem Analizi ve Tasarımı/ders_kayitlari/2020-2021/README.md
-- Ders 14 Genişletilmiş Notu: Yapılar (struct) ve Bağlı Liste Gerçeklemesi
-- Ders 9 Genişletilmiş Notu: NextGenPOS Tasarım Modeli (Durum, Tasarım Sınıf ve Sıralama Şemaları) ve Yazılım Ölçütlerine Giriş
+- GenerateEquation
+- MusteriKayitEkrani
 - Türkçe 2 Ders Kayıtları
 - İleri İngilizce 1 Ders Kayıtları
 - Mesleki Hukuk ve Etik Ders Kayıtları Altyazıları
@@ -9174,14 +9176,14 @@
 - Ders 3 Genişletilmiş Notu: Makale Tartışması: Mesa Monitörleri, DEMOS/MP Süreç Göçü ve DEMOS Görev İletişimi
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
-- Detaylı Açıklamalar
+- Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_1/README.md
 - Time
 - Lineer Cebir Ders Kayıtları Altyazıları
 - Lineer Cebir Ders Kayıtları
 - Fiziksel Katman
 - QGIS Project UTM Zone 35N
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
-- Ödev 2: Tez Yılı Tahmininde Kolektif Öğrenme
+- 2019/Untitled1.cpp
 - Bilgisayar Organizasyonu/ders_kayitlari/2022-2023/README.md
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
@@ -9250,7 +9252,7 @@
 - İKY 2024 harf notları sayfası (boş)
 - İKY 2025 harf notları sayfası (boş)
 - Elektronik Devreler Ders Kayıtları Altyazıları
-- Company XML dosyası
+- 📖 Dersler
 - Elektronik Devreler Ders Kayıtları
 - Spark Streaming Diagram
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
@@ -9408,7 +9410,7 @@
 - Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları Altyazıları
 - Veri İletişimi ve Bilgisayar Ağları Ders Kayıtları
 - Yazılım Mühendisliği Ders Kayıtları Altyazıları
-- Yazılım Mühendisliği/ders_kayitlari/2020-2021/sube_2/README.md
+- Ders 11 Çalışma Özeti
 - Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları
 - Bilgisayar Organizasyonu Ders Kayıtları Altyazıları
 - Bilgisayar Organizasyonu Ders Kayıtları
@@ -9605,7 +9607,7 @@
 - Movies
 - Türkçe 2 Ders Kayıtları Altyazıları
 - Matematik 2 Ders Kayıtları Altyazıları
-- 5. Seri Soruları
+- V
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 - Bilgisayar Mühendisleri için Sinyaller ve Sistemler/ders_kayitlari/2024-2025/README.md
 - Bilgisayar Organizasyonu Ders Kayıtları Altyazıları
@@ -9729,7 +9731,7 @@
 - .main
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
 - TÜRKÇE 1 Ders Kayıtları
-- Matrix
+- Chapter 8 BJT Small-Signal Analysis
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - Matematik 2 Ders Kayıtları Altyazıları
 - Matematik 2 Ders Kayıtları
@@ -9738,7 +9740,7 @@
 - conio
 - Ders 8 Genişletilmiş Notu: Seminer Sunumları: Hata Yüzeyi Analizi ve Tek Hücre RNA Dizileme
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
-- User
+- org.springframework.data.domain.Page
 - Chapter 19 Güç Kaynakları
 - 🔹 Ders 2
 - TÜRKÇE 1 Ders Kayıtları
@@ -9793,7 +9795,7 @@
 - algorithm_analysis_blm_3021/ödev_3_20011017/20011017.c
 - Türkçe 2/ders_kayitlari/2022-2023/README.md
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
-- Kitap
+- VIBA Ders Notları (Veri İletişimi ve Bilgisayar Ağları, 2026)
 - Symbol table (ST API)
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
@@ -9807,13 +9809,13 @@
 - Ders 12 Deadlock (2020-2021)
 - Matematik 2 Ders Kayıtları
 - Lectures Index
-- Ders 5 Genişletilmiş Notu: Alan Modeli Oluşturulması, Nesneye Yönelik Tasarım Ölçütleri, Bağlaşım (Coupling) ve Uyum (Cohesion)
+- Yazılım Mühendisliği/ders_kayitlari/2020-2021/sube_2/README.md
 - Detaylı Açıklamalar
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - BLM3520 Ödev-2 yönergesi (2019-2020 Bahar)
 - linkedListv3.c
-- Bağıl değerlendirme (harf aralıkları)
+- hüsamettin_ışıktaş/create_embeddings.py
 - stbi__err
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Ders 10 Çalışma Özeti
@@ -9829,7 +9831,7 @@
 - Ders 1 Çalışma Özeti
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
-- hüsamettin_ışıktaş/src/data/preprocessing.py
+- mt
 - VYA 01: Algoritma Mantığı ders notu (Gökhan Güven)
 - Ders 5 Çalışma Özeti
 - Ders 7 Çalışma Özeti
@@ -9840,8 +9842,8 @@
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
 - Türkçe 2 Ders Kayıtları
 - Ders 13 Genişletilmiş Notu: İkinci Ara Sınav Sorularının Tartışması: Sadakat Kartında State, Ders Kataloğunda Flyweight
-- hüsamettin_ışıktaş/src/experiments/results.py
-- stbi__zbuf
+- GirisAyrimi
+- Makine Öğrenmesi 2025-2026 Güz Ödev 1 Tanımı
 - Lineer Cebir Ders Kayıtları Altyazıları
 - Lineer Cebir Ders Kayıtları
 - Lineer Cebir Ders Kayıtları Altyazıları
@@ -9856,7 +9858,7 @@
 - Türkçe 2 Ders Kayıtları Altyazıları
 - Türkçe 2 Ders Kayıtları
 - Matematik 1 Ders Kayıtları Altyazıları
-- fix_entrypoint.py
+- Ders 1 Altyazısı (14 Ekim 2020)
 - Matematik 1 Ders Kayıtları
 - LoginWindow
 - Matematik 2 Ders Kayıtları Altyazıları
@@ -9873,12 +9875,12 @@
 - Matematik 2 Ders Kayıtları Altyazıları
 - Matematik 1 Ders Kayıtları Altyazıları
 - Matematik 1 Ders Kayıtları
-- arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder
+- supervised_algorithm_selection_v2.py - Supervised algorithm selection v2 (XGBoost)
 - Matematik 1 Ders Kayıtları Altyazıları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
-- algoritma_analizi/ödev_3/21011022.c
+- Abstract classes
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
-- Chapter 5 C Functions
+- IndividualUI
 - Detaylı Açıklamalar
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları
@@ -9914,7 +9916,7 @@
 - Ders 1 Genişletilmiş Notu: Derse Giriş: Büyük Veri Madenciliği ve Dersin Kapsamı
 - Matematik 2 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
-- teslim/src/data/preprocessing.py
+- Boylestad Electronic Devices and Circuit Theory
 - TÜRKÇE 1 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
@@ -9926,7 +9928,7 @@
 - İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
 - Detaylı Açıklamalar
-- Ders 7 Lab SQL Injection DVWA (Altyazı)
+- FET Biasing (Chapter 6)
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - stbi_inline
@@ -9938,7 +9940,7 @@
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
 - TÜRKÇE 1 Ders Kayıtları
-- limits
+- blm_1031/proje/main.c
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Matematik 1 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
@@ -9956,7 +9958,7 @@
 - Türkçe 2 Ders Kayıtları Altyazıları
 - Türkçe 2 Ders Kayıtları
 - Temel Olasılık ve Bayes Filtresi (Olasılıksal Robotik 1)
-- Kütüphane Yönetim Sistemi (BLM1031 dönem projesi)
+- Library Automation System
 - Counting sort O(T)
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
 - İleri İngilizce 2/ders_kayitlari/2020-2021/README.md
@@ -9967,7 +9969,7 @@
 - Matematik 1 Ders Kayıtları Altyazıları
 - Matematik 1 Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
-- YTU-BBG Final Project README (Terminal Matrix Match & Pop Game)
+- number_match_game_with_c/main.c
 - Student
 - Maliyet tahmin yöntemleri
 - Türkçe 2 Ders Kayıtları
@@ -9983,7 +9985,7 @@
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - İleri İngilizce 1 Ders Kayıtları Altyazıları
 - İleri İngilizce 1 Ders Kayıtları
-- Optimizasyon Ödevi Raporu (Burak Başol)
+- Habil Coban Proje Raporu
 - İLERİ İNGİLİZCE 2 Ders Kayıtları
 - Ders 11 Çalışma Özeti
 - 150 Time_Complexity.pdf
@@ -10005,8 +10007,8 @@
 - Ders 3 Çalışma Özeti
 - Detaylı Açıklamalar
 - Ders 7 Çalışma Özeti
-- GUI
-- Sayısal Görüntü İşleme 3: Keskinleştirme, Köşe Bulma, Morfoloji
+- .launch
+- BLM3580 Sistem Programlama Ders 3 - Web programlama HTML CSS
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
 - TÜRKÇE 1 Ders Kayıtları Altyazıları
@@ -10016,7 +10018,7 @@
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
-- Logical Volume Management (LVM)
+- Controlling Access to Files with ACLs
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları
@@ -10024,7 +10026,7 @@
 - Türkçe 2 Ders Kayıtları
 - Admin
 - teslim/scripts/generate_latex_tables.py
-- MailSender.java
+- mehmet_ali_duran/train.c
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 - Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları
 - Türkçe 2 Ders Kayıtları Altyazıları
@@ -10036,36 +10038,36 @@
 - Yapılanlar: Dota 2 veri seti incelemesi
 - Detaylı Açıklamalar
 - Bölüm 6 MOSFET Anahtarı
-- Context: algorithms in applications
+- Epilogue (Design and Analysis of Algorithms)
 - Veri Sıkıştırma/ödevler/2023/makale_sunum/onder_gormez/readme.md
-- UrunViewModel
-- Leontief Input-Output Model
+- Ödev 1 BLM2022 (2022 Bahar)
+- Musteri
 - ödev1/sait/20011024.c
-- Sayısal Analiz Dönem Projesi 2026 Tanımı
+- arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder
 - functions.c
 - Bölüm 1 Analog ve Sayısal Kavramları
 - Ayrık Matematik/ders_kayitlari/2020-2021/sube_1/README.md
-- Örnek Sorular
+- Rastogi & Bansal: Diabetes prediction model using data mining techniques (makale)
 - 3. Derin Öğrenme Tabanlı Hibrit Tavsiye Sistemleri
 - huffman_tree.c
 - .jps
 - Detaylı Açıklamalar
-- dataset_helper.py
+- BaseComponent
 - Detaylı Açıklamalar
-- 📘 Atatürk İlkeleri ve İnkılap Tarihi 1
+- swiper-bundle.min.js
 - BLM3520 Ödev-2 yönergesi (2019-2020 Bahar)
 - choosescreen.dart
 - XQuery
-- Matematik 2/ders_kayitlari/2022-2023/sube_23/README.md
+- Detaylı Açıklamalar
 - BLM3620 DSP Lecture 3 - Spectrum Representation
 - Logger
-- Toast
-- Ders 3 İşletim Sistemleri 2020-2021 altyazısı
+- je
+- Direct Memory Access (DMA)
 - Ders 5 Genişletilmiş Notu: Ödev Sunumları: GRPO ile Ödül Fonksiyonu Tasarımı ve Model Birleştirme
-- ödev 3/mehmet_ali_duran/kod.c
+- MAT1320 Week 14: Eigenvalues, Eigenvectors, Diagonalization, Cayley-Hamilton
 - Section 1.8 Proof Methods and Strategy
-- Solver
-- Solver
+- Chapter 7 BJT Transistor Modeling
+- Transconductance gm
 - Lab 4 - C ile Assembly: 2B Konvolüsyon
 - 9. Sayısal veri temsili
 - Detaylı Açıklamalar
@@ -10075,8 +10077,8 @@
 - Gider Yönetim Sistemi Proje Raporu 2025
 - 2025-2026 Güz Dönemi
 - Result
-- hüsamettin_ışıktaş/src/train.py
-- Detaylı Açıklamalar
+- devDependencies
+- ödev1.py
 - Ders 12 Çalışma Özeti
 - Ders 13 Çalışma Özeti
 - Ders 3 Çalışma Özeti
@@ -10084,13 +10086,13 @@
 - Fourier transform definition
 - Ders 13 Çalışma Özeti
 - Hatching Chick at SemEval-2018 Task 2 (Coster et al.)
-- Model Karşılaştırma Tablosu
+- je
 - in to post3.cpp
-- PRD: Lightweight MLP Based Content-Aware Profile-Based Text Compression System
+- Üniversite Ders Notları README Oluşturucu - Ajan Kılavuzu
 - Detaylı Açıklamalar
 - stbi_inline
 - Detaylı Açıklamalar
-- AddJournalPanel
+- Binary Heap
 - Detaylı Açıklamalar
 - uyg_3.c
 - Alt Seviye Programlama Ödev 2 (BLM2501) Yığın Analizi
@@ -10107,14 +10109,14 @@
 - Detaylı Açıklamalar
 - Ders 6 Çalışma Özeti
 - Örnek Sorular
-- Lectures Index
+- Ödev 1: Optimizasyon algoritmalarını karşılaştırma
 - split_data.py
-- jn
-- van Emde Boas tree
+- Ders 11 Genişletilmiş Notu: k-En Yakın Komşu, NumPy, Pandas ve scikit-learn ile Sınıflandırma
+- extend
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - 11. Risk Analizi Yöntemleri
-- Detaylı Açıklamalar
+- Introduction to Machine Learning (Karslıgil 2025)
 - doubly.c
 - dökümanlar/20011901/20011901.c
 - Istatistik
@@ -10125,9 +10127,9 @@
 - bioinfo_05-gmsalignment.pdf
 - stdlib
 - Detaylı Açıklamalar
-- Ders 7 Genişletilmiş Notu: Nesneye Yönelik Çözümleme Uygulaması (Süreli Yayın Yönetim Yazılımı: Kullanım Senaryosu, Use Case Şeması ve Alan Modeli)
+- Huffman kodlama
 - 9. Mobil Hesaplamanın Dezavantajları ve Enerji Tüketimi
-- teslim/src/train.py
+- Association
 - Ders 2 Genişletilmiş Notu: Kör Arama Algoritmaları ve Sezgisel Aramaya Giriş
 - UserActivity.kt
 - Detaylı Açıklamalar
@@ -10153,22 +10155,22 @@
 - 3. UML Diyagramları Üzerinden Tasarım Değerlendirmeleri
 - Detaylı Açıklamalar
 - Bölüm 16: Power Amplifiers
-- User
-- .main_gui
+- Kisi
+- tkinter
 - lab 4/mehmet_ali_duran/kod.cpp
 - zstd_codec.py
 - 3. İkinci Sunum: Mikroservis Tabanlı Büyük Veri ve Makine Öğrenmesi Uygulamaları
 - Be
 - ödev 3/sinem_sarak/kod.c
 - Detaylı Açıklamalar
-- .main_gui
+- 1. Hafta - 2 Mart 2022 Çarşamba
 - Detaylı Açıklamalar
-- 14. Komşuluk Listesinin C ile Gerçekleştirilmesi
-- Controlling Access to Files with ACLs
+- ne
+- Kuvvet Serisi (Power Series)
 - Mutexes
-- Detaylı Açıklamalar
+- mnist-digits.txt veri dosyası
 - bootstrap/js/bootstrap.min.js
-- Detaylı Açıklamalar
+- 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 - 2. Dersin Konularına Genel Bakış
 - Detaylı Açıklamalar
 - Emoji Prediction in Tweets using BERT (Nusrat et al.)
@@ -10193,60 +10195,60 @@
 - Ders 11 Çalışma Özeti
 - 10. Açık Kaynaklı Yazılımda Kalite Güvencesi
 - Detaylı Açıklamalar
-- Gradient Descent Slaytları (STAT 479, Raschka)
+- stbi_inline
 - blm_2512_codes/ödev_1.c
 - Algoritma Analizi/ödevler/2022/ödev3/malişen/20011701.c
-- Detaylı Açıklamalar
-- FinanceList
+- BLM3041 Hafta III: İlişkisel Cebir II ve SQL'e Giriş
+- SupervisorPage
 - Detaylı Açıklamalar
 - Diyot ileri/ters polarma
 - .parentPanel
-- semanage fcontext
+- hüsamettin_ışıktaş/src/evaluation/significance.py
 - Emoji Prediction and Model Analysis with NLP (Bitirme Raporu, Bedrettin Şamil Öztürk)
-- Tanzimat Dönemi (1839-1876)
-- Detaylı Açıklamalar
-- parted partition editor
-- YI-hafta-7-soru çözümü
-- a2/cs231n/optim.py
-- assignment2/cs231n/optim.py
-- DTFTAnalyzer
-- Dealer
+- teslim/src/experiments/results.py
+- Matematik 2/ders_kayitlari/2022-2023/sube_23/README.md
+- teslim/src/evaluation/significance.py
+- YI-hafta 2-3
+- Bölüm 4: ML'de Yeni Yaklaşımlar (ML v2)
+- Places
+- 5. Canlı Kodlama 1: İki Kelimenin Sözlükteki Sırası
+- CustomerReportPage
 - Ders 1 Genişletilmiş Notu: Ölçü Birimleri, Temel Devre Kavramları, Devre Elemanları ve Ohm Yasası
 - 🔹 Ders 1
 - Lab 3/kendi denemem.c
 - Detaylı Açıklamalar
-- Architecture Guide (ogbl-collab link prediction)
+- Linear Congruential Method
 - NoteList
-- Parser
+- SubscriberUI
 - Ders 11 Çalışma Özeti
 - Ders 12 Çalışma Özeti
 - Ders 1 Çalışma Özeti
 - Mesleki Hukuk ve Etik Dönem Projesi: Normatif Etik Nedir?
 - BookAuthorList
 - blm_3021_algorithm_analysis/ödevler/ödev_2/22011641.c
-- k_means.py
+- Bilgisayarla Görme Projesi Raporu (Image Captioning)
 - 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 - Detaylı Açıklamalar
 - Appendix A Summations
 - 7. Zincir Kuralı ile Çıkış Ağırlığının Türetilmesi
 - 12. Gradyan Düşümü ve Newton Yöntemi
 - 4. Manifold Öğrenme ve Denetimsiz Boyut İndirgeme
-- ChatbotGUI
+- CNN Part 1 slaytları
 - 5. Çok Dilli (Cross-Lingual) Kelime Vektörleri
 - Dersin Haftalık Notları İçindekiler (readme)
 - Detaylı Açıklamalar
 - binary_tree_example.c
-- matcherFromTokens
+- Özellik Seçimi: Online News Popularity Karşılaştırmalı Analiz raporu
 - Chapter 4 DC Biasing BJTs
 - 🔹 Ders 10
 - 7. Maliyet Tahmin Yöntemleri
-- Animation
+- Ders 10 Genişletilmiş Notu: Kod Kusurları: Divergent Change, Shotgun Surgery, Primitive Obsession, Feature Envy ve Video Kiralama Refactoring Örneği
 - ödev_2_runge_kutta_4/22011641.c
 - Örnek Sorular
 - Ders 18 Çalışma Özeti
 - Veri Tabanı Sistemlerinin Gerçeklenmesi
 - Restoran sipariş takip / yönetim sistemi
-- Detaylı Açıklamalar
+- DersDuzenlemeWindow
 - İnterpolasyon (eğri uydurma)
 - Ders 10 Çalışma Özeti
 - Ders 11 Çalışma Özeti
@@ -10260,11 +10262,11 @@
 - Detaylı Açıklamalar
 - Ders 3 Çalışma Özeti
 - Ders 14 Çalışma Özeti
-- Örnek Sorular
+- Mutlak / Şartlı Yakınsaklık
 - Ders 3 Çalışma Özeti
 - Ders 5 Çalışma Özeti
-- KullanıcıRol
-- 6. Galeri Örneği: Dizilerle Çokluk
+- malisoylu/kod.c
+- Detaylı Açıklamalar
 - Shell Programlama Uygulaması (Ders 6)
 - Ödev 3: DTFT Spektrum (üstel ve FIR sinyaller)
 - Ders 11 Çalışma Özeti
@@ -10278,11 +10280,11 @@
 - Vize.c
 - AdminDAO
 - Reliable data transfer
-- Time
-- Rezervation
 - SearchResult
-- Detaylı Açıklamalar
-- Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 2
+- Rezervation
+- ImageService.java
+- JournalUI
+- Tanzimat Dönemi (1839-1876)
 - vya_ödev_1_search.c
 - test-full-features.js
 - PRINTINT alt yordamı
@@ -10291,63 +10293,64 @@
 - kayra/20011901/20011901.c
 - Ders 6 Çalışma Özeti
 - sinem_sarak/kod.cpp
-- autorun_defaults.sh
+- SubscriptionUI
+- Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - Detaylı Açıklamalar
 - 7doktorHasta.c
-- Bilgisayar Mühendisliği Bölümü Oryantasyon Eğitimi
-- Term project requirements.txt (pinned deps)
+- ödev2/onder_gormez/main.c
+- ödev 2/mehmet_ali_duran/kod.c
 - MinMaxTuple
-- Detaylı Açıklamalar
+- teslim/src/data/loader.py
 - answer_1.c
 - Veri Yapıları ve Algoritmalar/ödevler/2022/ödev3/basel/20011906.c
 - Customer
-- Detaylı Açıklamalar
+- hüsamettin_ışıktaş/src/data/loader.py
 - framework
-- CreatePlaylistActivity
-- CreatePlaylistActivity
+- AudioModel
+- Ders 14 - Filtre Tasarımı Temelleri
 - Hotel
-- C File Processing
-- src/naive_bayes.py
-- stbi__uint16
+- Toast
+- Es
+- Detaylı Açıklamalar
 - hüsamettin_ışıktaş/src/ui/page_algorithm_runner.py
 - Contact
 - Detaylı Açıklamalar
-- GameState
+- Detaylı Açıklamalar
 - Örnek Sorular
-- BLM3510 Yapay Zeka 2025 Bahar projesi
+- Ünite 13 C Önişlemcisi
 - 7. İş Sözleşmesi ve Türleri
 - Chapter 10 Graphs (Rosen)
 - 2. Tozlar ve Mesleki Akciğer Hastalıkları
 - BLM3061-MSAD README
 - 4. Gürültü
 - Ders 4 Çalışma Özeti
-- Veritabanı uygulama dersi 1: DDL/DML
+- Databases (Ch 9)
 - Ders 10 Çalışma Özeti
 - yapisal_1.c
 - ypg/lab_4/lab_4.c
-- digital_signal_and_image_processing_using_matlab/README.md
+- nonlinear_equation_solving.c
 - Ders 11 Çalışma Özeti
-- Ders 4 Çalışma Özeti
+- Sunum 8 - Analog Sensörlerden Veri Toplama ve Dönüştürücüler
 - Ders 1 Çalışma Özeti
 - Ders 4 Çalışma Özeti
 - Ders 6 Çalışma Özeti
 - 10. Soru-Cevap: Proje Başvurusunda Satış Tahmini ve Form Alanları
 - 10. İnternet Kanunu (5651)
-- 3. Merkezi Eğilim Ölçüleri
+- Lojik Devreler-2 (2020) - Fourier, Nyquist, sayı sistemleri
 - Detaylı Açıklamalar
-- Örnek Sorular
+- Product
 - 🔹 Ders 14
 - Ders 14 - Veri Görselleştirme
-- Ui_MainWindow
+- 4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Final)
 - Ders 7 Çalışma Özeti
 - BLM1012 Yapısal Programlamaya Giriş Projesi (Sayı Eşleştirme)
 - Ders 2 Genişletilmiş Notu: Dönem Projesi Sunumları: Test Planı ve Test Uygulamaları
 - Detaylı Açıklamalar
-- Sanayi Devrimi
-- 07 - Etik yönergeleri
+- Tanzimat'ta ekonomi, toplum ve kültür
+- Credit Card Fraud Detection IEEE formatı rapor
 - Veri Madenciliği ve Bilgi Keşfi/slaytlar_notlar/2023/onder_gormez markdown/08_20_11_2023.md
-- II. Abdülhamit dönemi başlangıcı
+- Optimizasyon Ödevi Raporu (Burak Başol)
 - gutenberg_downloader.py - Project Gutenberg downloader
 - ödev 4/sinem_sarak/kod.c
 - mehmet ali duran/test.c
@@ -10363,45 +10366,45 @@
 - Improving Command-line Productivity
 - linkedoddeven.c
 - Users
-- BLM3120 Term Project README
+- Customer
 - 1. Yazılımı Etkileyen Eğilimler
-- hafta4_3_recrsv1.c
+- Detaylı Açıklamalar
 - Ödev-4 Tanımı: Sosyal Ağda Influencer Tespiti
-- org.springframework.boot.test.context.SpringBootTest
+- Detaylı Açıklamalar
 - Ders 11 Çalışma Özeti
 - 6. Kaynak Gösterme Sistemleri
 - Character
-- BLM5121 Web Mining Dönem Projesi Önerisi
+- lcd.py
 - 2. Sentinel-2 Görüntülerinde Bulut Giderme: DSen2-CR
 - Ders 1 Çalışma Özeti
 - 6. Sunum 5: FOTA için Program Kodu Sıkıştırma (CodeComp)
-- Bir Noktadaki Türev Tanımı (Limit Tanımı)
-- Chapter 11 Regression
+- 1.Computer Networks and the Internet.pdf
+- hüsamettin_ışıktaş/src/experiments/configs.py
 - Örnek Sorular
-- Red Hat System Administration II (RH134, RHEL 8.0) Workbook
+- teslim/src/experiments/configs.py
 - Content Distribution Network (CDN)
 - 7. DEBUG Programıyla Adım Adım İnceleme
 - 11. PDA örneği: $v v^R$ ve paralel makineler
-- Ders 7 Çalışma Özeti
+- Blogs
 - .findByID
 - 3. Sunum 2: Görüntü Manipülasyonu ve Tespit Yöntemleri
 - Kayra el yazısı notu - Hafta 3 sayma ve örnekleme
 - Ders 1 Çalışma Özeti
 - Ders 4 Çalışma Özeti
-- Embedding boyutu 128
-- User
+- ödev_2/main.py
+- Ders 21 Çalışma Özeti
 - Ders 10 Çalışma Özeti
 - Ders 12 Çalışma Özeti
-- rs
+- cholsky.py
 - Ders 14 Çalışma Özeti
-- 9. k-En Yakın Komşu (k-NN) Sınıflayıcı
+- linear_system_iterative_methods.py
 - UsersDAO
 - Ders 2 Çalışma Özeti
-- ödev_1_15011053/15011053.c
+- Struct_1.c
 - diferansiyel_denklemler/ödev_2/21011022.c
 - Chapter 27 Sorting Networks
 - Ders 6 Çalışma Özeti
-- 6. Doğrusal Denklem Takımlarına Giriş: Matrisler
+- mert_guler/Shipping.java
 - 4. Ödül Fonksiyonu Tasarımları
 - Ders 4 Çalışma Özeti
 - structured_programming/lablar/lab_3_20011017.c
@@ -10414,24 +10417,25 @@
 - Ders 9 Çalışma Özeti
 - ödev1/kayra/kod.c
 - search_engine/19011065.c
-- SettingsActivity
-- Top-down memoization
-- Detaylı Açıklamalar
+- PersonelMVCUII/Scripts/bootstrap.min.js
+- ödev2/onder_gormez/21501035.c
+- Suggestion
 - 14. Weka ile Uygulama
 - Ders 12 Çalışma Özeti
-- Hipotez testi
+- ödev 1/burak_basol/kod.c
+- Örnek Sorular
 - hafta6_0_link_list.c
 - Account
 - Fransız Devrimi (1789)
-- Ders 4 Çalışma Özeti
+- Vertex-cover problem
 - testWarehouseChangePassword
-- TekSatirInputDialog
+- KavramDialog
 - GitIslemleriWindow
 - 3. Analiz Modeli: Çember ve Merkezindeki Veri Sözlüğü
-- domManip
-- ProcessManager
+- 2023/batuhan odçıkın/batuhan odçıkın.c
+- proje_1/code.c
 - proje/21011084.c
-- proje/kayra/kod.c
+- Ders 4 Çalışma Özeti
 - 5. Elektrik Akımı ve Su Benzetmesi
 - 7. Bağımsız Kaynaklar, Polarite ve Güç
 - 9. Pasif Elemanlar, Kablolar ve İdeal Varsayımlar
@@ -10439,10 +10443,10 @@
 - Algoritma Analizi/ödevler/2022/proje/basel/20011906.c
 - backTracking.c
 - Ratings
-- Scheduling Future Tasks
+- 16. Bölüm Sonu Soru-Cevapları
 - 3. Fermi Paradoksu
 - Ders 12 Çalışma Özeti
-- Chapter 10 Controlling the Boot Process
+- Graf boyama ve kromatik polinomlar
 - Ders 2 Çalışma Özeti
 - Recursion.pdf (BBG2 Ders 8, Amasyalı)
 - Ders 3 Çalışma Özeti
@@ -10450,12 +10454,12 @@
 - Makine Öğrenmesi-1
 - Ders 11 Çalışma Özeti
 - Ders 14 Çalışma Özeti
-- Duluth UROP at SemEval-2018 Task 2 (Jin & Pedersen)
+- Ders 11 Çalışma Özeti
 - Ders 1 Çalışma Özeti
 - 7. Grup Çalışması: Hayat Bilgisini Toplama ve Kullanma Fikirleri
 - Ders 7 Çalışma Özeti
 - Ders 5 Çalışma Özeti
-- ShowCarStockPage
+- ödev_2/main.c
 - Ders 6 Çalışma Özeti
 - Ders 9 Çalışma Özeti
 - stbi__malloc
@@ -10468,30 +10472,30 @@
 - 3. Birim Tutarlılığı, Yuvarlama ve Üslü Sayılar
 - 6. Devre Elemanları ve Ölçü Aletleri
 - 12. Programlama Dillerinin Nesilleri
-- Random Subspace
+- QUIC
 - OfficialVehicle
-- UserDao.kt
-- FocusTrap
+- User
+- Örnek Sorular
 - Doyma Bölgesi
 - İleri İşletim Sistemleri/ders_kayitlari/2022-2023/README.md
 - Detaylı Açıklamalar
-- CustomEvents
-- Personnel
+- .initialize
+- Ev fiyat aralığı önerisi
 - Detaylı Açıklamalar
 - lab 2/ramazan_pirinc/kod.c
 - mobile/lib/main.dart
-- resource_path.py
+- Makale Raporu: Seyahat Satıcısı Problemi (Nisan 2024)
 - Ders 19 Çalışma Özeti
-- linkedlist.c
-- Ders 26 Çalışma Özeti
+- Ders 9 - Ayrık Zamanlı Fourier Dönüşümü (DTFT)
+- Database
 - Account
-- IPorcessManager
-- Process
+- Detaylı Açıklamalar
+- Product
 - Ders 11 Çalışma Özeti
 - 13. Ohm Yasası
 - Ders 17 Çalışma Özeti
 - jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
-- Book
+- SaS-10 Aliasing and Sampling slaytı
 - Ders 25 Çalışma Özeti
 - Ders 5 Çalışma Özeti
 - Ders 6 Çalışma Özeti
@@ -10499,7 +10503,7 @@
 - Ders 9 Çalışma Özeti
 - blm_1031_procedural_programming/lablar/lab_3.c
 - 5. İçerik Tabanlı Öneri
-- ProcessManager
+- ALU32
 - Ders 10 Çalışma Özeti
 - Ders 11 Çalışma Özeti
 - Ders 6 Çalışma Özeti
@@ -10507,37 +10511,37 @@
 - Ders 9 Çalışma Özeti
 - horspool.c
 - RegularVehicle
-- Apartment
+- 8. EXE Tipi Programların Yapısı
 - 8. Big O Gösterimi
 - Mage
 - Homework2.c
-- Apartment
+- Kalman Filtresi
 - Ders 4 Çalışma Özeti
 - Bilgisayar Bilimlerine Giriş/ders_kayitlari/2020-2021/sube_2/README.md
-- Ders 8 Çalışma Özeti
-- Kayra el yazısı notu - Sürekli rastgele değişkenler
+- Gömülü sistemler ve RTOS ders notu
+- ChatController
 - testDealerRequestApproval
 - teslim/src/ui/page_algorithm_runner.py
 - ödev_4/20011047.c
 - maze_problem/main.c
 - Ödev4/malişen/20011701.c
-- Bölüm 1: Ders Tanıtımı (Hesaplamalı Anlambilim, 2021 notları)
+- Örnek Sorular
 - Personnel
 - BLM2022 - Bilgisayar Donanımı - Ödev 1
 - 2x1_blm_2031_structured_programming/lab_4.c
 - 9. Başvuru Formunun Alanları Nasıl Doldurulur?
 - 3. Meslek Etiği
 - Ders 11 Çalışma Özeti
-- BLM3061 Lab 5 (2024): 8255 ile Sayıcı/Şifre Doğrulama Tasarımı
+- BLM3061 Lab 5 - 8255 ile Sayıcı Tasarımı (şifre doğrulama)
 - 1/23011610.c
-- Ders 17 Çalışma Özeti
-- Veritabanı Yönetimi Ders 6 Lab (2020-2021) altyazı
+- Ders 23 Genişletilmiş Notu: Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam)
+- Ders 1 Genişletilmiş Notu: Dersin Tanıtımı, Amacı ve Kapsamı
 - 6. Mikroişlemcilerin Tarihsel Gelişimi
 - BitTorrent
 - lab 4/yusuf_safa_koksal/kod.c
 - SearchObject
 - lab_4/22011049.c
-- Ui_MainWindow
+- matchinggame.c
 - Detaylı Açıklamalar
 - Ders 10 Çalışma Özeti
 - Ders 11 Çalışma Özeti
@@ -10565,10 +10569,10 @@
 - Ders 2 Çalışma Özeti
 - 4.1 Positional Number Systems
 - 6. Telif Hakkı, Eser ve Eser Sahibinin Hakları
-- Ui_MainWindow
+- Bode Diagram
 - answer_1_yedek_dizi_ile.c
 - Ders 4 Çalışma Özeti
-- 📚 Hukukun Genel Kavramları
+- Bias Stabilization (4.12)
 - 2021_lab4.c
 - Motorcycle
 - 📚 Kariyer ve Çalışma Psikolojisi
@@ -10576,40 +10580,41 @@
 - Ders 23 Çalışma Özeti
 - 2021/lab_4/main.c
 - uygulama/circular_queue.c
-- 9. Okuma, Yazma ve Dizin İşlemleri
+- Chapter 10 Systems Approach - Effects of Rs and RL
 - lab_4/21011084.c
 - Ders 24 Çalışma Özeti
 - Ders 27 Çalışma Özeti
-- 📚 Satış Yönetimi
-- 📚 Tüketici Davranışı
+- Lab2-20011041.c
+- Product
+- BLM2012 Course Project 2023: Multiplication Table Practice (due 01.06.2023)
 - Ders 4 Çalışma Özeti
 - dökümanlar/20011901.c
-- 6. Davranışsal diyagramlar
+- images.js
 - lab 4/yusuf_safa_koksal/kod.cpp
 - 📚 Türk İdare Tarihi
-- Mat_1320_Exercises_9_10.pdf
-- XmlRecordReader
+- Acilis
+- HMW3 Boyer Moore/17011086.c
 - Ders 5 Çalışma Özeti
-- 7.6 Bağıl Büyüme Oranları
+- 16. Sözde Komutların Ayrıntıları
 - Ders 16 Çalışma Özeti
 - ödev 1/batuhan_odcikin/kod.c
 - Ödev-3 Tanımı: Hashing ile Arama Motoru
-- Detaylı Açıklamalar
+- 7. Gereksinim Mühendisliğinin Adımları
 - basic_stack.c
 - Ders 4 Çalışma Özeti
 - Ui_MainWindow
-- sysdiagrams
-- Ders 12 Çalışma Özeti
-- Ders 19 Çalışma Özeti
+- DealerOrderApprovalPage
+- Örüntü Tanıma Makale Özeti
+- Ders 2 Çalışma Özeti
 - fonk
 - 10. Koreografi tabanlı saga
-- Ders 1 Çalışma Özeti
-- Ders 9 Çalışma Özeti
+- 4.2 Directed Graphs (Sedgewick-Wayne)
+- proje_1.c
 - 11. Orkestrasyon tabanlı saga
 - 11. Mikroservislerde test: tanım, önem ve test çerçeveleri
 - 6. Neden bir monoliti yeniden yapılandıralım?
-- SELinux (Security Enhanced Linux)
-- CENG 222 Hafta 11 - Ki-kare testleri
+- Chapter 7: Response of First-Order RL and RC Circuits (Problems 7.10-7.107)
+- 4. Tekrarlama (Sabit Nokta) Yöntemi
 - Ders 5 Çalışma Özeti
 - CENG 222 Hafta 14 - Sayma süreçleri ve simülasyon
 - Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları Altyazıları
@@ -10617,19 +10622,20 @@
 - Ders 10 Çalışma Özeti
 - Ders 5 Çalışma Özeti
 - circularqueue.c
-- Bölüm 8 Temel RL ve RC Devreleri
+- Sürülen RL devresi
 - 2020/sparseMatrix.c
-- Ders 6 Çalışma Özeti
+- Ders 12 Lab: Öğrenci numarasına göre desen yakalayan devre
+- mert_guler/Product.java
 - Ders 12 Çalışma Özeti
 - Ders 3 Çalışma Özeti
 - Ders 5 Çalışma Özeti
-- Ders 6 Çalışma Özeti
-- VetCareApp
+- NYP Lab-4A: Staff salary raise with threads and files (24.12.2023)
+- Ders 4 Çalışma Özeti
 - Clinic Reservation Information System (CRS)
 - uyg-3HaticeErdirik.c
-- structured_programming/lablar/lab_2_20011017.c
+- 7. Dış Kalite Ölçütleri
 - lab_20011099.c
-- Ders 13 Çalışma Özeti
+- testDealerOrderApproval
 - 6. İçerik Tabanlı Öneri Sistemleri
 - 🔹 Ders 12
 - codes/queue.c
@@ -10651,13 +10657,13 @@
 - Ders 4 Çalışma Özeti
 - Ders 11 Çalışma Özeti
 - uyg-3ŞeymaDerdiyok.c
-- Ders 12 Çalışma Özeti
+- BlogCardViewModel
 - Ders 12 Çalışma Özeti
 - Ders 4 Çalışma Özeti
-- Lodging
+- 5. Yapısal diyagramlar
 - Batuhan Yılmaz Panel De Pon sömestir projesi raporu
 - BBG Slayt 6 - Dizi İşlemleri
-- Ders 5 Çalışma Özeti
+- report_helper.py
 - 5. LOCUS Dağıtık İşletim Sistemi
 - algorithm_analysis/backtracking.c
 - Ders 11 Çalışma Özeti
@@ -10670,44 +10676,45 @@
 - 7. Yerleşim, kapsama ve bağlantılılık
 - 12. Büyük Veri
 - Ders 13 Çalışma Özeti
-- MainWindow
+- Detaylı Açıklamalar
 - Ders 2 Çalışma Özeti
 - Seminer ve Meslek Etiği dersi README
-- Date
+- Konum Belirleme (Olasılıksal Robotik 8)
 - lab_4_code.c
 - Standart Sapma Bölme Kriteri
 - Ders 6 Çalışma Özeti
-- 4. CMMI İlgi Alanları, Tarihçe ve Çevik Süreçler
-- Ders 2 Çalışma Özeti
-- Ders 6 Çalışma Özeti
+- 8. Arasındalık Merkeziliği
+- Veri akışı
+- 16. Tekrar ve ek konular: açıklama satırları, taşınabilirlik, biçim belirteçleri
 - Car
 - Ders 4 Çalışma Özeti
 - Ders 5 Çalışma Özeti
-- Chunk size kararı (40KB hipotezi, EDA ile seçim)
-- Ders 8 Çalışma Özeti
+- 4. Dolaysız Yöntemler: Gauss Yok Etme (Eliminasyon) Yöntemi
+- 11. Dev-C++ uygulaması: adresler, işaretçiler ve işaretçi aritmetiği
+- Ders 2 Çalışma Özeti
 - HMW1 Cache Buffer/17011086.c
 - 1. Diferansiyel Denklemlerin Sinir Ağlarıyla Çözümü: PINN, DGM ve ELM
 - 2. Hibrit CNN-LSTM ile İnsan Aktivitesi Tanıma
-- dice_prob.c
+- News Articles veri kümesi (Kaggle, sport/business)
 - graph_init_weighted.c
-- Ders 10 Çalışma Özeti
+- languages_and_finite_automata_class_06.pdf
 - treetraversal.c
 - lab_3_20011002.c
-- 8. Algısal Özetleme: aHash, dHash, pHash, wHash (Sekizinci Sunum)
-- ödev_3_15011053/15011053.c
-- 11. Hopscotch Hashing
-- hafta5_eg3.c
-- Ders 11 Çalışma Özeti
+- Veri Yapıları ve Algoritmalar/ödevler/2022/proje/basel/20011906.c
+- 4.3 Dört Temel Dizin Mimarisi
+- 8254/8253 Programlanabilir Zamanlayıcı
+- VİBA 2024-2025 Ödevi: Data Link Layer CRC / Stop&Wait uygulaması
+- 4. Üçüncü Sunum: İnsan Kaynakları Sistemi (İki Muhasebe Programı)
 - linked_list_example.c
 - algorithm_analysis_blm_3021/ödev_2_20011017/20011017.c
-- Ders 6 Çalışma Özeti
+- Uygulanan İyileştirmeler
 - yapisal_uyg1.c
-- Örnek Sorular
-- 9. Örnek 1: İki 16 Bitlik Sayının 32 Bitlik Toplamı
+- Seçilen Modeller
+- 9. CSP'nin yedi temel önerisi
 - 2. Graf evrişim ağları ile göğüs görüntüsü sınıflandırma
 - hafta6_eg5.c
-- Ders 12 Çalışma Özeti
-- Ders 4 Çalışma Özeti
+- 9. Dilbilgisinden modele: ağaç yapraklarını sayma örneği
+- FocusTrap
 - 12. Sezgisel Arama ve En İyi İlk Arama
 - Ders 3 Çalışma Özeti
 - Ders 2 Çalışma Özeti
@@ -10719,17 +10726,17 @@
 - 8. Değerlendirme ve Ölçüm Hataları
 - 11. Veri Tipleri
 - Ders 12 Çalışma Özeti
-- 📚 Ekonomi Politikaları
-- Ders 26 Çalışma Özeti
+- 11. Karar Ağacı
+- 8. Gerçekleştirme Sorunları (1): Frontier, Fetcher, Parser, Depo
 - ConstantPointer.c
-- Ders 6 Çalışma Özeti
+- Note
 - Ders 1 Çalışma Özeti
 - 6. Düşük Maliyetli Arama (Uniform Cost Search)
 - 3. Q-Learning ve Q tablosu
 - Örnek Sorular
 - Ders 20 Çalışma Özeti
-- Ders 9 Çalışma Özeti
-- Ders 7 Çalışma Özeti
+- Ders 20 Çalışma Özeti
+- Ders 21 Çalışma Özeti
 - Ders 26 Çalışma Özeti
 - Ders 3 Çalışma Özeti
 - Ödev4/kayra/kod.c
@@ -10737,12 +10744,13 @@
 - 1. Öğrenme türleri içinde pekiştirmeli öğrenme
 - 5. Q-Learning algoritması ve sayısal güncelleme
 - car_info_holder_and_sorter_struct.c
-- linkedlistdouble.c
-- linked_list_2.cpp
+- Ders 6 Çalışma Özeti
+- Appendix B Sets, relations, functions, graphs, trees
 - Ders 3 Çalışma Özeti
+- 🔹 Ders 9
 - Ders 5 Çalışma Özeti
 - rotateArray.c
-- WorkerThread
+- Monoton Dizi
 - diffproject_2/22011049.c
 - lab 1/yusuf_safa_koksal/kod.c
 - 4. Fotoğraflardan Vücut Kitle İndeksi Tahmini
@@ -10754,19 +10762,19 @@
 - 6. Regresyon olarak kurulan çözümler
 - 7. Model Birleştirme
 - Ders 5 Çalışma Özeti
-- CustomAuthorizeAttribute
+- newton_raphson_method.c
 - Lab3-20011901.c
 - 26UsRec.c
 - 6. LOCUS'un Bedeli ve Sonuç Bölümü
 - 21011084_lab_3.c
 - 7. ITC Dağıtık Dosya Sistemi: Amaç ve Sınıflandırma
-- Ders 6 Çalışma Özeti
-- Hafta-6/S4.c
-- yapısal_programlama/lab_4/21011022.c
+- proje_ödev/simpsons_rule.c
+- Lab 3/Uygulama 3.c
+- sınav 3/Uygulama 3.c
 - Ders 3 Çalışma Özeti
 - 8-FuncArray (1).c
 - Ders 6 Çalışma Özeti
-- 7. Kitaplık ve Raf sınıfları: nesne dizileri
+- yap_prog_gir_gant_diyagramı_lab_4.c
 - InfoClass
 - ypg/lab_4/main.c
 - Ders 14 Çalışma Özeti
@@ -10779,40 +10787,40 @@
 - Ders 5 Çalışma Özeti
 - Ders 8 Çalışma Özeti
 - FindPrimeFactorFonk.c
-- TopRec.c
-- Chapter 12 Installing Red Hat Enterprise Linux
+- yap_prog_gir_minor_matrix_lab_3.c
+- myUyg-3butWithTeacher.c
 - arraylist.zip_expanded/Main.java
-- Uyg-2/odev2.c
+- blm_1012_introduction_to_procedural_programming/lablar/lab_4/lab_4.c
 - Ders 3 Çalışma Özeti
 - serviceWorker.js
 - 2023/lab4.c
 - BLM2012 Project Work V1.1 (Autopark)
 - hospital/SurgeryUnsuccessfulException.java
-- yp_uyg1_s2v2.c
+- blm_1031/lab_4/main.c
 - lab_3/ApartmentException.java
 - vya_ödev_1_casus.c
-- findtriplets_recursive.c
+- structural_programming/lab_2/main.c
 - lab_3/ItemAlreadyInCartException.java
 - ArrayOfPointers.c
-- Paralel Tepe Tırmanma ve Genetik Algoritma ile Sudoku Çözücü raporu (2015)
+- Genetik algoritma ile Sudoku çözücü
 - 3. Göğüs röntgeni veri setleri ve Graph Learning
-- 2. Birinci Sunum: Yazılım Evi İnsan Kaynakları Sistemi
+- runge_kutta_4method.c
 - 5. Servikal hücre segmentasyonu ve segmentasyon veri setleri
-- vize1_kodSorusu.c
-- getWidthOrHeight
+- datapath
+- blm_2512/lablar/lab_2.c
 - matris_gez.c
 - 2. Dersin Kapsamı ve Kullanılan Araçlar
 - 1. Ödev problemi ve ortak deney düzeni
 - 7. Karar ağacı dışındaki taban öğreniciler
 - 5. Ödül Hilesi ve Modelin Davranışı
-- 5. Dördüncü Sunum: Seyahat Acentesi Biletleme Sistemi (C++ ve GoogleTest)
-- blm_1012_introduction_to_procedural_programming/lablar/lab_3/lab_3.c
-- Ders 1 Çalışma Özeti
-- 5. Sınıf Şeması (Class Diagram)
-- resolve
+- lab2/mert_guler/kod.c
+- circular_linkedlist.c
+- doubly_linkedlist.c
+- Veri Tabanı Ders Notları 2: ER ve UML
+- 8. Yedinci Sunum: Medya Takip Sistemi (Abonelik ve Onay Akışı)
 - 9. Sınıf sayısını azaltan ek denemeler
 - YukariAsagiDugmeDizilimi
-- createCache
+- Classical Shortest Path vs Q-Learning Comparison
 - Ders 10 Çalışma Özeti
 - Ders 13 Çalışma Özeti
 - Ders 14 Çalışma Özeti
@@ -10820,39 +10828,57 @@
 - Ders 4 Çalışma Özeti
 - lab 1/mehmet_ali_duran/kod.c
 - Ders 7 Çalışma Özeti
-- 14. Gözlemlenebilir servisler
+- Veri azaltma slaytı
 - 2. Sunum 1: Öneri Sistemleri
-- inspectPrefiltersOrTransports
+- 18. Android Studio ile İlk Proje
 - Arayüzün Çalıştırılması
 - ödev_2_median_finding/11011027_mustafa_berkay_mutlu.c
+- 12. SharedPreferences
+- 8. Pi Algoritmasını Adım Adım İyileştirmek
+- Ders 25 Çalışma Özeti
 - Ders 23 Çalışma Özeti
 - pascal_ucgeni.c
 - data_structures_and_algorithms_blm_2512/ödev_3_20011017/20011017.c
 - ocakcisena/backtracking.c
 - S5.c
+- 2. Paylaşımlı hesaplamanın tarihçesi
+- Ders 17 Çalışma Özeti
 - ödev_2_20011047.c
 - Vehicle
-- adjecancymatrix.c
-- KullaniciViewModel
-- Uygulama2.c
+- Ders 29 Çalışma Özeti
+- 2. Newton-Raphson Yöntemi
+- Ders 1 Çalışma Özeti
+- Ders 7 Çalışma Özeti
+- bisection_method.c
 - bbg2-uy4/uyg5.c
 - bbg2-uy4/uyg6.c
+- gregory_newton_interpolation.c
 - BLM3520 2022-2023 Dönem Projesi: Öğrenci Ev Arkadaşı Eşleştirme
-- yapısal_programlama/lab_1/lab_1.c
+- inverse_matrix.c
+- regula_falsi_method.c
+- proje_ödev/trapezoidal_rule.c
 - algoritma_analizi/ödevler/ödev_2/21011084.c
+- soru 3/ramazan_pirinc/kod.c
 - Ders 24 Çalışma Özeti
+- Ders 15 Çalışma Özeti
+- Ders 25 Çalışma Özeti
+- aeroplane_info_read_in_file.c
 - 5. Obezite Düzeyi Sınıflandırması ve Kategorik Veri Kodlaması
 - Ders 8 Çalışma Özeti
-- 2. Başarısız Aramada Beklenen Deneme Sayısı
+- lab 3/yusuf_safa_koksal/kod.c
 - 2. Android'de Çalışma Ortamı, Paketleme ve Geliştirme Araçları
-- Ders 10 Çalışma Özeti
+- introductiontostructuredprogramming/lablar/lab_3_20011017.c
 - 9. Mobil Uygulama Geliştirmede Kısıtlar: Veri Aktarımı ve Depolama
+- lab_5_20011017.c
+- lab_3_code.c
+- Principle of Inclusion-Exclusion
+- Unit Delay Element (Birim Gecikme Elemanı)
 - Ders 11 Çalışma Özeti
-- Ders 4 Çalışma Özeti
+- Ders 2 Çalışma Özeti
+- Ders 3 Çalışma Özeti
 - Ders 5 Çalışma Özeti
-- Ders 7 Çalışma Özeti
-- 9. Ayrıntılı tasarım
 - ödev_1_visualstudio/main.cpp
+- lab4/mert_guler/kod.c
 - 3. Ağ yapısı, enerji ve ağ ömrü
 - 5. WSN'lerin karakteristikleri
 - 9. Protokol tasarım zorlukları, gizlilik ve güvenlik
@@ -10860,23 +10886,32 @@
 - 2. IoT Paradigması: Tek Paradigma, Birçok Vizyon
 - 7. IoT'de Güvenlik ve Mahremiyet
 - 8. Mobil Kötücül Yazılım Tespiti ve GAN
-- Program
-- ödev 2/sinem_sarak/kod.c
-- 4. Kural Madenciliğinin Maliyeti
-- Ders 10 Çalışma Özeti
-- IViewable
+- agc_2.c
+- era.c
+- linkedlistdblcrcl.c
+- prefix_to_postfix_converter.c
+- Ders 13 Çalışma Özeti
+- Ders 25 Çalışma Özeti
+- Ders 5 Çalışma Özeti
 - Ders 13 Çalışma Özeti
 - Ders 14 Çalışma Özeti
-- Ders 15 Çalışma Özeti
+- Ders 8 Çalışma Özeti
+- Ders 2 Çalışma Özeti
+- NAT
+- Ders 10 Çalışma Özeti
+- Ders 11 Çalışma Özeti
+- Ders 12 Çalışma Özeti
+- Ders 13 Çalışma Özeti
 - Ders 2 Çalışma Özeti
 - Ders 3 Çalışma Özeti
-- NAT
-- bogosort.c
-- 6. Sınıf diyagramı: özellikler, işlemler, parametreler
-- Bublesort.c
-- seperateChaining.c
+- Ders 5 Çalışma Özeti
+- Ders 6 Çalışma Özeti
+- Ders 7 Çalışma Özeti
 - o_rnekkod.c
+- Ödev 1 Raporu: Genetik algoritma ile resim yeniden oluşturma (Diner, Çaycı)
+- Ders 5 Çalışma Özeti
 - 8. Bileşenler arası ilişkiler
+- Ders 6 Çalışma Özeti
 - 10. Video Duvarı Arıza Tespiti: CNN mi, Histogram mı?
 - 3. Şerit Algılama: Piksel Tabanlı İkili Segmentasyon
 - 9. Sesten Öfke Tanıma: openSMILE Öznitelikleri ve Pencereleme
@@ -10886,33 +10921,69 @@
 - 4. Elektron Mikroskobu Görüntülerinde U-Net ile Segmentasyon
 - 8. Otomatik Kodlayıcı ile Film Öneri Sistemi
 - 9. Bitcoin Fiyat Tahmininde Grid Search ve Bayes Optimizasyonu
-- 3. Algısal Hash: Literatür ve Nesne Takibi (Üçüncü Sunum)
-- 6. Çakışmaya Dayanıklı Hash Fonksiyonları: Tasarım ve Tarihçe (Altıncı Sunum)
-- 10. UML sınıf modelinin ayrıntıları
-- 10. Önerme mantığı
-- 2x1_blm_2031_structured_programming/lab_2.c
-- Örnek Sorular
+- Ders 1 Çalışma Özeti
+- 9. DEMOS/MP'de Proses Göçü: Amaçlar ve Adımlar
+- Ders 12 Çalışma Özeti
+- Ders 3 Çalışma Özeti
+- Ders 4 Çalışma Özeti
+- 7. State Uygulama Örneği: PIM Yazılımında Temiz ve Kirli Durum
+- Occupancy Grid Haritalama (Olasılıksal Robotik 9)
+- Real-Time Classification of Fraudulent Reviews Using Supervised and Deep Learning
+- Ders 1 Çalışma Özeti
+- 12. A-Priori Algoritması
 - 23011606.cpp
 - Domain Model
 - 11. MobileNetV2 ile Meyve Tazelik Sınıflandırması
-- 16-MatrisFunc.c
-- Büyük metin sabit.c
+- Ders 11 Çalışma Özeti
+- Ders 2 Çalışma Özeti
+- Ders 6 Çalışma Özeti
+- ExampleInstrumentedTest.kt
 - Notification Service README
 - Genişletilmiş Kalman Filtresi (EKF)
 - 6. İncelenen makaleler
 - 2. Masaüstü Uçuş Takip Simülasyonu: JUnit ve SikuliX
 - 2. ATM otomasyonu: negatif testler, Jira biçimi, Selenium ve Postman
-- MoreStringOps.c
-- yapısal_programlama/lab_2/lab_2.c
+- Ders 3 Çalışma Özeti
+- Ders 4 Çalışma Özeti
 - Ders 9 Çalışma Özeti
-- Ders 14 Çalışma Özeti
-- Ders 2 Çalışma Özeti
-- Ders 1 Çalışma Özeti
+- Ders 4 Çalışma Özeti
+- Ders 5 Çalışma Özeti
 - Ders 8 Çalışma Özeti
+- Ders 6 Çalışma Özeti
+- Ders 8 Çalışma Özeti
+- 17. Bir C Programının Derlenme Aşamaları
+- MoreStringOps.c
+- 5. Hızlı Üs Alma
+- UsRec.c
+- bbg2-uy4/uyg7.c
+- BBG2-2016/uyg7.c
+- 2018-Bahar/lab4.c
+- yapısal_programlama/lab_2/lab_2.c
+- Function_Supplier
+- inverse.c
+- gauss_seidel_method.c
+- soru 2/ramazan_pirinc/kod.c
+- lab 2/mehmet_ali_duran/kod.c
+- lab 3/mehmet_ali_duran/kod.c
+- introduction_to_procedural_programming/lablar/lab_4/lab_4.c
+- introductiontostructuredprogramming/lablar/lab_4_20011017.c
+- ödev-2/mehmet_ali_duran/kod.c
+- burak_basol/Repository.java
+- divide_n_conquer_algorithms_c/code.c
+- 11. $e^x$ Serisi
+- 18. `scanf` ve Giriş Tamponu
+- 4. Stirling Formülü: Yaklaşık Çözümün Bedeli
+- 2017/odev2.c
+- 1x2_blm_1022_numerical_analysis/gregorynewton.c
+- sortBu2.c
+- yp_uyg1_s2.c
+- structural_programming/lab_1/lab_1.c
+- Algoritma Analizi/ödevler/2022/ödev2/basel/20011906.c
 - Ders 3 Çalışma Özeti
 - Ders 8 Çalışma Özeti
 - Ders 9 Çalışma Özeti
-- UserDatabase.kt
+- 15PowRec.c
+- Proje.c
 - 3. Web Tabanlı Kart Oyunu: Kara Kutu, Jest, Cypress ve Lighthouse
 - 6. Hastane Yönetim Sistemi: Test Türleri ve Kara Kutu Test Tablosu
 - 4. Sözcük çözümleyici: test durumu, hata raporu, JUnit ve bütünleme testi
@@ -10920,26 +10991,32 @@
 - Ders 3 Çalışma Özeti
 - Ders 13 Çalışma Özeti
 - Ders 19 Çalışma Özeti
+- 2020/src/nyp14a/MatchWithPool.java
+- 2020/src/nyp14a/MatchWithPoolVerbose.java
+- 2020/src/nyp14b/BankSimulation.java
+- 2020/src/nyp14b/BankSimulationV2.java
+- 2020/src/nyp14c/BankSimulation.java
+- 2020/src/nyp14c/BankSimulationV2.java
+- 2023/src/nyp14a/MatchWithFixedPool.java
 - ödev 3/20011701.c
-- Tekrarlama Metodu (Fixed-Point Iteration)
-- linked_list_1.cpp
-- lab_codes/lab_1/main.c
+- 2023/src/nyp14a/MatchWithPool.java
+- 2023/src/nyp14a/MatchWithPoolVerbose.java
+- 2023/src/nyp14b/BankSimulation.java
+- 2023/src/nyp14b/BankSimulationV2.java
+- 2023/src/nyp14c/BankSimulation.java
+- 2023/src/nyp14c/BankSimulationV2.java
+- nyp14x/BankSimulation.java
+- nyp14x/BankSimulationV2.java
+- nyp14y/BankSimulation.java
+- nyp14y/BankSimulationV2.java
 - 5. Anomali Tespit Servisi: Birim, Entegrasyon ve Sistem Testi
-- 2016/mod.c
-- 2015/Lab5-ugy3/mod.c
-- BBG2-2016/uyg5.c
-- kesir.c
-- odev2 (1).c
 - Uyg-2/Untitled2.cpp
 - Uyg-2/Untitled3.cpp
-- yapısal_programlamaya_giriş/lab_4/21011022.c
 - Algoritmalar/binarysearch.c
-- agc_3.c
 - 4. Bilimsel Yazımın İlkeleri ve Kökeni
 - 7. Makale ve İyi Bir Makalenin Özellikleri
 - 10. Web of Science ile Literatür ve Atıf Takibi
 - 5. Tek hücre RNA dizileme: temel kavramlar ve analiz akışı
-- lab 4/kod.c
 
 ## God Nodes (most connected - your core abstractions)
 1. `Caltech-101 Motorbikes Dataset (image_processing ödev_2)` - 400 edges
@@ -10960,10 +11037,10 @@
   1-2/Devre Teorisi ve Elektronik Devreler/Devre Teorisi/kitaplar/William Hart Hayt_ Jack E Kemmerly_ Steven M Durbin - Engineering circuit analysis-McGraw-Hill (2012).pdf → graphify-out/converted/lab1_preps_30a9fbcb.md
 - `Regula-Falsi yöntemi` --semantically_similar_to--> `Yarıya Bölme (Bisection) Yöntemi`  [INFERRED] [semantically similar]
   graphify-out/converted/rapor_21f53c9b.md → 1-2/Sayısal Analiz/slaytlar_notlar/2021/slaytlar/Slide.pdf
-- `K-Nearest Neighbor (KNN)` --semantically_similar_to--> `K-Means clustering`  [INFERRED] [semantically similar]
-  Mesleki Seçmeli 1/Veri Madenciliğine Giriş/slaytlar_notlar/5.pdf → Lisansüstü/Veri Sıkıştırma/proje/2026/hüsamettin_ışıktaş/data/diverse/books/book_0070/full.txt
 - `bisection()` --semantically_similar_to--> `Regula-Falsi yöntemi`  [INFERRED] [semantically similar]
   1-2/Sayısal Analiz/ödevler/2023/burak_atalay/blm_1022_numerical_analysis_for_computer_science/dönem_proje/proje.c → graphify-out/converted/rapor_21f53c9b.md
+- `Rol Tabanlı Erişim Kontrolü (RBAC)` --semantically_similar_to--> `Role-based access control (RBAC)`  [INFERRED] [semantically similar]
+  3-1/Veritabanı Yönetimi/ders_kayitlari/2020-2021/altyazi_ozetleri/ders_9_ozet.md → Mesleki Seçmeli 1/Bilişim Sistemleri Güvenliği/Sınav Soruları Bu Kitabın Bire Bir Aynısı.pdf
 
 ## Import Cycles
 - None detected.
@@ -12551,43 +12628,43 @@
 - **Profil tabanlı metin sıkıştırma proje belgeleri** — lisansüstü_veri_sıkıştırma_proje_2026_hüsamettin_ışıktaş_data_diverse_books_book_0137_full, lisansüstü_veri_sıkıştırma_proje_2026_hüsamettin_ışıktaş_data_diverse_books_book_0138_full, lisansüstü_veri_sıkıştırma_proje_2026_hüsamettin_ışıktaş_data_diverse_books_book_0139_full, lisansüstü_veri_sıkıştırma_proje_2026_hüsamettin_ışıktaş_data_diverse_books_book_0140_full, lisansüstü_veri_sıkıştırma_proje_2026_hüsamettin_ışıktaş_data_diverse_books_book_0141_full [INFERRED 0.95]
 - **Web kullanım verisi ön işleme adımları** — lisansüstü_web_madenciliği_proje_2026_hüsamettin_ışıktaş_master_questions_kullanici_tanim, lisansüstü_web_madenciliği_proje_2026_hüsamettin_ışıktaş_master_questions_sessionization, lisansüstü_web_madenciliği_proje_2026_hüsamettin_ışıktaş_master_questions_yoltam, lisansüstü_web_madenciliği_proje_2026_hüsamettin_ışıktaş_master_report_sayfa_görüntüleme_pageview [INFERRED 0.95]
 
-## Communities (11663 total, 3903 thin omitted)
+## Communities (11735 total, 3905 thin omitted)
 
 ### Community 0 - "stdio"
 Cohesion: 0.00
-Nodes (201): main(), topla(), main(), factRecurse(), main(), main(), powRv1(), powRv2() (+193 more)
+Nodes (202): main(), topla(), main(), factRecurse(), main(), main(), powRv1(), powRv2() (+194 more)
 
 ### Community 1 - "android.database.sqlite.SQLiteDatabase"
-Cohesion: 0.02
-Nodes (21): DBHelper, GameFinishedActivity, QuizActivity, AnswersAdapter, ViewHolder, ScoreBoardAdapter, Comparator<Player>, ViewHolder (+13 more)
+Cohesion: 0.03
+Nodes (18): QuizActivity, AnswersAdapter, ViewHolder, ScoreBoardAdapter, Comparator<Player>, ViewHolder, LocalDatabaseHandler, Player (+10 more)
 
 ### Community 2 - "TestCustomer"
 Cohesion: 0.03
-Nodes (110): testing(), 11.1 Üye alanların alt çizgiyle adlandırılması, 11.3 Rental sınıfı, 11.4 Movie sınıfı, 11. Video kiralama örneği: kaynak kod, 12. Kara kutu ve beyaz kutu sınaması, 13.1 TestMovie, 13.2 TestCustomer (+102 more)
+Nodes (119): testing(), 13.1 TestMovie, 13.2 TestCustomer, 13.3 Eclipse'te JUnit'in projeye eklenmesi ve çalıştırma, 13.4 TestAll ve suite, 13. Test sınıflarının yazılması ve çalıştırılması, 8. JUnit 3.x ile test hazırlama, Dersin Toparlaması (+111 more)
 
 ### Community 3 - "lombok.Data"
-Cohesion: 0.04
-Nodes (31): MovieController, MovieCreditController, QuadConsumer, SearchController, Category, all, movies, users (+23 more)
+Cohesion: 0.02
+Nodes (44): MovieController, MovieCreditController, QuadConsumer, SearchController, ResourceNotFoundException, Category, all, movies (+36 more)
 
 ### Community 4 - "Log"
 Cohesion: 0.02
-Nodes (46): OnItemClickListener, PlanAdapter, View.OnClickListener, PlanViewHolder, LoginApiRequest.ApiCallback, View.OnClickListener, FetchDirectionsTask, Map (+38 more)
+Nodes (43): OnItemClickListener, PlanAdapter, View.OnClickListener, PlanViewHolder, LoginApiRequest.ApiCallback, View.OnClickListener, FetchDirectionsTask, Map (+35 more)
 
 ### Community 5 - "PullToRefreshView"
-Cohesion: 0.03
-Nodes (19): OnRefreshListener, PullToRefreshView, BaseRefreshView, SunRefreshView, Animation, Runnable, Utils, BaseRefreshFragment (+11 more)
+Cohesion: 0.02
+Nodes (32): OnRefreshListener, PullToRefreshView, BaseRefreshView, SunRefreshView, Animation, Runnable, Utils, BaseRefreshFragment (+24 more)
 
 ### Community 6 - "NavigationActivity.java"
 Cohesion: 0.02
-Nodes (37): RecyclerViewClickListener, Note, User, AlarmActivity, View.OnClickListener, View.OnClickListener, CommunicationMonitorActivity, DownloadActivity (+29 more)
+Nodes (39): RecyclerViewClickListener, Note, User, AlarmActivity, View.OnClickListener, View.OnClickListener, CommunicationMonitorActivity, DownloadActivity (+31 more)
 
 ### Community 7 - "ExercisePOJO"
 Cohesion: 0.02
-Nodes (19): ProgramOverviewAdapter, View.OnClickListener, Runnable, CountDownTimer, CountDownTimer, MediaPlayer.OnPreparedListener, Runnable, View.OnClickListener (+11 more)
+Nodes (20): ProgramOverviewAdapter, View.OnClickListener, ProgramPlayActivity, Runnable, CountDownTimer, CountDownTimer, MediaPlayer.OnPreparedListener, Runnable (+12 more)
 
 ### Community 8 - "linkedlist"
 Cohesion: 0.04
-Nodes (14): AbstractTable, Admin, AdminTable, RentTable, ReviewTable, StudentTable, AbstractTable, Admin (+6 more)
+Nodes (16): Test, Test, AbstractTable, Admin, AdminTable, RentTable, ReviewTable, StudentTable (+8 more)
 
 ### Community 9 - "Caltech-101 Motorbikes Dataset (image_processing ödev_2)"
 Cohesion: 0.00
@@ -12595,11 +12672,11 @@ Nodes (401): Caltech-101 Motorbikes Dataset (image_processing ödev_2), Motorbik
 
 ### Community 10 - "org.junit.Test"
 Cohesion: 0.01
-Nodes (86): TestAll, EquationTest, HighScoreTest, QuestionTest, ResultsTest, UserTest, CableProvider, ExistingCustomer (+78 more)
+Nodes (79): TestAll, EquationTest, HighScoreTest, QuestionTest, ResultsTest, UserTest, CableProviderTest, ExistingCustomerTest (+71 more)
 
 ### Community 11 - "vendor.bundle.base.js"
 Cohesion: 0.02
-Nodes (98): Ft(), Qi(), rn(), v(), Ae(), ao, at(), B() (+90 more)
+Nodes (98): 7.2 Constructor'lar, tam yol ve göreli yol, a(), Gn(), pt(), Qi(), so(), ve(), Ae() (+90 more)
 
 ### Community 12 - "101 Object Categories - motorbikes dataset"
 Cohesion: 0.01
@@ -12607,43 +12684,43 @@ Nodes (399): 101 Object Categories - motorbikes dataset, motosiklet fotoğrafı 
 
 ### Community 13 - "chart.umd.js"
 Cohesion: 0.01
-Nodes (223): 3. Dosya İşlemleri: fread ve fwrite, 7.2 Constructor'lar, tam yol ve göreli yol, S(), 6.1 Kullanıcının Belleğe Bakışı ve Kesimler (Segments), 6.2 Kesimleme Donanımı (Segmentation Hardware) ve Adres Dönüşümü, 6. Kesimleme (Segmentation) Mimarisi ve Kesim Tablosu Donanımı, 1.2 Dosya Kavramı (File Concept) ve Başlık-İçerik-Altbilgi Yapısı, r() (+215 more)
+Nodes (154): 3. Dosya İşlemleri: fread ve fwrite, 1.2 Dosya Kavramı (File Concept) ve Başlık-İçerik-Altbilgi Yapısı, 5.3 spectrogram parametreleri, io, 9.2 Konveks olmayan fonksiyonda, aa(), Ae(), afterDatasetsUpdate() (+146 more)
 
 ### Community 14 - "User"
 Cohesion: 0.01
-Nodes (100): ActionListener, Runnable, ActionListener, Runnable, ActionListener, Runnable, ActionListener, Runnable (+92 more)
+Nodes (63): changeParametersPanel, ActionListener, Runnable, ActionListener, Runnable, ActionListener, Runnable, ActionListener (+55 more)
 
 ### Community 15 - "gezirehberi_admin/Scripts/bootstrap.bundle.min.js"
 Cohesion: 0.02
-Nodes (19): bn, Ci, cn, F, gi, hi, kn, Ni (+11 more)
+Nodes (17): bn, Ci, cn, F, gi, hi, kn, Ni (+9 more)
 
 ### Community 16 - "Lesson"
 Cohesion: 0.02
-Nodes (24): GridSpacingItemDecoration, HomeActivity, FirebaseAuth.AuthStateListener, ShowLessonDetailsActivityController, ShowLessonDetailsActivity, ShowLessonDetailsActivityView, LessonsAdapter, MyViewHolder (+16 more)
+Nodes (35): GridSpacingItemDecoration, HomeActivity, FirebaseAuth.AuthStateListener, NoteModel, NotesFragment, FirebaseRecyclerAdapter<NoteModel, NoteViewHolder>, ValueEventListener, View.OnClickListener (+27 more)
 
 ### Community 17 - "Question"
 Cohesion: 0.01
-Nodes (54): GenericFileProvider, DbHelper, ArrayList<String>, HashMap<String, String>, ArrayList<String>, HashMap<String, String>, ArrayList<String>, ArrayList<String> (+46 more)
+Nodes (53): DbHelper, ArrayList<String>, HashMap<String, String>, ArrayList<String>, HashMap<String, String>, ArrayList<String>, ArrayList<String>, ArrayList<String> (+45 more)
 
 ### Community 18 - ".statement"
 Cohesion: 0.02
-Nodes (174): 10.1 Sequence diyagramı ve bağlaşım, 10. Video kiralama örneği: tasarım, 11.2 Customer sınıfı, Örnek Sorular, 9.1 Örneğin kaynağı ve tasarımı, Customer, Movie, Rental (+166 more)
+Nodes (136): 10.1 Sequence diyagramı ve bağlaşım, 10. Video kiralama örneği: tasarım, 11.1 Üye alanların alt çizgiyle adlandırılması, 11.2 Customer sınıfı, 11.3 Rental sınıfı, 11.4 Movie sınıfı, 11. Video kiralama örneği: kaynak kod, 12. Kara kutu ve beyaz kutu sınaması (+128 more)
 
 ### Community 19 - "a2/cs231n/layers.py"
 Cohesion: 0.02
-Nodes (53): ThreeLayerConvNet, FullyConnectedNet, conv_backward_im2col(), conv_forward_im2col(), max_pool_backward_fast(), max_pool_backward_im2col(), max_pool_backward_reshape(), max_pool_forward_fast() (+45 more)
+Nodes (43): ThreeLayerConvNet, FullyConnectedNet, conv_backward_im2col(), conv_forward_im2col(), max_pool_backward_fast(), max_pool_backward_im2col(), max_pool_backward_reshape(), max_pool_forward_fast() (+35 more)
 
 ### Community 20 - "Symbol Table Applications (3.5)"
 Cohesion: 0.05
 Nodes (44): Adjacency-lists representation, BreadthFirstPaths (Algorithm 4.2), CC connected components (Algorithm 4.3), Cycle (undirected cycle detection), DeDup filter, DegreesOfSeparation / Kevin Bacon game, DepthFirstPaths (Algorithm 4.1), DepthFirstSearch (+36 more)
 
-### Community 21 - "org.springframework.data.domain.Page"
+### Community 21 - "List"
 Cohesion: 0.05
-Nodes (16): CommunityPostRepository, UserMessageController, PrivateMessageMapper, MovieComment, PrivateMessage, PrivateMessageDTO, MovieCastRepository, MovieCommentRepository (+8 more)
+Nodes (23): AnnouncementPacketDAO, CompanyOwnPacketDAO, DauUserDAO, DonationAcceptUnitDAO, NotificationDAO, SpendingRequestDAO, StudentDAO, UserDAO (+15 more)
 
 ### Community 22 - "Customer"
 Cohesion: 0.02
-Nodes (38): Vote, Customer, CustomerCarPage, Runnable, CustomerChangePassword, ActionListener, ActionListener, ActionListener (+30 more)
+Nodes (37): Vote, Customer, CustomerCarPage, Runnable, CustomerChangePassword, ActionListener, CustomerMainPage, ActionListener (+29 more)
 
 ### Community 23 - "101 ObjectCategories - Airplanes Dataset"
 Cohesion: 0.01
@@ -12651,15 +12728,15 @@ Nodes (281): 101 ObjectCategories - Airplanes Dataset, Airplane photo image_0031
 
 ### Community 24 - "ActionResult"
 Cohesion: 0.02
-Nodes (142): KategoriController, KullaniciController, RafController, SecurityController, UrunController, Kategori, Id, Kategoriler (+134 more)
+Nodes (72): KategoriController, KullaniciController, RafController, SecurityController, UrunController, Kullanici, Id, KullaniciAdi (+64 more)
 
 ### Community 25 - "android.content.DialogInterface"
 Cohesion: 0.01
-Nodes (112): CertificatesAdapter, ProgramCommentsAdapter, ProgramListingAdapter, View.OnClickListener, UserListingAdapter, View.OnClickListener, View.OnClickListener, DialogInterface.OnClickListener (+104 more)
+Nodes (107): ProgramCommentsAdapter, ProgramListingAdapter, View.OnClickListener, View.OnClickListener, View.OnClickListener, DialogInterface.OnClickListener, DialogInterface.OnClickListener, MoneyAsync (+99 more)
 
 ### Community 26 - "Android"
 Cohesion: 0.02
-Nodes (115): ACPI, Address Space, Android design goals, AOSP and CDD, Berkeley UNIX (BSD), C Language, Chapter 10 Case Study UNIX Linux Android, Clock Hardware (programmable clock) (+107 more)
+Nodes (132): iOS, Multitasking in Mobile Systems, ACPI, Address Space, AIDL, Android design goals, Android Linux extensions, Android out-of-memory killer (+124 more)
 
 ### Community 27 - "101_ObjectCategories - airplanes dataset"
 Cohesion: 0.01
@@ -12674,36 +12751,36 @@ Cohesion: 0.01
 Nodes (234): Caltech-101 'faces' kategorisi veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti, İnsan yüzü portre fotoğrafı — Caltech-101 veri seti (+226 more)
 
 ### Community 30 - "Ders 13 Genişletilmiş Notu: Dönem Projesi Sunumları"
-Cohesion: 0.03
-Nodes (60): 10.1 Modeller ve Arayüz, 10.2 Kod Yapısı, 10.3 Docker ve Kubernetes, 10. Türkçe Haber Metni Kategorilendirme ve Bulutta Yayınlama, 11. Operatör Yorumlarında Kümeleme, 12.1 Veri ve Demo, 12.2 Ön İşleme ve Özellikler, 12. Tweet Duygu Analizi (Logistic Regression) (+52 more)
+Cohesion: 0.04
+Nodes (56): 10.1 Modeller ve Arayüz, 10.2 Kod Yapısı, 10.3 Docker ve Kubernetes, 10. Türkçe Haber Metni Kategorilendirme ve Bulutta Yayınlama, 11. Operatör Yorumlarında Kümeleme, 12.1 Veri ve Demo, 12.2 Ön İşleme ve Özellikler, 12. Tweet Duygu Analizi (Logistic Regression) (+48 more)
 
 ### Community 31 - "assignment2/cs231n/layers.py"
 Cohesion: 0.02
-Nodes (43): ThreeLayerConvNet, FullyConnectedNet, conv_backward_im2col(), conv_forward_im2col(), max_pool_backward_fast(), max_pool_backward_im2col(), max_pool_backward_reshape(), max_pool_forward_fast() (+35 more)
+Nodes (40): ThreeLayerConvNet, FullyConnectedNet, conv_backward_im2col(), conv_forward_im2col(), max_pool_backward_fast(), max_pool_backward_im2col(), max_pool_backward_reshape(), max_pool_forward_fast() (+32 more)
 
 ### Community 32 - "IEEE 802.11 - WiFi"
-Cohesion: 0.04
-Nodes (92): 802.11 architecture (BSS, AP, SSID), 802.11 frame and address fields, Base station / access point, GPS and WiFi positioning, Passive and active scanning, Efe Girgin notu: 6. slayt (LAN, 802.x), VİBA-6 slaytı (LAN, 802.x), Bluetooth ve Zigbee (+84 more)
+Cohesion: 0.03
+Nodes (107): 802.11 architecture (BSS, AP, SSID), 802.11 frame and address fields, Base station / access point, GPS and WiFi positioning, Passive and active scanning, Efe Girgin notu: 6. slayt (LAN, 802.x), VİBA-6 slaytı (LAN, 802.x), Bluetooth ve Zigbee (+99 more)
 
 ### Community 33 - "Chapter 2 Operating-System Structures"
-Cohesion: 0.04
-Nodes (67): Dosya sistemi izolasyonu (chroot, mount, overlay, Docker), Hybrid sistemler (macOS, Windows), Microkernel (Mach), Modüler yapı (loadable kernel modules), Inter-Process Communication (IPC), Signal Disposition, Signal Set / Signal Mask, Unix Signals (+59 more)
+Cohesion: 0.07
+Nodes (36): Dosya sistemi izolasyonu (chroot, mount, overlay, Docker), Hybrid sistemler (macOS, Windows), Microkernel (Mach), Modüler yapı (loadable kernel modules), Chapter 2: Operating-System Structures, Android Architecture, API – System Call – OS Relationship, Hybrid Systems (+28 more)
 
 ### Community 34 - "Random"
-Cohesion: 0.04
-Nodes (59): analyze_mutation_rate(), analyze_population_size(), calculate_similarity(), crossover(), fitness_function(), genetic_algorithm(), next_gen(), on_key() (+51 more)
+Cohesion: 0.02
+Nodes (46): 14.1 Yapılar, 14.2 `createGraph`, 14.3 `createNode`, 14.4 `addEdge` ve Başa Ekleme, 14.5 Tam Program, 14.6 Ağırlık Nereye Yazılır?, 14. Komşuluk Listesinin C ile Gerçekleştirilmesi, evaluate() (+38 more)
 
 ### Community 35 - "Ders 10 altyazısı (7 Aralık 2020)"
 Cohesion: 0.04
-Nodes (86): DoS and DDoS Attacks, Malware and Botnets, Networks Under Attack, SYN Flood Attack, Wireshark_Intro_v8.1_82b29ccc, Display filter, Packet analyzer, Packet sniffer (+78 more)
+Nodes (84): Breach of Availability, Breach of Confidentiality, Breach of Integrity, Four Levels of Security, Masquerading, Security Problem, Social Engineering / Phishing, Theft of Service (+76 more)
 
 ### Community 36 - "Karnaugh haritası"
 Cohesion: 0.02
-Nodes (142): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+134 more)
+Nodes (144): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+136 more)
 
 ### Community 37 - "Ders 3 Genişletilmiş Notu: Aritmetik Komutlar ve Dallanma Komutları"
 Cohesion: 0.03
-Nodes (61): 10.1 MUL: İşaretsiz çarpma, 10.2 Örnek: 8 bitlik çarpmada AH'nin bozulması, 10.3 Örnek: 16 bitlik çarpmada DX'in bozulması, 10.4 IMUL: İşaretli çarpma, 10.5 Örnek: MUL ile IMUL farkı, 10. MUL ve IMUL, 11.1 DIV: İşaretsiz bölme, 11.2 Örnek: Bölümün sığmaması (+53 more)
+Nodes (73): 10.1 MUL: İşaretsiz çarpma, 10.2 Örnek: 8 bitlik çarpmada AH'nin bozulması, 10.3 Örnek: 16 bitlik çarpmada DX'in bozulması, 10.4 IMUL: İşaretli çarpma, 10.5 Örnek: MUL ile IMUL farkı, 10. MUL ve IMUL, 11.1 DIV: İşaretsiz bölme, 11.2 Örnek: Bölümün sığmaması (+65 more)
 
 ### Community 38 - "Ders 12 Genişletilmiş Notu: Proje Sunumları ve Analiz-Tasarım Diyagramlarının Değerlendirilmesi"
 Cohesion: 0.04
@@ -12714,12 +12791,12 @@ Cohesion: 0.01
 Nodes (198): faces_easy/image_0001.jpg - yüz fotoğrafı, faces_easy/image_0002.jpg - yüz fotoğrafı, faces_easy/image_0003.jpg - yüz fotoğrafı, faces_easy/image_0004.jpg - yüz fotoğrafı, faces_easy/image_0005.jpg - yüz fotoğrafı, faces_easy/image_0006.jpg - yüz fotoğrafı, faces_easy/image_0007.jpg - yüz fotoğrafı, faces_easy/image_0008.jpg - yüz fotoğrafı (+190 more)
 
 ### Community 40 - "Sayısal Analiz Sunumu 2018 (Mesleki Terminoloji)"
-Cohesion: 0.05
-Nodes (75): İkiye Bölme Yöntemi, Kök Bulma Yöntemleri, Proje Gösterimleri, Sabit Nokta (Tekrarlama) Yöntemi, Sekant Yöntemi, Sayısal Analiz Dönem Projesi tanımı, Sayısal Türev (merkezi, ileri, geri), Teslim: ÖğrenciNo.c ve ÖğrenciNo.pdf rapor (+67 more)
+Cohesion: 0.06
+Nodes (63): İkiye Bölme Yöntemi, Kök Bulma Yöntemleri, Proje Gösterimleri, Sabit Nokta (Tekrarlama) Yöntemi, Sekant Yöntemi, Emre Kütük Sayısal Analiz Raporu 2021 (20011096), Ortak yardımcı fonksiyonlar fonk, fonk_t, us, Gregory Newton Enterpolasyonu (ileri farklar) (+55 more)
 
 ### Community 41 - "NTFS"
-Cohesion: 0.02
-Nodes (94): Asynchronous Procedure Call (APC), Atlas, Cache Manager (Windows), Change journal, FAT file system, Filter drivers, FtDisk volume management, I/O Manager (Windows) (+86 more)
+Cohesion: 0.03
+Nodes (78): Asynchronous Procedure Call (APC), Change journal, FAT file system, FtDisk volume management, Job objects, Mount points, symbolic links, hard links, NTFS, NTFS B+ tree directory (+70 more)
 
 ### Community 42 - "Ders 10 Genişletilmiş Notu: Dinamik Bellek Yönetimi ve Fonksiyonlar"
 Cohesion: 0.03
@@ -12727,15 +12804,15 @@ Nodes (57): 11. Fonksiyon bildirimi, tanımı ve çağrısı, 12.1 Üç yöntem,
 
 ### Community 43 - "android.graphics.Bitmap"
 Cohesion: 0.01
-Nodes (29): Cekmece, CekmeceActivity, KabinActivity, DialogInterface.OnClickListener, DialogInterface.OnClickListener, Kiyafet, KiyafetSec, Kombin (+21 more)
+Nodes (29): CertificatesAdapter, UserListingAdapter, View.OnClickListener, TrainerCheckAsync, DialogInterface.OnClickListener, CertificatePOJO, TrainerPOJO, AddQuestionActivity (+21 more)
 
 ### Community 44 - "hüsamettin_ışıktaş/scripts/run_experiment_v2.py"
 Cohesion: 0.12
 Nodes (14): _approx_longest_repeat(), chunk_text(), extract_fast_features(), _fast_feature_names(), find_best_algorithm(), _generate_report(), _import_codecs(), plot_algorithm_distribution() (+6 more)
 
 ### Community 45 - "zt"
-Cohesion: 0.02
-Nodes (80): 2.1 Proses ve Thread Yapısının Karşılaştırılması, 2.2 Günlük Uygulamalarda ve Çekirdekte Çoklu Thread Kullanımı, 2.3 Çoklu Thread Kullanımının Dört Temel Faydası, 2. İş Parçacığı (Thread) Mimarisi ve Motivasyonu, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+72 more)
+Cohesion: 0.03
+Nodes (68): 2.1 Proses ve Thread Yapısının Karşılaştırılması, 2.2 Günlük Uygulamalarda ve Çekirdekte Çoklu Thread Kullanımı, 2.3 Çoklu Thread Kullanımının Dört Temel Faydası, 2. İş Parçacığı (Thread) Mimarisi ve Motivasyonu, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+60 more)
 
 ### Community 46 - "Background/Google Arka Plan Veri Seti (Caltech-101)"
 Cohesion: 0.01
@@ -12743,91 +12820,91 @@ Nodes (185): Xdvi LyX Example Document Screenshot, Palm Beach County Ballot Conf
 
 ### Community 47 - "Ders 7 Genişletilmiş Notu: Intent ile Sonuç Alma, Layout'lar ve ListView/RecyclerView"
 Cohesion: 0.05
-Nodes (39): 10.1 Aktivite tarafı, 10.2 Adapter tarafı, 10.3 İkinci adapter örneği: CustomAdapter, 10.4 CardView, 10. RecyclerView'ı Kurmak: Aktivite ve Adapter, 11. Android Studio Örneği: ListView ile Liste, 12.1 Uygulamanın görünümü, 12.3 Model sınıfı (+31 more)
+Nodes (40): 10.1 Aktivite tarafı, 10.2 Adapter tarafı, 10.3 İkinci adapter örneği: CustomAdapter, 10.4 CardView, 10. RecyclerView'ı Kurmak: Aktivite ve Adapter, 11. Android Studio Örneği: ListView ile Liste, 12.1 Uygulamanın görünümü, 12.2 Aktivite: veri kaynağını kurmak (+32 more)
 
 ### Community 48 - "Activity selection problem"
 Cohesion: 0.04
-Nodes (62): Amortized analysis (Ch.17), Dynamic programming (Bellman), Chapter 16 Greedy Algorithms, Coin changing problem, Dynamic programming (Ch.15), Graphic matroid, Greedy algorithms (Ch.16), GREEDY-ACTIVITY-SELECTOR (+54 more)
+Nodes (67): Amortized analysis (Ch.17), Dynamic programming (Bellman), BOTTOM-UP-CUT-ROD, Chapter 16 Greedy Algorithms, Coin changing problem, Dynamic programming (Ch.15), EXTENDED-BOTTOM-UP-CUT-ROD, Greedy algorithms (Ch.16) (+59 more)
 
 ### Community 49 - "Image"
-Cohesion: 0.04
-Nodes (7): AdminDashboardGUI, AdminStartGUI, DoctorModeGUI, DataLoadGUI, ModeSelectGUI, ReceptionistGUI, Image
+Cohesion: 0.03
+Nodes (12): AdminDashboardGUI, AdminStartGUI, DoctorModeGUI, SelectPatientGUI, DataLoadGUI, ModeSelectGUI, ReceptionistGUI, CheckRendezvousGUI (+4 more)
 
 ### Community 50 - "gezirehberi/Scripts/bootstrap.min.js"
-Cohesion: 0.02
-Nodes (43): Ce(), Ae, B(), Be, D(), e(), F(), getDataAttributes() (+35 more)
+Cohesion: 0.03
+Nodes (30): B(), Be, D(), e(), F(), getDataAttributes(), I(), j() (+22 more)
 
 ### Community 51 - "Plane"
 Cohesion: 0.03
-Nodes (8): ResourceNotFoundException, SeatNotFoundException, SeatManager, SeatClass, BUSINESS, ECONOMY, Plane, Seat
+Nodes (14): AirlineException, FlightNotFoundException, InvalidOperationException, ResourceNotFoundException, SeatNotAvailableException, SeatNotFoundException, javafx.scene.control.ListCell<>, javafx.scene.control.ListCell<> (+6 more)
 
 ### Community 52 - "SpendingRequest"
-Cohesion: 0.02
-Nodes (25): AccountingPK, AccountingDAO, SpendingRequestDAO, SpendingRequestStateDAO, AccountingHibernateImpl, SpendingRequestHibernateImpl, SRStateHibernateImpl, Accounting (+17 more)
+Cohesion: 0.05
+Nodes (8): SpendingRequestStateDAO, SRStateHibernateImpl, SpendingRequest, SpendingRequestState, ListSpendingRequestServlet, SendSpendingRequestServlet, RejectSendingRequestServlet, SpendingRequestTest
 
 ### Community 53 - "serializable"
 Cohesion: 0.05
-Nodes (7): InformationSystem, InformationSystem, InformationSystem, UserVerification, Donation, MembershipStatus, AudioModel
+Nodes (4): User, Donation, MembershipStatus, AudioModel
 
 ### Community 54 - "Ders 7 Web Saldırıları (Altyazı)"
-Cohesion: 0.03
-Nodes (126): Breach of Availability, Breach of Confidentiality, Breach of Integrity, Four Levels of Security, Masquerading, Security Problem, Social Engineering / Phishing, Theft of Service (+118 more)
+Cohesion: 0.02
+Nodes (144): Ders 6: Web güvenlik modeline giriş, Ders 7: Cookie tabanlı saldırılar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Hocanın Özellikle Vurguladığı Kısımlar, Man-in-the-Middle Attack, BroadcastChannel API (+136 more)
 
 ### Community 55 - "org.junit.jupiter.api.Test"
 Cohesion: 0.02
-Nodes (33): AutoParkTestCases, FileOpsTest, FlightSearchEngineTest, PriceCalculatorTest, SeatManagerTest, TestDoctor, TestHospital, TestPerson (+25 more)
+Nodes (36): AutoParkTestCases, FileOpsTest, PriceCalculator, FlightSearchEngineTest, PriceCalculatorTest, SeatManagerTest, TestDoctor, TestHospital (+28 more)
 
 ### Community 56 - "Ders 6 Genişletilmiş Notu: Fonksiyonlar, Ters Fonksiyon, Taban ve Tavan, Bölüm Soru Çözümü ve Algoritmalara Giriş: Arama, Sıralama, Öklid"
 Cohesion: 0.03
 Nodes (80): 10. Bölüm Soruları: Üç Kümeli Sayma Problemi, 11. Bölüm Soruları: Doğru/Yanlış ve Karşı Örnek, 12.1 İlk Dizi, 12.2 İç İçe Toplam, 12.3 Sayı Tabanları, 12. Bölüm Soruları: Dizi Toplamları ve Sayı Tabanları, 13.1 $x + y \le 6$ Bağıntısı, 13.2 Ters Simetrik Bağıntıların Birleşimi (+72 more)
 
 ### Community 57 - "Distributor"
-Cohesion: 0.02
-Nodes (24): Corparation, DateInfo, Distributor, ActionListener, Individual, Journal, Main, PaymentInfo (+16 more)
-
-### Community 58 - "java.awt.event.ActionEvent"
 Cohesion: 0.01
-Nodes (189): Gui, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener (+181 more)
+Nodes (44): Corparation, DateInfo, Distributor, GUI, ActionListener, ActionListener, ActionListener, ActionListener (+36 more)
+
+### Community 58 - "javax.swing.JFrame"
+Cohesion: 0.02
+Nodes (73): Gui, childInfo, childMenu, childPanel, chooseTest, endGamePanel, HighScorePanel, mainMenu (+65 more)
 
 ### Community 59 - "Kiyafet"
-Cohesion: 0.04
-Nodes (17): CekmeceleriGor, CekmeceleriGorAdapter.RecyclerViewClickListener, CekmeceleriGorAdapter, PostHolder, RecyclerViewClickListener, Etkinlik, EtkinlikActivity, EtkinlikleriGor (+9 more)
+Cohesion: 0.02
+Nodes (25): Cekmece, CekmeceActivity, CekmeceleriGor, CekmeceleriGorAdapter.RecyclerViewClickListener, CekmeceleriGorAdapter, PostHolder, RecyclerViewClickListener, Etkinlik (+17 more)
 
-### Community 60 - "EducationInfo"
-Cohesion: 0.09
-Nodes (4): EducationInfoDAO, EducationInfoHibernateImpl, EducationInfo, UpdateCvServlet
+### Community 60 - "Student"
+Cohesion: 0.03
+Nodes (13): EducationInfoDAO, VerificationCodeDAO, EducationInfoHibernateImpl, VerificationCodeHibernateImpl, Complaint, EducationInfo, Student, VerificationCode (+5 more)
 
 ### Community 61 - "Ders 7 Genişletilmiş Notu: Veri Yapıları, Prefix-Infix-Postfix Gösterimleri, Algoritma Analizi ve Asimptotik Gösterimler"
 Cohesion: 0.03
 Nodes (63): 10.1 Temel İşlem ve Giriş Boyutu, 10. Algoritma Analizine Giriş, 11.1 Yürütme Zamanı Nasıl Görünür?, 11. Algoritma Analizinin Temel Kavramları, 12.1 Örnek 1: Ortalama Bulma, 12.2 Örnek 2: En Küçük Elemanı Bulma, 12. Yürütme Zamanı Hesabı: Ortalama ve En Küçük Eleman, 13.1 İç Döngünün Tekrar Sayısı (+55 more)
 
 ### Community 62 - "DauUser"
-Cohesion: 0.03
-Nodes (18): CommunicationWayPK, CommunicationWayDAO, UserTypeDAO, CommunicationWayHibernateImpl, DauUserHibernateImpl, UserTypeHibernateImpl, CommunicationWay, DauUser (+10 more)
+Cohesion: 0.04
+Nodes (17): CommunicationWayPK, CommunicationWayDAO, UserTypeDAO, CommunicationWayHibernateImpl, DauUserHibernateImpl, UserTypeHibernateImpl, CommunicationWay, DauUser (+9 more)
 
 ### Community 63 - "Car"
 Cohesion: 0.02
-Nodes (25): Car, Customer, Drink, Food, FoodDeliveryPlatform, Sellable, CarOperations, CustomerOperations (+17 more)
+Nodes (24): Car, Customer, Drink, Food, FoodDeliveryPlatform, Sellable, CarOperations, CustomerOperations (+16 more)
 
 ### Community 64 - "java.sql.Connection"
 Cohesion: 0.01
-Nodes (59): User, CarList, JTable, CustomerList, JTable, MouseAdapter, ExpenseController, ExpenseItemController (+51 more)
+Nodes (56): User, DealerRequestPage, MouseAdapter, ExpenseController, ExpenseItemController, UserController, ExpenseReportDto, UserDto (+48 more)
 
 ### Community 65 - "blm_3120termproject/main.py"
 Cohesion: 0.03
-Nodes (67): 4. C++, Python ve Operatör Aşırı Yüklemenin Sınırları, Kısa Tekrar Notları, QADataset, verileri_hazirla(), evaluate_CARs(), generate_CARs(), predict(), predict_prob_transaction() (+59 more)
+Nodes (67): 4. C++, Python ve Operatör Aşırı Yüklemenin Sınırları, Kısa Tekrar Notları, evaluate_CARs(), generate_CARs(), predict(), predict_prob_transaction(), visualize_CARs(), apriori() (+59 more)
 
-### Community 66 - "org.opencv.core.Mat"
+### Community 66 - ".initialize"
+Cohesion: 0.13
+Nodes (6): ActionListener, ActionListener, ActionListener, ActionListener, WindowAdapter, Runnable
+
+### Community 67 - "Chapter 8 Securing Information Systems"
 Cohesion: 0.04
-Nodes (19): CalibrationForm, ActionListener, Runnable, GameForm, ActionListener, ActionListener, ActionListener, ActionListener (+11 more)
-
-### Community 67 - "Bölüm 12 Veritabanları, Kontroller ve Güvenlik"
-Cohesion: 0.03
-Nodes (99): DNS, Email, Encryption, HTTPS and SSL, Internet protocols (TCP/IP), Operating systems and networking (index), Tim Berners-Lee, Ağ sınıflandırmaları (PAN/LAN/MAN/WAN) (+91 more)
+Nodes (86): Encryption, HTTPS and SSL, Access controls (DBMS), Authentication, Bölüm 12 Veritabanları, Kontroller ve Güvenlik, Certifying authority, Cloud-Based Database Server Architecture, Completeness control (+78 more)
 
 ### Community 68 - "Scheduling"
-Cohesion: 0.05
-Nodes (57): First Come First Served (FCFS), Process Descriptor / PCB, Long-Term Scheduler, Mid-Term Scheduler, Short-Term Scheduler, Shortest Job First (SJF), Timer Interrupt ile Time Quantum Kontrolü, Chapter 6: CPU Scheduling (+49 more)
+Cohesion: 0.03
+Nodes (91): Priority Scheduling ve Aging, SJF ve SRTF, CPU Utilization, First Come First Served (FCFS), Response Time, Shortest Job First (SJF), Throughput, Timer Interrupt ile Time Quantum Kontrolü (+83 more)
 
 ### Community 69 - "101 ObjectCategories - leopards dataset"
 Cohesion: 0.01
@@ -12839,43 +12916,43 @@ Nodes (73): 10.1 Sentez Adımları, 10.2 Gibbs Olayı, 10. Fourier Sentezi ve Gi
 
 ### Community 71 - "Ders 10 Genişletilmiş Notu: Proses Senkronizasyonu: Kritik Kesim Problemi, Peterson Çözümü, Donanım Desteği, Mutex Kilitleri, Semaforlar, Klasik Problemler ve Monitörler"
 Cohesion: 0.04
-Nodes (44): 1.1 Komut Yürütme Döngüsü ve Kesme Kontrolü (Interrupt Check), 1.2 Sınırlı Tampon (Bounded-Buffer) ve `counter` Değişkeni, 1.3 Makine Dili Düzeyinde `counter++` ve `counter--` ile Yarış Durumu, 1. Komut Döngüsü, Veri Tutarsızlığı ve Yarış Durumu (Race Condition), 2.1 Kritik Kesim Kavramı ve Genel Yapısı, 2.2 İki Proses İçin Basit `turn` Değişkenli Yaklaşım, 2.3 Kritik Kesim Probleminin Çözümü İçin Üç Zorunlu Şart, 2.4 İşletim Sistemi Çekirdeğinde Kritik Kesim Yönetimi (+36 more)
+Nodes (55): done(), 1.1 Komut Yürütme Döngüsü ve Kesme Kontrolü (Interrupt Check), 1.2 Sınırlı Tampon (Bounded-Buffer) ve `counter` Değişkeni, 1.3 Makine Dili Düzeyinde `counter++` ve `counter--` ile Yarış Durumu, 1. Komut Döngüsü, Veri Tutarsızlığı ve Yarış Durumu (Race Condition), 2.1 Kritik Kesim Kavramı ve Genel Yapısı, 2.2 İki Proses İçin Basit `turn` Değişkenli Yaklaşım, 2.3 Kritik Kesim Probleminin Çözümü İçin Üç Zorunlu Şart (+47 more)
 
-### Community 72 - "surum_cikar.py"
-Cohesion: 0.03
-Nodes (44): blur_image(), deprocess_image(), image_from_url(), load_image(), preprocess_image(), blur_image(), deprocess_image(), image_from_url() (+36 more)
+### Community 72 - "hüsamettin_ışıktaş/src/experiments/tracking.py"
+Cohesion: 0.18
+Nodes (5): _find_running_benchmarks(), get_benchmark_status(), print_latest_results(), show_benchmark_status(), _summarize_results()
 
 ### Community 73 - "W"
-Cohesion: 0.01
-Nodes (93): Bi(), jt(), ks(), oi(), Ve(), Ai, at, D() (+85 more)
+Cohesion: 0.02
+Nodes (93): 6.1 Kullanıcının Belleğe Bakışı ve Kesimler (Segments), ai(), Bi(), fe(), Fi(), Ft(), gs(), jt() (+85 more)
 
 ### Community 74 - "101_ObjectCategories - watch dataset klasörü"
 Cohesion: 0.01
 Nodes (160): 101_ObjectCategories - watch dataset klasörü, Watch fotoğrafı (image_0001), Watch fotoğrafı (image_0002), Watch fotoğrafı (image_0003), Watch fotoğrafı (image_0004), Watch fotoğrafı (image_0005), Watch fotoğrafı (image_0006), Watch fotoğrafı (image_0007) (+152 more)
 
 ### Community 75 - "Flight"
-Cohesion: 0.03
-Nodes (19): 5.1 Sorunun tanımı, 5.2 Düğüm yapısı ve createFlight, 5.3 Sıralı ekleme: insertFlight, 5.4 Listeyi ekrana yazma: displayFlights, 5.5 Pist dosyalarına yazma: writeFlightsToFiles, 5.6 Dosyadan okuma ve main, 5.7 Test edilen tam program, 5. Soru 2: uçuş bilgileri, sıralı ekleme ve pist dosyaları (+11 more)
+Cohesion: 0.02
+Nodes (21): 5.1 Sorunun tanımı, 5.2 Düğüm yapısı ve createFlight, 5.3 Sıralı ekleme: insertFlight, 5.4 Listeyi ekrana yazma: displayFlights, 5.5 Pist dosyalarına yazma: writeFlightsToFiles, 5.6 Dosyadan okuma ve main, 5.7 Test edilen tam program, 5. Soru 2: uçuş bilgileri, sıralı ekleme ve pist dosyaları (+13 more)
 
 ### Community 76 - "cn"
 Cohesion: 0.02
-Nodes (61): ae(), bn, Bt(), ce(), Ci, cn, D(), de() (+53 more)
+Nodes (18): q, at, bn, Ci, F, gi, hi, kn (+10 more)
 
 ### Community 77 - "Chapter 6: Deadlocks"
 Cohesion: 0.14
 Nodes (15): Attacking Circular Wait (Resource Ordering), Attacking Hold-and-Wait, Attacking Mutual Exclusion (Spooling), Attacking No-Preemption, Chapter 6: Deadlocks, Four Conditions for Resource Deadlock (Coffman), Communication Deadlock, Deadlock Avoidance and Resource Trajectories (+7 more)
 
 ### Community 78 - "Rendezvous"
-Cohesion: 0.03
-Nodes (11): PatientManager, AddDoctorGUI, DeleteDoctorGUI, AddRendezvousGUI, Hospital, Rendezvous, Schedule, Section (+3 more)
+Cohesion: 0.05
+Nodes (7): AddRendezvousGUI, DeleteRendezvousGUI, Rendezvous, Schedule, Doctor, Patient, Person
 
 ### Community 79 - "Ders 5 Genişletilmiş Notu: Gözetimsiz Öğrenme: K-Means, Hiyerarşik Kümeleme ve Uzaklık Fonksiyonları"
 Cohesion: 0.03
 Nodes (62): 10. Hangi Algoritmayı Kullanmalıyım?, 11.1 Dendrogram ve İki Yön, 11.2 Algoritma, 11.3 Beş Noktalı Örnek, 11.4 Dendrogramın Kesiti, 11. Hiyerarşik Kümeleme ve Dendrogram, 12.1 Single Link, 12.2 Complete Link (+54 more)
 
 ### Community 80 - "Semafor"
-Cohesion: 0.04
-Nodes (96): Ders 10 Altyazısı, Atomic Instruction, Binary Semafor (Mutex Lock), Busy Waiting, Compare-and-Swap / Exchange, Counting Semafor, Deadlock (semafor yanlış kullanımı), Ders 10 Lab: Proses Senkronizasyonu (2020-2021 altyazı) (+88 more)
+Cohesion: 0.07
+Nodes (60): Ders 10 Altyazısı, Atomic Instruction, Binary Semafor (Mutex Lock), Busy Waiting, Compare-and-Swap / Exchange, Counting Semafor, Deadlock (semafor yanlış kullanımı), Ders 10 Lab: Proses Senkronizasyonu (2020-2021 altyazı) (+52 more)
 
 ### Community 81 - "Network Layer Data Plane slaytları (Balık, 2023)"
 Cohesion: 0.10
@@ -12887,7 +12964,7 @@ Nodes (65): 10.1 Oksijen Oranı, 10.2 Isının Taşınması, 10.3 Yanma Çeşitl
 
 ### Community 83 - "Answers to Odd-Numbered Exercises (Rosen 7e, ch.5-11)"
 Cohesion: 0.02
-Nodes (119): tower, Algorithm visualization, Characteristic Equation (Fibonacci), Decision Tree for Searching a Sorted Array, Decision Tree for Sorting, Golden Ratio, Iterative Fibonacci Algorithm Fib(n), Recursive Fibonacci Algorithm F(n) (+111 more)
+Nodes (121): Algorithm visualization, Characteristic Equation (Fibonacci), Decision Tree for Searching a Sorted Array, Decision Tree for Sorting, Golden Ratio, Iterative Fibonacci Algorithm Fib(n), Recursive Fibonacci Algorithm F(n), Sorting Out Sorting (+113 more)
 
 ### Community 84 - "Ders 2 Genişletilmiş Notu: Proje Kavramı, Proje Başarısı ve Proje Yöneticisi"
 Cohesion: 0.03
@@ -12895,11 +12972,11 @@ Nodes (61): 10.1 Bilgi Alanları, 10.2 Yaşam Döngüleri, 10. Proje Bilgi Alanl
 
 ### Community 85 - "BLM5126 İleri Yazılım Mimarisi Ders Slaytları 2025-2026 Güz"
 Cohesion: 0.02
-Nodes (175): Bağlantıların ve özelliklerin belirlenmesi, Kavramsal Sınıf Diyagramı, Kavramsal sınıfların bulunması ve elenmesi, Client-Server, Genelleme (generalization), UML sınıf diyagramı, Durum (State), Sunum 103-122: OCL (+167 more)
+Nodes (177): Zamanlama diyagramı, Bağlantıların ve özelliklerin belirlenmesi, Kavramsal Sınıf Diyagramı, Kavramsal sınıfların bulunması ve elenmesi, Client-Server, Genelleme (generalization), UML sınıf diyagramı, Durum (State) (+169 more)
 
 ### Community 86 - "teslim/src/methods/common_neighbors.py"
-Cohesion: 0.05
-Nodes (21): run_all_methods_for_scale(), run_experiment(), run_full_benchmark(), _run_method(), _common_neighbor_count(), CommonNeighborsModel, fit_common_neighbors(), _get_edges() (+13 more)
+Cohesion: 0.04
+Nodes (28): run_all_methods_for_scale(), run_experiment(), run_full_benchmark(), _run_method(), _common_neighbor_count(), CommonNeighborsModel, fit_common_neighbors(), _get_edges() (+20 more)
 
 ### Community 87 - "Panoramik Diş Röntgeni Hata Tespiti YOLOv8 Test Görüntü Seti"
 Cohesion: 0.01
@@ -12909,9 +12986,9 @@ Nodes (140): Panoramik Diş Röntgeni Test Görüntüsü 1, Panoramik Diş Rönt
 Cohesion: 0.02
 Nodes (132): Lisansüstü Ders Tipi, Araçlar Arası Haberleşme, Bilgisayar Güvenliği ve Kriptografi, Bilgisayar Mühendisliğinde Özel Konular, Bilgisayar Sistemleri ve Ağ Güvenliği, Bilgisayarda Bulanıklık ve Belirsizlik, Bulut Hesaplamada Sistem ve Ağ Mimarileri, Büyük Veri Analitiği (+124 more)
 
-### Community 89 - "2000-2024 yıl sınıflandırması (25 sınıf, title/abstract/concat)"
-Cohesion: 0.13
-Nodes (21): MLP katmanları (768,384,192), dropout 0.35, early stopping patience 15, PyTorch MLP modeli, embed_size 128, PyTorch MLP sonuçları (embed 128), Accuracy: title 0.0568, abstract 0.0955, concat 0.0933, 2000-2024 yıl sınıflandırması (25 sınıf, title/abstract/concat), Random Forest modeli, embed_size 256, Random Forest sonuçları (embed 256), Accuracy: title 0.0469, abstract 0.0750, concat 0.0723 (+13 more)
+### Community 89 - "Ödev 2: Tez Yılı Tahmininde Kolektif Öğrenme"
+Cohesion: 0.04
+Nodes (78): Eksik Veri Analizi, Eğitim Seti, Test Seti, ABSTRACT Veriseti, CONCAT Veriseti, Embed Size Karşılaştırması (Ortalama), Genel Özet - En İyi Sonuçlar, Model Karşılaştırma Tablosu (+70 more)
 
 ### Community 90 - "Data Compression (JPEG, MPEG, MP3, TIFF)"
 Cohesion: 0.29
@@ -12919,23 +12996,23 @@ Nodes (7): Communication rates and bandwidth, Data Compression (JPEG, MPEG, MP3,
 
 ### Community 91 - "Ders 2 Genişletilmiş Notu: Mantıksal Denklik, Niceleyiciler, İspat Yöntemleri ve Tümevarım"
 Cohesion: 0.03
-Nodes (70): 10.1 Sonlu Kümede OR, 10.2 Sözlü Sorular, 10. Varoluşsal Niceleyici, 11.1 "Everyone has exactly one best friend.", 11.2 "If somebody is female and is a parent, then this person is someone's mother.", 11. Cümleleri Niceleyicilerle Yazmak, 12.1 Karşı Örnek, 12.2 Genelleştirilmiş De Morgan Kuralı (+62 more)
+Nodes (58): 10.1 Sonlu Kümede OR, 10.2 Sözlü Sorular, 10. Varoluşsal Niceleyici, 11.1 "Everyone has exactly one best friend.", 11.2 "If somebody is female and is a parent, then this person is someone's mother.", 11. Cümleleri Niceleyicilerle Yazmak, 12.1 Karşı Örnek, 12.2 Genelleştirilmiş De Morgan Kuralı (+50 more)
 
 ### Community 92 - "Ders 7 Genişletilmiş Notu: Strategy, State, Template Method ve Visitor Kalıpları"
-Cohesion: 0.05
-Nodes (42): 1.1 Amaç, 1.2 Dörtlü Çete'nin örneği: satır bölmeleme, 1.3 Kalıp yapısı ve bileşenler, 1.4 Strateji geçişini kim yönetir?, 1.5 Kullanım ve zayıf yönler, 1.6 Builder ile karşılaştırma, 1. Strategy Kalıbı, 2.1 Problem (+34 more)
+Cohesion: 0.06
+Nodes (34): 1.1 Amaç, 1.2 Dörtlü Çete'nin örneği: satır bölmeleme, 1.3 Kalıp yapısı ve bileşenler, 1.4 Strateji geçişini kim yönetir?, 1.5 Kullanım ve zayıf yönler, 1.6 Builder ile karşılaştırma, 1. Strategy Kalıbı, 2.1 Problem (+26 more)
 
 ### Community 94 - "CompanyOwnPacket"
-Cohesion: 0.03
-Nodes (15): AnnouncementPacketStateDAO, CompanyOwnPacketDAO, CompanyOwnPacketHibernateImpl, PacketStateHibernateImpl, AnnouncementPacketState, CompanyOwnPacket, ListMyPacketsServlet, OrderMyPacketsServlet (+7 more)
+Cohesion: 0.02
+Nodes (16): AccountingPK, AccountingDAO, AnnouncementPacketStateDAO, AccountingHibernateImpl, PacketStateHibernateImpl, Accounting, AnnouncementPacketState, CompanyOwnPacket (+8 more)
 
 ### Community 95 - "Form3"
 Cohesion: 0.03
-Nodes (14): Form1, Genome, Population, Program, Form1, Olustur, Populasyon, Program (+6 more)
+Nodes (13): Form1, Genome, Population, Program, Form1, Olustur, Populasyon, Program (+5 more)
 
 ### Community 96 - "NavMeshSurface"
-Cohesion: 0.04
-Nodes (25): LocalNavMeshBuilder, AsyncBakeOperation, NavMeshAssetManager, SavedPrefabNavMeshData, NavMeshSurface, activeSurfaces, agentTypeID, buildHeightMesh (+17 more)
+Cohesion: 0.06
+Nodes (23): AsyncBakeOperation, NavMeshAssetManager, SavedPrefabNavMeshData, NavMeshSurface, activeSurfaces, agentTypeID, buildHeightMesh, center (+15 more)
 
 ### Community 97 - "Ders 4 Genişletilmiş Notu: Quiz 1 Çözümleri, MATLAB ve Python ile Sinyal Çizimi, Sistemlere Giriş ve Sistem Özellikleri"
 Cohesion: 0.03
@@ -12946,39 +13023,39 @@ Cohesion: 0.04
 Nodes (56): 10.1 DNA, 10.2 Nükleotitler, 10.3 Genetik Kod, 10.4 DNA Verisinin Bilgisayardaki Türü, 10.5 Kodonlar, Başlama ve Durma Kodonları, 10. DNA, Nükleotitler ve Genetik Kod, 11.1 Amino Asitler, 11.2 Proteinler (+48 more)
 
 ### Community 99 - "java.net.URL"
-Cohesion: 0.03
-Nodes (14): AdminSettingsGUI, AddSectionGUI, DeleteSectionGUI, RenameSectionGUI, DoctorRendezvousesWithDateGUI, DoctorsRendezvousListGUI, RendezvousesWithPatientGUI, SelectDoctorGUI (+6 more)
+Cohesion: 0.02
+Nodes (23): DuplicateInfoException, IDException, AdminSettingsGUI, AddDoctorGUI, DeleteDoctorGUI, RenameDoctorGUI, AddHospitalGUI, AddSectionGUI (+15 more)
 
 ### Community 100 - "20152_BBG2_quiz2/image.cpp"
 Cohesion: 0.03
 Nodes (42): Image, Image::Image(), M, N, pixelVal, Q, Image, Image::Image() (+34 more)
 
 ### Community 101 - "Ders 1 Sinyaller ve Kodlama (2020-2021)"
-Cohesion: 0.03
-Nodes (115): ElDev 01 Electronic Systems, Distortion ve noise, Sistem tanımı, 2022 Slayt 1 Electronic Systems, Genlik (Amplitude), Efe Girgin notu: 2. slayt (sinyaller, kodlama), VİBA-2 slaytı (sinyaller, kodlama), Bit ve baud hızı (+107 more)
+Cohesion: 0.04
+Nodes (102): ElDev 01 Electronic Systems, Distortion ve noise, Sistem tanımı, 2022 Slayt 1 Electronic Systems, Genlik (Amplitude), Efe Girgin notu: 2. slayt (sinyaller, kodlama), VİBA-2 slaytı (sinyaller, kodlama), Bit ve baud hızı (+94 more)
 
 ### Community 102 - "Chapter 20 Influential Operating Systems"
-Cohesion: 0.15
-Nodes (19): ALPC (advanced local procedure call), Bibliography and index (Silberschatz), Chapter 20 Influential Operating Systems, CP/M, CTSS, Feature migration, IBM OS/360, Mach (+11 more)
+Cohesion: 0.10
+Nodes (25): Spooling, ALPC (advanced local procedure call), Atlas, Bibliography and index (Silberschatz), Chapter 20 Influential Operating Systems, CP/M, CTSS, Early systems: dedicated and shared computer systems (+17 more)
 
 ### Community 103 - "seaborn"
 Cohesion: 0.06
-Nodes (21): get_all_datasets(), get_dataset_dir(), get_dataset_path(), load_dataset(), split_features_target(), split_train_test(), calculate_accuracy(), calculate_f1_score() (+13 more)
+Nodes (24): calculate_accuracy(), calculate_f1_score(), calculate_metrics(), calculate_precision(), calculate_recall(), create_confusion_matrix(), get_classification_report(), get_confusion_matrix_values() (+16 more)
 
 ### Community 104 - "system_collections_generic"
-Cohesion: 0.06
-Nodes (19): Class1, GeziRehberi, YZprj, BLM5227.Controllers, PersonelMVCUII.Controllers, PersonelMVCUII.Security, PersonelMVCUII.Models.EntityFramework, PersonelMVCUII (+11 more)
+Cohesion: 0.02
+Nodes (67): Program, RouteConfig, MvcApplication, KullaniciViewModel, Id, KullaniciAdi, Rol, Sifre (+59 more)
 
 ### Community 105 - "service/UserServiceImpl.java"
 Cohesion: 0.02
-Nodes (34): AppConstants, AdminUserController, FetchController, StatController, AuthController, SessionDeleter, APIException, UserException (+26 more)
+Nodes (34): AppConstants, AdminUserController, StatController, AuthController, SessionDeleter, APIException, UserException, UserNotAuthorizedException (+26 more)
 
 ### Community 106 - "Ders 22 Genişletilmiş Notu: Dosya İşlemleri: Açma Kipleri ve Karakter, Satır, Blok Düzeyinde Kopyalama"
-Cohesion: 0.03
-Nodes (71): 10. Dosya Sonunu Doğru Denetlemek, 11. Örnek 1'in Çalıştırılması: Metin ve PDF, 12. getc ile fgetc Karşılaştırması, 13. Örnek 2: Metin Kipinde Satır Satır Kopyalama, 14. Blok Düzeyinde Giriş/Çıkış: fread ve fwrite, 15. Örnek 3: İkili Kipte Blok Blok Kopyalama, 16. Son Eksik Blok Neden Ayrıca Yazılır?, 1. Dosya Konusuna Giriş (+63 more)
+Cohesion: 0.06
+Nodes (42): 10. Dosya Sonunu Doğru Denetlemek, 11. Örnek 1'in Çalıştırılması: Metin ve PDF, 12. getc ile fgetc Karşılaştırması, 13. Örnek 2: Metin Kipinde Satır Satır Kopyalama, 14. Blok Düzeyinde Giriş/Çıkış: fread ve fwrite, 15. Örnek 3: İkili Kipte Blok Blok Kopyalama, 16. Son Eksik Blok Neden Ayrıca Yazılır?, 1. Dosya Konusuna Giriş (+34 more)
 
 ### Community 107 - "cn"
-Cohesion: 0.04
+Cohesion: 0.05
 Nodes (76): AddPostPage(), NewPostPage(), CommunityPage(), CommunityDetailPage(), CommunityPage(), deslugify(), slugify(), Comment (+68 more)
 
 ### Community 108 - "Ders 7 Genişletilmiş Notu: Metin Ön İşleme, Precision-Recall, Ters İndeks ve Web Crawler'lara Giriş"
@@ -12999,39 +13076,39 @@ Nodes (99): Windows Registry (key value store), Sistem çağrısı tipleri (proc
 
 ### Community 112 - "Senkron Seri İletim"
 Cohesion: 0.03
-Nodes (122): Efe Girgin notu: 4. slayt (ortam, hata kontrolü), VİBA-4 slaytı (ortam, hata kontrolü), Guided media (koaksiyel, twisted pair, fiber optik), Hamming kodu ile hata düzeltme, Hata saptama (VRC, LRC, CRC, checksum), Multiplexing (FDM, WDM, TDM), Unguided media (RF, mikrodalga, kızılötesi), Asynchronous (Statistical) TDM (+114 more)
+Nodes (93): Efe Girgin notu: 4. slayt (ortam, hata kontrolü), VİBA-4 slaytı (ortam, hata kontrolü), Guided media (koaksiyel, twisted pair, fiber optik), Hamming kodu ile hata düzeltme, Hata saptama (VRC, LRC, CRC, checksum), Multiplexing (FDM, WDM, TDM), Unguided media (RF, mikrodalga, kızılötesi), UTP kategorileri (Cat5e vb.) (+85 more)
 
 ### Community 113 - "Bilgisayar Bilimlerine Giriş/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.03
 Nodes (58): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+50 more)
 
 ### Community 114 - "Ders 11 Genişletilmiş Notu: İstatistiksel Veri Analizi: Betimsel İstatistik, Olasılık, Hipotez Testi, Regresyon ve Kümeleme"
-Cohesion: 0.04
-Nodes (55): 10.1 Regresyonun amacı, 10.2 Regresyon modellerinin kullanımları, 10.3 Basit doğrusal regresyon, 10.4 Neden denetimli öğrenme?, 10. Regresyon Analizi ve Denetimli Öğrenme, 11.1 Denetimsiz öğrenme, 11.2 Uzaklık, benzerlik ve benzemezlik, 11.3 Öklid ve Minkowski uzaklıkları (+47 more)
+Cohesion: 0.03
+Nodes (66): 10.1 Regresyonun amacı, 10.2 Regresyon modellerinin kullanımları, 10.3 Basit doğrusal regresyon, 10.4 Neden denetimli öğrenme?, 10. Regresyon Analizi ve Denetimli Öğrenme, 11.1 Denetimsiz öğrenme, 11.2 Uzaklık, benzerlik ve benzemezlik, 11.3 Öklid ve Minkowski uzaklıkları (+58 more)
 
 ### Community 115 - "cn"
-Cohesion: 0.06
-Nodes (80): App(), ChatDetailsDialog(), ChatDetailsDialogProps, ChatList(), ChatListProps, MessageInput(), MessageInputProps, MessageList() (+72 more)
+Cohesion: 0.05
+Nodes (83): SettingsPage(), formSchema, ProfileSettingsForm(), App(), ChatDetailsDialog(), ChatDetailsDialogProps, ChatList(), ChatListProps (+75 more)
 
 ### Community 116 - "Genetik algoritma"
 Cohesion: 0.03
-Nodes (107): Alt küme toplamı problemi, En yakın komşu sezgiseli, n^p < 2^n < n! karşılaştırması, Sezgisel (heuristic) algoritmalar, Yapısal Programlamaya Giriş Ders 12 (Amasyalı), Çözüm karmaşıklık sınıfları (polinomial, NP), Dijkstra Algoritması, En Kısa Yol Problemleri (+99 more)
+Nodes (117): Alt küme toplamı problemi, En yakın komşu sezgiseli, n^p < 2^n < n! karşılaştırması, Sezgisel (heuristic) algoritmalar, Yapısal Programlamaya Giriş Ders 12 (Amasyalı), Çözüm karmaşıklık sınıfları (polinomial, NP), Paralel tepe tırmanma, Benzeşimli tavlama (+109 more)
 
 ### Community 117 - "Bachelor Programme in Computer Engineering (2023, %30 English)"
 Cohesion: 0.02
-Nodes (142): Sena Cindioğlu Ders Bilgileri, Sayısal Analiz Ders Kayıtları Altyazıları README, Ahmet Elbir (dersi veren akademisyen), Eksik kayıtlar (8., 10., 11. hafta), Hafta - tarih eşlemesi (ders_x.srt), Sayısal Analiz harf notu istatistikleri 2025 (Ahmet Elbir), Sayısal Analiz harf notu istatistikleri 2026 (Ahmet Elbir), Sayısal Analiz harf notu istatistikleri 2026 (Banu Diri) (+134 more)
+Nodes (129): Sena Cindioğlu Ders Bilgileri, Banu Diri, Ders notları (Efe Girgin, Nasır Sabir), Lojik Devreler dersi, M. Amaç Güvensan, M. Elif Karslıgil, Devre Teorisi Dersi, Gökhan Bilgin (+121 more)
 
 ### Community 118 - "Ders 2 Genişletilmiş Notu: Direnç ve İletkenlik, Devre Topolojisi, Kirchhoff Akım ve Gerilim Yasaları, Seri-Paralel Bağlama ve Eşdeğer Direnç"
 Cohesion: 0.03
 Nodes (68): 10.1 Seriliğin Tanımı, 10.2 Güç Dengesi, 10.3 Bağımlı Kaynaklı Tek Çevreli Devre: $2v_A$, 10.4 Bağımlı Kaynaklı Tek Çevreli Devre: $4v_x$, 10. Tek Çevreli Devreler ve Seri Bağlama, 11.1 Paralelliğin Tanımı, 11.2 İki Akım Kaynaklı Örnek, 11.3 Bağımlı Akım Kaynaklı Örnek (+60 more)
 
-### Community 119 - "Sözlük (Glossary)"
-Cohesion: 0.03
-Nodes (95): Expert Systems, Artificial Intelligence, Data Set Preparation, Introduction to Machine Learning (Karslıgil 2025), Evaluation, Feature Selection-Extraction, Credit Card Fraud Detection example, History of AI (+87 more)
+### Community 119 - "Reinforcement Learning"
+Cohesion: 0.25
+Nodes (14): Reinforcement Learning, Action, Agent, Deterministic policy, Environment, Markov Decision Process, Policy, Return (+6 more)
 
 ### Community 120 - "Süreçler Arası Haberleşme (Ders 6 Lab)"
-Cohesion: 0.05
-Nodes (44): Direct ve Indirect Communication, Mailbox, fork(), Parent-Child Process, Pipe (Unnamed Pipe), wait(), WIFEXITED / WEXITSTATUS, Sütun Değerlerini Kıyaslama (awk) (+36 more)
+Cohesion: 0.04
+Nodes (59): Chapter 14: Multiprocessing Using Processes and Threads, execl function, fork function, Gas station producer/consumer case study, Interprocess Communications and Pipes, Linear versus parallel programming, pipe function, Processes (+51 more)
 
 ### Community 121 - "Ders 10 Genişletilmiş Notu: Fazörlere Giriş: Karmaşık Sayılar, Sinüzoidal İşaretler, RMS, Faz Farkı ve Fazör Dönüşümü"
 Cohesion: 0.03
@@ -13043,23 +13120,23 @@ Nodes (36): initializeDatabase(), authenticate(), { query }, requireRole(), { ve
 
 ### Community 123 - "AnnouncementCategory"
 Cohesion: 0.03
-Nodes (27): AnnouncementCategoryDAO, AnnouncementStateDAO, AnnouncementTypeDAO, InterestsDAO, AnnouncementCategoryHibernateImpl, AnnouncementStateHibernateImpl, AnnouncementTypeHibernateImpl, InterestsHibernateImpl (+19 more)
+Nodes (26): AnnouncementCategoryDAO, AnnouncementStateDAO, AnnouncementTypeDAO, InterestsDAO, AnnouncementCategoryHibernateImpl, AnnouncementStateHibernateImpl, AnnouncementTypeHibernateImpl, InterestsHibernateImpl (+18 more)
 
 ### Community 124 - "Ders 5 Genişletilmiş Notu: Decorator, Facade, Flyweight, Proxy ve Chain of Responsibility"
 Cohesion: 0.03
-Nodes (72): Footer(), 11. Davranışsal Kalıplara Giriş, 12.1 Amaç, 12.2 Örnek: bağlama duyarlı yardım, 12.3 Kalıp yapısı, 12.4 Ne zaman kullanılır, zayıf yönü, 12. Chain of Responsibility Kalıbı, 1.1 Amaç (+64 more)
+Nodes (65): Footer(), 10.1 Problem, 10.2 Tasarım, 10.3 Kod, 10. Proxy Uygulama Örneği: Pay-per-view Yayın Sunucusu, 11. Davranışsal Kalıplara Giriş, 12.1 Amaç, 12.2 Örnek: bağlama duyarlı yardım (+57 more)
 
 ### Community 125 - "Ders 6 Genişletilmiş Notu: Bilgi Erişimi ve Web Araması: Boolean Model, Vektör Uzayı Modeli ve TF-IDF"
 Cohesion: 0.03
 Nodes (57): 10.1 Ayırt Edici Kelimeler ve Kelime Dağarcığı, 10.2 Dokümanın ve Sorgunun Gösterimi, 10.3 Tam Eşleşme, 10. Boolean Bilgi Erişimi Modeli, 11.1 Terim Frekansı, 11.2 Ters Doküman Frekansı, 11.3 TF-IDF Ağırlığı, 11.4 Vektörü Oluşturmak (+49 more)
 
 ### Community 126 - "BBG Slayt 3 - Veri Depolama"
-Cohesion: 0.05
-Nodes (69): Floating-point notation, Bitwise negation (~), Shift operatörleri (<< >>), Table C.3 &, ^, | Bit Sonuçları, Ill-conditioned Problems, Limitations of algorithms, Numerical Algorithms Challenges, Quadratic Equation Solving (+61 more)
+Cohesion: 0.06
+Nodes (63): Floating-point notation, Bitwise negation (~), Shift operatörleri (<< >>), Table C.3 &, ^, | Bit Sonuçları, 1's complement, 2's complement, AND operatörü, Aritmetik operatörler (+55 more)
 
 ### Community 127 - "Bilişim Sistemleri Güvenliği Ders Kayıtları 2020-2021"
-Cohesion: 0.02
-Nodes (117): TCP ve UDP, Bilişim Sistemleri Güvenliği Ders Kayıtları & Çalışma Özetleri, Ders 10: ARP güvenliği, Ders 10 (Lab): Ağ saldırılarının gözlemlenmesi, Ders 11: Ağ saldırılarına karşı savunma, Ders 13: Akademik içerik bulunmayan kayıt, Ders 14: Sertifika ve açık anahtar altyapısı, Ders 1: Bilişim sistemleri güvenliğinin temel problemi (+109 more)
+Cohesion: 0.03
+Nodes (98): TCP ve UDP, Bilişim Sistemleri Güvenliği Ders Kayıtları & Çalışma Özetleri, Ders 10: ARP güvenliği, Ders 10 (Lab): Ağ saldırılarının gözlemlenmesi, Ders 11: Ağ saldırılarına karşı savunma, Ders 13: Akademik içerik bulunmayan kayıt, Ders 14: Sertifika ve açık anahtar altyapısı, Ders 1: Bilişim sistemleri güvenliğinin temel problemi (+90 more)
 
 ### Community 128 - "Ders 1 Genişletilmiş Notu: Büyük Resim; Ölçme, Örnekleme, Nicemleme ve Sayıların Gösterimi"
 Cohesion: 0.03
@@ -13067,19 +13144,19 @@ Nodes (67): 10.1 Filtreleme Neden Gerekir?, 10.2 Frekans Gösteriminde Sinyal, 1
 
 ### Community 129 - "blm_5227/Scripts/jquery-3.7.0.min.js"
 Cohesion: 0.09
-Nodes (39): Ae(), B(), Be(), c(), Ct(), $e(), ee(), F() (+31 more)
+Nodes (39): ye(), Ae(), B(), Be(), c(), Ct(), $e(), ee() (+31 more)
 
 ### Community 130 - "101 ObjectCategories - background_google veri seti"
 Cohesion: 0.02
 Nodes (122): 101 ObjectCategories - background_google veri seti, image_0067.jpg - Kişi, saman balyalarının yanında tenis raketiyle d, image_0068.jpg - Bir dal üzerindeki iki yaprak biti (aphid) makro f, image_0069.jpg - "Wonderful Things" tabelalı el sanatları/iplik dük, image_0070.jpg - Scrabble Players Dictionary'deki 94 iki harfli kel, image_0071.jpg - "Needful Things" yazılı bilgisayar/devre temalı re, image_0072.jpg - Sahilde iki kadın ve küçük siyah bir köpek, image_0073.jpg - "Greens & Things" bahçe/çiçek dükkanı binası, kırm (+114 more)
 
 ### Community 131 - "Reference Monitor"
-Cohesion: 0.02
-Nodes (131): Antivirus software, Armored Virus, Boot Virus, Multipartite Virus, Stealth Virus, Viruses, Behavioral Checker, Chapter 9 Security (Malware and Defenses) (+123 more)
+Cohesion: 0.03
+Nodes (94): Hypervisor (VMM), Discretionary access control, Back door, Bell-LaPadula model, Biba model, Chapter 9 Security (Modern Operating Systems), Covert channel, Hand et al./Heiser et al.: Are Virtual Machine Monitors Microkernels Done Right? (+86 more)
 
 ### Community 132 - "ref_react_router_dom"
-Cohesion: 0.06
-Nodes (57): fetchFrontMovies(), fetchMovieById(), fetchMovieCasts(), fetchMovieCrews(), searchFrontMovies(), GenreSidebar(), Props, MovieGrid() (+49 more)
+Cohesion: 0.10
+Nodes (38): fetchFrontMovies(), MovieGrid(), Props, truncate(), CardSlider(), CardSliderProps, HeroBanner(), Props (+30 more)
 
 ### Community 133 - "Sayısal Analiz/projeler/2026/alperen/kod.c"
 Cohesion: 0.06
@@ -13102,8 +13179,8 @@ Cohesion: 0.03
 Nodes (58): 10.1 Scanline'lar ve başlangıç noktası, 10.2 Tarama biçimleri, 10.3 Siyah-beyaz resimde kurallar, 10.4 Şeklin karmaşıklığı, 10.5 Uniform alanda sıkıştırma oranı, 10. Bitmap'in Taranması ve Siyah-Beyaz Resimde RLE, 11.1 Beş renkli resim, 11.2 Neden 4 ile çarpıldı? (+50 more)
 
 ### Community 138 - "Sözlük (Glossary)"
-Cohesion: 0.03
-Nodes (103): ALVINN, Artificial intelligence (Ch 11), Associative Memory (Hopfield networks), Behavior-Based Intelligence, Chapter 11 Artificial Intelligence, Closed-World Assumption, Discovery Systems (Bacon, AUTOCLASS), Eight-Puzzle (+95 more)
+Cohesion: 0.02
+Nodes (162): 2D Graphics, ALVINN, Artificial intelligence (Ch 11), Associative Memory (Hopfield networks), Behavior-Based Intelligence, Chapter 11 Artificial Intelligence, Closed-World Assumption, Discovery Systems (Bacon, AUTOCLASS) (+154 more)
 
 ### Community 139 - "jquery.min.js"
 Cohesion: 0.06
@@ -13115,11 +13192,11 @@ Nodes (57): Threads (Introduction to C, Lecture 11), Process ve thread farkı, p
 
 ### Community 141 - "Structure chart"
 Cohesion: 0.04
-Nodes (59): Assembly language, Compiler, High-level language, Interpreter, Machine language, Cross-platform software, Interpreter, Machine independence (+51 more)
+Nodes (54): Assembly language, Compiler, High-level language, Interpreter, Machine language, Cross-platform software, Interpreter, Machine independence (+46 more)
 
-### Community 142 - "dosya_islemleri.py"
-Cohesion: 0.03
-Nodes (60): calculate_and_save_similarity_scores(), eliminate_element_embeddings(), get_and_save_all_top5_matches(), get_cosine_similarity(), get_single_top5_matches(), append_embedding(), append_json(), append_probability() (+52 more)
+### Community 142 - "compress_huff.py"
+Cohesion: 0.15
+Nodes (20): build_codes(), calculate_frequency(), calculate_frequency_multi_key_len(), compress(), decompress(), filter_keys_by_length_and_frequency(), huffman_decode(), huffman_encode() (+12 more)
 
 ### Community 143 - "Faces Easy Dataset (Caltech-101, ödev 2)"
 Cohesion: 0.02
@@ -13127,23 +13204,23 @@ Nodes (117): Faces Easy dataset photo 0239 (frontal face, bookshelf background),
 
 ### Community 144 - "Buffer Overflow"
 Cohesion: 0.03
-Nodes (110): Buffer Overflow, BLM4011 Lab 3 Buffer Overflow raporu, Girdi uzunluğu sınırlaması, Stack bellek yerleşimi, Ağ güvenliği - hijacking attacks, Format string, Ders 2 Çalışma Özeti (altyazı özeti), Ders 3 Çalışma Özeti (altyazı özeti) (+102 more)
+Nodes (125): Ders 2: Kontrol akışını ele geçirme saldırıları, Ders 3: Kontrol ve verinin karışması, Ders 5 (Lab): Buffer overflow uygulama mantığı, Detaylı Açıklamalar, Detaylı Açıklamalar, Genel Konular, Genel Konular, Genel Konular (+117 more)
 
 ### Community 145 - "Principle of least privilege"
-Cohesion: 0.03
-Nodes (107): Ders 4: Güvenli tasarım ilkelerine giriş, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Access control list, Mandatory Integrity Control, Security Access Token, Security Descriptor and ACL (Windows 7) (+99 more)
+Cohesion: 0.05
+Nodes (72): Ders 4: Güvenli tasarım ilkelerine giriş, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Access control list, Traditional packet filter, Stateful packet filter, Chrome Security (+64 more)
 
 ### Community 146 - "Newton-Raphson Yöntemi"
-Cohesion: 0.06
-Nodes (90): Değişken dönüşümü (eşit olmayan artış), Gauss Eliminasyon Yöntemi, Değişken Dönüşümü (Gregory-Newton), Newton-Raphson Yöntemi, BLM1022 Sayısal Analiz Projesi - İbrahim Enes Sayın (24011116), ANSI-C, malloc/free, struct tabanlı tasarım, Desteklenen ifadeler (sabit, x, e, pi, + - * / ^), Gregory-Newton Enterpolasyonu yöntemi (+82 more)
+Cohesion: 0.05
+Nodes (110): Değişken dönüşümü (eşit olmayan artış), Gauss Eliminasyon Yöntemi, Değişken Dönüşümü (Gregory-Newton), Newton-Raphson Yöntemi, BLM1022 Sayısal Analiz Projesi - İbrahim Enes Sayın (24011116), ANSI-C, malloc/free, struct tabanlı tasarım, Desteklenen ifadeler (sabit, x, e, pi, + - * / ^), Gregory-Newton Enterpolasyonu yöntemi (+102 more)
 
 ### Community 147 - "Ders 5 Genişletilmiş Notu: Bağıntılar ve Özellikleri, Bileşke, Denklik ve Sıralama Bağıntıları, Hasse Diyagramı, Kapanış ve Warshall Algoritması"
 Cohesion: 0.02
 Nodes (81): 10.1 Birinci Bağıntı, 10.2 İkinci Bağıntı, 10.3 Üçüncü Bağıntı, 10.4 Dördüncü Bağıntı, 10.5 Beşinci Bağıntı, 10.6 Altıncı Bağıntı, 10.7 Özet Tablo, 10.8 Dolaylı İspat Bağlantısı (+73 more)
 
 ### Community 148 - "İstatistiksel Dil Modeli"
-Cohesion: 0.04
-Nodes (55): Add-one Smoothing, Back-off Yöntemi, N-gram ile Biçimbirimsel Belirsizlik Giderme, Bigram Gramer, Dil Modelleri (Banu Diri), Üretken Yapay Zeka (Generative AI), Good-Turing, Hece tabanlı dil benzerliği (+47 more)
+Cohesion: 0.07
+Nodes (37): Add-one Smoothing, Back-off Yöntemi, N-gram ile Biçimbirimsel Belirsizlik Giderme, Bigram Gramer, Dil Modelleri (Banu Diri), Üretken Yapay Zeka (Generative AI), Good-Turing, Hece tabanlı dil benzerliği (+29 more)
 
 ### Community 149 - "im2col_cython.c"
 Cohesion: 0.03
@@ -13151,51 +13228,51 @@ Nodes (76): _obj_to_str(), PyInit_im2col_cython(), __Pyx__ArgTypeTest(), __pyx_a
 
 ### Community 150 - "blm_5227/Scripts/bootstrap.bundle.js"
 Cohesion: 0.05
-Nodes (94): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets() (+86 more)
+Nodes (93): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets() (+85 more)
 
 ### Community 151 - "Binary search tree"
 Cohesion: 0.04
-Nodes (82): Binary search tree, Duplicate elimination with BST, Augmenting data structures (Ch.14), AVL tree (Problem 13-3), Binary search tree (Ch.12), BST insertion and deletion (TREE-INSERT, TREE-DELETE, TRANSPLANT), BST queries: search, minimum, maximum, successor, predecessor, Catalan numbers (Problem 12-4) (+74 more)
+Nodes (84): Binary search tree, Duplicate elimination with BST, Binary tree deletion, Augmenting data structures (Ch.14), AVL tree (Problem 13-3), Binary search tree (Ch.12), BST insertion and deletion (TREE-INSERT, TREE-DELETE, TRANSPLANT), BST queries: search, minimum, maximum, successor, predecessor (+76 more)
 
-### Community 152 - "TESLİM/scripts/run_phase1.py"
-Cohesion: 0.04
-Nodes (41): main(), main(), choose_chunk_size(), write_chunk_decision_report(), run_chunk_size_experiments(), _chunk_labels(), _finish_figure(), generate_phase1_plots() (+33 more)
+### Community 152 - "pandas"
+Cohesion: 0.01
+Nodes (156): main(), plot_and_save(), clean_excel_file(), process_and_combine_excel_files(), remove_bracketed_text(), preprocess_text(), clean_doc(), handle_emojis() (+148 more)
 
-### Community 153 - "Analysis framework (time and space efficiency)"
-Cohesion: 0.03
-Nodes (85): Border rank, Complex multiplication with three real multiplications, Matrix multiplication tensor rank, Appendix B: Short Tutorial on Recurrence Relations, Bibliography, Binary Tree Height Algorithm, Binary Tree Traversals, Brute Force (+77 more)
+### Community 153 - "Chapter 5 C Functions"
+Cohesion: 0.02
+Nodes (141): Argument coercion and usual arithmetic conversion, Automatic storage duration, Chapter 5 C Functions, Function (C module), Function call, Function call stack, rand and pseudorandom numbers, Recursive factorial (+133 more)
 
 ### Community 154 - "JsonDatabase"
-Cohesion: 0.03
-Nodes (26): Bicycle, Rent, Review, Student, JsonDatabase, BicycleTable, Main, MainApplication (+18 more)
+Cohesion: 0.04
+Nodes (16): Review, JsonDatabase, Main, MainApplication, AdminPanel, BicyclePanel, InitialPanel, StudentPanel (+8 more)
 
 ### Community 155 - "gezirehberi_admin/Scripts/bootstrap.bundle.js"
 Cohesion: 0.05
-Nodes (93): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets() (+85 more)
+Nodes (94): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapDelegationHandler(), bootstrapHandler(), computeAutoPlacement(), computeOffsets() (+86 more)
 
 ### Community 156 - "Androidmanifest xml"
 Cohesion: 0.04
-Nodes (62): Handle Table, Security Descriptor (DACL/SACL/ACE), Security Reference Monitor, Android Activity (ActivityRecord, saved state), Activity Manager, APK (Android Package), Binder IPC and AIDL, Android Content Provider (+54 more)
+Nodes (70): Device Object, Device Stack, Driver Object, File-system Filter Driver, Handle Table, Windows I/O Manager, I/O Request Packet (IRP), Windows Object Manager (+62 more)
 
 ### Community 157 - "Ders 4 Genişletilmiş Notu: Fikir ve Sanat Eserleri, Meslek ve Mühendislik Etiği"
 Cohesion: 0.03
 Nodes (67): 10. Hizmet Buluşu, 11. Yazılım ve Patent, 12.1 Tanım ve Tarihçe, 12.2 Etik Değerlendirme, 12. Tersine Mühendislik, 13. Açık Kaynak, 14. İnsan Hakları Evrensel Beyannamesi 27. Madde, 15.1 Sorun: Haksız Rekabet Davaları (+59 more)
 
 ### Community 158 - "UndoManager"
-Cohesion: 0.07
-Nodes (13): closeEventHandler(), SatirAtlayanInputDialog, _get_base_paths(), hoca_kisaltma_olustur(), ders_adi_normalize(), elideText(), _turkce_bas_harf_buyut(), _turkce_kucult() (+5 more)
+Cohesion: 0.08
+Nodes (12): closeEventHandler(), SatirAtlayanInputDialog, _get_base_paths(), surukle_bilgi_etiketi(), SuruklemeListe, hoca_kisaltma_olustur(), elideText(), apply_minimum_size() (+4 more)
 
 ### Community 159 - "Discrete Mathematics and Its Applications, 7th Edition (Rosen)"
-Cohesion: 0.04
-Nodes (78): Contrapositive and converse, Working with Proofs, Discrete Mathematics and Its Applications, 7th Edition (Rosen), Algorithms and Growth of Functions, Answers to Odd-Numbered Exercises (Rosen 7e), Valid Arguments and Argument Forms, Bound and Free Variables / Scope of Quantifier, Chapter 1: The Foundations: Logic and Proofs (+70 more)
+Cohesion: 0.03
+Nodes (90): Algorithm #1: sequential scan keeping oldest, Algorithm #2: pairwise elimination, Finding the oldest person example, Steps to solving problems (understand, plan, carry out, examine), Contrapositive and converse, Working with Proofs, Discrete Mathematics and Its Applications, 7th Edition (Rosen), Algorithms and Growth of Functions (+82 more)
 
 ### Community 160 - "Ders 13 Genişletilmiş Notu: Uygulama Projesi Sunumları"
 Cohesion: 0.03
 Nodes (57): 10.1 Konu ve Amaç, 10.2 Tanım ve Tarihçe, 10.3 Duygusal Zekanın Dört Alanı, 10.4 Proje Yönetimindeki Önemi, 10.5 Nasıl Geliştirilir?, 10.6 Sonuç, 10.7 Hocanın Geri Bildirimi, 10. Makale Sunumu: Proje Yönetiminde Duygusal Zeka (+49 more)
 
 ### Community 161 - "BLM 2012 Object Oriented Programming Lecture Notes (Aktaş, 2023)"
-Cohesion: 0.04
-Nodes (74): Interface, Multiple Inheritance (via Interfaces), Polymorphism / Override, Abstract classes, NYP Hafta 6 - Abstract Class, Interface, Enum, Enum sınıfları (Size, Tariff), Interfaces, Item/Clothing/Toy örneği (+66 more)
+Cohesion: 0.06
+Nodes (55): Encapsulation, Unit testing with JUnit, NYP Lab-1 questions (30.10.2023), Basket class (max 2 items), Class (max 2 students), calculateDiscount (>=70: 20%, 50-70: 10%), Exam class, Item class (+47 more)
 
 ### Community 162 - "gezirehberi/Scripts/bootstrap.bundle.js"
 Cohesion: 0.05
@@ -13203,15 +13280,15 @@ Nodes (93): addHandler(), applyStyles(), areValidElements(), arrow(), bootstrapD
 
 ### Community 163 - "Bandpass filter"
 Cohesion: 0.03
-Nodes (100): Active (Op Amp) Filters, Bandreject Filter, Practical Perspective: Bass Volume Control, Bode Plot (dB magnitude, log frequency), Center Frequency, Bandwidth and Quality Factor, Cutoff Frequency (1/sqrt2 of Hmax, half-power frequency), Practical Perspective: DTMF Pushbutton Telephone Filters, Relating Frequency Domain to Time Domain (time constant, neper frequency, damping) (+92 more)
+Nodes (103): Active (Op Amp) Filters, Bandreject Filter, Practical Perspective: Bass Volume Control, Bode Plot (dB magnitude, log frequency), Center Frequency, Bandwidth and Quality Factor, Cutoff Frequency (1/sqrt2 of Hmax, half-power frequency), Practical Perspective: DTMF Pushbutton Telephone Filters, Relating Frequency Domain to Time Domain (time constant, neper frequency, damping) (+95 more)
 
-### Community 164 - "android.support.v4.app.Fragment"
-Cohesion: 0.05
-Nodes (14): PullToRefreshActivity, SectionPagerAdapter, DetailOnPageChangeListener, Fragments, Calls, Contacts, Sms, SpeedDial (+6 more)
+### Community 164 - "AdaptiveCompressor"
+Cohesion: 0.03
+Nodes (23): benchmark_adaptive(), AdaptiveCompressor, AdaptiveDecompressor, decode_header(), encode_header(), header_is_raw(), max_compressed_size(), set_raw_header_field() (+15 more)
 
 ### Community 165 - "Chapter 4 Networking and the Internet"
 Cohesion: 0.03
-Nodes (101): Anycast, Application layer, Browser, Bus topology, CERT, Chapter 4 Networking and the Internet, Client-side activities, Computer Fraud and Abuse Act (+93 more)
+Nodes (93): Anycast, Browser, Bus topology, CERT, Chapter 4 Networking and the Internet, Client-side activities, Computer Fraud and Abuse Act, Content delivery network (+85 more)
 
 ### Community 166 - "Ders 25 Genişletilmiş Notu: Hafıza Birimleri ve 8086 Hafıza Arayüzü"
 Cohesion: 0.03
@@ -13219,11 +13296,11 @@ Nodes (60): 10.1 Temel varsayımlar, 10.2 Komut örnekleri, 10.3 Çift ve tek ba
 
 ### Community 167 - "Ders 9 Genişletilmiş Notu: Web Tarayıcıları: Mimari, Gerçekleştirme Sorunları ve Tercihli Tarama"
 Cohesion: 0.04
-Nodes (54): 8. ODBC, Gömülü SQL ve Gömülü Veritabanları, 10.1 Sıralı Tarayıcıda Zaman Alan İşler, 10.2 Çok İş Parçacıklı Mimari, 10.3 Paylaşılan Veri Yapıları ve Senkronizasyon, 10. Eşzamanlı (Concurrent) Tarayıcı, 11.1 Kapsam ile Tazelik Dengesi, 11.2 Darboğazlara Çözümler, 11.3 Tazeliğin Belirlenmesi (+46 more)
+Nodes (46): 8. ODBC, Gömülü SQL ve Gömülü Veritabanları, 10.1 Sıralı Tarayıcıda Zaman Alan İşler, 10.2 Çok İş Parçacıklı Mimari, 10.3 Paylaşılan Veri Yapıları ve Senkronizasyon, 10. Eşzamanlı (Concurrent) Tarayıcı, 11.1 Kapsam ile Tazelik Dengesi, 11.2 Darboğazlara Çözümler, 11.3 Tazeliğin Belirlenmesi (+38 more)
 
 ### Community 168 - "cv2"
 Cohesion: 0.03
-Nodes (77): draw_lines(), fitness_fn(), generate_random_shape(), genetic_algorithm(), mutate(), rank_selection(), reproduce(), calculate_iou_processed_mask() (+69 more)
+Nodes (72): draw_lines(), fitness_fn(), generate_random_shape(), genetic_algorithm(), mutate(), rank_selection(), reproduce(), calculate_iou_processed_mask() (+64 more)
 
 ### Community 169 - "101 Object Categories - chandelier dataset"
 Cohesion: 0.02
@@ -13247,35 +13324,39 @@ Nodes (107): 📘 16.yüzyıldan Günümüze İstanbulda Dans, 📘 20. Yüzyıl
 
 ### Community 174 - "Ders 4 Genişletilmiş Notu: Kümeler ve Küme İşlemleri, Kartezyen Çarpım, Diziler, Dizgiler ve Sayı Sistemleri"
 Cohesion: 0.03
-Nodes (68): 10.1 Genelleştirilmiş birleşim ve kesişim, 10.2 İki kümenin birleşiminin eleman sayısı, 10.3 Üç kümenin birleşiminin eleman sayısı, 10. Genelleştirilmiş Birleşim, Kesişim ve İçerme-Dışarma, 11.1 Yöntem, 11.2 Diğer yöntemlerle karşılaştırma, 11. Küme İşlemlerini Bit Dizisiyle Programlamak, 12.1 Tanım ve örnekler (+60 more)
+Nodes (65): 10.1 Genelleştirilmiş birleşim ve kesişim, 10.2 İki kümenin birleşiminin eleman sayısı, 10.3 Üç kümenin birleşiminin eleman sayısı, 10. Genelleştirilmiş Birleşim, Kesişim ve İçerme-Dışarma, 12.1 Tanım ve örnekler, 12.2 Artan ve azalan diziler, 12.3 Alt dizi, 12. Diziler (Sequences) (+57 more)
 
 ### Community 175 - "Transfer function H(s)"
-Cohesion: 0.02
-Nodes (133): Convolution integral, Appendix D The Decibel, Appendix E Bode Diagrams, Bode Diagram, Complex Poles and Zeros Bode, Corner Frequency, Damping Coefficient, dBm (+125 more)
+Cohesion: 0.04
+Nodes (79): Convolution integral, Graphic Interpretation of Convolution (fold and slide), Impulse Function in Circuit Analysis, Impulsive Sources, Impulsive Currents/Voltages from Switching (capacitor and series inductor circuits), Chapter 13 Problems (13.1-13.94), Practical Perspective: Surge Suppressors, Unit Impulse Response h(t)=L^-1{H(s)} (+71 more)
 
 ### Community 176 - "android.media.MediaPlayer"
-Cohesion: 0.01
-Nodes (72): Event, EventDao, RepoDatabase, selectEvent, View.OnClickListener, showEvent, View.OnClickListener, View.OnClickListener (+64 more)
+Cohesion: 0.02
+Nodes (55): Event, EventDao, RepoDatabase, selectEvent, View.OnClickListener, showEvent, View.OnClickListener, View.OnClickListener (+47 more)
 
 ### Community 177 - "Laudon & Laudon - Management Information Systems 13th Edition (bölüm 9/11: Ch.13 sonu, Ch.14, Ch.15 girişi, References)"
-Cohesion: 0.03
-Nodes (73): Chapter 8 Running Case Studies, Chapter 9 Project Planning and Project Management, Core Process 1 Identify Problem and Obtain Approval, Core Process 2 Plan and Monitor Project, Cost/Benefit Analysis, Critical Path, Data flow diagram (DFD), Detailed Work Schedule (+65 more)
+Cohesion: 0.04
+Nodes (68): Chapter 8 Running Case Studies, Chapter 9 Project Planning and Project Management, Core Process 1 Identify Problem and Obtain Approval, Core Process 2 Plan and Monitor Project, Cost/Benefit Analysis, Critical Path, Data flow diagram (DFD), Detailed Work Schedule (+60 more)
 
 ### Community 178 - "word2vec"
-Cohesion: 0.06
-Nodes (62): Öz Denetimli Öğrenme (Makine Öğrenmesi-4, 2024 slaytları), AlphaZero, BERT, GPT, Karşıtsal öğrenme (Contrastive Learning), Otokodlayıcılar (VAE, Diffusion), Parçalara odaklanan diğer yaklaşımlar (Electra, BART, NSP/SOP), RL'de ödülü insandan almama (AlphaZero, RLHF, TRL) (+54 more)
-
-### Community 179 - "scanner"
 Cohesion: 0.07
-Nodes (11): ConsoleIOv1, ConsoleIOv1b, ConsoleIOv2, MainTest, ConsoleIOv1, ConsoleIOv2, MainTest, DailyLimitException (+3 more)
+Nodes (53): RLHF, Öz Denetimli Öğrenme (Makine Öğrenmesi-4, 2024 slaytları), AlphaZero, BERT, GPT, Karşıtsal öğrenme (Contrastive Learning), Otokodlayıcılar (VAE, Diffusion), Parçalara odaklanan diğer yaklaşımlar (Electra, BART, NSP/SOP) (+45 more)
+
+### Community 179 - "android.media.MediaPlayer"
+Cohesion: 0.04
+Nodes (24): Details, SeekBar.OnSeekBarChangeListener, MediaPlayerController, TimeConverter, PlayerFragment, Observer<PlaySong>, SeekBar.OnSeekBarChangeListener, View.OnClickListener (+16 more)
 
 ### Community 180 - "NavMeshLink"
 Cohesion: 0.04
-Nodes (23): RandomInstancing, NavMeshComponentsGUIUtility, NavMeshLinkEditor, NavMeshModifierEditor, NavMeshModifierVolumeEditor, editingCollider, NavMeshSurfaceEditor, editingCollider (+15 more)
+Nodes (23): NavMeshPrefabInstanceEditor, NavMeshComponentsGUIUtility, NavMeshLinkEditor, NavMeshModifierEditor, NavMeshModifierVolumeEditor, editingCollider, NavMeshSurfaceEditor, editingCollider (+15 more)
 
 ### Community 181 - "Bilgisayar Bilimlerine Giriş BLM1011 (2020-2021, Doç. Dr. M. Amaç Güvensan)"
+Cohesion: 0.07
+Nodes (76): Algoritma ve algoritma tasarımı, Algoritma karmaşıklığı (en yüksek üslü terim), Armstrong sayısı problemi, ASCII ve karakter sabitleri ('1' - '0'), Kümelerde bağıntı özellikleri (simetri, yansıma, geçişkenlik), Bellek hiyerarşisi (register, cache, ana bellek, ikincil), Bilgisayar ağları, IP, web, protokoller, Bilgisayar mimarisi, makine dili, komut seti (+68 more)
+
+### Community 182 - "an"
 Cohesion: 0.05
-Nodes (96): Akış diyagramı (flowchart), Algoritma ve algoritma tasarımı, Algoritma karmaşıklığı (en yüksek üslü terim), Armstrong sayısı problemi, ASCII ve karakter sabitleri ('1' - '0'), Kümelerde bağıntı özellikleri (simetri, yansıma, geçişkenlik), Bellek hiyerarşisi (register, cache, ana bellek, ikincil), Bilgisayar ağları, IP, web, protokoller (+88 more)
+Nodes (14): addBox(), addElements(), an(), generateLabels(), ke(), Mn(), onClick(), removeBox() (+6 more)
 
 ### Community 183 - "Ders 13 Genişletilmiş Notu: 8251 Proteus Örnekleri ve 8254 Programlanabilir Zamanlayıcıya Giriş"
 Cohesion: 0.04
@@ -13289,21 +13370,21 @@ Nodes (28): run_all_methods_for_scale(), run_experiment(), run_full_benchmark(),
 Cohesion: 0.03
 Nodes (57): 10.1 Neden model?, 10.2 Fiziksel model, 10.3 Olasılık modeli, 10. Veri Modelleri: Fiziksel Model ve Olasılık Modeli, 11.1 Tanım, 11.2 $k$'ıncı dereceden Markov model, 11.3 Neden küçük $k$?, 11. Markov Model (+49 more)
 
-### Community 186 - "hüsamettin_ışıktaş/src/ui/page_graph_explorer.py"
-Cohesion: 0.04
-Nodes (20): load_bundle(), require_streamlit(), safe_len(), split_count_rows(), _build_graph_snapshot(), _build_interactive_graph_view(), _compute_2d_layout(), _degree_band() (+12 more)
+### Community 186 - "State machine diagram"
+Cohesion: 0.02
+Nodes (101): Background and foreground color, Computer graphics with WinBGIm (graphics.h), Fill styles (setfillstyle, floodfill, bar), Graphics function library (line, rectangle, circle, arc, ellipse, pieslice, bar, floodfill), Pixel coordinate system of a window, Action-expression, Activity diagram (workflow), Activity diagram for use cases (+93 more)
 
 ### Community 187 - "Ders 1 altyazısı (5 Ekim 2020)"
-Cohesion: 0.03
-Nodes (107): Virus, Worm, ActiveX Controls, CERT, Bilgisayar Sistemleri ve Ağ Güvenliği dersi (Lisansüstü), Bilgisayar Sistemleri ve Ağ Güvenliği README, Zehra Aksoy notları, Ağ güvenliği - giriş (+99 more)
+Cohesion: 0.02
+Nodes (132): Spyware, Virus, Worm, ActiveX Controls, Adware, Application Rootkit, CERT, Firmware Rootkit (+124 more)
 
 ### Community 188 - "stdbool"
 Cohesion: 0.02
-Nodes (90): binarySearch(), main(), binarySearch(), main(), EkranaYazdir(), fibonacci(), InsertionSort(), main() (+82 more)
+Nodes (107): binarySearch(), main(), binarySearch(), main(), EkranaYazdir(), fibonacci(), InsertionSort(), main() (+99 more)
 
 ### Community 189 - "Silberschatz Ch.12 File System Implementation"
 Cohesion: 0.03
-Nodes (111): Bit Vector, Chapter 11 File-System Interface, Chapter 12 File-System Implementation, Direct Access, Distributed Information Systems, Efficiency and Performance (File Systems), Extents, File-Control Block (FCB) (+103 more)
+Nodes (91): Bit Vector, Chapter 12 File-System Implementation, Efficiency and Performance (File Systems), Extents, Free-Space Linked List, Grouping and Counting, Hash Table Directory, InServ Storage Array (+83 more)
 
 ### Community 191 - "Ders 11 Genişletilmiş Notu: Öğrenci Sunumları: Altın Oran, Efes Antik Kenti, Büyük Veri, Bulut Oyun, Video Oyunlarında DRM, Kutsal Roma İmparatorluğu, Uçaklarda Fren Sistemleri, 2011 NBA Playoff'ları"
 Cohesion: 0.03
@@ -13314,8 +13395,8 @@ Cohesion: 0.05
 Nodes (69): allowedAttribute(), applyStyle(), applyStyleOnLoad(), arrow(), attachToScrollParents(), clockwise(), computeAutoPlacement(), computeStyle() (+61 more)
 
 ### Community 193 - "ATM"
-Cohesion: 0.05
-Nodes (49): AAL, ADSL, ADSL2, ADSL Lite, ATM, ATM anahtarlama, ATM referans modeli, B kanalı (+41 more)
+Cohesion: 0.04
+Nodes (57): AAL, ADSL, ADSL2, ADSL Lite, ATM, ATM anahtarlama, ATM referans modeli, B kanalı (+49 more)
 
 ### Community 194 - "Ders 4 Genişletilmiş Notu: OSI Referans Modeli, İşaretler, Kanal Kapasitesi ve Polar Kodlama"
 Cohesion: 0.03
@@ -13323,7 +13404,7 @@ Nodes (65): 11.1 Bozucu Etkenlerin Listesi, 11.2 Çapraz Girişim Teriminin Kök
 
 ### Community 195 - "cn"
 Cohesion: 0.02
-Nodes (18): bn, Ci, cn, F, gi, hi, kn, Ni (+10 more)
+Nodes (15): Ci, cn, F, gi, hi, kn, Ni, Pn (+7 more)
 
 ### Community 196 - "jquery.dataTables.js"
 Cohesion: 0.05
@@ -13331,31 +13412,31 @@ Nodes (85): _addNumericSort(), _fnAddColumn(), _fnAddData(), _fnAddOptionsHtml()
 
 ### Community 197 - "İlişkisel cebir"
 Cohesion: 0.03
-Nodes (103): İlişkisel cebir ağacı, DDL sıralaması (CREATE/ALTER/DROP), Ders 5 Çalışma Özeti: Kısıtlar, ER'den İlişkisel Modele Dönüşüm, İlişkisel Cebir (PDF), EER dönüşüm stratejileri 8A-8D, ER'den ilişkisel modele dönüşüm kuralları, ON DELETE/ON UPDATE seçenekleri, İlişkisel cebire giriş, Kartezyen çarpım ve join (+95 more)
+Nodes (118): Distributive Law, DDL ve DML (SQL), Üniversite öğrenci-ders veritabanı örneği, Primary key seçimi, Şema ve instance (veritabanı durumu), Sorgu türleri (join, gruplama, küme fonksiyonları), SQL, İlişkisel cebir ağacı (+110 more)
 
 ### Community 198 - "Ders 6 Genişletilmiş Notu: Web Güvenlik Modeli: HTTP, Çerezler ve Aynı Köken Politikası"
 Cohesion: 0.03
-Nodes (61): 10.1 Unix modeliyle eşleme, 10.2 SOP'nin hedefleri, 10.3 Köken sınırları (Bounding Origins), 10.4 BroadcastChannel API, 10.5 Ebeveyn-çocuk pencereler arasında postMessage, 10. Aynı Köken Politikası (Same Origin Policy), 11.1 HTTP cevapları, 11.2 Resimler, CSS ve fontlar (+53 more)
+Nodes (65): 10.1 Unix modeliyle eşleme, 10.2 SOP'nin hedefleri, 10.3 Köken sınırları (Bounding Origins), 10.4 BroadcastChannel API, 10.5 Ebeveyn-çocuk pencereler arasında postMessage, 10. Aynı Köken Politikası (Same Origin Policy), 11.1 HTTP cevapları, 11.2 Resimler, CSS ve fontlar (+57 more)
 
 ### Community 199 - "Trigger (event, condition, action)"
 Cohesion: 0.03
 Nodes (101): Authentication ve Authorization, DAC, Ders 8 Çalışma Özeti: Veri Bütünlüğü, Assertion, Trigger, Güvenlik (PDF), MAC, Roller ve yetkiler, Total Salary bakım trigger'ları, Trigger (event, condition, action), BEFORE / AFTER / INSTEAD OF (+93 more)
 
-### Community 200 - "Settings"
-Cohesion: 0.21
-Nodes (5): Settings, CompoundButton.OnCheckedChangeListener, View.OnClickListener, View.OnClickListener, View.OnClickListener
+### Community 200 - "Chapter 2 Basic Components and Electric Circuits"
+Cohesion: 0.04
+Nodes (87): Electrical Circuit Analysis, Gustav Kirchhoff, Network Analysis and Flow Conservation, Traffic Flow Design, Chapter 1: Circuit Variables, Current as rate of change of charge (i=dq/dt), Dependent (controlled) sources, Passive sign convention (+79 more)
 
 ### Community 201 - "Ders 4 Genişletilmiş Notu: Sıralı Örüntü Madenciliği, Gözetimli Öğrenme ve K-Means Kümeleme"
 Cohesion: 0.04
-Nodes (55): 10. Eğitim ve Test Verisinin Dağılımı, 11.1 Model Bir Ağaç Veri Yapısıdır, 11.2 Ağacın Kurulması, 11.3 Modelle Tahmin, 11.4 Tek Bir Doğru Ağaç Yoktur, 11.5 Ağaçtan Kural Çıkarma, 11.6 Böl ve Yönet, 11.7 Nitelik Seçiminin Sezgisi: Yanlış Yerleşen Örnekler (+47 more)
+Nodes (47): 10. Eğitim ve Test Verisinin Dağılımı, 12. Sınıf İlişkilendirme Kurallarıyla Sınıflandırma, 13.1 Veri ve Amaç, 13.2 Bayes Teoremi ve Sadeleştirme, 13.3 Hesabın Tamamı, 13.4 Üç Model Türü, 13. Naive Bayes Sınıflandırıcı, 14. k En Yakın Komşu (kNN) (+39 more)
 
 ### Community 202 - "apiFunctions.js"
 Cohesion: 0.04
 Nodes (81): Bootstrap dağılımı, Bootstrap örneği, Monte Carlo ile bootstrap örnekleri üretimi, Parametrik bootstrap güven aralığı, R ve MATLAB komutları (t.test, wilcox.test, chisq.test, boot), Bootstrap sample (resampling), Bradley Efron, Monte Carlo simulation (+73 more)
 
 ### Community 203 - "show_success"
-Cohesion: 0.04
-Nodes (8): surukle_bilgi_etiketi(), SuruklemeListe, SuruklemeListeItem, AciklamaDialog, KavramDetayDialog, KavramDialog, TalimatDialog, show_success()
+Cohesion: 0.05
+Nodes (5): SuruklemeListeItem, AciklamaDialog, KavramDetayDialog, TalimatDialog, show_success()
 
 ### Community 204 - "Bonsai Ağacı Kategorisi Veri Seti (101_ObjectCategories)"
 Cohesion: 0.02
@@ -13366,20 +13447,20 @@ Cohesion: 0.03
 Nodes (99): Array, Array bounds checking and buffer overflow, Array initializer list, Array subscript and bounds, Brute-force problem solving, Bubble Sort (sinking sort), Bubble sort with pass-by-reference (bubbleSort and swap), Card shuffling and dealing simulation (+91 more)
 
 ### Community 206 - "Ders 13 Genişletilmiş Notu: Öğrenci Proje Sunumları: Hash Fonksiyonlarına Saldırılar, Evrensel Hash, Algısal Hash ve Blokzincir"
-Cohesion: 0.04
-Nodes (54): 10.1 Tanım ve pHash, 10.2 Dört Aşama, 10.3 pHash Oluşturma Adımları, 10.4 Uygulama Alanları ve Sınırlılıklar, 10. Algısal Hash: Aşamalar ve Uygulama Alanları (Onuncu Sunum), 11.1 Motivasyon, 11.2 Algoritmaların Avantaj ve Dezavantajları, 11.3 Gelecek ve Kuantum Hesaplama (+46 more)
+Cohesion: 0.03
+Nodes (71): 10.1 Tanım ve pHash, 10.2 Dört Aşama, 10.3 pHash Oluşturma Adımları, 10.4 Uygulama Alanları ve Sınırlılıklar, 10. Algısal Hash: Aşamalar ve Uygulama Alanları (Onuncu Sunum), 11.1 Motivasyon, 11.2 Algoritmaların Avantaj ve Dezavantajları, 11.3 Gelecek ve Kuantum Hesaplama (+63 more)
 
 ### Community 207 - "Chapter 1 Information Systems in Global Business Today"
 Cohesion: 0.02
-Nodes (164): Practical Perspective: Circuits with Realistic Resistors, Sensitivity Analysis, Automakers Become Software Companies (Interactive Session), Benchmarking and Industry Best Practices, Business value of enterprise systems, CIO, CSO, CPO, CKO Roles, Cloud-based CRM, Collaboration and Social Business Tools (+156 more)
+Nodes (163): Practical Perspective: Circuits with Realistic Resistors, Sensitivity Analysis, Automakers Become Software Companies (Interactive Session), Benchmarking and Industry Best Practices, Business value of enterprise systems, CIO, CSO, CPO, CKO Roles, Cloud-based CRM, Collaboration and Social Business Tools (+155 more)
 
 ### Community 208 - "Ders 5 Genişletilmiş Notu: Giriş-Çıkış Komutları, Adresleme Modları ve Sözde Komutlar"
-Cohesion: 0.03
-Nodes (64): 10.1 Doğrudan program hafızası adresleme, 10.2 Göreli program hafızası adresleme, 10.3 Dolaylı program hafızası adresleme, 10. Program Hafızası Adresleme Modları, 11.1 Genel kurallar, 11.2 SP'nin hareketi, 11.3 Yığın neden uzak adresten dolar?, 11. Yığın Adresleme Modları (+56 more)
+Cohesion: 0.04
+Nodes (55): 10.1 Doğrudan program hafızası adresleme, 10.2 Göreli program hafızası adresleme, 10.3 Dolaylı program hafızası adresleme, 10. Program Hafızası Adresleme Modları, 11.1 Genel kurallar, 11.2 SP'nin hareketi, 11.3 Yığın neden uzak adresten dolar?, 11. Yığın Adresleme Modları (+47 more)
 
 ### Community 209 - "Türkçe metinlerden emoji tahmini projesi"
 Cohesion: 0.13
-Nodes (35): BERT, Google Colab Pro, Danışman: Prof. Dr. Mehmet Fatih Amasyalı, Emoji Prediction and Model Analysis with NLP - Ara Rapor (Nisan 2024), GPT, Hugging Face Transformers, KNN, Lemmatization (Türkçe) (+27 more)
+Nodes (37): BERT, Google Colab Pro, Danışman: Prof. Dr. Mehmet Fatih Amasyalı, Emoji Prediction and Model Analysis with NLP - Ara Rapor (Nisan 2024), GPT, Hugging Face Transformers, KNN, Lemmatization (Türkçe) (+29 more)
 
 ### Community 210 - "Ders 4 Genişletilmiş Notu: Öğrenci Sunumları: CQRS, API Gateway ve Mikroservislerde Test Stratejileri"
 Cohesion: 0.04
@@ -13395,7 +13476,7 @@ Nodes (53): 10.1 Görselleştirme yöntemlerinin periyodik tablosu, 10.2 Taksono
 
 ### Community 213 - "Electronic Devices and Circuit Theory (Boylestad, 7th ed.)"
 Cohesion: 0.04
-Nodes (97): ElDev 06 Diode Load-Line Analysis ve Uygulamalar, Full-wave rectification, Half-wave rectification, Load-line analizi ve Q-point, Paralel diyot konfigürasyonları, Seri diyot konfigürasyonları, Diode Current Equation (Shockley eq.), Extrinsic Materials (n-type, p-type) (+89 more)
+Nodes (96): Kirchhoff's Laws, ElDev 06 Diode Load-Line Analysis ve Uygulamalar, Full-wave rectification, Half-wave rectification, Load-line analizi ve Q-point, Paralel diyot konfigürasyonları, Seri diyot konfigürasyonları, Diode Current Equation (Shockley eq.) (+88 more)
 
 ### Community 214 - "hüsamettin_ışıktaş/src/ui/page_dataset_explorer.py"
 Cohesion: 0.04
@@ -13403,15 +13484,15 @@ Nodes (34): _degree_distribution(), _edge_weights(), _edge_years(), _node_featur
 
 ### Community 215 - "Nesneye Yönelik Programlama (BLM2012)"
 Cohesion: 0.03
-Nodes (93): Nesneye Yönelik Programlama (BLM2012), NYP Lab 3 (2024-2025 Güz) notları, Lab 3: dört lab arasında en zoru; %2.5 not payı (MSA), NYP Lab 4 (2024-2025 Güz) notları, Lab 4 opsiyonel: girenlerin ortalaması 4 lab, girmeyenlerin 3 lab üzerinden, Lab 4 takım sıralaması (TeamE 169 … TeamB 146), ObjectOriented-Project README (BLM2512), Yusuf Safa Köksal 2023-2024 Güz NYP projesi (+85 more)
+Nodes (78): Nesneye Yönelik Programlama (BLM2012), NYP Lab 3 (2024-2025 Güz) notları, Lab 3: dört lab arasında en zoru; %2.5 not payı (MSA), NYP Lab 4 (2024-2025 Güz) notları, Lab 4 opsiyonel: girenlerin ortalaması 4 lab, girmeyenlerin 3 lab üzerinden, Lab 4 takım sıralaması (TeamE 169 … TeamB 146), ObjectOriented-Project README (BLM2512), Yusuf Safa Köksal 2023-2024 Güz NYP projesi (+70 more)
 
 ### Community 216 - "City"
 Cohesion: 0.02
-Nodes (83): City, ADANA, ADIYAMAN, AFYONKARAHISAR, AGRI, AKSARAY, AMASYA, ANKARA (+75 more)
+Nodes (82): City, ADANA, ADIYAMAN, AFYONKARAHISAR, AGRI, AKSARAY, AMASYA, ANKARA (+74 more)
 
 ### Community 217 - "Ders 11 Genişletilmiş Notu: EXTRN/PUBLIC ile Veri Aktarımı, Kesim Birleştirme, Sistem Reseti ve Kesmelere Giriş"
 Cohesion: 0.04
-Nodes (46): 10.1 Birleştirme öncesi MAP, 10.2 Birleştirme şartları, 10.3 Birleştirme sonrası MAP, 10. Kod Segmentlerini Birleştirme, 11.1 EXTRN'e gerek kalıyor mu?, 11.2 Fonksiyonlar NEAR yapılabilir mi?, 11. Birleşik Segmentte EXTRN ve NEAR Çağrı, 12. Kesim Birleştirmenin Kazançları ve Veri Kesimi Birleştirme (+38 more)
+Nodes (55): 10.1 Birleştirme öncesi MAP, 10.2 Birleştirme şartları, 10.3 Birleştirme sonrası MAP, 10. Kod Segmentlerini Birleştirme, 11.1 EXTRN'e gerek kalıyor mu?, 11.2 Fonksiyonlar NEAR yapılabilir mi?, 11. Birleşik Segmentte EXTRN ve NEAR Çağrı, 12. Kesim Birleştirmenin Kazançları ve Veri Kesimi Birleştirme (+47 more)
 
 ### Community 218 - "Ders 8 Genişletilmiş Notu: Bağlam Farkında Sinirsel Dil Modelleri"
 Cohesion: 0.04
@@ -13419,31 +13500,31 @@ Nodes (54): 10. Büyük Resim ve Hazır Modeller, 11.1 ELMo, GPT ve BERT, 11.2 S
 
 ### Community 219 - "Distributor"
 Cohesion: 0.01
-Nodes (54): DateInfo, Distributor, Journal, PaymentInfo, Subscriber, Subscription, bitecek_abonelik_gui, corporation_gui (+46 more)
+Nodes (50): Genel Konular, DateInfo, Distributor, Journal, PaymentInfo, Subscriber, Subscription, bitecek_abonelik_gui (+42 more)
 
 ### Community 220 - "n-Cube (Hypercube) Qn"
 Cohesion: 0.50
 Nodes (4): Interconnection Networks for Parallel Computation, n-Cube (Hypercube) Qn, Local Area Network Topologies (star, ring, hybrid), Special Simple Graphs (Kn, Cn, Wn, Qn)
 
 ### Community 221 - "Chapter 2: Introduction to Logic Circuits"
-Cohesion: 0.03
-Nodes (121): Truth table, Bus, Chapter 2 Data Manipulation, CPU (ALU, control unit, registers), Boolean Identities, Duality Principle, John Venn, Venn Diagram (+113 more)
+Cohesion: 0.02
+Nodes (143): Truth table, Boolean Identities, Duality Principle, John Venn, Venn Diagram, CPLD / FPGA, Programmable Array Logic (PAL), Programmable Logic Array (PLA) (+135 more)
 
 ### Community 222 - "Ders 12 Genişletilmiş Notu: Kablosuz Sensör Ağları ve IoT ile Karşılaştırma"
 Cohesion: 0.03
 Nodes (58): 10.1 Anlatım ile gerçek hayat, 10.2 Enerji ihtiyacı, 10.3 Göz ameliyatı öncesi bakış mesafesi ölçümü, 10. WSN'den IoT'ye: Gerçek Hayat ve Enerji İhtiyacı, 11.1 Güç tüketimi, 11.2 Protokol tasarım güçlükleri, 11.3 Güvenilirlik ve hatalı sensör verisi, 11. Güç Tüketimi, Protokol Tasarım Güçlükleri ve Güvenilirlik (+50 more)
 
 ### Community 223 - "VetCareDB veritabanı raporu"
-Cohesion: 0.03
-Nodes (94): Randevu yönetimi, VetCare README, Evcil hayvan yönetimi, PostgreSQL + psycopg2, Python tkinter arayüz, Mağaza, Aşı takibi, VetCare Yönetim Sistemi (+86 more)
+Cohesion: 0.04
+Nodes (79): Randevu yönetimi, VetCare README, Evcil hayvan yönetimi, PostgreSQL + psycopg2, Python tkinter arayüz, Mağaza, Aşı takibi, VetCare Yönetim Sistemi (+71 more)
 
 ### Community 224 - "Chapter 13 Comprehensive Review"
-Cohesion: 0.15
-Nodes (17): Chapter 11 Managing Network Security, Chapter 13 Comprehensive Review, Chapter 8 Implementing Advanced Storage Features, cron scheduling, firewall-cmd, firewalld, firewalld zones, LVM logical volumes (+9 more)
+Cohesion: 0.05
+Nodes (47): ausearch / audit.log AVC, chcon, getenforce / setenforce, httpd_sys_content_t type, restorecon, RH134 Ch.5 Managing SELinux Security, sealert / setroubleshoot, SELinux (Security Enhanced Linux) (+39 more)
 
 ### Community 225 - "android.os.Bundle"
 Cohesion: 0.01
-Nodes (95): Repository, Main, Repository, Test, Test, AddMoneyActivity, MoneyAsync, BodyRates (+87 more)
+Nodes (74): AddMoneyActivity, BodyRates, EditProfileActivity, InternetCheckAsync, AllCategoriesAsync, AllProgramsAsync, AllTrainersAsync, CheckInternetAsync (+66 more)
 
 ### Community 226 - "Ders 22 Genişletilmiş Notu: Bilgisayar Mimarisi, Haberleşme ve İşletim Sistemlerine Giriş"
 Cohesion: 0.03
@@ -13454,48 +13535,48 @@ Cohesion: 0.03
 Nodes (62): 10.1 Laboratuvar Ortamı, 10.2 Şifreleme Engeli, 10.3 Rapor, 10. İnceleme, Çözümleme ve Raporlama, 11.1 Disk İncelemesi, 11.2 Bellek İncelemesi, 11.3 Ağ İncelemesi, 11.4 Mobil İnceleme (+54 more)
 
 ### Community 228 - "Week 5: Database and Data Center Security (2.4)"
-Cohesion: 0.05
-Nodes (50): LAB2 SQL Injection (DVWA), DVWA, group_concat, SQL Injection önleme, Tırnak karakteri ve # yorum satırı, UNION SELECT information_schema, Week 11: Software Security (3.2), Cross-site scripting (+42 more)
+Cohesion: 0.04
+Nodes (54): LAB2 SQL Injection (DVWA), DVWA, group_concat, SQL Injection önleme, Tırnak karakteri ve # yorum satırı, UNION SELECT information_schema, Week 11: Software Security (3.2), Cross-site scripting (+46 more)
 
 ### Community 229 - "android.content.Context"
-Cohesion: 0.01
-Nodes (84): ProgramPlayActivity, AlertReceiver, NotificationHelper, NoteViewHolder, NotificationHelper, AlertReceiver, ReminderBroadcast, ReminderBroadcast (+76 more)
+Cohesion: 0.02
+Nodes (38): MyBroadcastReceiver, NetworkCheckAsyncClass, AlertReceiver, NotificationHelper, NotificationHelper, AlertReceiver, ReminderBroadcast, ReminderBroadcast (+30 more)
 
 ### Community 230 - "ref_express"
-Cohesion: 0.04
-Nodes (59): app, storage, upload, client, Express, Request, authMiddleware(), boom (+51 more)
+Cohesion: 0.06
+Nodes (41): boom, app, Redis, Login(), Logout(), Me(), RefreshToken(), Register() (+33 more)
 
-### Community 231 - "Kitap"
-Cohesion: 0.04
-Nodes (30): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 10.1 Önceki Kodda Yapılan Değişiklikler, 10.2 UML'deki Oklar, 10.3 Soyut `Kart` Sınıfı (+22 more)
+### Community 231 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
+Cohesion: 0.01
+Nodes (120): 13.1 tumRaflariGoster, 13.2 Setter örneği, 13. Bütün rafları gösterme ve setter örneği, Dersin Toparlaması, Soru 1 (ekrandan, 00:20:00), Soru 2 (ekrandan, 00:20:00), Soru 3 (derste sözlü, 01:23:51), Soru 4 (ekrandan, 01:10:00 ve derste sözlü, 01:14:16) (+112 more)
 
 ### Community 233 - "ref_react"
-Cohesion: 0.05
-Nodes (39): SignIn(), SignUp(), homeAdmin(), App(), getMarker1FromStorage(), getMarkerFromStorage(), MapSelection(), styles (+31 more)
+Cohesion: 0.06
+Nodes (26): SignIn(), SignUp(), homeAdmin(), App(), getMarker1FromStorage(), getMarkerFromStorage(), MapSelection(), styles (+18 more)
 
 ### Community 234 - "org.apache.hadoop.io.Text"
 Cohesion: 0.12
 Nodes (14): NCDCRecordParser, YearMeanTemperatureReducer, YearTemperatureMapper, DateAverageMapper, DateAverageReducer, MinMaxReviewMapper, MinMaxReviewReducer, MovieAverageMapper (+6 more)
 
 ### Community 235 - ".pushStack"
-Cohesion: 0.04
-Nodes (5): done(), Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar
+Cohesion: 0.03
+Nodes (8): 11. GDB ile Hata Ayıklama, 3.1 Uzun işler ve ana thread, 3.2 onDestroy ve görev yığını, 3.3 Yaşam döngüsünü bilmek neden önemli?, 3.4 LogCat ile yaşam döngüsünü izlemek, 3. Activity Yaşam Döngüsü, 6. UI Durumunu Saklama Seçenekleri, Detaylı Açıklamalar
 
 ### Community 236 - "CRS"
 Cohesion: 0.04
 Nodes (9): CRS, Doctor, Hospital, Patient, Person, Rendezvous, Schedule, Section (+1 more)
 
 ### Community 237 - "ref_next"
-Cohesion: 0.04
-Nodes (61): allComments, allPosts, Comment, Post, CreateCommunityPage(), geistMono, geistSans, metadata (+53 more)
+Cohesion: 0.05
+Nodes (50): allComments, allPosts, Comment, Post, geistMono, geistSans, metadata, RootLayout() (+42 more)
 
 ### Community 238 - "Ders 5 Genişletilmiş Notu: Öğrenci Sunumları: CQRS Görünüm Tasarımı, Uçtan Uca Testler, Güvenli Servisler ve Microservice Chassis"
 Cohesion: 0.04
 Nodes (53): 10.1 Kimlik doğrulama nerede yapılmalı?, 10.2 Yetkilendirme, 10. API Gateway'de kimlik doğrulama ve yetkilendirme, 11.1 Opak belirteçler, 11.2 Şeffaf belirteçler ve JWT, 11. Belirteç türleri: opak belirteçler ve JWT, 12.1 Temel kavramlar, 12.2 API istemcisinde kimlik doğrulama akışı (+45 more)
 
-### Community 239 - "Software life cycle"
-Cohesion: 0.10
-Nodes (25): ACM, IEEE and ISO standards bodies, CASE tools, Chapter 7 Software Engineering, Copyright, patents and disclaimers, CRC cards, Dataflow diagram, Design phase, Software documentation (user, system, technical) (+17 more)
+### Community 239 - "Chapter 24 Exception Handling"
+Cohesion: 0.03
+Nodes (46): Chapter 15 C++ as a Better C; Introducing Object Technology, Standard stream objects cin, cout, cerr, clog, DivideByZeroException class, istream functions get, getline, peek, putback, ignore, Object Management Group (OMG), Object-oriented analysis and design (OOAD), Object-oriented design (OOD), Object-oriented programming (OOP) (+38 more)
 
 ### Community 240 - "unityengine"
 Cohesion: 0.09
@@ -13506,20 +13587,20 @@ Cohesion: 0.53
 Nodes (12): AFAD, Kızılay ve AKUT destekli eğitim, Deprem hasarları, Deprem müdahale ekiplerinin eğitimi, Dijital oyunlarda görsel ve işitsel öğeler, Dijital oyunlarda yapay zekâ, BIL5004 proje sunumu: Ciddi oyun ile deprem müdahale eğitimi, Geliştirme, test, eğitim ve tatbikat yöntemi, Performans ölçümü ve değerlendirme (+4 more)
 
 ### Community 242 - "BMÖK-3 Dijital Görüntü İşleme Ders Notu (106 slayt)"
-Cohesion: 0.04
-Nodes (95): Clipping, Circuit breaker, CNN Part 1 slaytları, Aktivasyon fonksiyonları (Sigmoid, tanh, ReLU), AlexNet (2012), Convolution katmanında backpropagation, Batch size (SGD, mini-batch), Convolution katmanı (filtre, stride, padding) (+87 more)
+Cohesion: 0.08
+Nodes (45): Medyan filtresi, GLCM (gri düzey eş-oluşum matrisi), BMÖK-3 Dijital Görüntü İşleme Ders Notu (106 slayt), API Gateway ve servis izolasyonu, Asenkron mesajlaşma (Message Broker, Pub/Sub), Averaging filtresi, Alt alana göre ayrıştırma (DDD, Bounded Context), İş yeteneğine göre ayrıştırma (+37 more)
 
 ### Community 243 - "Mantık Devreleri Kitabı"
 Cohesion: 0.04
-Nodes (88): Lojik Devreler Ders 13 (2020-2021), Adres kod çözücü, BCD (ondalık) sayıcı, Bellek hücresi ve RAM iç mimarisi, Bellekler (Word ve adres yapısı), Cache bellek, Content addressable memory (ilişkisel bellek), Dinamik RAM (DRAM) (+80 more)
+Nodes (81): Ripple (asenkron) sayıcı, 74154 4 Hattan 16 Hatta Kod Çözücü, 74193 Ön Kurmalı Yukarı/Aşağı Sayıcı, 74293 Asenkron Sayıcı Entegresi, 7490 Sayıcı Entegresi, 7493 Sayıcı Entegresi, Ardışıl Devre Tasarım Aşamaları, Ardışıl (Sıralı) Devreler (+73 more)
 
 ### Community 244 - "Ders 5 Genişletilmiş Notu: Fonksiyonel Çözümleme: Veri Akış Diyagramları, Süreç Tanım Formları, Karar Tabloları ve Veri Sözlüğü"
 Cohesion: 0.03
 Nodes (62): 10.1 2.0'ın İçi, 10.2 Denge Kuralı, 10. İkinci Düzey ve Düzeyler Arası Denge, 11.1 Varlık Uyumsuzluğu, 11.2 Tek Okta İki Veri, 11.3 Süreç Modeli ve Veri Modeli, 11. İki Kısa Düzey Örneği, 12.1 Eczane Örneği (+54 more)
 
 ### Community 245 - "BLM1011 Bilgisayar Bilimlerine Giriş dersi"
-Cohesion: 0.05
-Nodes (50): Triversi dönem projesi raporu (Burak Başol), Triversi oyunu, Proje 2024-2025 Güz (Enis Ögdüm, not 97), BLM1011 Proje 2024: Triversi, Triversi (3 kişilik Reversi) oyunu, BLM1011 Assignment I (2020), Sıfır-bir dizisinden kesirli sayıya dönüşüm, Kamera depolama, hex, excess-16 soruları (+42 more)
+Cohesion: 0.04
+Nodes (74): Derlenen ve yorumlanan diller; compiler, linker, Ders 13: C Programlamaya Giriş, Triversi dönem projesi raporu (Burak Başol), Triversi oyunu, Proje 2024-2025 Güz (Enis Ögdüm, not 97), BLM1011 Proje 2024: Triversi, Triversi (3 kişilik Reversi) oyunu, BLM1011 Assignment I (2020) (+66 more)
 
 ### Community 246 - "Ders 12 altyazı: UDP, RTP, TCP"
 Cohesion: 0.10
@@ -13543,47 +13624,47 @@ Nodes (62): 10.1 Konu ve Literatür, 10.2 Özgün Değer, Araştırma Sorusu ve 
 
 ### Community 251 - "Fundamentals of Digital Logic with Verilog Design (Bölüm 7.14-9)"
 Cohesion: 0.05
-Nodes (51): FSM_220119_030437, Ayrık Matematik-Bölüm 8-FSM, FSM 6-lısı M=(I,O,S,f,g,s0), Geçiş diyagramı (transition diagram), Metro turnikesi örneği, Sonlu Durum Makineleri, sonlu makinalar, Seri toplayıcı FSM (+43 more)
+Nodes (59): FSM_220119_030437, Ayrık Matematik-Bölüm 8-FSM, FSM 6-lısı M=(I,O,S,f,g,s0), Geçiş diyagramı (transition diagram), Metro turnikesi örneği, Sonlu Durum Makineleri, sonlu makinalar, Seri toplayıcı FSM (+51 more)
 
-### Community 252 - "FetchUtil.java"
-Cohesion: 0.05
-Nodes (15): ResourceNotFoundException, MovieFrontMapper, MovieImageType, BACKDROP, LOGO, POSTER, PROFILES, Movie (+7 more)
+### Community 252 - "ns"
+Cohesion: 0.04
+Nodes (14): bn, As(), beforeUpdate(), bn, initialize(), labelColor(), labelPointStyle(), ns() (+6 more)
 
 ### Community 253 - "Ders 4 Genişletilmiş Notu: Derleme Makalesi ve Trafik Akış Tahmini; Mobil Hesaplama ve Mobil İşletim Sistemleri"
 Cohesion: 0.03
 Nodes (57): 10.1 Zaman çizelgesi, 10.2 Güncel mobil işletim sistemleri, 10. Mobil İşletim Sistemlerinin Tarihi ve Güncel Sistemler, 11.1 Android'in dört katmanı, 11.2 Yenilik 1: Android App Bundle, 11.3 Yenilik 2: Android Runtime (ART), 11.4 iOS mimarisi, 11. Android ve iOS Mimarisi (+49 more)
 
 ### Community 254 - "blm_3061_msad/ödev_1/ödev_1_visualstudio/stb_image.h"
-Cohesion: 0.07
-Nodes (63): stbi__bitcount(), stbi__convert_8_to_16(), stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__cpuid3(), stbi__do_zlib(), stbi_failure_reason() (+55 more)
+Cohesion: 0.06
+Nodes (78): resample_row_1(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y_16(), stbi__convert_16_to_8(), stbi__convert_8_to_16(), stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread() (+70 more)
 
 ### Community 255 - "Pima Indians Diabetes Veri Seti Üzerinde Sınıflandırma Analizi"
-Cohesion: 0.02
-Nodes (86): 1. 5-Fold Stratified Cross Validation, 1. Eksik Veri İşaretleme, 1. **Logistic Regression**, 1. Precision İyileştirme, 2. KNN Imputer, 2. Normalizasyon, 2. **Support Vector Machine (SVM)**, 2. Özellik Mühendisliği (+78 more)
+Cohesion: 0.03
+Nodes (70): 1. Eksik Veri İşaretleme, 1. Precision İyileştirme, 2. Normalizasyon, 2. Özellik Mühendisliği, 3. Eksik Veri Doldurma, 3. Model Geliştirme, 4. Pipeline Yaklaşımı, 4. Veri Artırma (+62 more)
 
 ### Community 256 - "Ders 9 Genişletilmiş Notu: Mediator Kalıbı, JUnit ile Birim Sınaması ve Kod Kusurlarıyla Refactoring"
 Cohesion: 0.03
-Nodes (69): 10.1 Pull up ve pull down, 10.2 Pull Up Method (ekrandan, 01:30:00), 10.3 Form Template Method, 10.4 İlgisiz sınıflarda yinelenen kod, 10. Yinelenen Kod İçin Diğer Düzenlemeler: Pull Up Method ve Form Template Method, 11.1 Örnek (ekrandan, 01:40:00), 11. Decompose Conditional, 12.1 Kusur (+61 more)
+Nodes (73): 10.1 Pull up ve pull down, 10.2 Pull Up Method (ekrandan, 01:30:00), 10.3 Form Template Method, 10.4 İlgisiz sınıflarda yinelenen kod, 10. Yinelenen Kod İçin Diğer Düzenlemeler: Pull Up Method ve Form Template Method, 11.1 Örnek (ekrandan, 01:40:00), 11. Decompose Conditional, 12.1 Kusur (+65 more)
 
 ### Community 257 - "Ders 5 Genişletilmiş Notu: Model Değerlendirme, Çapraz Doğrulama ve Başarı Ölçüleri"
 Cohesion: 0.04
 Nodes (51): 10. Rastgele Alt Örnekleme, 11. Eğitim Örneklerine Müdahale Etmemek, 12. Tabakalı Örnekleme (Stratification), 13.1 Temel Fikir, 13.2 İki Kullanım Biçimi, 13.3 Çapraz Doğrulama ile Parametre Seçimi, 13.4 Kaç Parçaya Bölmeli?, 13. K Katlı Çapraz Doğrulama (+43 more)
 
 ### Community 258 - "Yapısal Programlama/projeler/2026/alperen/kod.c"
-Cohesion: 0.10
-Nodes (48): clear_stdin(), game_menu_automatic(), game_menu_get_operation(), game_menu_manual(), game_menu_print(), gamestate_deinit(), gamestate_file_read(), gamestate_init() (+40 more)
+Cohesion: 0.08
+Nodes (73): clear_stdin(), game_menu_automatic(), game_menu_get_operation(), game_menu_manual(), game_menu_print(), gamestate_deinit(), gamestate_file_pop(), gamestate_file_push() (+65 more)
 
 ### Community 259 - "YBS Ders Kayıtları & Çalışma Özetleri 2020-2021"
-Cohesion: 0.05
-Nodes (64): Artımlı Model, Model Oluşturma (Prototip), RAD Model, Sistem Geliştirme Yaşam Döngüsü, Bağlam Diyagramı, Ders 10 Çalışma Özeti: Karar verme, DSS, veri ambarı ve veri madenciliği, Karar türleri, What-if analizi (+56 more)
+Cohesion: 0.04
+Nodes (73): Artımlı Model, Klasik Süreç (Waterfall), Model Oluşturma (Prototip), RAD Model, Sistem Geliştirme Yaşam Döngüsü, Evrimsel süreçler (artımlı, spiral), Bilgi sistemi geliştirme süreci, RUP (+65 more)
 
 ### Community 260 - "CustomerDashboard"
-Cohesion: 0.05
-Nodes (9): CustomerDashboard, javafx.scene.control.ListCell<>, javafx.scene.control.ListCell<>, AdditionalService, EXTRA_BAGGAGE, FREE_CANCELLATION, IN_FLIGHT_ENTERTAINMENT, MEAL_SELECTION (+1 more)
+Cohesion: 0.04
+Nodes (8): AdminDashboard, CustomerDashboard, LoginScreen, AdditionalService, EXTRA_BAGGAGE, FREE_CANCELLATION, IN_FLIGHT_ENTERTAINMENT, MEAL_SELECTION
 
 ### Community 261 - "User"
 Cohesion: 0.02
-Nodes (42): CategoryController, CommentController, CommunityController, MediaController, PostController, SearchController, UserController, CommentCreateDto (+34 more)
+Nodes (47): CategoryController, CommentController, CommunityController, MediaController, PostController, SearchController, UserController, CommentCreateDto (+39 more)
 
 ### Community 262 - "CYTHON_INLINE"
 Cohesion: 0.04
@@ -13611,7 +13692,7 @@ Nodes (53): 10.1 Ana yordam, 10.2 Yığının durumu ve BP referansı, 10.3 Alt 
 
 ### Community 268 - "CRC (Cyclic Redundancy Check)"
 Cohesion: 0.04
-Nodes (81): Hata türleri (single bit multi bit burst), Redundancy (artıklık), CRC, Hata Türleri ve Nedenleri, VRC ve LRC, Ders 3 Çalışma Özeti: Multiplexing ve Hata Kontrolü, CRC, FDM (+73 more)
+Nodes (72): Hata türleri (single bit multi bit burst), Redundancy (artıklık), CRC, Hata Türleri ve Nedenleri, VRC ve LRC, Ders 3 Çalışma Özeti: Multiplexing ve Hata Kontrolü, CRC, FDM (+64 more)
 
 ### Community 269 - "Caltech-101 Faces Dataset Klasörü"
 Cohesion: 0.02
@@ -13619,7 +13700,7 @@ Nodes (84): Caltech-101 Faces Dataset Klasörü, Yüz Fotoğrafı image_0114.jpg
 
 ### Community 270 - "stand_alone_complex/client.py"
 Cohesion: 0.05
-Nodes (46): Ui_MainWindow, draw_fourier_individual_terms(), draw_fourier_signals(), draw_signal_cos(), draw_signal_sin(), main(), MyApp, chat_info() (+38 more)
+Nodes (55): chat_info(), create_room_info(), create_room_prompt(), exit_room_info(), general_prompt(), instruction_commands_parser(), join_info(), join_room_prompt() (+47 more)
 
 ### Community 271 - "Starfish image dataset (101_ObjectCategories, Caltech-101 style)"
 Cohesion: 0.02
@@ -13637,13 +13718,13 @@ Nodes (60): 10.1 Kimlik ve yetkilendirme, 10.2 Yetki yükseltme ve korumalı por
 Cohesion: 0.03
 Nodes (60): 10. Basamak Cevabı: Gerilim Kaynaklı RL Devresi, 11.1 Kaynakları Çizmek, 11.2 Süperpozisyon, 11.3 Üç Aralıkta Toplam, 11.4 Sınır Kontrolleri ve Süreklilik, 11. Example 01: İki Basamak Kaynaklı RC Devresi, 12. Example 02: Kaynağı Çıkarılan RL Devresi, 13. Example 03: Kaynağı Çıkarılan RC Devresi (+52 more)
 
-### Community 275 - "Chapter 10 Structure and Union Types"
-Cohesion: 0.04
-Nodes (65): NULL pointer, Arrays of Strings, Array of structures, Arrays of Pointers to Strings, Binary Files, Programming Projects: Binary Search, Bubble Sort, Merge, Case Study: Hospital Revenue Summary, Case Study: Text Editor (delete, insert, pos, do_edit) (+57 more)
+### Community 275 - "String Buffer Overflow"
+Cohesion: 0.11
+Nodes (21): Arrays of Strings, Arrays of Pointers to Strings, Programming Projects: Binary Search, Bubble Sort, Merge, Case Study: Text Editor (delete, insert, pos, do_edit), Chapter 8: Strings, Chapter 8 Review: Strings, Character I/O: getchar, getc, putchar, ctype Library (isalpha, toupper, ...) (+13 more)
 
 ### Community 276 - "Lisans Ders Planı Modül Kitapçığı (Course Information Forms, part 2)"
 Cohesion: 0.03
-Nodes (83): Ziya Cihan Tayşi, Browser-based application systems, Internal network-based systems, DataCom Lec1 ders tanıtımı 2022, Data Communication dersi, Ders kitapları, Forouzan Data Communications and Networking, Haftalık konu planı (+75 more)
+Nodes (101): Ziya Cihan Tayşi, SaS-10 Z Transform 2020, Cascade equivalent H1(z)H2(z), Convolution property (multiplication of z-transforms), Delay property of Z-transform, Feedback difference equation, FIR filter design by zeros, First-order IIR impulse response (+93 more)
 
 ### Community 277 - "101 ObjectCategories - laptop dataset klasörü"
 Cohesion: 0.02
@@ -13655,7 +13736,7 @@ Nodes (17): Bağımsız ve işbirlikçi süreçler, Borular, Ders 14 Çalışma 
 
 ### Community 279 - "Ders 14 Genişletilmiş Notu: Dönem Projesi Sunumları (2. Gün)"
 Cohesion: 0.03
-Nodes (59): 10.1 Gruba Özgü Kabuller ve Kısıtlar, 10.2 Gantt Diyagramı ve Milestone, 10.3 Risklerin Projeye Mal Edilmesi, 10.4 Kullanım Senaryosu ve Sınıf Diyagramı, 10.5 Sıralama, Durum ve Etkinlik Diyagramları, 10.6 Birim Testleri, 10. Dokuzuncu Sunum: İnsan Kaynakları Sistemi (Milestone ve Projeye Özgü Risk), 11.1 Kabuller, Plan ve Ekip (+51 more)
+Nodes (60): 10.1 Gruba Özgü Kabuller ve Kısıtlar, 10.2 Gantt Diyagramı ve Milestone, 10.3 Risklerin Projeye Mal Edilmesi, 10.4 Kullanım Senaryosu ve Sınıf Diyagramı, 10.5 Sıralama, Durum ve Etkinlik Diyagramları, 10.6 Birim Testleri, 10. Dokuzuncu Sunum: İnsan Kaynakları Sistemi (Milestone ve Projeye Özgü Risk), 11.1 Kabuller, Plan ve Ekip (+52 more)
 
 ### Community 280 - "Ders 6 Genişletilmiş Notu: Öğrenci Sunumları: Konteynerle Dağıtım, Mikroservislere Yeniden Yapılandırma ve Bileşen Testleri"
 Cohesion: 0.04
@@ -13663,7 +13744,7 @@ Nodes (51): 10.1 Domain modelini parçalamak, 10.2 Veritabanını yeniden yapıl
 
 ### Community 281 - "Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.02
-Nodes (81): Ders 10: Flip-flop türleri ve çalışma mantıkları, Ders 10 (Lab): Sayaç ve durum devresi uygulaması, Ders 11 (Lab): Sayaç tasarımının uygulamalı kontrolü, Ders 11: Sayaç devrelerinin analizi, Ders 12 (Lab): Durum makinesi tasarımı uygulaması, Ders 12: Sıralı devre tasarım adımları, Ders 13 (Lab): Flip-flop, sayaç ve register uygulamaları, Ders 13: Register yapıları (+73 more)
+Nodes (84): Ders 10: Flip-flop türleri ve çalışma mantıkları, Ders 10 (Lab): Sayaç ve durum devresi uygulaması, Ders 11 (Lab): Sayaç tasarımının uygulamalı kontrolü, Ders 11: Sayaç devrelerinin analizi, Ders 12 (Lab): Durum makinesi tasarımı uygulaması, Ders 12: Sıralı devre tasarım adımları, Ders 13 (Lab): Flip-flop, sayaç ve register uygulamaları, Ders 13: Register yapıları (+76 more)
 
 ### Community 282 - "Ders 26 Genişletilmiş Notu: İşletim Sistemleri (Paging, Boot, Süreç Yönetimi) ve Bilgisayar Ağları"
 Cohesion: 0.03
@@ -13675,7 +13756,7 @@ Nodes (11): Dinamik yönlendirme (dynamic routing), İTÜ BLG433 Bölüm 6: Yön
 
 ### Community 284 - "hobby_market_backend/package.json"
 Cohesion: 0.03
-Nodes (83): author, dependencies, cors, dotenv, express, helmet, morgan, multer (+75 more)
+Nodes (62): author, dependencies, cors, dotenv, express, helmet, morgan, multer (+54 more)
 
 ### Community 285 - "Ders 14 Genişletilmiş Notu: Tavsiye Sistemleri, İşbirlikçi Filtreleme ve Dönem Değerlendirmesi"
 Cohesion: 0.05
@@ -13695,7 +13776,7 @@ Nodes (81): 101 Object Categories - Watch Dataset, Watch photo image_0026.jpg, W
 
 ### Community 289 - "Abstract Classes and Pure virtual Functions"
 Cohesion: 0.04
-Nodes (67): Base classes and derived classes, Base-class pointer aimed at derived-class object, BasePlusCommissionEmployee class, BasePlusCommissionEmployee class, Chapter 20 Object-Oriented Programming: Inheritance, Chapter 21 Object-Oriented Programming: Polymorphism, CommissionEmployee class, CommunityMember inheritance hierarchy (+59 more)
+Nodes (69): Base classes and derived classes, Base-class pointer aimed at derived-class object, BasePlusCommissionEmployee class, BasePlusCommissionEmployee class, Chapter 20 Object-Oriented Programming: Inheritance, Chapter 21 Object-Oriented Programming: Polymorphism, CommissionEmployee class, CommunityMember inheritance hierarchy (+61 more)
 
 ### Community 290 - "Ders 9 Genişletilmiş Notu: Öğrenci Sunumları: Leonardo da Vinci, Sultan Sazlığı, İkigai, Nikola Tesla, Blok Zinciri, Kaos Teorisi, Kuantum Bilgisayarlar ve Sinir Sistemi"
 Cohesion: 0.04
@@ -13711,7 +13792,7 @@ Nodes (82): assert_direct_dimensions(), __Pyx_AddTraceback(), __pyx_align_pointe
 
 ### Community 293 - "hüsamettin_ışıktaş/frontend/package.json"
 Cohesion: 0.02
-Nodes (82): dependencies, axios, class-variance-authority, clsx, date-fns, @hookform/resolvers, lucide-react, @radix-ui/react-avatar (+74 more)
+Nodes (81): dependencies, axios, class-variance-authority, clsx, date-fns, @hookform/resolvers, lucide-react, @radix-ui/react-avatar (+73 more)
 
 ### Community 294 - "📝 Genel Tavsiyeler"
 Cohesion: 0.03
@@ -13727,7 +13808,7 @@ Nodes (79): Boylestad Electronic Devices and Circuit Theory (chapters 21-22, glo
 
 ### Community 297 - "Insertion Sort"
 Cohesion: 0.02
-Nodes (141): Algorithm (finite, deterministic, effective method), Data Structure, Euclid's algorithm (gcd), SortCompare running time comparison, Sorting fundamentals (Comparable, less, exch), Recursion exercises on arrays and strings, Akra-Bazzi Method, Asymptotic notation (+133 more)
+Nodes (182): Euclid's algorithm (gcd), Quicksort, SortCompare running time comparison, Sorting fundamentals (Comparable, less, exch), Recursion exercises on arrays and strings, Akra-Bazzi Method, Asymptotic notation, FIND-MAX-CROSSING-SUBARRAY (+174 more)
 
 ### Community 298 - "Ders 2 Genişletilmiş Notu: Tümleyen Gösterimler ve IEEE 754; Sinyal ve Sistem Kavramı, Frekans Düzlemi ve Sinyallerin Sınıflandırılması"
 Cohesion: 0.03
@@ -13758,19 +13839,19 @@ Cohesion: 0.05
 Nodes (64): VT Sistem Gerçeklemesi #8: Sorgu Çözümleme, Dilbilgisi (grammar), Sözlüksel analiz (lexical analysis), Çözümleme ağacı, Özyineli iniş çözümleyici, Sözdizimi ve anlamsal analiz, Aşağıdan Yukarıya Ayrıştırma, Bağlamdan Bağımsız Dilbilgisi (+56 more)
 
 ### Community 305 - "Örnek Sorular"
-Cohesion: 0.05
-Nodes (43): 1.1 Sayı Karşılaştırması ile Dizgi Karşılaştırmasının Farkı, 1.2 Sıralama Algoritmalarının Karmaşıklıklarının Hatırlatması, 1. Dizgi Sıralamaya Giriş: Sayılar ve Dizgiler, 2.1 Varsayım: Anahtarlar Dizi İndisi Olarak Kullanılabilir, 2.2 Örnek Dizi ve Temel Sezgi, 2.3 Adım 1: Frekansları Sayma, 2.4 `count` Dizisini Sıfırlamak, 2.5 Adım 2: Frekansları Başlangıç İndislerine Çevirme (+35 more)
+Cohesion: 0.03
+Nodes (59): 1.1 Sayı Karşılaştırması ile Dizgi Karşılaştırmasının Farkı, 1.2 Sıralama Algoritmalarının Karmaşıklıklarının Hatırlatması, 1. Dizgi Sıralamaya Giriş: Sayılar ve Dizgiler, 2.1 Varsayım: Anahtarlar Dizi İndisi Olarak Kullanılabilir, 2.2 Örnek Dizi ve Temel Sezgi, 2.3 Adım 1: Frekansları Sayma, 2.4 `count` Dizisini Sıfırlamak, 2.5 Adım 2: Frekansları Başlangıç İndislerine Çevirme (+51 more)
 
 ### Community 306 - "gezirehberi_admin/Scripts/jquery-3.7.0.min.js"
-Cohesion: 0.03
-Nodes (120): a(), ae, b(), c(), ce(), d(), E(), f() (+112 more)
+Cohesion: 0.04
+Nodes (78): ye(), Ae(), B(), Be(), c(), Ct(), $e(), ee() (+70 more)
 
 ### Community 307 - "Bilgisayar Tarihçesi ve Programlama Dilleri (2020)"
-Cohesion: 0.04
-Nodes (79): Babbage Analytical Engine, ENIAC, History of computing, Jacquard loom and punched cards, Abacus, ABC computer, Ada Byron (ilk programcı), Assembly diller (+71 more)
+Cohesion: 0.05
+Nodes (77): Babbage Analytical Engine, ENIAC, History of computing, Jacquard loom and punched cards, Abacus, ABC computer, Ada Byron (ilk programcı), Assembly diller (+69 more)
 
 ### Community 308 - "userapi.ts"
-Cohesion: 0.02
+Cohesion: 0.03
 Nodes (127): adminDeleteUserByUuid(), adminUpdateUserByUuid(), clampNonNegative(), fetchAdminStatsAll(), fetchExternalAdminMovieById(), updateAdminMovieById(), apiFetch(), BASE_URL (+119 more)
 
 ### Community 309 - "Ders 11 Genişletilmiş Notu: Pipeline, Giriş-Çıkış Arayüzleri, Seri Haberleşme, Kesme ve DMA, Önbelleğe Giriş ve Direct Mapped Cache"
@@ -13779,23 +13860,23 @@ Nodes (52): 10.1 Yerellik, 10.2 Bellek hiyerarşisi, 10.3 Cache tasarımının s
 
 ### Community 310 - "Thomas Calculus TR Çeviri 1 (Bölüm 5 ve 6.1-6.4)"
 Cohesion: 0.05
-Nodes (66): Basit harmonik hareket, Kritik Nokta Analizi (Artan/Azalan Aralıklar), Rolle Teoremi, Kapalı Türetme (Implicit Differentiation), Zincir Kuralı Uygulama Soruları, Tek Numaralı Alıştırma Cevapları (Bölüm 1-3), İki Değişkenli Fonksiyonlar için Artım Teoremi, Yerel Ekstremler İçin Birinci Türev Teoremi (+58 more)
+Nodes (69): Basit harmonik hareket, Kritik Nokta Analizi (Artan/Azalan Aralıklar), Rolle Teoremi, Kapalı Türetme (Implicit Differentiation), Zincir Kuralı Uygulama Soruları, Tek Numaralı Alıştırma Cevapları (Bölüm 1-3), İki Değişkenli Fonksiyonlar için Artım Teoremi, Yerel Ekstremler İçin Birinci Türev Teoremi (+61 more)
 
 ### Community 311 - "Kütüphane Otomasyonu dönem projesi (BLM1031)"
 Cohesion: 0.06
-Nodes (69): Dinamik bellek yönetimi, Dinamik bellek ile harita, Burak Başol 2025 proje raporu, CSV dosyaları (students, bookTaken, bookData, bookAuthor, authors), Kütüphane yönetim sistemi uygulaması, Linked list (çift yönlü) kullanımı, 2025 Dönem Projesi tanımı: Kütüphane Otomasyonu, CSV dosya saklama (+61 more)
+Nodes (69): Düğüm, ekle (sıralı liste ekleme), sil (listeden silme), Dinamik bellek yönetimi, Dinamik bellek ile harita, Burak Başol 2025 proje raporu, CSV dosyaları (students, bookTaken, bookData, bookAuthor, authors), Kütüphane yönetim sistemi uygulaması (+61 more)
 
 ### Community 312 - "Detaylı Açıklamalar"
-Cohesion: 0.04
-Nodes (52): 1. Dersin Amacı: Final Öncesi Çalışma Soruları, 2.1 Hız ve İvme Vektörleri Arasındaki Açı, 2.2 Vektör Fonksiyonun Tanım Kümesi, 2.3 Uzay Eğrisinin Teğet Doğrusu, 2. Vektör Değerli Fonksiyonlar, 3.1 Uzunluğu Veren İntegral, 3.2 Yay Uzunluğunun Hesabı, 3. Parametrik Uzay Eğrilerinde Yay Uzunluğu (+44 more)
+Cohesion: 0.03
+Nodes (56): 1. Dersin Amacı: Final Öncesi Çalışma Soruları, 2.1 Hız ve İvme Vektörleri Arasındaki Açı, 2.2 Vektör Fonksiyonun Tanım Kümesi, 2.3 Uzay Eğrisinin Teğet Doğrusu, 2. Vektör Değerli Fonksiyonlar, 3.1 Uzunluğu Veren İntegral, 3.2 Yay Uzunluğunun Hesabı, 3. Parametrik Uzay Eğrilerinde Yay Uzunluğu (+48 more)
 
 ### Community 313 - "Ders 3 Genişletilmiş Notu: MapReduce İyileştirmeleri, Shingling ve MinHashing"
 Cohesion: 0.03
 Nodes (60): 10.1 Benzer Kelimeler İçeren Sayfalar, 10.2 Benzer Zevkteki Kullanıcılar, 10.3 Varlık Çözümleme, 10.4 Ortak Metni Çok Olan Belgeler, 10. Benzer Öğeleri Bulma Problemi ve Uygulamaları, 11. Üç Adım: Shingling, MinHashing, LSH, 12.1 k-Shingle Tanımı, 12.2 Neden Shingle? (+52 more)
 
-### Community 314 - "a2/cs231n/data_utils.py"
-Cohesion: 0.07
-Nodes (24): get_CIFAR10_data(), load_CIFAR10(), load_CIFAR_batch(), load_imagenet_val(), load_models(), load_pickle(), load_tiny_imagenet(), get_CIFAR10_data() (+16 more)
+### Community 314 - "User"
+Cohesion: 0.03
+Nodes (19): ValueEventListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, OnSuccessListener<UploadTask.TaskSnapshot>, OnFailureListener, OnSuccessListener<Uri>, OnFailureListener (+11 more)
 
 ### Community 315 - "Ders 13 Genişletilmiş Notu: Proje Önerisi Sunumları IV ve Final Duyurusu: Tarım, Galeri, Banka Dokümanları ve Sahte Haber"
 Cohesion: 0.03
@@ -13810,20 +13891,20 @@ Cohesion: 0.03
 Nodes (60): 10.1 İki Adımlı Yol, 10.2 Kısa Yol, 10.3 Kaç Sayı Yazabiliriz?, 10. Bire Tümleme ve İkiye Tümleme, 11. Ara Konu: Programı Modüler Yazmak, 12.1 Origami Örneği, 12.2 Algoritma Nasıl İfade Edilir?, 12. Algoritmanın Tanımına Dönüş (+52 more)
 
 ### Community 318 - "BST (Algorithm 3.3)"
-Cohesion: 0.05
-Nodes (50): Binary search rank(), BinarySearchST (Algorithm 3.2), BinarySearchST (Algorithm 3.2), BST (Algorithm 3.3), BST deleteMin, BST floor and ceiling, BST and quicksort duality, BST range search keys(lo,hi) (+42 more)
+Cohesion: 0.04
+Nodes (63): Associative array abstraction, Binary search rank(), BinarySearchST (Algorithm 3.2), BinarySearchST (Algorithm 3.2), BST (Algorithm 3.3), BST deleteMin, BST floor and ceiling, BST and quicksort duality (+55 more)
 
 ### Community 319 - "Chapter 13: The Laplace Transform in Circuit Analysis (through P 13.22)"
-Cohesion: 0.04
-Nodes (81): Two-port a and b (transmission) parameters, Active op-amp filters (first-order low/high pass, bandpass, band reject), Series RLC bandpass filter (center frequency, bandwidth, Q), Series RLC band-reject (notch) filter, Potentiometer bass boost/cut filter design, Bode magnitude plots of filter response, Butterworth filters, order n, prototype polynomials, Capacitor i-v relation and energy w = 1/2 C v^2 (+73 more)
+Cohesion: 0.05
+Nodes (76): Two-port a and b (transmission) parameters, Active op-amp filters (first-order low/high pass, bandpass, band reject), Series RLC bandpass filter (center frequency, bandwidth, Q), Series RLC band-reject (notch) filter, Potentiometer bass boost/cut filter design, Bode magnitude plots of filter response, Butterworth filters, order n, prototype polynomials, Capacitor i-v relation and energy w = 1/2 C v^2 (+68 more)
 
 ### Community 320 - "Ders 7 Genişletilmiş Notu: Öğrenci Sunumları: Mobil Oyunlar, Bağımsız Sinema, Matrix, Kahve, Stan Lee, Olimpiyatlar, Kobe Bryant ve Kasina Meditasyonu"
 Cohesion: 0.04
 Nodes (48): 1.1 Tanım ve Dağıtım, 1.2 Kullanıcı Sayısı, 1.3 Gelirler, 1.4 Popüler Türler, Oyunlar ve Yayıncılar, 1.5 Soru-Cevap: Oyun Geliştirme Süreci, 1. Mobil Oyun Sektörü, 2.1 Hollywood Stüdyo Sistemi, 2.2 Tanım (+40 more)
 
 ### Community 321 - "jquery.dataTables.min.js"
-Cohesion: 0.06
-Nodes (71): 11.1 Kodun kurulması, 11.2 a'ya ve adresine farklı yollardan ulaşmak, 11.3 "Bu nereden çıktı?" İşaretçinin kendi adresi, 11.4 * ve & birbirini götürür, 11.5 İşaretçi aritmetiği: pa + 1, 11.6 char işaretçisinde artış, 11.7 Öğrenci sorusu: %d ile okumak, 11. Dev-C++ uygulaması: adresler, işaretçiler ve işaretçi aritmetiği (+63 more)
+Cohesion: 0.07
+Nodes (63): i(), aa(), Ab(), B(), ba(), Bb(), C(), Cb() (+55 more)
 
 ### Community 322 - "Ağ güvenliği - hijacking savunma"
 Cohesion: 0.04
@@ -13841,44 +13922,44 @@ Nodes (55): 1. Dersin İşleyişi, 2.1 Çocukluk ve komutanlık, 2.2 İtalya'ya 
 Cohesion: 0.03
 Nodes (76): Electric guitar dataset (101_ObjectCategories), Electric guitar sample image 0001 (rendered guitar, dark background), Electric guitar sample image 0002 (rendered guitar, dark background), Electric guitar sample image 0003 (rendered guitar, dark background), Electric guitar sample image 0004 (rendered guitar, dark background), Electric guitar sample image 0005 (rendered guitar, dark background), Electric guitar sample image 0006 (rendered guitar, dark background), Electric guitar sample image 0007 (rendered guitar, dark background) (+68 more)
 
-### Community 326 - "android.widget.ImageView"
+### Community 326 - "androidx.appcompat.app.AppCompatActivity"
 Cohesion: 0.01
-Nodes (78): NoteModel, NotesFragment, FirebaseRecyclerAdapter<NoteModel, NoteViewHolder>, ValueEventListener, View.OnClickListener, RemindersFragment, FirebaseRecyclerAdapter<NoteModel, NoteViewHolder>, ValueEventListener (+70 more)
+Nodes (123): Login, Menu, Register, LoginActivity, OnCompleteListener<AuthResult>, View.OnClickListener, RegisterActivity, View.OnClickListener (+115 more)
 
 ### Community 328 - "Ders 3 Genişletilmiş Notu: UML Diyagramları ve Nesneye Yönelik Analiz"
 Cohesion: 0.04
-Nodes (49): 11.1 İlişki, genelleştirme ve bağımlılık örnekleri, 11.2 İlişki sınıfları, 11.3 Birleşme ve bütünleşme, 11.4 Hangi ilişki?, 11.5 Niteleyiciler (qualifiers), 11. İleri ilişkiler: ilişki sınıfları, birleşme, bütünleşme, niteleyiciler, 12.1 Genelleme gösterimi ve kısıtlar, 12.2 Atlet ve kitap örnekleri (+41 more)
+Nodes (50): 10.1 Sınıf diyagramında neler bulunur?, 10.2 Sınıf kutusu ve soyut sınıf, 10.3 Özellikler alanı, 10.4 İşlemler alanı, 10.5 Örnek sınıflar, 10.6 İleri sınıf öğeleri, 10. UML sınıf modelinin ayrıntıları, 11.1 İlişki, genelleştirme ve bağımlılık örnekleri (+42 more)
 
 ### Community 329 - "Chapter 18 The Linux System"
 Cohesion: 0.04
-Nodes (80): Active Directory, APC and DPC, Chapter 18 The Linux System, Chapter 19 Windows 7, Character Devices and Line Discipline, clone() System Call, Completely Fair Queueing (CFQ), Conflict Resolution (+72 more)
+Nodes (82): Active Directory, APC and DPC, Cache Manager (Windows), Chapter 18 The Linux System, Chapter 19 Windows 7, Character Devices and Line Discipline, clone() System Call, Completely Fair Queueing (CFQ) (+74 more)
 
 ### Community 330 - ".BuildNavMesh"
-Cohesion: 0.05
-Nodes (18): AgentLinkMover, OffMeshLinkMoveMethod, Curve, NormalSpeed, Parabola, Teleport, ClickToMove, RandomWalk (+10 more)
+Cohesion: 0.07
+Nodes (10): NavMeshModifier, activeModifiers, area, ignoreFromBuild, overrideArea, NavMeshSurfaceAgentTests, NavMeshSurfaceLinkTests, NavMeshSurfaceModifierTests (+2 more)
 
 ### Community 331 - "PyObject"
 Cohesion: 0.06
 Nodes (71): __pyx_capsule_create(), __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_get_annotations(), __Pyx_CyFunction_get_closure(), __Pyx_CyFunction_get_code(), __Pyx_CyFunction_get_defaults() (+63 more)
 
-### Community 332 - "MainApp"
-Cohesion: 0.04
-Nodes (44): LoginScreen, MainApp, 10.1 Problem, 10.2 Tasarım, 10.3 Kod, 10. Proxy Uygulama Örneği: Pay-per-view Yayın Sunucusu, 13.1 Problem, 13.2 Tasarım (+36 more)
+### Community 332 - "va"
+Cohesion: 0.06
+Nodes (16): afterDraw(), afterEvent(), afterUpdate(), Do(), eo(), f(), ki(), Oe() (+8 more)
 
 ### Community 333 - "Ders 6 Genişletilmiş Notu: Davranış Modellemesi, Durum Diyagramları ve Mimari Stillere Giriş"
-Cohesion: 0.04
-Nodes (57): 10. Durum diyagramları (statecharts), 11.1 Soyut örnek: A, B, C ve D, 11.2 Isıtma-soğutma örneği, 11.3 Printer örneği, 11. İç içe gruplama, 12.1 Y durumu örneği, 12.2 UML'de eş zamanlılık, 12. Eş zamanlılık (+49 more)
+Cohesion: 0.03
+Nodes (64): 10. Durum diyagramları (statecharts), 11.1 Soyut örnek: A, B, C ve D, 11.2 Isıtma-soğutma örneği, 11.3 Printer örneği, 11. İç içe gruplama, 12.1 Y durumu örneği, 12.2 UML'de eş zamanlılık, 12. Eş zamanlılık (+56 more)
 
 ### Community 334 - "slaytlar.pdf"
 Cohesion: 0.03
-Nodes (117): assert makrosu, DEBUG ile koşullu hata ayıklama, #define makro, #define sembolik sabit, #error, #if #ifdef #ifndef #elif #else #endif, #include <stdio.h> ve main fonksiyonu, Yüksek performanslı kart karma ve dağıtma örneği (+109 more)
+Nodes (94): #if #ifdef #ifndef #elif #else #endif, Yüksek performanslı kart karma ve dağıtma örneği, Kendine dönüşlü yapılar (self referential), Sayma sabitleri (enum), Yapı elemanı (.) ve yapı gösterici (->) operatörleri, Yapıları fonksiyonlara geçirmek, Furkan Karataş kaynak notu, KaratasFurkan/YTU-CE GitHub deposu (+86 more)
 
 ### Community 335 - "Sayısal Analiz (BLM1022)"
-Cohesion: 0.07
-Nodes (48): İki Katlı İntegralin Sayısal Çözümü, Newton-Cotes Polinom Yaklaşımı, Trapez (Yamuk) Kuralı, Simpson 1/3 Kuralı, Simpson 3/8 Kuralı, Newton-Cotes formülü, Adi Diferansiyel Denklemlerin Sayısal Çözümü, Bağıl Hata (Relative Error) (+40 more)
+Cohesion: 0.05
+Nodes (58): İki Katlı İntegralin Sayısal Çözümü, Newton-Cotes Polinom Yaklaşımı, Trapez (Yamuk) Kuralı, Simpson 1/3 Kuralı, Simpson 3/8 Kuralı, Newton-Cotes formülü, Açık Metotlar (Open Methods), Adi Diferansiyel Denklemlerin Sayısal Çözümü (+50 more)
 
 ### Community 336 - "Owl"
-Cohesion: 0.08
+Cohesion: 0.10
 Nodes (3): Owl(), prefixed(), test()
 
 ### Community 337 - "Ders 13 Genişletilmiş Notu: IoT Standartları, Barkod/QR Kod ve RFID, Yeni Nesil Otonom Araçlar"
@@ -13886,16 +13967,16 @@ Cohesion: 0.04
 Nodes (55): 10.1 Avantajlar, 10.2 Dezavantajlar, 10. RFID'nin Avantajları ve Dezavantajları, 11.1 Giriş, 11.2 SAE seviyeleri, 11.3 Seviye 1: Sürücü desteği, 11.4 Seviye 2: Kısmi otomasyon, 11.5 Seviye 3: Koşullu otomasyon (+47 more)
 
 ### Community 338 - "Ders 4 Lojik Fonksiyonların İndirgenmesi (altyazı)"
-Cohesion: 0.06
-Nodes (53): Error Correcting Codes / Checkbyte, Parity Bit (Error Detection), RAID, Ders 4 Lojik Fonksiyonların İndirgenmesi (altyazı), NAND/NOR ile AND ve OR Gerçekleştirme, Don't Care (Keyfi/Önemsiz) Durumlar, Karno Haritasında Gray Kodu Sıralaması, Görüşe Dayalı İndirgeme (+45 more)
+Cohesion: 0.05
+Nodes (62): Error Correcting Codes / Checkbyte, Parity Bit (Error Detection), RAID, Ders 4 Lojik Fonksiyonların İndirgenmesi (altyazı), NAND/NOR ile AND ve OR Gerçekleştirme, Don't Care (Keyfi/Önemsiz) Durumlar, Karno Haritasında Gray Kodu Sıralaması, Görüşe Dayalı İndirgeme (+54 more)
 
 ### Community 339 - "Ders 5 Genişletilmiş Notu: Algoritma İyileştirme: Gauss, Hızlı Üs, Pi ve e^x Serileri, Karşıt Örnek, Derleme Aşamaları"
-Cohesion: 0.03
-Nodes (59): 11.1 Birinci Sürüm: İç İçe Üç Döngü, 11.2 İkinci Sürüm: İki İç Döngüyü Birleştirmek, 11.3 Üçüncü Sürüm: Önceki Turdaki Değeri Kullanmak, 11.4 Çalışma Soruları, 11. $e^x$ Serisi, 12.1 Diziyle Çözüm, 12.2 Araya Giren Karşılaştırma: $e^x$ Sürümlerinin Maliyeti, 12.3 Diziyle Çözümün Sorunu (+51 more)
+Cohesion: 0.08
+Nodes (25): 12.1 Diziyle Çözüm, 12.2 Araya Giren Karşılaştırma: $e^x$ Sürümlerinin Maliyeti, 12.3 Diziyle Çözümün Sorunu, 12.4 Üç Değişkenli Çözüm, 12.5 İki Değişkenli Çözüm, 12. Fibonacci Sayıları, 13. Basamaklarının Küpleri Toplamı Kendine Eşit Olan Sayılar, 14.1 Neden `for` Değil `while`? (+17 more)
 
 ### Community 340 - "Chapter 4 Ethical and Social Issues in Information Systems"
-Cohesion: 0.03
-Nodes (125): Spyware, Adware, Application Rootkit, Attackers and Motivations, Botnets, Chapter 9: Security, CIA: Confidentiality, Integrity, Availability, Cryptography vs Software Hardening (+117 more)
+Cohesion: 0.05
+Nodes (73): Accountability, Professional Codes of Conduct (ACM, IEEE, AITP), Common Criteria Privacy Class (anonymity, pseudonymity, unlinkability, unobservability), Convention on Cybercrime (2001, Council of Europe), Copyrights, Cybercrime and Computer Crime, Digital Millennium Copyright Act (DMCA), Bilişim Sistemleri Güvenliği ders kitabı (Bölüm 4-6) (+65 more)
 
 ### Community 341 - "Caltech-101 'Crab' image dataset (BLM4540 Görüntü İşleme ödev 2)"
 Cohesion: 0.03
@@ -13910,8 +13991,8 @@ Cohesion: 0.04
 Nodes (54): 10.1 Problem, 10.2 Tasarım, 10.3 Ana program ve Kampanya 1, 10.4 Kampanya 2, 10. Örnek Gerçekleme: Reklam Yönetimi, 1.1 Amaç, 1.2 GoF örneği: metin alanları, 1.3 Diamond (elmas) kalıtım problemi (+46 more)
 
 ### Community 344 - "Veri İletişimi Ders 4 (2020-2021) altyazı: Data Link Layer akış kontrolü"
-Cohesion: 0.06
-Nodes (78): Cluster computing, Grid computing, Efe Girgin notu: 5. slayt (data link, akış kontrolü), VİBA-5 slaytı (data link, akış kontrolü), ARQ (Go-Back-N, Selective Repeat), Asenkron ve senkron data link protokolleri, Data link control, Hat kullanım oranı hesabı (+70 more)
+Cohesion: 0.05
+Nodes (83): Efe Girgin notu: 5. slayt (data link, akış kontrolü), VİBA-5 slaytı (data link, akış kontrolü), ARQ (Go-Back-N, Selective Repeat), Asenkron ve senkron data link protokolleri, Data link control, Hat kullanım oranı hesabı, Stop and Wait akış kontrolü, ACK/NACK (+75 more)
 
 ### Community 345 - "101 ObjectCategories - lamp dataset klasörü"
 Cohesion: 0.03
@@ -13930,16 +14011,16 @@ Cohesion: 0.07
 Nodes (60): applyStyle(), applyStyleOnLoad(), arrow(), attachToScrollParents(), clockwise(), computeAutoPlacement(), computeStyle(), destroy() (+52 more)
 
 ### Community 349 - "Sayısal Analiz Ders 6 (2020-2021)"
-Cohesion: 0.08
-Nodes (47): Wilhelm Jordan, Elementer satır işlemleriyle matris tersi, Pseudo-inverse, C math kütüphanesi kullanımı, Call by reference ile dizi döndürme, Doğrudan ve dolaylı yöntemler, Gauss-Jordan eliminasyon, Gauss-Seidel iteratif yöntem (+39 more)
+Cohesion: 0.06
+Nodes (53): Adjoint of a Matrix, Approximate Integration by Interpolation, Arrow Technique for 2x2 and 3x3 Determinants, Chapter 2: Determinants, Cofactor Expansion, Determinant of Transpose (Thm 2.2.2), Gabriel Cramer, Wilhelm Jordan (+45 more)
 
 ### Community 350 - "Q-learning"
-Cohesion: 0.05
-Nodes (60): Ajan (Agent), Chomsky High Tech Plagiarism, Deep Q-Network (DeepMind), Ders 13 Yapay Zeka 2022-2023, Değer (Value), Epizod (Bölüm), Epsilon-Greedy, Gamma indirim katsayısı (+52 more)
+Cohesion: 0.08
+Nodes (38): Ajan (Agent), Chomsky High Tech Plagiarism, Deep Q-Network (DeepMind), Ders 13 Yapay Zeka 2022-2023, Değer (Value), Epizod (Bölüm), Epsilon-Greedy, Gamma indirim katsayısı (+30 more)
 
 ### Community 351 - "Chapter 7 Arrays"
 Cohesion: 0.03
-Nodes (72): Algorithm L (Lagrangian power series reversion), Algorithm N (reversion by Newton's method, Brent-Kung), Algorithm T (Thacher general series reversion), Brent-Traub method for Schröder function, Iteration of series and Schröder function, Lagrange inversion formula, Reversion of series, Accumulator Variable (Sum and Product in Loop) (+64 more)
+Nodes (89): Algorithm L (Lagrangian power series reversion), Algorithm N (reversion by Newton's method, Brent-Kung), Algorithm T (Thacher general series reversion), Brent-Traub method for Schröder function, Iteration of series and Schröder function, Lagrange inversion formula, Reversion of series, Accumulator Variable (Sum and Product in Loop) (+81 more)
 
 ### Community 352 - "CRS"
 Cohesion: 0.04
@@ -13947,11 +14028,11 @@ Nodes (9): CRS, Doctor, Hospital, Patient, Person, Rendezvous, RendezvousThread,
 
 ### Community 353 - "javax.servlet.http.HttpServletRequest"
 Cohesion: 0.02
-Nodes (82): AnnouncementDAO, CompanyDAO, ComplaintDAO, DauUserDAO, DonationAcceptUnitDAO, NotificationDAO, StudentDAO, UserDAO (+74 more)
+Nodes (83): AcceptedComplaintListServlet, ComplaintlListToAdminServlet, ComplaintReportToAdminServlet, RejectedComplaintListServlet, ReportAnnouncementServlet, CreateSpendingRequestServlet, DeleteDauServlet, DeleteDauUserServlet (+75 more)
 
 ### Community 354 - "Bölüm 13 Sistemi Operasyonel Hale Getirme"
-Cohesion: 0.06
-Nodes (60): Alpha version, Beta version, Bottom-up development, Build and smoke test, Bölüm 13 Sistemi Operasyonel Hale Getirme, Bölüm 14 Sistem Geliştirmede Güncel Eğilimler, Change and version control, Configuring the production environment (+52 more)
+Cohesion: 0.07
+Nodes (58): Alpha version, Beta version, Bottom-up development, Build and smoke test, Bölüm 13 Sistemi Operasyonel Hale Getirme, Bölüm 14 Sistem Geliştirmede Güncel Eğilimler, Change and version control, Configuring the production environment (+50 more)
 
 ### Community 355 - "BLM3012 Mesleki Hukuk ve Etik slaytları (2021-2022 Bahar, G. Biricik)"
 Cohesion: 0.07
@@ -13971,19 +14052,19 @@ Nodes (58): 10. Başlangıç Koşulları Genel Çözüme Konur, 11.1 Devre ve U�
 
 ### Community 359 - "Ders 9 Genişletilmiş Notu: Uygulama-3: Struct ile Çalışan Veritabanı, Dinamik Dizi ve Bağlı Liste Karşılaştırması, Başlık Dosyaları ve Makrolar"
 Cohesion: 0.05
-Nodes (33): Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Neden `while (!feof(fp))` önerilmez?, Ders 2 Çalışma Özeti (+25 more)
+Nodes (33): Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Neden `while (!feof(fp))` önerilmez?, Ders 3 Çalışma Özeti (+25 more)
 
 ### Community 360 - "Ders 6 Genişletilmiş Notu: Command, Iterator, Memento, Observer, Strategy ve State Kalıpları"
 Cohesion: 0.04
 Nodes (52): 10.1 Durum bilgisinin gözleyicilere gönderilmesi, 10.2 İletişimin pahalı olduğu ortamlar, 10.3 Farklı türden gözleyiciler, 10.4 Haber vermeyi kim tetiklemeli?, 10.5 Ne zaman kullanılır?, 10. Observer Gerçekleme Ayrıntıları: Pull ve Push Modelleri, 11.1 Çözüm 1, 11.2 Yeni gereksinim ve Çözüm 2 (+44 more)
 
 ### Community 361 - "stbi__context"
-Cohesion: 0.10
-Nodes (65): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_load(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header() (+57 more)
+Cohesion: 0.09
+Nodes (71): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_load(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header() (+63 more)
 
 ### Community 362 - "🗓 Üniversite Mesleki Seçmeli"
-Cohesion: 0.03
-Nodes (61): Matematik 1, 🗓 1. Yıl - Güz, 🗓 4. Yıl - Bahar, 🗓 4. Yıl - Güz, 📘 Akıllı Şebekelere Giriş, 📘 Atatürk İlkeleri ve İnkılap Tarihi 1, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (28 oy) (+53 more)
+Cohesion: 0.04
+Nodes (48): 🗓 4. Yıl - Güz, 📘 Akıllı Şebekelere Giriş, 📘 Atatürk İlkeleri ve İnkılap Tarihi 1, 📘 Bilgisayar Mühendisliğinde Güncel Konular, 📘 Biyomühendislikte Nanoteknoloji, 📘 Cultural Heritage Management, 📘 Doğal Arıtma, 📘 Endüstriyel Otomasyon (+40 more)
 
 ### Community 363 - "Ders 6 Genişletilmiş Notu: Bağıntı Örnekleri, Algoritmalar, Arama ve Sıralama, Veri Yapıları ve Prefix-Infix-Postfix"
 Cohesion: 0.03
@@ -14002,8 +14083,8 @@ Cohesion: 0.04
 Nodes (55): 10. Ağ Tarafsızlığı, 11.1 Ağ katmanının bileşenleri, 11.2 IPv4 datagram alanları, 11. IP: Ağ Katmanının Bileşenleri ve IPv4 Datagram Biçimi, 12.1 IP adresi ve arayüz, 12.2 Alt ağlar, 12.3 CIDR, 12. IPv4 Adresleme, Alt Ağlar ve CIDR (+47 more)
 
 ### Community 367 - "stbi__context"
-Cohesion: 0.09
-Nodes (71): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_load(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header() (+63 more)
+Cohesion: 0.11
+Nodes (52): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header(), stbi__get16be() (+44 more)
 
 ### Community 368 - "ARIES"
 Cohesion: 0.67
@@ -14026,8 +14107,8 @@ Cohesion: 0.04
 Nodes (49): 1.1 Yığının mantığı, 1.2 POP ve POPF, 1.3 PUSH ve PUSHF, 1. Yığın Komutları, 2.1 LOOP, 2.2 LOOP izleme tablosu, 2.3 LOOPZ / LOOPE, 2.4 LOOPNZ / LOOPNE (+41 more)
 
 ### Community 373 - "jquery-3.0.0.min.js"
-Cohesion: 0.06
-Nodes (36): A(), b(), da(), db(), Ea(), eb(), fa(), fb() (+28 more)
+Cohesion: 0.07
+Nodes (35): A(), b(), da(), db(), Ea(), eb(), fa(), fb() (+27 more)
 
 ### Community 374 - "Ders 1 Genişletilmiş Notu: Tanışma, Dersin İşleyişi, Ayrık Matematiğe Giriş ve Önermeler Mantığı"
 Cohesion: 0.03
@@ -14062,28 +14143,28 @@ Cohesion: 0.03
 Nodes (74): 10. Doğal Dil İşlemenin Yapay Zekadaki Yeri, 11.1 Konuşma Dili ve Yazı Dili, 11.2 Seviyeler, 11.3 Araçlar, 11. Dil Analizinin Seviyeleri, 12.1 Aynı Kelime, Farklı Çözümler, 12.2 Zemberek'in Sınırı, 12.3 Türkiye'deki Çalışmalar (+66 more)
 
 ### Community 382 - "Phasor"
-Cohesion: 0.03
-Nodes (115): Power factor correction, Admittance, Conductance, Susceptance, Apparent Power, Appliance Ratings and Energy Consumption, Average (Real) Power, Chapter 9: Sinusoidal Steady-State Analysis, Chapter 10 Sinusoidal Steady-State Power Calculations, Complex Power (+107 more)
+Cohesion: 0.06
+Nodes (66): Admittance, Conductance, Susceptance, Phasor V-I Relationship for R, L, C, Appendix B Complex Numbers, Complex Conjugate, Rectangular and Polar Form, Roots of a Complex Number, Balanced three-phase load, Chapter 10 Sinusoidal Steady-State Analysis (+58 more)
 
 ### Community 383 - "Bölüm 17: Linear-Digital ICs"
-Cohesion: 0.04
-Nodes (84): 311 comparator, 555 timer, 566 VCO, Analog-digital converter (ADC), Astable multivibrator (555), Bölüm 17: Linear-Digital ICs, Capture range and lock range, Chapter 17 Linear-Digital ICs (+76 more)
+Cohesion: 0.03
+Nodes (95): 311 comparator, 555 timer, 566 VCO, Analog-digital converter (ADC), Astable multivibrator (555), Bölüm 17: Linear-Digital ICs, Capture range and lock range, Chapter 17 Linear-Digital ICs (+87 more)
 
 ### Community 384 - "Elektronik Devreler Kitabı (FET ve BJT bölümleri 6-9)"
 Cohesion: 0.06
 Nodes (67): Elektronik Devreler Kitabı (FET ve BJT bölümleri 6-9), 2N3797 MOSFET, 2N5462 p-kanallı JFET, 2N5950 JFET, Akım kazancı Ai, Akım kazancı β (hfe), BASIC JFET önegerilim programı, Besleme geri beslemeli MOSFET önegerilim (+59 more)
 
-### Community 385 - "PostgresContext"
-Cohesion: 0.05
-Nodes (43): Application, ApplicationDate, ApplicationId, Job, JobId, User, UserId, Experience (+35 more)
+### Community 385 - "DepoYonetimSistemiEntities"
+Cohesion: 0.02
+Nodes (84): Kategori, Id, Kategoriler, Raf, DepoYonetimSistemiEntities, Kategori, Kullanici, Raf (+76 more)
 
 ### Community 386 - "Ders 2 Genişletilmiş Notu: Metin Görüntüleyici Örneğiyle Analiz Modeli ve Temel Tasarım Kavramları"
-Cohesion: 0.05
-Nodes (43): 10.1 Tasarım her yerdedir, 10.2 Tasarım: bilinçli ve amaçlı planlama, 10.3 Mühendislik, zanaat ve sanat, 10. Genel tasarım kavramları: tasarım, mühendislik, zanaat, sanat, 11.1 Örnek: performans için tasarım (hava tahmini), 11. Yazılım tasarımı ve programlama, 12. Mimari tasarım ve detaylı tasarım, 13. Yazılım tasarımı yaklaşımları ve ortak üç yön (+35 more)
+Cohesion: 0.04
+Nodes (50): 10.1 Tasarım her yerdedir, 10.2 Tasarım: bilinçli ve amaçlı planlama, 10.3 Mühendislik, zanaat ve sanat, 10. Genel tasarım kavramları: tasarım, mühendislik, zanaat, sanat, 11.1 Örnek: performans için tasarım (hava tahmini), 11. Yazılım tasarımı ve programlama, 12. Mimari tasarım ve detaylı tasarım, 13. Yazılım tasarımı yaklaşımları ve ortak üç yön (+42 more)
 
 ### Community 387 - "Reservation"
-Cohesion: 0.04
-Nodes (8): Customer, ReservationStatus, CANCELLED, COMPLETED, CONFIRMED, PENDING, Passenger, Reservation
+Cohesion: 0.02
+Nodes (15): Admin, Customer, ReservationStatus, CANCELLED, COMPLETED, CONFIRMED, PENDING, UserRole (+7 more)
 
 ### Community 388 - "Ders 7 Genişletilmiş Notu: Kelime Gösterimleri, Kelime Gömmeleri ve Metin Sınıflandırma"
 Cohesion: 0.03
@@ -14103,11 +14184,11 @@ Nodes (60): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegation
 
 ### Community 392 - "blm_5227/Scripts/bootstrap.esm.min.js"
 Cohesion: 0.04
-Nodes (62): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegationHandler(), bootstrapHandler(), customEvents, Data, Default (+54 more)
+Nodes (61): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegationHandler(), bootstrapHandler(), customEvents, Data, Default (+53 more)
 
 ### Community 393 - "gezirehberi_admin/Scripts/bootstrap.esm.min.js"
 Cohesion: 0.04
-Nodes (61): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegationHandler(), bootstrapHandler(), customEvents, Data, Default (+53 more)
+Nodes (62): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegationHandler(), bootstrapHandler(), customEvents, Data, Default (+54 more)
 
 ### Community 394 - "Trilobite Image Category Dataset (Caltech-101)"
 Cohesion: 0.03
@@ -14159,11 +14240,11 @@ Nodes (62): addHandler(), allowedAttribute(), AttachmentMap, bootstrapDelegation
 
 ### Community 406 - "Ders 5 Genişletilmiş Notu: İzolasyon ve Sınırlama İlkesi: chroot, Jail, System Call Interposition, Sanal Makineler ve Software Fault Isolation"
 Cohesion: 0.04
-Nodes (56): 10.1 Temel fikir, 10.2 Chrome renderer örneği, 10.3 BPF filtrelerinin özellikleri, 10.4 Filtre yükleme kuralları, 10. Linux'ta SCI: seccomp-bpf, 11. Docker ve seccomp-bpf, 12. Ostia, 13. Sanal Makineler ve Hypervisor (+48 more)
+Nodes (52): 10.1 Temel fikir, 10.2 Chrome renderer örneği, 10.3 BPF filtrelerinin özellikleri, 10.4 Filtre yükleme kuralları, 10. Linux'ta SCI: seccomp-bpf, 11. Docker ve seccomp-bpf, 12. Ostia, 13. Sanal Makineler ve Hypervisor (+44 more)
 
 ### Community 407 - "Ders 2 Genişletilmiş Notu: C Temellerine Hızlı Bakış: Değişkenler, Fonksiyonlar, Veri Tipleri ve Tip Dönüşümleri"
 Cohesion: 0.04
-Nodes (52): 10.1 Farklı tipler ve atama kuralı, 10.2 Veri tipi ağacı, 10.3 Temel tipler ve niteleyiciler, 10. Veri Tipleri ve Atama Uyumluluğu, 11.1 int ve unsigned int aralıkları, 11.2 Bildirim kuralları, 11.3 Karakter de bir sayıdır, 11.4 Resim boyutu örneği (+44 more)
+Nodes (56): 10.1 Farklı tipler ve atama kuralı, 10.2 Veri tipi ağacı, 10.3 Temel tipler ve niteleyiciler, 10. Veri Tipleri ve Atama Uyumluluğu, 11.1 int ve unsigned int aralıkları, 11.2 Bildirim kuralları, 11.3 Karakter de bir sayıdır, 11.4 Resim boyutu örneği (+48 more)
 
 ### Community 408 - "101_ObjectCategories - dolphin veri kümesi"
 Cohesion: 0.03
@@ -14182,8 +14263,8 @@ Cohesion: 0.03
 Nodes (59): 10. Sözcük Birim, Sözcük Biçim ve Yazım Hatası Düzeltme, 11. Svahili Örneği: Biçimbirimleri Dağılımdan Bulmak, 12. Biçimbirim Gösterimi ve Ünlü Uyumu, 13. Biçimbirim Türleri, 14. Biçimbilimsel Analizin Görevleri ve Yöntemleri, 15.1 "ki"nin Üç Türü, 15.2 Ünlü Uyumu Dışındaki Durumlar, 15.3 Fiil Çatıları (+51 more)
 
 ### Community 412 - "Ağaçlar"
-Cohesion: 0.09
-Nodes (46): İkili ağaç sıralama, Kopya değer eleme, oncecocuk ilerleme (postorder), oncedugum ilerleme (preorder), oncesol ilerleme (inorder), Ağaç (Tree), Ağaç Dolaşımı (Tree Traversal), Huffman Kodlaması (+38 more)
+Cohesion: 0.12
+Nodes (37): İkili ağaç sıralama, Kopya değer eleme, oncecocuk ilerleme (postorder), oncedugum ilerleme (preorder), oncesol ilerleme (inorder), Ağaç (Tree), Ağaç Dolaşımı (Tree Traversal), Huffman Kodlaması (+29 more)
 
 ### Community 413 - "Ders 5 Genişletilmiş Notu: Nesneye Yönelik Çözümleme ve Tasarım: Use Case, Sınıf, Sıralama ve Etkinlik Diyagramları"
 Cohesion: 0.03
@@ -14238,8 +14319,8 @@ Cohesion: 0.03
 Nodes (65): soccer_ball image dataset (101 Object Categories), soccer_ball dataset image (image_0001.jpg), soccer_ball dataset image (image_0002.jpg), soccer_ball dataset image (image_0003.jpg), soccer_ball dataset image (image_0004.jpg), soccer_ball dataset image (image_0005.jpg), soccer_ball dataset image (image_0006.jpg), soccer_ball dataset image (image_0007.jpg) (+57 more)
 
 ### Community 426 - "Mobil Programlamaya Giriş Ders 12 (2020-2021)"
-Cohesion: 0.06
-Nodes (64): Accelerometer, Gyroscope, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Run-time izin mekanizması (+56 more)
+Cohesion: 0.05
+Nodes (69): Accelerometer, Gyroscope, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Run-time izin mekanizması (+61 more)
 
 ### Community 427 - "Ders 4 Genişletilmiş Notu: Gereksinim Analizi, İş Analizi, Kullanım Senaryosu Modellemesi ve Bilgi Toplama Yöntemleri"
 Cohesion: 0.03
@@ -14251,7 +14332,7 @@ Nodes (50): 10.1 Büyüme Oranları Sıralaması, 10.2 Döngü Örnekleri, 10. Y
 
 ### Community 429 - "Hash function"
 Cohesion: 0.04
-Nodes (69): Clustering in linear probing, Hash function, Java hashCode() and equals() convention, Load factor alpha, Modular hashing, Proposition K: list length near N/M, Proposition M: linear probing probes, Proposition N: amortized hashing bound (+61 more)
+Nodes (64): Clustering in linear probing, Hash function, Java hashCode() and equals() convention, Load factor alpha, Modular hashing, Proposition K: list length near N/M, Proposition M: linear probing probes, Proposition N: amortized hashing bound (+56 more)
 
 ### Community 430 - "Ders 7 Genişletilmiş Notu: Swap Yöntemleri, Pisagor Üçlüsü, Floyd Üçgeni, Dizi Ters Çevirme ve Palindromlar"
 Cohesion: 0.03
@@ -14259,11 +14340,11 @@ Nodes (57): 10.1 Tek Sayıların Çarpımı, Çift Sayıların Toplamı, 10.2 Gi
 
 ### Community 431 - "Ders 7 Genişletilmiş Notu: Dinamik ve Canonical Huffman, MNP5/MNP7 ve Faks Sıkıştırma"
 Cohesion: 0.04
-Nodes (50): Kısa Tekrar Notları, ba(), 10. Bilinen Algoritmaların Türevleri, 11.1 Standartlar, 11.2 Pels, 11.3 Yatay ve dikey çözünürlük, 11.4 Sıkıştırmasız gönderim süresi, 11. Faks Sıkıştırma: Standartlar ve Çözünürlük (+42 more)
+Nodes (48): 10. Bilinen Algoritmaların Türevleri, 11.1 Standartlar, 11.2 Pels, 11.3 Yatay ve dikey çözünürlük, 11.4 Sıkıştırmasız gönderim süresi, 11. Faks Sıkıştırma: Standartlar ve Çözünürlük, 12.1 Kodların elde edilmesi, 12.2 Termination ve make-up kodları (+40 more)
 
 ### Community 432 - "ActionEvent"
-Cohesion: 0.04
-Nodes (25): Main, AddSubscriptionPanel, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, StartPanel, java.awt.event.ActionListener, java.awt.event.ActionListener (+17 more)
+Cohesion: 0.06
+Nodes (19): StartPanel, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+11 more)
 
 ### Community 433 - "Ders 8 Genişletilmiş Notu: Metin İşleme Algoritmaları ve Bilgiye Erişim Modelleri"
 Cohesion: 0.04
@@ -14274,8 +14355,8 @@ Cohesion: 0.04
 Nodes (56): 10.1 Devre, 10.2 Açık Devre Gerilimi, 10.3 Kısa Devre Akımı, 10.4 Norton Eşdeğeri, 10.5 Kaynağı Sıfırlama Denemesi, 10. Örnek 56: Bağımlı Kaynaklı Devrenin Norton Eşdeğeri, 11.1 Tanımlar, 11.2 Örnek 45: Kare Darbe (+48 more)
 
 ### Community 435 - "Ders 5 Genişletilmiş Notu: Açık Adresleme Analizi ve İleri Hashing Yöntemleri"
-Cohesion: 0.04
-Nodes (44): 10.1 Fikir, 10.2 İşlemler, 10.3 Karmaşıklık, 10.4 Örnek, 10. Cuckoo Hashing, 12.1 Motivasyon, 12.2 Yapı, 12.3 Ekleme (+36 more)
+Cohesion: 0.03
+Nodes (57): 10.1 Fikir, 10.2 İşlemler, 10.3 Karmaşıklık, 10.4 Örnek, 10. Cuckoo Hashing, 11.1 Fikir, 11.2 Arama, 11.3 Ekleme Örneği (+49 more)
 
 ### Community 436 - "Ders 14 Genişletilmiş Notu: HITS Algoritması ve Web Kullanım Madenciliği"
 Cohesion: 0.04
@@ -14287,7 +14368,7 @@ Nodes (65): BLM5001 Yüksek Lisans Semineri, BLM5004 Araştırma Yöntemleri ve 
 
 ### Community 438 - "🗓 Lisansüstü"
 Cohesion: 0.07
-Nodes (51): 📘 Anlamsal Web, 📘 Araçlar Arası Haberleşme, 📘 Bilgisayar Güvenliği ve Kriptografi, 📘 Bilgisayar Mühendisliğinde Özel Konular, 📘 Bilgisayar Sistemleri ve Ağ Güvenliği, 📘 Bilgisayarda Bulanıklık ve Belirsizlik, 📘 Bulut Hesaplamada Sistem ve Ağ Mimarileri, 📘 Büyük Veri Analitiği (+43 more)
+Nodes (52): 📘 Anlamsal Web, 📘 Araçlar Arası Haberleşme, 📘 Araştırma Yöntemleri ve Bilimsel Etik, 📘 Bilgisayar Güvenliği ve Kriptografi, 📘 Bilgisayar Mühendisliğinde Özel Konular, 📘 Bilgisayar Sistemleri ve Ağ Güvenliği, 📘 Bilgisayarda Bulanıklık ve Belirsizlik, 📘 Bulut Hesaplamada Sistem ve Ağ Mimarileri (+44 more)
 
 ### Community 439 - "Yelkenli Gemi (Schooner) Görsel Veri Kümesi (101_ObjectCategories)"
 Cohesion: 0.03
@@ -14306,8 +14387,8 @@ Cohesion: 0.04
 Nodes (56): 10.1 İlk Model, 10.2 Sorun: Satılınca Kaybolan Bilgi, 10.3 Çözüm: Betimleme Sınıfı, 10.4 Neyi Kazandık, Neden Yaptık?, 10. Betimleme (Tanımlama) Sınıfı: Gerçek Dünyadan Bilinçli Uzaklaşma, 11.1 Fiillerden Bağlantıya, 11.2 Çoğullamalar, 11.3 Bağlantı Adı ve Okuma Yönü (+48 more)
 
 ### Community 443 - "Cross product"
-Cohesion: 0.04
-Nodes (71): Amortized aggregate analysis, ANY-SEGMENTS-INTERSECT, Chapter 33 Computational Geometry, Computational geometry, Convex combination, Convex hull, Farthest-pair problem, Graham's scan (+63 more)
+Cohesion: 0.05
+Nodes (64): Amortized aggregate analysis, ANY-SEGMENTS-INTERSECT, Chapter 33 Computational Geometry, Computational geometry, Convex combination, Convex hull, Farthest-pair problem, Graham's scan (+56 more)
 
 ### Community 444 - "Sistem çağrıları (system calls)"
 Cohesion: 0.05
@@ -14315,19 +14396,19 @@ Nodes (53): Accounting, API (Win32, POSIX, Java), BIOS, System boot, bootstrap v
 
 ### Community 445 - "Ders 4 Genişletilmiş Notu: Tasarım Çalışmaları, Kütüphane Örneği ve Birinci Derece Mantık"
 Cohesion: 0.04
-Nodes (48): 11.1 Tanım, 11.2 İfadeler ve sabitler, 11.3 Eşitlik, 11.4 Fonksiyonlar, 11.5 Nesne ile ifadeyi karıştırmamak, 11. Birinci derece mantık (FOL), 12.1 Evrensel ve varoluşsal niceleyici, 12.2 Kapsam (+40 more)
+Nodes (55): 10.1 Önerme nedir?, 10.2 Bağlaçlar, 10.3 Doğruluk tablosu, 10.4 Operatör öncelikleri, 10.5 Doğal dilden önerme mantığına, 10.6 De Morgan kanunu ve denk ifadeler, 10. Önerme mantığı, 11.1 Tanım (+47 more)
 
 ### Community 446 - "Ders 2 Genişletilmiş Notu: 8086 Yazmaçlarının Tekrarı, Komut Yapısı ve Veri Aktarım Komutları"
 Cohesion: 0.04
 Nodes (47): 10.1 emu8086 denemeleri, 10. Bellek Adresleme Kipleri, 11. LEA: Load Effective Address, 12. LDS ve LES, 13.1 XCHG, 13.2 XLAT / XLATB, 13. XCHG ve XLAT, 1.1 Gösterim tek, yorum komuttan gelir (+39 more)
 
 ### Community 447 - "GROUP BY"
-Cohesion: 0.05
-Nodes (62): Aggregate fonksiyonlar, Aggregate fonksiyonlar (AVG, COUNT, MIN, MAX, SUM), Ders 7 Lab Çalışma Özeti: GROUP BY, HAVING, ORDER BY (PDF), IS NULL / IS NOT NULL, LIMIT ve OFFSET, Ders 7 Lab Çalışma Özeti (GROUP BY, HAVING, LIMIT), EXTRACT Fonksiyonu, IS NULL (+54 more)
+Cohesion: 0.07
+Nodes (44): Aggregate fonksiyonlar, Aggregate fonksiyonlar (AVG, COUNT, MIN, MAX, SUM), Ders 7 Lab Çalışma Özeti: GROUP BY, HAVING, ORDER BY (PDF), IS NULL / IS NOT NULL, LIMIT ve OFFSET, Ders 7 Lab Çalışma Özeti (GROUP BY, HAVING, LIMIT), EXTRACT Fonksiyonu, IS NULL (+36 more)
 
 ### Community 448 - "Üretici Modeller (Makine Öğrenmesi-5)"
-Cohesion: 0.06
-Nodes (70): InstructGPT, Prompt Dataset, RLHF Adım 1 Supervised Fine-tuning, RLHF (Reinforcement Learning from Human Feedback), Üretici Modeller (Makine Öğrenmesi-5, 2024 slaytları), Alignment, Alpaca (self-instruct ile LLaMA eğitimi), chatGPT (+62 more)
+Cohesion: 0.07
+Nodes (60): Büyük Dil Modeli, Cinsiyet Önyargısı Doktor Bilmecesi, GPT-3, Human Imitation, InstructGPT, Next Token Prediction, Prompt Dataset, Pseudo Rewards (+52 more)
 
 ### Community 449 - "Ders 3 Genişletilmiş Notu: Taylor Yaklaşımı, Newton-Raphson ve Doğrusal Regresyon"
 Cohesion: 0.03
@@ -14335,7 +14416,7 @@ Nodes (60): 10.1 Hangi ilişki daha mantıklı?, 10.2 Doğrusal ve doğrusal olm
 
 ### Community 450 - "Ders 8 Genişletilmiş Notu: Strategy, State, Template Method ve Visitor Kalıpları"
 Cohesion: 0.04
-Nodes (51): 10.1 Amaç ve sorun (ekrandan, 01:30:00), 10.2 GoF örneği: derleyici, 10.3 Ekranda çizilen örnek: `x = y + z`, 10. Visitor Kalıbı: Amaç ve Derleyici Örneği, 11.1 Örnek çözüm (ekrandan, 01:40:00), 11.2 Ek bağlaşım, 11.3 Genel yapı, 11.4 Yeni eleman türü eklemenin maliyeti (+43 more)
+Nodes (50): 10.1 Amaç ve sorun (ekrandan, 01:30:00), 10.2 GoF örneği: derleyici, 10.3 Ekranda çizilen örnek: `x = y + z`, 10. Visitor Kalıbı: Amaç ve Derleyici Örneği, 11.1 Örnek çözüm (ekrandan, 01:40:00), 11.2 Ek bağlaşım, 11.3 Genel yapı, 11.4 Yeni eleman türü eklemenin maliyeti (+42 more)
 
 ### Community 451 - "Ders 14 Genişletilmiş Notu: Büyük Dil Modelleri"
 Cohesion: 0.04
@@ -14343,7 +14424,7 @@ Nodes (55): 10.1 RL nedir, neden kullanılır?, 10.2 Kullan ya da keşfet ikilem
 
 ### Community 452 - "Ders 6 Genişletilmiş Notu: Derleme Ortamı, DEBUG Programı ve EXE Tipi Programlar"
 Cohesion: 0.04
-Nodes (49): 10.1 Veri tanımları, 10.2 Boş döngü ve dizi erişimi, 10.3 Birinci çözüm: TEST ve JZ, 10.4 DEBUG ile izleme, 10.5 İkinci çözüm: SHR ve ADC, 10. Örnek 2: Dizideki Tek ve Çift Sayıları Sayma, 11.1 Döngü, 11.2 Denenen fikirler (+41 more)
+Nodes (47): 10.1 Veri tanımları, 10.2 Boş döngü ve dizi erişimi, 10.3 Birinci çözüm: TEST ve JZ, 10.4 DEBUG ile izleme, 10.5 İkinci çözüm: SHR ve ADC, 10. Örnek 2: Dizideki Tek ve Çift Sayıları Sayma, 11.1 Döngü, 11.2 Denenen fikirler (+39 more)
 
 ### Community 453 - "Ders 8 Genişletilmiş Notu: Diziler, İşaretçi Aritmetiği, Stringler ve İşaretçinin İşaretçisi"
 Cohesion: 0.04
@@ -14358,12 +14439,12 @@ Cohesion: 0.42
 Nodes (10): SaS-02 Signals and Systems Abstraction 2020, Analog vs digital signals, Causal anticausal noncausal signals, Continuous-time vs discrete-time signals, Deterministic vs random signals, Even-odd decomposition, Even vs odd signals, Periodic vs aperiodic signals (+2 more)
 
 ### Community 456 - "configuration/SecurityConfig.java"
-Cohesion: 0.07
+Cohesion: 0.08
 Nodes (7): SecurityConfig, WebConfig, WebMvcConfigurer, AppConfig, WebConfiguration, WebSecurityConfig, SecurityConfig
 
 ### Community 457 - "Introduction to Probability, Statistics, and Random Processes (Pishro-Nik) - Bölüm 6-8"
 Cohesion: 0.07
-Nodes (56): Aralık Tahmini (Güven Aralıkları), Bağımsız ve Aynı Dağılımlı (i.i.d.) Rastgele Değişkenler, Birleşim Sınırı (Union Bound), Bonferroni Eşitsizlikleri, Cauchy-Schwarz Eşitsizliği, Chernoff Sınırları, Dağılımda Yakınsama, Dönüşüm Yöntemi (Rastgele Vektör Fonksiyonları) (+48 more)
+Nodes (58): Aralık Tahmini (Güven Aralıkları), Bağımsız ve Aynı Dağılımlı (i.i.d.) Rastgele Değişkenler, Birinci Tip Hata ve Anlamlılık Düzeyi, Birleşim Sınırı (Union Bound), Bonferroni Eşitsizlikleri, Cauchy-Schwarz Eşitsizliği, Chernoff Sınırları, Dağılımda Yakınsama (+50 more)
 
 ### Community 458 - "Doğal Dil İşlemeye Kavramsal Bir Bakış/ders_kayitlari/2021-2022/README.md"
 Cohesion: 0.12
@@ -14374,8 +14455,8 @@ Cohesion: 0.04
 Nodes (46): 10.1 IPC Kalıcılık (Persistence) Sınıflandırması, 10.2 Örnek 1: Sıradan Pipe (`Ex_1_pipe.c` ve `Ex_1_pipe1.c`), 10.3 Örnek 2: Adlandırılmış Pipe / FIFO (`Ex_2_server.c` ve `Ex_2_client.c`), 10.4 Örnek 3: POSIX Mesaj Kuyruğu (`Ex_4_mq_dropone.c` ve `Ex_4_mq_takeone.c`), 10.5 Örnek 4: POSIX Paylaşımlı Bellek (`Ex_5_shm_server.c` ve `Ex_5_shm_client.c`), 10.6 Örnek 5: Pthreads ve Mutex ile Üretici-Tüketici (`ex_sm.c`), 10. Uygulama: POSIX IPC (Pipe, FIFO, Mesaj Kuyruğu, Paylaşımlı Bellek) ve Pthread Mutex, 1.1 Tekli Programlama (Uniprogramming) ve Çoklu Programlama (Multiprogramming) (+38 more)
 
 ### Community 460 - "EMPLOYEE tablosu"
-Cohesion: 0.09
-Nodes (48): Birden fazla tablo üzerinde sorgulama, CompanyDB örnek veritabanı, Java'dan veritabanına bağlanma, JOIN (birleştirme) işlemi, Büyüktür/küçüktür operatörleri, Kartezyen çarpım (FROM çoklu tablo), Veritabanı Yönetimi Ders 5 Lab (2020-2021), LIKE operatörü ve % joker (+40 more)
+Cohesion: 0.07
+Nodes (59): Birden fazla tablo üzerinde sorgulama, CompanyDB örnek veritabanı, Java'dan veritabanına bağlanma, JOIN (birleştirme) işlemi, Büyüktür/küçüktür operatörleri, Kartezyen çarpım (FROM çoklu tablo), Veritabanı Yönetimi Ders 5 Lab (2020-2021), LIKE operatörü ve % joker (+51 more)
 
 ### Community 461 - "Ders 11 Genişletilmiş Notu: Sosyal Ağ Analizi: Gösterimler, Merkezilik ve Prestij Ölçüleri"
 Cohesion: 0.04
@@ -14386,32 +14467,32 @@ Cohesion: 0.07
 Nodes (31): add_review(), add_to_cart(), allowed_file(), analytics_category_rating(), analytics_home(), analytics_min_rating(), analytics_my_top_selling(), checkout() (+23 more)
 
 ### Community 463 - "OSI Referans Modeli"
-Cohesion: 0.04
-Nodes (74): Efe Girgin notu: 1. slayt (giriş, OSI), VİBA-1 slaytı (giriş, OSI), Bilgisayar ağı sınıflandırması (PAN LAN MAN WAN), Furkan Çakmak BLM3051 ders bilgisi ve haftalık konular, İletim modları (simplex, half-duplex, duplex), OSI katmanları, Veri iletişiminin temel bileşenleri, Sena Cindioğlu 2025 el yazısı notu (taranmış, CamScanner) (+66 more)
+Cohesion: 0.05
+Nodes (56): Efe Girgin notu: 1. slayt (giriş, OSI), VİBA-1 slaytı (giriş, OSI), Bilgisayar ağı sınıflandırması (PAN LAN MAN WAN), Furkan Çakmak BLM3051 ders bilgisi ve haftalık konular, İletim modları (simplex, half-duplex, duplex), OSI katmanları, Veri iletişiminin temel bileşenleri, Sena Cindioğlu 2025 el yazısı notu (taranmış, CamScanner) (+48 more)
 
 ### Community 464 - "Ders 7 Genişletilmiş Notu: Hash Tabloları, Algoritma Analizi ve Asimptotik Notasyonlar"
 Cohesion: 0.04
 Nodes (55): 10.1 Birden fazla alt programdan oluşan algoritmalar, 10.2 Toplam ve çarpımlardan oluşan ifadeler, 10.3 Büyüme mertebesinin anlamı, 10.4 Limit yöntemi, 10.5 Tümevarım yöntemi, 10.6 Karmaşıklık sınıflarının özeti, 10. Bileşik Algoritmalar, Limit ve Tümevarım Yöntemleri, 1.1 Kuyruğun kullanım yerleri (+47 more)
 
 ### Community 465 - "Naive Bayes"
-Cohesion: 0.03
-Nodes (102): Naive Bayes, 5-Fold Stratified Cross Validation, Değerlendirme Metrikleri, Pipeline Yaklaşımı, SLİDE 10: MODEL EĞİTİMİ VE DEĞERLENDİRME METODOLOJİSİ, Credit Card Fraud Detection proje sunumu (Önder Görmez), KNN, LightGBM / CatBoost (gelecek çalışma) (+94 more)
+Cohesion: 0.06
+Nodes (42): Naive Bayes, 5-Fold Stratified Cross Validation, Değerlendirme Metrikleri, Pipeline Yaklaşımı, SLİDE 10: MODEL EĞİTİMİ VE DEĞERLENDİRME METODOLOJİSİ, Deney logu, Deney sonuçları tablosu (Tarih, Model, Seed, Accuracy, Sensitivity), Sonuç analizi (+34 more)
 
 ### Community 466 - "Electric Circuits 10th Ed. - Index and Appendix tables (part 10/10)"
 Cohesion: 0.03
-Nodes (121): Admitans Y, Sönüm alpha ve rezonans frekansi omega0, Asiri, kritik ve alt sönümlü cevap, Average, reactive and complex power, Chapter 10: Sinusoidal Steady State Power Calculations, Chapter 11: Balanced Three-Phase Circuits, Chapter 4: Techniques of Circuit Analysis, Chapter 4 Techniques of Circuit Analysis (problems) (+113 more)
+Nodes (110): Admitans Y, Average, reactive and complex power, Chapter 10: Sinusoidal Steady State Power Calculations, Chapter 11: Balanced Three-Phase Circuits, Chapter 4: Techniques of Circuit Analysis, Chapter 4 Techniques of Circuit Analysis (problems), Chapter 9: Sinusoidal Steady State Analysis (Problems 9.1-9.67), Dependent sources and constraint equations (+102 more)
 
 ### Community 467 - "Karar Ağaçları"
 Cohesion: 0.03
-Nodes (126): Levrek-somon balık ayırma örneği, Yapay Zeka Ders 11 - Makine Öğrenmesi 2 (11 Mayıs), Filter yöntemleri, Genel yaklaşıcı (universal approximator), Hiperparametre ve ince ayar, En yakın k komşu algoritması, LDA (doğrusal ayrılma analizi), Lineer sınıflandırıcı (+118 more)
+Nodes (127): Levrek-somon balık ayırma örneği, Yapay Zeka Ders 11 - Makine Öğrenmesi 2 (11 Mayıs), Filter yöntemleri, Genel yaklaşıcı (universal approximator), Hiperparametre ve ince ayar, En yakın k komşu algoritması, LDA (doğrusal ayrılma analizi), Lineer sınıflandırıcı (+119 more)
 
 ### Community 468 - "mikroişlemci_sistemleri_ve_assembly_dili/ödev_1/ödev_1_visualstudio/stb_image_write.h"
 Cohesion: 0.09
 Nodes (49): main(), readImage(), writeImage(), stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp() (+41 more)
 
 ### Community 469 - "Job"
-Cohesion: 0.07
-Nodes (19): Main, Job, DateAverage, MinMaxReview, MovieAverage, StandardDeviation, TotalReviews, avgOfScore (+11 more)
+Cohesion: 0.05
+Nodes (30): Main, Job, DateAverage, MinMaxReview, MovieAverage, StandardDeviation, TotalReviews, avgOfScore (+22 more)
 
 ### Community 470 - "KayitEkrani"
 Cohesion: 0.05
@@ -14438,12 +14519,12 @@ Cohesion: 0.06
 Nodes (48): Ders 5 Çalışma Özeti (Sayısal Analiz 2020-2021), Fonksiyon türleri: polinom, trigonometrik, logaritmik, üstel, Kök bulma yöntemleri (bisection, regula falsi, Newton-Raphson), Polinomun katsayı dizisi ile modellenmesi, Fonksiyonların veri yapılarıyla (dizi) temsili, Ders 6 Çalışma Özeti (Sayısal Analiz 2020-2021), Fonksiyon terimlerinin birleştirilmesi, Fonksiyon türü seçim menüsü (+40 more)
 
 ### Community 476 - "Ders 4 Genişletilmiş Notu: Doğrusal Denklem Takımlarının Çözüm Yöntemleri, Doğrusal Olmayan Denklem Takımları ve Sayısal Türev"
-Cohesion: 0.04
-Nodes (47): 10.1 Neden sayısal türev?, 10.2 Türev nedir?, 10.3 Geri, ileri ve merkezi fark, 10.4 Adım aralığının etkisi, 10.5 Örnek: $e^x$'in türevi, 10.6 Örnek: $x^2$'nin türevi, 10. Sayısal Türev, 11.1 Birinci türev (ileri fark, iki noktalı) (+39 more)
+Cohesion: 0.05
+Nodes (39): 10.1 Neden sayısal türev?, 10.2 Türev nedir?, 10.3 Geri, ileri ve merkezi fark, 10.4 Adım aralığının etkisi, 10.5 Örnek: $e^x$'in türevi, 10.6 Örnek: $x^2$'nin türevi, 10. Sayısal Türev, 11.1 Birinci türev (ileri fark, iki noktalı) (+31 more)
 
 ### Community 477 - "Ders 2 Çalışma Özeti (VYS Mimarisi ve ER Giriş)"
-Cohesion: 0.04
-Nodes (63): Connection pooling, Veritabanı Yönetimi Ders 2 altyazı (2020-2021), Fiziksel tasarım, Gereksinimlerin toplanması ve analizi, Uygulama sunucusu katmanı (çok katmanlı mimari), View integration, Veritabanı sistemlerinin sınıflandırılması, DDL ve DML (+55 more)
+Cohesion: 0.03
+Nodes (92): Bağıntı (relationship), Bağıntı kümesi, Çok değerli nitelik, Connection pooling, Veritabanı Yönetimi Ders 2 altyazı (2020-2021), Domain (veri tipi ve değer aralığı), Genişletilmiş ER (EER), ER modeli (varlık-bağıntı) (+84 more)
 
 ### Community 478 - "Ders 10 Genişletilmiş Notu: Hiperbolik Fonksiyonlar, L'Hôpital Kuralı ve Belirsiz Formlar"
 Cohesion: 0.04
@@ -14479,23 +14560,23 @@ Nodes (47): writeImage(), stbi__end_write_file(), stbi_flip_vertically_on_write(
 
 ### Community 486 - "k"
 Cohesion: 0.08
-Nodes (61): d(), f(), g(), k(), A(), B(), be(), de() (+53 more)
+Nodes (47): M(), we, d(), E(), f(), g(), k(), A() (+39 more)
 
 ### Community 487 - "Önbellek (Cache) slaytları"
 Cohesion: 0.28
 Nodes (9): Önbellek (Cache) slaytları, Average memory access time, Cache replacement (LRU FIFO RAND), Direct-mapped cache (tag index offset), Fully associative ve set associative cache, Multi-level cache (L1 L2), Principle of locality (temporal spatial), Thrashing (vektör çarpımı örneği) (+1 more)
 
 ### Community 488 - "project/service/AuthService.java"
-Cohesion: 0.03
-Nodes (25): AuthController, InstructorController, StudentController, Role, ADMIN, INSTRUCTOR, STUDENT, Instructor (+17 more)
+Cohesion: 0.02
+Nodes (30): MyUserDetailsService, AuthMiddleware, SpringEnvironment, AuthController, InstructorController, StudentController, Role, ADMIN (+22 more)
 
 ### Community 489 - "ödev_1/stb_image_write.h"
 Cohesion: 0.09
 Nodes (47): writeImage(), stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp(), stbi_write_bmp_core(), stbi_write_bmp_to_func() (+39 more)
 
 ### Community 490 - "Yapay Zeka Ders 7 (2022-2023): Oyunlar"
-Cohesion: 0.06
-Nodes (60): Yapay Zeka 2026 Çıkmış Sorular README, Vize 28 / Final 30 soruluk çoktan seçmeli sınav, Yapay Zeka Vize 2026 soruları, Kabul edilebilir sezgisel (admissible heuristic), Alpha-Beta budama, A* algoritması f(n)=g(n)+h(n), Kör arama, Arama tamlığı (completeness) (+52 more)
+Cohesion: 0.07
+Nodes (55): Yapay Zeka 2026 Çıkmış Sorular README, Vize 28 / Final 30 soruluk çoktan seçmeli sınav, Yapay Zeka Vize 2026 soruları, Kabul edilebilir sezgisel (admissible heuristic), Alpha-Beta budama, A* algoritması f(n)=g(n)+h(n), Kör arama, Arama tamlığı (completeness) (+47 more)
 
 ### Community 491 - "Ders 5 Genişletilmiş Notu: PAL, RAM Türleri, Bellek Organizasyonu, Çakışık Seçim ve Bellek Genişletme"
 Cohesion: 0.04
@@ -14506,8 +14587,8 @@ Cohesion: 0.04
 Nodes (54): 10.1 Soru, 10.2 Hangi Dönüşüm?, 10.3 Çözüm, 10. Trigonometrik Dönüşüm (Soru 18), 11.1 Soru, 11.2 Çözüm, 11.3 Hocanın Ek Varyasyonları, 11. Parabol Altındaki Bölgenin Farklı Eksenler Etrafında Döndürülmesi (+46 more)
 
 ### Community 493 - "🗓 Mesleki Seçmeli 1"
-Cohesion: 0.06
-Nodes (38): BLM4770 Yazılım Kalite ve Test Süreci harf notları (2025-2026 Güz), BLM4770 Yazılım Kalite ve Test Süreci, Uygulama %10, Ara Sınav %20, Ödev %10, Proje %20, Final %40, Harf dağılımı (AA 36, BA 10, BB 1, CB 3, CC 2, FF 4; ortalama 82,29), 📘 Ayrık Olay Simülasyonu, 📘 Ağ Teknolojileri, 📘 Bilgisayar Grafiğine Giriş, 📘 Bilgisayar Mimarisi (+30 more)
+Cohesion: 0.05
+Nodes (47): Veritabanı Yönetimi Altyazıları README (2020-2021 Güz), Ders Kayıtları Hafta Takvimi, Eksik Kayıtlar (12. ve 13. hafta), BLM4770 Yazılım Kalite ve Test Süreci harf notları (2025-2026 Güz), BLM4770 Yazılım Kalite ve Test Süreci, Uygulama %10, Ara Sınav %20, Ödev %10, Proje %20, Final %40, Harf dağılımı (AA 36, BA 10, BB 1, CB 3, CC 2, FF 4; ortalama 82,29), 📘 Ayrık Olay Simülasyonu (+39 more)
 
 ### Community 494 - "Pyramid kategorisi görüntü veri seti (Caltech-101)"
 Cohesion: 0.03
@@ -14515,7 +14596,7 @@ Nodes (58): Pyramid kategorisi görüntü veri seti (Caltech-101), Piramit foto�
 
 ### Community 495 - "Log"
 Cohesion: 0.01
-Nodes (61): Client, Details, SeekBar.OnSeekBarChangeListener, MainActivity, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener (+53 more)
+Nodes (52): Client, MainActivity, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener (+44 more)
 
 ### Community 496 - "Ders 17 Genişletilmiş Notu: Heap İşlemleri, Öncelikli Kuyruk ve Huffman Kodlaması"
 Cohesion: 0.04
@@ -14525,37 +14606,37 @@ Nodes (45): 10.1 Fikir, 10.2 Önek Kod (Prefix Code), 10.3 Örnek 1: Kodları Bu
 Cohesion: 0.04
 Nodes (54): 10.1 Örnek 13, 10.2 Örnek 14, 10. Test Tipi Ara Değer Teoremi Soruları, 11.1 Örnek 15, 11.2 Örnek 16, 11.3 Eşlenik Yöntemiyle İki Alıştırma, 11.4 Örnek 17: $\frac{\sin ax}{bx}$, 11.5 Örnek 18 (+46 more)
 
-### Community 498 - "JobFinder/Controllers/AccountController.cs"
-Cohesion: 0.06
-Nodes (14): HomeController, StringResult, Result, DataAccess, ErrorViewModel, RequestId, ShowRequestId, LoginRequest (+6 more)
+### Community 498 - "ErrorViewModel"
+Cohesion: 0.50
+Nodes (3): ErrorViewModel, RequestId, ShowRequestId
 
-### Community 499 - "Question"
-Cohesion: 0.03
-Nodes (8): AddQuestionsActivity, CreateExamActivity, Exam, Person, Question, SignupActivity, TextWatcher, TextWatcher
+### Community 499 - "Adapter"
+Cohesion: 0.02
+Nodes (25): 12.5 onCreateViewHolder ve getItemViewType, Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, MyAdapter, MyViewHolder (+17 more)
 
 ### Community 500 - "blm_3061_msad/ödev_1/ödev_1_visualstudio/stb_image_write.h"
 Cohesion: 0.09
 Nodes (46): stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp(), stbi_write_bmp_core(), stbi_write_bmp_to_func(), stbi_write_hdr() (+38 more)
 
 ### Community 501 - "Probability and Statistics for Computer Scientists (Michael Baron, 2nd ed.)"
-Cohesion: 0.03
-Nodes (105): Appendix C Counting and Probability, Balls and bins counting problem, Probability axioms and conditional probability, Random variables and expectation, Randomized approximation for MAX-3-CNF satisfiability, Average-Case Complexity (linear search, insertion sort), Bienaymé's Formula, Chebyshev's Inequality (+97 more)
+Cohesion: 0.06
+Nodes (57): Probability Distribution / Assigning Probabilities, Random Variable, Uniform Distribution, Cauchy Distribution, Chapter 4: Continuous Random Variables, Continuous Random Variable, Dirac Delta Function, Gamma Function (+49 more)
 
 ### Community 502 - "Caltech-101 'sea_horse' object category dataset"
 Cohesion: 0.03
 Nodes (58): Caltech-101 'sea_horse' object category dataset, Sea Horse dataset image (image_0001.jpg), Sea Horse dataset image (image_0002.jpg), Sea Horse dataset image (image_0003.jpg), Sea Horse dataset image (image_0004.jpg), Sea Horse dataset image (image_0005.jpg), Deniz Atı Fotoğrafı (image_0006), Deniz Atı Fotoğrafı (image_0007) (+50 more)
 
 ### Community 503 - "Proje Dokümantasyonu"
-Cohesion: 0.05
-Nodes (58): Ağ Teknolojileri (ders, Mesleki Seçmeli 1), Alt Seviye Programlama (ders, Mesleki Seçmeli 1), Anlamsal Web (ders, Lisansüstü), Atatürk İlkeleri ve İnkılâp Tarihi 2 (ders, Zorunlu), Atatürk İlkeleri ve İnkılap Tarihi 1 (ders, Zorunlu), Bilgisayar Mimarisi (ders, Mesleki Seçmeli 1), Bilgisayar Projesi (ders, Zorunlu), Bilgisayarla Görme (ders, Lisansüstü) (+50 more)
+Cohesion: 0.04
+Nodes (71): Ağ Teknolojileri (ders, Mesleki Seçmeli 1), Alt Seviye Programlama (ders, Mesleki Seçmeli 1), Anlamsal Web (ders, Lisansüstü), Atatürk İlkeleri ve İnkılâp Tarihi 2 (ders, Zorunlu), Atatürk İlkeleri ve İnkılap Tarihi 1 (ders, Zorunlu), Bilgisayar Mimarisi (ders, Mesleki Seçmeli 1), Bilgisayar Projesi (ders, Zorunlu), Bilgisayarla Görme (ders, Lisansüstü) (+63 more)
 
 ### Community 504 - "2. Birinci Sunum: Metinden Duygu Tespiti Yaklaşımları"
 Cohesion: 0.04
 Nodes (52): 1. Dersin Yapısı, 2.10 Konu Düzeyinde Örnek: Biterm Konu Modeli, 2.11 Karma Örnek: Topluluk Sınıflandırıcı, 2.12 Derlemenin Sonucu, 2.1 Makale Seçimi ve Derleme Çalışması, 2.2 Duygu Analizi ve Metnin Sınırı, 2.3 Duygu Modelleri, 2.4 Veri Setleri (+44 more)
 
 ### Community 505 - "Probability and Statistics for Computer Scientists (Baron) - Bölüm 11 alıştırmaları ve Ek"
-Cohesion: 0.10
-Nodes (47): Probability and Statistics for Computer Scientists (Baron) - Bölüm 11 alıştırmaları ve Ek, ANOVA tablosu, Beta dağılımı, Dağılım tabloları (A1-A9), Dağılımlar envanteri, Doğrusal regresyon alıştırmaları, F dağılımı (Fisher-Snedecor), Kalkülüs ve matris özeti (+39 more)
+Cohesion: 0.08
+Nodes (62): Probability and Statistics for Computer Scientists (Baron) - Bölüm 11 alıştırmaları ve Ek, ANOVA tablosu, Beta dağılımı, Dağılım tabloları (A1-A9), Dağılımlar envanteri, Doğrusal regresyon alıştırmaları, F dağılımı (Fisher-Snedecor), Kalkülüs ve matris özeti (+54 more)
 
 ### Community 506 - "Ders 7 Genişletilmiş Notu: Doğrusallaştırma, Terslenebilirlik, Üstel ve Logaritmik Fonksiyonlar ve Ters Fonksiyonun Türevi"
 Cohesion: 0.04
@@ -14571,7 +14652,7 @@ Nodes (50): { Pool }, query(), createWasteType(), deleteUser(), deleteWasteType(
 
 ### Community 509 - "Chapter 8 C Characters and Strings"
 Cohesion: 0.02
-Nodes (140): Character sets: ASCII and numeric character codes, Dynamic field width and precision with *, Chapter 8 C Characters and Strings, Chapter 9 C Formatted Input/Output, char array vs const char * initialization, Character constant (int value in single quotes), Common error: printing % without %%, Common error: assuming strcmp returns 1 on equality (+132 more)
+Nodes (160): Appendix D Game Programming: Solving Sudoku, Character sets: ASCII and numeric character codes, Dynamic field width and precision with *, Chapter 8 C Characters and Strings, Chapter 9 C Formatted Input/Output, char array vs const char * initialization, Character constant (int value in single quotes), Common error: printing % without %% (+152 more)
 
 ### Community 510 - "Ders 5 Genişletilmiş Notu: Huffman Kodlama: Varyans, Başlık Bilgisi ve Dizi ile Kod Üretimi; Dinamik ve Canonical Huffman; MNP5 ve MNP7"
 Cohesion: 0.03
@@ -14603,15 +14684,15 @@ Nodes (52): 10.1 Veritabanı, tablo, satır, 10.2 Veritabanı sistemi, 10.3 Mevc
 
 ### Community 517 - ".Open"
 Cohesion: 0.04
-Nodes (51): 3.1 Başka bir çözüm: generic sınıflar, 3. Örnek Çözüm: Document ve Application, 5.1 Amaç, 5.2 GoF örneği: TCP bağlantısı (ekrandan, 00:34:40), 5.3 Durum geçişlerinden kim sorumlu?, 5.4 Ne zaman kullanılır? (ekrandan, 00:40:00), 5. State Kalıbı: Amaç ve Yapı, 8.1 Amaç ve örnek (ekrandan, 01:10:00) (+43 more)
+Nodes (54): 3.1 Başka bir çözüm: generic sınıflar, 3. Örnek Çözüm: Document ve Application, 5.1 Amaç, 5.2 GoF örneği: TCP bağlantısı (ekrandan, 00:34:40), 5.3 Durum geçişlerinden kim sorumlu?, 5.4 Ne zaman kullanılır? (ekrandan, 00:40:00), 5. State Kalıbı: Amaç ve Yapı, Ders 3 Çalışma Özeti (+46 more)
 
 ### Community 518 - "Primary Key"
-Cohesion: 0.07
-Nodes (53): Composite key, Join operator, Projection operator, Relational data model, Relational database, Section 9.2 n-ary Relations and Their Applications, SQL, CONSTRAINT isimlendirme (+45 more)
+Cohesion: 0.06
+Nodes (60): Composite key, Join operator, Projection operator, Relational data model, Relational database, Section 9.2 n-ary Relations and Their Applications, SQL, CONSTRAINT isimlendirme (+52 more)
 
 ### Community 519 - "Ders 5 Genişletilmiş Notu: Dot Plot ve Dinamik Programlama ile İkili Dizi Hizalama"
-Cohesion: 0.04
-Nodes (52): 10.1 Amaç, 10.2 Global hizalamadan iki farkı, 10.3 Aynı örnekte lokal matris, 10.4 Geri izleme nereden başlar?, 10. Lokal Hizalama: Smith-Waterman, 11.1 Neden gerekir?, 11.2 Başlatma, doldurma ve skor, 11.3 Örnek (+44 more)
+Cohesion: 0.03
+Nodes (63): 10.1 Amaç, 10.2 Global hizalamadan iki farkı, 10.3 Aynı örnekte lokal matris, 10.4 Geri izleme nereden başlar?, 10. Lokal Hizalama: Smith-Waterman, 11.1 Neden gerekir?, 11.2 Başlatma, doldurma ve skor, 11.3 Örnek (+55 more)
 
 ### Community 520 - "sinem_sarak/stb_image.h"
 Cohesion: 0.06
@@ -14619,15 +14700,15 @@ Nodes (79): readImage(), load_jpeg_image(), resample_row_1(), stbi__bitcount(), 
 
 ### Community 521 - "Thread"
 Cohesion: 0.02
-Nodes (70): 7.1 Neden thread?, 7.2 Birinci yol: Thread sınıfını genişletmek, 7.3 Çıktının yorumu, 7.4 start() ile run() farkı, 7.5 İkinci yol: Runnable arayüzünü gerçeklemek, 7. Thread'lere giriş, 6.1 Senaryo, 6.2 SoccerFan sınıfı (+62 more)
+Nodes (73): 15. Metin dosyaları, 7.1 Neden thread?, 7.2 Birinci yol: Thread sınıfını genişletmek, 7.3 Çıktının yorumu, 7.4 start() ile run() farkı, 7.5 İkinci yol: Runnable arayüzünü gerçeklemek, 7. Thread'lere giriş, Dersin Toparlaması (+65 more)
 
 ### Community 522 - "Ders 9 Genişletilmiş Notu: Kod Kusurları ve Refactoring Eylemleri: Duplicated Code, Long Method, Long Parameter List ve Large Class"
-Cohesion: 0.03
-Nodes (59): 10.1 Geçici değişkenlere neden "kıl" oluyoruz?, 10.2 getPrice örneği, 10.3 Bir metot iki kez çağrılıyor, 10.4 Avantaj, tartışma ve şerh, 10.5 Döngüde çağrı sayısı: printRecipt, 10.6 Profiler ile ölçmek, 10. Replace Temp with Query (Geçici Değişken Yerine Erişim Metodu), 11.1 Tanım (+51 more)
+Cohesion: 0.04
+Nodes (55): 10.1 Geçici değişkenlere neden "kıl" oluyoruz?, 10.2 getPrice örneği, 10.3 Bir metot iki kez çağrılıyor, 10.4 Avantaj, tartışma ve şerh, 10.5 Döngüde çağrı sayısı: printRecipt, 10.6 Profiler ile ölçmek, 10. Replace Temp with Query (Geçici Değişken Yerine Erişim Metodu), 11.1 Tanım (+47 more)
 
 ### Community 523 - "Ders 14 Genişletilmiş Notu: Yazılım Kalitesi ve Yazılım Ölçütleri"
-Cohesion: 0.03
-Nodes (59): 10.1 Nesneye yönelik ölçütlerin özellikleri, 10.2 CK ölçütleri (Chidamber ve Kemerer), 10.3 WMC ayrıntısı, 10. Nesneye Yönelik Ölçütler ve CK Ölçütleri, 11.1 Diğer kalite özelliklerine yönelik ölçütler, 11.2 Ne yapılabilir?, 11.3 Geçerleme çalışmalarının önündeki engeller, 11. Diğer Ölçütler ve Ölçütlerin Sınırları (+51 more)
+Cohesion: 0.04
+Nodes (50): 10.1 Nesneye yönelik ölçütlerin özellikleri, 10.2 CK ölçütleri (Chidamber ve Kemerer), 10.3 WMC ayrıntısı, 10. Nesneye Yönelik Ölçütler ve CK Ölçütleri, 11.1 Diğer kalite özelliklerine yönelik ölçütler, 11.2 Ne yapılabilir?, 11.3 Geçerleme çalışmalarının önündeki engeller, 11. Diğer Ölçütler ve Ölçütlerin Sınırları (+42 more)
 
 ### Community 524 - "Ders 9 Genişletilmiş Notu: Dönüşüm Uydurma (En Küçük Kareler, Hough, RANSAC) ve Yapay Sinir Ağlarına Giriş"
 Cohesion: 0.04
@@ -14646,24 +14727,24 @@ Cohesion: 0.04
 Nodes (34): authenticate(), jwt, { authenticate }, chatController, express, router, client, redis (+26 more)
 
 ### Community 528 - "Yapay Zeka Ders 3: Arama Algoritmaları (2022-2023)"
-Cohesion: 0.04
-Nodes (107): Arama algoritması kriterleri: tamlık, zaman, hafıza, optimumluk, Artan derinlikte arama (iterative deepening, IDS), Dallanma sayısı b (branching factor), Yapay Zeka Ders 3: Arama Algoritmaları (2022-2023), IDS'te tekrarlı düğüm ziyareti (yaklaşık %11 ek iş), Durum uzayı / arama uzayı (graf-ağaç), Çiftçi-kurt-keçi-kabak nehir geçiş problemi, Kuyruk/dizi (FIFO) ve başa/sona ekleme mekanizması (+99 more)
+Cohesion: 0.05
+Nodes (69): Arama algoritması kriterleri: tamlık, zaman, hafıza, optimumluk, Artan derinlikte arama (iterative deepening, IDS), Dallanma sayısı b (branching factor), Yapay Zeka Ders 3: Arama Algoritmaları (2022-2023), IDS'te tekrarlı düğüm ziyareti (yaklaşık %11 ek iş), Durum uzayı / arama uzayı (graf-ağaç), Çiftçi-kurt-keçi-kabak nehir geçiş problemi, Kuyruk/dizi (FIFO) ve başa/sona ekleme mekanizması (+61 more)
 
 ### Community 529 - "Ders 3 Genişletilmiş Notu: Factory Method, Builder, Prototype ve Singleton Kalıpları"
 Cohesion: 0.04
 Nodes (51): 1. Abstract Factory ile Factory Method Arasındaki Fark, 2.1 Örnek sorun: belge uygulamaları için çerçeve program, 2.2 Örnek çözüm, 2.3 Güncel UML gösterimi üzerine hatırlatmalar, 2.4 Başka çözüm seçenekleri, 2.5 Kalıp yapısı, 2.6 Kalıbın uygulanabileceği anlar, 2.7 İkinci örnek: çizim uygulamasında şekil manipülatörleri (+43 more)
 
 ### Community 530 - "typing"
-Cohesion: 0.02
-Nodes (59): 1. `readme_olustur.py` - README Oluşturma Motoru, BufferedReadmeWriter, FolderCache, csv_kontrol_et(), guncelle_ders_yildizlari(), guncelle_ogrenci_gorusleri(), main(), yillaraGoreYildizSayisiDondur() (+51 more)
+Cohesion: 0.01
+Nodes (79): main(), detect_header(), load_data(), main(), plot_data(), summarize_and_print(), get_all_datasets(), get_dataset_dir() (+71 more)
 
 ### Community 532 - "stbi__context"
-Cohesion: 0.09
-Nodes (71): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_load(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header() (+63 more)
+Cohesion: 0.11
+Nodes (52): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header(), stbi__get16be() (+44 more)
 
 ### Community 533 - "Ders 3 Genişletilmiş Notu: Açık Yöntemler (Newton-Raphson, Sekant, Tekrarlama), Fonksiyonların Bilgisayarda Gösterimi ve Matris İşlemleri"
-Cohesion: 0.04
-Nodes (46): 1. Kapalı Yöntemlerden Açık Yöntemlere, 2.1 Yöntemin özellikleri, 2.2 Geometrik fikir: teğetle yaklaşmak, 2.3 Formülün türetilmesi (teğet doğrusu ile), 2.4 Kutu (konteyner) problemi, 2.5 Taylor serisinden türetme, 2. Newton-Raphson Yöntemi, 3.1 Fikir (+38 more)
+Cohesion: 0.05
+Nodes (38): 1. Kapalı Yöntemlerden Açık Yöntemlere, 3.1 Fikir, 3.2 Formül, 3.3 Sayısal örnek, 3.4 Adım ($h$) ile verilen biçim, 3.5 Neden programlanabilir bir yöntem?, 3. Sekant (Kiriş) Yöntemi, 5.1 Polinomun diziyle gösterimi (+30 more)
 
 ### Community 534 - "Ders 6 Genişletilmiş Notu: Maksimum Güç Aktarımı, Bağımlı Kaynaklı Süperpozisyon ve Thevenin Örnekleri, Kapasite ve Endüktans"
 Cohesion: 0.04
@@ -14682,8 +14763,8 @@ Cohesion: 0.04
 Nodes (55): 10. Açık Çevrim ile Kapalı Çevrimi Karıştırmamak, 11. Örnek 04: Kırpılmalı Eviren Kuvvetlendirici, 12.1 Türetme, 12.2 Örnek 05, 12. Evirmeyen Kuvvetlendirici ve Örnek 05, 13. Gerilim Tekrarlayıcı, 14.1 Türetme, 14.2 Örnek 07 (+47 more)
 
 ### Community 538 - "Ders 10 Genişletilmiş Notu: Sosyal Ağ Analizi, Ağ Temsilleri ve Merkezilik Metrikleri"
-Cohesion: 0.04
-Nodes (50): 10. Merkezilik Metriklerinin Özeti ve Prestij Metriklerine Geçiş, 1.1 Karmaşık ağ ve görselleştirme, 1.2 Gazete terimleri ağı, 1.3 İnternet ve Dünya Çapında Ağ, 1.4 ABD siyasi blogları, 1.5 Şirket e-posta ağı, 1.6 Facebook ağı, 1.7 Yemek tarifi siteleri (+42 more)
+Cohesion: 0.05
+Nodes (41): 10. Merkezilik Metriklerinin Özeti ve Prestij Metriklerine Geçiş, 1.1 Karmaşık ağ ve görselleştirme, 1.2 Gazete terimleri ağı, 1.3 İnternet ve Dünya Çapında Ağ, 1.4 ABD siyasi blogları, 1.5 Şirket e-posta ağı, 1.6 Facebook ağı, 1.7 Yemek tarifi siteleri (+33 more)
 
 ### Community 539 - "Ders 2 Genişletilmiş Notu: Taylor Serisinin Genelleştirilmesi, Kesme-Bağıl-Mutlak Hata, Ortalama ve Ara Değer Teoremleri, Kök Bulmaya Giriş"
 Cohesion: 0.04
@@ -14710,8 +14791,8 @@ Cohesion: 0.04
 Nodes (51): 10.1 Taşınabilirlik sorunu, 10.2 Tamponlu ve tamponsuz I/O, 10.3 Metin ve ikili mod, 10.4 Akış (stream) ve FILE, 10.5 Standart akışlar, 10.6 Farklı sistemler arasında dosya taşımak, 10.7 Dosyaya neden yazarız?, 10. Dosya Giriş-Çıkışına Giriş (+43 more)
 
 ### Community 545 - "messageService.js"
-Cohesion: 0.06
-Nodes (21): client, redis, Message, messageSchema, mongoose, amqp, axios, Message (+13 more)
+Cohesion: 0.04
+Nodes (37): client, redis, Chat, chatParticipantSchema, chatSchema, mongoose, amqp, redis (+29 more)
 
 ### Community 546 - "Ders 2 Genişletilmiş Notu: Hata Sezme ve Düzeltme Kodları ve Sezgisel Sıkıştırma"
 Cohesion: 0.04
@@ -14723,7 +14804,7 @@ Nodes (13): BLM3022 Ağ Teknolojileri Take-Home Ödevi (2020), CIDR Adres Birle�
 
 ### Community 548 - "Ders 5 Genişletilmiş Notu: Özyineleme, Özyinelemeli İkili Arama ve Bağlı Listelere Giriş"
 Cohesion: 0.04
-Nodes (44): 10. Özyineleme Üzerine Tavsiyeler, 1. Özyineleme Neden Gerekli?, 2.1 Faktöriyelin Tanımı, 2.2 İteratif Faktöriyel, 2.3 Özyinelemenin Özü, 2.4 Özyinelemeli Faktöriyel, 2. Faktöriyel: İteratif ve Özyinelemeli Yazım, 3.1 Özyinelemeli ve İteratif Yazım (+36 more)
+Nodes (54): 10. Özyineleme Üzerine Tavsiyeler, 11.1 Dersin İki Ayağı ve Dizi, 11.2 Statik Diziden Dinamik Bellek Ayırmaya, 11.3 Daha Dinamik Bir Yapıya İhtiyaç, 11.4 Düğüm Yapısı, 11.5 Tek Yönlü Bağlı Liste, 11.6 Temel İşlemler, 11.7 Avantajlar (+46 more)
 
 ### Community 549 - "MLHW1 çıktı günlüğü (eğitim ve test)"
 Cohesion: 0.07
@@ -14742,8 +14823,8 @@ Cohesion: 0.04
 Nodes (55): hedgehog image dataset (101 Object Categories), hedgehog dataset image image_0001, hedgehog dataset image image_0002, hedgehog dataset image image_0003, hedgehog dataset image image_0004, hedgehog dataset image image_0005, hedgehog dataset image image_0006, hedgehog dataset image image_0007 (+47 more)
 
 ### Community 553 - "Ders 12 Genişletilmiş Notu: Mikroservislerin Dağıtımı ve Üretime Hazır Servisler"
-Cohesion: 0.05
-Nodes (41): 10.1 Monolitin tasarımı neden kopyalanamaz?, 10.2 API ağ geçidinde kimlik doğrulama, 10.3 Yetkilendirme, 10. Güvenlik: mikroservis mimarisinde, 11.1 Kimlik ve rolleri JWT ile iletmek, 11.2 API istemcisi için OAuth 2.0, 11.3 Oturum tabanlı istemci için OAuth 2.0, 11. JWT ve OAuth 2.0 (+33 more)
+Cohesion: 0.04
+Nodes (49): 10.1 Monolitin tasarımı neden kopyalanamaz?, 10.2 API ağ geçidinde kimlik doğrulama, 10.3 Yetkilendirme, 10. Güvenlik: mikroservis mimarisinde, 11.1 Kimlik ve rolleri JWT ile iletmek, 11.2 API istemcisi için OAuth 2.0, 11.3 Oturum tabanlı istemci için OAuth 2.0, 11. JWT ve OAuth 2.0 (+41 more)
 
 ### Community 554 - "Ders 11 Genişletilmiş Notu: Ağaçlar, İkili Ağaçlar ve İkili Arama Ağaçları"
 Cohesion: 0.06
@@ -14751,23 +14832,23 @@ Nodes (31): 10.1 İkili Aramayı Hatırlama, 10.2 BST Kuralı, 10.3 Azalt ve Yö
 
 ### Community 555 - "Problem Solving and Program Design in C (Hanly, Koffman, 7th Ed.)"
 Cohesion: 0.03
-Nodes (84): Structure chart, ANSI C Ayrılmış Kelimeler, ANSI C Standart Kütüphaneleri, Ağlar (LAN WAN), Battery sınıfı (Programming Project 2), Bellek (RAM ROM), Bilgisayar Etiği, Bilgisayar Mühendisliği Kariyer ve Disiplinler (+76 more)
+Nodes (92): Structure chart, ANSI C Ayrılmış Kelimeler, ANSI C Standart Kütüphaneleri, Ağlar (LAN WAN), Battery sınıfı (Programming Project 2), Bellek (RAM ROM), Bilgisayar Etiği, Bilgisayar Mühendisliği Kariyer ve Disiplinler (+84 more)
 
 ### Community 556 - "YİF 3-4 (Yarıiletken tipleri, taşıyıcı konsantrasyonu, durum yoğunluğu, dağılım fonksiyonu)"
-Cohesion: 0.08
-Nodes (58): YI-hafta 2-3, Bant yapısı ve yasak band aralığı, Durum yoğunluğu ve taşıyıcı konsantrasyonu, Kütle etkisi yasası, YİF 3-4 (Yarıiletken tipleri, taşıyıcı konsantrasyonu, durum yoğunluğu, dağılım fonksiyonu), Akseptör (alıcı) atomlar, Asal taşıyıcı yoğunluğu ni, Asal (saf, intrinsic) yarıiletken (+50 more)
+Cohesion: 0.09
+Nodes (54): YİF 3-4 (Yarıiletken tipleri, taşıyıcı konsantrasyonu, durum yoğunluğu, dağılım fonksiyonu), Akseptör (alıcı) atomlar, Asal taşıyıcı yoğunluğu ni, Asal (saf, intrinsic) yarıiletken, Donör (verici) atomlar, Etkin durum yoğunluğu NC ve NV, Spin: fermiyon ve bozon, Kompanse yarıiletken ve taşıyıcı dengelenmesi (+46 more)
 
 ### Community 557 - "3. Proje İçin Tasarım: Veri Yapıları ve Modüller"
-Cohesion: 0.04
-Nodes (44): 1. Çözümlerde Sık Görülen Programlama Hataları, 2.1 Oyun ve Kural Çeşitliliği, 2.2 Temel Kurallar, 2.3 Tahta, Başlangıç Noktaları ve Hedef, 2.4 Program Komutlarla Çalışır, 2.5 Hedefe Tam Denk Gelmek, 2.6 Opsiyonel Kurallar, 2. Dönem Projesi: Kızma Birader Oyununun Kuralları (+36 more)
+Cohesion: 0.07
+Nodes (29): 1. Çözümlerde Sık Görülen Programlama Hataları, 2.1 Oyun ve Kural Çeşitliliği, 2.2 Temel Kurallar, 2.3 Tahta, Başlangıç Noktaları ve Hedef, 2.4 Program Komutlarla Çalışır, 2.5 Hedefe Tam Denk Gelmek, 2.6 Opsiyonel Kurallar, 2. Dönem Projesi: Kızma Birader Oyununun Kuralları (+21 more)
 
 ### Community 558 - "system_of_linear_equations.py"
-Cohesion: 0.05
-Nodes (27): create_L(), create_U(), create_UL(), create_vector(), prepare_for_substitution(), print_cholesky(), substitution(), cramer() (+19 more)
+Cohesion: 0.09
+Nodes (13): prepare_for_substitution(), cramer(), add_new_char_next_to_every_occurence(), build_calculations_from_extractions(), calculations_are_true(), clear_white_space(), create_coefficient_matrix(), extract_equations() (+5 more)
 
 ### Community 559 - "LoginPage"
-Cohesion: 0.03
-Nodes (14): Admin, Exercise, AppendableObjectOutputStream, GamePage, ActionListener, ActionListener, LoginPage, Person (+6 more)
+Cohesion: 0.02
+Nodes (20): Admin, AdminPage, ActionListener, ActionListener, ActionListener, Exercise, AppendableObjectOutputStream, GamePage (+12 more)
 
 ### Community 560 - "PreparedStatement"
 Cohesion: 0.05
@@ -14790,12 +14871,12 @@ Cohesion: 0.04
 Nodes (54): Caltech-101 Emu Kuşu (Emu) Veri Kümesi, Emu Kuşu (Emu) Fotoğrafı (image_0001.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0002.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0003.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0004.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0005.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0006.jpg), Emu Kuşu (Emu) Fotoğrafı (image_0007.jpg) (+46 more)
 
 ### Community 565 - "Controller"
-Cohesion: 0.03
-Nodes (26): riscvsingle, riscvsingle, riscvsingle, riscv, riscv, tb_datapath, riscv_single, RiscVSingleCycle (+18 more)
+Cohesion: 0.05
+Nodes (6): riscv, riscv, riscv_single, riscv_single, Controller, Database
 
 ### Community 566 - "Ders 1 Çalışma Özeti"
 Cohesion: 0.07
-Nodes (28): Dersin İşleyişi ve Değerlendirme, Firmware ve Bootstrap, Kernel, İşletim Sistemi Hizmetleri, Kuyruk Yapıları, Process Bellek Organizasyonu, Ders 1 Altyazısı, Dersin Değerlendirme Kuralları (+20 more)
+Nodes (27): Dersin İşleyişi ve Değerlendirme, Firmware ve Bootstrap, Kernel, İşletim Sistemi Hizmetleri, Kuyruk Yapıları, Process Bellek Organizasyonu, Ders 1 Altyazısı, Dersin Değerlendirme Kuralları (+19 more)
 
 ### Community 567 - "Ders 3 Genişletilmiş Notu: Yazılım Proje Planı, Alternatif Fizibilite ve Risk Kategorileri"
 Cohesion: 0.04
@@ -14806,12 +14887,12 @@ Cohesion: 0.09
 Nodes (30): Amplifier Performance Parameters (Gv, Gi, Gp, Zin, Zout), Bilateral Element, Chapter 17 Two-Port Networks, Equivalent Two-Port Networks, Parameter Conversion Table 17.1, Transistor h Parameters (2N3904), 2N3904 transistor h parameters, Admittance (y) parameters (+22 more)
 
 ### Community 569 - "MAT1071 Matematik 1 Çıkmış Sınav Soruları (limit, süreklilik, türev)"
-Cohesion: 0.05
-Nodes (50): MAT1071 Matematik-I 1. Vize Örnek Sınav, Fonksiyon tanım aralığı, Limit, Türev, Matematik 1 vizeye hazırlık test cevapları, Limit, Türev, Kapalı türev (+42 more)
+Cohesion: 0.04
+Nodes (54): MAT1071 Matematik-I 1. Vize Örnek Sınav, Fonksiyon tanım aralığı, Limit, Türev, Matematik 1 vizeye hazırlık test cevapları, Limit, Türev, Logaritmik Türev Yöntemi (+46 more)
 
 ### Community 570 - "Hayt Engineering Circuit Analysis 8th (bölüm 9/9)"
-Cohesion: 0.05
-Nodes (74): s-domain capacitor model (1/sC with v(0-)/s or Cv(0-)), Complex frequency s = sigma + j omega, Hayt Engineering Circuit Analysis (2012) - Chapters 14 end, 15, 16 (part), Example 15.1 RL circuit with initial current, s-domain inductor model (sL with -Li(0-) or i(0-)/s), Initial-value and final-value theorems, Chapter 14 Summary: Laplace transform and theorems, Ek 1: Ağ topolojisine giriş (+66 more)
+Cohesion: 0.06
+Nodes (66): Hayt Engineering Circuit Analysis (2012) - Chapters 14 end, 15, 16 (part), Ek 1: Ağ topolojisine giriş, Ek 4: PSpice öğretici, Ek 6: Kısa MATLAB öğretici, Zaman bölgesinde evrişim = frekans bölgesinde çarpma, FFT ve PSpice opamp doyma harmonik analizi, Fourier dönüşümü ve devre analizi, Basit zaman fonksiyonları için Fourier dönüşüm çiftleri (Tablo 18.2) (+58 more)
 
 ### Community 571 - "Tariff"
 Cohesion: 0.07
@@ -14839,7 +14920,7 @@ Nodes (8): AnaEkran, java.awt.event.MouseAdapter, java.awt.event.MouseAdapter, j
 
 ### Community 577 - "Veritabanı uygulama dersi 8: Record/Cursor ve Trigger (lab 7)"
 Cohesion: 0.09
-Nodes (52): Veritabanı uygulama dersi 8: Record/Cursor ve Trigger (lab 7), CURSOR, Fonksiyon DROP, RAISE, TG_OP, Trigger, Veritabanı uygulama dersi 8: Record/Cursor ve Trigger (lab 8), CURSOR (+44 more)
+Nodes (53): Veritabanı uygulama dersi 8: Record/Cursor ve Trigger (lab 7), CURSOR, Fonksiyon DROP, RAISE, TG_OP, Trigger, Veritabanı uygulama dersi 8: Record/Cursor ve Trigger (lab 8), CURSOR (+45 more)
 
 ### Community 578 - "Congestion"
 Cohesion: 0.20
@@ -14850,8 +14931,8 @@ Cohesion: 0.04
 Nodes (51): 10.1 Yalnızca Bağlantılarla Gezinmek, 10.2 Bir Sonraki Adımda $j$'de Olma Olasılığı, 10.3 Olasılık Dağılımı Vektörü, 10.4 Durağan Dağılım, 10. Rastgele Gezgin Yorumu ve Durağan Dağılım, 11. Rastgele Yürüyüş (Markov Zinciri) Teoremi, 12.1 Örümcek Tuzağı, 12.2 Çıkmaz Uç (+43 more)
 
 ### Community 580 - "user-service/src/server.js"
-Cohesion: 0.06
-Nodes (25): { Client }, compare(), getCounts(), tables, bcrypt, { Pool }, { Pool }, logger (+17 more)
+Cohesion: 0.07
+Nodes (21): nextConfig, logger, path, winston, logger, logger, { v4: uuidv4 }, { Pool } (+13 more)
 
 ### Community 581 - "dollar_bill nesne kategorisi veri seti"
 Cohesion: 0.04
@@ -14883,7 +14964,7 @@ Nodes (49): 12.1 Altıgen mimari, 12.2 Nesneye yönelik ve prosedürel yaklaşı
 
 ### Community 588 - "Tasarım Kalıpları (GoF)"
 Cohesion: 0.04
-Nodes (57): Aktör, Bağlantı (Association), Birleştirme (Composition), Kullanım Senaryosu, Kullanım Senaryosu Modellemesi, Kümeleme (Aggregation), Nesne, Nesneye Yönelik Yaklaşım (+49 more)
+Nodes (51): Aktör, Kullanım Senaryosu, Kullanım Senaryosu Modellemesi, Nesneye Yönelik Yaklaşım, Sözleşme (Contract), Sınıf Diyagramı, Sınıf Modellemesi, Tümleştirilmiş Süreç (UP) (+43 more)
 
 ### Community 589 - "7. Diğer Tanımlar"
 Cohesion: 0.05
@@ -14898,16 +14979,16 @@ Cohesion: 0.03
 Nodes (62): 10. Projeleri Yan Yana Görmek, 1. Bu Dersi Nasıl Okumalı?, 2.10 Görev Dağılımı, 2.11 Uygulamanın Gösterimi, 2.1 Problem ve Hedef, 2.2 Fizibilite Çalışması, 2.3 Fizibilite Matrisi, 2.4 Gereksinim Analizi ve Anketler (+54 more)
 
 ### Community 592 - "stbi__context"
-Cohesion: 0.09
-Nodes (71): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_load(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header() (+63 more)
+Cohesion: 0.11
+Nodes (51): stbi__at_eof(), stbi__bmp_info(), stbi__bmp_parse_header(), stbi__bmp_set_mask_defaults(), stbi__bmp_test(), stbi__bmp_test_raw(), stbi__check_png_header(), stbi__get16be() (+43 more)
 
 ### Community 593 - "Ders 2 Genişletilmiş Notu: Önyükleme, Bilgisayar Sistemi Organizasyonu, Kesmeler, Depolama Hiyerarşisi, Çok İşlemcili Sistemler ve İşletim Sistemi Görevleri"
 Cohesion: 0.04
 Nodes (44): 10.1 Süreç yönetimi, 10.2 Bellek yönetimi, 10.3 Depolama yönetimi, 10.4 G/Ç alt sistemi, 10.5 Koruma ve güvenlik, 10. İşletim Sisteminin Görevleri, 11. Çekirdek Veri Yapıları, 12.1 Geleneksel ve mobil ortamlar (+36 more)
 
-### Community 594 - "Floyd-Warshall Algorithm"
-Cohesion: 0.06
-Nodes (48): All-pairs reachability, TransitiveClosure, Breadth-first search (shortest paths, breadth-first tree), Chapter 22 Elementary Graph Algorithms (BFS/DFS part), Chapter 25 All-Pairs Shortest Paths (partial, to 25.2), Chapter 25 All-Pairs Shortest Paths, EXTEND-SHORTEST-PATHS / SLOW-ALL-PAIRS-SHORTEST-PATHS, FASTER-ALL-PAIRS-SHORTEST-PATHS (repeated squaring) (+40 more)
+### Community 594 - "Warshall's algorithm"
+Cohesion: 0.19
+Nodes (16): All-pairs reachability, TransitiveClosure, All-pairs shortest-paths problem, Bernard Roy, Circuit (cycle), Connectivity relation R*, Interior vertices of a path, Path in a directed graph (+8 more)
 
 ### Community 595 - "ignite_greenhouse/package.json"
 Cohesion: 0.04
@@ -14926,16 +15007,16 @@ Cohesion: 0.04
 Nodes (53): 10.1 Tanım, 10.2 Ağ modeli, 10.3 Sürümler, 10.4 Karşılaştırmalar, 10.5 Türkiye'de kullanım, 10. WiMAX (IEEE 802.16), 11. Final Sorularının Biçimi, 1. Dersin Düzeni ve Sunulan Konular (+45 more)
 
 ### Community 600 - "Linked list"
-Cohesion: 0.02
-Nodes (135): Binary Trees, Bitwise Shift Operators, Function displayBits, Secure C Programming (Ch.10), Structure Definitions (struct), Accessing Structure Members (. and ->), Unions, Appendix A Operator Precedence Charts (+127 more)
+Cohesion: 0.03
+Nodes (127): Bitwise Shift Operators, Function displayBits, Secure C Programming (Ch.10), Structure Definitions (struct), Accessing Structure Members (. and ->), Unions, Appendix A Operator Precedence Charts, Binary tree (+119 more)
 
 ### Community 601 - "ActionEvent"
-Cohesion: 0.04
-Nodes (18): DistributorUI, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+10 more)
+Cohesion: 0.07
+Nodes (14): DistributorUI, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+6 more)
 
 ### Community 602 - "Ders 20 Genişletilmiş Notu: Özyinelemeli Fonksiyonlar: Faktöriyel, Hızlı Üs Alma, Recursion Tree, Merge Sort ve Final Projesi"
-Cohesion: 0.03
-Nodes (58): 10. Çağrı Sayısını Ölçme Denemesi, 11. Üssün İkili Açılımıyla Üs Alma, 12.1 Her Çağrının Maliyeti, 12.2 Karmaşıklık Adları, 12.3 Ağaçla Derinliği Bulma, 12. Karmaşıklık Adları ve power_v2'nin Analizi, 13. Geçici Değişken Olmadan: power_v3, 14.1 İki Sıralı Diziyi Birleştirme (+50 more)
+Cohesion: 0.04
+Nodes (53): 10. Çağrı Sayısını Ölçme Denemesi, 11. Üssün İkili Açılımıyla Üs Alma, 12.1 Her Çağrının Maliyeti, 12.2 Karmaşıklık Adları, 12.3 Ağaçla Derinliği Bulma, 12. Karmaşıklık Adları ve power_v2'nin Analizi, 13. Geçici Değişken Olmadan: power_v3, 14.1 İki Sıralı Diziyi Birleştirme (+45 more)
 
 ### Community 603 - "Ders 4 Genişletilmiş Notu: Facade, Flyweight, Proxy, Chain of Responsibility ve Command Kalıpları"
 Cohesion: 0.04
@@ -14950,16 +15031,16 @@ Cohesion: 0.04
 Nodes (53): 10. Düğüm Yapısı ve Bağlı Listeden Türeyen Veri Yapıları, 11.1 Boyut Kuralı ve Sezgi, 11.2 Algoritma, 11.3 Neden Önemli?, 11. Matris Çarpımı, 12. Matris Çarpım Sırası, 13. Belleğe Sığmayan Veriyi Sıralamak: External Merge Sort, 14. Alt Küme Toplamı Problemi (+45 more)
 
 ### Community 606 - "Biyoenformatiğe Giriş - 02 Biomedical Data"
-Cohesion: 0.08
-Nodes (51): Bioinformatics, Central Dogma of Molecular Biology, Computational Biology, Course details BLM 3810 and assessment, Biyoenformatiğe Giriş - 00 Introduction (Nizamettin Aydın), Drug development life cycle, Functional genomics, Human Genome Project (+43 more)
+Cohesion: 0.09
+Nodes (50): Bioinformatics, Central Dogma of Molecular Biology, Computational Biology, Course details BLM 3810 and assessment, Biyoenformatiğe Giriş - 00 Introduction (Nizamettin Aydın), Drug development life cycle, Functional genomics, Human Genome Project (+42 more)
 
 ### Community 607 - "camera dataset (101 Object Categories)"
 Cohesion: 0.04
 Nodes (50): Camera dataset photo, Camera dataset photo, Camera dataset photo, Camera dataset photo, Camera dataset photo, Camera dataset photo, Camera dataset photo, Camera dataset photo (+42 more)
 
 ### Community 608 - "Scrum"
-Cohesion: 0.06
-Nodes (46): Adobe Flash Platform, Back-End Computing, Browser-Based Application, Case Study: Midwestern Power Services, Case Study: Sandia Medical Devices RTGM, Chapter 14: Current Trends in System Development, Client Computing Devices, Daily Scrum (+38 more)
+Cohesion: 0.07
+Nodes (38): Back-End Computing, Browser-Based Application, Case Study: Midwestern Power Services, Case Study: Sandia Medical Devices RTGM, Chapter 14: Current Trends in System Development, Client Computing Devices, Daily Scrum, Device-Top Application (+30 more)
 
 ### Community 609 - "Customer"
 Cohesion: 0.05
@@ -14971,7 +15052,7 @@ Nodes (52): 10. Kişisel Bilgisayarlar, 11. Süper Bilgisayarlar ve Paralel İş
 
 ### Community 611 - "Ders 14 Genişletilmiş Notu: Birliktelik Kuralları: Apriori, Kompakt Gösterim ve FP-Growth"
 Cohesion: 0.04
-Nodes (49): 10.1 Aday kurallar, 10.2 Güvenin anti-monoton özelliği, 10.3 Kurallarda budama, 10. Sık Öğe Kümelerinden Kural Üretme, 11.1 Maksimal sık öğe kümesi, 11.2 Neden daha kapsamlı kurallar, 11.3 Maksimal kümelerin eksiği, 11.4 Kapalı sık öğe kümesi (+41 more)
+Nodes (55): 10.1 Aday kurallar, 10.2 Güvenin anti-monoton özelliği, 10.3 Kurallarda budama, 10. Sık Öğe Kümelerinden Kural Üretme, 11.1 Maksimal sık öğe kümesi, 11.2 Neden daha kapsamlı kurallar, 11.3 Maksimal kümelerin eksiği, 11.4 Kapalı sık öğe kümesi (+47 more)
 
 ### Community 613 - "Ders 4 Genişletilmiş Notu: Güvenlik Prensipleri ve İşletim Sistemi Güvenliği"
 Cohesion: 0.04
@@ -14979,7 +15060,7 @@ Nodes (49): 10.1 Apache, 10.2 Geçici yetki değişimi, 10.3 Zafiyetli SSH örne
 
 ### Community 614 - "Belirli integral (Riemann toplamlarının limiti)"
 Cohesion: 0.05
-Nodes (49): Belirsiz integral, 7. konu İntegral 1 2020 Mat1 (taranmış el yazısı), Alt Toplam ve Üst Toplam, Analizin Temel Teoremi, Kısım 1, Analizin Temel Teoremi, Kısım 2 (Hesaplama Teoremi), Arşimed, Arşimed parabolik yay alan formülü, Baskınlık kuralı (+41 more)
+Nodes (48): Belirsiz integral, 7. konu İntegral 1 2020 Mat1 (taranmış el yazısı), Alt Toplam ve Üst Toplam, Analizin Temel Teoremi, Kısım 1, Analizin Temel Teoremi, Kısım 2 (Hesaplama Teoremi), Baskınlık kuralı, Başlangıç Değer Problemi, Belirli integral (Riemann toplamlarının limiti) (+40 more)
 
 ### Community 615 - "Ders 7 Genişletilmiş Notu: Veri Sıkıştırma, İletişim Hataları (Parity, Hamming) ve Algoritmaya Giriş"
 Cohesion: 0.04
@@ -14994,8 +15075,8 @@ Cohesion: 0.04
 Nodes (49): GD/SGD/ADAM Loss Grafikleri (Zaman ve Epoch Bazlı), GD/SGD/ADAM Accuracy Grafikleri (Zaman ve Epoch Bazlı), Adam Batch Sayısı - Epoch/Accuracy Grafiği: farklı batch boyutları (05-35) ile Adam optimizasyonunda doğruluk epoch'a göre artışı, Adam Batch Sayısı - Epoch/Loss Grafiği: batch boyutuna göre loss azalma hızı, Adam Batch Sayısı - Zaman/Loss Grafiği, Adam Epsilon Analizi - Epoch/Accuracy Grafiği (eps 1e-1..1e-5), Adam Epsilon Analizi - Epoch/Loss Grafiği, Adam Epsilon Analizi - Zaman/Accuracy Grafiği (+41 more)
 
 ### Community 618 - "Ders 9 Genişletilmiş Notu: İşlemci Zamanlama (CPU Scheduling): FCFS, SJF, SRTF, Öncelikli Zamanlama, Round Robin, Çok İşlemcili ve Gerçek Zamanlı Zamanlama"
-Cohesion: 0.04
-Nodes (46): 10.1 Deterministik Modelleme (Deterministic Modeling), 10.2 Kuyruk Modelleri (Queueing Models) ve Little Formülü, 10.3 Simülasyonlar ve Gerçekleme (Implementation), 10. Algoritma Değerlendirme Yöntemleri, 1.1 `fork()` ve `wait()` Kullanımında Ebeveyn-Çocuk Sıralaması, 1.2 Prosesler (`fork`) ile İş Parçacıkları (`thread`) Arasındaki Bellek Farkı, 1.3 İç İçe `fork()` Çıktı Analizi (`Ex_4_fork4.c`), 1.4 Zombi, Yetim (Orphan) ve Çoklu `wait()` Kod Örnekleri (+38 more)
+Cohesion: 0.05
+Nodes (42): 10.1 Deterministik Modelleme (Deterministic Modeling), 10.2 Kuyruk Modelleri (Queueing Models) ve Little Formülü, 10.3 Simülasyonlar ve Gerçekleme (Implementation), 10. Algoritma Değerlendirme Yöntemleri, 1.1 `fork()` ve `wait()` Kullanımında Ebeveyn-Çocuk Sıralaması, 1.2 Prosesler (`fork`) ile İş Parçacıkları (`thread`) Arasındaki Bellek Farkı, 1.3 İç İçe `fork()` Çıktı Analizi (`Ex_4_fork4.c`), 1.4 Zombi, Yetim (Orphan) ve Çoklu `wait()` Kod Örnekleri (+34 more)
 
 ### Community 619 - "Ders 11 Genişletilmiş Notu: Mutlak ve Yerel Uç Değerler, Kritik Noktalar, Rolle ve Ortalama Değer Teoremleri"
 Cohesion: 0.04
@@ -15022,32 +15103,32 @@ Cohesion: 0.04
 Nodes (50): 101 ObjectCategories - Rooster Dataset, Rooster dataset image 0001 (Caltech-101 'rooster' category), Rooster dataset image 0002 (Caltech-101 'rooster' category), Rooster dataset image 0003 (Caltech-101 'rooster' category), Rooster dataset image 0004 (Caltech-101 'rooster' category), Rooster dataset image 0005 (Caltech-101 'rooster' category), Rooster dataset image 0006 (Caltech-101 'rooster' category), Rooster dataset image 0007 (Caltech-101 'rooster' category) (+42 more)
 
 ### Community 625 - "Bilgisayar Tasarımı Temelleri 1 (Datapath) slaytları"
-Cohesion: 0.03
-Nodes (82): Mano Kime Bölüm 10 şekil ve tablolar (ISA), Adresleme kipleri, Kayan noktalı ek üslü (biased) üs, Veri aktarım komutları, Program kontrol komutları (dallanma, CALL, RET), Kaydırma komutları, Mano Kime Bölüm 7 şekil ve tablolar (yazmaçlar), Mikroişlemler (+74 more)
+Cohesion: 0.04
+Nodes (66): Mano Kime Bölüm 10 şekil ve tablolar (ISA), Adresleme kipleri, Kayan noktalı ek üslü (biased) üs, Veri aktarım komutları, Program kontrol komutları (dallanma, CALL, RET), Kaydırma komutları, Mano Kime Bölüm 9 şekil ve tablolar (bilgisayar tasarımı), ALU (+58 more)
 
 ### Community 626 - "19011923.c"
-Cohesion: 0.18
-Nodes (44): addDataToFile(), addTextToPosition(), alterCourses(), alterInstructors(), alterSettings(), alterStudents(), changeDataCounter(), checkPassword() (+36 more)
+Cohesion: 0.17
+Nodes (46): addDataToFile(), addTextToPosition(), alterCourses(), alterInstructors(), alterSettings(), alterStudents(), changeDataCounter(), checkPassword() (+38 more)
 
 ### Community 627 - "Ders 3 Genişletilmiş Notu: Factory Method, Builder, Prototype ve Singleton Kalıpları"
 Cohesion: 0.04
 Nodes (49): 10.1 Problem ve ürün yapısı, 10.2 Kalıp seçimi, 10.3 Kod, 10.4 Çalıştırma, 10. Uygulama Örneği: Araç Bayisi, 11.1 Amaç ve problem, 11.2 Çözüm, 11.3 Factory kalıpları neden uygun değil? (+41 more)
 
 ### Community 628 - "4_VEKTORLER_SN_SS.pdf"
-Cohesion: 0.09
-Nodes (40): İki Vektör Arasındaki Açı, Paralelkenar ve Üçgen Alanı, Alt Vektör Uzayı, Birim Vektör, Dik Koordinat Sistemi, Doğru Denklemi (vektörel), Düzlem Denklemi (normal vektör), Matris, Polinom ve Fonksiyon Uzayları (+32 more)
+Cohesion: 0.07
+Nodes (45): İki Vektör Arasındaki Açı, Paralelkenar ve Üçgen Alanı, Alt Vektör Uzayı, Birim Vektör, Dik Koordinat Sistemi, Doğru Denklemi (vektörel), Düzlem Denklemi (normal vektör), Matris, Polinom ve Fonksiyon Uzayları (+37 more)
 
 ### Community 629 - "JFET"
-Cohesion: 0.04
-Nodes (79): Amplification in the AC domain, BJT (bipolar junction transistor), Chapter 4 DC Biasing BJT problems, PSpice Windows BJT bias analysis (4.13), Chapter 5 Field-Effect Transistors, Chapter 5 problems, Chapter 6 FET Biasing, Chapter 6 problems (+71 more)
+Cohesion: 0.07
+Nodes (47): Amplification in the AC domain, BJT (bipolar junction transistor), Chapter 5 Field-Effect Transistors, Chapter 5 problems, Chapter 6 FET Biasing, Chapter 6 problems, CMOS, CMOS inverter (+39 more)
 
 ### Community 630 - "Chapter 20 Diğer İki Uçlu Aygıtlar"
 Cohesion: 0.07
 Nodes (50): Barkhausen Kriteri, Chapter 18 Geri Besleme ve Osilatör Devreleri, Chapter 20 Diğer İki Uçlu Aygıtlar, Chapter 21 pnpn ve Diğer Aygıtlar, Colpitts Osilatör, Diac, Fotodiyot, Fotoiletken Hücre (+42 more)
 
 ### Community 631 - "non_linear_equations.py"
-Cohesion: 0.08
-Nodes (11): basic_iteration(), bisection_method(), graphical_method(), newton_raphson(), Function_Supplier, get_value(), is_valid_interval(), sign() (+3 more)
+Cohesion: 0.09
+Nodes (10): basic_iteration(), bisection_method(), graphical_method(), newton_raphson(), get_value(), is_valid_interval(), sign(), regula_falsi() (+2 more)
 
 ### Community 632 - "Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.04
@@ -15079,7 +15160,7 @@ Nodes (40): Erken dönem yapay zeka beklentileri ve başarısızlığı, Bongard
 
 ### Community 639 - "Trigger (tetikleyici)"
 Cohesion: 0.07
-Nodes (44): Constraint kaldırma, Ders 10 Lab Çalışma Özeti (MD), RAISE ifadesi, BEFORE / AFTER trigger zamanlaması, Company DB şeması, CREATE TYPE (özel kayıt tipi), Örnek: bölen değere tam bölünen maaşlı çalışanlar (dizi dönüşü), Ders 10 Lab: Record, Cursor ve Trigger (altyazı) (+36 more)
+Nodes (43): Constraint kaldırma, Ders 10 Lab Çalışma Özeti (MD), RAISE ifadesi, BEFORE / AFTER trigger zamanlaması, Company DB şeması, CREATE TYPE (özel kayıt tipi), Örnek: bölen değere tam bölünen maaşlı çalışanlar (dizi dönüşü), Ders 10 Lab: Record, Cursor ve Trigger (altyazı) (+35 more)
 
 ### Community 640 - "Ders 7 Genişletilmiş Notu: Islahat Hareketleri, III. Selim ve II. Mahmud Dönemi Yenilikleri"
 Cohesion: 0.04
@@ -15117,9 +15198,9 @@ Nodes (47): Alt Seviye Programlama Ders Kayıtları & Çalışma Özetleri, Ders
 Cohesion: 0.04
 Nodes (46): 10.1 Neden geç benimsendi?, 10.2 Kova ve hash fonksiyonu, 10.3 Taşma, 10.4 Slayt örneği, 10.5 Statik hash'in sorunu, 10.6 Hash ve aralık sorguları, 10. Hash İndeksleri, 11.1 Birden çok koşullu sorgu (+38 more)
 
-### Community 649 - "Car"
-Cohesion: 0.02
-Nodes (19): View.OnClickListener, FileController, LoginController, LoginActivity, View.OnClickListener, Car, CarTypeList, CityList (+11 more)
+### Community 649 - "Add"
+Cohesion: 0.04
+Nodes (27): 5.1 Amaç ve örnek, 5.2 Kalıp yapısı, 5.3 Ne zaman kullanılır, 5.4 Karar verilmesi gereken ayrıntılar, 5.5 Kalıbın zayıf yönü, 5. Composite Kalıbı, ArrayAdapter, ListActivity (+19 more)
 
 ### Community 650 - "Ders 2 Genişletilmiş Notu: Eğitmenli Öğrenme ve Karar Ağaçları: Entropi, Bilgi Kazancı ve ID3"
 Cohesion: 0.04
@@ -15141,9 +15222,9 @@ Nodes (47): 10.1 Çalışma Mantığı, 10.2 4'ten 2'ye Encoder, 10. Encoder, 11
 Cohesion: 0.04
 Nodes (52): 10.1 Tanım ve Şartlar, 10.2 Yanlış Örnekleme: Yalnız İstanbul, 10.3 Örnek: Banka Hesapları, 10. Basit Rastgele Örnekleme, 11. Örneklemi Rastgele Değişken Listesi Olarak Görmek ve CPU Verisi, 12.1 Tanım, 12.2 Beklenen Değeri, 12.3 Varyansı (+44 more)
 
-### Community 655 - "User"
-Cohesion: 0.04
-Nodes (7): Admin, UserRole, ADMIN, CUSTOMER, STAFF, Staff, User
+### Community 655 - "cn"
+Cohesion: 0.06
+Nodes (21): A(), c(), D(), e(), l(), n(), r(), S() (+13 more)
 
 ### Community 656 - "Ders 4 Genişletilmiş Notu: K En Yakın Komşu, Mesafe Ölçüleri ve Normalizasyon"
 Cohesion: 0.05
@@ -15175,7 +15256,7 @@ Nodes (48): 101_ObjectCategories - pagoda dataset, Pagoda fotoğrafı (image_000
 
 ### Community 663 - "Ders 6: Intent, Activity ve Quiz Uygulaması"
 Cohesion: 0.08
-Nodes (49): Chooser (createChooser), Intent, Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, queryIntentActivities (+41 more)
+Nodes (50): Chooser (createChooser), Intent, Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, queryIntentActivities (+42 more)
 
 ### Community 664 - "Dosyalar ve İşlevleri 📂"
 Cohesion: 0.04
@@ -15195,15 +15276,15 @@ Nodes (52): 10. Regresyon ve Regresyon Metrikleri, 11.1 K-Means ve doğru k, 11.
 
 ### Community 668 - "CommercialVehicle"
 Cohesion: 0.03
-Nodes (53): 10.1 Arama ve kayıt metotları, 10.2 Test ve NullPointerException, 10. VehicleRegistrationSystem kodunun incelenmesi, 11. Üst arayüzlü sürüm (nyp07b), 12. Hem kalıtım alan hem arayüz gerçekleyen sınıf, 13. UML'de override gösterimi, 14. Basit (primitive) enum, 15.1 Tariff örneği (+45 more)
+Nodes (48): 10.1 Arama ve kayıt metotları, 10.2 Test ve NullPointerException, 10. VehicleRegistrationSystem kodunun incelenmesi, 11. Üst arayüzlü sürüm (nyp07b), 12. Hem kalıtım alan hem arayüz gerçekleyen sınıf, 13. UML'de override gösterimi, 14. Basit (primitive) enum, 15.1 Tariff örneği (+40 more)
 
 ### Community 670 - "SubscribedVehicle"
 Cohesion: 0.05
 Nodes (8): AutoPark, OfficialVehicle, ParkRecord, RegularVehicle, SubscribedVehicle, Subscription, Time, Vehicle
 
 ### Community 671 - "PersonelMVCUII/Scripts/bootstrap.bundle.min.js"
-Cohesion: 0.07
-Nodes (50): at(), Be(), ct(), dt(), $e(), et(), Fe(), ft() (+42 more)
+Cohesion: 0.09
+Nodes (38): Be(), ct(), dt(), $e(), et(), Fe(), ft(), Ge() (+30 more)
 
 ### Community 672 - "Scripts/popper-utils.js"
 Cohesion: 0.09
@@ -15222,8 +15303,8 @@ Cohesion: 0.05
 Nodes (47): ATA1032 Harf Notu İstatistikleri (Neslihan Erkan, 2023), Öğr.Gör. Neslihan Erkan, Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032), ATA1032 Harf Notu İstatistikleri (Zafer Doğan, 2023), Öğr.Gör.Dr. Zafer Doğan, 📅 4. Sınıf Bahar, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Bitirme Çalışması (+39 more)
 
 ### Community 676 - "Yığın (stack)"
-Cohesion: 0.08
-Nodes (38): Bellek sızıntısı (free unutma), calloc, Derleyici kodu iyileştirme, Derleyicinin ikinci turu, Derleyicinin ilk turu, Dinamik hafıza tahsisi, Dinamik veri yapıları, Doğrusal veri yapıları (+30 more)
+Cohesion: 0.11
+Nodes (27): Derleyici kodu iyileştirme, Derleyicinin ikinci turu, Derleyicinin ilk turu, Doğrusal veri yapıları, FIFO, İkili ağaçtan düğüm silme, Infix-postfix dönüşümü, isaretler dizisi (+19 more)
 
 ### Community 677 - "Ders 2 Genişletilmiş Notu: İSG'nin Amaçları, Proaktif Yaklaşım ve Fiziksel Risk Etmenleri: Toz, Gürültü, Titreşim"
 Cohesion: 0.05
@@ -15250,8 +15331,8 @@ Cohesion: 0.08
 Nodes (52): BLM1022 Sayısal Analiz Projesi (MulahTeni), Kaynak: MulahTeni/YTU (BLM1022-Codes), Kaynak: aysesude/YTU_CE_Projects (SayisalAnaliz), adjoint(), backwardDifference(), bisection(), BisectionFonkAl(), calculateCoefficients() (+44 more)
 
 ### Community 683 - "Ders 6 Genişletilmiş Notu: Command, Iterator, Memento ve Observer Kalıpları"
-Cohesion: 0.03
-Nodes (65): 🔹 Ders 24: Uygulama: POSIX Semaforları, Mesaj Kuyrukları, Paylaşılan Bellek ve Pthreads, 14.1 Problem ve birinci çözüm (ekrandan, 02:26:30), 14.2 İkinci çözüm: Observer kalıbı (ekrandan, 02:30:00), 14. Observer Uygulama Örneği: Müşteri İlişkileri Programı, 9.1 Problem ve ilk çözüm, 9.2 Gereksinimler değişince, 9.3 Observer ile çözüm, 9.4 Kod (+57 more)
+Cohesion: 0.05
+Nodes (41): 1.1 Amaç, 1.3 Kalıp yapısı, 1. Command Kalıbı, 2.1 Problem ve tasarım, 2.2 Kaynak kod, 2.3 Aynı yapıya sahip kalıplar, 2. Command Örneği: Akıllı Ev Kumandası, 3.1 Amaç (+33 more)
 
 ### Community 684 - "Ders 10 Genişletilmiş Notu: Dizilerin Fonksiyonlara Aktarılması, Pointer'lar, Pointer Aritmetiği ve Frekans Hesabı"
 Cohesion: 0.04
@@ -15259,7 +15340,7 @@ Nodes (51): 10.1 İki Swap Fonksiyonu, 10.2 Dizi Yazdırma ve Değiştirme, 10.3
 
 ### Community 685 - "YİF 1-2 (Atom yapısı, bağlar, band teorisi, iletkenlik; 2025 slaytları)"
 Cohesion: 0.10
-Nodes (46): İletken-yarıiletken-yalıtkan sınıflandırması, YİF 1-2 (Atom yapısı, bağlar, band teorisi, iletkenlik; 2022 slaytları), Yİ Maddelerin Elektriksel Sınıflandırılması özeti (taranmış el yazısı), Maddelerin elektriksel sınıflandırılması, Metallerde sıcaklık arttıkça iletkenlik azalır, direnç artar, Elektron mobilitesi, Etkin kütle, Doç.Dr. Süreyya Aydın Yüksel (+38 more)
+Nodes (47): İletken-yarıiletken-yalıtkan sınıflandırması, YİF 1-2 (Atom yapısı, bağlar, band teorisi, iletkenlik; 2022 slaytları), Yİ Maddelerin Elektriksel Sınıflandırılması özeti (taranmış el yazısı), Maddelerin elektriksel sınıflandırılması, Metallerde sıcaklık arttıkça iletkenlik azalır, direnç artar, Elektron mobilitesi, Etkin kütle, Doç.Dr. Süreyya Aydın Yüksel (+39 more)
 
 ### Community 686 - "Ders 2 Genişletilmiş Notu: Dağıtık Dosya Sistemleri ve MapReduce Programlama Modeli"
 Cohesion: 0.04
@@ -15325,9 +15406,9 @@ Nodes (5): Musteri, Siparis, Musteri, Siparis, Urun
 Cohesion: 0.05
 Nodes (5): Apartment, Customer, EstateAgent, Home, Villa
 
-### Community 703 - "Veritabanı güvenliği"
-Cohesion: 0.10
-Nodes (32): MUH441 4. Hafta: Erişim Kontrolü (2.3), İsteğe bağlı erişim kontrolü (DAC), UNIX dosya erişim kontrolü, Zorunlu erişim kontrolü (MAC), Özneler nesneler ve erişim hakları, Özniteliğe dayalı erişim kontrolü (ABAC), Week 4: Access Control (2.3), Mandatory access control (MAC) (+24 more)
+### Community 703 - "zt"
+Cohesion: 0.05
+Nodes (26): 8.1 enum, 8.2 void hakkında ek not, 8.3 typedef, 8. enum ve typedef, Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+18 more)
 
 ### Community 704 - "101_ObjectCategories - ewer dataset"
 Cohesion: 0.04
@@ -15342,8 +15423,8 @@ Cohesion: 0.04
 Nodes (46): Stop Sign Image Dataset (Caltech-101 stop_sign category), Stop sign photograph/clipart (image_0020), Stop sign photograph/clipart (image_0021), Stop sign photograph/clipart (image_0022), Stop sign photograph/clipart (image_0023), Stop sign photograph/clipart (image_0024), Stop sign photograph/clipart (image_0025), Stop sign photograph/clipart (image_0026) (+38 more)
 
 ### Community 707 - "Depth-First Search (DFS)"
-Cohesion: 0.06
-Nodes (43): Articulation points, bridges, biconnected components, Component graph G^SCC, DFS discovery/finishing timestamps, Graph transpose G^T, Parenthesis theorem, Strongly connected components (Kosaraju), White-path theorem, Breadth-First Search (BFS) (+35 more)
+Cohesion: 0.05
+Nodes (50): Articulation points, bridges, biconnected components, Component graph G^SCC, DFS discovery/finishing timestamps, Graph transpose G^T, Parenthesis theorem, PERT chart critical path, Strongly connected components (Kosaraju), White-path theorem (+42 more)
 
 ### Community 708 - "Tooltip"
 Cohesion: 0.09
@@ -15358,16 +15439,16 @@ Cohesion: 0.06
 Nodes (47): Lab 1 (alperen): süre farkı akış diyagramı, Lab 1 akış diyagramı (alperen), Başlangıç/bitiş zamanı farkı hesabı, Akış şeması soruları (2022, el yazısı), Armstrong sayısı akış diyagramı, Basamak sayısı bulma akış diyagramı, Maksimum/minimum bulma akış diyagramı, OBEB bulan akış diyagramı (+39 more)
 
 ### Community 711 - "Matematik 2 ders sayfası"
-Cohesion: 0.04
-Nodes (65): Döngü karmaşıklık analizi (T değeri), Geometrik seri toplamı, İç içe döngülerde toplam sayımı, Kareler toplamı n(n+1)(2n+1)/6, Logaritmik döngü (i=i*2), Yapısal Programlamaya Giriş Ders 5 (Amasyalı), Üç iç içe döngü n(n+1)(n+2)/6, Fibonacci matris üssü O(log n) (+57 more)
-
-### Community 712 - "Answers to Exercises sections 4.6.2-4.7"
 Cohesion: 0.06
-Nodes (42): Addition Chain, Addition chains, Answers to Exercises sections 4.6.2-4.7, Berlekamp's Factoring Algorithm, Binary Method for Exponentiation, Cantor-Zassenhaus Splitting, Chinese Remainder Theorem for Polynomials, Cyclic and negacyclic convolution algorithms (+34 more)
+Nodes (40): Lineer Cebir (MAT1320), Lineer Cebir harf notu istatistiği (Prof.Dr. Eyüp Kızıl, 2022), Harf aralığı dağılımı ve sınıf istatistikleri: AA 78-100 aralığı, 32 AA, Prof.Dr. Eyüp Kızıl, Lineer Cebir harf notu istatistiği (Dr.Öğr.Üyesi Yaprak Dericioğlu, 2024), Harf aralığı dağılımı ve sınıf istatistikleri: AA 80-100 aralığı, 26 AA, Lineer Cebir harf notu istatistiği (Prof.Dr. Eyüp Kızıl, 2025), Harf aralığı dağılımı ve sınıf istatistikleri: ortalama 63,14, std sapma 28,5, 81 öğrenci (+32 more)
+
+### Community 712 - "mt"
+Cohesion: 0.07
+Nodes (8): mt, ne, ni, remove(), trigger(), gt(), kt(), Ze()
 
 ### Community 713 - "Bölüm 2: Limit ve Süreklilik"
 Cohesion: 0.05
-Nodes (60): Bölüm 2 Alıştırmaları ve Tekrar Soruları, Ortalama ve anlık hız (serbest düşme, Galileo), Teorem 11: Sürekli Fonksiyonlar için Ara Değer Teoremi, Baskın Terimler, Teorem 10: Sürekli Fonksiyonların Bileşkesi, Bölüm 2: Limit ve Süreklilik, 2.1 Değişim Oranları ve Limitler, 2.2 Limitleri Hesaplamak: Limit Kuralları (+52 more)
+Nodes (57): Bölüm 2 Alıştırmaları ve Tekrar Soruları, Ortalama ve anlık hız (serbest düşme, Galileo), Teorem 11: Sürekli Fonksiyonlar için Ara Değer Teoremi, Baskın Terimler, Teorem 10: Sürekli Fonksiyonların Bileşkesi, Bölüm 2: Limit ve Süreklilik, 2.1 Değişim Oranları ve Limitler, 2.2 Limitleri Hesaplamak: Limit Kuralları (+49 more)
 
 ### Community 714 - "Ders 10 Genişletilmiş Notu: Web Taraması: Tarayıcı Türleri, Uygulama Sorunları ve Tercihli Tarama"
 Cohesion: 0.04
@@ -15413,6 +15494,10 @@ Nodes (31): Interrupt - Polling, IRET, Kesme bayrakları IF/TF, Lab 5 - 8259 kes
 Cohesion: 0.10
 Nodes (21): Asal sayı kontrolü, Lab 2 COM Tipi: Dik Üçgen Hipotenüs Sınıflandırma, Hipotenüs hesabı, Kaynak (tariktskn/YTU-NOTLAR), Lab 1 - EXE Tipi Program (OBP), Öğrenci başarı puanı (OBP) hesaplama ve sıralama, Lab 2 - COM Tipi Program (Dik Üçgen Hipotenüs), Dik üçgen hipotenüs sınıflandırma (asal, tek toplam) (+13 more)
 
+### Community 725 - "Ni"
+Cohesion: 0.06
+Nodes (4): Ci(), Ai, Mi, Ni
+
 ### Community 726 - "gazi_canbolat_ytu_ce_proje/Packages/manifest.json"
 Cohesion: 0.04
 Nodes (45): com.unity.2d.animation, com.unity.2d.sprite, com.unity.collab-proxy, com.unity.ide.rider, com.unity.ide.visualstudio, com.unity.ide.vscode, com.unity.modules.ai, com.unity.modules.androidjni (+37 more)
@@ -15423,11 +15508,11 @@ Nodes (46): dependencies, com.unity.2d.animation, com.unity.2d.pixel-perfect, co
 
 ### Community 728 - "Tooltip"
 Cohesion: 0.09
-Nodes (4): findShadowRoot(), noop(), Popover, Tooltip
+Nodes (4): findShadowRoot(), getUID(), Popover, Tooltip
 
 ### Community 730 - "Message"
-Cohesion: 0.05
-Nodes (9): MessagePK, MessageDAO, MessageHibernateImpl, Message, Notification, ReadMessageServlet, MessageDetailServlet, SendMessageServlet (+1 more)
+Cohesion: 0.07
+Nodes (8): MessagePK, MessageDAO, MessageHibernateImpl, Message, ReadMessageServlet, MessageDetailServlet, SendMessageServlet, MessageTest
 
 ### Community 731 - "Ders 1 Genişletilmiş Notu: Biyoenformatiğe Giriş ve Bilgi Sistemlerinin Temelleri"
 Cohesion: 0.04
@@ -15511,11 +15596,11 @@ Nodes (43): Burak Başol 2025 NYP raporu, Admin, Havayolu rezervasyon sistemi ra
 
 ### Community 752 - "Tooltip"
 Cohesion: 0.09
-Nodes (4): findShadowRoot(), getUID(), Popover, Tooltip
+Nodes (4): findShadowRoot(), noop(), Popover, Tooltip
 
 ### Community 753 - "Ders 10 altyazısı (4 Mayıs 2023) - Makine öğrenmesine giriş"
-Cohesion: 0.05
-Nodes (60): Hatalı Veri ile Eğitim (Case 4), Karar Sınırı (Hyperplane), Keras / TensorFlow, Neural-Network-Application Ödev Tanımı, RBF Ağı, Sherlock Holmes Cinayet Kararı Problemi, Tek Katmanlı İleri Beslemeli Ağ, Uçak Sınıflandırma Problemi (Savaş Uçağı - Bombardıman) (+52 more)
+Cohesion: 0.07
+Nodes (49): Hatalı Veri ile Eğitim (Case 4), Karar Sınırı (Hyperplane), Keras / TensorFlow, Neural-Network-Application Ödev Tanımı, RBF Ağı, Sherlock Holmes Cinayet Kararı Problemi, Tek Katmanlı İleri Beslemeli Ağ, Uçak Sınıflandırma Problemi (Savaş Uçağı - Bombardıman) (+41 more)
 
 ### Community 755 - "Tooltip"
 Cohesion: 0.09
@@ -15546,8 +15631,8 @@ Cohesion: 0.05
 Nodes (40): MLP - Birleştirilmiş Yıllara Göre Doğruluk, MLP - Verisetleri Hata Özeti, MLP - Başlık Normalize Confusion Matrix, MLP - Başlık Detaylı Hata Profili, MLP - Başlık Tahmin Hatası Dağılımı, MLP - Başlık Yıllara Göre Doğruluk, Random Forest - Özet Normalize Confusion Matrix, Random Forest - Özet Detaylı Hata Profili (+32 more)
 
 ### Community 763 - "Hüsamettin Işıktaş Web Mining Dönem Projesi Raporu"
-Cohesion: 0.16
-Nodes (29): Şekil 1 Veri seti özeti, Şekil 3 Ölçek analizi, Şekil 4 Multi-seed değerlendirme, Common Neighbors, GCN, Graph Attention Networks (Veličković), GraphSAGE (Hamilton), Hits@50 (+21 more)
+Cohesion: 0.09
+Nodes (42): Common Neighbors baseline, Architecture Guide (ogbl-collab link prediction), GCN modeli, Hits@50 metriği (OGB Evaluator), MLP baseline, Bilgi erişimi (TF-IDF, BM25), Birliktelik kuralı madenciliği ve Apriori, Akış madenciliği ve Bloom filtreleri (+34 more)
 
 ### Community 764 - "ytu_ce_game_development_proje/Packages/manifest.json"
 Cohesion: 0.04
@@ -15577,9 +15662,9 @@ Nodes (42): a(), ae(), b(), be(), c(), ce(), d(), de() (+34 more)
 Cohesion: 0.04
 Nodes (56): 10. Kaza Nedensellik Modellerinin Üç Aşaması, 11. Basit Doğrusal Modeller: Domino Teorisi, 12.1 Güncellenmiş Domino, 12.2 Enerji Hasar Modeli, 12.3 Zaman Serisi Modelleri, 12. Basit Doğrusal Modellerin Devamı: Güncellenmiş Domino, Enerji Hasar, Zaman Serisi, 13.1 Epidemiyolojik Model, 13.2 Sistemik Model (İsviçre Peyniri) (+48 more)
 
-### Community 771 - "path"
-Cohesion: 0.08
-Nodes (16): ShowContacts, ShowContacts, ShowContacts, ShowContactsV2, ShowContacts, addConflict(), backtracking(), canPlace() (+8 more)
+### Community 771 - "ReadWrite.java"
+Cohesion: 0.09
+Nodes (4): Singletons, DirectoryFilter, XmlInputFormat, XmlRecordReader
 
 ### Community 772 - "Ders 12 Genişletilmiş Notu: Dürtü Cevabı, Frekans Cevabı, Transfer Fonksiyonu ve Laplace Dönüşümüne Giriş: Yakınsama Bölgesi ve Temel Dönüşümler"
 Cohesion: 0.04
@@ -15622,8 +15707,8 @@ Cohesion: 0.05
 Nodes (41): 10. Veri Tipleri, 11.1 Ön İşleme, 11.2 Normalizasyon Neden Gerekir?, 11.3 Min-Max Normalizasyonu, 11.4 Z-Skor Normalizasyonu (Standartlaştırma), 11. Ön İşleme ve Normalizasyon, 12. Varsayımlar, 13.1 Özellik Vektörü (+33 more)
 
 ### Community 782 - "bb"
-Cohesion: 0.05
-Nodes (42): 10. Düzeltilmiş Kodun Tamamı, 1. Uygulama Sorusu: 11 Raflı Kitaplık, 2. Programın Genel Yapısı, 3. Anahtar Hesabı: findKey, 4. Listeye Başa Ekleme: insert, 5. Neden Çift İşaretçi?, 6. Kitap Arama: search, 7. Listeyi Gösterme: display (+34 more)
+Cohesion: 0.06
+Nodes (37): 10. Düzeltilmiş Kodun Tamamı, 1. Uygulama Sorusu: 11 Raflı Kitaplık, 2. Programın Genel Yapısı, 3. Anahtar Hesabı: findKey, 4. Listeye Başa Ekleme: insert, 5. Neden Çift İşaretçi?, 6. Kitap Arama: search, 7. Listeyi Gösterme: display (+29 more)
 
 ### Community 783 - "Ders 5 Genişletilmiş Notu: Birim Dürtü Cevabı, Konvolüsyon İntegrali ve Toplamı, Sistem Modelleme ve Diferansiyel Denklemler"
 Cohesion: 0.04
@@ -15706,28 +15791,28 @@ Cohesion: 0.05
 Nodes (43): Fizik 1 (FIZ1001), Fizik 1 harf notu istatistiği (Doç.Dr. Ayşe Durusoy, 2022), Doç.Dr. Ayşe Durusoy, Harf aralığı dağılımı ve sınıf istatistikleri: ortalama 71,97, std sapma 16,58, bağıl değerlendirme, 88 öğrenci, Fizik 1 harf notu istatistiği (Dr.Öğr.Üyesi Yaşar Karabul, 2022), Dr.Öğr.Üyesi Yaşar Karabul, Harf aralığı dağılımı ve sınıf istatistikleri: ortalama 67,76, std sapma 18,09, bağıl değerlendirme, 86 öğrenci, Fizik 1 harf notu istatistiği (Prof.Dr. Fedai İnanır, 2024) (+35 more)
 
 ### Community 803 - "Sistem Analizi ve Tasarımı README (BLM2042)"
-Cohesion: 0.04
-Nodes (50): Lineer Cebir (MAT1320), Lineer Cebir harf notu istatistiği (Prof.Dr. Eyüp Kızıl, 2022), Harf aralığı dağılımı ve sınıf istatistikleri: AA 78-100 aralığı, 32 AA, Prof.Dr. Eyüp Kızıl, Lineer Cebir harf notu istatistiği (Prof.Dr. Eyüp Kızıl, 2025), Harf aralığı dağılımı ve sınıf istatistikleri: ortalama 63,14, std sapma 28,5, 81 öğrenci, Lineer Cebir ana kaynak kitap + çözümlü problemler (taranmış), Lineer Cebir ders sayfası README (+42 more)
+Cohesion: 0.07
+Nodes (33): BLM2042 2023 Harf Notu İstatistikleri - Göksel Biricik, Bütünleme %40: 3/17 girdi, ort 52,67, Final %40: 68/80 girdi, ort 73,51, 2023 harf aralıkları dağılımı: AA13 BA13 BB18 CB14 CC6 DC4 DD2 FF10, Öğretim elemanı Göksel Biricik, Proje %30: 65/80 girdi, ort 81,43, 2023 sınıf istatistikleri: ort 76.31, std sapma 11.67, düzey Mükemmel, 80 öğrenci, Vize %30: 70/80 girdi, ort 81,14 (+25 more)
 
 ### Community 804 - "Ders 2 Genişletilmiş Notu: Yazılımı Etkileyen Eğilimler, Yanılgılar, CASE ve İlk Süreç Modelleri"
 Cohesion: 0.04
 Nodes (51): 10.1 İşleyiş, 10.2 Artılar, 10.3 Eksiler, 10.4 Sonuç, 10. Şelale Modeli, 11.1 İşleyiş, 11.2 Artılar ve eksiler, 11.3 Doğru kullanım (+43 more)
 
 ### Community 805 - "Yönetim Bilgi Sistemleri Ders 5 (2020-2021)"
-Cohesion: 0.09
-Nodes (49): Drill down, Electronic reports, Graphical and multimedia presentation, Summary reports, Duyarlılık analizi, Ders 1 Çalışma Özeti: Sistem ve bilgi sistemi, kurumsal uygulamalar, CRM, ERP (+41 more)
+Cohesion: 0.08
+Nodes (48): Drill down, Electronic reports, Graphical and multimedia presentation, Summary reports, Kurumsal Kaynak Planlaması (ERP), ERP kritik başarı faktörleri, MRP / MRP II, Duyarlılık analizi (+40 more)
 
 ### Community 806 - "Ders 7 Genişletilmiş Notu: Proje Export/Import, Kopya Yapıcı, Senaryodan Sınıf Çıkarma ve Nesneler Arası İlişkiler: Association ve Dependency"
-Cohesion: 0.04
-Nodes (49): 10. Az Ayrıntılı ve Çok Ayrıntılı Sınıf Diyagramı, 11. Gizli Bilgi (Hidden Information), 12. Dependency, 13.1 Sınıf Tasarımı, 13.2 Neden `0..1`?, 13.3 Diyagramdaki Gizli Bilgiler, 13.4 Kod, 13. Tek Yönlü Association: Person ve Car (+41 more)
+Cohesion: 0.03
+Nodes (67): 10. Az Ayrıntılı ve Çok Ayrıntılı Sınıf Diyagramı, 11. Gizli Bilgi (Hidden Information), 12. Dependency, 13.1 Sınıf Tasarımı, 13.2 Neden `0..1`?, 13.3 Diyagramdaki Gizli Bilgiler, 13.4 Kod, 13. Tek Yönlü Association: Person ve Car (+59 more)
 
 ### Community 807 - "sinem_sarak/stb_image_write.h"
 Cohesion: 0.09
 Nodes (47): writeImage(), stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp(), stbi_write_bmp_core(), stbi_write_bmp_to_func() (+39 more)
 
 ### Community 808 - "Graf Teorisi"
-Cohesion: 0.08
-Nodes (44): Euler Formülü r = e - v + 2, K3,3 Grafı, K5 Grafı, Planar Graf, AyrНk Matematik-BФlБm 7-Graflar_231227_122414, Ağ topolojileri (star ring hybrid), Ağırlıklı graf, Basit graf (+36 more)
+Cohesion: 0.12
+Nodes (32): Euler Formülü r = e - v + 2, K3,3 Grafı, K5 Grafı, Planar Graf, Ağ topolojileri (star ring hybrid), Ağırlıklı graf, Basit graf, Düğüm derecesi (+24 more)
 
 ### Community 809 - "Ödev 1: GD, SGD, Adam karşılaştırması"
 Cohesion: 0.05
@@ -15790,8 +15875,8 @@ Cohesion: 0.05
 Nodes (40): dependencies, expo, expo-constants, expo-linking, expo-router, expo-status-bar, nativewind, react (+32 more)
 
 ### Community 824 - "jquery-3.0.0.slim.min.js"
-Cohesion: 0.08
-Nodes (26): b(), da(), Ea(), fa(), g(), ga(), ha(), ia() (+18 more)
+Cohesion: 0.07
+Nodes (29): Y(), Z(), b(), da(), Ea(), fa(), g(), ga() (+21 more)
 
 ### Community 825 - "jquery/jquery.js"
 Cohesion: 0.05
@@ -15814,8 +15899,8 @@ Cohesion: 0.04
 Nodes (45): 10.1 Performans, 10.2 Ek Bellek: Yerinde ve Yerinde Olmayan Sıralama, 10.3 Kararlılık, 10. Sıralama Algoritmalarını Karşılaştırma Ölçütleri, 11.1 Merge Sort, 11.2 Quicksort, 11.3 Radix Sort, 11. Tasarım Yaklaşımlarına Göre Sıralama Algoritmaları (+37 more)
 
 ### Community 830 - "BLM4021 Sunum 4 - ARM Mikrodenetleyicileri ve Özellikleri"
-Cohesion: 0.05
-Nodes (52): mhalitkaya/Wifi-Brute-Force-Hacker-Raspberry-Pi-v1 (GitHub Reposu), BLM4021 Gömülü Sistemler 2024-2025 Harf Notu Raporu, L298N Motor Sürücü Kartı, LAB3: Raspberry Pi ile Motor Sürme, PWM ile Motor Hız Kontrolü, LAB4: Raspberry Pi ile Aralık Ölçme, HC SR04 Ultrasonik Mesafe Sensörü, Kaynak Notu: mhalitkaya/Wifi-Brute-Force-Hacker-Raspberry-Pi-v1 Reposu (+44 more)
+Cohesion: 0.04
+Nodes (63): Polling, Vektör interrupt ve interrupt controller, I/O scheduler (elevator), Line discipline, Special files (block and character), Interrupt (Kesme), Rameş el yazısı notları 41-45 (Poll/Select), ACK NACK (+55 more)
 
 ### Community 831 - "Common/MV.js"
 Cohesion: 0.12
@@ -15835,7 +15920,7 @@ Nodes (7): Doctor, Hospital, IMedicalPersonnel, ISurgeon, Patient, Room, Treatme
 
 ### Community 835 - "Subscriber"
 Cohesion: 0.02
-Nodes (9): Corporation, DateInfo, Distributor, Individual, Journal, PaymentInfo, Subscriber, Subscription (+1 more)
+Nodes (10): Corporation, DateInfo, Distributor, Individual, Journal, PaymentInfo, Subscriber, Subscription (+2 more)
 
 ### Community 836 - "Firefighter"
 Cohesion: 0.06
@@ -15862,8 +15947,8 @@ Cohesion: 0.04
 Nodes (49): 10.1 Standart Örnekleri, 10.2 Standartların Sınıflandırılması, 10.3 Kalite Yönetim Sistemi, 10.4 Kaliteyi Belirlemek, 10. Yazılım Standartları ve Kalite Yönetim Sistemi, 11.1 Gözden Geçirme Nedir?, 11.2 Gözden Geçirmenin Amacı, 11.3 Gözden Geçirme Ne Değildir? (+41 more)
 
 ### Community 842 - "BLM3041 Hafta XII: Normalizasyon ve Karmaşık Veri Tipleri"
-Cohesion: 0.06
-Nodes (52): Company veritabanı ER örneği, Birinci Normal Form (1NF), İkinci Normal Form (2NF), Üçüncü Normal Form (3NF), Ekleme, silme ve güncelleme anomalileri, Veri Tabanı Normalizasyonları, Fonksiyonel ve geçişli bağımlılık, Veri fazlalığı (mutlak ve gereksiz tekrar) (+44 more)
+Cohesion: 0.05
+Nodes (67): Company veritabanı ER örneği, Birinci Normal Form (1NF), İkinci Normal Form (2NF), Üçüncü Normal Form (3NF), Ekleme, silme ve güncelleme anomalileri, Veri Tabanı Normalizasyonları, Fonksiyonel ve geçişli bağımlılık, Veri fazlalığı (mutlak ve gereksiz tekrar) (+59 more)
 
 ### Community 843 - "notification-service/package.json"
 Cohesion: 0.05
@@ -15951,7 +16036,7 @@ Nodes (49): 1. Oturumun niteliği, 2. Lab sorusunun sistemi ve UML diyagramı, 3
 
 ### Community 864 - "Dynamic Programming"
 Cohesion: 0.04
-Nodes (73): Expected search cost, MATRIX-CHAIN-ORDER, MATRIX-MULTIPLY, OPTIMAL-BST, PRINT-OPTIMAL-PARENS, Assembly-line scheduling, Bitonic euclidean traveling-salesman problem, Chapter 15 Dynamic Programming (+65 more)
+Nodes (76): Expected search cost, EXTEND-SHORTEST-PATHS / SLOW-ALL-PAIRS-SHORTEST-PATHS, FASTER-ALL-PAIRS-SHORTEST-PATHS (repeated squaring), MATRIX-CHAIN-ORDER, Matrix multiplication, MATRIX-MULTIPLY, OPTIMAL-BST, PRINT-OPTIMAL-PARENS (+68 more)
 
 ### Community 865 - "Kimyasal Risk Etmenleri"
 Cohesion: 0.05
@@ -15985,9 +16070,13 @@ Nodes (37): Betimsel ve çıkarımsal istatistik, Makine öğrenmesi ve veri bil
 Cohesion: 0.05
 Nodes (40): author, dependencies, cors, dotenv, express, fs-extra, joi, jsonwebtoken (+32 more)
 
-### Community 874 - "Ders 8 Genişletilmiş Notu: Kural Tabanlı Sınıflandırma, Naive Bayes ve Weka"
+### Community 873 - "jquery-3.0.0.js"
 Cohesion: 0.04
-Nodes (48): 10. Dolaylı Yöntem: Karar Ağacından Kural Çıkarma, 11.1 Notasyon, 11.2 Teoremin türetilmesi, 11.3 Tablo üzerinde örnek, 11.4 Menenjit örneği, 11. Olasılık ve Bayes Teoremi, 12. Olayların Bağımsızlığı, 13.1 Bayes teoremini veriye uygulamak (+40 more)
+Nodes (40): addCombinator(), adoptValue(), ajaxConvert(), ajaxHandleResponses(), Animation(), augmentWidthOrHeight(), buildFragment(), condense() (+32 more)
+
+### Community 874 - "Ders 8 Genişletilmiş Notu: Kural Tabanlı Sınıflandırma, Naive Bayes ve Weka"
+Cohesion: 0.05
+Nodes (37): 10. Dolaylı Yöntem: Karar Ağacından Kural Çıkarma, 11.1 Notasyon, 11.2 Teoremin türetilmesi, 11.3 Tablo üzerinde örnek, 11.4 Menenjit örneği, 11. Olasılık ve Bayes Teoremi, 12. Olayların Bağımsızlığı, 13.1 Bayes teoremini veriye uygulamak (+29 more)
 
 ### Community 875 - "Ders 3 Genişletilmiş Notu: Bilgi Çıkarımı ve İstatistiksel Dil Modelleri"
 Cohesion: 0.04
@@ -16038,15 +16127,15 @@ Cohesion: 0.04
 Nodes (47): 10. Tanjantın Kuvvetleri ve Gelecek Haftanın Konusu, 1. Kısmi İntegrasyon ve LAPTE Sıralaması, 2. Polinom ile Trigonometrik Çarpımı: $\int x^2\cos x\,dx$, 3.1 Tablonun Kurulması, 3.2 Tablonun Okunması, 3. Tablo Yöntemi: Kısmi İntegrasyonun Kısaltılmış Hâli, 4. Önce Değişken Dönüşümü, Sonra Tablo, 5. Döngüsel Durum: $\int e^x\sin x\,dx$ ve $\int e^{3t}\cos 2t\,dt$ (+39 more)
 
 ### Community 887 - "Biyoenformatiğe Giriş - 03 Introduction to Perl"
-Cohesion: 0.06
-Nodes (54): Hospital Revenue Case Study, Dizi tersleme, Diziler (Arrays), Minimum elemanın pozisyonunu bulma, Düzenli dillerin kapanış özellikleri (birleşim, birleştirme, yıldız), Tek final durumlu NFA, Düzenli dillerin standart gösterimleri, Kesişim kapanışı (De Morgan) (+46 more)
+Cohesion: 0.08
+Nodes (40): Düzenli dillerin kapanış özellikleri (birleşim, birleştirme, yıldız), Tek final durumlu NFA, Python, Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+32 more)
 
 ### Community 888 - "BLM3061 Lab 8 - ADC/DAC kullanımı"
-Cohesion: 0.09
-Nodes (39): 74LS138 demultiplexer, DAC0830 DAC, BLM3061 Lab 8 - ADC/DAC kullanımı, Hata(%) = |Teorik-Ölçülen|/Teorik*100, OP1P opamp, Osiloskop ölçümü (Time/Div, Volt/Div), ADC0804, DAC 200H, ADC 400H, INTR 800H (+31 more)
+Cohesion: 0.11
+Nodes (31): 74LS138 demultiplexer, DAC0830 DAC, BLM3061 Lab 8 - ADC/DAC kullanımı, Hata(%) = |Teorik-Ölçülen|/Teorik*100, OP1P opamp, Osiloskop ölçümü (Time/Div, Volt/Div), ADC0804, DAC 200H, ADC 400H, INTR 800H (+23 more)
 
 ### Community 889 - "Ders 6 Genişletilmiş Notu: Prosesler Arası Haberleşme (IPC): Paylaşımlı Bellek, Mesaj Geçirme, Pipe'lar, Soketler ve RPC"
-Cohesion: 0.05
+Cohesion: 0.06
 Nodes (36): 10.1 TCP ve UDP, 10.2 RPC ve çok oyunculu oyunlar, 10.3 Sıradan pipe'lar, 10.4 Adlandırılmış pipe'lar, 10.5 RPC'nin yapısı, 10.6 Java soketleri, 10.7 Soket: IP adresi ve port, 10. İstemci-Sunucu Haberleşmesi: Soketler, RPC ve Pipe'lar (+28 more)
 
 ### Community 890 - "Ders 5 Genişletilmiş Notu: Proje Planlama Araçları, Maliyet Tahmin Yöntemleri ve Yazılım Büyüklük Ölçümü"
@@ -16074,8 +16163,8 @@ Cohesion: 0.04
 Nodes (47): 10.1 Teoremlerin İfadesi, 10.2 Terminal Kavramı, 10. Norton ve Thevenin Teoremleri, 11. Yöntem 1: Art Arda Kaynak Dönüşümü, 12.1 Yöntemin Adımları, 12.2 Neden Doğru?, 12.3 Örnek 14 (Yöntem 2), 12.4 Pratikteki Karşılığı (+39 more)
 
 ### Community 896 - "Ders 9 Genişletilmiş Notu: Two-Way Association, Aggregation, Composition ve Kalıtım: Override, Polymorphism, super"
-Cohesion: 0.05
-Nodes (37): 10. Kalıtımın Yanlış Kullanımı: GUI Düğmesi, 11. Kalıtımı Ne Zaman Seçmeli?, 12. Dynamic Binding, 13.1 Sınıf Şeması, 13.2 extends ve super, 13.3 Üç Yasak ve Düzeltmeleri, 13.4 main ve Sequence Diagram, 13. extends ve super: Person, Employee, Manager (+29 more)
+Cohesion: 0.04
+Nodes (46): 10. Kalıtımın Yanlış Kullanımı: GUI Düğmesi, 11. Kalıtımı Ne Zaman Seçmeli?, 12. Dynamic Binding, 13.1 Sınıf Şeması, 13.2 extends ve super, 13.3 Üç Yasak ve Düzeltmeleri, 13.4 main ve Sequence Diagram, 13. extends ve super: Person, Employee, Manager (+38 more)
 
 ### Community 897 - "Ders 9 Genişletilmiş Notu: Risk Yönetimi ve Risk Değerlendirmesine Giriş: Tehlike, Risk, Kaza Zinciri ve Risk Algısı"
 Cohesion: 0.06
@@ -16090,8 +16179,8 @@ Cohesion: 0.05
 Nodes (41): 80x86 İşlemci Ailesi, 80x86 Assembly Dili (Kitap, Ahmet Tevfik İnan), 80x86 Adresleme Kipleri (Immediate, Register, Direct, Indirect, Base Relative vb.), EXE ve COM Tipinde Assembly Programları, Kesim (Segment) Yapısı: Kod, Yığın, Veri, Ek Kesim, Sözde (Pseudo) Komutlar: SEGMENT, DB, DW, EQU, PROC, MACRO vb., 8086 Yazmaçları (AX BX CX DX SP BP SI DI IP), Yordam ve Makro Kullanımı, Parametre Aktarımı (+33 more)
 
 ### Community 900 - "8251 USART (Universal Synchronous/Asynchronous Receiver/Transmitter)"
-Cohesion: 0.09
-Nodes (23): Basit Giriş Birimi (8 düğme, 0F000H, 74245), Basit Çıkış Birimi (8 LED, 0F000H, 74245), 16-Bit Veriyolunda 8-Bitlik Çevre Birimi, 8251A Blok Diyagram, 8251 İlk Ayarlama (Initialization Flow), 8251 USART (Universal Synchronous/Asynchronous Receiver/Transmitter), 8251 Yazmaçlar (CS, C/D, RD, WR Kombinasyonları), 8251 Mod Yazmacı (Asynchronous/Synchronous Mode) (+15 more)
+Cohesion: 0.07
+Nodes (30): Basit Giriş Birimi (8 düğme, 0F000H, 74245), Basit Çıkış Birimi (8 LED, 0F000H, 74245), 16-Bit Veriyolunda 8-Bitlik Çevre Birimi, 8251A Blok Diyagram, 8251 İlk Ayarlama (Initialization Flow), 8251 USART (Universal Synchronous/Asynchronous Receiver/Transmitter), 8251 Yazmaçlar (CS, C/D, RD, WR Kombinasyonları), 8251 Mod Yazmacı (Asynchronous/Synchronous Mode) (+22 more)
 
 ### Community 901 - "OSI Reference Model (7 layers)"
 Cohesion: 0.06
@@ -16101,25 +16190,25 @@ Nodes (38): DNS & IP Addressing (logical address resolution), RTP (Real-time Tra
 Cohesion: 0.04
 Nodes (48): 10. Düzlemsel Çizgeler ve Euler Formülü, 11.1 Kare ve Kelebek, 11.2 Beşgen ve Yıldız, 11.3 Derecesi 1 Olan Düğüm, 11.4 Küpün Yukarıdan Görünüşü, 11. Çizgelerde Eşyapı (İzomorfizm), 12. Ağ Topolojileri ve Çizge Türleri, 13.1 Kromatik Sayı Örnekleri (+40 more)
 
-### Community 903 - "Boole cebri"
-Cohesion: 0.05
-Nodes (63): Abstract Definition of a Boolean Algebra, George Boole, Claude Shannon, XOR Operator, and / ∧, Logic Symbols (RapidTables), there exists ∃, for all ∀ (+55 more)
+### Community 903 - "Chapter 1: From Zero to One (Harris & Harris)"
+Cohesion: 0.27
+Nodes (11): Chapter 1: From Zero to One (Harris & Harris), İkili sayılar, CMOS transistörler ve kapılar, Karmaşıklık yönetimi (soyutlama, disiplin, hiyerarşi, modülerlik, düzenlilik), Dijital soyutlama, Sign-extension ve zero-extension, Onaltılık sayılar, Mantık seviyeleri ve noise margin (+3 more)
 
 ### Community 904 - "Konu Tanımı ve Senaryolar"
-Cohesion: 0.11
-Nodes (34): Dosya Paylaşımı Akışı, Grup Sohbeti Oluşturma Akışı, Kullanıcı Kayıt ve Giriş Akışı, Mesaj Gönderme Akışı, Konu Tanımı ve Senaryolar, Mikroservis tabanlı gerçek zamanlı sohbet uygulaması (proje), US-12 Gerçek Zamanlı Bildirimler, US-4 Birebir Sohbet Oluşturma (+26 more)
+Cohesion: 0.08
+Nodes (40): Dosya Paylaşımı Akışı, Grup Sohbeti Oluşturma Akışı, Kullanıcı Kayıt ve Giriş Akışı, Mesaj Gönderme Akışı, Konu Tanımı ve Senaryolar, Mikroservis tabanlı gerçek zamanlı sohbet uygulaması (proje), US-12 Gerçek Zamanlı Bildirimler, US-4 Birebir Sohbet Oluşturma (+32 more)
 
 ### Community 905 - "Ders 10 Genişletilmiş Notu: ALU, Kaydırıcı, Kontrol Kelimesi ve Tek Çevrimli Bilgisayar"
 Cohesion: 0.04
 Nodes (48): 10. ALU Durum Bitleri, 11.1 Bellek genişlikleri ve PC, 11.2 Üç komut biçimi, 11.3 Komutların komut belleğine yüklenmesi, 11.4 Komut, kontrol kelimesi ve fonksiyon ayrımı, 11. Bellekler, Program Sayacı ve Komut Biçimleri, 12. Basit Bilgisayarın Komut Kümesi, 13. Bellekteki Komutların Çözülmesi (+40 more)
 
 ### Community 906 - "java.awt.event.MouseEvent"
-Cohesion: 0.01
-Nodes (114): Logger, Acilis, AdminGirisEkrani, MouseAdapter, MouseAdapter, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+106 more)
+Cohesion: 0.03
+Nodes (26): AdminMenu, java.awt.event.FocusAdapter, java.awt.event.FocusAdapter, java.awt.event.KeyAdapter, java.awt.event.KeyAdapter, java.awt.event.MouseAdapter, java.awt.event.MouseAdapter, java.awt.event.MouseAdapter (+18 more)
 
 ### Community 907 - "Yönetim Bilgi Sistemleri Ders 5 (2020-2021)"
-Cohesion: 0.05
-Nodes (71): Müşteri İlişkileri Yönetimi (CRM), CRM dört pazarlama stratejisi, e-CRM, Kurumsal Kaynak Planlaması (ERP), ERP kritik başarı faktörleri, İşletmelerde bilgi sistemlerinin yeri (Bölüm 16), MRP / MRP II, Paket özelleştirme: konfigürasyon, değişiklik, zenginleştirme (+63 more)
+Cohesion: 0.06
+Nodes (48): Müşteri İlişkileri Yönetimi (CRM), CRM dört pazarlama stratejisi, e-CRM, Tedarik Zinciri Yönetimi (SCM), Zara küresel şirket örneği, Bilgi Yönetim Sistemi (KMS), Churn (Müşteri Kaybı), Dönem Projesi ve Proje Grupları (+40 more)
 
 ### Community 908 - "Caltech-101 Airplanes Dataset Klasörü"
 Cohesion: 0.05
@@ -16250,8 +16339,8 @@ Cohesion: 0.08
 Nodes (41): Giriş İçindekiler Ekle Diyaloğu, Git İşlemleri Ekranı, Commit Mesajı Diyaloğu, Hocalar ve Dersler Listesi Ekranı, Hocaları Ekle/Güncelle Ekranı, Bölüm Açıklaması Düzenleme Diyaloğu (Hocalar), Bölüm Adı Düzenleme Diyaloğu (Hocalar), Hoca Düzenle Diyaloğu (+33 more)
 
 ### Community 940 - "TemplateFactory"
-Cohesion: 0.08
-Nodes (4): Config, FocusTrap, sanitizeHtml(), TemplateFactory
+Cohesion: 0.15
+Nodes (3): remove(), sanitizeHtml(), TemplateFactory
 
 ### Community 941 - "Detaylı Açıklamalar"
 Cohesion: 0.06
@@ -16262,20 +16351,20 @@ Cohesion: 0.04
 Nodes (47): 10.1 ImpossibleInfo Örneği, 10. Kendi İstisna Sınıfımızı Tanımlamak, 11.1 Statement 5'te Neler Olabilir?, 11.2 Slaydın Çoklu catch Örneği, 11.3 catch Sırası: Özelden Genele, 11.4 İç İçe try, 11.5 finally'nin Üç Durumu, 11. Hata Sonrası Akış, Çoklu catch ve İç İçe try (+39 more)
 
 ### Community 943 - "Ünite 11 Dosya İşleme (alıştırmalar)"
-Cohesion: 0.06
-Nodes (46): Akışlar (stream): stdin, stdout, stderr, Alan genişliği ve duyarlık, Atama bastırma karakteri (*), Değişken uzunlukta argüman listesi, Dosya açma modları (r w a r+ w+ a+), Dosya açma modu hataları, Dosya eşleme programı, Dosya pozisyon göstericisi (+38 more)
+Cohesion: 0.05
+Nodes (51): Akışlar (stream): stdin, stdout, stderr, Alan genişliği ve duyarlık, Atama bastırma karakteri (*), Bellek sızıntısı (free unutma), calloc, Değişken uzunlukta argüman listesi, Dinamik hafıza tahsisi, Dosya açma modları (r w a r+ w+ a+) (+43 more)
 
 ### Community 944 - "Ders 4 Genişletilmiş Notu: Yapısal Kalıplar: Adapter, Bridge ve Composite"
 Cohesion: 0.04
-Nodes (50): 10.1 Çocuk ebeveynini bilmeli mi?, 10.2 Bir düğümü kim, nasıl siler?, 10.3 Hangi veri yapısı?, 10.4 Çocuk listesi üst sınıfa taşınabilir mi?, 10.5 Kalıbın zayıflığı: kalıtımın özüne aykırılık, 10. Composite Gerçekleme Ayrıntıları ve Zayıf Yönleri, 11.1 Problem, 11.2 Tasarım (+42 more)
+Nodes (45): 10.1 Çocuk ebeveynini bilmeli mi?, 10.2 Bir düğümü kim, nasıl siler?, 10.3 Hangi veri yapısı?, 10.4 Çocuk listesi üst sınıfa taşınabilir mi?, 10.5 Kalıbın zayıflığı: kalıtımın özüne aykırılık, 10. Composite Gerçekleme Ayrıntıları ve Zayıf Yönleri, 12. Kod Kusuru: Tekrarlanan Kod ve ReportV2, 1. Yapısal Kalıplara Giriş (+37 more)
 
 ### Community 945 - "Süreklilik Testi"
 Cohesion: 0.05
 Nodes (38): Alan (Belirli İntegral ile Alan Hesabı), Dönel Cisimlerin Hacimleri: Disk Yöntemi, Eğriler Arasındaki Alanlar, Dönel Cisimler: Pul (Washer) Yöntemi, Rasyonel Fonksiyonların Kısmi Kesirlerle İntegrasyonu, Simetrik Fonksiyonların Belirli İntegrali, Tan(x/2) Dönüşümü (Weierstrass Substitution), Toplam Alan (+30 more)
 
 ### Community 946 - "fork sistem çağrısı"
-Cohesion: 0.07
-Nodes (50): atexit temizleme fonksiyonu, Client-server yapıları, Ders 5: Prosesler, Kaynak kod ile farklılaştırma (fork sonucuna göre), exec sistem çağrı ailesi, exit ve return ile sonlanma, Çıkış kodu (exit status), File descriptor (stdin, stdout, stderr) (+42 more)
+Cohesion: 0.08
+Nodes (46): atexit temizleme fonksiyonu, Client-server yapıları, Ders 5: Prosesler, Kaynak kod ile farklılaştırma (fork sonucuna göre), exec sistem çağrı ailesi, exit ve return ile sonlanma, Çıkış kodu (exit status), File descriptor (stdin, stdout, stderr) (+38 more)
 
 ### Community 947 - "Ders 9 Genişletilmiş Notu: İşlemci Tasarımına Giriş: Datapath, Aritmetik Devre Tasarımı, ALU, Kaydırıcı ve Kontrol Kelimesi"
 Cohesion: 0.04
@@ -16319,7 +16408,7 @@ Nodes (55): 10. RLE Ödevinin Akademik İçeriği, 11.1 Öz Bilgi Formülü, 11.
 
 ### Community 957 - "Introduction to Probability, Statistics, and Random Processes (Hossein Pishro-Nik)"
 Cohesion: 0.05
-Nodes (62): Bernoulli trial, Geometric distribution (C.4), Binomial Coefficient, Birthday Problem, Probability of Collision in Hashing Functions, Inclusion-Exclusion Principle, Introduction to Probability, Statistics, and Random Processes (Hossein Pishro-Nik), Binomial Formula (+54 more)
+Nodes (69): Bernoulli trial, Geometric distribution (C.4), Binomial Coefficient, Birthday Problem, Disjoint Sets, Probability of Collision in Hashing Functions, Inclusion-Exclusion Principle, Introduction to Probability, Statistics, and Random Processes (Hossein Pishro-Nik) (+61 more)
 
 ### Community 958 - "Ders 3 Genişletilmiş Notu: Aksiyomatik Olasılık, Koşullu Olasılık, Bayes Teoremi ve Kesikli Rastgele Değişkenler"
 Cohesion: 0.04
@@ -16329,9 +16418,9 @@ Nodes (56): 10.1 Tanım, 10.2 Para atma örneği, 10. Rastgele değişken, 11.1 
 Cohesion: 0.07
 Nodes (5): Kitap, Kitaplik, Raf, Kitaplik, Raf
 
-### Community 960 - "Community"
-Cohesion: 0.07
-Nodes (4): Community, CommunityPost, UserCommunity, UserCommunityId
+### Community 960 - "Chapter 3 Processes"
+Cohesion: 0.05
+Nodes (56): IO bound ve CPU bound prosesler, Long term scheduler (job scheduler), Medium term scheduler (swap in/out), Short term scheduler (CPU scheduler), fork(), Inter-Process Communication (IPC), Parent-Child Process, Process Descriptor / PCB (+48 more)
 
 ### Community 961 - "Ders 9_2: 8259A Kesme Kontrol Devresi (PIC) Konusu"
 Cohesion: 0.60
@@ -16339,7 +16428,7 @@ Nodes (5): 8259 PIC ile Buton Kesmesi Sayma Ödevi, 8259A Programmable Interrupt
 
 ### Community 962 - "Abstract data type (ADT)"
 Cohesion: 0.04
-Nodes (74): Abstract data type (ADT), 1.4 Analysis of Algorithms, API (application programming interface), Java arrays, 1.3 Bags, Queues, and Stacks, 1.1 Basic Programming Model, Counter ADT, 1.2 Data Abstraction (+66 more)
+Nodes (78): Abstract data type (ADT), Algorithm (finite, deterministic, effective method), 1.4 Analysis of Algorithms, API (application programming interface), Java arrays, 1.3 Bags, Queues, and Stacks, 1.1 Basic Programming Model, Counter ADT (+70 more)
 
 ### Community 963 - "Kod Blokları"
 Cohesion: 0.05
@@ -16403,7 +16492,7 @@ Nodes (46): 10.1 arcsec, 10.2 arcsec'in Türevi, 10.3 Eşlenik Kuralı ve Genel 
 
 ### Community 979 - "10.1 Konik kesitler ve kuadratik denklemler"
 Cohesion: 0.07
-Nodes (39): 10.1 Konik kesitler ve kuadratik denklemler, 10.2 Konik kesitleri dışmerkezlikle sınıflandırmak, 10.3 Kuadratik denklemler ve dönmeler, 9.1 Eğim alanları ve ayrılabilir diferansiyel denklemler, 9.2 Birinci mertebeden lineer diferansiyel denklemler, 9.3 Euler yöntemi, 9.4 Otonom diferansiyel denklemlerin grafik çözümleri, 9.5 Birinci mertebe diferansiyel denklemlerin uygulamaları (+31 more)
+Nodes (36): 10.1 Konik kesitler ve kuadratik denklemler, 10.2 Konik kesitleri dışmerkezlikle sınıflandırmak, 10.3 Kuadratik denklemler ve dönmeler, 9.1 Eğim alanları ve ayrılabilir diferansiyel denklemler, 9.2 Birinci mertebeden lineer diferansiyel denklemler, 9.3 Euler yöntemi, 9.4 Otonom diferansiyel denklemlerin grafik çözümleri, 9.5 Birinci mertebe diferansiyel denklemlerin uygulamaları (+28 more)
 
 ### Community 980 - "Ders 8 Genişletilmiş Notu: LZ77, LZ78, LZW ve Görüntü Sıkıştırma (PNG, Faks, JPEG, GIF, TIFF)"
 Cohesion: 0.04
@@ -16414,8 +16503,8 @@ Cohesion: 0.04
 Nodes (48): 10. Sorgu Türleri, 11.1 Kelime Çantası ve Sözlük, 11.2 Boolean Model: Tam Eşleşme, 11.3 Vektör Uzayı Modeli ve TF-IDF, 11.4 Sorgunun Temsili ve Kosinüs Benzerliği, 11.5 Örnek: hardware ve software Sorgusu, 11. Boolean Model ve Vektör Uzayı Modeli, 12.1 Okapi Benzerliği (+40 more)
 
 ### Community 982 - "filmradar/package.json"
-Cohesion: 0.07
-Nodes (29): dependencies, axios, expo, expo-status-bar, @expo/vector-icons, react, react-native, react-native-safe-area-context (+21 more)
+Cohesion: 0.05
+Nodes (44): App(), Stack, MovieCard(), styles, FavoritesContext, FavoritesProvider(), dependencies, axios (+36 more)
 
 ### Community 983 - "Ders 7 Genişletilmiş Notu: İşlemsel Yükselteç (Op-Amp): İdeal ve Gerçek Model, Karşılaştırıcı, Eviren/Evirmeyen, Gerilim İzleyici, Toplayıcı, Fark Alıcı, Kaskat; Kaynak Dönüşümü ve Thevenin Örnekleri"
 Cohesion: 0.03
@@ -16446,8 +16535,8 @@ Cohesion: 0.06
 Nodes (37): Maze Project Test Maze (11x15), Maze Project Test Maze (31x64, with diamonds), Labirent (Maze) DFS Çözümü Konsepti, Backtracking Ödevi: NxN Renk Tahtası Problemi, Backtracking Example Test Cases (Color Rows), Brute Force / Divide and Conquer: Max Subarray Ödevi, bigNET.txt: 24-Node Directed Social Graph Dataset, Graf Uygulamaları: Influencer Tespiti Ödevi (DFS/BFS) (+29 more)
 
 ### Community 990 - "ödev_1/stb_image.h"
-Cohesion: 0.06
-Nodes (79): readImage(), load_jpeg_image(), resample_row_1(), stbi__bitcount(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y(), stbi__convert_16_to_8() (+71 more)
+Cohesion: 0.05
+Nodes (83): readImage(), load_jpeg_image(), resample_row_1(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y(), stbi__compute_y_16(), stbi__convert_16_to_8() (+75 more)
 
 ### Community 991 - "Ders 3 Genişletilmiş Notu: Basit Sıralama Algoritmaları ve Karmaşıklık Analizi"
 Cohesion: 0.05
@@ -16490,8 +16579,8 @@ Cohesion: 0.04
 Nodes (52): 10.1 $R_L = 1{,}2$ kΩ, 10.2 $R_L = 3$ kΩ, 10. Zener Regülatör: Sabit Yük, 11.1 Kondansatörlerin rolü, 11.2 Çözüm, 11. BJT Sabit Öngerilim Devresi, 12.1 Taban akımı, 12.2 Kolektör akımı ve $V_{CE}$ (+44 more)
 
 ### Community 1002 - "Chapter 14 IT Security Management and Risk Assessment"
-Cohesion: 0.07
-Nodes (33): Security awareness, Baseline Approach, Chapter 14 IT Security Management and Risk Assessment, Combined Approach, Control cost-benefit analysis, Detailed Risk Analysis, Detection and recovery controls, Security education (+25 more)
+Cohesion: 0.06
+Nodes (39): Security awareness, Baseline Approach, Bilişim Sistemleri Güvenliği Sınav Kitabı (bölüm 7/11), Chapter 12 Operating System Security, Chapter 14 IT Security Management and Risk Assessment, Combined Approach, Control cost-benefit analysis, Detailed Risk Analysis (+31 more)
 
 ### Community 1003 - "Ders 9 Genişletilmiş Notu: Kurumsal Etik"
 Cohesion: 0.04
@@ -16538,16 +16627,16 @@ Cohesion: 0.04
 Nodes (46): 10.1 Kategorik Uzaklık, 10.2 Kod, 10. Kategorik Cevaplar ve findDistance Fonksiyonu, 11.1 Veri Yapısı, 11.2 En Başarılı Doktor, 11.3 Birbirine En Çok Benzeyen İki Doktor, 11. Doktor ve Teşhis Senaryosu, 12.1 Tanım (+38 more)
 
 ### Community 1014 - "Introduction to Probability, Statistics, and Random Processes"
-Cohesion: 0.10
-Nodes (39): Absorption probabilities, Aperiodicity of Markov chains, Brownian bridge and hitting times, Brownian motion as limit of symmetric random walk, Brownian motion (Wiener process), Chapman-Kolmogorov equation, Computer simulation vs analysis, Continuous-time Markov chain (+31 more)
+Cohesion: 0.11
+Nodes (38): Absorption probabilities, Aperiodicity of Markov chains, Brownian bridge and hitting times, Brownian motion as limit of symmetric random walk, Brownian motion (Wiener process), Chapman-Kolmogorov equation, Computer simulation vs analysis, Continuous-time Markov chain (+30 more)
 
 ### Community 1015 - "AddNoteActivity.java"
 Cohesion: 0.02
-Nodes (46): AddNoteActivity, View.OnClickListener, FileAttachmentsAlertDialog, DialogInterface.OnClickListener, DialogInterface.OnClickListener, DialogInterface.OnMultiChoiceClickListener, FileAttachment, NoteAdapter (+38 more)
+Nodes (47): AddNoteActivity, View.OnClickListener, FileAttachmentsAlertDialog, DialogInterface.OnClickListener, DialogInterface.OnClickListener, DialogInterface.OnMultiChoiceClickListener, FileAttachment, NoteAdapter (+39 more)
 
 ### Community 1016 - "Ders 4 Lojik Fonksiyonların İndirgenmesi (altyazı)"
-Cohesion: 0.06
-Nodes (48): Lojik Devreler Ders 11 (2020-2021) - Vize sınavı, Akademik dürüstlük: kopya çekmeme, Soru 2: Sigma-fi (don't care) sadeleştirme ve NOR kapılarıyla gerçekleme, Soru 4: 2 bitlik genlik karşılaştırıcı (A>=B) kombinezonsal tasarım, Soru 3: 1 bitlik karşılaştırıcı ve MUX'lu devre, F1 F2 F, Soru 1: Sayı dönüşümleri (10, 16, 8, 2'lik taban), Sınav kuralları: A4, ara adımlar, ad-soyad-imza, tek birleşik PDF, noadsoyad.pdf, Vize sınavı (23.12 Çarşamba, 14:15-15:30, klasik, PDF yükleme) (+40 more)
+Cohesion: 0.07
+Nodes (41): Soru 4: 2 bitlik genlik karşılaştırıcı (A>=B) kombinezonsal tasarım, De Morgan Kuralı, Ders 5 (2020-2021) altyazı, İfade indirgeme ve çip maliyeti, Kombinezonsal devreler (sonraki hafta), Ders 5 Lab (2020-2021) altyazı, Digital simülasyon programı (Java jar), Lab sunumu: kağıt çözüm, doğruluk tablosu ve simülasyon (+33 more)
 
 ### Community 1017 - "Ders 9 Genişletilmiş Notu: Vize Değerlendirmesi, Özyinelemeli Algoritmalar ve Rekürans Bağıntılarının Çözümü"
 Cohesion: 0.04
@@ -16570,8 +16659,8 @@ Cohesion: 0.05
 Nodes (43): 1.1 Mealy Modeli, 1.2 Moore Modeli, 1. Geçen Haftanın Tekrarı: Mealy ve Moore Modelleri, 2.1 Problem, 2.2 Örnek Giriş ve Çıkış, 2.3 Durum Diyagramının Kurulması, 2.4 Durum Tablosu ve Durum Kodlaması, 2. Ardışıl Devre Tasarımı: Dizi Tanıyıcı (+35 more)
 
 ### Community 1022 - "Almanac çerçevesi"
-Cohesion: 0.03
-Nodes (85): Yapay Zeka Dönem Projesi Raporu: Chatbot (AITalk), app.py ve yzproje-ui arayüz, Bilgi Chatbotları, BLEU score, export.py, Eğitim sonucu 100 epoch loss 0.1425 accuracy 0.3635, Hizmet Chatbotları, Kurallara Dayalı Chatbotlar (+77 more)
+Cohesion: 0.06
+Nodes (44): OpenAI GPT, RLHF, Sıfır Atış Modeli, Adversarial prompting, Almanac çerçevesi, Karşılaştırılan modeller: ChatGPT-4, Bing, Bard, BioGPT, SciBERT, Med-PaLM, GatorTron, Browser bileşeni (PubMed, UpToDate, BMJ Best Practices) (+36 more)
 
 ### Community 1023 - "Ders 2 Genişletilmiş Notu: Hayat Bilgisi Veritabanları"
 Cohesion: 0.04
@@ -16582,8 +16671,8 @@ Cohesion: 0.04
 Nodes (47): 10.1 Neden gerekli?, 10.2 Üç durum, 10. Transfer Öğrenme, 11. Sınıflamanın Ötesindeki Görme Görevleri, 12.1 Tanım ve eksik yanı, 12.2 Yama yaklaşımı ve tam evrişimli ağ, 12. Anlamsal Bölütleme, 13.1 İki görev, iki kayıp (+39 more)
 
 ### Community 1025 - "NYP Lecture Notes 1 (2023, İngilizce)"
-Cohesion: 0.10
-Nodes (42): NYP Hafta 3 - İlişkiler: Association ve Dependency, NYP Hafta 4 - Aggregation ve Composition, NYP Hafta 11 - Tip dönüşümü, Dosyalar ve Akışlar, İç Sınıflar, İç sınıflar (inner classes), Typecasting, Command line I/O, Constructors and finalizers, Control flow (+34 more)
+Cohesion: 0.18
+Nodes (22): Command line I/O, Constructors and finalizers, Control flow, Dependency, NYP Lecture Notes 1 (2023, İngilizce), Fundamental data structures (generic collections), Enum classes, Working with files and streams (serialization) (+14 more)
 
 ### Community 1026 - "ClubCard"
 Cohesion: 0.08
@@ -16606,8 +16695,8 @@ Cohesion: 0.06
 Nodes (4): computeStyleTests(), finalPropName(), roundPixelMeasures(), vendorPropName()
 
 ### Community 1031 - "api-gateway/package.json"
-Cohesion: 0.04
-Nodes (41): author, dependencies, cors, dotenv, express, express-rate-limit, http-proxy-middleware, jsonwebtoken (+33 more)
+Cohesion: 0.06
+Nodes (33): author, dependencies, cors, dotenv, express, express-rate-limit, http-proxy-middleware, jsonwebtoken (+25 more)
 
 ### Community 1032 - "Ders 2 Genişletilmiş Notu: Bilgi Sistemi Türleri, Bilgi Sisteminin Tarafları, Geliştirme Süreci ve Süreç Modelleri"
 Cohesion: 0.04
@@ -16626,8 +16715,8 @@ Cohesion: 0.04
 Nodes (48): 10. Cümle ve Metin Vektörleri, 11.1 Tanım, 11.2 Kelime n-gramları, 11.3 Sık n-gramları tek kelimeye çevirmek, 11. Kelime Öbekleri, 12. Bölüm 4'e Giriş: Makine Öğrenmesinin İkinci Versiyonu, 13.1 Tanım ve motivasyon, 13.2 Adımlar (+40 more)
 
 ### Community 1036 - "Ayrık Matematik"
-Cohesion: 0.08
-Nodes (34): 📅 2. Sınıf Güz, Ayrık Matematik, Bilgisayar Mühendisleri için Diferansiyel Denklemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+26 more)
+Cohesion: 0.05
+Nodes (56): Bilgisayar Bilimlerine Giriş (BLM1011), 2022-2023 güz Final harf aralıkları (G1), Dr.Öğr.Üyesi Göksel BİRİCİK, 2022-2023 güz harf aralıkları (MAG), 2024-2025 güz harf aralıkları (G1), 2024-2025 güz harf aralıkları (MAG), 2025-2026 güz harf aralıkları (HİT), Doç.Dr. Hafiza İrem TÜRKMEN ÇİLİNGİR (+48 more)
 
 ### Community 1037 - "Ders 11 Genişletilmiş Notu: Kablosuz İletim Ortamı, Çoğullama ve Hata Algılama ile Düzeltme"
 Cohesion: 0.04
@@ -16650,8 +16739,8 @@ Cohesion: 0.09
 Nodes (11): ARM Architecture paging, Chapter 8 Main Memory, I/O Interlock and Page Locking, Intel IA-32 segmentation and paging, Virtual Memory Summary (Chapter 9), x86-64 architecture and PAE, Disk Block Size, File Size Distribution Study (+3 more)
 
 ### Community 1042 - "Mobil işletim sistemleri"
-Cohesion: 0.05
-Nodes (54): Hafta 1 Mikroişlemcilerin Tarihsel Gelişimi, Intel 8086/8088, Alt Seviye Programlama Hafta 1 - Mikroişlemcilerin tarihsel gelişimi, Intel 4004, Intel 8080, Intel 8086 (16 bit, 1MB), Intel 8086 (1978, 16-bit mikroişlemci), Intel 8088 (8-bit veri yolu, 20-bit adres) (+46 more)
+Cohesion: 0.06
+Nodes (48): Hafta 1 Mikroişlemcilerin Tarihsel Gelişimi, Intel 8086/8088, Alt Seviye Programlama Hafta 1 - Mikroişlemcilerin tarihsel gelişimi, Intel 4004, Intel 8080, Intel 8086 (16 bit, 1MB), Intel 8086 (1978, 16-bit mikroişlemci), Intel 8088 (8-bit veri yolu, 20-bit adres) (+40 more)
 
 ### Community 1043 - "src/test.py"
 Cohesion: 0.10
@@ -16718,8 +16807,8 @@ Cohesion: 0.04
 Nodes (45): 10.1 İntihal (Plagiarism), 10.2 Sahtecilik (Fabrication) ve Çarpıtma (Falsification), 10.3 Tekrar Yayın (Duplicate Publication), 10.4 Dilimleme (Salami Slicing), 10.5 Haksız Yazarlık, 10. İkinci Bölüm: Etik Dışı Eylemler, 11. Diğer Etik İhlaller, 12. İntihal Ne Değildir? (+37 more)
 
 ### Community 1059 - "Ders 7 Genişletilmiş Notu: Template Method, Visitor ve Mediator Kalıpları"
-Cohesion: 0.05
-Nodes (40): 10.1 Amaç, 10.2 GoF örneği: font seçme penceresi, 10.3 Örnek çözüm, 10.4 Kalıp yapısı, 10.5 Bağlantı sayısı ve eleştiri, 10. Mediator Kalıbı, 11. Kalıp Şemalarında UML Gösterimi, 1. Template Method Kalıbı: Amaç ve Sorun (+32 more)
+Cohesion: 0.04
+Nodes (44): 10.1 Amaç, 10.2 GoF örneği: font seçme penceresi, 10.3 Örnek çözüm, 10.4 Kalıp yapısı, 10.5 Bağlantı sayısı ve eleştiri, 10. Mediator Kalıbı, 11. Kalıp Şemalarında UML Gösterimi, 1. Template Method Kalıbı: Amaç ve Sorun (+36 more)
 
 ### Community 1060 - "Ders 7 Genişletilmiş Notu: Bilimsel Sunum Teknikleri ve Proje Başvurusu Üzerine Soru-Cevap"
 Cohesion: 0.04
@@ -16738,8 +16827,8 @@ Cohesion: 0.04
 Nodes (45): 10.1 Neler Sayılır, Neler Sayılmaz?, 10. İteratif Algoritmaların Analizi: Amaç ve Kavramlar, 11. Bütün Kodu Ayrıntılı Saymak, 12.1 $T_1$: `T = T + 1`, 12.2 $T_2$: `T = T + 2`, 12.3 $T_3$: `T = T + i`, 12.4 $T_4$: `T = T + 2*i`, 12.5 $T_5$: `T = T + T` (+37 more)
 
 ### Community 1064 - "gezirehberi_admin/Scripts/bootstrap.min.js"
-Cohesion: 0.02
-Nodes (44): Ae, B(), Be, D(), e(), F(), getDataAttributes(), ht (+36 more)
+Cohesion: 0.04
+Nodes (22): B(), Be, D(), F(), getDataAttributes(), I(), j(), M() (+14 more)
 
 ### Community 1065 - "Detaylı Açıklamalar"
 Cohesion: 0.05
@@ -16762,8 +16851,8 @@ Cohesion: 0.05
 Nodes (41): 10.1 Genel yapı, 10.2 Makine öğrenmesi ve NLP nerede?, 10.3 Kullanıcıya anlaşıldığını hissettirmek, 10.4 Araçlar ve neden sanal asistan?, 10. Görev Tabanlı Sanal Asistanlar, 1.1 Markov zinciri ile 1-gram ve 2-gram karşılaştırması, 1.2 Markov zinciri, LSTM ve T5, 1.3 Kelime tabanlı Markov zinciri ve karakter tabanlı LSTM (+33 more)
 
 ### Community 1070 - "stbi__err"
-Cohesion: 0.16
-Nodes (27): stbi__addints_valid(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__cpuid3(), stbi__decode_jpeg_header(), stbi__decode_jpeg_image(), stbi__extend_receive() (+19 more)
+Cohesion: 0.17
+Nodes (29): stbi__addints_valid(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__decode_jpeg_header(), stbi__decode_jpeg_image(), stbi__err(), stbi__extend_receive() (+21 more)
 
 ### Community 1071 - "Ders 3 Genişletilmiş Notu: Birliktelik Kuralları ve Apriori Algoritması"
 Cohesion: 0.05
@@ -16842,8 +16931,8 @@ Cohesion: 0.05
 Nodes (38): 10. Proje Yönetimi Yol Haritası, 11.1 PMI ve PMP Sertifikası, 11.2 Bilişim Projeleri Neden Kritiktir?, 11.3 Çevik Projeler İçin Sertifika, 11. PMI, PMP ve Bilişim Projelerinin Durumu, 12. Derste Görülecek Konular, 13.1 Proje Yönetim Araçları, 13.2 Soru-Cevap: Proje Planlama Çalışmasının Çıktısı (+30 more)
 
 ### Community 1095 - "K-Means Algoritması"
-Cohesion: 0.06
-Nodes (39): Batch (Toplu) K-Means, Betimleyici Vektör / Temsilci Örnek, Çapraz Geçerleme (k-fold), Yapay Zeka Ders 12 (2022-2023) Kaydı, Double Descent (Yapay Sinir Ağları), K-Means Algoritması, K-En Yakın Komşu (kNN) Algoritması, kNN ile Regresyon (+31 more)
+Cohesion: 0.08
+Nodes (28): Batch (Toplu) K-Means, Betimleyici Vektör / Temsilci Örnek, Çapraz Geçerleme (k-fold), Yapay Zeka Ders 12 (2022-2023) Kaydı, Double Descent (Yapay Sinir Ağları), K-Means Algoritması, K-En Yakın Komşu (kNN) Algoritması, kNN ile Regresyon (+20 more)
 
 ### Community 1096 - "User"
 Cohesion: 0.07
@@ -16870,8 +16959,8 @@ Cohesion: 0.06
 Nodes (35): Muhammad Ali, Articles.txt haber veri seti (business), Asya Kupası T20 2016 finali, Asya piyasaları 2015 açılışı, BahamasLeaks offshore şirketleri, Brexit referandumu 2016, business haber kategorisi, Platin, paladyum, gümüş fiyatları (+27 more)
 
 ### Community 1102 - "IEEE 802.11 Wi-Fi"
-Cohesion: 0.05
-Nodes (43): BSA/ESA (Basic/Extended Service Area), CSMA (persistent varyantları), CSMA/CA, Hidden node / Exposed node, IFS (SIFS PIFS DIFS EIFS), NAV, PCF (Point Coordination Function), RTS/CTS (+35 more)
+Cohesion: 0.06
+Nodes (41): Hidden terminal problemi, BSA/ESA (Basic/Extended Service Area), CSMA (persistent varyantları), CSMA/CA, Hidden node / Exposed node, IFS (SIFS PIFS DIFS EIFS), NAV, PCF (Point Coordination Function) (+33 more)
 
 ### Community 1103 - "Ders 4 Genişletilmiş Notu: JK ve T Flip-Flop ile Sayıcı Tasarımı, Kendi Kendini Düzeltme, ROM ve PLA"
 Cohesion: 0.05
@@ -16882,8 +16971,8 @@ Cohesion: 0.18
 Nodes (26): addBook(), addStudent(), addWriter(), createBookFile(), createBookSample(), deleteBook(), deleteStudent(), deleteWriter() (+18 more)
 
 ### Community 1105 - "STBIDEF"
-Cohesion: 0.07
-Nodes (56): readImage(), stbi__bitcount(), stbi__clamp(), stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__cpuid3(), stbi__do_zlib() (+48 more)
+Cohesion: 0.06
+Nodes (79): readImage(), load_jpeg_image(), resample_row_1(), stbi__bitcount(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y(), stbi__convert_16_to_8() (+71 more)
 
 ### Community 1106 - "Biçimbirimsel (morfolojik) analiz"
 Cohesion: 0.04
@@ -16924,10 +17013,6 @@ Nodes (47): 10.1 Yönelimli gradyan histogramları, 10.2 Neden histogram?, 10.3 
 ### Community 1116 - "Ders 5 Genişletilmiş Notu: Kaynak Gösterme, Tablo ve Grafik Hazırlama; TÜBİTAK 1002 Proje Grupları"
 Cohesion: 0.04
 Nodes (44): 1. Dersin Çerçevesi, 2.1 Benzer Bir Proje Olması Sorun mu?, 2.2 Her Yazılım Ar-Ge midir?, 2.3 Fikri Tartarken Nelere Bakılır?, 2. TÜBİTAK 1002'de Ar-Ge Niteliği ve Özgünlük, 3.1 Alan Uzmanı Gerekli mi?, 3.2 Efor ve Proje Yönetimi, 3.3 Kişilerin İsimleri Yazılmalı mı? (+36 more)
-
-### Community 1118 - "Carousel"
-Cohesion: 0.14
-Nodes (4): Carousel, getNextActiveElement(), isRTL(), isVisible()
 
 ### Community 1119 - "Carousel"
 Cohesion: 0.14
@@ -16974,8 +17059,8 @@ Cohesion: 0.04
 Nodes (47): 10.1 Problem, 10.2 Çözüm, 10. Template Method Uygulama Örneği: Veritabanı Sorgusu, 11.1 Amaç, 11.2 Derleyici örneği, 11. Visitor Kalıbı: Amaç ve Derleyici Örneği, 12.1 Örnek çözüm, 12.2 Kalıp yapısı (+39 more)
 
 ### Community 1130 - "stbi__jpeg"
-Cohesion: 0.13
-Nodes (38): stbi__addints_valid(), stbi__bit_reverse(), stbi__bitreverse16(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__compute_huffman_codes(), stbi__decode_jpeg_header() (+30 more)
+Cohesion: 0.20
+Nodes (25): stbi__addints_valid(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__decode_jpeg_header(), stbi__decode_jpeg_image(), stbi__err(), stbi__extend_receive() (+17 more)
 
 ### Community 1131 - "Detaylı Açıklamalar"
 Cohesion: 0.06
@@ -17008,10 +17093,6 @@ Nodes (43): 1.1 İntegral Bir Alandır, 1.2 Alanı Bilinen Parçalara Bölmek, 1
 ### Community 1139 - "Ders 13 Genişletilmiş Notu: Pekiştirmeli Öğrenme, RLHF ve Yapay Zekanın Etik/Hukuk İlişkileri"
 Cohesion: 0.04
 Nodes (50): 10.1 Birinci görüş: Hinton, 10.2 İkinci görüş: güvenilmezlik ve "yüksek teknoloji kopyacılığı", 10.3 Büyütmek yeter mi?, 10.4 İnsanları tahmin edilebilir hale getirmek, 10. Tartışma 2023: Bu Modeller Zeki mi?, 11.1 Tanımlar, 11.2 Hukuki olan her zaman etik midir?, 11.3 Verilerdeki önyargı (+42 more)
-
-### Community 1140 - "remove"
-Cohesion: 0.14
-Nodes (3): Collapse, remove(), Toast
 
 ### Community 1143 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.17
@@ -17046,8 +17127,8 @@ Cohesion: 0.04
 Nodes (46): 10. Little Endian ve Big Endian, 11.1 Elle toplama yöntemini tarif etmek, 11. Algoritma Nedir?, 12.1 Sınıfta tartışma, 12.2 Polya'nın dört adımı, 12.3 Birinci tasarım: sıralı, 12.4 İkinci tasarım: paralel, 12. Algoritma Tasarımı: En Yaşlıyı Bulmak (+38 more)
 
 ### Community 1151 - "Bölüm 6: Belirli integrallerin uygulamaları"
-Cohesion: 0.08
-Nodes (34): Fizik 1 Uygulama 4, Enerji korunumu, İş ve kinetik enerji, Yay potansiyel enerjisi, Akışkan Basıncı (Basınç-Derinlik Denklemi), Akışkan Kuvvetleri ve Merkezler (F = whA), Ağırlık Yoğunluğu, Bölüm 6: Belirli integrallerin uygulamaları (+26 more)
+Cohesion: 0.07
+Nodes (38): Fizik 1 Uygulama 4, Enerji korunumu, İş ve kinetik enerji, Yay potansiyel enerjisi, Akışkan Basıncı (Basınç-Derinlik Denklemi), Akışkan Kuvvetleri ve Merkezler (F = whA), Ağırlık Yoğunluğu, Bölüm 6: Belirli integrallerin uygulamaları (+30 more)
 
 ### Community 1152 - "Ders 8 Genişletilmiş Notu: Nesneye Dayalı Tasarım: Etkileşim Diyagramları, GRASP Sorumluluk Atama Prensipleri ve Tasarım Sınıf Diyagramı"
 Cohesion: 0.05
@@ -17055,15 +17136,15 @@ Nodes (43): 10.1 Denetçi Kullanmanın Faydaları, 10.2 Satış Sisteminde Denet
 
 ### Community 1153 - "auth.routes.js"
 Cohesion: 0.07
-Nodes (39): bcrypt, { generateOTP, sendOTPEmail, sendWelcomeEmail }, { generateToken }, getCurrentUser(), googleAuth(), googleAuthComplete(), googleClient, login() (+31 more)
+Nodes (38): bcrypt, { generateOTP, sendOTPEmail, sendWelcomeEmail }, { generateToken }, getCurrentUser(), googleAuth(), googleAuthComplete(), googleClient, login() (+30 more)
 
 ### Community 1154 - "Ders 9 Genişletilmiş Notu: Veri Tabanı Tasarımı (ERD ve Sınıf Diyagramı), Sistem Tasarımı, Kodlama ve Test"
-Cohesion: 0.05
-Nodes (43): 10.1 Kodlamanın tanımı ve akışı, 10.2 Programlama dilinin seçimi, 10.3 İyi kod yazma kuralları, 10. Kodlama, 11.1 Kaliteli yazılım ve kalite faktörleri, 11.2 Test basamakları, 11. Yazılım kalitesi ve test, 1. Dersin planı (+35 more)
+Cohesion: 0.04
+Nodes (50): 10.1 Kodlamanın tanımı ve akışı, 10.2 Programlama dilinin seçimi, 10.3 İyi kod yazma kuralları, 10. Kodlama, 11.1 Kaliteli yazılım ve kalite faktörleri, 11.2 Test basamakları, 11. Yazılım kalitesi ve test, 1. Dersin planı (+42 more)
 
 ### Community 1155 - "Ders 13 Genişletilmiş Notu: Dönem Projesi Sunumları (1. Gün)"
-Cohesion: 0.06
-Nodes (34): 1. Dersin Düzeni ve Sunumların Kapsamı, 3.1 Problem ve Amaç, 3.2 Sistemin Özellikleri, 3.3 Kabuller ve Kısıtlar, 3.4 Gantt Diyagramı ve Süreç Modeli, 3.5 Risk Tablosu ve Riskin Takibi, 3.6 Use Case Diyagramları, 3.7 Sınıf, Sıralama, Etkinlik ve Durum Diyagramları (+26 more)
+Cohesion: 0.05
+Nodes (43): 1. Dersin Düzeni ve Sunumların Kapsamı, 2.1 Problem ve Kapsam, 2.2 Kabuller ve Kısıtlar, 2.3 Gantt Diyagramı, Risk Tablosu ve Ekip, 2.4 Use Case Diyagramı ve Kullanım Senaryoları, 2.5 İzlenebilirlik Tablosu, 2.6 Tasarım Sınıf Diyagramı, 2.7 Sıralama, Durum ve Etkinlik Diyagramları (+35 more)
 
 ### Community 1156 - "YİF LED'ler: LED, OLED, Lazer, Güneş Pili"
 Cohesion: 0.12
@@ -17134,16 +17215,16 @@ Cohesion: 0.06
 Nodes (33): Geri Silme (Backspace) İkonu, Giden Arama İkonu, Cevapsız Arama İkonu, Gelen Arama İkonu, Tuş Takımı (Dialpad) İkonu, E-posta İkonu, Düzenle (Kalem) İkonu, Telefon İkonu (+25 more)
 
 ### Community 1173 - "Ders 5 Genişletilmiş Notu: Iterator, Memento ve Observer Kalıpları"
-Cohesion: 0.04
-Nodes (49): 10. Birbirine Benzeyen Kalıplar Üzerine, 11. Örnek Sorular, 1.1 Amaç ve sorun, 1.2 Aynı yapıda farklı dolaşım algoritmaları, 1.3 Java'nın Iterator'u ve KISS, 1.4 Birinci çözüm: List ve ListIterator, 1.5 İkinci çözüm ve kalıp yapısı, 1. Iterator Kalıbı (+41 more)
+Cohesion: 0.05
+Nodes (41): 10. Birbirine Benzeyen Kalıplar Üzerine, 1.1 Amaç ve sorun, 1.2 Aynı yapıda farklı dolaşım algoritmaları, 1.3 Java'nın Iterator'u ve KISS, 1.4 Birinci çözüm: List ve ListIterator, 1.5 İkinci çözüm ve kalıp yapısı, 1. Iterator Kalıbı, 2. Iterator Gerçekleme Kararları (+33 more)
 
 ### Community 1174 - "Ders 11 Genişletilmiş Notu: Bağlı Liste ile Kuyruk, Ağaç Terminolojisi ve İkili Ağaçta Gezinme"
 Cohesion: 0.05
-Nodes (37): 10.1 Dizi ile Gösterim, 10.2 Bağlı Yapı ile Gösterim, 10. İkili Ağaç, 11.1 `A + B * C` Örneği, 11. Ağaçta Gezinme, 1. Yığın ve Kuyruk: Hatırlatma, 2.1 Kaydırmalı Kuyruk, 2.2 Dairesel Kuyruk (+29 more)
+Nodes (39): 10.1 Dizi ile Gösterim, 10.2 Bağlı Yapı ile Gösterim, 10. İkili Ağaç, 11.1 `A + B * C` Örneği, 11. Ağaçta Gezinme, 12.1 Öğrencilere Bırakılan Çalışma, 12. Preorder Fonksiyonunu Yazmak, 1. Yığın ve Kuyruk: Hatırlatma (+31 more)
 
 ### Community 1175 - "FileWriter"
-Cohesion: 0.04
-Nodes (45): 15. Metin dosyaları, 1. Oturumun kapsamı, 2.1 Genişletme ve daraltma, 2.2 Genişletme örnekleri, 2.3 Daraltma örneği, 2.4 String'den sayıya: parse, 2. İlkel tiplerde tip dönüşümü, 3.1 Temel kural (+37 more)
+Cohesion: 0.06
+Nodes (32): 1. Oturumun kapsamı, 2.1 Genişletme ve daraltma, 2.2 Genişletme örnekleri, 2.3 Daraltma örneği, 2.4 String'den sayıya: parse, 2. İlkel tiplerde tip dönüşümü, 3.1 Temel kural, 3.2 Bir dosyada birden çok sınıf (+24 more)
 
 ### Community 1176 - "proje/onder_gormez/21501035.c"
 Cohesion: 0.20
@@ -17186,15 +17267,15 @@ Cohesion: 0.04
 Nodes (47): 10.1 İki yaklaşım, 10.2 Aradaki fark, 10.3 Verinin işlenmesinin hukuki boyutu, 10.4 Yol kalitesi ve risk haritası, 10. Participatory ve Opportunistic Crowdsourcing, 11.1 Collective intelligence (wisdom of the crowd), 11.2 Puanlama uygulamaları ve gelir modeli, 11.3 Crowd creation (user-generated content) (+39 more)
 
 ### Community 1186 - "Linear programming"
-Cohesion: 0.03
-Nodes (85): Augmenting path, Bipartite matching reduction to maxflow, FlowEdge and FlowNetwork APIs, Ford-Fulkerson algorithm, Maximum-capacity augmenting path, Maxflow problem, Maxflow-mincut theorem, Mincut / st-cut (+77 more)
+Cohesion: 0.04
+Nodes (73): Augmenting path, Bipartite matching reduction to maxflow, FlowEdge and FlowNetwork APIs, Ford-Fulkerson algorithm, Maximum-capacity augmenting path, Maxflow problem, Maxflow-mincut theorem, Mincut / st-cut (+65 more)
 
 ### Community 1187 - "antimatter_labyrinth_game.c"
 Cohesion: 0.17
 Nodes (24): asagiHamle(), bilgileriGoster(), bosluklardanKurtarma(), girisYapma(), hamleYapma(), karadeligeUlasildi(), kullaniciKoordinatBulma(), kullaniciOlusturma() (+16 more)
 
 ### Community 1188 - "Patient"
-Cohesion: 0.08
+Cohesion: 0.09
 Nodes (5): Hospital, IMedicalPersonel, Patient, Room, Treatment
 
 ### Community 1189 - "Ders 18 Genişletilmiş Notu: BJT Kutuplama Soru Çözümleri (Devam) ve FET'lere Giriş"
@@ -17238,8 +17319,8 @@ Cohesion: 0.05
 Nodes (42): 10. Bilgi Nereden Gelir?, 11.1 Matematiksel Hazırlık, 11.2 İlk Akış Diyagramı, 11. Kağıt Üzerinde Çözüm ve İlk Akış Diyagramı, 12.1 If, İşlemden Önce mi Sonra mı?, 12.2 True Kolunda Ne Yazdırılacak?, 12.3 False Kolunda Yapılamayacak Olan, 12.4 Düzeltilmiş Akış Diyagramı (+34 more)
 
 ### Community 1199 - "Chapter 11 BJT and JFET Frequency Response"
-Cohesion: 0.08
-Nodes (35): Beta Cutoff Frequency and fT, Bode Plot, Chapter 11 BJT and JFET Frequency Response (Problems), Chapter 11 BJT and JFET Frequency Response, Decibels, Frequency response problem set (BJT/JFET, Bode, PSpice), Giacoletto Hybrid-Pi Model, Half-Power Frequency (-3 dB) (+27 more)
+Cohesion: 0.10
+Nodes (25): Beta Cutoff Frequency and fT, Bode Plot, Chapter 11 BJT and JFET Frequency Response (Problems), Chapter 11 BJT and JFET Frequency Response, Decibels, Frequency response problem set (BJT/JFET, Bode, PSpice), Giacoletto Hybrid-Pi Model, Half-Power Frequency (-3 dB) (+17 more)
 
 ### Community 1200 - "stbi__jpeg"
 Cohesion: 0.16
@@ -17299,11 +17380,11 @@ Nodes (42): 10.1 Örnek, 10.2 Çalışma Önerisi, 10. Ayrık Fourier Serisi ve 
 
 ### Community 1215 - "Oslo Manual 2018"
 Cohesion: 0.09
-Nodes (34): Business enterprise sector, CDM model (Crépon, Duguet, Mairesse), Chapter 10: The object method for innovation measurement, Chapter 11: Use of innovation data for statistical indicators and analysis, Composite indicators, Digitalisation and innovation, European Innovation Scoreboard, Executive summary (+26 more)
+Nodes (32): Business enterprise sector, CDM model (Crépon, Duguet, Mairesse), Chapter 10: The object method for innovation measurement, Chapter 11: Use of innovation data for statistical indicators and analysis, Composite indicators, Digitalisation and innovation, European Innovation Scoreboard, Executive summary (+24 more)
 
 ### Community 1216 - "Circuit elements in the s domain"
-Cohesion: 0.05
-Nodes (58): Capacitor s-domain equivalent with initial voltage, Chapter 12 Introduction to the Laplace Transform, Chapter 13 The Laplace Transform in Circuit Analysis, Circuit elements in the s domain, Differentiation operational transform, Functional transforms, Improper rational functions, Impulse function (+50 more)
+Cohesion: 0.06
+Nodes (50): Capacitor s-domain equivalent with initial voltage, Chapter 12 Introduction to the Laplace Transform, Chapter 13 The Laplace Transform in Circuit Analysis, Circuit elements in the s domain, Differentiation operational transform, Functional transforms, Improper rational functions, Impulse function (+42 more)
 
 ### Community 1217 - "Supervised Algorithm Selection — Experiment Report"
 Cohesion: 0.09
@@ -17313,9 +17394,13 @@ Nodes (29): List of 1000 English Gutenberg books (e.g. Far from the Madding Crow
 Cohesion: 0.06
 Nodes (33): 10. İngilizce ile Türkçe Arasındaki Fark, 11. Çoklu Çözüm ve Anlam Belirsizliği, 12. Biçimbilimsel Analiz Nerede Kullanılır, 13. Bağlılık Analizi, 14. İngilizcede Çekim ve Yapım Ekleri, 15. Biçimbilimsel Çözümleyicinin Bileşenleri, 16. İngilizce İçin Sonlu Durum Otomatları, 17. Kök Bulma: Soldan ve Sağdan (+25 more)
 
+### Community 1221 - "Carousel"
+Cohesion: 0.14
+Nodes (4): Carousel, getNextActiveElement(), isRTL(), isVisible()
+
 ### Community 1223 - "Ders 3 Genişletilmiş Notu: Singleton, Adapter, Bridge, Composite ve Decorator Kalıpları"
-Cohesion: 0.03
-Nodes (61): 1.1 Sorumluluk kime verilmeli?, 1.2 Kalıbın yapısı, 1.3 Singleton ve kalıtım, 1. Singleton Kalıbı, 2.1 Amaç ve priz benzetmesi, 2.2 Kalıbın yapısı, 2.3 Örnek: çizim programına eski bir daire sınıfını uydurmak, 2. Yapısal Kalıplara Geçiş ve Adapter Kalıbı (+53 more)
+Cohesion: 0.05
+Nodes (40): 1.1 Sorumluluk kime verilmeli?, 1.2 Kalıbın yapısı, 1.3 Singleton ve kalıtım, 1. Singleton Kalıbı, 2.1 Amaç ve priz benzetmesi, 2.2 Kalıbın yapısı, 2.3 Örnek: çizim programına eski bir daire sınıfını uydurmak, 2. Yapısal Kalıplara Geçiş ve Adapter Kalıbı (+32 more)
 
 ### Community 1224 - "Ders 4 Genişletilmiş Notu: Görüntü Keskinleştirme, Gradyan Operatörleri ve Kenar Bulma"
 Cohesion: 0.04
@@ -17346,8 +17431,8 @@ Cohesion: 0.06
 Nodes (36): 10. Context'lerin Trie ile Tutulması, 11. Sözlük Tabanlı Yöntemlere Giriş, 12.1 Kaç kelime sözlükte olmalı?, 12. Statik Sözlük Örneği ve Sıkıştırma Koşulu, 13. String Sıkıştırma: Birden Fazla Sembolü Birlikte Kodlamak, 14. LZ ve Türev Algoritmalar, 15.1 En uzun çakışmanın bulunması ve token, 15. LZ77: Kayan Pencere (+28 more)
 
 ### Community 1232 - "Ders 10 altyazısı (4 Mayıs 2023) - Makine öğrenmesine giriş"
-Cohesion: 0.03
-Nodes (98): Eigenvalue Decomposition (EVD), Hessenberg Decomposition, Jordan Canonical Form, Left and Right Singular Vectors, Polar Decomposition, Schur Decomposition, Singular Values, Theorem 9.4.1 A and ATA Share Null Space, Row Space, Rank (+90 more)
+Cohesion: 0.05
+Nodes (57): Eigenvalue Decomposition (EVD), Hessenberg Decomposition, Jordan Canonical Form, Left and Right Singular Vectors, Polar Decomposition, Schur Decomposition, Singular Values, Theorem 9.4.1 A and ATA Share Null Space, Row Space, Rank (+49 more)
 
 ### Community 1233 - "Ders 10 Genişletilmiş Notu: Eğitmensiz Öğrenme: K-Means, Dirsek Yöntemi ve Hiyerarşik Öbekleme"
 Cohesion: 0.07
@@ -17375,7 +17460,7 @@ Nodes (26): A(), b(), c(), d(), e(), f(), g(), h() (+18 more)
 
 ### Community 1239 - "Chapter 6: Inner Product Spaces"
 Cohesion: 0.04
-Nodes (62): Normal equation, 6.1 Inner Products, 6.3 Gram-Schmidt Process; QR-Decomposition, 6.4 Best Approximation; Least Squares, 6.5 Mathematical Modeling Using Least Squares, 6.6 Function Approximation; Fourier Series, Products A A^T and A^T A are symmetric, Best Approximation Theorem (+54 more)
+Nodes (65): Normal equation, 6.1 Inner Products, 6.2 Angle and Orthogonality in Inner Product Spaces, 6.3 Gram-Schmidt Process; QR-Decomposition, 6.4 Best Approximation; Least Squares, 6.5 Mathematical Modeling Using Least Squares, 6.6 Function Approximation; Fourier Series, Angle Between Vectors (+57 more)
 
 ### Community 1240 - "veri_yapıları_ve_algoritmalar/ödevler/ödev_2/21011084.c"
 Cohesion: 0.22
@@ -17409,9 +17494,9 @@ Nodes (27): dependencies, depth, source, url, version, dependencies, depth, sour
 Cohesion: 0.10
 Nodes (6): BotScript, buyFood, CharacterMovement, EventScript, NextTurn, Recruitment
 
-### Community 1248 - "Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_1/README.md"
-Cohesion: 0.05
-Nodes (31): BST'den silme, BST tekrarı ve ekleme örneği, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, `findBigChild` fonksiyonu, Genel Konular, Heap ağacı, Heap'e ekleme (min heap) (+23 more)
+### Community 1248 - "Ders 35 Genişletilmiş Notu: İşletim Sistemleri ve Bilgisayar Ağlarına Giriş"
+Cohesion: 0.03
+Nodes (57): 10.1 Bus yapısında iletim, 10.2 Star yapısında iletim, 10. Ağların sınıflandırılması, 11.1 Gizli terminal problemi, 11. Erişim protokolleri: CSMA/CD ve CSMA/CA, 12. Ağları birleştirme: repeater, bridge, switch, router, 13.1 IPC: client-server ve peer-to-peer, 13.2 Dağıtık sistemler (+49 more)
 
 ### Community 1250 - "com.unity.modules.imgui"
 Cohesion: 0.08
@@ -17422,12 +17507,12 @@ Cohesion: 0.05
 Nodes (41): 1. Dizi Üzerindeki Temel İşlemler, 2. Çift Tırnak ile Tek Tırnak Arasındaki Fark, 3.1 Akış Diyagramı, 3.2 Eleman Dizide Yoksa, 3.3 Eleman Son Gözdeyse, 3. Sırasız Dizide Arama, 4.1 Koşulun Yönü: İlk Denemeler, 4.2 Sınır Sorunu: Dizinin Dışına Erişim (+33 more)
 
 ### Community 1254 - "contains"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (4): Alert, contains(), effect$1(), Tab
 
 ### Community 1256 - "Ders 7 Genişletilmiş Notu: Bağlı Listeye Giriş: Düğüm Oluşturma, Ekleme ve Yazdırma"
 Cohesion: 0.05
-Nodes (40): 10. Listeyi Yazdırma, 11. İkili Ağacı Düz Dizide Tutmanın Sorunu, 12.1 Liste Boşsa, 12.2 Listede Eleman Varsa, 12.3 Hocanın Verdiği Alıştırma, 12. Araya Ekleme: Sıralı Liste, 13. Sıradaki Konu: Düğüm Silme, 1.1 Dizi: En Temel Veri Yapısı (+32 more)
+Nodes (36): 10. Listeyi Yazdırma, 11. İkili Ağacı Düz Dizide Tutmanın Sorunu, 12.1 Liste Boşsa, 12.2 Listede Eleman Varsa, 12.3 Hocanın Verdiği Alıştırma, 12. Araya Ekleme: Sıralı Liste, 13. Sıradaki Konu: Düğüm Silme, 1.1 Dizi: En Temel Veri Yapısı (+28 more)
 
 ### Community 1258 - "Ders 4 Genişletilmiş Notu: SRS Belgesi (IEEE 830), Test Süreci Adımları ve Test Tipleri"
 Cohesion: 0.04
@@ -17470,8 +17555,8 @@ Cohesion: 0.05
 Nodes (41): 10. Yakınsaklık Yarıçapından Parametre Bulma, 11.1 Yay uzunluğu, 11.2 Konum vektörü ile ivme arasındaki açı, 11. Vektör Fonksiyonları: Yay Uzunluğu ve Konum-İvme Açısı, 12.1 Tanım kümesi, 12.2 Limit, 12.3 Zincir kuralı, 12. Tanım Kümesi, Limit ve Zincir Kuralı (+33 more)
 
 ### Community 1270 - "Profile-Based Adaptive Text Compression (MLP ile algoritma seçimi)"
-Cohesion: 0.08
-Nodes (30): Rapor: Profile-Based Adaptive Text Compression, Profile-Based Adaptive Text Compression (MLP ile algoritma seçimi), Optimal chunk size 1024 byte, 5-fold book-level CV: %2.27 iyileşme, p<1e-6, Çeşitli korpus: 7 domain, 148 doküman, MLP-Large %84.8 doğruluk, XGBoost'tan iyi, Oracle gap 0.01 BPB (%91), zstd modern codec adaptif seçimi gereksiz kılar (+22 more)
+Cohesion: 0.09
+Nodes (28): Rapor: Profile-Based Adaptive Text Compression, Profile-Based Adaptive Text Compression (MLP ile algoritma seçimi), Optimal chunk size 1024 byte, 5-fold book-level CV: %2.27 iyileşme, p<1e-6, Çeşitli korpus: 7 domain, 148 doküman, MLP-Large %84.8 doğruluk, XGBoost'tan iyi, Oracle gap 0.01 BPB (%91), zstd modern codec adaptif seçimi gereksiz kılar (+20 more)
 
 ### Community 1271 - "Veri Sıkıştırma/slaytlar_notlar/2023/onder_gormez markdown/01_02_10_2023.md"
 Cohesion: 0.06
@@ -17539,7 +17624,7 @@ Nodes (28): İletkenlik (σ=q(nμn+pμp)), Absorpsiyon (Soğurma), Eksiton, Kır
 
 ### Community 1287 - "ctype"
 Cohesion: 0.03
-Nodes (94): createStack(), evaluatePostfix(), isEmpty(), main(), pop(), push(), Stack, array (+86 more)
+Nodes (90): createStack(), evaluatePostfix(), isEmpty(), main(), pop(), push(), Stack, array (+82 more)
 
 ### Community 1288 - "business.txt (haber veri seti, iş kategorisi)"
 Cohesion: 0.09
@@ -17574,24 +17659,24 @@ Cohesion: 0.07
 Nodes (29): Randevu küçük resmi varyant 2, Randevu küçük resmi (kalp + artı ikon), Karanlık mod simgesi, Kontrol paneli (dashboard) ızgara simgesi, Silme (çöp kutusu) simgesi, Doktor simgesi, Doktor menüsü kimlik kartı simgesi, Doktor küçük resmi (+21 more)
 
 ### Community 1296 - "Lineer Denklem Sistemleri (Özdemir 2020 slaytı)"
-Cohesion: 0.04
-Nodes (77): Elementer (Temel) Satır İşlemleri, Genişletilmiş Katsayılar Matrisi (Augmented Matrix), Lineer Denklem Sistemleri, Satırca Denk Matrisler (Row Equivalent Matrices), Aşikar çözüm, Denk denklem sistemleri, Denk matrisler, Lineer Denklem Sistemleri (Özdemir 2020 slaytı) (+69 more)
+Cohesion: 0.03
+Nodes (97): Elementer (Temel) Satır İşlemleri, Gauss Yok Etme Metodu (Gaussian Elimination), Genişletilmiş Katsayılar Matrisi (Augmented Matrix), Lineer Denklem Sistemleri, Satırca Denk Matrisler (Row Equivalent Matrices), Aşikar çözüm, Denk denklem sistemleri, Denk matrisler (+89 more)
 
 ### Community 1297 - "odev2/ondergormez/readme.md"
 Cohesion: 0.07
 Nodes (29): Soru 1, Önder GÖRMEZ - 21501035, Bilimsel Hazırlık Öğrencisi, BLM2022 Bilgisayar Donanımı, Cache Kısmı, CPU Tipini Tespit Etme, CPU Özelliklerini Detaylı Olarak Görme, Genel Yorumlar (+21 more)
 
 ### Community 1298 - "stbi__err"
-Cohesion: 0.17
-Nodes (29): load_jpeg_image(), stbi__addints_valid(), stbi__blinn_8x8(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__compute_y(), stbi__decode_jpeg_header() (+21 more)
+Cohesion: 0.16
+Nodes (27): stbi__addints_valid(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__cpuid3(), stbi__decode_jpeg_header(), stbi__decode_jpeg_image(), stbi__extend_receive() (+19 more)
 
 ### Community 1299 - "Doğal Dil İşlemeye Kavramsal Bir Bakış/ders_kayitlari/2020-2021/README.md"
 Cohesion: 0.06
 Nodes (19): Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Vize başlangıcı, Ders 5 Çalışma Özeti (+11 more)
 
 ### Community 1300 - "stbi__err"
-Cohesion: 0.16
-Nodes (27): stbi__addints_valid(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__cpuid3(), stbi__decode_jpeg_header(), stbi__decode_jpeg_image(), stbi__extend_receive() (+19 more)
+Cohesion: 0.12
+Nodes (44): stbi__addints_valid(), stbi__bit_reverse(), stbi__bitreverse16(), stbi__build_fast_ac(), stbi__build_huffman(), stbi__cleanup_jpeg(), stbi__compute_huffman_codes(), stbi__decode_jpeg_header() (+36 more)
 
 ### Community 1301 - "Ders 11 Genişletilmiş Notu: Ortak Atıf, Bibliyografik Eşleşme ve PageRank Algoritması"
 Cohesion: 0.05
@@ -17630,8 +17715,8 @@ Cohesion: 0.06
 Nodes (33): 10. İkili Aramanın Karmaşıklığı, 11. Soru: 0'ların Bitip 1'lerin Başladığı Yer, 1.1 Çalışma Süresini Doğrudan Ölçmek, 1.2 Sisteme Bağlı Etkenler, 1.3 Sistemden Bağımsız Etkenler, 1.4 Objektif Ölçüm: $n$'e Bağlı Hesap, 1. Bir Algoritmanın Verimliliği Nasıl Ölçülür?, 2. İşlem Sayma Örneği (+25 more)
 
 ### Community 1312 - "Ders 1 altyazısı (Introduction to Bioinformatics, 2 Nisan 2021)"
-Cohesion: 0.08
-Nodes (31): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Yaklaşık yöntemler, Çoklu hizalamanın hesaplama zorluğu, Ders 12 Çalışma Özeti (+23 more)
+Cohesion: 0.07
+Nodes (34): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Yaklaşık yöntemler, Çoklu hizalamanın hesaplama zorluğu, Ders 12 Çalışma Özeti (+26 more)
 
 ### Community 1313 - "Bonsai Kategorisi Veri Kümesi (101_ObjectCategories)"
 Cohesion: 0.07
@@ -17691,10 +17776,10 @@ Nodes (29): ADC Sampling, Reconstruction and Aliasing (130 Hz lost, appears as 3
 
 ### Community 1328 - "Ders 4 Genişletilmiş Notu: Mobil Uygulama Trendleri, Android Mimarisi ve İlk Android Projesi"
 Cohesion: 0.04
-Nodes (56): 10. İlk Uygulamayı Tasarlarken: Giriş Noktaları ve Farklı Cihazlar, 11. Diller, APK ve Android App Bundle, 12. En Az Ayrıcalık İlkesi, 13.1 Activity, 13.2 Service, 13.3 Broadcast Receiver, 13.4 Content Provider, 13. Temel Uygulama Bileşenleri (+48 more)
+Nodes (49): 10. İlk Uygulamayı Tasarlarken: Giriş Noktaları ve Farklı Cihazlar, 11. Diller, APK ve Android App Bundle, 12. En Az Ayrıcalık İlkesi, 13.1 Activity, 13.2 Service, 13.3 Broadcast Receiver, 13.4 Content Provider, 13. Temel Uygulama Bileşenleri (+41 more)
 
 ### Community 1329 - "contains"
-Cohesion: 0.16
+Cohesion: 0.15
 Nodes (4): Alert, contains(), effect$1(), Tab
 
 ### Community 1330 - "Ders 6 Genişletilmiş Notu: Kimyasal Risk Etmenleri, Kimyasal Etkileşimler, Depolama ve Tehlike Sembolleri"
@@ -17710,12 +17795,12 @@ Cohesion: 0.13
 Nodes (29): Akış Şeması: FUNC1 Recursive Dizi Ekleme Algoritması (başa/araya eleman ekleme), Debugger Register Dökümü: AX=0106 CX=1E5F SS=075A IP=0103 (başlangıç durumu), Bellek Dökümü 075A:0150-0170, Bellek Dökümü 075A:0180-01F0, Bellek Dökümü 075A:0200-0270, Bellek Dökümü 075A:0280-02F0, Bellek Dökümü 075A:0300-0370, Debugger Register Dökümü: AX=0086 CX=1E5F SS=075A IP=0103 (ikinci çalışma) (+21 more)
 
 ### Community 1333 - "8259A Programmable Interrupt Controller"
-Cohesion: 0.06
-Nodes (30): 8259A Programmable Interrupt Controller, Daisy Chain INTR Expansion, ICW/OCW (8259A Initialization/Operation Command Words), Interrupt (Kesme), INTR (Maskable Hardware Interrupt), Kesme Bayrakları (IF/TF Interrupt Flags), Kesme Vektör Tablosu (Interrupt Vector Table), NMI (Non-Maskable Interrupt) (+22 more)
+Cohesion: 0.07
+Nodes (29): 8259A Programmable Interrupt Controller, Daisy Chain INTR Expansion, ICW/OCW (8259A Initialization/Operation Command Words), INTR (Maskable Hardware Interrupt), Kesme Bayrakları (IF/TF Interrupt Flags), Kesme Vektör Tablosu (Interrupt Vector Table), NMI (Non-Maskable Interrupt), 8254 Programmable Interval Timer (PIT) (+21 more)
 
 ### Community 1334 - "Ders 8 Genişletilmiş Notu: Refactoring'e Giriş ve JUnit ile Birim Sınaması"
 Cohesion: 0.05
-Nodes (41): 10.1 Bilerek hata yapmak, 10.2 Hata izini okumak, 10.3 TestAll ile test suite, 10. Başarısız Bir Testin İncelenmesi ve Test Suite, 1.1 Tanım, 1.2 Amaç: iç kalite, 1. Refactoring Nedir, Ne Amaçlar?, 2.1 Nasıl yapılır? (+33 more)
+Nodes (40): 10.1 Bilerek hata yapmak, 10.2 Hata izini okumak, 10.3 TestAll ile test suite, 10. Başarısız Bir Testin İncelenmesi ve Test Suite, 1.1 Tanım, 1.2 Amaç: iç kalite, 1. Refactoring Nedir, Ne Amaçlar?, 2.1 Nasıl yapılır? (+32 more)
 
 ### Community 1335 - "Yazılım Fizibilitesi"
 Cohesion: 0.09
@@ -17730,8 +17815,8 @@ Cohesion: 0.05
 Nodes (41): 1.1 Birliktelik Analizi, 1.2 İçerik Tabanlı Öneriden Farkı, 1. Sepet Analizi: Birliktelik Fikri, 2.1 Veri Yapısı: Neden Düzensiz Liste Değil?, 2.2 Sepet-Ürün Matrisi A, 2.3 Birlikte Satış Matrisi T, 2.4 if'ten Kurtulmak, 2.5 Üçlü Ürünler ve Üç Boyutlu Matris (+33 more)
 
 ### Community 1338 - "Chapter 3 Structured Program Development in C"
-Cohesion: 0.02
-Nodes (107): Flowchart, Appendix D Game Programming: Solving Sudoku, Assignment operators, Bohm and Jacopini theorem, _Bool and stdbool.h, break statement, Cast operator, Chapter 2 Exercises (+99 more)
+Cohesion: 0.03
+Nodes (94): Flowchart, Arithmetic overflow, Assignment operators, Bohm and Jacopini theorem, _Bool and stdbool.h, break statement, Cast operator, Chapter 2 Exercises (+86 more)
 
 ### Community 1339 - "Culture lecture notes 2019"
 Cohesion: 0.16
@@ -17747,7 +17832,7 @@ Nodes (48): 10.1 Sözleşme nedir?, 10.2 Örnek sözleşme: satış kalemi giri�
 
 ### Community 1342 - "Ders 5 Genişletilmiş Notu: Facade, Flyweight, Proxy, Chain of Responsibility ve Command Kalıpları"
 Cohesion: 0.04
-Nodes (51): 10.1 Amaç, 10.2 Örnek: Menü Komutları, 10.3 Kalıp Yapısı, 10. Command Kalıbı, 11.1 Problem ve Tasarım, 11.2 Kaynak Kod, 11. Command Uygulama Örneği: Akıllı Ev Kumandası, 1. Facade Kalıbı (+43 more)
+Nodes (47): 11.1 Problem ve Tasarım, 11.2 Kaynak Kod, 11. Command Uygulama Örneği: Akıllı Ev Kumandası, 1. Facade Kalıbı, 2.1 Amaç, 2.2 Örnek: Metin Düzenleme Programı, 2.3 Sorun, 2.4 Çözüm Fikri (+39 more)
 
 ### Community 1343 - "Ders 13 Genişletilmiş Notu: C Programlama Diline Giriş: Yapı, Operatörler, Tipler, if ve Döngüler"
 Cohesion: 0.05
@@ -17859,7 +17944,7 @@ Nodes (25): dependencies, depth, source, version, dependencies, depth, source, v
 
 ### Community 1370 - "8251 USART"
 Cohesion: 0.11
-Nodes (28): 74154 demultiplexer, Adres çözümleme (M/IO, izole I/O, 0156H/0157H), 9600 baud, 8 data biti, 1 stop biti, paritisiz, BLM3061 Lab 6 - 8251 USART transmitter-receiver, Receive/transmit son 2 veya 3 karakter, Virtual Terminal (2 adet), '0' girilene kadar alma, son 3 karakter, Adres 0158H, M/IO izole I/O (+20 more)
+Nodes (27): 74154 demultiplexer, Adres çözümleme (M/IO, izole I/O, 0156H/0157H), 9600 baud, 8 data biti, 1 stop biti, paritisiz, BLM3061 Lab 6 - 8251 USART transmitter-receiver, Receive/transmit son 2 veya 3 karakter, Virtual Terminal (2 adet), '0' girilene kadar alma, son 3 karakter, Adres 0158H, M/IO izole I/O (+19 more)
 
 ### Community 1371 - "Ders 10 Genişletilmiş Notu: Temel Yüzeyler, Seviye Eğrileri ve Çok Değişkenli Fonksiyonlarda Limit ve Süreklilik"
 Cohesion: 0.05
@@ -17891,7 +17976,7 @@ Nodes (42): 10. Doğrulama ve Geçerleme Terimleri, 11.1 Modelin İki Kolu, 11.2
 
 ### Community 1378 - "Ders 13 Genişletilmiş Notu: Void İşaretçi, Dosya İşlemlerine Giriş: Stream, Metin ve İkili Dosyalar, fopen Kipleri ve Dönem Projesi"
 Cohesion: 0.05
-Nodes (37): 10.1 stdout ile stderr Sırası, 10.2 Dosya Yolu ve İzinler, 10. Dosya Açma Kodu, 11. openFile Fonksiyonu, 13. Dönem Projesinin Teknik Yapısı, 1.1 Ne İşe Yarar?, 1.2 Tanım ve Atama, 1.3 malloc ile Bağlantı (+29 more)
+Nodes (38): 10.1 stdout ile stderr Sırası, 10.2 Dosya Yolu ve İzinler, 10. Dosya Açma Kodu, 11. openFile Fonksiyonu, 13. Dönem Projesinin Teknik Yapısı, 1.1 Ne İşe Yarar?, 1.2 Tanım ve Atama, 1.3 malloc ile Bağlantı (+30 more)
 
 ### Community 1379 - "SigmoidMLNN"
 Cohesion: 0.14
@@ -17906,8 +17991,8 @@ Cohesion: 0.07
 Nodes (27): Masa/şamdan lambası ürün fotoğrafı (image_0001.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0002.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0003.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0004.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0005.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0006.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0007.jpg), Masa/şamdan lambası ürün fotoğrafı (image_0008.jpg) (+19 more)
 
 ### Community 1382 - "Ders 4 Genişletilmiş Notu: Tümevarımla Yerine Koyma Yöntemi ve Hash Tabloları"
-Cohesion: 0.06
-Nodes (35): 1. Geçen Dersin Tekrarı: Medyan Bulmanın Özyineleme Bağıntısı, 2.1 Yöntemin Adımları, 2.2 Örnek: Merge Sort'un Bağıntısı, 2.3 Başlangıç Değerleri: $c$ ve $n_0$, 2.4 Soru-Cevap: Neden $n+1$ Değil de $n/2$?, 2.5 Yanlış Tahmin Yapılırsa, 2.6 Medyan Bulmanın Analizi, 2. Tümevarımla Yerine Koyma Yöntemi (Substitution Method) (+27 more)
+Cohesion: 0.05
+Nodes (39): 1. Geçen Dersin Tekrarı: Medyan Bulmanın Özyineleme Bağıntısı, 2.1 Yöntemin Adımları, 2.2 Örnek: Merge Sort'un Bağıntısı, 2.3 Başlangıç Değerleri: $c$ ve $n_0$, 2.4 Soru-Cevap: Neden $n+1$ Değil de $n/2$?, 2.5 Yanlış Tahmin Yapılırsa, 2.6 Medyan Bulmanın Analizi, 2. Tümevarımla Yerine Koyma Yöntemi (Substitution Method) (+31 more)
 
 ### Community 1383 - "dalmatian dataset (101 Object Categories)"
 Cohesion: 0.07
@@ -17930,12 +18015,12 @@ Cohesion: 0.14
 Nodes (3): Backdrop, execute(), Swipe
 
 ### Community 1388 - "ALU"
-Cohesion: 0.04
-Nodes (28): datapath, datapath, Core_Datapath, Core_Datapath, datapath, ALU_32, ALU_32_tb, a_ALUwithRegister_tb (+20 more)
+Cohesion: 0.08
+Nodes (19): datapath, datapath, datapath, ALU_32, ALU_32_tb, a_ALUwithRegister_tb, b_ALUwithRegister_tb, instruction_based_testbench (+11 more)
 
 ### Community 1389 - "Ders 13 Genişletilmiş Notu: Yüksek Seviyeli Dil ile Assembly Bağlantısı: Inline Assembly, Obje Kodu ve Çağırma Kuralları"
 Cohesion: 0.05
-Nodes (38): 10.1 Araçlar, 10.2 Makefile, 10.3 32 bit sürüm, 10.4 64 bit sürüm, 10. Linux'ta GCC ve NASM ile C-Assembly Bağlantısı, 11. GDB ile Hata Ayıklama, 1.1 Genel hata: yüksek yarının belirsiz kalması, 1.2 Ardışık çarpma ve bölmede sıra (+30 more)
+Nodes (37): 10.1 Araçlar, 10.2 Makefile, 10.3 32 bit sürüm, 10.4 64 bit sürüm, 10. Linux'ta GCC ve NASM ile C-Assembly Bağlantısı, 1.1 Genel hata: yüksek yarının belirsiz kalması, 1.2 Ardışık çarpma ve bölmede sıra, 1.3 Boyut analizi (+29 more)
 
 ### Community 1390 - "Lojik Devre Laboratuvarı Deney Föyü 2023"
 Cohesion: 0.15
@@ -17954,16 +18039,16 @@ Cohesion: 0.05
 Nodes (40): 10. Yağmur ve Para Örneğinde Örneklem Uzayı, 11.1 Bağımsızlık Kuralları, 11.2 Üç Olayın Bağımsızlığı, 11. Bağımsızlık Kuralları ve Üç Olayın Bağımsızlığı, 12.1 Kural, 12.2 Mantığı, 12.3 Örnek: Hileli Paralar, 12. Toplam Olasılık Kuralı (+32 more)
 
 ### Community 1394 - "Ders 7 Genişletilmiş Notu: Sınıflayıcı Değerlendirme Ölçütleri, Dengesiz Veri, ROC Eğrisi ve k-En Yakın Komşu"
-Cohesion: 0.05
-Nodes (39): 1.1 İki ve üç parçalı bölme, 1.2 Aşırı öğrenme hatırlatması, 1. Dersin Yeri ve Model Kestirimi, 2.1 Yeniden yerine koyma (resubstitution), 2.2 Ayırma (holdout), 2.3 Birini dışarıda bırak (leave-one-out), 2.4 k-katlı çapraz doğrulama (k-fold cross validation), 2.5 Bootstrap (+31 more)
+Cohesion: 0.04
+Nodes (48): 1.1 İki ve üç parçalı bölme, 1.2 Aşırı öğrenme hatırlatması, 1. Dersin Yeri ve Model Kestirimi, 2.1 Yeniden yerine koyma (resubstitution), 2.2 Ayırma (holdout), 2.3 Birini dışarıda bırak (leave-one-out), 2.4 k-katlı çapraz doğrulama (k-fold cross validation), 2.5 Bootstrap (+40 more)
 
 ### Community 1395 - "Single-cycle RISC-V işlemci ve ISA genişletmeleri"
 Cohesion: 0.09
 Nodes (16): RISC-V counting sort assembly (arr/count/result), Makine kodu hex dökümü, ARR/COUNT/RESULT O(n) azalan sıralama (RISC-V assembly), Hızlı toplayıcı (RCA'ya alternatif), Fmax, setup/hold zaman analizi, Yüksek performanslı structural ALU ve datapath, Çevrim analizi: 116 + COUNT, toplam 2564, Çift pozisyonlu set bitleri sayma algoritması (+8 more)
 
 ### Community 1396 - "Ders 11 Genişletilmiş Notu: Aktif Veritabanları (Tetikleyiciler) ve Veritabanı Güvenliği (Yetkilendirme, Zorunlu Erişim Denetimi, Örtülü Kanallar)"
-Cohesion: 0.05
-Nodes (39): 10. View ile İnce Ayar, 11. Assertion, Yabancı Anahtar ve REFERENCES Yetkisi, 12.1 WITH GRANT OPTION, 12.2 Grant diyagramları, 12.3 REVOKE: CASCADE ve RESTRICT, 12. WITH GRANT OPTION, Grant Diyagramları ve REVOKE, 13.1 Takdire bağlı yöntemin açığı, 13.2 Güvenlik seviyeleri (+31 more)
+Cohesion: 0.04
+Nodes (45): 10. View ile İnce Ayar, 11. Assertion, Yabancı Anahtar ve REFERENCES Yetkisi, 12.1 WITH GRANT OPTION, 12.2 Grant diyagramları, 12.3 REVOKE: CASCADE ve RESTRICT, 12. WITH GRANT OPTION, Grant Diyagramları ve REVOKE, 13.1 Takdire bağlı yöntemin açığı, 13.2 Güvenlik seviyeleri (+37 more)
 
 ### Community 1397 - "maze_game/21011022.c"
 Cohesion: 0.19
@@ -18027,7 +18112,7 @@ Nodes (43): 10. Hata tespiti: eşlik ve CRC, 11.1 Gönderici akışı, 11.2 Gön
 
 ### Community 1413 - "Ders 8 Genişletilmiş Notu: Fonksiyonlar, Prototip, Değerle ve Referansla Çağırma, Bubble Sort ve İkili Arama"
 Cohesion: 0.05
-Nodes (41): 10.1 Değerle Çağırma, 10.2 scanf ve Adres, 10.3 Referansla Çağırma, 10. Değerle Çağırma ve Referansla Çağırma, 11.1 İlk Değer Verme, 11. Dizilerin Özellikleri, 12. Karakter Dizileri, 13.1 Dizi ve Eleman Nasıl Gönderilir? (+33 more)
+Nodes (43): 10.1 Değerle Çağırma, 10.2 scanf ve Adres, 10.3 Referansla Çağırma, 10. Değerle Çağırma ve Referansla Çağırma, 11.1 İlk Değer Verme, 11. Dizilerin Özellikleri, 12. Karakter Dizileri, 13.1 Dizi ve Eleman Nasıl Gönderilir? (+35 more)
 
 ### Community 1414 - "Learning-Augmented B-Trees"
 Cohesion: 0.42
@@ -18074,8 +18159,8 @@ Cohesion: 0.07
 Nodes (27): Crocodile Image Dataset (Caltech-101 category), Crocodile dataset photo 0025 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0026 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0027 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0028 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0029 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0030 (full-body crocodile, Caltech-101 image_processing dataset), Crocodile dataset photo 0031 (full-body crocodile, Caltech-101 image_processing dataset) (+19 more)
 
 ### Community 1427 - "Ders 1 Genişletilmiş Notu: Nesneye Dayalı Tasarıma Giriş: Yazılım Kalitesi, Bağlaşım ve Uyum, Tasarım Kalıpları ve MVC"
-Cohesion: 0.03
-Nodes (55): 4. C++'ta Kopya Yapıcı ve Yıkıcı, Adres defteri örneği, C++'ta kopya yapıcı, Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Hocanın Özellikle Vurguladığı Kısımlar, Kopya yapıcı (copy constructor) (+47 more)
+Cohesion: 0.05
+Nodes (37): 10.1 Sorun ve çözüm, 10.2 Seçim örneği, 10.3 Model değişince View nasıl haberdar olur?, 10.4 Kullanıcı veriyi View üzerinden değiştirirse, 10.5 Ressam benzetmesi, 10.6 Kalıbın genişletilmesi, 10. Örnek Tasarım Kalıbı: Model-View-Controller, 1.1 Ek kaynaklar (+29 more)
 
 ### Community 1428 - "Sosyal Seçmeli 1/README.md"
 Cohesion: 0.09
@@ -18105,9 +18190,9 @@ Nodes (48): 1. Dersin Yapısı, 2.1 Zaman Ölçmeye Neden İhtiyaç Duyuldu?, 2.
 Cohesion: 0.17
 Nodes (12): Acil eylem planı, CAS numarası, EINECS, Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik, Mesleki maruziyet sınır değeri, Mutajen madde, Sağlık gözetimi, Solunum bölgesi (+4 more)
 
-### Community 1436 - "Gereksinim mühendisliği"
+### Community 1436 - "Pe"
 Cohesion: 0.07
-Nodes (38): Abbott dilsel analiz (isimleri seç), Domain Model (görsel sözlük), Domain Modeling (Larman), UML ilişkileri ve çokluk (multiplicity), Nitelik yönergeleri, UP artifact'leri, Writing Use Cases (Larman), Elementary Business Process yönergesi (+30 more)
+Nodes (3): Ae, Pe, Ce()
 
 ### Community 1437 - "Final Test Uygulama-3 Cevapları (Matematik 1)"
 Cohesion: 0.40
@@ -18145,9 +18230,9 @@ Nodes (45): 10. Köşe Cevap Fonksiyonu, 11.1 Adımlar, 11.2 Non-maximum suppres
 Cohesion: 0.06
 Nodes (33): Adım Adım Regex Örneği, Bağlılık Analizi (Dependency Parsing), Biçimbilimsel Analiz, Biçimbilimsel Analizin Kullanım Alanları, Biçimbilimsel Çözümleyicinin Bileşenleri, Ders 4 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+25 more)
 
-### Community 1447 - "com.google.android.gms.tasks.Task"
-Cohesion: 0.02
-Nodes (58): OnCompleteListener<AuthResult>, View.OnClickListener, View.OnClickListener, OnCompleteListener<AuthResult>, NoteActivity, Runnable, OnCompleteListener<Void>, OnCompleteListener<Void> (+50 more)
+### Community 1447 - "NoteActivity"
+Cohesion: 0.10
+Nodes (11): NoteActivity, Runnable, OnCompleteListener<Void>, OnCompleteListener<Void>, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener (+3 more)
 
 ### Community 1449 - "ScrollSpy"
 Cohesion: 0.12
@@ -18203,15 +18288,15 @@ Nodes (38): dependencies, axios, react, react-dom, react-hot-toast, react-icons,
 
 ### Community 1463 - "A* algorithm"
 Cohesion: 0.03
-Nodes (97): A* algorithm, Chapter 11 Review Problems, Integer factoring problem, Modular notation (x mod m), Production system ve sezgisel arama, RSA örneği (p=7, q=13, n=91, e=5, d=29), CSMA/CA, Best-first search (+89 more)
+Nodes (85): A* algorithm, Chapter 11 Review Problems, Integer factoring problem, Modular notation (x mod m), Production system ve sezgisel arama, RSA örneği (p=7, q=13, n=91, e=5, d=29), Best-first search, A* ve Best First Search - Yol bulma README (+77 more)
 
 ### Community 1464 - "Account"
 Cohesion: 0.12
 Nodes (5): Account, AccountDepositer, AccountWithdrawer, AccountDepositer, AccountWithdrawer
 
 ### Community 1465 - "CRS"
-Cohesion: 0.08
-Nodes (13): CRS, DoctorManager, HospitalManager, SectionManager, DeleteHospitalGUI, AdminMenu, DoctorMenu, HospitalMenu (+5 more)
+Cohesion: 0.05
+Nodes (18): CRS, DoctorManager, HospitalManager, SectionManager, PatientManager, DeleteHospitalGUI, RenameHospitalGUI, AddPatientGUI (+10 more)
 
 ### Community 1466 - "Shingling (k-shingle extraction, k=4,5,8)"
 Cohesion: 0.08
@@ -18234,8 +18319,8 @@ Cohesion: 0.05
 Nodes (42): 1. Kalite İyileştirme ve Sertifika Sistemleri, 2.1 Temel fikir, 2.2 Süreç iyileştirme döngüsü, 2. CMMI: Süreç Odaklı Kalite, 3.1 Başlangıç düzeyi (Initial Level), 3.2 Yönetilebilir düzey (Managed Level), 3.3 Tanımlı düzey (Defined Level), 3.4 Niceliksel yönetilen düzey (Quantitatively Managed Level) (+34 more)
 
 ### Community 1471 - "Frame Relay"
-Cohesion: 0.04
-Nodes (66): Connection Strategies, Content-Provider Network, End-to-End Delay, Multi-homing, Network of Networks, Nodal Delay, Output Buffer and Queuing, Packet-switched network delays (+58 more)
+Cohesion: 0.05
+Nodes (56): Connection Strategies, Content-Provider Network, End-to-End Delay, Multi-homing, Network of Networks, Nodal Delay, Output Buffer and Queuing, Packet-switched network delays (+48 more)
 
 ### Community 1474 - "Ders 11 Genişletilmiş Notu: Regresyon: En Küçük Kareler, Doğru ve Polinom Uydurma, Doğrusal Olmayan ve Trigonometrik Fonksiyonlar, Çoklu Regresyon"
 Cohesion: 0.05
@@ -18274,8 +18359,8 @@ Cohesion: 0.26
 Nodes (12): arrow(), getBordersSize(), getBoundingClientRect(), getClientRect(), getOffsetRect(), getOffsetRectRelativeToArbitraryNode(), getScroll(), getViewportOffsetRectRelativeToArtbitraryNode() (+4 more)
 
 ### Community 1484 - "Proje günlüğü: LLM ile fikir üretimi (Mayıs 2026)"
-Cohesion: 0.09
-Nodes (24): AI-JOURNAL.md (Hüsamettin Işıktaş), BWT + MTF sıkıştırma, Diverse corpus (7 domain, Gutenberg, kod, HTML, JSON, Türkçe, Çince), Hermes Agent (otonom agent, deepseek-v4-pro), K-Means profilleme (terk edilen yaklaşım), LLM ile proje fikri üretimi (Claude, Gemini, Kimi), Char-LSTM + aritmetik kodlama neural compressor, Auto-encoder based content aware profile based text compression (+16 more)
+Cohesion: 0.06
+Nodes (42): AI-JOURNAL.md (Hüsamettin Işıktaş), BWT + MTF sıkıştırma, Diverse corpus (7 domain, Gutenberg, kod, HTML, JSON, Türkçe, Çince), Hermes Agent (otonom agent, deepseek-v4-pro), K-Means profilleme (terk edilen yaklaşım), LLM ile proje fikri üretimi (Claude, Gemini, Kimi), Char-LSTM + aritmetik kodlama neural compressor, Auto-encoder based content aware profile based text compression (+34 more)
 
 ### Community 1485 - "Veri Sıkıştırma/slaytlar_notlar/2023/onder_gormez markdown/02_09_10_2023.md"
 Cohesion: 0.08
@@ -18323,11 +18408,11 @@ Nodes (25): 7. Week - 15 November 2022 Tuesday, Algorithm Design: Running Exampl
 
 ### Community 1496 - "Ders 13 Çalışma Özeti"
 Cohesion: 0.07
-Nodes (47): Doze on the Go, ExecutorService, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Pil tüketimini minimize etme (+39 more)
+Nodes (45): Doze on the Go, ExecutorService, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Pil tüketimini minimize etme (+37 more)
 
 ### Community 1497 - "Classical algorithms for multiple-precision arithmetic (4.3.1)"
-Cohesion: 0.08
-Nodes (29): Algorithm A: Addition of nonnegative integers, Algorithm C: High-precision multiplication of binary numbers, Algorithm D: Division of nonnegative integers, Algorithm M: Multiplication of nonnegative integers, Algorithm R: High-precision reciprocal (Newton's method), Algorithm S: Subtraction of nonnegative integers, Answers to Exercises 3.6 (Random number generator practice), Answers to Exercises 4.1 (Positional number systems) (+21 more)
+Cohesion: 0.09
+Nodes (24): Algorithm A: Addition of nonnegative integers, Algorithm C: High-precision multiplication of binary numbers, Algorithm D: Division of nonnegative integers, Algorithm M: Multiplication of nonnegative integers, Algorithm R: High-precision reciprocal (Newton's method), Algorithm S: Subtraction of nonnegative integers, Answers to Exercises 3.6 (Random number generator practice), Answers to Exercises 4.1 (Positional number systems) (+16 more)
 
 ### Community 1498 - "Ders 4 Genişletilmiş Notu: Prosesler: Proses Kavramı, Durumlar, PCB, Zamanlama, Proses Oluşturma ve Sonlandırma; Kabuk Programlama Uygulaması"
 Cohesion: 0.05
@@ -18386,12 +18471,12 @@ Cohesion: 0.11
 Nodes (3): BaseComponent, Button, Config
 
 ### Community 1512 - "remove"
-Cohesion: 0.15
-Nodes (3): remove(), sanitizeHtml(), TemplateFactory
+Cohesion: 0.08
+Nodes (4): Config, FocusTrap, sanitizeHtml(), TemplateFactory
 
 ### Community 1513 - "AdminDashboardGUI.java"
-Cohesion: 0.07
-Nodes (7): Main, Main, Main, DateManager, RendezvousLimitException, Gui, Main
+Cohesion: 0.04
+Nodes (15): ConsoleIOv1, ConsoleIOv1b, ConsoleIOv2, MainTest, ConsoleIOv1, ConsoleIOv2, MainTest, Main (+7 more)
 
 ### Community 1514 - "Ders 8 Genişletilmiş Notu: Blok Analizi, EM ve Gibbs Örneklemesi, Markov Modelleri ve Filogenetiğe Giriş"
 Cohesion: 0.04
@@ -18408,10 +18493,6 @@ Nodes (22): Homework 4 raporu (cache hit/miss, dimension 64 ve 256), Cache hit/m
 ### Community 1517 - "Kampüs Bisiklet Kiralama Sistemi - Dönem Projesi Raporu"
 Cohesion: 0.15
 Nodes (23): Sistem Özeti (El Yazısı Slayt Özeti), Varlık İlişki Diyagramı (ER), Damla Gül Saykara - Ders Notu README, Kaynak - omerdiner/CE_Assignments, BLM2732 Sistem Analizi ve Tasarımı Ders Slaytları (Göksel Biricik), Kampüs Bisiklet Kiralama Sistemi - Dönem Projesi Raporu, 2023-2 Dönem Projesi Duyurusu (omerdiner kopyası), Kampüs Bisiklet Otomasyon Sistemi - Grup Üyeleri (+15 more)
-
-### Community 1518 - "Dropdown"
-Cohesion: 0.15
-Nodes (4): Dropdown, getNextActiveElement(), isDisabled(), noop()
 
 ### Community 1519 - "Ders 22 Genişletilmiş Notu: Vize Sorularının Çözümü, Prim ve Dijkstra Algoritmaları"
 Cohesion: 0.05
@@ -18450,8 +18531,8 @@ Cohesion: 0.04
 Nodes (52): 10.1 Üç ana sınıf, 10.2 Amaç ve hedeflerine göre etik sınıfları, 10. Etik Sınıfları, 11. Etik Kuramları, 12.1 Karar verme altyapısı, 12.2 Etik karar verme süreci, 12.3 Kuramlara göre karar verme, 12.4 Baraj örneği (+44 more)
 
 ### Community 1528 - "Product"
-Cohesion: 0.05
-Nodes (10): Account, Bank, FileHelper, Worker, FileHelper, Main, Product, TransactionWorker (+2 more)
+Cohesion: 0.06
+Nodes (9): Account, Bank, FileHelper, Worker, FileHelper, Main, Product, TransactionWorker (+1 more)
 
 ### Community 1529 - "2021/malişen/20011701.c"
 Cohesion: 0.19
@@ -18471,7 +18552,7 @@ Nodes (24): 🎯 En Önemli Özellikler, 🔬 Feature Selection Genel Analiz Rap
 
 ### Community 1533 - "Ders 7 Genişletilmiş Notu: Refactoring'e Giriş, JUnit ile Birim Sınaması ve İlk Kod Kusurları"
 Cohesion: 0.04
-Nodes (63): addFriend(), checkMessages(), deleteFriend(), getFileName(), goBackToMenu(), main(), printBanner(), printFriends() (+55 more)
+Nodes (45): 10.1 Genel bakış, 10.2 Refactoring: Decompose Conditional (karar verme komutunu parçalama), 10. Long Method İçin Diğer Çözümler ve Decompose Conditional, 12.1 Tanım ve örnek, 12.2 Geçici değişkenler neden kusur sayılır?, 12.3 Başarım tartışması, 12. Replace Temp with Query, 13. Replace Method with Method Object (+37 more)
 
 ### Community 1534 - "2. 1. Vize Soruları Üzerinden Tekrar"
 Cohesion: 0.05
@@ -18479,7 +18560,7 @@ Nodes (38): 1. Dersin Akışı, 2.10 Limit ve Süreklilik: $f(x,y)=\frac{5xy^2}{
 
 ### Community 1535 - "util"
 Cohesion: 0.03
-Nodes (20): RandomOps2, RandomOps, MainProgram02, TestExceptions, TestExceptions, CreateContacts, CreateContacts, ShowContacts (+12 more)
+Nodes (34): RandomOps2, RandomOps, MainProgram02, TestExceptions, TestExceptions, CreateContacts, ShowContacts, CreateContacts (+26 more)
 
 ### Community 1536 - "Ders 7 Genişletilmiş Notu: Kimyasal Tehlike Sembolleri, Etiketleme, Maruziyet Sınırları ve Biyolojik Risk Etmenlerine Giriş"
 Cohesion: 0.07
@@ -18502,8 +18583,8 @@ Cohesion: 0.05
 Nodes (38): 1.1 Kesikli Rastgele Değişken, PMF ve CDF, 1.2 Rastgele Vektörler ve Marjinal Dağılım, 1.3 Bağımsızlık, 1.4 Beklenen Değer, 1.5 Varyans ve Standart Sapma, 1.6 Kovaryans ve Korelasyon, 1.7 Varyans, Kovaryans ve Korelasyonun Özellikleri, 1. Önceki Dersin Tekrarı (+30 more)
 
 ### Community 1541 - "Algoritmalar"
-Cohesion: 0.04
-Nodes (80): Pseudo code, Lamé teoremi (Fibonacci en kötü durum), Yazılım Geliştirme Metodu, Sequential search, Worst-case, best-case, average-case efficiency, Algoritma tanımı, Algoritma, Akış Diyagramı ve Sözde Kod (2020), Deterministic / non-deterministic döngüler (+72 more)
+Cohesion: 0.03
+Nodes (111): Akış diyagramı (flowchart), Algorithms lecture slides (Dr. H. İrem Türkmen, YTU), Software life cycle (problem, algorithm, flowchart, pseudo code, analysis, implementation, test, production), Pseudo code, Lamé teoremi (Fibonacci en kötü durum), Hospital Revenue Case Study, Yazılım Geliştirme Metodu, Algoritma tanımı (+103 more)
 
 ### Community 1542 - "Crocodile kategorisi - 101_ObjectCategories veri seti"
 Cohesion: 0.08
@@ -18542,12 +18623,12 @@ Cohesion: 0.08
 Nodes (9): GirisEkrani, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.FocusAdapter, java.awt.event.FocusAdapter, java.awt.event.MouseAdapter, java.awt.event.MouseAdapter (+1 more)
 
 ### Community 1551 - "Ders 11 Genişletilmiş Notu: Kilitlenmeler (Deadlocks): Sistem Modeli, Kaynak Tahsis Grafı, Önleme, Kaçınma (Banker Algoritması), Tespit ve Kurtarma ile POSIX Semafor ve Pthreads Uygulamaları"
-Cohesion: 0.05
-Nodes (42): 2.1 Kilitlenme (Deadlock) Nedir ve Sorumluluk Kimdedir?, 2.2 Sistem Modeli (System Model), 2.3 Deadlock Karakterizasyonu: Dört Zorunlu Şart, 2. Kilitlenme (Deadlock) Kavramı, Sistem Modeli ve Dört Zorunlu Şart, 3.1 Üç Temel Kaynak Tahsis Grafı Senaryosu, 3.2 Kaynak Tahsis Grafından Çıkarılan Temel Kurallar, 3. Kaynak Tahsis Grafı (Resource-Allocation Graph — RAG) ve Döngü Analizi, 4.1 Deadlock Prevention (Kilitlenmeyi Önleme) (+34 more)
+Cohesion: 0.06
+Nodes (32): 3.1 Üç Temel Kaynak Tahsis Grafı Senaryosu, 3.2 Kaynak Tahsis Grafından Çıkarılan Temel Kurallar, 3. Kaynak Tahsis Grafı (Resource-Allocation Graph — RAG) ve Döngü Analizi, 4.1 Deadlock Prevention (Kilitlenmeyi Önleme), 4. Kilitlenmelerle Başa Çıkma Yöntemleri ve Deadlock Önleme (Prevention), 5.1 Güvenli Durum (Safe State) ve Güvensiz Durum (Unsafe State), 5.2 Tek Örnekli Kaynaklar İçin Kaynak Tahsis Grafı Algoritması (Claim Edge), 5. Deadlock Kaçınma (Avoidance): Güvenli Durum (Safe State) ve İddia Kenarı (Claim Edge) (+24 more)
 
 ### Community 1552 - "Ders 21 Genişletilmiş Notu: Klasik Senkronizasyon Problemleri, Monitörler ve CPU Zamanlamaya Giriş: FCFS, SJF, SRTF ve Öncelikli Zamanlama"
 Cohesion: 0.04
-Nodes (53): 10.1 CPU ve G/Ç Patlamaları, 10.2 CPU Patlama Sürelerinin Dağılımı, 10. CPU Zamanlamaya Giriş, 11.1 Kısa Vadeli Zamanlayıcı, 11.2 Zamanlama Kararının Verildiği Dört Durum, 11.3 Kesintili Zamanlamanın Getirdiği Sorunlar, 11. CPU Zamanlayıcı, Kesintili ve Kesintisiz Zamanlama, 12. Dağıtıcı ve Dağıtım Gecikmesi (+45 more)
+Nodes (54): 10.1 CPU ve G/Ç Patlamaları, 10.2 CPU Patlama Sürelerinin Dağılımı, 10. CPU Zamanlamaya Giriş, 11.1 Kısa Vadeli Zamanlayıcı, 11.2 Zamanlama Kararının Verildiği Dört Durum, 11.3 Kesintili Zamanlamanın Getirdiği Sorunlar, 11. CPU Zamanlayıcı, Kesintili ve Kesintisiz Zamanlama, 12. Dağıtıcı ve Dağıtım Gecikmesi (+46 more)
 
 ### Community 1553 - "Ders 23 Genişletilmiş Notu: Round Robin, Çok Seviyeli Kuyruklar, Çok İşlemcili ve Gerçek Zamanlı CPU Zamanlama"
 Cohesion: 0.05
@@ -18605,10 +18686,6 @@ Nodes (22): dependencies, depth, source, url, version, dependencies, depth, sour
 Cohesion: 0.08
 Nodes (24): 1. Proje Yönetiminin Aşamaları: Yol Haritası Sorusu, 2.1 Makale, 2. 1. Sunum: Çevik Projelerde Proje Yöneticisi Hâlâ Var mı?, 2.2 Arka Plan: Çevik Proje Yönetimi ve Scrum, 2.3 Proje Yöneticisi Kimdir?, 2.4 Scrum ve XP'de Roller, 2.5 Araştırma Sorusu ve Yöntem, 2.6 Demografik Sonuçlar (+16 more)
 
-### Community 1567 - "İlişkisel model"
-Cohesion: 0.04
-Nodes (72): Yarı Yapısal Veri Modeli (SSDM), Bağıntı (relationship), Bağıntı kümesi, Çok değerli nitelik, DDL ve DML (SQL), Domain (veri tipi ve değer aralığı), Genişletilmiş ER (EER), ER modeli (varlık-bağıntı) (+64 more)
-
 ### Community 1568 - "__Pyx_memviewslice"
 Cohesion: 0.17
 Nodes (21): _copy_strided_to_strided(), __pyx_fatalerror(), __pyx_get_array_memory_extents(), __pyx_get_best_slice_order(), __Pyx_INC_MEMVIEW(), __Pyx_init_memviewslice(), __pyx_memoryview_broadcast_leading(), __pyx_memoryview_copy_contents() (+13 more)
@@ -18643,7 +18720,7 @@ Nodes (39): 10. Ders Sonundaki Soru: Wi-Fi El Sıkışması ve WEP, 1.1 Ethernet
 
 ### Community 1578 - "Chapter 16 Virtual Machines (summary)"
 Cohesion: 0.02
-Nodes (123): Moore's Law, Colocation, Hosting alternatives, Managed services, Service Level Agreement (SLA), Virtual servers, Wysotronics opening case, AMD-V (+115 more)
+Nodes (123): Cluster computing, Grid computing, Colocation, Hosting alternatives, Managed services, Service Level Agreement (SLA), Virtual servers, Wysotronics opening case (+115 more)
 
 ### Community 1581 - "remove"
 Cohesion: 0.17
@@ -18698,8 +18775,8 @@ Cohesion: 0.23
 Nodes (21): autoMode(), calculateScore(), createMatrixFromData(), createRandomMatrix(), finishLabel(), gameModeSelection(), labelAuto(), labelGameMatrix() (+13 more)
 
 ### Community 1595 - "Pishro-Nik Introduction to Probability, Statistics, and Random Processes (chapters 8.4-11.2)"
-Cohesion: 0.12
-Nodes (35): Bayesian Hypothesis Testing (MAP test, minimum cost test), Bayesian Inference (prior and posterior), Pishro-Nik Introduction to Probability, Statistics, and Random Processes (chapters 8.4-11.2), Chapman-Kolmogorov Equation (n-step transition), Classification of States (communicating, recurrent, transient), Coefficient of Determination (R-squared), Conjugate Priors (Gamma-Poisson, Beta-Binomial), Bayesian Credible Interval (+27 more)
+Cohesion: 0.08
+Nodes (47): Bayesian Hypothesis Testing (MAP test, minimum cost test), Bayesian Inference (prior and posterior), Pishro-Nik Introduction to Probability, Statistics, and Random Processes (chapters 8.4-11.2), Chapman-Kolmogorov Equation (n-step transition), Classification of States (communicating, recurrent, transient), Coefficient of Determination (R-squared), Conjugate Priors (Gamma-Poisson, Beta-Binomial), Bayesian Credible Interval (+39 more)
 
 ### Community 1596 - "projeler/2023/yusuf_safa_koksal/kod.c"
 Cohesion: 0.29
@@ -18734,8 +18811,8 @@ Cohesion: 0.05
 Nodes (41): 10.1 Sözde Kodun Özellikleri, 10.2 Gösterim Kuralları, 10.3 Örnek: Dizinin Toplamı, 10. Sözde Kod, 11.10 İç İçe Döngüler ve Numaralı Bağlantılar, 11.1 Başla ve Bitir, 11.2 Girdi Okuma, 11.3 Bağlantılar (+33 more)
 
 ### Community 1604 - "Ders 5 Genişletilmiş Notu: Uygulama 1: Kitaplık Örneğiyle Sınıflar, UML ve Kapsülleme"
-Cohesion: 0.02
-Nodes (86): 10. Geliştirilmiş for döngüsü, 11.1 Aramanın mantığı, 11.2 Private diziye erişim: getKitaplar, 11.3 compareTo ile karşılaştırma, 11.4 Dönüş tipi ve bulunamama durumu, 11.5 Arama, silme, yeniden arama, 11. Kitap arama ve compareTo, 12. Statik değişkene sınıf adıyla erişim (+78 more)
+Cohesion: 0.04
+Nodes (40): 10. Geliştirilmiş for döngüsü, 11.1 Aramanın mantığı, 11.2 Private diziye erişim: getKitaplar, 11.3 compareTo ile karşılaştırma, 11.4 Dönüş tipi ve bulunamama durumu, 11.5 Arama, silme, yeniden arama, 11. Kitap arama ve compareTo, 12. Statik değişkene sınıf adıyla erişim (+32 more)
 
 ### Community 1605 - "Ders 9 Genişletilmiş Notu: İnterpolasyon Araması, Debug, Arama Algoritmalarının Karşılaştırması, Merge ve Lab-1"
 Cohesion: 0.05
@@ -18750,8 +18827,8 @@ Cohesion: 0.05
 Nodes (38): 10. Ek Nitelikler ve Basitleştirilmiş Bakış, 11. Apriori Algoritması: Genel Yapı, 12. Aşağı Kapanış Özelliği, 13.1 Yinelemeli, Aşağıdan Yukarıya, 13.2 Algoritmanın Akışı, 13.3 Sayısal Örnek: Dört İşlem, 13.4 Neden $C_3$'te Tek Aday Var?, 13. Düzey Düzey Arama (+30 more)
 
 ### Community 1608 - "microprocessors-8086 README"
-Cohesion: 0.09
-Nodes (33): 74273 sekizli D flip-flop, 8255 PPI (PÇA), BLM3061 Lab 5 - 8255 ile Sayıcı Tasarımı (şifre doğrulama), Port adres hesabı 100H + 8*(ÖğrenciNo%200), Negatif tetiklemeli sıfırlama butonu, Şifre doğrulama devresi, 74HC373 latch, 8 buton (Port B girişi, Port A çıkışı) (+25 more)
+Cohesion: 0.08
+Nodes (36): 74HC373 latch, 8 buton (Port B girişi, Port A çıkışı), Yeliz Cengiz Lab 5 - Tuş takımı kontrollü 7 parçalı gösterge, Ödev 1 - 8255 ile kasa devresi, Kasa (7seg + 4x3 tuş) PIN kilit devresi, 4x3 tuş tarama, Kaynak (cnrkaya/microprocessors-8086), Handshaking Hesap Makinesi Sorusu (+28 more)
 
 ### Community 1609 - "Detaylı Açıklamalar"
 Cohesion: 0.08
@@ -18774,12 +18851,12 @@ Cohesion: 0.04
 Nodes (46): 10. Bireysel Bilgilerin Gizliliği ve Düşünceyi Açıklama Özgürlüğü, 11.1 Eski örnekler ve bilişimin gelişimi, 11.2 İnsan hakları bildirgeleri ve OECD, 11.3 BM Evrensel İnsan Hakları Bildirgesi madde 12 ve ICCPR madde 17, 11.4 BM 1990 rehber ilkeleri, 11.5 Avrupa Konseyi ve ülkeler arası aktarım, 11.6 KVKK, 11.7 Anayasa (+38 more)
 
 ### Community 1614 - "ValidPassword"
-Cohesion: 0.08
+Cohesion: 0.09
 Nodes (6): EnumValidator, EnumValidatorConstraint, PasswordValidator, UsernameValidator, ValidPassword, ValidUsername
 
 ### Community 1615 - "3. İki Eğri Arasında Kalan Alanı Veren İntegral"
-Cohesion: 0.05
-Nodes (37): 1. Dersin Planı: Çıkmış ve Çıkabilecek Sorular, 2.1 Temel dönüşümler, 2.2 Örnek 1: Kutupsal denklem neyi belirtir?, 2.3 Kutupsal bölge şıkları, 2.4 Örnek 2: Kutupsal noktanın kartezyen koordinatı, 2.5 Örnek 3: Bölge eşitsizliğinde sınırın dahil olup olmaması, 2. Kutupsal Denklem, Kutupsal Nokta ve Bölge Eşitsizlikleri, 3.10 Örnek 11: $r=1$ ve $r=1-\cos\theta$ (+29 more)
+Cohesion: 0.04
+Nodes (55): 1. Dersin Planı: Çıkmış ve Çıkabilecek Sorular, 2.1 Temel dönüşümler, 2.2 Örnek 1: Kutupsal denklem neyi belirtir?, 2.3 Kutupsal bölge şıkları, 2.4 Örnek 2: Kutupsal noktanın kartezyen koordinatı, 2.5 Örnek 3: Bölge eşitsizliğinde sınırın dahil olup olmaması, 2. Kutupsal Denklem, Kutupsal Nokta ve Bölge Eşitsizlikleri, 3.10 Örnek 11: $r=1$ ve $r=1-\cos\theta$ (+47 more)
 
 ### Community 1616 - "Ders 24 Genişletilmiş Notu: Metin Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp"
 Cohesion: 0.05
@@ -18815,11 +18892,11 @@ Nodes (41): 10.1 Yapılması gerekenler, 10.2 Kaçınılması gerekenler, 10. Ya
 
 ### Community 1625 - "Biyoenformatiğe Giriş - 03 Introduction to Perl"
 Cohesion: 0.07
-Nodes (54): NMR spektroskopisi, Binding operator =~, Perl CGI module and dynamic web content, Constants and variable containers, Sequence, selection, iteration, Perl DBI and DBD::mysql, Debugging Perl (-c, -w, strict), Biyoenformatiğe Giriş - 03 Introduction to Perl (+46 more)
+Nodes (54): NMR spektroskopisi, UniProt / Swiss-Prot, Binding operator =~, Perl CGI module and dynamic web content, Constants and variable containers, Sequence, selection, iteration, Perl DBI and DBD::mysql, Debugging Perl (-c, -w, strict) (+46 more)
 
 ### Community 1626 - "test_grid_search.py"
 Cohesion: 0.03
-Nodes (40): main(), parse_args(), main(), parse_args(), compute_baseline_metrics(), write_baseline_comparison(), load_grid_results(), run_grid_search() (+32 more)
+Nodes (42): main(), parse_args(), main(), parse_args(), compute_baseline_metrics(), write_baseline_comparison(), load_grid_results(), run_grid_search() (+34 more)
 
 ### Community 1627 - "ödev_4_a_word_game_that_uses_graph_structure/11011027_mustafa_berkay_mutlu.c"
 Cohesion: 0.21
@@ -18866,16 +18943,16 @@ Cohesion: 0.05
 Nodes (37): 10. Fark Tablosunda Hatanın Yayılması, 1.1 İntegral Bir Alan Hesabıdır, 1.2 Trapez Kuralı, 1.3 Simpson 1/3 Kuralı, 1.4 Geçen Dersin Alan Örnekleri, 1.5 Simpson 3/8 Kuralı ve $n$ Değeri, 1. Sayısal İntegral Tekrarı, 2.1 Şekli Çizmek (+29 more)
 
 ### Community 1638 - "Linear programming"
-Cohesion: 0.07
-Nodes (46): Linear programming, Simplex algorithm, Auxiliary linear program Laux, Basic and nonbasic variables, Bland's rule, Chapter 29 Linear Programming, Degeneracy and cycling, Ellipsoid and interior-point algorithms (+38 more)
+Cohesion: 0.05
+Nodes (58): Linear programming, Simplex algorithm, Auxiliary linear program Laux, Basic and nonbasic variables, Bland's rule, Chapter 29 Linear Programming, Degeneracy and cycling, Ellipsoid and interior-point algorithms (+50 more)
 
 ### Community 1639 - "Ders 13 Genişletilmiş Notu: Sonlu Durum Makineleri: Tanım, Durum Tablosu ve Diyagramı, Seri Toplayıcı ve Tasarım Örnekleri"
 Cohesion: 0.05
 Nodes (37): 10.1 Kurallar, 10.2 Tasarım, 10.3 Bu makinenin çıktısı var mı?, 10. Dört Karakterlik Değişken Adı Denetleyicisi, 11. Konunun Özeti ve Alıştırma Önerileri, 12. Ayrık Matematik Dersinden Ne Bekleniyor?, 1.1 Turnike, 1.2 Asansör (+29 more)
 
 ### Community 1640 - "Yönetim Bilgi Sistemleri Ders 2 - Bilgi Sistemi Proje Planlama ve Fizibilite (2020-2021)"
-Cohesion: 0.08
-Nodes (44): Transaction-Processing Case Study, Ders 3 Çalışma Özeti: Dijital firma ve MIS yaklaşımları, Dijital firma, Organizasyonel düzleşme, Analiz aşaması, Bilgi sistemi tipleri (TPS, MIS, DSS, EIS), Decision Support System, Yönetim Bilgi Sistemleri Ders 2 - Bilgi Sistemi Proje Planlama ve Fizibilite (2020-2021) (+36 more)
+Cohesion: 0.06
+Nodes (56): C File Processing, File Matching Exercise, Files and Streams, fopen and fclose, fprintf and fscanf, fseek, fwrite and fread, printf/scanf Conversion Specifiers (Ch.9 exercises), Random-Access Files (+48 more)
 
 ### Community 1641 - "8255 Mod 1 (Strobed I/O)"
 Cohesion: 0.13
@@ -18922,12 +18999,8 @@ Cohesion: 0.05
 Nodes (37): 10. Doğrudan İspat, 11.1 Rasyonel ve İrrasyonel Sayı, 11.2 İspat, 11.3 Ders Sonunda Bir Soru: $q^r$ Neden 2?, 11. Yapıcı İspat, 1. Dersin Konusu ve Kapsamı, 2. Hesaplama Kuramının Soruları, 3.1 Kolay ve Zor Problem (+29 more)
 
 ### Community 1652 - "Varlık İsmi Tanıma (NER)"
-Cohesion: 0.06
-Nodes (54): Bilgi Çıkarım Sistemleri, Bilgi Çıkarımı (Information Extraction), IOB / BILOU Etiketleme, Kural Tabanlı NER ve Düzenli İfadeler, MUC ve CoNLL Değerlendirmesi, Sinir Ağı Tabanlı NER (LSTM, BiLSTM, Transformer), Precision, Recall, F-measure, Sensitivity ve Specificity (+46 more)
-
-### Community 1653 - "Toast"
-Cohesion: 0.15
-Nodes (3): Alert, reflow(), Toast
+Cohesion: 0.07
+Nodes (51): Bilgi Çıkarım Sistemleri, Bilgi Çıkarımı (Information Extraction), IOB / BILOU Etiketleme, Kural Tabanlı NER ve Düzenli İfadeler, MUC ve CoNLL Değerlendirmesi, Sinir Ağı Tabanlı NER (LSTM, BiLSTM, Transformer), Bölüm 2: Hayat Bilgisi Veri Tabanları, Commonsense veri kümeleri (COPA, CommonsenseQA, ATOMIC) (+43 more)
 
 ### Community 1654 - "Muhasebe Organizasyonu Özeti"
 Cohesion: 0.16
@@ -18958,8 +19031,8 @@ Cohesion: 0.21
 Nodes (3): enableDismissTrigger(), getElementFromSelector(), Tab
 
 ### Community 1663 - "Lab 8 - 8259 & ADC0804"
-Cohesion: 0.09
-Nodes (37): Lab 6 8251 USART Transmit/Receive, 8259 PKD (Programlanabilir Kesme Denetleyicisi), ADC0804 Analog-Dijital Dönüştürücü, Lab 8 - 8259 & ADC0804, INT 51H (verici) ve INT 52H (ADC) alt programları, Kesme Vektör Tablosu (kesme no x 4), Kaynak (cnrkaya/microprocessors-8086), Handshaking Hesap Makinesi Sorusu (+29 more)
+Cohesion: 0.13
+Nodes (27): Lab 6 8251 USART Transmit/Receive, 8259 PKD (Programlanabilir Kesme Denetleyicisi), ADC0804 Analog-Dijital Dönüştürücü, Lab 8 - 8259 & ADC0804, INT 51H (verici) ve INT 52H (ADC) alt programları, Kesme Vektör Tablosu (kesme no x 4), Baud rate, 8251 Seri Haberleşme Lab Sorusu (TOPSECRET) (+19 more)
 
 ### Community 1665 - "Tab"
 Cohesion: 0.21
@@ -18975,11 +19048,11 @@ Nodes (23): Chair Görüntü Kümesi (101_ObjectCategories), Sandalye Fotoğraf�
 
 ### Community 1669 - "Ünite 8 Karakter ve Stringler"
 Cohesion: 0.03
-Nodes (81): ASCII ve EBCDIC karakter kodları, atof fonksiyonu, atoi fonksiyonu, atol fonksiyonu, Atom (token) ve sınırlayıcı, Belirsiz erteleme (indefinite postponement), buyukHarfeCevir fonksiyonu, const dizi parametresi (+73 more)
+Nodes (83): ASCII ve EBCDIC karakter kodları, atof fonksiyonu, atoi fonksiyonu, atol fonksiyonu, Atom (token) ve sınırlayıcı, Belirsiz erteleme (indefinite postponement), buyukHarfeCevir fonksiyonu, const dizi parametresi (+75 more)
 
 ### Community 1670 - "Staj Defteri 2023 Sait Yalçın (Borsa İstanbul)"
-Cohesion: 0.18
-Nodes (23): Angular, AES şifreleme, ASP.NET Core .NET C#, ATP Tech, chart.js ve ngx-charts, FluentValidation, GetAvailableCars servisi, Gmail SMTP (+15 more)
+Cohesion: 0.12
+Nodes (31): Açık anahtarlı sistemler (Diffie-Hellman) ve imzalar, Rabin SQRT kutusu, Shamir soyut makine: O(log n) çarpanlara ayırma (alıştırma 38), DES, Ders 9 altyazı (2020-2021), IPsec, Kriptografi, Angular (+23 more)
 
 ### Community 1671 - "com.unity.modules.animation"
 Cohesion: 0.10
@@ -19059,7 +19132,7 @@ Nodes (4): Employee, Person, Employee, Person
 
 ### Community 1690 - "Announcement"
 Cohesion: 0.01
-Nodes (31): FilterAnnouncement, SearchCriteria, ApplicationPK, ApplicationDAO, VerificationCodeDAO, AbstractDAO, AnnouncementHibernateImpl, ApplicationHibernateImpl (+23 more)
+Nodes (38): UserImp, FilterAnnouncement, SearchCriteria, ApplicationPK, AnnouncementDAO, ApplicationDAO, CompanyDAO, ComplaintDAO (+30 more)
 
 ### Community 1691 - "Ders 15 Genişletilmiş Notu: Öncelikli Kuyruklar, Heap Soruları ve Huffman Kodlama"
 Cohesion: 0.06
@@ -19081,9 +19154,9 @@ Nodes (46): 10.1 Global değişken neden tehlikeli?, 10.2 Atomiklik, 10.3 Kilit 
 Cohesion: 0.05
 Nodes (41): 10.1 Halter şekli örneği, 10.2 Kare görüntüyü aşındırma, 10.3 Baskılı devre kartı örneği, 10. Aşındırma (Erosion), 11.1 Kare görüntüyü yayma, 11.2 Kopuk harfleri birleştirme, 11.3 Adım adım yayma, 11. Yayma (Dilation) (+33 more)
 
-### Community 1696 - "Ders 5 Genişletilmiş Notu: Paketler, Sarmalayıcı Sınıflar, String, Math ve Random, Scanner, Parametre Aktarımı ve toString"
+### Community 1696 - "Sistem"
 Cohesion: 0.05
-Nodes (36): 11.1 Aşırı Yükleme ve Belirsizlik, 11.2 Neden Integer ile Olmadı, MyClass ile Oldu?, 11. Kendi Sarmalayıcı Sınıfımız: Swap'i Çalıştırmak, 12. Math Sınıfı, 13. Sözde Rastgele Sayılar ve Random Sınıfı, 14. Çıktı: System.out, 15.1 Hata: Girilemeyen Ad, 15.2 Çözüm ve İkinci Deneme (+28 more)
+Nodes (8): java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, Ilac, Siparis, Sistem
 
 ### Community 1697 - "Ders 24 Genişletilmiş Notu: Tekrar Dersi: Sütun Silme, Kümelerde Bağıntı Özellikleri ve Polinomlar"
 Cohesion: 0.05
@@ -19103,7 +19176,7 @@ Nodes (22): craft_mart Kategori Listesi sayfası, craft_mart Ürünlerim sayfas�
 
 ### Community 1701 - ".extend"
 Cohesion: 0.04
-Nodes (50): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 2.1 Problem ve Kapsam, 2.2 Kabuller ve Kısıtlar, 2.3 Gantt Diyagramı, Risk Tablosu ve Ekip (+42 more)
+Nodes (54): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 1.1 Çalışan yönetimi, 1.2 Hasta izleme, 1. Uygulamanın Amacı ve Vaka Metni (+46 more)
 
 ### Community 1702 - "Ders 6 Genişletilmiş Notu: Zincir Kuralı Alıştırmaları, Yüksek Mertebeden Türevler ve Kapalı Türev"
 Cohesion: 0.05
@@ -19146,8 +19219,8 @@ Cohesion: 0.16
 Nodes (22): Sobel filtresi, Konvolüsyon, Ödev 1: Konvolüsyon, Manuel konvolüsyon ve np.convolve karşılaştırması, Gauss filtresi, Laplacian filtresi, Ödev 1 Raporu: Görüntü filtreleme (Elif Mertoğlu), image_filtering readme (+14 more)
 
 ### Community 1712 - "Bilgiye Erişim ve Arama Motorları dersi (Mesleki Seçmeli 1)"
-Cohesion: 0.10
-Nodes (24): BLM2041 Ödev-1 Konvolüsyon, PyQt GUI, Sinüs-kosinüs Fourier katsayıları, Kaynak: cowgoesmeow/r-science-comment-mod, r-science-comment-mod GitHub reposu (cowgoesmeow), Ev fiyatı projesi önerisi (House Price Assignment), SVC, Karar Ağacı, Random Forest, KNN, XGBoost, Kaggle kc-house-data veri seti (+16 more)
+Cohesion: 0.15
+Nodes (14): Kaynak: cowgoesmeow/r-science-comment-mod, r-science-comment-mod GitHub reposu (cowgoesmeow), BLM3120 Final Project README, BLM3120 Final Project, Kaynak: faozdev/Information-Retrieval-and-Web-Search-Engines, Information-Retrieval-and-Web-Search-Engines reposu (faozdev, MIT), Kaynak: fatmanurbas/BLM3120-Project-Online-Fraud-Detection-Program-, Online Fraud Detection reposu (fatmanurbas) (+6 more)
 
 ### Community 1713 - "stegosaurus dataset (101_ObjectCategories)"
 Cohesion: 0.09
@@ -19166,8 +19239,8 @@ Cohesion: 0.30
 Nodes (14): Kayra Raporu: Öğrenmeyle Geliştirilmiş Arama Ağaçları, ALEX, B-Ağaçları / AVL / kırmızı-siyah, Dinamik B-Ağaçları ve çalışma seti, Gapped Array, Hata dayanıklılığı (robustness), Kompozit öncelikli B-Ağaçları, Öğrenmeyle Geliştirilmiş İkili Arama (Treap) (+6 more)
 
 ### Community 1717 - "Sayısal Analiz (BLM1022)"
-Cohesion: 0.12
-Nodes (20): Sayısal Analiz Ders 9 (2020-2021) Altyazısı, Durma Koşulu (Ardışık Fark < Epsilon), Excel ile İteratif Hesaplama, Gauss-Seidel/Jacobi İteratif Çözüm (Vize Sorusu), Köşegeni Maksimum Yapma, Not Ortalaması ve 40 Barajı, Newton-Raphson ile √3 Bulma (Vize Sorusu), Dönem Projesi ve Menü Tasarımı (+12 more)
+Cohesion: 0.09
+Nodes (39): Ara geçiş vektörü Y (LY=C, UX=Y), Dolaysız (tam çözüm) yöntemler, Dolaylı (iteratif, yaklaşık) yöntemler, Epsilon durma koşulu (delta x < hata), Jacobi İterasyon Yöntemi, Köşegen baskınlığı için satır düzenleme, Cramer (Kremer) Yöntemi, LU Ayrıştırma (Cholesky/LU) yöntemi (+31 more)
 
 ### Community 1718 - "Ders 5 Genişletilmiş Notu: İfade Özgürlüğü, Fikir ve Sanat Eserleri, Sınai Haklar"
 Cohesion: 0.04
@@ -19193,6 +19266,10 @@ Nodes (23): Ders 14 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklama
 Cohesion: 0.05
 Nodes (39): 1. Çalışma ortamı gözetimi neden gerekli?, 2. CE işareti, 3.1 İş güvenliği profesyonellerinin görevleri, 3.2 Ortam gözetiminin tanımı, 3.3 Gözetimin dört alanı, 3. Çalışma ortamı gözetiminin tanımı ve iş güvenliği profesyonellerinin görevleri, 4.1 Bina ve eklenti tanımı, 4.2 Bina yapısı ve elektrik tesisatı (+31 more)
 
+### Community 1726 - "Dropdown"
+Cohesion: 0.15
+Nodes (4): Dropdown, getNextActiveElement(), isDisabled(), noop()
+
 ### Community 1729 - "Physical security"
 Cohesion: 0.10
 Nodes (22): Cardholder unique identifier (CHUID), Dust and infestation threats, Electrical power threats (undervoltage overvoltage noise), Electromagnetic interference, FIPS 201-2 Personal Identity Verification (PIV), Fire and smoke threat, Fujita Tornado Intensity Scale, Human-caused physical threats (+14 more)
@@ -19203,7 +19280,7 @@ Nodes (22): Caltech 101 "ketch" kategori veri seti, Ketch fotoğrafı (image_000
 
 ### Community 1732 - "Traveling salesman problem"
 Cohesion: 0.04
-Nodes (68): NP-completeness, Boolean satisfiability (SAT), Cook-Levin theorem, Shortest-path problem, Approximation Algorithms for NP-hard Problems, Christofides Algorithm, Coping with the Limitations of Algorithm Power, Exhaustive Search (+60 more)
+Nodes (73): Appendix B Sets, Etc., Functions (surjection, injection, bijection), Graphs (directed, undirected, paths, cycles), Relations and equivalence relations, Sets and set laws (DeMorgan), Theorem B.2 Properties of free trees, HEAP-INCREASE-KEY / MAX-HEAP-INSERT / HEAP-EXTRACT-MAX, Approximation Algorithms for NP-hard Problems (+65 more)
 
 ### Community 1733 - "Question Pool Uygulaması Arayüz İkon Seti"
 Cohesion: 0.09
@@ -19220,6 +19297,10 @@ Nodes (23): Bag of words, Data, information, knowledge, wisdom, Data retrieval v
 ### Community 1736 - ""Hello World": Word Count"
 Cohesion: 0.09
 Nodes (21): 6. Week - 8 November 2022 Tuesday, An Optimization: The Combiner, Binning, Code Execution Environments, Complex Data Types in Hadoop, Debugging Hadoop, Getting Data to Mappers and Reducers, Good Coding Style: Theme (+13 more)
+
+### Community 1738 - "Toast"
+Cohesion: 0.15
+Nodes (3): Alert, reflow(), Toast
 
 ### Community 1739 - "Ders 11 Genişletilmiş Notu: Test Spesifikasyonu, Risk Yönetimi, Sürüm Yönetimi ve Mobil Uygulama Testi"
 Cohesion: 0.05
@@ -19266,8 +19347,8 @@ Cohesion: 0.16
 Nodes (14): Airline Reservation and Management System README, CalculatePrice, Flight, FlightManager, Graphical User Interface (JavaFX/Swing), Passenger, Plane, Reservation (+6 more)
 
 ### Community 1756 - "Cache"
-Cohesion: 0.08
-Nodes (31): Advanced Microarchitecture, Architectural State Elements, Branch Prediction (1-bit, 2-bit), Processor Performance Comparison, Single-Cycle Control (main decoder, ALU decoder), Control Hazard and Flushing, RAW WAR WAW Dependencies, Chapter 7: Microarchitecture (Harris & Harris) (+23 more)
+Cohesion: 0.04
+Nodes (58): 4 Bitlik Çıkarıcı, İkiye Tümleyen (Two's Complement), Ödev 2: Toplayıcı ve Çıkarıcı Tasarımı, Tam Çıkarıcı, Toplama-Çıkarma Devresi (XOR ve M seçim ucu), Yarı Çıkarıcı, 4 Bitlik Paralel Toplayıcı, Tam Çıkarıcı (Full Subtractor) (+50 more)
 
 ### Community 1757 - "Ders 2 Genişletilmiş Notu: Olmayana Ergi, Tümevarım, Güvercin Yuvası İlkesi; Alfabe, Dizgi, Dil ve Düzenli Dillere Giriş"
 Cohesion: 0.05
@@ -19286,24 +19367,24 @@ Cohesion: 0.04
 Nodes (44): 1.1 Teknik ve hukuki sınıflandırma, 1.2 Etken ve edilgen saldırılar, 1.3 İç ve dış saldırıların amaçları, 1. Bilişim Suçlarının Sınıflandırılması, 2.1 Salam dilimi, 2.2 Dış uzman, 2.3 Sanal saatli bomba, 2.4 Bilgi hırsızlığı (+36 more)
 
 ### Community 1761 - "Ders 2 Genişletilmiş Notu: Yapay Zekaya Giriş: Turing Testi, Karşı Görüşler ve Tarihçe"
-Cohesion: 0.04
-Nodes (49): 10.1 İlk yapay nöron, 10.2 Hebb kuralı ve Pavlov'un köpekleri, 10.3 Büyük beklentiler dönemi, 10.4 Neden gerçekleşmediler?, 10.5 1966-1973: Zor dönem, 10.6 1979-1990: Güzel zamanlar, 10. Yapay Zekanın Kısa Tarihi, 11.1 Oyunlar (+41 more)
+Cohesion: 0.05
+Nodes (37): 10.1 İlk yapay nöron, 10.2 Hebb kuralı ve Pavlov'un köpekleri, 10.3 Büyük beklentiler dönemi, 10.4 Neden gerçekleşmediler?, 10.5 1966-1973: Zor dönem, 10.6 1979-1990: Güzel zamanlar, 10. Yapay Zekanın Kısa Tarihi, 11.1 Oyunlar (+29 more)
 
 ### Community 1762 - "sayısal_analiz_yöntemleri/proje/21011022.c"
 Cohesion: 0.22
 Nodes (18): altMatrisOlustur(), birimMatrisOlustur(), denklemAl(), denklemCoz(), denklemYazdir(), determinantAl(), fonksiyonDegeri(), konsolTemizle() (+10 more)
 
 ### Community 1763 - "İşletim Sistemi"
-Cohesion: 0.03
-Nodes (84): Auditing software, Chapter 3 Operating Systems, Computer Science: An Overview, 12th ed. (Brookshear) - Ch.3-5, Interactive processing and real-time processing, Interrupt handler, Kernel, Memory manager and virtual memory (paging), Multiprocessor and multi-core machines (+76 more)
+Cohesion: 0.05
+Nodes (59): Auditing software, Chapter 3 Operating Systems, Computer Science: An Overview, 12th ed. (Brookshear) - Ch.3-5, Interactive processing and real-time processing, Interrupt handler, Multiprocessor and multi-core machines, Pipelining, SISD, SIMD, MIMD architectures (+51 more)
 
 ### Community 1764 - "Nesneye Dayalı Tasarım ve Modelleme/ders_kayitlari/2020-2021/README.md"
-Cohesion: 0.06
-Nodes (24): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+16 more)
+Cohesion: 0.05
+Nodes (29): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+21 more)
 
 ### Community 1765 - "Ders 24 Genişletilmiş Notu: Rastgele Erişim: fseek, ftell ve İndeksli Dosya Okuma"
 Cohesion: 0.07
-Nodes (38): 1. Sıralı Erişimden Rastgele Erişime, 2.1 İmza ve parametreler, 2.2 Örnek çağrı ve dönüş değeri, 2.3 Geçersiz istekler ve sınırlar, 2. fseek Fonksiyonu, 3. ftell Fonksiyonu, 4.1 Problem, 4.2 İndeksin yapısı (+30 more)
+Nodes (35): 1. Sıralı Erişimden Rastgele Erişime, 2.1 İmza ve parametreler, 2.2 Örnek çağrı ve dönüş değeri, 2.3 Geçersiz istekler ve sınırlar, 2. fseek Fonksiyonu, 3. ftell Fonksiyonu, 4.1 Problem, 4.2 İndeksin yapısı (+27 more)
 
 ### Community 1767 - "Ders 4 Genişletilmiş Notu: Hayat Bilgisi Projeleri, Kelime Benzerliği ve Saklı Anlam İndeksleme"
 Cohesion: 0.05
@@ -19358,8 +19439,8 @@ Cohesion: 0.11
 Nodes (19): Mano Kime Bölüm 14 şekil ve tablolar (cache, sanal bellek), İçerik adreslemeli bellek, Doğrudan eşlemeli cache, Sayfa tablosu ve sanal adres, Küme çağrışımlı cache, Cache belleği slaytları, Tam çağrışımlı cache, Yerellik ilkesi (zamansal/mekansal) (+11 more)
 
 ### Community 1780 - "Quicksort"
-Cohesion: 0.04
-Nodes (78): Quicksort, Randomized algorithms, Balls and Bins, Birthday Paradox, Bucket sort (BUCKET-SORT), Columnsort, Comparison sort Omega(n lg n) lower bound, Indicator Random Variables (+70 more)
+Cohesion: 0.03
+Nodes (86): Randomized algorithms, Resizing array Stack, Worst-case performance guarantees, Balls and Bins, Birthday Paradox, Bucket sort (BUCKET-SORT), Chapter 31 Number-Theoretic Algorithms, Columnsort (+78 more)
 
 ### Community 1781 - "orcuncelik/data_structures_and_algorithms/proje/proje.c"
 Cohesion: 0.27
@@ -19410,8 +19491,8 @@ Cohesion: 0.26
 Nodes (15): add_edge(), add_reversed_edge(), count_node(), create_reversed_node(), createGraph(), createNode(), delete_node(), dfs() (+7 more)
 
 ### Community 1793 - "SaS-01 Information Systems Fundamentals 2020"
-Cohesion: 0.11
-Nodes (37): Actuators, ElDev 02 Sensors and Actuators, Sensör performansı (range, resolution, accuracy, precision, linearity, sensitivity), Sıcaklık sensörleri, 2022 Slayt 2 Sensors and Actuators, Sensör performansı, Two's Complement, SaS-01 Information Systems Fundamentals 2020 (+29 more)
+Cohesion: 0.10
+Nodes (39): Actuators, ElDev 02 Sensors and Actuators, Sensör performansı (range, resolution, accuracy, precision, linearity, sensitivity), Sıcaklık sensörleri, 2022 Slayt 2 Sensors and Actuators, Sensör performansı, Digital Systems and Binary Numbers, One's Complement (+31 more)
 
 ### Community 1794 - "Ders 11 Genişletilmiş Notu: Seminer Sunumları: DNN ile Sismik Veri Sıkıştırma, Dil Modelleriyle Metin Sıkıştırma, NLP için Bayesçi Sıkıştırma, Evrişimli Otokodlayıcı ve Draco-ROS Geometri Sıkıştırma"
 Cohesion: 0.05
@@ -19419,7 +19500,7 @@ Nodes (42): 1. Dersin Yapısı, 2.1 Problem, 2.2 Temel terimler, 2.3 Tahmin taba
 
 ### Community 1795 - "Ders 18 Genişletilmiş Notu: Bağlı Listeden Silme, Bit Alanları, Union, Özyineleme, Fonksiyon ve Void İşaretçileri, Çift İşaretçi"
 Cohesion: 0.05
-Nodes (36): 10. Dinamik metin okuma, 11.1 Senaryo 1: tek işaretçi, 11.2 Senaryo 2: çift işaretçi, 11.3 Bağlı listeye bağlantı, 11. Tek işaretçi ve çift işaretçiyle parametre geçirme, 1.1 Baştan silme, 1.2 Sondan silme, 1.3 Çalışma soruları (+28 more)
+Nodes (39): 10. Dinamik metin okuma, 11.1 Senaryo 1: tek işaretçi, 11.2 Senaryo 2: çift işaretçi, 11.3 Bağlı listeye bağlantı, 11. Tek işaretçi ve çift işaretçiyle parametre geçirme, 1.1 Baştan silme, 1.2 Sondan silme, 1.3 Çalışma soruları (+31 more)
 
 ### Community 1796 - "Ders 13 Genişletilmiş Notu: Proje Gösterimleri (2. Hafta)"
 Cohesion: 0.06
@@ -19442,8 +19523,8 @@ Cohesion: 0.06
 Nodes (33): 10. Arama Motorlarını Başarılı Kılan Etkenler, 1. Dersin Konusu, 2.1 Sözlük ve Vektör Temsili, 2.2 Boolean Modelde Temsil, 2.3 Vektör Uzayı Modelinde Temsil: TF-IDF, 2. Önceki Dersin Tekrarı: Bilgi Erişim Modelleri, 3. Boolean ve Vektör Uzayı Modellerinde Eşleştirme, 4. İlgililik Geri Bildirimi (+25 more)
 
 ### Community 1801 - "Systems Analysis and Design in a Changing World, 6th Edition (Satzinger, Jackson, Burd)"
-Cohesion: 0.01
-Nodes (245): Agile methods and Extreme Programming, Incremental and iterative models (RUP), Prototyping (evolutionary, throwaway, rapid), Use case diagram, Background and foreground color, Computer graphics with WinBGIm (graphics.h), Fill styles (setfillstyle, floodfill, bar), Graphics function library (line, rectangle, circle, arc, ellipse, pieslice, bar, floodfill) (+237 more)
+Cohesion: 0.02
+Nodes (144): Agile methods and Extreme Programming, Incremental and iterative models (RUP), Prototyping (evolutionary, throwaway, rapid), Use case diagram, Systems Analysis and Design in a Changing World, 6th Edition (Satzinger, Jackson, Burd), Abstract and Concrete Classes, Activation Lifeline, Actor (+136 more)
 
 ### Community 1802 - "Trilobite Fossil Image Dataset (Caltech-101 category)"
 Cohesion: 0.10
@@ -19467,11 +19548,11 @@ Nodes (21): Ali Hasanlı Staj Defteri 2024 (Azertexnolayn), Ağ Performans İzle
 
 ### Community 1808 - "Lojik Devreler ders kayıtları ve özetleri 2020-2021"
 Cohesion: 0.08
-Nodes (41): Lojik Devreler Ders Kayıtları & Çalışma Özetleri, Logisim/Digital ile Gerçekleme, Analyze Circuit ile otomatik doğruluk tablosu, Numaraya göre parametrik f fonksiyonu, Lojik Devreler Lab 2 (2020-2021), Maxterm - Minterm dönüşümü, Pin etiketleme ve giriş sırası (MSB/LSB), Lojik simülasyon programları (Logisim, Digital) (+33 more)
+Nodes (40): Lojik Devreler Lab 6 (2020-2021) Altyazı, Numaraya Parametrik 4 Değişkenli F(x,y,z,w) Fonksiyonu, Logisim/Digital ile Gerçekleme, Maxterm'den Minterm'e Dönüşüm (mod 16), Excel Sıra Listesi ile Lab Sunumu, BCD - 7 segment çözücü (7447), Don't care ve Karnaugh haritası ile 7 segment sadeleştirme, Ortak anotlu / ortak katotlu LED yapısı (+32 more)
 
 ### Community 1809 - "Ders 4 Genişletilmiş Notu: Süreç Sertifikasyonu (CMMI), Gereksinim Mühendisliği ve Kullanım Öyküleri"
-Cohesion: 0.04
-Nodes (46): 10.1 Örnek Gereksinimler Belgesi: NextGenPOS, 10.2 Kullanım Öyküleri ve Amaçları, 10.3 Satış İşlemi: Giriş Bölümü, 10.4 Satış İşlemi: Ana Öykü, 10.5 Satış İşlemi: Alternatif Öyküler, 10.6 Kullanım Öyküsü Yazarken İpuçları, 10. Gereksinimler Belgesi ve Kullanım Öyküleri, 1.1 Ne Zaman Gerekir? (+38 more)
+Cohesion: 0.05
+Nodes (43): 10.1 Örnek Gereksinimler Belgesi: NextGenPOS, 10.2 Kullanım Öyküleri ve Amaçları, 10.3 Satış İşlemi: Giriş Bölümü, 10.4 Satış İşlemi: Ana Öykü, 10.5 Satış İşlemi: Alternatif Öyküler, 10.6 Kullanım Öyküsü Yazarken İpuçları, 10. Gereksinimler Belgesi ve Kullanım Öyküleri, 1.1 Ne Zaman Gerekir? (+35 more)
 
 ### Community 1811 - "Ders 9 Genişletilmiş Notu: Diyot Uygulamaları Tekrarı (Doğrultucu, Kırpıcı, Kenetleyici, Zener, Gerilim Katlayıcı) ve BJT'ye Giriş"
 Cohesion: 0.05
@@ -19514,8 +19595,8 @@ Cohesion: 0.05
 Nodes (36): 10. Tasarım Kalıplarının Tekrarı, 11. Yazılım Kalite Yönetimi, 12.1 Özellikler tek tek, 12.2 Hocanın gruplaması, 12.3 ISO standartlarındaki yaklaşım, 12. Yazılım Kalite Özellikleri ve McCall'ın Bakış Açıları, 13. Yeniden Kullanılabilirlik Nasıl Sağlanır?, 14.1 Aşamalara göre kalite (+28 more)
 
 ### Community 1825 - "Otobus"
-Cohesion: 0.06
-Nodes (18): NYP Lab2-A: Book cafe tables and guests (13.11.2023), Abonman (credits, 5 per entry), Kisi (abstract, odemeYap), KitapKafe class (max 2 tables), Masa class (max 3 chairs), NormalKisi (pays from balance), odemeYap method, Sandalye class (+10 more)
+Cohesion: 0.09
+Nodes (15): NYP Lab2-A: Book cafe tables and guests (13.11.2023), Abonman (credits, 5 per entry), Kisi (abstract, odemeYap), KitapKafe class (max 2 tables), Masa class (max 3 chairs), NormalKisi (pays from balance), odemeYap method, Sandalye class (+7 more)
 
 ### Community 1826 - "numericalanalysisproject.c"
 Cohesion: 0.31
@@ -19543,7 +19624,7 @@ Nodes (32): 10.1 Tanımlar, 10.2 Örnek 1: Yığın İşlemleri, 10.3 Örnek 2: 
 
 ### Community 1833 - "blm_5227/Scripts/jquery-3.7.0.slim.min.js"
 Cohesion: 0.08
-Nodes (39): ye(), qe(), T(), Ae(), at(), b(), Be(), c() (+31 more)
+Nodes (38): qe(), T(), Ae(), at(), b(), Be(), c(), e() (+30 more)
 
 ### Community 1834 - "Ders 3 Genişletilmiş Notu: Bağlam Farkındalığı: Bağlam Kategorileri, Yaşam Döngüsü, Edinim, Modelleme ve Çıkarım"
 Cohesion: 0.05
@@ -19558,8 +19639,8 @@ Cohesion: 0.12
 Nodes (17): AcyclicLP, AcyclicSP, Arbitrage (currency exchange), BellmanFordSP (queue-based Bellman-Ford), CPM (Critical Path Method), DepthFirstOrder, DijkstraAllPairsSP, DijkstraSP (+9 more)
 
 ### Community 1837 - "Ders 11 Genişletilmiş Notu: Matrislerin Fonksiyonlara Aktarılması, Seçim Sistemleri, Sayarak Sıralama, Çoğunluk Elemanı ve Simetrik Matris"
-Cohesion: 0.06
-Nodes (35): 10.1 Problem, 10.2 Birinci Çözüm: Transpozla Karşılaştırma, 10.3 İkinci Çözüm: Yalnızca Bir Üçgeni Gezmek, 10.4 Öğrenci Soruları, 10. İkili Matrisi Simetrik Yapmak, 2. Pointer ve Dizilerin Kısa Tekrarı, İlk Değer Verme, 3.1 Önerilen Yol, 3.2 Pointer Aritmetiğiyle Denemeler (+27 more)
+Cohesion: 0.05
+Nodes (36): 10.1 Problem, 10.2 Birinci Çözüm: Transpozla Karşılaştırma, 10.3 İkinci Çözüm: Yalnızca Bir Üçgeni Gezmek, 10.4 Öğrenci Soruları, 10. İkili Matrisi Simetrik Yapmak, 1. Fonksiyon Yazmanın Ölçüsü, 2. Pointer ve Dizilerin Kısa Tekrarı, İlk Değer Verme, 3.1 Önerilen Yol (+28 more)
 
 ### Community 1838 - "bfs"
 Cohesion: 0.12
@@ -19577,9 +19658,9 @@ Nodes (34): 1.1 Örnek Değil, Genel Çözüm, 1.2 Önce Kağıt Üzerinde Düş
 Cohesion: 0.06
 Nodes (34): 1. Dersin Biçimi, 2. Alt Dizgi Arama Problemi, 3. Alt Dizgi Arama Nerelerde Kullanılır?, 4.1 Algoritma, 4.2 Örnek: ACAABC içinde AAB, 4.3 Örnek: SIMPLE araması ve neden yalnız bir kaydırılır?, 4.4 En kötü durum, 4.5 Akan veri ve geri dönüş alanı (backup) (+26 more)
 
-### Community 1842 - ".UIFrame"
-Cohesion: 0.02
-Nodes (51): ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener (+43 more)
+### Community 1842 - "MainFrame"
+Cohesion: 0.03
+Nodes (14): App, AdminPanel, javax.swing.table.DefaultTableCellRenderer, FlightSearchPanel, LoginPanel, MainFrame, SeatMapPanel, PassengerTask (+6 more)
 
 ### Community 1843 - "Chapter 1: Introduction"
 Cohesion: 0.11
@@ -19595,7 +19676,7 @@ Nodes (34): 1.1 Yerel ve Global Değişkenler, 1.2 Tahtayı Ekranda Göstermek, 
 
 ### Community 1847 - "Fine Grained Image Classification Using Image Embedding Ensembles"
 Cohesion: 0.12
-Nodes (32): ConvNeXt V2, CUB-200-2011, DINOv2, DINOv3, Feature Concatenation (Early Fusion), Feature Summation, Fine Grained Image Classification Using Image Embedding Ensembles, Fine-Grained Visual Classification (FGVC) (+24 more)
+Nodes (33): CLIP, ConvNeXt V2, CUB-200-2011, DINOv2, DINOv3, Feature Concatenation (Early Fusion), Feature Summation, Fine Grained Image Classification Using Image Embedding Ensembles (+25 more)
 
 ### Community 1848 - "GSM8K TR Semantik Benzerlik Analizi"
 Cohesion: 0.10
@@ -19614,8 +19695,8 @@ Cohesion: 0.10
 Nodes (19): 1. Konu/Bölüm Filtreleme, 2. Uzunluk Filtreleme, Alanlar, Beklenen Model Çıktısı, Bölüm Dağılımı (Train Seti), Cevap Dağılımı, Filtreleme Kriterleri, Genel Bakış (+11 more)
 
 ### Community 1852 - "kisaltMetin"
-Cohesion: 0.07
-Nodes (5): DersDuzenlemeWindow, DersEkleGuncelleWindow, hoca_sirala(), KaynakVeOneriDuzenleyici, YeniElemanEklemeDialog
+Cohesion: 0.10
+Nodes (3): DersEkleGuncelleWindow, KaynakVeOneriDuzenleyici, YeniElemanEklemeDialog
 
 ### Community 1853 - "Fourier Serisi"
 Cohesion: 0.42
@@ -19626,8 +19707,8 @@ Cohesion: 0.11
 Nodes (17): aliases, components, hooks, lib, ui, utils, iconLibrary, rsc (+9 more)
 
 ### Community 1855 - "bootbox.js"
-Cohesion: 0.04
-Nodes (54): alert(), confirm(), createLabels(), dialog(), each(), getKeyLength(), mapArguments(), mergeArguments() (+46 more)
+Cohesion: 0.06
+Nodes (45): alert(), confirm(), createLabels(), dialog(), each(), getKeyLength(), mapArguments(), mergeArguments() (+37 more)
 
 ### Community 1856 - "stop_sign dataset (101_ObjectCategories)"
 Cohesion: 0.10
@@ -19663,11 +19744,11 @@ Nodes (20): Rapor: AWS DynamoDB ile CQRS View Uygulaması, CQRS, OrderHistoryDao
 
 ### Community 1865 - "Yapısal Programlama Dönem Projesi 2021 (ders kayıt)"
 Cohesion: 0.08
-Nodes (25): Yapısal Programlama Projesi 2020 (ders kayıt), ÖğrenciDersKayıt dosyası, Dersler dosyası (BLM2011..BLM2014), Öğretim üyeleri dosyası (Ahmet Elbir, Amaç Güvensan, Erkan Uslu), Öğrenci ders kayıt dosyası (Kayıtlı), Öğrenciler dosyası (Ali Şen, Emircan Kirez, Selim Ağırman, Atakan Aslan), BLM2031 öğrenci listesi (sınıf listesi), courseEnrollment.txt kayıt geçmişi (+17 more)
+Nodes (23): Yapısal Programlama Projesi 2020 (ders kayıt), ÖğrenciDersKayıt dosyası, Dersler dosyası (BLM2011..BLM2014), Öğretim üyeleri dosyası (Ahmet Elbir, Amaç Güvensan, Erkan Uslu), Öğrenci ders kayıt dosyası (Kayıtlı), Öğrenciler dosyası (Ali Şen, Emircan Kirez, Selim Ağırman, Atakan Aslan), Ders programı öğrenci 20011001, Ders programı öğrenci 20011003 (+15 more)
 
 ### Community 1866 - "Chapter 10 E-commerce"
 Cohesion: 0.03
-Nodes (77): Assistive technologies, Cascading style sheets (CSS), Control break, Data-entry controls, Designing system inputs, Designing system outputs, Desktop metaphor, Detailed reports (+69 more)
+Nodes (80): Assistive technologies, Cascading style sheets (CSS), Chapter 6 Summary: Systems Design, Control break, Data-entry controls, Designing system inputs, Designing system outputs, Desktop metaphor (+72 more)
 
 ### Community 1867 - "Ders 3 Genişletilmiş Notu: Prototype, Singleton, Adapter ve Bridge Kalıpları"
 Cohesion: 0.05
@@ -19758,8 +19839,8 @@ Cohesion: 0.04
 Nodes (44): 10.1 Kapsam tanımı, 10.2 Sistem kapsamı ve proje kapsamı, 10.3 Kapsam değişikliği yönetimi, 10. Kapsam ve Kapsam Değişikliği Yönetimi, 11.1 Gözden geçirme ve kabul, 11.2 Yaşam döngüsü yaklaşımının belirlenmesi, 11.3 Projeyi tanımlama kontrol listesi, 11. Gözden Geçirme, Yaşam Döngüsü ve Tanımlama Kontrol Listesi (+36 more)
 
 ### Community 1889 - "Multiplexer"
-Cohesion: 0.05
-Nodes (66): Lojik Devreler 7 (2020 Gökhan Bilgin) - MUX, Decoder, Encoder, ALU, Çoklayıcı (MUX), Tri-state buffer (üç durum), Kod Çözücü (Decoder), Demultiplexer (Dağıtıcı - DEMUX), Kodlayıcı (Encoder), Multiplexer (Seçici - MUX), nasir_sabir (2021) - Lojik Devreler el notu (+58 more)
+Cohesion: 0.03
+Nodes (101): Abstract Definition of a Boolean Algebra, George Boole, Claude Shannon, Boolean Algebra, Ayrık Matematik Bölüm 3 Boole Cebri, Yarı toplayıcı devre, Boole cebri özdeşlikleri, Çarpımların toplamı açılımı (+93 more)
 
 ### Community 1890 - "Flow Free tarzı renk bağlama bulmacası doküman görselleri (mehmet_ali_duran projesi)"
 Cohesion: 0.10
@@ -19767,7 +19848,7 @@ Nodes (20): 11x11 boş bulmaca tahtası, renkli nokta çiftleri yerleştirilmiş
 
 ### Community 1891 - "Seriler"
 Cohesion: 0.04
-Nodes (57): Sinθ/θ İçeren Özel Limitler, Alterne Seriler, Diziler, İntegral Testi, Kuvvet Serileri, Limit Testi, Mukayese Testi, Oran Testi (+49 more)
+Nodes (56): Sinθ/θ İçeren Özel Limitler, Alterne Seriler, Diziler, İntegral Testi, Kuvvet Serileri, Limit Testi, Mukayese Testi, Oran Testi (+48 more)
 
 ### Community 1892 - "Ders 9 Genişletilmiş Notu: Fiziksel Risk Etmenleri (Devam) ve Kimyasal Risk Etmenlerine Giriş"
 Cohesion: 0.05
@@ -19786,8 +19867,8 @@ Cohesion: 0.16
 Nodes (19): -3 dB noktası / band genişliği, Alçak kesim frekansı (CS, CC, CE etkisi), Bode eğrisi ve asimptotlar, Bölüm 11 Çok Katlı Sistemler ve Frekans, CC çıkış kuplaj kondansatörü, CE emetör bypass kondansatörü, Çok katlı sistemlerde frekans etkileri, CS giriş kuplaj kondansatörü (+11 more)
 
 ### Community 1896 - "2.Application Layer.pdf"
-Cohesion: 0.06
-Nodes (37): Anlık mesajlaşma sistemleri (SMS, iMessage, WhatsApp), Dosya aktarım süresi: 100 Mbps bağlantı ve kargo karşılaştırması, HOL blocking (HTTP/1.1), HTTP/2 çerçeveleme, IP datagram sayısı hesabı (MP3, MTU), NAK-only güvenilir veri aktarımı, Router forwarding table, UDP ve TCP seçimi (+29 more)
+Cohesion: 0.04
+Nodes (46): Anlık mesajlaşma sistemleri (SMS, iMessage, WhatsApp), BLM3033 Vize 2022 cevap anahtarı, Dosya aktarım süresi: 100 Mbps bağlantı ve kargo karşılaştırması, HOL blocking (HTTP/1.1), HTTP/2 çerçeveleme, IP datagram sayısı hesabı (MP3, MTU), NAK-only güvenilir veri aktarımı, Router forwarding table (+38 more)
 
 ### Community 1897 - "Sayısal Analiz Menü Programı (C konsol uygulaması: Bisection, Regula-Falsi, Newton-Raphson, Ters Matris, Gauss Eliminasyon, Gauss-Seidel, Nümerik Türev, Simpson, Trapez, Gregory-Newton Enterpolasyonu)"
 Cohesion: 0.15
@@ -19865,9 +19946,9 @@ Nodes (16): addStyleSheet(), contains(), createDocumentFragment(), createElement
 Cohesion: 0.06
 Nodes (34): 10.1 Tanım 5: Polinom İndirgeme, 10.2 Tanım 6: NP-Tam, 10.3 Hamilton Devresi ve Gezgin Satıcı Örneği, 10. Polinom İndirgeme ve NP-Tam Problemler, 11. Soru-Cevap: P ve NP Örnekleri, 12.1 Hocanın NP-Zor Anlatımı, 12.2 Sınıfların Şekli, 12. NP-Zor Problemler ve Sınıfların Şekli (+26 more)
 
-### Community 1920 - "a.py"
-Cohesion: 0.11
-Nodes (15): evaluate(), iou(), load_gt_boxes(), main(), parse_args(), eval_thresh(), iou(), load_gt() (+7 more)
+### Community 1920 - "MusteriMenu"
+Cohesion: 0.05
+Nodes (16): MusteriMenu, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.FocusAdapter (+8 more)
 
 ### Community 1921 - "Ders 7 Genişletilmiş Notu: Proje Planlama: Aktiviteler, WBS, Tahmin, Kaynak Atama, Bütçe, Proje Planı ve Risk Yönetimi"
 Cohesion: 0.05
@@ -19906,15 +19987,15 @@ Cohesion: 0.10
 Nodes (20): Co-citation ve bibliographic coupling, Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, Genel Konular, Google matrisi, Hocanın Özellikle Vurguladığı Kısımlar (+12 more)
 
 ### Community 1931 - "Ders 26 Genişletilmiş Notu: Proje Soru-Cevap Oturumu: Dosya İşlemleri, Başlık Dosyaları ve Tasarım Kararları"
-Cohesion: 0.06
-Nodes (34): 16. Derlenmiş Tam Program, 2.1 Yapının yeni hali, 2.2 Okuma: geçici değişken neden gerekiyor?, 2.3 Çalıştırma ve küçük bir hata, 2. Bit Alanlı Yapıyla Bağlı Liste, 10.1 Soru ve ilk cevap, 10.2 Ders notlarından doğrulama, 10. Dosyanın Başına Dönmek: fseek (+26 more)
+Cohesion: 0.03
+Nodes (57): 10. Listeyi Yazdırmak, 11. Yeni Düğüm Oluşturmak, 12. Listenin Sonuna Eklemek, 13. scanf ile Yapı Alanına Doğrudan Okuma Denemesi, 14. Araya Eleman Eklemek: insert_after, 15. Listeyi Boşaltmak: freeList, 16. Derlenmiş Tam Program, 1. Bölümün Planı (+49 more)
 
 ### Community 1932 - "Ders 2 Genişletilmiş Notu: Hata Bulma ve Düzeltme, Sezgisel Sıkıştırma ve Run-Length Encoding"
 Cohesion: 0.05
 Nodes (42): 10. MD5 ve SHA, 11.1 Braille Kodlama, 11.2 Morse Kodlama, 11. Sezgisel Sıkıştırma: Braille ve Morse, 12.1 Geri Dönüşümsüz Metin Sıkıştırma, 12.2 Sparse String Sıkıştırma, 12. Geri Dönüşümsüz Metin Sıkıştırma ve Sparse String, 13. Baudot Kodlama (+34 more)
 
 ### Community 1933 - "DonemEkleGuncelleWindow"
-Cohesion: 0.09
+Cohesion: 0.10
 Nodes (3): DonemDuzenlemeWindow, DonemEkleGuncelleWindow, topluWidgetBul()
 
 ### Community 1934 - "Ders 10 Genişletilmiş Notu: Gereksinim Belgesi Değerlendirmesi, Proje Grupları ve CMMI ile TDD Tekrarı"
@@ -19922,8 +20003,8 @@ Cohesion: 0.06
 Nodes (34): 10. People CMM Tekrarı, 11.1 Çevik Yaklaşımların Ortaya Çıkışı, 11.2 Eşli Programlama, 11. Çevik Yaklaşımlar, XP ve Eşli Programlama, 12. Statik ve Dinamik Kalite Değerlendirmesi, 13.1 Tanım ve Normal Akıştan Farkı, 13.2 TDD Akışı, 13.3 TDD Üzerine Bir Çalışma (+26 more)
 
 ### Community 1935 - "Ders 5 Genişletilmiş Notu: Facade, Flyweight, Proxy ve Chain of Responsibility Kalıpları"
-Cohesion: 0.05
-Nodes (39): 1.1 Adın anlamı, 1.2 Amaç ve yapı, 1.3 İç karmaşıklık ve refactoring, 1.4 Ne zaman kullanılır, 1. Facade Kalıbı, 2.1 Adın anlamı ve amaç, 2.2 Metin düzenleyici örneği, 2.3 Paylaşım fikri (+31 more)
+Cohesion: 0.03
+Nodes (73): MainApp, 13.1 Problem, 13.2 Tasarım, 13.3 Reklam sınıfı ve zincir mekanizması, 13.4 Somut reklamlar, 13.5 Kampanyaların kurulması ve çalıştırılması, 13. Chain of Responsibility Uygulama Örneği: Reklam Yönetim Yazılımı, 8.1 Problem ve ilk çözüm (+65 more)
 
 ### Community 1936 - "GRPO Prensiplerine Uyum Analizi"
 Cohesion: 0.11
@@ -19969,9 +20050,9 @@ Nodes (33): 10. Empedans ve Admitansın Polar ve Kartezyen Gösterimleri, 11.1 S
 Cohesion: 0.09
 Nodes (26): I(), a(), ae(), t(), b(), be(), ce(), D() (+18 more)
 
-### Community 1947 - "Chapter 7 BJT Transistor Modeling"
-Cohesion: 0.03
-Nodes (101): ElDev 09 BJT Transistor Modeling, Common-emitter konfigürasyonu, Hybrid equivalent model, re transistor modeli, ElDev 12 FET Amplifiers, FET small-signal modeli, Transconductance gm, hfe (ac beta) (+93 more)
+### Community 1947 - "BJT Small-Signal Analysis (Chapter 8)"
+Cohesion: 0.08
+Nodes (35): Table 8.1 CE/CB/CC relative parameter levels, Common-collector configuration, Amplifier conversion efficiency and dc/ac power exchange, AC equivalent circuit (dc sources and capacitors shorted), Alpha (α) dc/ac, Beta (β) dc/ac, hFE, Bipolar Junction Transistor (BJT), BJT Small-Signal Analysis (Chapter 8) (+27 more)
 
 ### Community 1948 - "Ders 4 Genişletilmiş Notu: Görüntü Sıkıştırma: RLE, Faks Standartları, JPEG-LS, JPEG, JPEG 2000 ve Görüntü Formatları"
 Cohesion: 0.05
@@ -19986,12 +20067,12 @@ Cohesion: 0.14
 Nodes (3): Basket, Item, MarketCard
 
 ### Community 1951 - "Uygulamalı Optimizasyon Problemleri"
-Cohesion: 0.06
-Nodes (36): MAT1071 Hafta 4 Türev Çözümleri (el yazısı), Limit ve L'Hospital, Türev, Artan azalan fonksiyon, MAT1071 Alıştırmalar-6: L'Hospital Kuralı ve Ekstremum Noktalar, Ekstremum noktaları, L'Hospital Kuralı, Yerel Ekstremum Değerler İçin Birinci Türev Testi (+28 more)
+Cohesion: 0.05
+Nodes (47): MAT1071 Hafta 4 Türev Çözümleri (el yazısı), Limit ve L'Hospital, Türev, Artan azalan fonksiyon, MAT1071 Alıştırmalar-6: L'Hospital Kuralı ve Ekstremum Noktalar, Ekstremum noktaları, L'Hospital Kuralı, Yerel Ekstremum Değerler İçin Birinci Türev Testi (+39 more)
 
 ### Community 1952 - "typing"
 Cohesion: 0.01
-Nodes (170): is_excluded(), main(), find_multilabel_files(), find_unique_labels_filtered(), clean_log(), create_comparison_table(), load_all_metrics(), main() (+162 more)
+Nodes (164): is_excluded(), main(), find_multilabel_files(), find_unique_labels_filtered(), clean_log(), create_comparison_table(), load_all_metrics(), main() (+156 more)
 
 ### Community 1953 - "Ders 13 Genişletilmiş Notu: Veri Görselleştirme: Ön-Dikkat İşleme, Algı İlkeleri ve Biyolojik Verinin Görselleştirilmesi"
 Cohesion: 0.05
@@ -20014,8 +20095,8 @@ Cohesion: 0.06
 Nodes (33): 1.1 Ölçüm, Ara Değerler ve Fonksiyon Bulmak, 1.2 Gerçek Fonksiyon $f(x)$ ve Enterpolasyon Fonksiyonu $F(x)$, 1. Enterpolasyon Nedir?, 2.1 Eğim Yöntemi, 2.2 Doğru Denklemi Yöntemi, 2.3 Tahtada Kurulan Örnek, 2. Doğrusal Enterpolasyon, 3. Doğrudan Polinom Uydurmanın Zahmeti (+25 more)
 
 ### Community 1958 - "Ders 7 Genişletilmiş Notu: Sınıflandırma ve Karar Ağaçları"
-Cohesion: 0.04
-Nodes (51): 10. Kazanç Oranı, 11.1 Tanım, 11.2 Bölme sonrası Gini, 11.3 İkili öznitelik örneği, 11.4 Sürekli öznitelik örneği, 11. Gini İndeksi, 12.1 Üç ölçünün karşılaştırması, 12. Diğer Öznitelik Seçme Ölçüleri (+43 more)
+Cohesion: 0.05
+Nodes (38): 10. Kazanç Oranı, 11.1 Tanım, 11.2 Bölme sonrası Gini, 11.3 İkili öznitelik örneği, 11.4 Sürekli öznitelik örneği, 11. Gini İndeksi, 12.1 Üç ölçünün karşılaştırması, 12. Diğer Öznitelik Seçme Ölçüleri (+30 more)
 
 ### Community 1959 - "Ders 10 Genişletilmiş Notu: Evrişimli Sinir Ağları (CNN)"
 Cohesion: 0.05
@@ -20071,7 +20152,7 @@ Nodes (32): 10.1 Yeni Örnek ve Yerleştirme, 10.2 Birinci Seçenek: I <= N+1 ve
 
 ### Community 1972 - "2.Application Layer.pdf"
 Cohesion: 0.04
-Nodes (48): RTS/CTS, BLM3033 Vize 2022 cevap anahtarı, Basit taşıma katmanı protokolü (STP), BLM3033 Final 2022 cevap anahtarı, Data plane ve control plane, Kablosuz bağlantıda kayıp olasılığını azaltma, Roaming, Yayın LAN'ında MAC adres filtreleme (+40 more)
+Nodes (48): CSMA/CA, RTS/CTS, Roaming, 802.3 Ethernet standartları, Başka alt ağa yönlendirme: IP ve MAC adresleme, CSMA, Ethernet CSMA/CD algoritması ve binary backoff, Ethernet: güvenilmez, bağlantısız (+40 more)
 
 ### Community 1973 - "Ders 2 Genişletilmiş Notu: Derse Giriş: Algoritma Kavramı, Programlama Dilleri ve Bilgisayar Mühendisliği"
 Cohesion: 0.06
@@ -20130,8 +20211,8 @@ Cohesion: 0.13
 Nodes (18): K-Way Merge Sort Problemi (Ödev 2), Hashing Çözümü (Tarık Taşkın), dosya1.txt Test Kodu, dosya2.txt Test Kodu, dosya3.txt Test Kodu, dosya4.txt Test Kodu, dosya5.txt Test Kodu, Hashing Problemi (Ödev 3) (+10 more)
 
 ### Community 1987 - "Yapısal Programlamaya Giriş/ders_kayitlari/2020-2021/sube_2/README.md"
-Cohesion: 0.03
-Nodes (59): Ders 10 Çalışma Özeti, Ders sonrası notlar, Derste yazılan pointer örneği, Detaylı Açıklamalar, Frekans hesabı, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+51 more)
+Cohesion: 0.04
+Nodes (43): Ders 10 Çalışma Özeti, Ders sonrası notlar, Derste yazılan pointer örneği, Detaylı Açıklamalar, Frekans hesabı, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+35 more)
 
 ### Community 1988 - "ödev_4_22011090/ödev_4.c"
 Cohesion: 0.26
@@ -20174,8 +20255,8 @@ Cohesion: 0.11
 Nodes (17): 5. Hafta - 4 Kasım 2021 Perşembe, CASE Statement for Conditional Updates, CHAPTER 4 Intermediate SQL, Deletion, INNER JOIN in SQL, Insertion, Joined Relations, NATURAL JOIN in SQL (+9 more)
 
 ### Community 2000 - "Veritabanı Yönetimi Ders Kayıtları 2020-2021 İndeksi"
-Cohesion: 0.10
-Nodes (36): Ders 10 Çalışma Özeti (MD), B-tree ve Hash indeksleme, Ders 10 Çalışma Özeti (PDF), Gömülü SQL, Ana bilgisayar değişkenleri, JDBC/ODBC API mimarisi, SSDM diyagramları, XML ve ilişkisel model karşılaştırması (+28 more)
+Cohesion: 0.11
+Nodes (35): Ders 10 Çalışma Özeti (MD), B-tree ve Hash indeksleme, Ders 10 Çalışma Özeti (PDF), Gömülü SQL, Ana bilgisayar değişkenleri, JDBC/ODBC API mimarisi, SSDM diyagramları, XML ve ilişkisel model karşılaştırması (+27 more)
 
 ### Community 2001 - "YSA'ların Sınırları projesi"
 Cohesion: 0.40
@@ -20242,8 +20323,8 @@ Cohesion: 0.06
 Nodes (31): 1. Dersin Amacı: Genel Alıştırmalar (General Exercises), 2.1 Doğrudan parça türevi ne zaman alınabilir?, 2.2 Örnek 1: $\sin 2x$ ve $mx$, 2.3 Örnek 2: Türevin tanımını kullanmak zorunlu olduğunda, 2. Parçalı Fonksiyonlarda Türevlenebilirlik, 3.1 Örnek 3: $\cos(x+y^2)=y^3$, 3.2 Örnek 4: Teğet ve normal doğru, 3.3 Örnek 5: İkinci mertebe kapalı türev (+23 more)
 
 ### Community 2018 - "Veri Yapıları ve Algoritmalar/ders_kayitlari/2020-2021/sube_1/README.md"
-Cohesion: 0.04
-Nodes (46): 1.1 İşlem Karmaşıklığından Farkı, 1.2 Hocanın Örneği, 1.3 Yeri ve Zamanı Verimli Kullanmak, 1. Yer Karmaşıklığı, 2. Akış Diyagramı ve Kod, Ders 6 Genişletilmiş Notu: Yer Karmaşıklığı Hatırlatması (Kısa Kayıt), Dersin Toparlaması, İçindekiler (+38 more)
+Cohesion: 0.03
+Nodes (66): 1.1 İşlem Karmaşıklığından Farkı, 1.2 Hocanın Örneği, 1.3 Yeri ve Zamanı Verimli Kullanmak, 1. Yer Karmaşıklığı, 2. Akış Diyagramı ve Kod, Ders 6 Genişletilmiş Notu: Yer Karmaşıklığı Hatırlatması (Kısa Kayıt), Dersin Toparlaması, İçindekiler (+58 more)
 
 ### Community 2019 - "Ders 3 Genişletilmiş Notu: Örnekleme, Nyquist Ölçütü, Nicemleme, Sensörler ve İdeal Diyot"
 Cohesion: 0.05
@@ -20298,12 +20379,12 @@ Cohesion: 0.05
 Nodes (37): 1. Dersin İşleyişi, 2.1 Tarihçe, 2.2 Çalışma prensibi, 2.3 Wi-Fi'ye göre avantajları, 2.4 Dezavantajları, 2.5 Hız karşılaştırması, 2.6 Soru-cevap, 2. Sunum: Li-Fi (Light Fidelity) Teknolojisi (+29 more)
 
 ### Community 2036 - "USIS öğrenci bilgi sistemi"
-Cohesion: 0.07
-Nodes (34): Kaynak: parsakaz/PGM-RLE-Compression, PGM RLE Compression README, PGM Görüntü Dosyası, Struct yapıları, Market alışverişi struct ve indirim hesabı, image_compression readme, Histogram hesabı, PGM görüntü formatı (+26 more)
+Cohesion: 0.08
+Nodes (29): Kaynak: parsakaz/PGM-RLE-Compression, PGM RLE Compression README, PGM Görüntü Dosyası, Struct yapıları, Market alışverişi struct ve indirim hesabı, image_compression readme, Histogram hesabı, PGM görüntü formatı (+21 more)
 
 ### Community 2037 - "Subject Index (I-1..I-23)"
-Cohesion: 0.03
-Nodes (82): Standard Functions: Exponentials, Logarithms, Factorials, Merge sort algorithm, NP problems, Polynomial problems (P), Fundamentals of algorithmic problem solving, Amortized efficiency, Analysis framework (time and space efficiency), Appendix A: Useful Formulas for the Analysis of Algorithms (+74 more)
+Cohesion: 0.04
+Nodes (63): Standard Functions: Exponentials, Logarithms, Factorials, Merge sort algorithm, NP problems, Polynomial problems (P), Fundamentals of algorithmic problem solving, Amortized efficiency, Analysis framework (time and space efficiency), Asymptotic notations O, Omega, Theta (+55 more)
 
 ### Community 2038 - "Yüksekte çalışmalarda İSG"
 Cohesion: 0.19
@@ -20338,8 +20419,8 @@ Cohesion: 0.12
 Nodes (16): Ders 10: JDBC/ODBC, Gömülü SQL, İndeks Yapıları (B-tree, Hash), Ders 11: XQuery, XML Veritabanları, Ders 14: İndeks Yapısı, Dosya Düzenleme, Ders Özeti, Ders 1: Veritabanı Temel Kavramları, VTYS, Dosya Tipleri, Transaction, Ders 2: VTYS Kullanıcıları, DDL/DML, Üç Şema Mimarisi, Veri Bağımsızlığı, ER Modeline Giriş, Ders 3: ER Diyagramı Tasarımı, Varlık/Bağıntı Kavramları, Cardinality, Participation, Ders 4: ER Örnekleri, İlişkisel Modele Dönüşüm, Ders 5: İlişkisel Model, İlişkisel Cebir, SQL'e Dönüşüm Kuralları (+8 more)
 
 ### Community 2047 - "BLM2051 Seminer Dersi Notları (Yunus Emre Selçuk, 2020)"
-Cohesion: 0.12
-Nodes (21): Araştırma yöntem ve teknikleri, Bilimsel yayınların hazırlanması, Bilişim hukuku ve adli kanıt, Başarım değerlendirme, BLM2051 Seminer Dersi Notları (Yunus Emre Selçuk, 2020), E-ticaret güvenliği, Bilimsel etik dışı davranışlar (intihal), Sosyal ağlar etik sorunları (+13 more)
+Cohesion: 0.13
+Nodes (19): Araştırma yöntem ve teknikleri, Bilimsel yayınların hazırlanması, Bilişim hukuku ve adli kanıt, Başarım değerlendirme, BLM2051 Seminer Dersi Notları (Yunus Emre Selçuk, 2020), E-ticaret güvenliği, Bilimsel etik dışı davranışlar (intihal), Sosyal ağlar etik sorunları (+11 more)
 
 ### Community 2048 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.12
@@ -20365,9 +20446,9 @@ Nodes (31): 10. Örnek 2: $\{a^n b^l c^{n+l} \mid n, l \ge 0\}$, 11. Örnek 3: $
 Cohesion: 0.06
 Nodes (36): 10. AdaBoost Oyuncak Örneği: Hata ve Alfa Değerleri, 11. Doğrusal Sınırlar ve Veri Madenciliği Algoritmalarının Doğası, 12. AdaBoost Örneği: Ağırlıkların Turdan Tura Değişimi, 13.1 Random forest oluşturmanın iki yöntemi, 13. Random Forest, 14. Topluluk Yöntemlerinin Deneysel Karşılaştırması, 15. Bölümün Toparlaması, 1.1 Değerlendirme ölçüleri (+28 more)
 
-### Community 2054 - "LoginPage"
-Cohesion: 0.08
-Nodes (9): LoginPage, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.FocusAdapter, java.awt.event.FocusAdapter, java.awt.event.MouseAdapter, java.awt.event.WindowAdapter (+1 more)
+### Community 2054 - "gezirehberi/Scripts/bootstrap.bundle.min.js"
+Cohesion: 0.10
+Nodes (44): ae(), Bt(), ce(), D(), de(), $e(), ee(), fe() (+36 more)
 
 ### Community 2055 - "Ders 8 Genişletilmiş Notu: İki Boyutlu Faks Kodlaması ve Aritmetik Kodlama"
 Cohesion: 0.07
@@ -20398,16 +20479,16 @@ Cohesion: 0.11
 Nodes (19): Aşırı Öğrenme (Overfitting), Bilgi Kazancı, Budama (Pruning), Ders sonrası notlar, Ders Sonu, Detaylı Açıklamalar, En İyi Özellik: Saflık ve Bilgi Kazancı, Entropi (+11 more)
 
 ### Community 2062 - "Ödev-2 Fourier Analizi ve Uygulaması (2022-23)"
-Cohesion: 0.22
-Nodes (11): Çift Tonlu Çoklu Frekans (DTMF), FFT ve fftshift spektrum analizi, Ornek.wav DTMF ses dosyası, Telefon numarası ses sentezi (8 kHz), Ses dosyasını n eşit parçaya bölme, Spektrumda otomatik tepe (peak) tespiti, Ödev-2 Fourier Analizi ve Uygulaması (2022-23), GitHub repo toomuchsena/signals-and-systems-for-computer-engineers (+3 more)
+Cohesion: 0.13
+Nodes (20): Çift Tonlu Çoklu Frekans (DTMF), FFT ve fftshift spektrum analizi, Ornek.wav DTMF ses dosyası, Telefon numarası ses sentezi (8 kHz), Ses dosyasını n eşit parçaya bölme, Spektrumda otomatik tepe (peak) tespiti, Ödev-2 Fourier Analizi ve Uygulaması (2022-23), GitHub repo toomuchsena/signals-and-systems-for-computer-engineers (+12 more)
 
 ### Community 2063 - "Ders 10 Genişletilmiş Notu: Ağaçlar, İfade Ağaçları, Ağaç Gezinme Yöntemleri, Huffman Kodlama ve Kapsayan Ağaçlar"
 Cohesion: 0.04
 Nodes (50): 10.1 İkili ağaç örnekleri, 10.2 Çok çocuklu ağaçta gezinme, 10. Ağaç Gezinme Yöntemleri, 11.1 Fikir, 11.2 "rate" kelimesinin kodlanması, 11.3 Çevrim içi görselleştirme, 11.4 Slayt örneği: $a,e,k,l,m,z$, 11. Huffman Kodlama (+42 more)
 
 ### Community 2064 - "2x2_blm_2512_data_structures_and_algorithms/ödev_3/19011076.c"
-Cohesion: 0.12
-Nodes (29): Soru 1 (ekrandan, 00:30:00), arama_islemi(), buyuk(), deleteNode(), enKucukNode(), esit(), insert(), kucuk() (+21 more)
+Cohesion: 0.13
+Nodes (28): arama_islemi(), buyuk(), deleteNode(), enKucukNode(), esit(), insert(), kucuk(), main() (+20 more)
 
 ### Community 2065 - "proje/onder_gormez/readme.md"
 Cohesion: 0.12
@@ -20422,8 +20503,8 @@ Cohesion: 0.32
 Nodes (13): checklist(), createBST(), createNode(), decreaseValue(), deleteNode(), getMinValueNode(), inorderTraversal(), insert() (+5 more)
 
 ### Community 2068 - "Path Compression"
-Cohesion: 0.07
-Nodes (33): Dynamic connectivity problem, Quick-find algorithm, Quick-union algorithm, Union-find API, Function A_k(j) and inverse alpha(n), Potential method of amortized analysis, CONNECTED-COMPONENTS, Disjoint-set data structure (MAKE-SET, UNION, FIND-SET) (+25 more)
+Cohesion: 0.05
+Nodes (48): Dynamic connectivity problem, Quick-find algorithm, Quick-union algorithm, Union-find API, Function A_k(j) and inverse alpha(n), Potential method of amortized analysis, CONNECTED-COMPONENTS, Disjoint-set data structure (MAKE-SET, UNION, FIND-SET) (+40 more)
 
 ### Community 2069 - "ödev_3/20011613.c"
 Cohesion: 0.28
@@ -20502,8 +20583,8 @@ Cohesion: 0.13
 Nodes (17): Back-stitch, Button-holes, Darning, D.M.C threads and cottons, Encyclopedia of Needlework (Thérèse de Dillmont), Fine drawing (invisible darning), Gathering and whipping, Hem-stitch variations (+9 more)
 
 ### Community 2091 - "Per-Profile Detail"
-Cohesion: 0.12
-Nodes (16): Arithmetic order-1 bpb patlaması (küçük chunk), Profil başına kazanan codec (LZW 6, Huffman 4, BWT+MTF 1), Per-Profile Detail, Phase 2 Algorithm Selection Report, profile_0, profile_1, profile_10, profile_11 (+8 more)
+Cohesion: 0.11
+Nodes (18): Arithmetic order-1 bpb patlaması (küçük chunk), Profil başına kazanan codec (LZW 6, Huffman 4, BWT+MTF 1), Phase 5 Raw Benchmark Report, bwt_mtf 3.42 BPB; adaptif 5.68 BPB (-%65.8), Per-Profile Detail, Phase 2 Algorithm Selection Report, profile_0, profile_1 (+10 more)
 
 ### Community 2092 - "com.unity.modules.imgui"
 Cohesion: 0.14
@@ -20515,7 +20596,7 @@ Nodes (30): Asimptot soruları, Ders 21 Çalışma Özeti, Ders sonrası notlar,
 
 ### Community 2094 - "yusuf_safa_koksal/stb_image.h"
 Cohesion: 0.06
-Nodes (79): readImage(), load_jpeg_image(), resample_row_1(), stbi__bitcount(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y(), stbi__convert_16_to_8() (+71 more)
+Nodes (79): readImage(), resample_row_1(), stbi__clamp(), stbi__compute_y_16(), stbi__convert_16_to_8(), stbi__convert_8_to_16(), stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread() (+71 more)
 
 ### Community 2095 - "Sunum 1-15: Giriş (İleri Yazılım Mimarisi)"
 Cohesion: 0.09
@@ -20562,12 +20643,12 @@ Cohesion: 0.12
 Nodes (17): Trafik İşareti Görseli 17 (tehlike_uyari), Trafik İşareti Görseli 18 (tehlike_uyari), Trafik İşareti Görseli 19 (tehlike_uyari), Trafik İşareti Görseli 20 (tehlike_uyari), Trafik İşareti Görseli 21 (tehlike_uyari), Trafik İşareti Görseli 22 (tehlike_uyari), Trafik İşareti Görseli 23 (tehlike_uyari), Trafik İşareti Görseli 24 (tehlike_uyari) (+9 more)
 
 ### Community 2106 - "CustomerRegisterPage"
-Cohesion: 0.19
-Nodes (5): CustomerRegisterPage, ActionListener, ActionListener, Runnable, TestCustomerRegisterPage
+Cohesion: 0.10
+Nodes (11): CustomerLoginPage, ActionListener, ActionListener, Runnable, CustomerRegisterPage, ActionListener, ActionListener, Runnable (+3 more)
 
 ### Community 2107 - "Ders 8 Genişletilmiş Notu: Veri Saklama: Dosya Depolama, SharedPreferences, Parcelable ve Kamera Örnekleri"
 Cohesion: 0.05
-Nodes (43): 10.1 İzinler, 10.2 External storage var mı, okunabilir mi, yazılabilir mi?, 10.3 Ortak alan ile uygulamaya özel alan, 10. External Storage'ın Kontrolü ve İzinler, 11. MediaStore, Storage Access Framework ve BlobStoreManager, 12.1 İki metot, 12.2 SharedPreferences ile saved instance state farkı, 12.3 Yazma (+35 more)
+Nodes (43): 10.1 İzinler, 10.2 External storage var mı, okunabilir mi, yazılabilir mi?, 10.3 Ortak alan ile uygulamaya özel alan, 10. External Storage'ın Kontrolü ve İzinler, 11. MediaStore, Storage Access Framework ve BlobStoreManager, 13. Uygulamalar Arası Veri Gönderme, 14.1 Neden?, 14.2 Karşılaştırma (+35 more)
 
 ### Community 2108 - "Ders 16 Genişletilmiş Notu: Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler"
 Cohesion: 0.06
@@ -20579,7 +20660,7 @@ Nodes (29): 1. Dersin Yazılım Mühendisliği İçindeki Yeri, 2.1 Birinci Böl
 
 ### Community 2111 - "Prim's Algorithm"
 Cohesion: 0.08
-Nodes (38): Boruvka's algorithm, MST-REDUCE / Borůvka's algorithm, Chapter 23 Minimum Spanning Trees, Disjoint-set data structure, GENERIC-MST, Safe edge, cut and light edge (Theorem 23.1), Chapter 23: Minimum Spanning Trees, Disjoint-Set Data Structure (union-find) (+30 more)
+Nodes (37): Boruvka's algorithm, MST-REDUCE / Borůvka's algorithm, Chapter 23 Minimum Spanning Trees, Disjoint-set data structure, GENERIC-MST, Safe edge, cut and light edge (Theorem 23.1), Chapter 23: Minimum Spanning Trees, Disjoint-Set Data Structure (union-find) (+29 more)
 
 ### Community 2112 - "Usage"
 Cohesion: 0.12
@@ -20598,8 +20679,8 @@ Cohesion: 0.05
 Nodes (40): 1.1 Proje yönetimi bilgi ve deneyimi, 1.2 Genel yönetim bilimi, 1.3 Yazılım mühendisliği teknikleri, 1. Yazılım Proje Yönetiminin Üç Bileşeni, 2.1 Planın cevaplaması gereken sorular, 2.2 Proje yönetimi ile kalite yönetiminin örtüşmesi, 2. Yazılım Proje Yönetiminin Hedefleri ve Yazılım Geliştirme Planı, 3.1 Kaliteli yazılım ve en ekonomik yol (+32 more)
 
 ### Community 2116 - "Operating System Concepts 9th Edition Slides (Silberschatz)"
-Cohesion: 0.04
-Nodes (63): Process Creation (fork/exec), Chapter 4: Threads, Grand Central Dispatch, Multithreading Models, OpenMP, Thread-Local Storage, User and Kernel Threads, Chapter 3 Exercises and Programming Projects (UNIX shell, kernel module for tasks) (+55 more)
+Cohesion: 0.03
+Nodes (97): Deadlock / Starvation riski, 10. Hafta - 6 Aralık 2021 (Senkronizasyon sonu, CPU Scheduling), Process Creation (fork/exec), Chapter 4: Threads, Grand Central Dispatch, Multithreading Models, OpenMP, Thread-Local Storage (+89 more)
 
 ### Community 2117 - "BLM1551 Dönem Projesi: Symbol game"
 Cohesion: 0.12
@@ -20626,24 +20707,24 @@ Cohesion: 0.12
 Nodes (15): Biyoenformatiğe Giriş Ders Kayıtları & Çalışma Özetleri, Ders 11: Çoklu Dizi Hizalama, Ders 12: Akademik İçerik Bulunmayan Kayıt, Ders 13: İstatistik ve Veri Analizi, Ders 14: Görselleştirme ve Algı, Ders 1: Biyoenformatiğe Giriş, Ders 2: Biyoenformatik Araçları ve Çalışma Ortamları, Ders 3: Moleküler Biyoloji Temelleri (+7 more)
 
 ### Community 2124 - "Veriseti Bilgileri"
-Cohesion: 0.12
-Nodes (15): Derece Türlerine Göre Dağılım, Eksik Veri Analizi, Eğitim Seti, Eğitim Seti, Eğitim Seti, Genel Bilgiler, Sütunlar, Test Seti (+7 more)
+Cohesion: 0.20
+Nodes (9): Derece Türlerine Göre Dağılım, Eğitim Seti, Eğitim Seti, Genel Bilgiler, Sütunlar, Test Seti, Test Seti, Veriseti Bilgileri (+1 more)
 
 ### Community 2125 - ".actionPerformed"
-Cohesion: 0.03
-Nodes (14): currentRowKayit, GenerateEquation, Ifade, IfadeYazdir, istatistik, menu, oyun, WindowAdapter (+6 more)
+Cohesion: 0.04
+Nodes (10): currentRowKayit, Ifade, IfadeYazdir, istatistik, menu, oyun, WindowAdapter, saniyeKaydet (+2 more)
 
 ### Community 2126 - "Ödev 2 çözümleri (Burak Başol)"
 Cohesion: 0.18
 Nodes (14): Ayrılabilir denklem çözümü y=y0 e^{-kt}, Basit ODE modellerinin sınırlamaları (SDE, gecikmeli DE), Denge değeri y_eq = c/k, Duygusal denge = asimptotik kararlılık ve sınırlılık, İntegral çarpanı ile sistem çözümü, Denge noktalarının kararlılık analizi f'(y), Lojistik büyüme terimi (duygusal düzenleme), Zaman sabiti tau=1/k ve yakınsama hızı (+6 more)
 
 ### Community 2127 - "Role-based access control (RBAC)"
-Cohesion: 0.04
-Nodes (67): Biometrics, One-Time Passwords, Password Vulnerabilities, Passwords, Two-Factor Authentication, Biometrics authentication, Capability / C-list, Challenge-response authentication (+59 more)
+Cohesion: 0.05
+Nodes (63): Biometrics, One-Time Passwords, Two-Factor Authentication, Biometrics authentication, Capability / C-list, Challenge-response authentication, Cryptographically protected capability (Amoeba), Harrison et al. six primitive operations (+55 more)
 
 ### Community 2128 - "gezirehberi/Scripts/jquery-3.7.0.slim.min.js"
-Cohesion: 0.04
-Nodes (78): ye(), Ae(), B(), Be(), c(), Ct(), $e(), ee() (+70 more)
+Cohesion: 0.05
+Nodes (77): ye(), Ae(), B(), Be(), c(), Ct(), $e(), ee() (+69 more)
 
 ### Community 2129 - "Ders 4 Genişletilmiş Notu: İşaret İşlemleri Tekrarı, Enerji-Güç ve Temel İşaretler"
 Cohesion: 0.04
@@ -20670,8 +20751,8 @@ Cohesion: 0.25
 Nodes (8): Kullanım Senaryosu Modellemesi (Use-Case, Aktör, Senaryo), Sistem Analizi Araçları (Veri Sözlüğü, ERD, VAD, STD), Sistem Tasarımı (Ön Tasarım, Ayrıntılı Tasarım, HIPO), Süreç Tanımlama Formları (Pseudo Kod, Karar Ağaçları, Karar Tabloları), VAD Düzeyleri (1. ve 2. Düzey), Veri Akış Diyagramı (VAD/DFD) ve Kuralları, Örnek: İşe Alım Sistemi Context ve Level-1 DFD, Örnek: Mutfak (Restoran) Sistemi Context ve Level-1 DFD
 
 ### Community 2136 - "Bilgisayar Mühendisleri için Sinyaller ve Sistemler/ders_kayitlari/2020-2021/sube_1/README.md"
-Cohesion: 0.07
-Nodes (24): Ayrık zaman konvolüsyonu: ters çevir, kaydır, çarp, topla, Birim dürtü cevabı ve süperpozisyon integrali, Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Konvolüsyonun uygulamaları ve maliyeti (+16 more)
+Cohesion: 0.06
+Nodes (24): Ayrık zaman örneği 1, Ayrık zaman örneği 2, Birim darbe cevabı ve frekans cevabı, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, FIR filtreler, Fourier dönüşümünün uygulamaları (+16 more)
 
 ### Community 2137 - "blm_2512_data_structures/ödevler/ödev_2/22011641.c"
 Cohesion: 0.42
@@ -20715,7 +20796,7 @@ Nodes (16): 1. Test Çıktısı 1 (çapraz desen), 1. Test Çıktısı 2 (çapra
 
 ### Community 2148 - "Chapter 7: Response of First-Order RL and RC Circuits"
 Cohesion: 0.07
-Nodes (46): Step response with magnetically coupled coils, General solution for natural and step responses (x(t)=xf+[x(t0)-xf]e^-(t-t0)/tau), Practical perspective: artificial pacemaker RC circuit, Sequential switching, Step response of RL and RC circuits, Time constant of RL/RC circuit, Transformers and ideal transformers, Appendix C Magnetically Coupled Coils and Ideal Transformers (+38 more)
+Nodes (45): Step response with magnetically coupled coils, General solution for natural and step responses (x(t)=xf+[x(t0)-xf]e^-(t-t0)/tau), Practical perspective: artificial pacemaker RC circuit, Sequential switching, Step response of RL and RC circuits, Time constant of RL/RC circuit, Transformers and ideal transformers, Appendix C Magnetically Coupled Coils and Ideal Transformers (+37 more)
 
 ### Community 2149 - "GSM - LTE Veri İletişimi Projesi"
 Cohesion: 0.25
@@ -20790,8 +20871,8 @@ Cohesion: 0.27
 Nodes (16): Adobe Photoshop, AFAD (Afet ve Acil Durum Yönetimi Başkanlığı), Bursiyer ücretleri üst sınırları (lisans 2.180 TL ... doktora sonrası 13.230 TL), EK-2: Bütçe ve Gerekçesi (TÜBİTAK 1001), Genel bütçe tablosu: talep edilen toplam 649.000 TL, Makine ve teçhizat giderleri (yazılım lisansları), Geçici işçi ücretleri 105.000 TL (deprem eğitim uzmanı, ilk yardım uzmanı, hemşire), Deprem sonrası ciddi oyun projesi (+8 more)
 
 ### Community 2167 - "E-ticaret ürün kategorisi sınıflandırma projesi"
-Cohesion: 0.28
-Nodes (16): Bitirme Tezi: FIFA 2018 Verisinin Veri Madenciliği ile İncelenmesi, NumPy, Pandas, Matplotlib, SciPy, Scikit-Learn, BLM3120 Term Project Raporu: E-commerce Product Classification, Nasıl çalıştırılır: streamlit run app.py, E-commerce ürün veri seti (4 kategori, temizlenmiş), Model karşılaştırması: doğrusal modeller üstün, Logistic Regression (~%95), E-ticaret ürün kategorisi sınıflandırma projesi (+8 more)
+Cohesion: 0.30
+Nodes (15): NumPy, Pandas, Matplotlib, SciPy, Scikit-Learn, BLM3120 Term Project Raporu: E-commerce Product Classification, Nasıl çalıştırılır: streamlit run app.py, E-commerce ürün veri seti (4 kategori, temizlenmiş), Model karşılaştırması: doğrusal modeller üstün, Logistic Regression (~%95), E-ticaret ürün kategorisi sınıflandırma projesi, Random Forest (~%92) (+7 more)
 
 ### Community 2168 - "__Pyx_BufFmt_CheckString"
 Cohesion: 0.24
@@ -20799,7 +20880,7 @@ Nodes (14): __Pyx_BufFmt_CheckString(), __Pyx_BufFmt_DescribeTypeChar(), __Pyx_B
 
 ### Community 2169 - "geo_business_travel_module/backend/package.json"
 Cohesion: 0.04
-Nodes (46): author, dependencies, accesscontrol, bcrypt, cors, dotenv, express, express-rate-limit (+38 more)
+Nodes (45): author, dependencies, accesscontrol, bcrypt, cors, dotenv, express, express-rate-limit (+37 more)
 
 ### Community 2170 - "Ders 23 Genişletilmiş Notu: Geri İzleme: Alt Küme Toplamı ve N-Vezir Problemi; Dal ve Sınır ile Atama Problemi"
 Cohesion: 0.06
@@ -20856,6 +20937,14 @@ Nodes (30): 10. Bilgisayar Bilimlerine Giriş Dersini Almamış Olanlar, 11. C B
 ### Community 2185 - "101_ObjectCategories - umbrella dataset klasörü"
 Cohesion: 0.12
 Nodes (16): 101_ObjectCategories - umbrella dataset klasörü, Umbrella fotoğrafı (image_0061), Umbrella fotoğrafı (image_0062), Umbrella fotoğrafı (image_0063), Umbrella fotoğrafı (image_0064), Umbrella fotoğrafı (image_0065), Umbrella fotoğrafı (image_0066), Umbrella fotoğrafı (image_0067) (+8 more)
+
+### Community 2187 - "remove"
+Cohesion: 0.14
+Nodes (3): Collapse, remove(), Toast
+
+### Community 2188 - "BaseComponent"
+Cohesion: 0.09
+Nodes (3): BaseComponent, Button, ScrollSpy
 
 ### Community 2190 - "Ders 22 Genişletilmiş Notu: 2. Vize Hazırlık: Temel Teorem, Riemann Toplamı, Grafik Çizimi ve Mazeret Sınavı Soruları"
 Cohesion: 0.07
@@ -20918,8 +21007,8 @@ Cohesion: 0.14
 Nodes (5): AdminAuthorizationFilter, CompanyAuthorizationFilter, DauAuthorizationFilter, LoginFilter, StudentAuthorizationFilter
 
 ### Community 2211 - "Silberschatz Ch.1 Introduction (slides)"
-Cohesion: 0.08
-Nodes (41): Chapter 1: Introduction (Silberschatz, Operating System Concepts 9th Ed.), Bilgisayar Sistemi Dört Bileşeni, Computing Environments, Dual-Mode Operation (User/Kernel Mode), I/O Structure, Kernel, Kernel Data Structures, Open-Source Operating Systems (GPL, Linux, BSD) (+33 more)
+Cohesion: 0.05
+Nodes (68): Chapter 1: Introduction (Silberschatz, Operating System Concepts 9th Ed.), Cloud Computing (SaaS, PaaS, IaaS), Bilgisayar Sistemi Dört Bileşeni, Computing Environments, Dual-Mode Operation (User/Kernel Mode), I/O Structure, Kernel, Kernel Data Structures (+60 more)
 
 ### Community 2212 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.13
@@ -20963,11 +21052,11 @@ Nodes (18): Ders 5 Çalışma Özeti, Ders sonrası notlar, Ders sonu soru-cevap
 
 ### Community 2222 - "Hocalar"
 Cohesion: 0.03
-Nodes (128): Göksel Biricik, Hafiza İrem Türkmen, Mehmet Amaç Güvensan, yunusemre002/YTU-Lessons (GitHub repo), Course Instructors and Rules, Mine Elif Karslıgil, Veritabanı Yönetimi Altyazıları README (2020-2021 Güz), Ders Kayıtları Hafta Takvimi (+120 more)
+Nodes (123): Göksel Biricik, Hafiza İrem Türkmen, Mehmet Amaç Güvensan, Ders 9 Kaydı Arşivde Yok, Sayısal Analiz Ders Kayıtları 2022-2023 README, Vize ve Final Sınav Bilgileri, yunusemre002/YTU-Lessons (GitHub repo), Course Instructors and Rules (+115 more)
 
-### Community 2224 - "ImageDao"
-Cohesion: 0.06
-Nodes (8): ImageDao, ImageImp, Hog, DistanceComparator, ImageSamples, KNN, Result, TestHog
+### Community 2224 - "KNN"
+Cohesion: 0.33
+Nodes (4): DistanceComparator, ImageSamples, KNN, Result
 
 ### Community 2225 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -21086,8 +21175,8 @@ Cohesion: 0.37
 Nodes (11): create_graph(), create_node(), find_bond(), list_neighbours(), main(), merge_graphs(), print_graph(), print_list() (+3 more)
 
 ### Community 2257 - "Dijkstra's Algorithm"
-Cohesion: 0.05
-Nodes (71): AcyclicLP, AcyclicSP, Arbitrage, Arbitrage (class), Arbitrage problem (negative cycle detection), Bellman-Ford algorithm, BellmanFordSP, CPM (+63 more)
+Cohesion: 0.04
+Nodes (76): Arbitrage, Arbitrage (class), Arbitrage problem (negative cycle detection), Bellman-Ford algorithm, BellmanFordSP, Critical path method (CPM), Currency exchange rates digraph, Edge relaxation (+68 more)
 
 ### Community 2258 - "wordtree.c"
 Cohesion: 0.38
@@ -21162,8 +21251,8 @@ Cohesion: 0.04
 Nodes (48): 10.1 Değerlendirme, 10.2 Parametre ve hiperparametre, 10.3 Hiperparametre ayarı bir lokal arama problemidir, 10. Olumlu ve Olumsuz Yönler, Hiperparametre Ayarı, 11.1 Bir alanı tarama, 11.2 İki nokta arası yol bulma, 11. Uygulamalar: Alan Tarama ve İki Nokta Arası Yol, 12. Birden Fazla İyilik Fonksiyonunu Birleştirmek (+40 more)
 
 ### Community 2276 - "Node"
-Cohesion: 0.06
-Nodes (11): BinaryTree, check_image_equality(), HuffmanCodingForImage, read_image(), Node, Ders 25 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+3 more)
+Cohesion: 0.08
+Nodes (5): BinaryTree, check_image_equality(), HuffmanCodingForImage, read_image(), Node
 
 ### Community 2277 - "5. Mimari Tasarım"
 Cohesion: 0.13
@@ -21178,8 +21267,8 @@ Cohesion: 0.07
 Nodes (4): 7.1 Thread Nasıl Beklemeli?, 7. Thread Durumları ve Doğru Bekleme, Ders sonrası notlar, Slick()
 
 ### Community 2280 - "Report"
-Cohesion: 0.05
-Nodes (47): File_Read(), MailWrite(), main(), Print_List(), Report(), Sort_Data(), Split_Data(), 12.1 Problem (+39 more)
+Cohesion: 0.04
+Nodes (53): File_Read(), MailWrite(), main(), Print_List(), Report(), Sort_Data(), Split_Data(), Araç kiralama uygulaması (+45 more)
 
 ### Community 2281 - "Ch4 Intermediate SQL (Silberschatz 7th Ed.)"
 Cohesion: 0.09
@@ -21246,8 +21335,8 @@ Cohesion: 0.04
 Nodes (45): 10.1 İkinci Improved Space uygulaması, 10.2 Her ağaca ayrı uzay nasıl verildi?, 10.3 AdaBoost'ta neresi değişmeli?, 10. Improved Space ve Ardışık Topluluklar: AdaBoost ve XGBoost, 11. MCMC Rastgele Yürüyüşünde Ağırlıkların Sonsuza Gitmesi, 12.1 Neden soft etiket?, 12.2 Düğüm soft etiketleri nasıl kullanır?, 12. Soft Etiketlerin Motivasyonu ve Düğümde Kullanımı (+37 more)
 
 ### Community 2297 - "hüsamettin_ışıktaş/package.json"
-Cohesion: 0.14
-Nodes (13): author, dependencies, @radix-ui/react-popover, description, keywords, license, name, scripts (+5 more)
+Cohesion: 0.13
+Nodes (14): author, dependencies, @radix-ui/react-popover, description, keywords, license, name, scripts (+6 more)
 
 ### Community 2298 - "Veri Madenciliği ve Bilgi Keşfi/slaytlar_notlar/2023/onder_gormez markdown/11_11_12_2023.md"
 Cohesion: 0.14
@@ -21354,8 +21443,8 @@ Cohesion: 0.21
 Nodes (14): Harf notları 2023 (yes.pdf), Yapısal Programlama BLM2031 (2022-2023), Sınıf ortalaması 56,53; std. sapma 23,52; 95 öğrenci; bağıl değerlendirme; vize %25, proje %20, lab %15, final %40, Dr.Öğr.Üyesi Yunus Emre Selçuk, Harf notları 2024 HİT (hit.pdf), Yapısal Programlama BLM1031 (2024-2025, İrem Türkmen Çilingir), Sınıf ortalaması 61,15; std. sapma 18,93; 85 öğrenci; 2 ara sınav %15, proje %15, lab %15, final %40, Doç.Dr. Hafiza İrem Türkmen Çilingir (+6 more)
 
 ### Community 2335 - "2022-2023_Güz Lisans Haftalık Ders Programı"
-Cohesion: 0.13
-Nodes (31): Ayrık Matematik 2024 harf notu istatistikleri (Banu Diri), BLM3041 Veritabanı Yönetimi, BLM1011 B lg sayar B l mler ne G r., BLM1991 İş Sağ. Güv. 1, BLM2011 İstatistik ve Olasılık Hes., BLM2012 Nesneye Yönelik Prog. OK Gr1, BLM2021, BLM2031 Yapısal Programlama* UK (+23 more)
+Cohesion: 0.07
+Nodes (53): Kaynak: burakataly/YTU-CE, Kaynak: tariktskn/YTU-NOTLAR, tariktskn/YTU-NOTLAR GitHub deposu, Kaynak (tariktskn YTU-NOTLAR Yapay Zeka), BLM3041 Veritabanı Yönetimi, BLM1011 B lg sayar B l mler ne G r., BLM1031 Yapısal Programlama*, BLM1033 Devre T. ve Elek. Dev. MEK Gr1; G1 Gr2; MAG Gr3 At (+45 more)
 
 ### Community 2336 - "Animation"
 Cohesion: 0.15
@@ -21471,7 +21560,7 @@ Nodes (11): decimal(), initialize(), isEmpty(), isFULL(), main(), popNumber(), p
 
 ### Community 2369 - "Operating System Concepts 9th (Silberschatz) - Ch.12 end to Ch.14"
 Cohesion: 0.03
-Nodes (115): Controllers, Device drivers, Embedded systems, Handshaking and status word, Spooling, USB and FireWire, Von Neumann bottleneck, DMA Bus Request / Bus Grant (CPU BR/BG signals) (+107 more)
+Nodes (122): Device driver, Operating System Concepts 9th (Silberschatz) - Ch.12 end to Ch.14, Access Lists for Objects, Application I/O Interface, Backup and Restore, Block and Character Devices, Blocking, Nonblocking and Asynchronous I/O, Caching (I/O) (+114 more)
 
 ### Community 2370 - "AYSIZ AUTO araç satış bilgi sistemi"
 Cohesion: 0.15
@@ -21514,8 +21603,8 @@ Cohesion: 0.14
 Nodes (14): 1.1 Proje Amacı, 1.2 Proje Kapsamı, 1.3.1 Kullanıcı Yönetimi, 1.3.2 Sohbet Yönetimi, 1.3.3 Mesajlaşma, 1.3.4 Dosya Paylaşımı, 1.3.5 Bildirimler, 1.3 Kullanıcı Senaryoları (User Stories) (+6 more)
 
 ### Community 2381 - "Elektronik Devreler Laboratuvarı Deney Föyü 2021-2022"
-Cohesion: 0.13
-Nodes (19): Elektronik Devreler Laboratuvarı Deney Föyü 2021-2022, Breadboard, CADET deney tahtası, Deney 1: Simülasyon, temel ölçüm ve cihaz tanıma, Deney 2: Diyot karakteristiği, Deney 4: BJT DC karakteristiği, Multimetre, Osiloskop (+11 more)
+Cohesion: 0.12
+Nodes (21): Elektronik Devreler Laboratuvarı Deney Föyü 2021-2022, Breadboard, CADET deney tahtası, Deney 1: Simülasyon, temel ölçüm ve cihaz tanıma, Deney 2: Diyot karakteristiği, Deney 3: İşlemsel kuvvetlendiriciler, Deney 4: BJT DC karakteristiği, Multimetre (+13 more)
 
 ### Community 2382 - "Ders 10 Genişletilmiş Notu: Sınav Sorularının Çözümü, İkili Arama Ağaçları, Radix ve Kırmızı-Siyah Ağaçlar, B-Ağaçlarına Giriş"
 Cohesion: 0.07
@@ -21559,7 +21648,7 @@ Nodes (46): 10.1 Fikir, 10.2 Çeşitlilik problemi, 10. Üçüncü Alternatif: P
 
 ### Community 2396 - "Ders 1 Genişletilmiş Notu: Derse Giriş ve C Dilinin Temelleri"
 Cohesion: 0.06
-Nodes (35): 10. main() Fonksiyonu ve exit(), 11.1 scanf, 11.2 printf, 11.3 Kaçış dizileri, 11. printf() ve scanf(), 12.1 Önişlemci nedir?, 12.2 Koşullu derleme, 12.3 #define (+27 more)
+Nodes (32): 10. main() Fonksiyonu ve exit(), 11.1 scanf, 11.2 printf, 11.3 Kaçış dizileri, 11. printf() ve scanf(), 12.1 Önişlemci nedir?, 12.2 Koşullu derleme, 12.3 #define (+24 more)
 
 ### Community 2397 - "iNaturalist 2021 veri kümesi analizi (train_mini / val)"
 Cohesion: 0.20
@@ -21594,8 +21683,8 @@ Cohesion: 0.04
 Nodes (47): 10.1 Devre ve kaynak, 10.2 Empedanslar, 10.3 Dönüşüm adımları, 10. Örnek 05: Kaynak Dönüşümüyle Thevenin Gerilimi, 11. Gerilim ve Akım Bölücü, 12.1 Devre ve fazör, 12.2 KCL denklemi, 12.3 Çözüm (+39 more)
 
 ### Community 2406 - "Ders 9 altyazısı (2020-2021 Mobil Programlama)"
-Cohesion: 0.08
-Nodes (50): Firebase, SharedPreferences, Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, USB bağlantısında external storage bloklanması (+42 more)
+Cohesion: 0.09
+Nodes (47): Firebase, SharedPreferences, Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, USB bağlantısında external storage bloklanması (+39 more)
 
 ### Community 2407 - "SCP.v"
 Cohesion: 0.15
@@ -21634,8 +21723,8 @@ Cohesion: 0.42
 Nodes (10): copyStack(), dequeue(), displayQueue(), displayStack(), enqueue(), findMinimumWordPath(), isOneLetterDifferent(), main() (+2 more)
 
 ### Community 2416 - "Data Reduction"
-Cohesion: 0.06
-Nodes (32): Classiifiication by decision tree, Data Reduction, Ders 1, Ders 1, Ders 2, Feature Composition, Feature Discretizatio: ChiMerge Technique, Hafta 2 (+24 more)
+Cohesion: 0.05
+Nodes (44): by entropy, by mean and variance, Classiifiication by decision tree, Data Reduction, Ders 1, Ders 1, Ders 2, Feature Composition (+36 more)
 
 ### Community 2417 - "ödev 1/mehmet ali duran/kod.c"
 Cohesion: 0.37
@@ -21646,8 +21735,8 @@ Cohesion: 0.06
 Nodes (35): 1.1 Skaler ve Vektör Tanımları, 1.2 $\mathbb{R}^3$ ve $\mathbb{R}^2$ Uzaylarında İki Nokta Arasındaki Vektör ve Uzunluğu (Normu), 1.3 Birim Vektör (Unit Vector) ve Bir Vektörü Birim Vektöre Dönüştürme, 1. Vektör Kavramı, Fiziksel Yorum ve Norm (Uzunluk), 2.1 Vektörlerde Toplama İşlemi ve Geometrik Yorumu (Üçgen ve Paralelkenar Kuralı), 2.2 Bir Vektörün Skaler ile Çarpımı ve Vektörlerin Paralelliği, 2.3 Standart Baz Vektörleri ($\vec{i}, \vec{j}, \vec{k}$) ve Vektörlerin Analitik (Bileşen) Formu, 2. Vektör Cebiri ve Analitik (Bileşen) Gösterim (+27 more)
 
 ### Community 2419 - "Operator Overloading"
-Cohesion: 0.07
-Nodes (37): Array Class Case Study, Overloaded Assignment Operator and Self-Assignment, Cascaded Member-Function Calls, Chapter 19 Exercises (Operator Overloading), Chapter 17 Classes: A Deeper Look, Part 1, Chapter 18 Classes: A Deeper Look, Part 2 (başlangıç), Chapter 18 Classes: A Deeper Look, Part 2, Chapter 19 Operator Overloading (+29 more)
+Cohesion: 0.09
+Nodes (31): Array Class Case Study, Overloaded Assignment Operator and Self-Assignment, Cascaded Member-Function Calls, Chapter 19 Exercises (Operator Overloading), Chapter 18 Classes: A Deeper Look, Part 2, Chapter 19 Operator Overloading, Complex Class Exercise, Composition (has-a relationship) (+23 more)
 
 ### Community 2420 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -21658,8 +21747,8 @@ Cohesion: 0.33
 Nodes (11): BFS(), dequeue(), enqueue(), indegreeEksilt(), indegreeHesapla(), initilizeArray(), initilizeMatrix(), kisiOlustur() (+3 more)
 
 ### Community 2422 - "APIResponse"
-Cohesion: 0.03
-Nodes (15): MovieCommentController, UserFriendController, UserMovieController, UserController, GlobalExceptionHandler, ResourceAlreadyExistException, MovieCommentDTO, UserFriendRequestDTO (+7 more)
+Cohesion: 0.02
+Nodes (16): MovieCommentController, UserFriendController, UserMovieController, UserNotificationsController, UserController, GlobalExceptionHandler, ResourceAlreadyExistException, MovieCommentDTO (+8 more)
 
 ### Community 2423 - "Ders 3 Genişletilmiş Notu: İmge Filtreleme, Konvolüsyon ve Gauss Filtresi"
 Cohesion: 0.06
@@ -21806,8 +21895,8 @@ Cohesion: 0.15
 Nodes (13): ClubCard sınıfı (counter, ID, credit, sp[]), Member sınıfı (name, credit, card alanları), Sports sınıfı (name, session, price), BankaKart sınıfı (Kart'tan türetilmiş), GencKart sınıfı (KrediKart'tan türetilmiş, Puan alanı), Kart (abstract) sınıfı - odemeYap abstract metodu, KrediKart sınıfı (Kart'tan türetilmiş, Limit alanı), Car (abstract) sınıfı - calculateFuelCosts abstract metodu (+5 more)
 
 ### Community 2460 - "Section 2.2 Set Operations"
-Cohesion: 0.06
-Nodes (44): Bertrand Russell, Bit String Representation of Sets, Busy beaver function, Cantor Diagonalization Argument, Cantor's Theorem (|S| < |P(S)|), Cardinality of Sets, Chapter 1 Key Terms and Results, Characteristic Function (+36 more)
+Cohesion: 0.07
+Nodes (37): Bertrand Russell, Bit String Representation of Sets, Busy beaver function, Cantor Diagonalization Argument, Cantor's Theorem (|S| < |P(S)|), Cardinality of Sets, Chapter 1 Key Terms and Results, Characteristic Function (+29 more)
 
 ### Community 2461 - "2024-2025 Bahar Makale Sunum Projesi README"
 Cohesion: 0.21
@@ -21854,12 +21943,12 @@ Cohesion: 0.15
 Nodes (6): Fourier serisi (k=1,2,3), MATLAB GUI uygulaması, DTMF ve Fourier analizi, DTMF sentezi (8000 Hz, genlik 0.1), FFT ile frekans spektrumu analizi, Ornek.wav (02123835731)
 
 ### Community 2473 - "Token Ring (IEEE 802.5)"
-Cohesion: 0.06
-Nodes (43): ALOHA / Slotted ALOHA, Dual Ring (FDDI), Ethernet çerçeve yapısı (preamble SFD min 64 byte), Ethernet (IEEE 802.3), Fast/Gigabit/10G Ethernet varyasyonları, FDDI, Flow Control (Akış Kontrolü), Framing (Çerçeveleme) (+35 more)
+Cohesion: 0.05
+Nodes (47): ALOHA / Slotted ALOHA, Dual Ring (FDDI), Ethernet çerçeve yapısı (preamble SFD min 64 byte), Ethernet (IEEE 802.3), Fast/Gigabit/10G Ethernet varyasyonları, FDDI, MAC adresi (fiziksel adres), Medya erişim yöntemleri (fixed contention token) (+39 more)
 
 ### Community 2474 - "Practical, transparent operating system support for superpages"
-Cohesion: 0.05
-Nodes (48): 3. Hafta - 16 Mart 2023 Notları, Fragmentation Çözümleri (GC, Compaction, Defragmentation), Pipe Komutu ve Cooperative Süreçler, Superpage ve TLB, FreeBSD on Alpha, Population Map (Radix Tree), Reservation-Based Superpage Allocation, Superpage (+40 more)
+Cohesion: 0.07
+Nodes (33): 3. Hafta - 16 Mart 2023 Notları, Fragmentation Çözümleri (GC, Compaction, Defragmentation), Pipe Komutu ve Cooperative Süreçler, Superpage ve TLB, FreeBSD on Alpha, Population Map (Radix Tree), Reservation-Based Superpage Allocation, Superpage (+25 more)
 
 ### Community 2475 - "090 Turing_Variations.pdf"
 Cohesion: 0.23
@@ -21905,9 +21994,9 @@ Nodes (42): 1.1 Konu akışı, 1.2 Kaynaklar, 1.3 Programlama dili ve test ortam
 Cohesion: 0.08
 Nodes (24): Artılar, Benzerlik ölçüsü seçimi, Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Değerlendirme, Eksiler, Fayda matrisi (+16 more)
 
-### Community 2486 - "1. Feature Envy (Özellik Kıskançlığı)"
-Cohesion: 0.40
-Nodes (5): 1.1 Tanım (ekrandan, 00:10:00), 1.2 "Çok" ne demek?, 1.3 Kök neden: sorumluluk ataması, 1.4 Çözüm, 1. Feature Envy (Özellik Kıskançlığı)
+### Community 2486 - "ht"
+Cohesion: 0.08
+Nodes (5): ht, on(), one(), Z, rt()
 
 ### Community 2487 - "BLM3011 İşletim Sistemleri Not İstatistikleri (2023-2024)"
 Cohesion: 0.15
@@ -21946,8 +22035,8 @@ Cohesion: 0.41
 Nodes (9): addNew(), deletePerson(), freeDatabase(), freePerson(), ID_check(), initNewPerson(), listDatabase(), main() (+1 more)
 
 ### Community 2496 - "Dizi (array)"
-Cohesion: 0.05
-Nodes (49): Akış grafiği, Ünite 3 ve 4 alıştırmaları, Artırma/azaltma ve atama operatörleri, Atın turu problemi, Barbut (zar) şans oyunu örneği, Bileşik faiz örneği (pow), break ve continue ifadeleri, Depolama sınıfları (auto, register, extern, static) (+41 more)
+Cohesion: 0.04
+Nodes (50): Akış grafiği, Ünite 3 ve 4 alıştırmaları, Artırma/azaltma ve atama operatörleri, Atın turu problemi, Barbut (zar) şans oyunu örneği, Bileşik faiz örneği (pow), break ve continue ifadeleri, Depolama sınıfları (auto, register, extern, static) (+42 more)
 
 ### Community 2497 - "Ders 7 Genişletilmiş Notu: Web Saldırıları: CSRF, SQL Enjeksiyonu ve XSS"
 Cohesion: 0.07
@@ -21999,7 +22088,7 @@ Nodes (29): 10. Yumuşatma, Veri Azaltma ve Kavram Hiyerarşileri, 1. Önceki De
 
 ### Community 2509 - "Chapter 17 Distributed Systems"
 Cohesion: 0.04
-Nodes (51): Advantages of Distributed Systems, ARP and MAC Address, Cache Consistency, Cache-Update Policy, Chapter 17 Distributed Systems, Client-side caching (CSC), Communication Protocols and Layering, Computation Migration (+43 more)
+Nodes (50): Advantages of Distributed Systems, ARP and MAC Address, Cache Consistency, Cache-Update Policy, Chapter 17 Distributed Systems, Client-side caching (CSC), Communication Protocols and Layering, Computation Migration (+42 more)
 
 ### Community 2510 - "6. Sunum 5: Tekrarlayan Sinir Ağlarıyla Tam Çözünürlüklü Görüntü Sıkıştırma"
 Cohesion: 0.06
@@ -22018,8 +22107,8 @@ Cohesion: 0.12
 Nodes (16): Bilgi erişimi modelinin bileşenleri, Bilgi erişimi ve veri tabanı farkı, Boolean bilgi erişimi modeli, Ders 6 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dönem projesi önerileri, Genel Konular (+8 more)
 
 ### Community 2514 - "Nesneye Dayalı Tasarım ve Modelleme/ders_kayitlari/2022-2023/README.md"
-Cohesion: 0.04
-Nodes (48): 10. Kod Kusurlarından Anti-Pattern'lere, 1.1 Hocanın benzetmesi, 1.2 Örnekler, 1.3 Çözüm, 1. Divergent Change ve Shotgun Surgery, 2. Primitive Obsession (İlkel Tiplerin Aşırı Kullanımı), 3. Replace Data Value with Object, 4. Replace Type Code with Class (+40 more)
+Cohesion: 0.03
+Nodes (55): Bağlaşım, Ders 1 Çalışma Özeti, Dersin yaklaşımı, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Projelerin başarısı (+47 more)
 
 ### Community 2515 - "Teacher"
 Cohesion: 0.03
@@ -22030,8 +22119,8 @@ Cohesion: 0.08
 Nodes (25): 10.1 Hocanın uydurduğu daha zor soru, 10. Örnek 9 (Soru 11): L'Hôpital Kuralı ve Zincir Kuralı, 11. Örnek 10 (Soru 13): Zincir ve Çarpım Kuralı, 12. Soru 12 ve Soru 14: Çözülmeyen Sorular, 13. Örnek 11 (Soru 15): Temel Limitle Sadeleştirme, 14. Örnek 12 (Soru 16): Limitin Yokluğu, 15. Örnek 13 (Soru 17): Hangi İfade Yanlış?, 16. Örnek 14 (Soru 18): Kaldırılabilir Süreksizlik (+17 more)
 
 ### Community 2519 - "Örnek Sorular"
-Cohesion: 0.05
-Nodes (36): mainPrg, Soru 10 (derste çözüldü, 00:30:50), Soru 11 (derste çözüldü, 00:35:14), Soru 12 (derste çözüldü, 00:36:30), Soru 13 (derste çözüldü, 00:39:31), Soru 14 (derste sözlü, 02:22:45), Soru 1 (derste çözüldü, 00:03:29), Soru 2 (derste çözüldü, 00:06:58) (+28 more)
+Cohesion: 0.14
+Nodes (14): Soru 11 (derste çözüldü, 00:35:14), Soru 12 (derste çözüldü, 00:36:30), Soru 13 (derste çözüldü, 00:39:31), Soru 14 (derste sözlü, 02:22:45), Soru 1 (derste çözüldü, 00:03:29), Soru 2 (derste çözüldü, 00:06:58), Soru 3 (derste çözüldü, 00:09:40), Soru 4 (derste çözüldü, 00:14:18) (+6 more)
 
 ### Community 2521 - "İleri Algoritma Analizi 2023-2024 Bahar 1. Vize"
 Cohesion: 0.06
@@ -22111,7 +22200,7 @@ Nodes (4): top, top, top, top
 
 ### Community 2540 - "Ders 18 Genişletilmiş Notu: Bağlı Listede Arama ve Silme, Yapı Hizalaması, Bit Alanları ve Ara Sınav Struct Sorusu Çözümü"
 Cohesion: 0.09
-Nodes (22): 1. Önceki Dersten Kalan: Bağlı Liste Örneği, 2.1 Genel amaçlı arama neden zor?, 2.2 Ada göre arama, 2.3 Arama fonksiyonunun denenmesi, 2. Bağlı Listede Eleman Arama, 3. Kimliğe Göre Arama ve Fonksiyon Adı Çakışması, 4.1 Silmenin mantığı, 4.2 Ders notundaki kod (+14 more)
+Nodes (21): 1. Önceki Dersten Kalan: Bağlı Liste Örneği, 2.1 Genel amaçlı arama neden zor?, 2.2 Ada göre arama, 2.3 Arama fonksiyonunun denenmesi, 2. Bağlı Listede Eleman Arama, 4.1 Silmenin mantığı, 4.2 Ders notundaki kod, 4.3 Bağı yeniden kurmak (+13 more)
 
 ### Community 2541 - "İş Sağlığı ve Güvenliği 2/ders_kayitlari/2022-2023/README.md"
 Cohesion: 0.08
@@ -22162,8 +22251,8 @@ Cohesion: 0.40
 Nodes (13): Ders 10 - Ayrık Fourier Dönüşümü (DFT), Dairesel Konvolüsyon, DFT, DFT Matrisi, DFT Özellikleri, DTFT, Görüntünün DFT'si, Konjuge Simetri (+5 more)
 
 ### Community 2553 - "MonoBehaviour"
-Cohesion: 0.03
-Nodes (31): CameraMovement, CameraZoom, ChangeScene, Market, 8. Framework'ün Dört Yapı Taşı, Dersin Toparlaması, Ders 9 Çalışma Özeti, Detaylı Açıklamalar (+23 more)
+Cohesion: 0.02
+Nodes (40): CameraMovement, CameraZoom, ChangeScene, Market, 8. Framework'ün Dört Yapı Taşı, Dersin Toparlaması, Ders 9 Çalışma Özeti, Detaylı Açıklamalar (+32 more)
 
 ### Community 2554 - "2. Week - 11 October 2022 Tuesday"
 Cohesion: 0.15
@@ -22175,7 +22264,7 @@ Nodes (12): Build Artifact, Codes, Driver Program, NCDCRecordParser Class, Quest
 
 ### Community 2556 - "Function templates"
 Cohesion: 0.03
-Nodes (75): assert macro and NDEBUG, Building Your Own Compiler, C Data Structures (Dynamic), Other C Topics (Chapter 14), C Preprocessor (Chapter 13), Chapter 15 C++ as a Better C; Introducing Object Technology, Standard stream objects cin, cout, cerr, clog, Command-line arguments (argc, argv) (+67 more)
+Nodes (46): Binary Trees, Building Your Own Compiler, C Data Structures (Dynamic), C++ as a Better C (Chapter 15), C++ Standard Library header files, C++ stream I/O (cout, cin, endl), Default arguments, Exception handling intro (try/catch, at, out_of_range) (+38 more)
 
 ### Community 2557 - "2024-2025 Güz ÇDTP Konusu: Akıllı Direksiyon Simidi"
 Cohesion: 0.26
@@ -22273,9 +22362,9 @@ Nodes (10): calculateKey(), calculateTableSize(), countVariables(), doubleHash()
 Cohesion: 0.17
 Nodes (12): Company (Lab1 UML Class), Lab1 Ödevi: Şirket Tur/Bilet Sistemi (Java OOP), Staff (Lab1 UML Class), Ticket (Lab1 UML Class), Tour (Lab1 UML Class), Customer (Lab3 class), Drink (Lab3 class, Sellable implementasyonu), Food (Lab3 class, Sellable implementasyonu) (+4 more)
 
-### Community 2581 - "stbi_uc"
-Cohesion: 0.12
-Nodes (21): load_jpeg_image(), resample_row_1(), stbi__blinn_8x8(), stbi__clamp(), stbi__compute_y(), stbi__copyval(), stbi__gif_header(), stbi__gif_load_next() (+13 more)
+### Community 2581 - "stbi__load_main"
+Cohesion: 0.13
+Nodes (35): load_jpeg_image(), stbi__addsizes_valid(), stbi__bitcount(), stbi__bmp_load(), stbi__compute_y(), stbi__convert_format(), stbi__convert_format16(), stbi__do_png() (+27 more)
 
 ### Community 2582 - "Ders 3 Genişletilmiş Notu: Delta Kuralından Regresyon ve Optimizasyonun Temellerine"
 Cohesion: 0.05
@@ -22326,8 +22415,8 @@ Cohesion: 0.20
 Nodes (12): addCombinator(), condense(), createPositionalPseudo(), elementMatcher(), markFunction(), matcherFromGroupMatchers(), matcherFromTokens(), multipleContexts() (+4 more)
 
 ### Community 2594 - "Sayısal Analiz Ders 2 (2020-2021) kaydı"
-Cohesion: 0.08
-Nodes (39): Kuvvet Serileri İçin Çarpım Teoremi, Kuvvet Serisi (Power Series), Yakınsaklık Yarıçapı (Radius of Convergence), Taylor Polinomu, Taylor Serisi, Kuvvet Serisi Temsili, Anlamlı basamak (significant digits), Linear, binary ve interpolasyon search (kare kök yaklaşımı) (+31 more)
+Cohesion: 0.09
+Nodes (30): Taylor Polinomu, Taylor Serisi, Anlamlı basamak (significant digits), Linear, binary ve interpolasyon search (kare kök yaklaşımı), Berkeley Python Programming and Numerical Methods kitabı, Sayısal Analiz Ders 2 (2020-2021) kaydı, Doğruluk (accuracy) ve hassaslık (precision), DTMF telefon tuş tonları (+22 more)
 
 ### Community 2595 - "JobFinder.csproj"
 Cohesion: 0.17
@@ -22335,7 +22424,7 @@ Nodes (10): net8.0, Microsoft.AspNetCore.Authentication.JwtBearer (8.0.0), Micro
 
 ### Community 2596 - "blm_1022_proje/code.c"
 Cohesion: 0.03
-Nodes (71): 10.1 Görevler ve Veri Akışı, 10.2 Avantaj ve Dezavantajlar, 10. MVVM (Model-View-ViewModel), 11. Android Üzerinde Giriş Ekranı Örneği, 12. Clean Architecture, 13. Veri Tabanı Sorguları, ORM ve Yazılım Tasarımı, 1.1 Problemin Tanımı, 1.2 Sınıfın İlk Hali (+63 more)
+Nodes (96): bisection(), choleskyMethod(), consume(), createMatrix(), curTok(), evalExpr(), freeMatrix(), freeTokenStream() (+88 more)
 
 ### Community 2597 - "Pushdown Stack ADT (LIFO)"
 Cohesion: 0.18
@@ -22346,8 +22435,8 @@ Cohesion: 0.05
 Nodes (38): 10. Kabul ve Kısıtlar, 11.1 Dersin izleyeceği adımlar, 11.2 Takip edilecek kurumlar ve bilgi birikimleri, 11. Proje Yönetimi Adımları, Kaynaklar ve Kurumlar, 1. Dersin Kapsamı: Üç Halkanın Kesişimi, 2.1 Neden yeniden süreç modelleri?, 2.2 Anketin kurulumu, 2.3 Ankette sorulanlar (+30 more)
 
 ### Community 2599 - "7.7 Ters Trigonometrik Fonksiyonlar"
-Cohesion: 0.09
-Nodes (33): İndirgeme Formülleri (∫cos^n x dx vb.), Kısmi İntegrasyon (Integration by Parts), LAPTÜ Kuralı (Kısmi İntegrasyonda Seçim Sırası), tan(x) ve sec(x) Kuvvetlerinin İntegralleri, Trigonometrik İntegraller (sin^m x cos^n x), 7.7 Ters Trigonometrik Fonksiyonlar, 7.8 Hiperbolik Fonksiyonlar, 8.1 Temel İntegrasyon Formülleri (+25 more)
+Cohesion: 0.15
+Nodes (22): 7.7 Ters Trigonometrik Fonksiyonlar, 7.8 Hiperbolik Fonksiyonlar, 8.1 Temel İntegrasyon Formülleri, Arksekant ve arkkosekant, Arksinüs ve arkkosinüs, Arktanjant ve arkkotanjant, Bölüm 7 Tekrar Soruları ve Problemler, Değişken dönüşümü (u-yerine koyma) (+14 more)
 
 ### Community 2600 - "com.unity.mathematics"
 Cohesion: 0.17
@@ -22390,24 +22479,24 @@ Cohesion: 0.11
 Nodes (18): 1. Sunumlarda Hocanın Beklentileri, 2.1 Makale ve Amaç, 2.2 Veri Toplama ve Ön İşleme, 2.3 Etiketleme ve Vektörleştirme, 2.4 Yöntemler ve Sonuçlar, 2. Birinci Sunum: 5G Teknolojisinin Twitter'da Duygu Analizi, 4.1 Makale ve Temel Fikir, 4.2 Etkin Piyasa Hipotezi, Temel Analiz ve Teknik Analiz (+10 more)
 
 ### Community 2610 - "BLM2012 Course Project 2023: Journal Distribution Information System (due 08.01.2024)"
-Cohesion: 0.15
-Nodes (27): BLM2012 Course Project 2023: Journal Distribution Information System (due 08.01.2024), addSubscription method, canSend method, GUI requirement (javax.swing), Journal (ISSN, frequency, issue price), jUnit tests requirement (two per class), listAllSendingOrders method, PaymentInfo (partial payments) (+19 more)
+Cohesion: 0.26
+Nodes (17): BLM2012 Course Project 2023: Journal Distribution Information System (due 08.01.2024), addSubscription method, canSend method, GUI requirement (javax.swing), Journal (ISSN, frequency, issue price), jUnit tests requirement (two per class), listAllSendingOrders method, PaymentInfo (partial payments) (+9 more)
 
 ### Community 2611 - "Adres Çözümleme (Address Decoding)"
 Cohesion: 0.33
 Nodes (6): 8086 Adres Uzayı (8086 Address Space), Adres Çözümleme (Address Decoding), Isolated I/O vs Memory Mapped I/O, Seperate Bank Decoder / Seperate Bank Strobe, 8086 Adres Uzayı (1MB address space, odd/even byte banks), Seperate Bank Decoder - Seperate Bank Strobe addressing methods
 
 ### Community 2612 - "Veri İletişimi Ders Kayıtları 2020-2021 README"
-Cohesion: 0.08
-Nodes (38): Hidden terminal problemi, Bit-oriented protokoller (HDLC), FCS (Frame Check Sequence), HDLC FLAG (01111110), HDLC, HDLC çerçeve türleri (I S U), HDLC modları (NRM ARM ABM), S-frame (RR RNR REJ SREJ) (+30 more)
+Cohesion: 0.07
+Nodes (44): Bit-oriented protokoller (HDLC), FCS (Frame Check Sequence), HDLC FLAG (01111110), HDLC, HDLC çerçeve türleri (I S U), HDLC modları (NRM ARM ABM), S-frame (RR RNR REJ SREJ), Ders 1 Çalışma Özeti: Sinyaller, Analog/Dijital, Genlik-Frekans-Faz, Gürültü (+36 more)
 
 ### Community 2613 - "Ders 14 Genişletilmiş Notu: Proje Gösterimleri (Son Hafta)"
 Cohesion: 0.08
 Nodes (24): 10. Üç Bilinmeyenli Gauss-Seidel ve Trapez, 11.1 Hocanın Teşhisi, 11.2 Önerilen Düzeltme, 11.3 Çalışan Kodun Yedeği, 11. Ortak Fonksiyona Parametre Aktarımı, 1. Kaydın Kapsamı, 2.1 Sıfır Katsayılı Kuvvetler ve Terim Sayısı, 2.2 Soruyu Doğru Sormak (+16 more)
 
 ### Community 2614 - "Op-amp integrator"
-Cohesion: 0.04
-Nodes (87): First-order RC and RL circuits, RLC circuits, Capacitor (i = C dv/dt), Energy stored in capacitor (1/2 C v^2), Chapter 7: Capacitors and Inductors, Chapter 8: Basic RL and RC Circuits, Displacement current (Maxwell), Engineering Circuit Analysis (Hayt, Kemmerly, Durbin, 2012) - Ch. 6 end to Ch. 8 start (+79 more)
+Cohesion: 0.03
+Nodes (92): Capacitor (i = C dv/dt), Energy stored in capacitor (1/2 C v^2), Chapter 7: Capacitors and Inductors, Chapter 8: Basic RL and RC Circuits, Displacement current (Maxwell), Engineering Circuit Analysis (Hayt, Kemmerly, Durbin, 2012) - Ch. 6 end to Ch. 8 start, Evirici yükselteç, Inductor (v = L di/dt) (+84 more)
 
 ### Community 2615 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -22423,7 +22512,7 @@ Nodes (12): buildFragment(), buildParams(), cloneCopyEvent(), disableScript(), D
 
 ### Community 2618 - "Film sosyal platformu"
 Cohesion: 0.03
-Nodes (90): Anket Yöntemi, Araştırma Raporu, Ayrıntılı Tasarım, Açık Uçlu Sorular, Durum Geçiş Diyagramı (STD), Genel Sistem Teorisi, Geri Besleme, Girdi Tasarımı (+82 more)
+Nodes (81): Anket Yöntemi, Araştırma Raporu, Ayrıntılı Tasarım, Açık Uçlu Sorular, Durum Geçiş Diyagramı (STD), Genel Sistem Teorisi, Girdi Tasarımı, HIPO (+73 more)
 
 ### Community 2619 - "Varlık-İlişki (ER) Diyagramı Ders Notları Konusu — 2021 Veritabanı Yönetimi dersi el yazısı tahta notları serisi"
 Cohesion: 0.32
@@ -22459,7 +22548,7 @@ Nodes (12): dependencies, depth, source, url, version, dependencies, depth, sour
 
 ### Community 2627 - "Ders 7 Genişletilmiş Notu: Bağlantılı Listeler: Ekleme, Silme, Çift Yönlü ve Dairesel Listeler"
 Cohesion: 0.04
-Nodes (44): 10.1 Temel Fikir ve `free`, 10.2 İki Diziyle Sıralı Listeden Silme Akışı, 10.3 Örnek: 2 ve 6'nın Silinmesi, 10.4 Silmenin C Kodu, 10. Listeden Eleman Silme, 11. Bağlantılı Liste ile Insertion Sort, 12.1 Esneklik: Ağaç, Matris, Veri Küpü, 12.2 Araya Ekleme: Dört Adım (+36 more)
+Nodes (48): 10.1 Temel Fikir ve `free`, 10.2 İki Diziyle Sıralı Listeden Silme Akışı, 10.3 Örnek: 2 ve 6'nın Silinmesi, 10.4 Silmenin C Kodu, 10. Listeden Eleman Silme, 11. Bağlantılı Liste ile Insertion Sort, 12.1 Esneklik: Ağaç, Matris, Veri Küpü, 12.2 Araya Ekleme: Dört Adım (+40 more)
 
 ### Community 2628 - "Ders 1 Genişletilmiş Notu: Bilgisayar Güvenliği Problemine Giriş"
 Cohesion: 0.07
@@ -22522,8 +22611,8 @@ Cohesion: 0.04
 Nodes (63): The Internet, Circuit Switching / Wormhole Routing, Coordination-Based Middleware, Distributed System, DNS (Domain Name System), Document-Based Middleware (World Wide Web), DSM (Distributed Shared Memory), DSM Page Replication (+55 more)
 
 ### Community 2645 - "Bölüm 10: Statistical Inference II"
-Cohesion: 0.07
-Nodes (32): Pareto Distribution, Bayes tahmin edicisi, Bayesci güvenilir küme, Bayesci hipotez testi, Bayesci çıkarım, Bölüm 10: Statistical Inference II, Bölüm 11: Regression, Bölüm 9: Statistical Inference I (son kısım) (+24 more)
+Cohesion: 0.06
+Nodes (37): Pareto Distribution, Bayes tahmin edicisi, Bayesci hipotez testi, Bayesci çıkarım, Beta-Binom eşleniği, Bölüm 10: Statistical Inference II, Bölüm 11: Regression, Bölüm 9: Statistical Inference I (son kısım) (+29 more)
 
 ### Community 2646 - "File_Recursive.c"
 Cohesion: 0.36
@@ -22635,7 +22724,7 @@ Nodes (22): 10. Birleştirme (Aggregation), 11.1 Bağıntıdan çıkarılabilen 
 
 ### Community 2680 - "Ders 15 Genişletilmiş Notu: Haritalar: Google Maps SDK, Marker'lar, Şekiller ve Kamera"
 Cohesion: 0.05
-Nodes (43): 10.1 Dünya koordinatları, 10.2 Piksel koordinatları, 10.3 Karo koordinatları, 10.4 Chicago örneği, 10. Koordinat Sistemleri, 11. Adres ve Koordinat Dönüşümü: Geocoder, 12.1 Yapı, 12.2 onMapReady (+35 more)
+Nodes (38): 10.1 Dünya koordinatları, 10.2 Piksel koordinatları, 10.3 Karo koordinatları, 10.4 Chicago örneği, 10. Koordinat Sistemleri, 11. Adres ve Koordinat Dönüşümü: Geocoder, 1.1 Gereken SDK'lar, 1.2 API anahtarı neden var? (+30 more)
 
 ### Community 2682 - "top"
 Cohesion: 0.18
@@ -22646,8 +22735,8 @@ Cohesion: 0.18
 Nodes (5): TestBench, TestBenchForBranch, TestBenchForJumpAndLink, TestBenchForSRA, TestBench
 
 ### Community 2684 - "Yapısal Programlamaya Giriş 2020-2021 Ders Kayıtları (BLM1012, Dr. Ahmet Elbir, Şube 2)"
-Cohesion: 0.05
-Nodes (66): Faktoriyel fonksiyonu, Yinelemeli faktöriyel fonksiyonu, Yinelemeli Fibonacci fonksiyonu, OBEB yinelemeli fonksiyonu, Operand değerlendirme sırası (&&, ||, ?:, virgül), Palindrom testi, Tekrar (iteration), Yinelemede temel durum (base case) (+58 more)
+Cohesion: 0.06
+Nodes (53): Faktoriyel fonksiyonu, Yinelemeli faktöriyel fonksiyonu, Yinelemeli Fibonacci fonksiyonu, OBEB yinelemeli fonksiyonu, Operand değerlendirme sırası (&&, ||, ?:, virgül), Palindrom testi, Tekrar (iteration), Yinelemede temel durum (base case) (+45 more)
 
 ### Community 2685 - "Ders 3 Genişletilmiş Notu: Bilgi Çıkarımı ve İstatistiksel Dil Modelleri"
 Cohesion: 0.07
@@ -22692,6 +22781,10 @@ Nodes (9): asString(), decode(), equals(), initialize(), isEmpty(), isFull(), ma
 ### Community 2695 - "Ders 17 Genişletilmiş Notu: Ayrık Zincirleme, Hashing Analizi ve Dinamik Programlamaya Giriş"
 Cohesion: 0.05
 Nodes (36): 1.1 Tablonun bir adres tablosu olması, 1. Açık Adreslemenin Hatırlatılması ve Ayrık Zincirleme, 2.1 Düğüm ve tablo yapıları, 2.2 Ekleme fonksiyonu, 2.3 Düğüm oluşturma fonksiyonu, 2.4 Dinamik ayrılan adres ile yerel dizi farkı, 2. Ayrık Zincirleme İçin Veri Yapısı ve Ekleme, 3.1 Sorunun gösterilmesi (+28 more)
+
+### Community 2696 - "kisaltMetin"
+Cohesion: 0.08
+Nodes (4): HocaDuzenlemeWindow, HocaEkleGuncelleWindow, turkce_kucult(), unvan_ve_isim_ayir()
 
 ### Community 2697 - "ödev_1/21011022.c"
 Cohesion: 0.42
@@ -22750,8 +22843,8 @@ Cohesion: 0.06
 Nodes (31): 10. Siber Güvenliğe Nereden Başlanır?, 11. Önerilen Temel Kaynaklar ve İngilizce, 12. Bilgisayar Mühendisliği Eğitiminin Amacı, 13.1 Sanal gerçeklik, 13.2 GPT-3 ve doğal dil işleme, 13.3 Beyin-bilgisayar arayüzleri, 13. Sanal Gerçeklik, Yapay Zekâ ve Beyin-Bilgisayar Arayüzleri, 1. Oturumun Niteliği ve Algoritma Kurma Becerisi (+23 more)
 
 ### Community 2716 - "Sayısal Görüntü İşleme 1: Giriş, Histogram, Nokta İşlemleri"
-Cohesion: 0.11
-Nodes (29): Mixture of distributions, Stem-and-leaf plot, Sayısal Görüntü İşleme 1: Giriş, Histogram, Nokta İşlemleri, Histogram binning, Digital image, Electromagnetic spectrum and imaging, Thresholding, Power law (gamma) transformation (+21 more)
+Cohesion: 0.09
+Nodes (39): Mixture of distributions, Stem-and-leaf plot, CENG 222 Hafta 8 - İstatistiğe giriş, Grafiksel istatistik, Kantiller, yüzdelikler, çeyrekler, Kutu grafiği (boxplot), Medyan, Çeyrekler açıklığı (IQR) ve aykırı değerler (+31 more)
 
 ### Community 2717 - "blm_5227/Scripts/jquery.validate.unobtrusive.js"
 Cohesion: 0.22
@@ -22853,9 +22946,9 @@ Nodes (9): 2022-2023 Bahar Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Lab Bil
 Cohesion: 0.08
 Nodes (23): Ders 28 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ortalama değer sorusu (+15 more)
 
-### Community 2749 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
-Cohesion: 0.06
-Nodes (31): 2.1 Alanlar: private, final, static, 2.2 Constructor, Getter ve Setter, 2.3 Statik Metot: isbnNedir, 2.4 Sınıf Adı ile Dosya Adı, 2.5 İlk Test ve toString, 2.6 Statik Metodu Çağırmak, 2.7 Statik Sayaç, 2.8 Sınıfın Tam Kodu (+23 more)
+### Community 2749 - "AnimatedRoutes.tsx"
+Cohesion: 0.07
+Nodes (28): searchFrontMovies(), App(), PrivacyPolicyPage(), UsageConditionPage(), Chat(), FriendContainer(), FriendContainerProps, getLastSeen() (+20 more)
 
 ### Community 2750 - "struct ders/struct.c"
 Cohesion: 0.42
@@ -22878,8 +22971,8 @@ Cohesion: 0.08
 Nodes (24): 🔹 Ders 1, 🔹 Ders 10, 🔹 Ders 11, 🔹 Ders 11 Lab, 🔹 Ders 12, 🔹 Ders 12 Lab, 🔹 Ders 13, 🔹 Ders 13 Lab (+16 more)
 
 ### Community 2755 - "Ders 14 Genişletilmiş Notu: Yapay Sinir Ağları ve Keras ile Derin Öğrenme Uygulamaları"
-Cohesion: 0.04
-Nodes (46): 10. İkili Sınıflayıcı: IMDB Film Yorumları, 11.1 Veri Seti ve Model, 11.2 Softmax, 11.3 Sonuçlar ve One-Hot Hedef, 11. Çok Sınıflı Sınıflayıcı: Reuters Haberleri ve Softmax, 12. Regresyon Modeli, 13.1 Eğitim Geçmişini Görselleştirme, 13.2 Ağırlık Düzenlileştirme (+38 more)
+Cohesion: 0.05
+Nodes (42): 10. İkili Sınıflayıcı: IMDB Film Yorumları, 11.1 Veri Seti ve Model, 11.2 Softmax, 11.3 Sonuçlar ve One-Hot Hedef, 11. Çok Sınıflı Sınıflayıcı: Reuters Haberleri ve Softmax, 12. Regresyon Modeli, 13.1 Eğitim Geçmişini Görselleştirme, 13.2 Ağırlık Düzenlileştirme (+34 more)
 
 ### Community 2756 - "number_match_game_with_c/proje.c"
 Cohesion: 0.40
@@ -22906,8 +22999,8 @@ Cohesion: 0.42
 Nodes (4): ExceptionExample01, MyCADfile, MyFigure, MyScreenRenderer
 
 ### Community 2764 - ".public"
-Cohesion: 0.02
-Nodes (127): 10.1 Çalışma alanı ve arayüz, 10.2 Hazır kodları proje olarak almak, 10.3 Yeni proje, paket ve sınıf, 10.4 Nesneler ve sınıflar: ilk bakış, 10.5 `main` metodu, 10.6 Ekrana yazdırmak, 10.7 `System.out.println` ne demek?, 10. Eclipse ile ilk proje ve "Merhaba dünya" (+119 more)
+Cohesion: 0.01
+Nodes (163): 10.1 Çalışma alanı ve arayüz, 10.2 Hazır kodları proje olarak almak, 10.3 Yeni proje, paket ve sınıf, 10.4 Nesneler ve sınıflar: ilk bakış, 10.5 `main` metodu, 10.6 Ekrana yazdırmak, 10.7 `System.out.println` ne demek?, 10. Eclipse ile ilk proje ve "Merhaba dünya" (+155 more)
 
 ### Community 2765 - "ExceptionExample01"
 Cohesion: 0.42
@@ -22933,9 +23026,9 @@ Nodes (42): 10.1 Genel yapı, 10.2 Örnek veri, 10.3 Algoritma, 10.4 Özyineleme
 Cohesion: 0.09
 Nodes (21): Anahtar Süreç Alanları ve Yazılım Mühendisliği Aktiviteleri, Bir Grubun SRS Belgesinin İncelenmesi, CMMI Tekrarı, Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Gereksinim Analizinin Amacı (+13 more)
 
-### Community 2774 - "Chapter 16 Introduction to Classes and Objects"
-Cohesion: 0.11
-Nodes (32): Chapter 16 Introduction to Classes, Objects and Strings, Class, Compilation and linking process, GradeBook class (case study), Class header file (.h), Separating interface from implementation, Set and get functions, C++ Standard Library class string (+24 more)
+### Community 2774 - "ht"
+Cohesion: 0.08
+Nodes (5): nt(), ht, on(), Z, rt()
 
 ### Community 2776 - "Detaylı Açıklamalar"
 Cohesion: 0.09
@@ -22959,11 +23052,11 @@ Nodes (8): allocateMatrix(), displayChangeMatrix(), displayCostMatrix(), editDis
 
 ### Community 2782 - "Answers to Exercises sections 4.6.2-4.7"
 Cohesion: 0.02
-Nodes (111): B-tree, B-tree cost model (page and probe), Page API for B-tree, BTreeSET implementation (Algorithm 6.12), 2-3 tree, Bilinear forms and normal evaluation schemes, Chinese remainder rule for polynomials, Cyclic convolution (+103 more)
+Nodes (102): Addition Chain, Addition chains, Answers to Exercises sections 4.6.2-4.7, Berlekamp's Factoring Algorithm, Bilinear forms and normal evaluation schemes, Binary Method for Exponentiation, Cantor-Zassenhaus Splitting, Chinese remainder rule for polynomials (+94 more)
 
-### Community 2783 - "math"
+### Community 2783 - "string"
 Cohesion: 0.01
-Nodes (212): hesap(), main(), Oku(), yazdir(), main(), main(), matrisCarp(), matrisTopla() (+204 more)
+Nodes (231): hesap(), main(), Oku(), yazdir(), checkArmstrongNumber(), checkPrimeNumber(), main(), main() (+223 more)
 
 ### Community 2784 - "Chapter 4 Analysis of Nonlinear Circuits"
 Cohesion: 0.05
@@ -23067,7 +23160,7 @@ Nodes (9): 2024-2025 Güz Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Lab Bilg
 
 ### Community 2810 - "numpy"
 Cohesion: 0.01
-Nodes (226): get_costs(), plot_costs(), load_data(), load_data_2(), grafik(), SGD(), AdaGrad(), ADAM() (+218 more)
+Nodes (280): get_costs(), plot_costs(), load_data(), load_data_2(), grafik(), AdaGrad(), ADAM(), gradient_descent() (+272 more)
 
 ### Community 2811 - "getOffsetParent"
 Cohesion: 0.27
@@ -23075,7 +23168,7 @@ Nodes (10): computeStyle(), find(), findCommonOffsetParent(), getOffsetParent(),
 
 ### Community 2812 - "r-Combination C(n,r)"
 Cohesion: 0.04
-Nodes (53): Tails of the binomial distribution (C.5), Corollary C.9 right tail bound, Entropy function, Theorem C.2 right tail bound, Theorem C.4 left tail bound, Theorem C.8 (Chernoff-style bound), Appendix C Counting and Probability, Conditional probability and Bayes's theorem (+45 more)
+Nodes (48): Tails of the binomial distribution (C.5), Corollary C.9 right tail bound, Markov's inequality, Theorem C.2 right tail bound, Theorem C.4 left tail bound, Theorem C.8 (Chernoff-style bound), Expectation of binomial distribution np, Variance of binomial distribution npq (+40 more)
 
 ### Community 2813 - "Web Madenciliği/ders_kayitlari/2020-2021/README.md"
 Cohesion: 0.08
@@ -23162,16 +23255,16 @@ Cohesion: 0.20
 Nodes (12): CMakeLists.txt (odev3), catkin build sistemi, exp2_autonomy (çalıştırılabilir), ROS paketi odev3, trajectory (çalıştırılabilir), CMakeLists.txt (proje), trajectory (çalıştırılabilir), CMakeLists.txt (proje) (+4 more)
 
 ### Community 2835 - "BaseKatkidaBulunanWindow"
-Cohesion: 0.08
-Nodes (4): BaseKatkidaBulunanWindow, KatkidaBulunanEkleWindow, KatkidaBulunanDuzenleWindow, KatkidaBulunanGuncelleWindow
+Cohesion: 0.12
+Nodes (3): BaseKatkidaBulunanWindow, KatkidaBulunanEkleWindow, KatkidaBulunanDuzenleWindow
 
 ### Community 2836 - "Ders 5 Genişletilmiş Notu: İşyeri Hekimi ve DSP, 6331 Kapsamı ve Kapsam Dışı Faaliyetler"
 Cohesion: 0.10
 Nodes (19): 10.1 Kendi Nam ve Hesabına Üretim Yapanlar, 10.2 Hükümlü ve Tutuklulara Yönelik Faaliyetler, 10.3 Beş Maddenin Tekrarı ve Soru Tekniği, 10. Kapsam Dışı Faaliyetler: Son İki Madde ve Tekrar, 1. Derse Hazırlanma: Derin Nefes, 2. Deprem Gündemi: Değiştirebileceklerimize Odaklanmak, 3. İSG Profesyonellerine Kısa Tekrar, 4. İşyeri Hekimi (+11 more)
 
 ### Community 2837 - "Yönetim Bilgi Sistemleri Ders 14 - Grup Proje Sunumları (2020-2021)"
-Cohesion: 0.10
-Nodes (33): Use-Case Diyagramı, Sistem Programlama Dersi Projesi ilk raporu - Blog Sitesi, Blog Sitesi projesi, Kategoriler ve etiketler, Medium.com örnek alındı, Proje grubu toplantıları, Rol yapısı admin/yazar/misafir, Teknik fizibilite (React/Vue, Node.js, Firebase) (+25 more)
+Cohesion: 0.11
+Nodes (31): Use-Case Diyagramı, Sistem Programlama Dersi Projesi ilk raporu - Blog Sitesi, Blog Sitesi projesi, Kategoriler ve etiketler, Medium.com örnek alındı, Proje grubu toplantıları, Rol yapısı admin/yazar/misafir, Teknik fizibilite (React/Vue, Node.js, Firebase) (+23 more)
 
 ### Community 2840 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -23194,8 +23287,8 @@ Cohesion: 0.56
 Nodes (7): dereceBul(), getMax(), getTerms(), main(), topla(), toplav2(), writeTerms()
 
 ### Community 2845 - "Ders 14 Genişletilmiş Notu: Konum Servisleri ve Geofence"
-Cohesion: 0.06
-Nodes (35): 1. Mobil Uygulamalarda Konum Bilgisi, 2.1 GPS, 2.2 Wi-Fi Erişim Noktaları ve Baz İstasyonları, 2.3 Son Bilinen Konum, 2.4 Enerji Sıralaması, 2. Konum Kaynakları ve Enerji Maliyeti, 3.1 Ön Plan Konumu, 3.2 Arka Plan Konumu ve Örnek Bir Arayüz (+27 more)
+Cohesion: 0.05
+Nodes (42): 11.1 Uygulamanın Çalışması, 11.2 Bağımlılıklar, 11.4 Son Bilinen Konumla Harita, 11.5 Harita API Anahtarı, 11.6 Sürekli Güncellemeyle Harita, 11.7 Dönem Projesiyle Bağlantı, 11. Uygulama: MapActivity ile Konum ve Harita, 1. Mobil Uygulamalarda Konum Bilgisi (+34 more)
 
 ### Community 2846 - "Ders 7 Genişletilmiş Notu: Hough Dönüşümü, RANSAC ve İki Boyutlu Geometrik Dönüşümler"
 Cohesion: 0.07
@@ -23205,9 +23298,9 @@ Nodes (30): 10.1 Parametrik (global) bükme, 10. Hizalama ve Global Parametrik B
 Cohesion: 0.33
 Nodes (7): bastir(), ekle(), ekleSirali(), main(), n, next, x
 
-### Community 2848 - "Ders 1 Altyazısı (14 Ekim 2020)"
-Cohesion: 0.05
-Nodes (61): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Altyazısı (14 Ekim 2020), ASCII ve Unicode kodları, BCD (binary coded decimal) (+53 more)
+### Community 2848 - "Örnekleme (sampling)"
+Cohesion: 0.16
+Nodes (25): Örnekleme (sampling), Ayrık/analog sinyaller, Lojik Devreler-1 (2020) - Sinyaller ve örnekleme, Periyot ve frekans, Analog İşaret, Sayısal (Dijital) İşaret, Transistör (sayısal mantığın temeli), A-to-D Converter (+17 more)
 
 ### Community 2850 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -23254,8 +23347,8 @@ Cohesion: 0.09
 Nodes (22): Denk tanım ($h$ biçimi), Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Parçalı fonksiyonlar için kısa yol (genel kural) (+14 more)
 
 ### Community 2867 - "Kurose & Ross Computer Networking 8th Ed. (Sec. 8.5-8.10, refs)"
-Cohesion: 0.08
-Nodes (32): AH protocol, 4G/5G Authentication and Key Agreement (AKA), almost-TLS, Certification authority (CA), Digital signature and message digest, Kurose & Ross Computer Networking 8th Ed. (Sec. 8.5-8.10, refs), EAP / EAPoL / RADIUS, Securing E-mail (8.5) (+24 more)
+Cohesion: 0.09
+Nodes (30): AH protocol, 4G/5G Authentication and Key Agreement (AKA), almost-TLS, Certification authority (CA), Digital signature and message digest, Kurose & Ross Computer Networking 8th Ed. (Sec. 8.5-8.10, refs), EAP / EAPoL / RADIUS, Securing E-mail (8.5) (+22 more)
 
 ### Community 2868 - "Optik"
 Cohesion: 0.18
@@ -23270,8 +23363,8 @@ Cohesion: 0.05
 Nodes (41): 10.1 Adım 1-2: Veri ve ortalamanın çıkarılması, 10.2 Adım 3: Kovaryans matrisi, 10.3 Adım 4: Öz değer ve öz vektörler, 10.4 Yeni koordinat düzlemi, 10.5 Dönüşümün matris çarpımıyla yapılması, 10.6 İndirgeme nerede yapılır?, 10. Temel bileşen analizi (PCA) adımları, 11. Kaç bileşen seçilmeli? (+33 more)
 
 ### Community 2875 - "file-service/src/server.js"
-Cohesion: 0.06
-Nodes (24): logger, winston, logger, logger, { v4: uuidv4 }, FileController, fileService, authenticate() (+16 more)
+Cohesion: 0.03
+Nodes (49): { Client }, compare(), getCounts(), tables, bcrypt, { Pool }, { Pool }, logger (+41 more)
 
 ### Community 2876 - "Ders 6 Genişletilmiş Notu: Seriler Üzerine Çıkmış Sınav Soruları ve Kutupsal Koordinatlara Giriş"
 Cohesion: 0.09
@@ -23343,7 +23436,7 @@ Nodes (4): processor_tb, processor_tb, processor_tb, processor_tb
 
 ### Community 2894 - "Ders 10 Genişletilmiş Notu: Large Class, Divergent Change, Shotgun Surgery, Primitive Obsession, Feature Envy ve Video Kiralama Örneğinin Adım Adım Refactoring'i"
 Cohesion: 0.06
-Nodes (31): 10. Replace Type Code with Subclasses, 11. Replace Type Code with State/Strategy, 12. Replace Array with Object, 13. Feature Envy: Özellik Kıskançlığı, 14. Video Kiralama Örneği: Başlangıç Durumu, 16. Üçüncü Müdahale: amountFor Metodunu Rental'a Taşımak, 17. Testlerde Kara Kutu ve Beyaz Kutu Yaklaşımı, 18.1 thisAmount geçici değişkenini kaldırmak (+23 more)
+Nodes (34): 10. Replace Type Code with Subclasses, 11. Replace Type Code with State/Strategy, 12. Replace Array with Object, 13. Feature Envy: Özellik Kıskançlığı, 14. Video Kiralama Örneği: Başlangıç Durumu, 15.1 Birinci müdahale: switch bloğunu çıkarmak, 15.2 İkinci müdahale: değişken adları, 15. Birinci ve İkinci Müdahale: Extract Method ve Anlamlı Adlar (+26 more)
 
 ### Community 2895 - "NYP Hafta 2 - Java Çalışma Ortamı, UML, Kurucular, String/Math"
 Cohesion: 0.40
@@ -23390,8 +23483,8 @@ Cohesion: 0.08
 Nodes (24): 1. Dersin Kapsamı ve Kaynakları, 2.1 Basit bir transistörlü devre, 2. Elektronik Devrelerin Donanım Dersleri Arasındaki Yeri, 3.1 Tüplü yapılar, 3.2 İkinci Dünya Savaşı'nın etkisi, 3. Transistörün Tarihsel Önemi, 4.1 Sürekli bilgi, 4.2 Ayrık bilgi ve hafıza (+16 more)
 
 ### Community 2907 - "Tasarım Modeli"
-Cohesion: 0.08
-Nodes (18): Class Diyagramı, Deployment Diyagramı, Tasarım Modeli, Mikroservis Prensipleri, Sequence Diyagramı, Tasarım Desenleri (API Gateway, Service Discovery, Circuit Breaker, Event-Driven, CQRS), Alternatif Yaklaşımlar (Monolit, SOA, Serverless), Değerlendirme ve Tartışma (+10 more)
+Cohesion: 0.11
+Nodes (11): Mikroservis Prensipleri, Tasarım Desenleri (API Gateway, Service Discovery, Circuit Breaker, Event-Driven, CQRS), Alternatif Yaklaşımlar (Monolit, SOA, Serverless), Değerlendirme ve Tartışma, Tasarımın Güçlü Yönleri, İyileştirme Önerileri, Distributed system karmaşıklığı, Servisler arası veri tutarlılığı (+3 more)
 
 ### Community 2908 - "Ders 2 Genişletilmiş Notu: Python ve NumPy'a Giriş, Görüntü Dosyası Yapıları ve Yoğunluk Dönüşümleri"
 Cohesion: 0.06
@@ -23583,10 +23676,10 @@ Nodes (9): Zipfian dağılım, Learning-Augmented Binary Search Trees (Lin, Luo,
 
 ### Community 2956 - "Computer graphics (Ch 10)"
 Cohesion: 0.06
-Nodes (46): 2D Graphics, 3D Graphics, Animation (key frames, in-betweening), Bezier Curves and Surfaces, Bump Mapping, Chapter 10 Computer Graphics, Computer Animation, Computer graphics (Ch 10) (+38 more)
+Nodes (43): 3D Graphics, Animation (key frames, in-betweening), Bezier Curves and Surfaces, Bump Mapping, Chapter 10 Computer Graphics, Computer Animation, Computer graphics (Ch 10), Distributed Ray Tracing (+35 more)
 
 ### Community 2957 - "Detaylı Açıklamalar"
-Cohesion: 0.10
+Cohesion: 0.08
 Nodes (20): Algoritma analizi, Algoritma tasarım teknikleri, Bağlantı problemi, Big O, Big Omega, Big Theta, Büyüme oranı, Ders 3 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+12 more)
 
 ### Community 2958 - "6.3 İyileştirme Önerileri"
@@ -23710,20 +23803,20 @@ Cohesion: 0.22
 Nodes (8): compilerOptions, allowJs, esModuleInterop, lib, module, skipLibCheck, strict, target
 
 ### Community 2988 - "Chapter 9: Methods for collecting data on business innovation"
-Cohesion: 0.12
-Nodes (14): Calculating weights, Chapter 9: Methods for collecting data on business innovation, Domains (sub-populations), Error checks and data validation, ISIC Rev.4, Longitudinal panel data and cross-sectional surveys, Metadata and quality reports, National statistical organisations (NSOs) (+6 more)
+Cohesion: 0.11
+Nodes (16): Calculating weights, Chapter 9: Methods for collecting data on business innovation, Domains (sub-populations), Error checks and data validation, Imputation of missing data, ISIC Rev.4, Longitudinal panel data and cross-sectional surveys, Metadata and quality reports (+8 more)
 
 ### Community 2989 - "2024-2025/README.md"
 Cohesion: 0.06
 Nodes (23): Ders 2 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Girişimcilik (00:19), Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Sürdürülebilir kalkınma (01:00) (+15 more)
 
-### Community 2990 - "Determinant"
-Cohesion: 0.11
-Nodes (24): Adjoint of a Matrix, Approximate Integration by Interpolation, Arrow Technique for 2x2 and 3x3 Determinants, Chapter 2: Determinants, Cofactor Expansion, Determinant of Transpose (Thm 2.2.2), Gabriel Cramer, Hadamard's Inequality (+16 more)
+### Community 2990 - "iOS ve Android karşılaştırması"
+Cohesion: 0.05
+Nodes (49): Açık kaynak ve kapalı kaynak, Bootloader kilidi, Cihaz çeşitliliği ve güncellemeler, Custom ROM, Darwin, Emülatör, Flutter ve Dart, Framework (+41 more)
 
 ### Community 2991 - "BLM3580 Proje Konuları ve Genel Beklentiler"
-Cohesion: 0.11
-Nodes (23): Bilgi Sistemi, Bilgi Sistemi Tarafları, Bilgi Tabanlı İş Sistemi (BTİS), CASE Araçları, İşlemsel Bilgi Sistemi (İBS), Karar Destek Sistemi (KDS), Ofis Otomasyon Sistemi (OOS), OLAP (+15 more)
+Cohesion: 0.15
+Nodes (16): Bilgi Sistemi Tarafları, CASE Araçları, Sistem Analisti, BLM3580 Proje Konuları ve Genel Beklentiler, BLOB ile dosya saklama, İçe/dışa aktarma (XML JSON CSV), MVC mimarisi, Proje değerlendirme ve sunum planı (+8 more)
 
 ### Community 2992 - "ÖDEV 2 - 8259 kesme devresi (8251A ile)"
 Cohesion: 0.24
@@ -23879,7 +23972,7 @@ Nodes (10): Güvercin Fotoğrafı (image_0001.jpg), Güvercin Fotoğrafı (image
 
 ### Community 3030 - "Laudon Management Information Systems 13th Edition (chapters 6-8 part)"
 Cohesion: 0.02
-Nodes (161): Data hierarchy, Web 2.0, Birthday paradox and hash clustering, Chapter 9 Database Systems, Commit/Rollback Protocol, Computer network, Data Mining, Forms of Data Mining (class description, cluster, association, outlier, sequential pattern) (+153 more)
+Nodes (141): Data hierarchy, Web 2.0, Computer network, Data Mining, Forms of Data Mining (class description, cluster, association, outlier, sequential pattern), Data Warehouse and Data Cube, Database Management System (DBMS), Distributed Database (+133 more)
 
 ### Community 3031 - "DiziPointer.c"
 Cohesion: 0.43
@@ -23895,7 +23988,7 @@ Nodes (10): 9. Hafta - 29 Kasım 2021 Pazartesi, Asynchronous Protocols, Data Li
 
 ### Community 3037 - "BLM3041 Hafta I: VTYS Giriş, Temel Kavramlar"
 Cohesion: 0.04
-Nodes (81): Amazon.com veritabanı örneği, Binary search (ikili arama), B-tree / k-yollu arama ağaçları, Veritabanı Yönetimi Ders 1 (2020-2021) Giriş, Disk sayfası (page) erişimi, VTYS dört dosya tipi, Düzenli saklama (sıralı, hash), ER diyagramları (+73 more)
+Nodes (66): Amazon.com veritabanı örneği, Binary search (ikili arama), B-tree / k-yollu arama ağaçları, Veritabanı Yönetimi Ders 1 (2020-2021) Giriş, Disk sayfası (page) erişimi, VTYS dört dosya tipi, Düzenli saklama (sıralı, hash), ER diyagramları (+58 more)
 
 ### Community 3038 - "4. Tasarım Modeli"
 Cohesion: 0.18
@@ -23918,8 +24011,8 @@ Cohesion: 0.18
 Nodes (11): 5.1.1 Huffman Coding, 5.1.2 LZW (Lempel-Ziv-Welch), 5.1.3 Arithmetic Coding, 5.1.4 BWT + MTF + Arithmetic, 5.1.5 RLE + Huffman (Hibrit), 5.1 Candidate Algorithms, 5.2 Grid Search Strategy, 5.3 Performance Metrics (+3 more)
 
 ### Community 3043 - "hüsamettin_ışıktaş/scripts/run_final_experiment.py"
-Cohesion: 0.04
-Nodes (28): evaluate_model(), extract_features(), load_all_corpus(), main(), MLPClassifier, plot_algo_bpb(), plot_algo_speed(), plot_algorithm_win_distribution() (+20 more)
+Cohesion: 0.10
+Nodes (16): evaluate_model(), extract_features(), load_all_corpus(), main(), MLPClassifier, plot_algo_bpb(), plot_algo_speed(), plot_algorithm_win_distribution() (+8 more)
 
 ### Community 3044 - "Proje Raporu: Şarkı sözlerinden müzik türü tespiti (Diner, Çaycı)"
 Cohesion: 0.21
@@ -23962,8 +24055,8 @@ Cohesion: 0.29
 Nodes (10): BLM1552 Ödev 1 (2017), Akış diyagramı çizimi, Aynı dizide sağa kaydırma, Dizide ardışık elemanları toplayıp araya yerleştirme, Linkli liste çözümü (C), elemanEkle, elemanSil, Dizi ile linkli liste (A, PO dizileri) (+2 more)
 
 ### Community 3054 - "Turing Machines"
-Cohesion: 0.10
-Nodes (31): P versus NP Question, Tractable and Intractable Problems, Answers to Odd-Numbered Exercises: Chapter 13 Modeling Computation (S-83..S-96), John Backus, Backus-Naur Form (BNF), Chapter 13: Modeling Computation, Noam Chomsky, Types of Grammars (Chomsky Hierarchy) (+23 more)
+Cohesion: 0.09
+Nodes (33): P versus NP Question, Tractable and Intractable Problems, Answers to Odd-Numbered Exercises: Chapter 13 Modeling Computation (S-83..S-96), John Backus, Backus-Naur Form (BNF), Chapter 13: Modeling Computation, Noam Chomsky, Types of Grammars (Chomsky Hierarchy) (+25 more)
 
 ### Community 3055 - "2024-2025 Bahar Dönemi"
 Cohesion: 0.20
@@ -23994,8 +24087,8 @@ Cohesion: 0.06
 Nodes (30): 1. Enterpolasyondan Regresyona, 2.1 Mutlak hata ve karesel hata, 2.2 Neden karesel hata?, 2.3 Kısmi türev, 2. Hata Ölçüleri ve En Küçük Kareler Yaklaşımı, 3.1 Normal denklemlerin türetilmesi, 3.2 Örnek: altı nokta, 3.3 Örnek: on nokta (+22 more)
 
 ### Community 3062 - "Department"
-Cohesion: 0.07
-Nodes (9): DepartmentDAO, DepartmentHibernateImpl, Department, AddDepartmentServlet, DeleteDepartmentServlet, DepartmentListServlet, UpdateDepartmentServlet, StudentSaveInitializeServlet (+1 more)
+Cohesion: 0.09
+Nodes (7): DepartmentDAO, DepartmentHibernateImpl, Department, AddDepartmentServlet, DeleteDepartmentServlet, UpdateDepartmentServlet, DepartmentTest
 
 ### Community 3063 - "2022-2023 Bahar Dönemi"
 Cohesion: 0.20
@@ -24014,12 +24107,12 @@ Cohesion: 0.09
 Nodes (22): 1. Geçen Dersin Hatırlatması, 3.1 Aykırı değer nedir, 3.2 Aykırı değeri bulmak ve kullanmak, 3.3 Boyut sayısı ve görselleştirme, 3. Aykırı Değer Analizine Giriş, 4.1 Çeyrekler ve beş sayılı özet, 4.2 Boxplot örneği: yaş öz niteliği, 4.3 Katsayının seçimi üzerine sorular (+14 more)
 
 ### Community 3068 - "Staj Raporu - Mobillium Android Stajı (Muhammet Kayra Bulut)"
-Cohesion: 0.07
-Nodes (43): Staj Raporu - Mobillium Android Stajı (Muhammet Kayra Bulut), Android Studio, API token, Basic Note App projesi, Dependency Injection, Figma tasarımı, Heroku, Kotlin (+35 more)
+Cohesion: 0.14
+Nodes (24): Android Studio, Android geliştirme gereksinimleri, Dalvik VM, IEEE araştırma ödevi (mobil kullanıcı deneyimi), Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+16 more)
 
 ### Community 3069 - "Chapter 8 Securing Information Systems"
 Cohesion: 0.02
-Nodes (118): Spoofing, Application Proxy Firewall, Auditing, Accounting, and Logging, Chapter 15 Security, Computer-Security Classifications (TCB, A/B/C/D), Distributed Denial of Service (DDOS), DMZ, Grappling Hook (+110 more)
+Nodes (145): Antivirus software, Spoofing, Application Proxy Firewall, Armored Virus, Auditing, Accounting, and Logging, Boot Virus, Chapter 15 Security, Computer-Security Classifications (TCB, A/B/C/D) (+137 more)
 
 ### Community 3070 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -24110,16 +24203,16 @@ Cohesion: 0.20
 Nodes (10): İlk yarıda hedefimize ulaştık, Abdülkadir Dişçi, Ahmet Yavuz, Polatlı Bugsaşspor, Nazilli Belediyespor Sarıyer maçı, Hilmi Volaka, Nazilli Belediyespor, Sarıyer (+2 more)
 
 ### Community 3103 - "Elementary Linear Algebra, Applications Version (11th ed., Anton & Rorres, 2013)"
-Cohesion: 0.11
-Nodes (31): Elementary Linear Algebra, Applications Version (11th ed., Anton & Rorres, 2013), Geometric and Algebraic Multiplicity, Applications and Historical Topics list, Basis for the Space Spanned by a Set of Vectors (dependency equations), Chapter 10: Applications of Linear Algebra, Chapter 5: Eigenvalues and Eigenvectors, Complex Euclidean Inner Product on Cn, Complex Vector Spaces (5.3) (+23 more)
+Cohesion: 0.13
+Nodes (29): Elementary Linear Algebra, Applications Version (11th ed., Anton & Rorres, 2013), Geometric and Algebraic Multiplicity, Basis for the Space Spanned by a Set of Vectors (dependency equations), Chapter 5: Eigenvalues and Eigenvectors, Complex Euclidean Inner Product on Cn, Complex Vector Spaces (5.3), Composition of Matrix Transformations, Diagonalization (5.2) (+21 more)
 
 ### Community 3104 - "Tree Terminology with examples"
 Cohesion: 0.26
 Nodes (12): Tree Terminology with examples, Derece (Degree), Derinlik (Depth), Yükseklik (Height), İç düğüm (Internal Node), Yaprak (Leaf) düğüm, Seviye (Level), Ebeveyn ve çocuk (Parent/Child) (+4 more)
 
 ### Community 3105 - "DSP04: Fark Denklemleri ve Frekans Uzayı Analizi"
-Cohesion: 0.13
-Nodes (20): DSP04: Fark Denklemleri ve Frekans Uzayı Analizi, Ayrık Fourier Dönüşümü (AFD/DFT), AZFD periyodikliği (2π), AZFD simetri özellikleri, AZFD teoremleri (doğrusallık, öteleme, ters çevirme), Genlik ve faz spektrumu, İdeal alçak geçiren süzgeç, Sabit katsayılı fark denklemi (SKFD) (+12 more)
+Cohesion: 0.14
+Nodes (19): DSP04: Fark Denklemleri ve Frekans Uzayı Analizi, Ayrık Fourier Dönüşümü (AFD/DFT), AZFD periyodikliği (2π), AZFD simetri özellikleri, AZFD teoremleri (doğrusallık, öteleme, ters çevirme), Genlik ve faz spektrumu, İdeal alçak geçiren süzgeç, Ters AFD (+11 more)
 
 ### Community 3106 - "Hennessy-Patterson Design Principles"
 Cohesion: 0.25
@@ -24160,10 +24253,6 @@ Nodes (20): Analizden tasarıma geçiş, Ara birim (kullanıcı arayüzü) tasar
 ### Community 3115 - "Ders 23 Genişletilmiş Notu: FET Kutuplama (Sabit, Kendinden ve Gerilim Bölücü Kutuplama, E Tipi MOSFET)"
 Cohesion: 0.06
 Nodes (34): 10.1 Transfer eğrisi çizimi, 10.2 BJT ile JFET karşılaştırması, 10.3 D tipi ve E tipi eğri çizimi, 10.4 Sabit kutuplamalı JFET, 10.5 Gerilim bölücülü JFET, 10.6 Gerilim bölücülü D tipi MOSFET, 10.7 Kendinden kutuplamalı D tipi MOSFET, 10.8 $V_{GS} = 0$ olan D tipi MOSFET (+26 more)
-
-### Community 3116 - "BaseComponent"
-Cohesion: 0.09
-Nodes (3): BaseComponent, Button, ScrollSpy
 
 ### Community 3117 - "Sinyaller ve Sistemler Ödev 2 (2025) tanımı (BLM2041)"
 Cohesion: 0.31
@@ -24223,7 +24312,7 @@ Nodes (13): 1. Sunum: Metinden Duygu Tespiti Yaklaşımları Üzerine Derleme, 2
 
 ### Community 3131 - "Deterministic finite-state automaton (DFA)"
 Cohesion: 0.08
-Nodes (31): Digraph multiple-source reachability (DirectedDFS), Epsilon-transition, GREP, Nondeterministic finite-state automaton (NFA), Building NFA from RE (Algorithm 5.9), NFA simulation via multiple-source reachability, Limitations of regular expressions, RE operations: concatenation, or, closure (+23 more)
+Nodes (29): Digraph multiple-source reachability (DirectedDFS), Epsilon-transition, GREP, Nondeterministic finite-state automaton (NFA), Building NFA from RE (Algorithm 5.9), NFA simulation via multiple-source reachability, Limitations of regular expressions, RE operations: concatenation, or, closure (+21 more)
 
 ### Community 3132 - "heap.c"
 Cohesion: 0.57
@@ -24245,9 +24334,9 @@ Nodes (20): Açık erişim dergiler, Ders 2 Çalışma Özeti, Ders sonrası not
 Cohesion: 0.61
 Nodes (6): createQueue(), dequeue(), enqueue(), isEmpty(), isFull(), main()
 
-### Community 3137 - "blm_1022_proje/code.c"
-Cohesion: 0.18
-Nodes (27): bisection(), choleskyMethod(), consume(), createMatrix(), curTok(), evalExpr(), freeMatrix(), freeTokenStream() (+19 more)
+### Community 3137 - "Ders 11 Genişletilmiş Notu: Veri Saklama, Negatif ve Kesirli Sayıların Gösterimi"
+Cohesion: 0.04
+Nodes (50): 10.1 Taşma, 10.2 Toplama örnekleri, 10.3 Çıkarma, 10. İkilik toplama, taşma ve çıkarma, 11.1 Single ve double precision, 11.2 Kesme hatası, 11. Tek ve çift duyarlıklı kayan nokta, kesme hatası, 1. Giriş: Konumsal sayı sistemlerinden veri saklamaya (+42 more)
 
 ### Community 3138 - "Ödev1 (malişen) sıralı bağlı liste programı - çalıştırma çıktıları"
 Cohesion: 0.20
@@ -24274,8 +24363,8 @@ Cohesion: 0.05
 Nodes (38): 10.1 Motivasyon ve örnekler, 10.2 Tanım, 10. Koşullu Olasılığa Giriş, 1.1 Topluca kapsayıcı kümeler, 1.2 Karşılıklı ayrık kümeler, 1.3 Bölüntü, 1.4 Venn şeması ile örnek, 1. Topluca Kapsayıcı Kümeler, Karşılıklı Ayrık Kümeler ve Bölüntü (+30 more)
 
 ### Community 3144 - "Ders 5 Genişletilmiş Notu: DEMOS'ta Görevler Arası Haberleşme ve DEMOS/MP'de Proses Göçü"
-Cohesion: 0.06
-Nodes (35): 10.1 Makalenin sonucu, 10.2 "In migration" durumu: askıya alma mı?, 10.3 Seri topolojide iletme, 10. Proses Göçünde Durum ve Mesaj İletme, 11. Gevşek Bağlı ve Sıkı Bağlı Sistemler, 12. Göç Kararı ve Günümüzdeki Alternatifler, 1. Dersin Biçimi ve Okunan İki Makale, 2.1 Sistem çağrılarının adı: "messages" (+27 more)
+Cohesion: 0.07
+Nodes (29): 10.1 Makalenin sonucu, 10.2 "In migration" durumu: askıya alma mı?, 10.3 Seri topolojide iletme, 10. Proses Göçünde Durum ve Mesaj İletme, 11. Gevşek Bağlı ve Sıkı Bağlı Sistemler, 12. Göç Kararı ve Günümüzdeki Alternatifler, 1. Dersin Biçimi ve Okunan İki Makale, 2.1 Sistem çağrılarının adı: "messages" (+21 more)
 
 ### Community 3145 - "Ders 11 Genişletilmiş Notu: Birliktelik Kuralları, Market Sepeti Analizi ve Apriori Algoritması"
 Cohesion: 0.05
@@ -24374,8 +24463,8 @@ Cohesion: 0.50
 Nodes (8): ALEX: An Updatable Adaptive Learned Index, ALEX, B+Tree, Bulk load / fanout tree, Cost model, Learned Index (Kraska et al.), Node expansion ve split, Out-of-bounds inserts
 
 ### Community 3169 - "Lojik Devreler Ders 8 (2020-2021)"
-Cohesion: 0.09
-Nodes (26): Aritmetik Lojik Birim (ALU), 4 bitlik ALU tasarımı (M1 M0 işlem kodu), Açık kolektörlü çıkış, BCD - 7 segment çözücü (7447), Kod çözücü (Decoder) n x 2^n, Tümleyen çıkışlı decoder, Dağıtıcı (DEMUX) 1 x 2^n, Lojik Devreler Ders 8 (2020-2021) (+18 more)
+Cohesion: 0.11
+Nodes (22): Aritmetik Lojik Birim (ALU), 4 bitlik ALU tasarımı (M1 M0 işlem kodu), Açık kolektörlü çıkış, Kod çözücü (Decoder) n x 2^n, Tümleyen çıkışlı decoder, Dağıtıcı (DEMUX) 1 x 2^n, Lojik Devreler Ders 8 (2020-2021), Eleman karmaşıklığı (+14 more)
 
 ### Community 3170 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -24453,9 +24542,9 @@ Nodes (10): Eric Berne transaksiyonel analiz, Eysenck içe dönük - dışa dön
 Cohesion: 0.51
 Nodes (10): Ders ekleme/silme, Derse öğrenci ekleme/silme, Yapısal Programlama Ders-Öğrenci Kayıt Sistemi Raporu (çıktı), Ders/öğrenci/durum dosyaları, Durum kaydı (Kayıtlı, Bıraktı, DERS_KAPANDI, Ogrenci_Silindi), Ders kontenjanı, Maksimum kredi kontrolü, Menü tabanlı konsol uygulaması (10 seçenek) (+2 more)
 
-### Community 3191 - "Ders 7 Genişletilmiş Notu: Tek Yönlü, Çift Yönlü ve Dairesel Bağlı Listeler"
-Cohesion: 0.06
-Nodes (30): 10.1 Sona Ekleme, 10.2 Başa Ekleme, 10.3 Dairesel Listeyi Yazdırma, 10. Dairesel Bağlı Liste, 1. Neden Bağlı Liste?, 2.1 Sıralı Erişim, 2.2 Tek Yönlü Bağlı Liste ve Temel İşlemler, 2.3 Ekleme Türleri ve Ne Zaman Hangisi Kullanılır (+22 more)
+### Community 3191 - "tqdm"
+Cohesion: 0.09
+Nodes (13): get_concat_vectors(), get_vectors(), crop(), display_image(), make_user_friendly(), open_file_dialog(), reset_ui(), run_classification() (+5 more)
 
 ### Community 3192 - "Ders 12 Genişletilmiş Notu: Proje Gösterimleri (1. Hafta)"
 Cohesion: 0.10
@@ -24475,7 +24564,7 @@ Nodes (9): 0. Kurulum ve Hazırlık (Tamamlandı ✅), 1.1 Veri Seti EDA ve Gör
 
 ### Community 3196 - "DetailActivity"
 Cohesion: 0.02
-Nodes (34): DatePickerFragment, TimePickerFragment, ReminderActivity, View.OnClickListener, View.OnClickListener, View.OnClickListener, ReminderAlertDialog, DialogInterface.OnClickListener (+26 more)
+Nodes (33): Date, InformationSystem, InformationSystem, ReminderActivity, View.OnClickListener, View.OnClickListener, View.OnClickListener, DialogInterface.OnClickListener (+25 more)
 
 ### Community 3197 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -24491,7 +24580,7 @@ Nodes (9): 1) Veri Parçalama, 2) Veri Görselleştirme, 3) Eğitimi Çalıştı
 
 ### Community 3200 - "socket_chat/client.c"
 Cohesion: 0.06
-Nodes (35): 10. Introduce Parameter Object: Parametre Nesnesi Oluşturma, 11.1 Tanım ve örnek, 11.2 Zayıf yönler, 11. Preserve Whole Object: Tüm Nesneyi Gönder, 12.1 Tanım ve getPrice örneği, 12.2 Çarpma sayısı ve başarım, 12.3 Avantaj, 12.4 Tartışma: geçici değişken birden fazla yerde kullanılıyorsa (+27 more)
+Nodes (49): addFriend(), checkMessages(), deleteFriend(), getFileName(), goBackToMenu(), main(), printBanner(), printFriends() (+41 more)
 
 ### Community 3201 - "06_09_12_2021.md"
 Cohesion: 0.20
@@ -24906,8 +24995,8 @@ Cohesion: 0.12
 Nodes (16): Ağ topolojileri, Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dijkstra örneği (A'dan F'ye), Düzlemsel çizge, Eski vize sorusu: $K_4$, Euler ve Hamilton örnekleri (+8 more)
 
 ### Community 3321 - "Benzer Soruları Çözebilme Yeteneğinin Analizi ve Görselleştirilmesi (Kayra Bulut)"
-Cohesion: 0.07
-Nodes (44): Bağlamda Öğrenme (in-context learning), BLM6114 Final Projesi: Dynamic In-Context Learning, README: Dynamic In-Context Learning projesi, anilsanli/BLM6114_Final_Project_Dynamic_In-Context_Learning deposu, Kaynak notu: anilsanli deposu, 5 talimat şablonu, Benzer Soruları Çözebilme Yeteneğinin Analizi ve Görselleştirilmesi (Kayra Bulut), Gemini API (gemini-1.5-flash-002) (+36 more)
+Cohesion: 0.06
+Nodes (49): Bağlamda Öğrenme (in-context learning), BLM6114 Final Projesi: Dynamic In-Context Learning, README: Dynamic In-Context Learning projesi, anilsanli/BLM6114_Final_Project_Dynamic_In-Context_Learning deposu, Kaynak notu: anilsanli deposu, 5 talimat şablonu, Benzer Soruları Çözebilme Yeteneğinin Analizi ve Görselleştirilmesi (Kayra Bulut), Gemini API (gemini-1.5-flash-002) (+41 more)
 
 ### Community 3322 - "Ders 21 Genişletilmiş Notu: LCS'nin Geri İzlenmesi, Backtracking'e Giriş, Çizge Gösterimleri, DFS ve BFS"
 Cohesion: 0.06
@@ -24915,15 +25004,15 @@ Nodes (33): 1.1 Alt dizi ve ortak alt dizi, 1.2 Özyinelemeli bağıntı, 1.3 Ta
 
 ### Community 3323 - "Ders 22 Genişletilmiş Notu: Thread Havuzları, Yarış Koşulu ve synchronized, JUnit ile Birim Sınama"
 Cohesion: 0.06
-Nodes (31): 10.1 switch-case uyarısı, 10.2 Refactoring, 10.3 Tasarım kalıpları, 10. Tasarım, refactoring ve tasarım kalıpları, 1. Kalıcılıkta nesne referanslarının korunması, 2.1 Neden havuz?, 2.2 java.util.concurrent sınıfları, 2.3 Görev çalıştırma ve havuzu kapatma (+23 more)
+Nodes (32): 10.1 switch-case uyarısı, 10.2 Refactoring, 10.3 Tasarım kalıpları, 10. Tasarım, refactoring ve tasarım kalıpları, 1. Kalıcılıkta nesne referanslarının korunması, 2.1 Neden havuz?, 2.2 java.util.concurrent sınıfları, 2.3 Görev çalıştırma ve havuzu kapatma (+24 more)
 
 ### Community 3324 - "Mikroişlemci Sistemleri/ders_kayitlari/2020-2021/sube_2/README.md"
 Cohesion: 0.11
 Nodes (9): Ders 10 Lab Çalışma Özeti, Ders 11 Lab Çalışma Özeti, Ders 12 Lab Çalışma Özeti, Ders 14 Lab Çalışma Özeti, Ders 5 Lab Çalışma Özeti, Ders 6 Lab Çalışma Özeti, Ders 7 Lab Çalışma Özeti, Ders 8 Çalışma Özeti (+1 more)
 
 ### Community 3325 - "stbi__parse_png_file"
-Cohesion: 0.13
-Nodes (24): stbi__addsizes_valid(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__compute_y_16(), stbi__convert_format16(), stbi__create_png_alpha_expand8(), stbi__create_png_image(), stbi__create_png_image_raw() (+16 more)
+Cohesion: 0.10
+Nodes (42): load_jpeg_image(), stbi__addsizes_valid(), stbi__bitcount(), stbi__blinn_8x8(), stbi__bmp_load(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__compute_y() (+34 more)
 
 ### Community 3326 - "BLM3061 Lab 7 - 8253/8254 müzik çalma devresi"
 Cohesion: 0.36
@@ -25006,7 +25095,7 @@ Cohesion: 0.22
 Nodes (8): 1. Çalışma Özeti Çıkarma Kuralları, 2. Altyazı Klasörü README.md Kuralları, 3. Ana Kaynak Listesine (dersler.json) Göreli Yol Ekleme Kuralları, 4. Commit Atma Kuralları, Altyazıdan Çalışma Özeti Çıkarma ve Altyazı README'si Oluşturma Talimatı, Kullanım, Talimat, Özet Çıktı Formatı
 
 ### Community 3346 - "Hesaplama Kuramı/ders_kayitlari/2020-2021/sube_2/README.md"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (12): Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dil bulma örnekleri ($\Sigma = \{0, 1\}$), Düzenli ifade bir dil tanımlar, Düzenli ifadeden NFA'ya: $(a \cup b)^* aba$, Düzenli ifadeden NFA'ya: $(ab \cup a)^*$, Genel Konular (+4 more)
 
 ### Community 3347 - "Ders 1 Genişletilmiş Notu: Veri Madenciliğine Giriş, Stratejiler ve KDD Süreci"
@@ -25015,7 +25104,7 @@ Nodes (20): 11.1 Süreç şeması, 11.2 Anahtar adımlar, 11. Bilgi Keşfi (KDD)
 
 ### Community 3348 - "mert_guler/frontend/package.json"
 Cohesion: 0.03
-Nodes (66): dependencies, class-variance-authority, embla-carousel-react, framer-motion, lucide-react, radix-ui, @radix-ui/react-slot, react (+58 more)
+Nodes (70): dependencies, class-variance-authority, embla-carousel-react, framer-motion, lucide-react, radix-ui, @radix-ui/react-slot, react (+62 more)
 
 ### Community 3349 - "BERT Emoji Prediction Pipeline Diagram"
 Cohesion: 0.36
@@ -25062,8 +25151,8 @@ Cohesion: 0.05
 Nodes (40): 10.1 M. J. Roberts slaytları, 10.2 Schaum kitabından örnekler, 10. İkinci slayt takımı ve kitaptan örnekler, 1. Frekans analizinde nerede kalmıştık?, 2.1 Frekans cevabının üç koşulu, 2.2 Laplace dönüşümünün açtığı iki yol, 2. Fourier dönüşümünün sınırları ve Laplace dönüşümüne ihtiyaç, 3.1 CTFT'nin hatırlatılması (+32 more)
 
 ### Community 3360 - "Chapter 4: General Vector Spaces"
-Cohesion: 0.11
-Nodes (36): Basis, Basis for Row and Column Spaces by Row Reduction, Chapter 4: General Vector Spaces, Column Space, Dimension, Finite-Dimensional Vector Space, Function Space F(-inf,inf), Infinite-Dimensional Vector Space (+28 more)
+Cohesion: 0.12
+Nodes (35): Basis, Basis for Row and Column Spaces by Row Reduction, Chapter 4: General Vector Spaces, Column Space, Dimension, Finite-Dimensional Vector Space, Function Space F(-inf,inf), Infinite-Dimensional Vector Space (+27 more)
 
 ### Community 3361 - "Ders 11 Genişletilmiş Notu: Doğrusal Sistem Çözüm Yöntemlerinin İşlem Karmaşıklığı, Reel Vektör Uzayları ve Alt Vektör Uzayları (Altuzaylar)"
 Cohesion: 0.07
@@ -25098,8 +25187,8 @@ Cohesion: 0.05
 Nodes (39): 1. Kümelemeye Giriş, 2.1 Öklid Uzaklığı, 2.2 Manhattan (Şehir Bloğu) Uzaklığı, 2.3 Minkowski Uzaklığı, 2.4 Mesafe Ölçüsünün Özellikleri, 2. Sayısal Öz Nitelikler İçin Uzaklık Ölçüleri, 3.1 Olumsallık Tablosu, 3.2 Basit Eşleşme Katsayısı ve Jaccard Katsayısı (+31 more)
 
 ### Community 3369 - "Pattern Recognition (Robi Polikar, Wiley Encyclopedia of Biomedical Engineering)"
-Cohesion: 0.06
-Nodes (58): by entropy, by mean and variance, Feature Selection, Noise types (salt and pepper, gaussian, speckle, periodic), Pattern Recognition (Robi Polikar, Wiley Encyclopedia of Biomedical Engineering), Backpropagation learning rule, Bayes classifier, Cost of error (type I / type II errors) (+50 more)
+Cohesion: 0.05
+Nodes (57): Pattern Recognition (Robi Polikar, Wiley Encyclopedia of Biomedical Engineering), Backpropagation learning rule, Bayes classifier, Cost of error (type I / type II errors), Data acquisition, Mixture models and ensemble learning, Feature selection (forward/backward hill climb), Features, feature vector and feature space (+49 more)
 
 ### Community 3370 - "IPC - Inter Process Communication"
 Cohesion: 0.22
@@ -25246,8 +25335,8 @@ Cohesion: 0.12
 Nodes (31): Be(), bt(), ct(), dt(), e(), Fe(), ft(), Ge() (+23 more)
 
 ### Community 3409 - "Bölüm 1: Ön Bilgiler"
-Cohesion: 0.13
-Nodes (29): Aralıklar (açık, kapalı, yarı-açık), Artan ve azalan fonksiyonlar, Bölüm 1: Ön Bilgiler, Çift ve tek fonksiyonlar (simetri), Doğrular ve eğim (nokta-eğim, paralel/dik), Elipsler (asal ve yedek eksen), Eşitsizlik kuralları ve çözümü, Fonksiyon, tanım ve değer kümesi (+21 more)
+Cohesion: 0.15
+Nodes (27): Aralıklar (açık, kapalı, yarı-açık), Artan ve azalan fonksiyonlar, Bölüm 1: Ön Bilgiler, Çift ve tek fonksiyonlar (simetri), Doğrular ve eğim (nokta-eğim, paralel/dik), Elipsler (asal ve yedek eksen), Eşitsizlik kuralları ve çözümü, Fonksiyon, tanım ve değer kümesi (+19 more)
 
 ### Community 3410 - "Ders 17 Genişletilmiş Notu: 8254 Modları, Counter Latch ve Read-Back Komutları"
 Cohesion: 0.08
@@ -25262,8 +25351,8 @@ Cohesion: 0.03
 Nodes (27): 10.4 Servislerin yaşam döngüsü, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, MainActivity, SensorResultReceiver (+19 more)
 
 ### Community 3413 - "Detaylı Açıklamalar"
-Cohesion: 0.11
-Nodes (23): 11.1 Veri Yapıları, 11.2 `kruskalAlgo` Adım Adım, 11.3 Kod, 11.4 Hocanın İyileştirme Önerisi, 11. Kruskal Algoritmasının C Kodu, Açgözlü (Greedy) Yaklaşım, Ders sonrası notlar, Detaylı Açıklamalar (+15 more)
+Cohesion: 0.09
+Nodes (27): 11.1 Veri Yapıları, 11.2 `kruskalAlgo` Adım Adım, 11.3 Kod, 11.4 Hocanın İyileştirme Önerisi, 11. Kruskal Algoritmasının C Kodu, Açgözlü (Greedy) Yaklaşım, Ders 20 Çalışma Özeti, Ders sonrası notlar (+19 more)
 
 ### Community 3414 - "Detaylı Açıklamalar"
 Cohesion: 0.14
@@ -25271,15 +25360,15 @@ Nodes (13): Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamal
 
 ### Community 3415 - "FileManager"
 Cohesion: 0.06
-Nodes (3): SeatSimulationPanel, ReservationManager, FileManager
+Nodes (8): SeatSimulationPanel, ReservationManager, ReportGenerator, ReportType, FULL, OCCUPANCY, RESERVATION, REVENUE
 
-### Community 3416 - "Örüntü Tanıma Makale Özeti"
-Cohesion: 0.08
-Nodes (31): Bayes Sınıflandırıcısı, Boyut Laneti, Destek Vektör Makineleri, ICA, k-NN, LDA, PCA, Topluluk Öğrenmesi (+23 more)
+### Community 3416 - "BLM4830 Hafta 11"
+Cohesion: 0.20
+Nodes (15): Öznitelik Çıkarımı, Odometri, Blob dedektörleri ve SIFT, Renk takibi ve segmentasyon, Köşe dedektörleri (Moravec, Harris), cv_bridge, BLM4830 Hafta 11, Kenar tespiti (Roberts, Prewitt, Sobel) (+7 more)
 
 ### Community 3417 - "Ders 9 Genişletilmiş Notu: Yığın, İfade Değerlendirme ve Kuyruk Yapıları"
-Cohesion: 0.04
-Nodes (44): 1. Erişim Şekline Göre Veri Yapıları, 2.1 Günlük Hayattan Örnekler, 2.2 Yığının Görünümü: Push ve Pop, 2.3 Donanımdaki Stack ile Farkı, 2.4 Sınır Kontrolleri: isFull ve isEmpty, 2. Yığın (Stack) ve LIFO Mantığı, 4. Yığının Kullanıldığı Yerler, 5.1 Neden Yığın Gerekir? (+36 more)
+Cohesion: 0.03
+Nodes (61): 1. Erişim Şekline Göre Veri Yapıları, 2.1 Günlük Hayattan Örnekler, 2.2 Yığının Görünümü: Push ve Pop, 2.3 Donanımdaki Stack ile Farkı, 2.4 Sınır Kontrolleri: isFull ve isEmpty, 2. Yığın (Stack) ve LIFO Mantığı, 3.1 Yapı Tanımı ve initialize, 3.2 isEmpty (+53 more)
 
 ### Community 3418 - "Ders 10 Genişletilmiş Notu: Araştırma ve Yayın Etiği (Devam) ve Sosyal Ağlarda Etik"
 Cohesion: 0.05
@@ -25293,13 +25382,13 @@ Nodes (40): 10.1 Sistem Türleri, 10.2 Örnekleme ile Ayrık İşaret, 10. Süre
 Cohesion: 0.06
 Nodes (30): 10. Çalışma Süresini Deneysel Olarak Ölçmek, 11.1 İki `for` ile Yazılan Kod, 11.2 Akış Diyagramında Kısaltma Kullanılabilir mi?, 11. Akış ve Kod Üzerine Son Sorular, 1.1 Bubble Sort Neden Bu Kadar Kötülenir?, 1. $n^2$ Karmaşıklıklı Algoritmaları Karşılaştırmak, 2. Insertion Sort Neden Selection Sort'tan Daha Avantajlı?, 3.1 Shell Sort'un Karmaşıklığı (+22 more)
 
-### Community 3421 - ".initialize"
-Cohesion: 0.08
-Nodes (14): Main, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener (+6 more)
+### Community 3421 - "java.awt.event.ActionEvent"
+Cohesion: 0.01
+Nodes (221): ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener (+213 more)
 
 ### Community 3422 - "Activity yaşam döngüsü"
 Cohesion: 0.07
-Nodes (34): Anonim sınıf ve OnClickListener, Bilgisayar mühendisliği kariyer vizyonu, Bundle, Constraint Layout, Ders 5 Android Activity ve Kodlamaya Giriş, EditText ve input type, findViewById, finish metodu (+26 more)
+Nodes (36): Model-View-Controller, Anonim sınıf ve OnClickListener, Bilgisayar mühendisliği kariyer vizyonu, Bundle, Constraint Layout, Ders 5 Android Activity ve Kodlamaya Giriş, EditText ve input type, findViewById (+28 more)
 
 ### Community 3423 - "Detaylı Açıklamalar"
 Cohesion: 0.13
@@ -25333,9 +25422,9 @@ Nodes (19): Faz Kayması (Phase Shift), Periyot (T0), Radyan Frekans (ω0), Sin�
 Cohesion: 0.05
 Nodes (38): 10.1 İlk Giren İlk Çıkar, 10.2 Normal Dizide Kaydırmak Neden Verimsiz?, 10.3 Dairesel Kuyruk, 10.4 Kuyruk İşlemleri, 10.5 Bağlı Liste ile Kuyruk, 10. Kuyruk (Queue), 1.1 Bulunduğu Hâlde Döngüden Çıkmamak, 1.2 `while` Döngüsünde Dizi Sınırını Unutmak (+30 more)
 
-### Community 3431 - "ALU (Arithmetic Logic Unit)"
-Cohesion: 0.09
-Nodes (27): 4 Bitlik Çıkarıcı, İkiye Tümleyen (Two's Complement), Ödev 2: Toplayıcı ve Çıkarıcı Tasarımı, Tam Çıkarıcı, Toplama-Çıkarma Devresi (XOR ve M seçim ucu), Yarı Çıkarıcı, 4 Bitlik Paralel Toplayıcı, Tam Çıkarıcı (Full Subtractor) (+19 more)
+### Community 3431 - "Ders 21 Genişletilmiş Notu: C Programlama Diline Giriş"
+Cohesion: 0.04
+Nodes (50): 10.1 Karşılaştırma işleçleri, 10.2 Karşılaştırma bir değer üretir, 10.3 Üçlü karşılaştırma tuzağı, 10.4 Mantıksal işleçler, 10. Karşılaştırma ve mantıksal işleçler, 11. İç içe if yapıları, 12.1 Skaler veri tipleri, 12.2 signed ve unsigned (+42 more)
 
 ### Community 3432 - "HMW4 Kevin Bacon/17011086.c"
 Cohesion: 0.21
@@ -25344,10 +25433,6 @@ Nodes (14): addEdge(), BreadthFirstSearch(), createGraph(), createNode(), dequeu
 ### Community 3433 - "Ders 4 Genişletilmiş Notu: Proje Planlama, Fizibilite Analizi, Gantt ve PERT Diyagramları"
 Cohesion: 0.05
 Nodes (37): 10.1 Kaynak kavramı, 10.2 MS Project, 10.3 Kaynak tablosu, 10. Kaynak atamaları ve MS Project, 11.1 Gantt ile PERT'in farkı, 11.2 MS Project'te ağ diyagramı, 11.3 PERT'te süre belirsizliği ve CPM, 11. PERT diyagramı ve CPM (+29 more)
-
-### Community 3434 - "ht"
-Cohesion: 0.12
-Nodes (4): ht, on(), one(), rt()
 
 ### Community 3435 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -25427,7 +25512,7 @@ Nodes (5): 2024-2025 Bahar Dönemi, Ders Bilgileri, Not Dağılımı, Ödev Notl
 
 ### Community 3466 - "Yazılım sınama teknikleri"
 Cohesion: 0.05
-Nodes (40): Aşırı Programlama (XP), Yazılım sınama teknikleri, Etkileşimlerin Belirlenmesi, Örnek Alan Modeli (SatışKalemi, Ürün, Satış, Şube, Kasa, Ödeme), Alfa sınaması, Başarım sınaması, Beta sınaması, Beyaz kutu sınaması (+32 more)
+Nodes (40): Aşırı Programlama (XP), Geri Besleme, Hastane Sistemi, Sistem, Sistem ve Ortam, Yazılım sınama teknikleri, Alfa sınaması, Başarım sınaması (+32 more)
 
 ### Community 3467 - "linkedlist_with_2arrays.c"
 Cohesion: 0.67
@@ -25441,9 +25526,9 @@ Nodes (33): 1. Dersin Yapısı, 2.1 Problem, 2.2 Anlamsal bölütleme için eği
 Cohesion: 0.15
 Nodes (12): 1. sunum: 5G Teknolojisinin Twitter'da Duygu Analizi, 2. sunum: Twitter'daki Finansal Topluluktan Şirket Olaylarının Tespiti, 3. sunum: Sosyal Medya Duygu Analiziyle Hisse Senedi Hareketi Tahmini, 4. sunum: Anahtar Kelime Listeleriyle Denetimsiz Metin Sınıflandırma, 5. sunum: Çift Yönlü LSTM ile Kelime Anlamı Belirginleştirme, Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+4 more)
 
-### Community 3470 - "Shell Programlama (OS_Shell)"
-Cohesion: 0.12
-Nodes (21): Shell Programlama (OS_Shell), Bash, Shell değişkenleri, Kernel, if / for / while / case yapıları, Pipe ile komut bağlama, Shell, tr ve awk komutları (+13 more)
+### Community 3470 - "Quality factor Q"
+Cohesion: 0.06
+Nodes (50): Half-power frequencies and bandwidth, Bode plots for complex conjugate pairs and higher-order terms, Damping factor zeta and alpha, High-Q approximations (N half-bandwidths off resonance), Parallel resonance, Bode plot / transfer function exercises (ch13 end), Band-pass filter (BPF), Chapter 14 Sinusoidal Steady State: Resonance (+42 more)
 
 ### Community 3471 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -25485,9 +25570,9 @@ Nodes (28): 10.1 Giriş sorusu, 10.2 Kanundaki tanım, 10.3 Bentlerin açıklama
 Cohesion: 0.33
 Nodes (6): Kernel Mode and User Mode, Chapter 1 problems, Monolithic Systems, Process Creation (fork, CreateProcess), System calls (UNIX and Win32), Trap instruction
 
-### Community 3481 - "Section 9.6 Partial Orderings"
-Cohesion: 0.13
-Nodes (27): Source-Removal Algorithm, Chain and antichain, Chapter 9 Relations key terms, Comparable and incomparable elements, Compatible total ordering, Covering relation, Distributive and complemented lattices, Game of Chomp on posets (+19 more)
+### Community 3481 - "Scripts/popper.min.js"
+Cohesion: 0.10
+Nodes (42): a(), ae, b(), c(), ce(), d(), E(), f() (+34 more)
 
 ### Community 3482 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -25778,8 +25863,8 @@ Cohesion: 0.33
 Nodes (5): 📝 Derse Dair Öneriler, 📚 Etkili İletişim ve Hazırlıksız Sunum Becerileri, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
 
 ### Community 3556 - "Ders 11 Genişletilmiş Notu: Yazılım Sınama Teknikleri: Sınama Türleri, Resmi Gözden Geçirme ve JUnit ile Birim Sınaması"
-Cohesion: 0.06
-Nodes (36): 10.1 Neden gerekli?, 10.2 Alfa sınaması, 10.3 Beta sınaması, 10. Geçerleme Sınamaları: Alfa ve Beta, 11.1 Kurtarma (recovery) sınaması, 11.2 Güvenlik (security) sınaması, 11.3 Zorlama (stress) sınaması, 11.4 Başarım (performance) sınaması (+28 more)
+Cohesion: 0.05
+Nodes (37): 10.1 Neden gerekli?, 10.2 Alfa sınaması, 10.3 Beta sınaması, 10. Geçerleme Sınamaları: Alfa ve Beta, 11.1 Kurtarma (recovery) sınaması, 11.2 Güvenlik (security) sınaması, 11.3 Zorlama (stress) sınaması, 11.4 Başarım (performance) sınaması (+29 more)
 
 ### Community 3557 - "📚 Eğitim Felsefesi"
 Cohesion: 0.33
@@ -26233,9 +26318,9 @@ Nodes (16): `001` içeren ve içermeyen ikili dizgiler, `ab` önekli dizgiler, B
 Cohesion: 0.12
 Nodes (16): Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dizgiyi $xyz$ olarak bölme, Dönüşümün genel yöntemi, Düzenli olmayan diller, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+8 more)
 
-### Community 3670 - "2024-2025_Bahar Lisans Haftalık Ders Programı"
-Cohesion: 0.11
-Nodes (23): Kaynak: tariktskn/YTU-NOTLAR, tariktskn/YTU-NOTLAR GitHub deposu, Kaynak (tariktskn YTU-NOTLAR Yapay Zeka), BLM1031 Yapısal Programlama*, BLM1033 Devre T. ve Elek. Dev. MEK Gr1; G1 Gr2; MAG Gr3 At, BLM1992 İş Sağlığı ve Güvenliği 2, BLM2022 Bilgisayar Organizasyonu, BLM2041 Bilg. Müh. İçin Sin ve Sis. (+15 more)
+### Community 3670 - ".AdminMenu"
+Cohesion: 0.07
+Nodes (20): DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, ListSelectionListener, ListSelectionListener (+12 more)
 
 ### Community 3671 - "4. Sağlıklı Diyet Programı Hazırlama"
 Cohesion: 0.06
@@ -26302,16 +26387,16 @@ Cohesion: 0.11
 Nodes (17): Akış formülasyonu, Bağlantı analizi yaklaşımları, Büyük veri türleri ve graf verisi, Ders 8 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+9 more)
 
 ### Community 3687 - "Detaylı Açıklamalar"
-Cohesion: 0.08
-Nodes (25): Led tabela kelime kaydırma (do-while), Döngü ve dizi işlemleri, compare(), main(), compare_by_value1(), compare_by_value2(), insert(), intersection() (+17 more)
+Cohesion: 0.07
+Nodes (28): Led tabela kelime kaydırma (do-while), Döngü ve dizi işlemleri, compare(), main(), compare_by_value1(), compare_by_value2(), insert(), intersection() (+20 more)
 
 ### Community 3688 - "Gereksinimler Belgesi"
 Cohesion: 0.25
 Nodes (8): Gereksinimler Belgesi, Kullanım Öyküleri (User Stories), Kullanım Öyküsü: Satış İşlemi (NextGenPOS örneği), Nesneye Yönelik Çözümleme Süreci, Use Case Diyagramı Çizim Kuralları, Uygulama Alanının Çözümlenmesi (Domain Analysis), Gereksinim Mühendisliği Adımları (Inception, Elicitation, Elaboration, Negotiation, Specification, Validation, Management), SRS (Software Requirements Specification) Belgesi
 
 ### Community 3689 - "Detaylı Açıklamalar"
-Cohesion: 0.05
-Nodes (30): Bir kayıt satırından ne öğrenilir?, Bölüm (episode) tanımlama, Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, HITS'in dezavantajları, HITS'te taban küme nasıl kurulur? (+22 more)
+Cohesion: 0.09
+Nodes (14): Ders 12 Çalışma Özeti, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular (+6 more)
 
 ### Community 3690 - "Arka Uç (Backend)"
 Cohesion: 0.25
@@ -26334,8 +26419,8 @@ Cohesion: 0.25
 Nodes (7): 📚 Bilgisayar Donanımı, 📝 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, ℹ️ Dersin içeriği güncel değil, 💡 Öneri sahibi: Traktör Reis
 
 ### Community 3695 - ".exit"
-Cohesion: 0.02
-Nodes (123): İçindekiler, 10. Çok Süreçli Mimari: Google Chrome, 11.1 Bağımsız ve İşbirlikçi Süreçler, 11.2 İşletim Sisteminin Sorumluluğu, 11.3 İki Temel Yöntem, 11.4 MPI Hakkında, 11. Süreçler Arası İletişime Giriş, 1. Zamanlayıcıların Tekrarı (+115 more)
+Cohesion: 0.01
+Nodes (221): 10. Süreçleri İzleme: `ps` ve `top`, İçindekiler, 10. Çok Süreçli Mimari: Google Chrome, 11.1 Bağımsız ve İşbirlikçi Süreçler, 11.2 İşletim Sisteminin Sorumluluğu, 11.3 İki Temel Yöntem, 11.4 MPI Hakkında, 11. Süreçler Arası İletişime Giriş (+213 more)
 
 ### Community 3696 - "CodeGen-350M-mono (temp3) vs Mistral-7B-Instruct LoRA train/loss karşılaştırma grafiği"
 Cohesion: 0.25
@@ -26361,9 +26446,9 @@ Nodes (16): Alt ağ (subnet) hesabı, Ağ güvenliği, Bridge ve switch, Ders 18
 Cohesion: 0.25
 Nodes (7): 13. Hafta - 27 Aralık 2021 Pazartesi, Chapter 7: Deadlocks, Deadlock  Prevention, Methods for Handling Deadlocks, Recovery from Deadlock: Process Termination, Resource Allocation Graph, Safe State
 
-### Community 3702 - "FIFA 18 Complete Player Dataset (Kaggle)"
-Cohesion: 0.04
-Nodes (85): Tez Kaynak Linkleri, GameAnalytics: Game Data Mining Fundamentals, MIT CMS.300 Game Analysis Guide, Data cleaning (M/K conversion), FIFA 18 Data Mining Thesis (EN), LASSO, NumPy, Pandas (+77 more)
+### Community 3702 - "Makine Öğrenmesi ders notları 2024 (Elif Karslıgil)"
+Cohesion: 0.07
+Nodes (42): Performans metrikleri: Accuracy, Precision, Recall, F1, Support, Makine Öğrenmesi ders notları 2024 (Elif Karslıgil), ANN, Perceptron, MLP, Bayes teoremi / Naive Bayes, Bias ve variance, CNN (konvolüsyon, padding, stride), Confusion matrix, accuracy, precision, recall, F1, Cross validation, holdout, bootstrap, LOOCV (+34 more)
 
 ### Community 3703 - "📚 Elektronik Devreler"
 Cohesion: 0.25
@@ -26442,8 +26527,8 @@ Cohesion: 0.36
 Nodes (8): Learned Bloom filter (existence index), B-Tree as a model (CDF), The Case for Learned Index Structures (Kraska et al., SIGMOD'18), Learned hash-map index, Hybrid indexes, Learned index, Range index, Recursive Model Index (RMI)
 
 ### Community 3726 - "Ders 3 Çalışma Özeti"
-Cohesion: 0.06
-Nodes (54): Kaynak: kubratunc/Shuttlefly_Effect_Game, cloud_firestore, Shuttlefly pubspec.yaml, 3 karakter seçimi ve yetenekler, Shuttlefly Effect Game, Flutter, Reigns (ilham kaynağı), 4 durum: sağlık, oksijen, zihin, enerji (+46 more)
+Cohesion: 0.11
+Nodes (29): Kaynak: kubratunc/Shuttlefly_Effect_Game, cloud_firestore, Shuttlefly pubspec.yaml, 3 karakter seçimi ve yetenekler, Shuttlefly Effect Game, Flutter, Reigns (ilham kaynağı), 4 durum: sağlık, oksijen, zihin, enerji (+21 more)
 
 ### Community 3727 - "2023-2024 Bahar Dönemi"
 Cohesion: 0.25
@@ -26510,16 +26595,16 @@ Cohesion: 0.29
 Nodes (4): Booker T. Washington illiteracy statistics editorial, Tom Watson's Magazine, June 1905, Is It Paul Jones's Body? editorial, Populism / People's Party principles
 
 ### Community 3743 - "Simplex / Half Duplex / Full Duplex"
-Cohesion: 0.09
-Nodes (24): Asynchronous (Asenkron) İletişim, BISYNC (Binary Synchronous Communication), Seri-Paralel Veri İletişimi, Serial Data Link Control (SDLC), Synchronous (Senkron) İletişim, Yazılımsal Seri İletişim - Receive, Yazılımsal Seri İletişim - Transmit, 8251 İlk Ayarlama (Reset → Mode Register → Sync Chars → Command Register) Akışı (+16 more)
+Cohesion: 0.14
+Nodes (17): Asynchronous (Asenkron) İletişim, BISYNC (Binary Synchronous Communication), Seri-Paralel Veri İletişimi, Serial Data Link Control (SDLC), Synchronous (Senkron) İletişim, Yazılımsal Seri İletişim - Receive, Yazılımsal Seri İletişim - Transmit, Bisync ve Serial Data Link Control (SDLC/IBM) Çerçeve Formatları (+9 more)
 
 ### Community 3744 - "Detaylı Açıklamalar"
 Cohesion: 0.13
 Nodes (14): Bilgiye Erişim ve Web Araması (Chapter 6), Boolean Model ve Vektör Uzayı Modeli, Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hiyerarşik Kümeleme ve Dendrogram, Hocanın Özellikle Vurguladığı Kısımlar (+6 more)
 
-### Community 3745 - "registry.py"
-Cohesion: 0.02
-Nodes (59): compose_grid(), ensure_dir(), main(), parse_args(), save_numpy_and_config(), build_optimizer(), main(), parse_args() (+51 more)
+### Community 3745 - "run_opt.py"
+Cohesion: 0.06
+Nodes (25): compose_grid(), ensure_dir(), main(), parse_args(), save_numpy_and_config(), build_optimizer(), main(), parse_args() (+17 more)
 
 ### Community 3746 - "botocore_parsers.py - botocore response parsers"
 Cohesion: 0.39
@@ -26542,16 +26627,16 @@ Cohesion: 0.40
 Nodes (4): PC, PC_Mux, PC_Plus_4, PC_Target
 
 ### Community 3751 - "gezirehberi_admin/Scripts/bootstrap.bundle.min.js"
-Cohesion: 0.10
-Nodes (44): ae(), Bt(), ce(), D(), de(), $e(), ee(), fe() (+36 more)
+Cohesion: 0.07
+Nodes (46): ae(), Bt(), ce(), D(), de(), $e(), ee(), fe() (+38 more)
 
 ### Community 3752 - "Object Oriented Programming Term Project"
 Cohesion: 0.40
 Nodes (4): How can install, How can run, Object Oriented Programming Term Project, What Does It Include
 
-### Community 3755 - "Chapter 4 File Systems (sections 4.4-4.7)"
+### Community 3755 - "Ch.11 File-System Interface (Silberschatz)"
 Cohesion: 0.06
-Nodes (38): AIDL, Android process hierarchy, Android service manager, Binder capability-based security, Binder IPC, Binder kernel module, BinderProxy and Parcel, Booting Linux (+30 more)
+Nodes (50): Chapter 11 File-System Interface, Direct Access, Distributed Information Systems, File-Control Block (FCB), File Locking, File Protection, Garbage Collection (File System), General Graph Directory (+42 more)
 
 ### Community 3756 - "2024-2025 Bahar Dönemi"
 Cohesion: 0.40
@@ -26574,20 +26659,20 @@ Cohesion: 0.12
 Nodes (17): Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları & Çalışma Özetleri, 🔹 Ders 10: Proje Önerisi Sunumları I: Sağlıkta Yapay Zekâ, Blok Zincir Diploma ve Mobil Robotlar, 🔹 Ders 11: Proje Önerisi Sunumları II: Rota Optimizasyonu, Enerji Ticareti, Bulut Güvenliği ve Düşme Tespiti, 🔹 Ders 12: Proje Önerisi Sunumları III: Görme Engelli Asistanı, Saldırı Tespiti, Enkaz Tespiti ve Kişisel Veri, 🔹 Ders 13: Proje Önerisi Sunumları IV ve Final Duyurusu: Tarım, Galeri, Banka Dokümanları ve Sahte Haber, 🔹 Ders 1: Derse Giriş: Kapsam, Haftalık Plan ve Değerlendirme, 🔹 Ders 2: Bilimsel Veriye Erişim: Kütüphane, İndeksler, Dergi Seçimi ve Etki Faktörü, 🔹 Ders 3: Araştırma Destekleri: BAP, Kalkınma Ajansları, TÜBİTAK Programları ve Proje Ödevi (+9 more)
 
 ### Community 3763 - "HTTP"
-Cohesion: 0.14
-Nodes (18): Application-layer protocol definition, E-mail, HTTP, HTTP/2, HTTP/3, HTTP request and response messages, IMAP, Non-persistent HTTP (+10 more)
+Cohesion: 0.09
+Nodes (26): TCP Acknowledgment Number, Cumulative Acknowledgment, Maximum Segment Size (MSS), Piggybacked Acknowledgment, Receive Window (rwnd), TCP Connection (buffers, variables, socket), Telnet Case Study (Seq/ACK numbers), Application-layer protocol definition (+18 more)
 
 ### Community 3764 - "Ders 9 Genişletilmiş Notu: Kod Kusurlarının Devamı ve Kiralama Örneğinin Adım Adım Refactoring'i"
-Cohesion: 0.08
-Nodes (25): 10.1 Replace Type Code with Subclasses, 10.2 Replace Type Code with Strategy, 10. Tip Kodunun Kaldırılması İçin İki Alternatif, 11. Anti Patterns (Karşıt Kalıplar), 12. Örnek Sorular, 1.1 Large Class (aşırı büyük sınıf), 1.2 Extract Class (sınıf çıkartma), 1.3 Uyumun üye alan erişim deseniyle hesaplanması (+17 more)
+Cohesion: 0.04
+Nodes (38): 10.1 Replace Type Code with Subclasses, 10.2 Replace Type Code with Strategy, 10. Tip Kodunun Kaldırılması İçin İki Alternatif, 11. Anti Patterns (Karşıt Kalıplar), 12. Örnek Sorular, 1.1 Large Class (aşırı büyük sınıf), 1.2 Extract Class (sınıf çıkartma), 1.3 Uyumun üye alan erişim deseniyle hesaplanması (+30 more)
 
 ### Community 3765 - "Ders 13 Genişletilmiş Notu: Proje İlerleme Sunumları: Transfer Öğrenme, Bölütleme Değerlendirmesi ve K-Katlı Çapraz Doğrulama"
 Cohesion: 0.06
 Nodes (32): 1. Dersin Yapısı, 2.1 Veri seti ve yamalar, 2.2 İlk sonuçlar, 2.3 Önceden eğitilmiş ağırlıklar, 2.4 ONNX, 2. Kolon Kanseri Çekirdek Sınıflandırma ve Transfer Öğrenme, 3.1 Öğrencinin seçtiği makale, 3.2 Hocanın sorusu: bölütleme doğruluğu neye göre ölçülüyor? (+24 more)
 
 ### Community 3766 - "Web Bağlantı Analizi PageRank HITS Merkezilik"
-Cohesion: 0.06
-Nodes (61): BFS ve DFS Frontier Stratejileri, Bloom Filtresi, Crawler Mimarisi ve Tazelik Politikası, Göreli URL'den Mutlak URL'ye Dönüşüm, URL Kanonikleştirme, Web Crawler, Akış Formülasyonu, Arasındalık Merkezliği (+53 more)
+Cohesion: 0.07
+Nodes (53): BFS ve DFS Frontier Stratejileri, Bloom Filtresi, Crawler Mimarisi ve Tazelik Politikası, Göreli URL'den Mutlak URL'ye Dönüşüm, URL Kanonikleştirme, Web Crawler, Akış Formülasyonu, Arasındalık Merkezliği (+45 more)
 
 ### Community 3767 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -26629,9 +26714,9 @@ Nodes (5): dependencies, depth, source, version, com.unity.modules.wind
 Cohesion: 0.49
 Nodes (8): AddNew(), DeletePerson(), FreeDatabase(), FreePerson(), initNewPerson(), ListDatabase(), main(), SearchDatabase()
 
-### Community 3781 - "HttpApplication"
-Cohesion: 0.08
-Nodes (14): RouteConfig, MvcApplication, BundleConfig, FilterConfig, RouteConfig, MvcApplication, BundleConfig, FilterConfig (+6 more)
+### Community 3781 - "Ideal Transformer"
+Cohesion: 0.07
+Nodes (49): Power factor correction, Apparent Power, Appliance Ratings and Energy Consumption, Average (Real) Power, Chapter 9: Sinusoidal Steady-State Analysis, Chapter 10 Sinusoidal Steady-State Power Calculations, Complex Power, Delta-to-Wye Transformation for Impedances (+41 more)
 
 ### Community 3782 - "Tourex 'neden biz' bölümü görseli - görsel grubu (img/chose)"
 Cohesion: 0.40
@@ -26686,8 +26771,8 @@ Cohesion: 0.60
 Nodes (4): sikistir.sh script, sikistir_dosya(), sikistir_gorsel(), sikistir_pdf()
 
 ### Community 3824 - "modcom/ml.py"
-Cohesion: 0.03
-Nodes (31): detr_infer(), infer(), load_detr(), open_writer(), process_media(), progress(), DecoderBlock, EncoderBlock (+23 more)
+Cohesion: 0.02
+Nodes (35): detr_infer(), infer(), load_detr(), open_writer(), process_media(), progress(), load_bundle(), require_streamlit() (+27 more)
 
 ### Community 3825 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -26698,8 +26783,8 @@ Cohesion: 0.12
 Nodes (15): Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Düzlemler ve doğruların konumu, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Noktanın doğruya uzaklığı (+7 more)
 
 ### Community 3827 - "Binary_Search_Tree.cpp"
-Cohesion: 0.12
-Nodes (25): araVarsa(), contains(), deleteUser(), dosyaOkuma(), enKucukNode(), friedns(), insertNewUser(), main() (+17 more)
+Cohesion: 0.16
+Nodes (21): araVarsa(), contains(), deleteUser(), dosyaOkuma(), enKucukNode(), friedns(), insertNewUser(), main() (+13 more)
 
 ### Community 3828 - "Apriori Algoritması"
 Cohesion: 0.10
@@ -26746,8 +26831,8 @@ Cohesion: 0.13
 Nodes (14): Ders 2 Çalışma Özeti, Ders sonrası notlar, Dersin Hedefleri, Detaylı Açıklamalar, Genel Konular, Geçen Dersin Tekrarı, Hocanın Özellikle Vurguladığı Kısımlar, Klasik Süreç Modelleri (+6 more)
 
 ### Community 3839 - "Ders 24 Genişletilmiş Notu: Struct ve Bağlı Liste ile Dosyadan Nokta Okuma, İkili Arama Ağacı"
-Cohesion: 0.03
-Nodes (77): 10.1 Yapı ve ekleme kuralı, 10.2 Preorder, inorder, postorder, 10.3 Slayttaki ağaç programı, 10. İkili Arama Ağacı ve Gezinme Algoritmaları, 11.1 Düğüm yapısı ve createNode, 11.2 Elle kurulan ağaç ve preorder, 11.3 Inorder ve postorder, 11.4 Özyinelemeli insertNode (+69 more)
+Cohesion: 0.05
+Nodes (37): 10.1 Yapı ve ekleme kuralı, 10.2 Preorder, inorder, postorder, 10.3 Slayttaki ağaç programı, 10. İkili Arama Ağacı ve Gezinme Algoritmaları, 11.1 Düğüm yapısı ve createNode, 11.2 Elle kurulan ağaç ve preorder, 11.3 Inorder ve postorder, 11.4 Özyinelemeli insertNode (+29 more)
 
 ### Community 3840 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.14
@@ -26810,8 +26895,8 @@ Cohesion: 0.12
 Nodes (15): Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hata kaynakları, Hocanın Özellikle Vurguladığı Kısımlar, İstatistiğe giriş: popülasyon ve örneklem, İyi bir tahmin edicinin özellikleri (+7 more)
 
 ### Community 3858 - "Ders 4 Genişletilmiş Notu: Monitörler ve Koşul Değişkenleri (Hoare ve Mesa Makaleleri)"
-Cohesion: 0.06
-Nodes (34): 10. Donanım Desteği: Atomik Komutlar, 11. Kuyruk Disiplini: FIFO, Öncelik, Açlık ve Konvoy, 12.1 Yerel eşzamanlı programlama, 12. Mesa ve Pilot: Monitörler Gerçek Bir Sistemde, 13.1 Kesme sırasında ne olur?, 13.2 Diske yazan program örneği, 13.3 Bu yaklaşımın getirileri, 13. Kesmelerin Monitörle Soyutlanması (+26 more)
+Cohesion: 0.05
+Nodes (40): 10. Donanım Desteği: Atomik Komutlar, 11. Kuyruk Disiplini: FIFO, Öncelik, Açlık ve Konvoy, 12.1 Yerel eşzamanlı programlama, 12. Mesa ve Pilot: Monitörler Gerçek Bir Sistemde, 13.1 Kesme sırasında ne olur?, 13.2 Diske yazan program örneği, 13.3 Bu yaklaşımın getirileri, 13. Kesmelerin Monitörle Soyutlanması (+32 more)
 
 ### Community 3880 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -26914,8 +26999,8 @@ Cohesion: 0.25
 Nodes (7): 11. Week - 13 December 2022 Tuesday, Creating a DataFrame, Distinct, Filter, RDD Operations, Spark Programming - Spark SQL, Ödev
 
 ### Community 3914 - ".getAdet"
-Cohesion: 0.10
-Nodes (17): Soru 1: Kasa Durum Şemasında Aynı Olayın Farklı Durumlardaki Etkisi ve Bitiş Durumu (derste sözlü ve ekrandan, 00:20:06; 00:28:34; 00:36:15), Soru 2: Sıralama Şemasında `ürünSil(ürün: Ürün)` Akışı ve `0` Adetli Kalemin Silinmesi (derste sözlü ve ekrandan, 01:47:26; 01:49:35), Soru 3: Kalite ve Belgeleme Ölçütlerinin Versiyonlar Arası Karşılaştırılması (derste sözlü ve ekrandan, 02:50:15), Örnek Sorular, 1. NextGenPOS Kasa Durum Şeması (State Diagram), 2. Alan Modelinden Tasarım Sınıf Şemasına ve Sıralama Şemalarına Geçiş, 3. Yazılım Kalitesi, Ölçme Kavramları ve Doğrudan/Dolaylı Ölçütler, Ders 9 Çalışma Özeti (+9 more)
+Cohesion: 0.05
+Nodes (36): 1.1 Durum Şemasında Odak Varlığın, Durumların ve Olayların Belirlenmesi, 1.2 Canlı Derste Çizilen Kasa Durum Şeması ve Tasarım Kararları, 1.3 Öğrenci Sorusu (Bitiş Durumu) ve Ders Notlarındaki Şema ile Karşılaştırma, 1. `barkodGir(barkod: String)` Sıralama Şeması (ekrandan, 01:35:25), 1. NextGenPOS Kasa Varlığı İçin UML Durum Şeması (State Diagram) Tasarımı, 2.1 `Kasa`, `Şube`, `Satış`, `SatışKalemi`, `Ürün` ve `Ödeme` Sınıflarının Zenginleştirilmesi, 2.2 Tamamlanmış Tasarım Sınıf Şeması ve Ders Notlarıyla Karşılaştırma, 2.3 Üç Temel İşlem İçin UML Sıralama Şemaları (Sequence Diagrams) (+28 more)
 
 ### Community 3915 - "FAZ 2 - Algoritma Eslestirme (Algorithm-to-Profile Matching)"
 Cohesion: 0.25
@@ -27058,8 +27143,8 @@ Cohesion: 0.29
 Nodes (7): Gerdiği (ürettiği) alt uzay <S> tanımı, P2 uzayında polinomların lineer bağımsızlığı örneği, R^3 vektörlerinin lineer bağımsızlığı (determinant ile) örneği, Lineer bağımsızlık / bağımlılık tanımı, Lineer kombinasyon tanımı ve çözümü, <S>=R^3 olduğunu gösteren Gauss eliminasyonu örneği, Bir vektörün <S>'ye ait olmadığını gösteren çözümsüz sistem örneği
 
 ### Community 3951 - "ödev2/sait/20011024.c"
-Cohesion: 0.07
-Nodes (41): Ödev 2 Tanım - Stack ile 0/1 Sayma (Toygar Tanyel kopyası), main(), printStack(), Push(), Muhammet Kayra Bulut - Ödev 2 Raporu (Stack), calculateBitLength(), decimalToBinary(), differenceBtwnZerosAndOnes() (+33 more)
+Cohesion: 0.09
+Nodes (38): Ödev 2 Tanım - Stack ile 0/1 Sayma (Toygar Tanyel kopyası), Muhammet Kayra Bulut - Ödev 2 Raporu (Stack), calculateBitLength(), decimalToBinary(), differenceBtwnZerosAndOnes(), generateSignificantBitsForNegativeDecimals(), generateSignificantBitsForPositiveDecimals(), initStack() (+30 more)
 
 ### Community 3952 - "Pınar Albayrak bilgilendirme notu (Matematik 1, 18.10.2018)"
 Cohesion: 0.29
@@ -27230,7 +27315,7 @@ Cohesion: 0.50
 Nodes (4): Yazılım Süreç Modelleri, Bilgi sistemi geliştirme süreci adımları, Waterfall, RAD, artımlı, spiral, XP, RAD modeli
 
 ### Community 3994 - "App"
-Cohesion: 0.09
+Cohesion: 0.08
 Nodes (6): get_git_repo_url(), konfigurasyon_json_guncelle(), App, main(), MenuButton, RepoKullanimiDialog
 
 ### Community 3995 - "Unit 2: Feeding the World - Can GMOs Help? (teacher slides)"
@@ -27290,8 +27375,8 @@ Cohesion: 0.12
 Nodes (16): Akış diyagramı kuralları, Algoritma ve verimlilik, Bubble sort, C programlama kuralları, Ders 1 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Doğrusal arama (+8 more)
 
 ### Community 4015 - "cs"
-Cohesion: 0.06
-Nodes (23): es(), ts(), cs, us, A(), c(), D(), e() (+15 more)
+Cohesion: 0.09
+Nodes (6): es(), is(), ss(), ts(), cs, us
 
 ### Community 4016 - "ServiceProvider sınıfı (Service Providers)"
 Cohesion: 0.29
@@ -27318,8 +27403,8 @@ Cohesion: 0.29
 Nodes (7): Bellek Adresleme ve RAM Yongası Tasarımı Soru Çözümü - 16Kx64/1Mx32/128Mx16/4Gx8 adres-veri hattı hesabı ve 512Kx16 RAM'in 128x4 yongalarla blok diyagramı, PLA ile 4 Girişli Öncelik Kodlayıcı (Priority Encoder) Programlama Tablosu ve Devre Çözümü, 4-Bit Aritmetik Devre Tasarımı (S1,S0 seçim değişkenli toplama/çıkarma) ve VHDL Kod Analizi Sorusu, 3-Bit Sayaç Durum Diyagramı ve T Flip-Flop ile Minimum Devre Tasarımı Sorusu (self-correcting analiz), JK Flip-Flop'un D ve T Flip-Flop Olarak Kullanımı ile Datapath Mikro-operasyon Analizi Sorusu, Kontrol Değişkenli Datapath Blok Diyagramı (Fig. 7-19 Register File, MUX, Function Unit), 4-Bit Aritmetik-Lojik Devre (ALU) Tasarımı - S2,S1,S0 Seçim Değişkenli İşlem Tablosu ve K-Map Çözümü
 
 ### Community 4022 - "Parametrik eğrinin uzunluğu"
-Cohesion: 0.13
-Nodes (13): Astroid, Yay uzunluğu diferansiyeli ds, Parametrik eğrinin uzunluğu, y=f(x) eğrisinin yay uzunluğu, Parametrik Denklemler, Kardiyoid, Kutupsal-Kartezyen Dönüşüm Bağıntıları, Kutupsal Koordinatlarda Yay Uzunluğu (+5 more)
+Cohesion: 0.12
+Nodes (15): Arşimed, Arşimed parabolik yay alan formülü, Astroid, Yay uzunluğu diferansiyeli ds, Parametrik eğrinin uzunluğu, y=f(x) eğrisinin yay uzunluğu, Parametrik Denklemler, Kardiyoid (+7 more)
 
 ### Community 4023 - "2024/ödev 2/scc2pages.pdf"
 Cohesion: 0.62
@@ -27354,8 +27439,8 @@ Cohesion: 0.29
 Nodes (7): Customer photo: Amy Burns, Customer photo: Balazs Orban, Customer Testimonial Avatar Set, Customer photo: Delba De Oliveira, Evil Rabbit müşteri avatarı (tavşan silüeti ikon), Lee Robinson müşteri avatarı (portre fotoğrafı), Michael Novotny müşteri avatarı (portre fotoğrafı)
 
 ### Community 4031 - "GameObjects.js"
-Cohesion: 0.09
-Nodes (12): Ball, Br, Cube, GameObject, GameTime, GUI, Hr, Leg (+4 more)
+Cohesion: 0.04
+Nodes (36): 9.1 İki Yol: Sürükle-Bırak ve Kod, 9.2 GUI Nesnesinin Dört Parçası, 9.3 Kodla Pencere: Kalıtım, 9.4 Fare Olayları: MouseMove ve MouseClick, 9.5 Buton ve Controls, 9.6 Metin Kutusu ve Konum Hesabı, 9.7 Butonun Click Olayı, 9.8 Bağlama Mekanizması (+28 more)
 
 ### Community 4032 - "📚 Muhasebe Organizasyonu"
 Cohesion: 0.50
@@ -27518,8 +27603,8 @@ Cohesion: 0.29
 Nodes (7): Yazılım Mühendisliği Proje Ödevi 2018-2019, Çelebi Seyahat Acentesi Bilet-Tatil Sistemi, Beşduyu Medya Takip Şirketi Bilgi Sistemi, El Sanatları Kursu Programı, Kullanım senaryosu, sınıf, sıralama, etkinlik, durum diyagramları, Nesneye dayalı analiz, modelleme ve tasarım projesi, Proje planı, Gantt, risk tablosu
 
 ### Community 4093 - "C How to Program, 7th Edition"
-Cohesion: 0.07
-Nodes (47): C How to Program, 7th Edition, Array class (Figs 19.10-19.13), Array sınıfı vaka çalışması, Atama operatörü aşırı yükleme ve self-assignment, Base-class initializer syntax (member initializer), calloc and realloc, Zincirleme üye fonksiyon çağrıları, CERT memory management rules (MEM01/30/31/32) (+39 more)
+Cohesion: 0.03
+Nodes (106): C How to Program, 7th Edition, Array class (Figs 19.10-19.13), Array sınıfı vaka çalışması, assert macro and NDEBUG, Atama operatörü aşırı yükleme ve self-assignment, Base-class initializer syntax (member initializer), Other C Topics (Chapter 14), C Preprocessor (Chapter 13) (+98 more)
 
 ### Community 4099 - "Ders 11 Genişletilmiş Notu: Uygulama 2: Kalıtım, Override ve Soyut Sınıflar"
 Cohesion: 0.06
@@ -27594,8 +27679,8 @@ Cohesion: 0.29
 Nodes (6): 📝 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İşletim Sistemleri, 💡 Öneri sahibi: Traktör Reis
 
 ### Community 4147 - "GitIslemleriWindow"
-Cohesion: 0.05
-Nodes (9): 4. `git_helper.py` - Git İşlemleri, DiffWindow, FileItemWidget, getMaxSizeDikey(), getMaxSizeYatay(), GitDialog, GitHelper, CustomProgressDialog (+1 more)
+Cohesion: 0.07
+Nodes (8): 4. `git_helper.py` - Git İşlemleri, DiffWindow, FileItemWidget, getMaxSizeDikey(), getMaxSizeYatay(), GitDialog, GitHelper, CustomProgressDialog
 
 ### Community 4150 - "🧑‍🔬  Turkish GPT-2 Fine-Tuning"
 Cohesion: 0.29
@@ -27694,8 +27779,8 @@ Cohesion: 0.06
 Nodes (31): 10.1 Fritzing, 10.2 Breadboard'un iç yapısı, 10.3 Kısa devre hatası, 10. Breadboard ve Fritzing, 11. Projelerde entegre devreler, 12. Ders kapsamı üzerine soru, 1. Laboratuvar oturumu ve konular, 2. Proteus 8 demo sürümü ve kurulum (+23 more)
 
 ### Community 4243 - "trigger"
-Cohesion: 0.09
-Nodes (6): e(), ne, ni, remove(), trigger(), Ze()
+Cohesion: 0.11
+Nodes (6): e(), getDataAttributes(), ni, q(), trigger(), Ze()
 
 ### Community 4244 - "getWidthOrHeight"
 Cohesion: 0.67
@@ -27769,9 +27854,9 @@ Nodes (3): Ali Can Karaca, EU, Sayısal İşaret İşleme Course Info
 Cohesion: 0.06
 Nodes (34): 10.1 Adımlar, 10.2 Pre-scrum, Main Scrum ve Post-scrum, 10. Scrum, 11. Çevik Modelleme ve Denge, 1. UML Şemalarını Çizerken Araç Seçimi, 2.1 Aşamalar, 2.2 Artılar, Eksiler ve Sonuçlar, 2. Bileşen Tabanlı Uygulama Geliştirme (+26 more)
 
-### Community 4561 - "RSA şifreleme"
-Cohesion: 0.10
-Nodes (28): Answers to Exercises 4.6.2 (Factorization of polynomials), Berlekamp's algorithm for factoring polynomials mod p, Sürekli kesirle çarpanlara ayırma (Algorithm E, Morrison-Brillhart), Fermat teoreminin tersi, n-1 çarpanlarıyla asallık kanıtı, Dickman fonksiyonu, en büyük asal çarpan dağılımı, Dixon çarpanlara ayırma algoritması (Theorem D), Bölme ile çarpanlara ayırma (Algorithm A, 4.5.4), Fermat çarpanlara ayırma yöntemi (Algorithm C) (+20 more)
+### Community 4561 - "Ders 10 altyazısı (4 Mayıs 2023) - Makine öğrenmesine giriş"
+Cohesion: 0.06
+Nodes (48): Ders 10 altyazısı (4 Mayıs 2023) - Makine öğrenmesine giriş, Adversarial örnekler, Birliktelik kuralları keşfi (sepet analizi, Apriori), Biyometrik tanıma: iris, parmak izi, yüz, Eğitim süreci, Eğitim ve test kümesi ayrımı, Genelleme ve model karmaşıklığı, Tip 1 ve Tip 2 hata maliyetleri (+40 more)
 
 ### Community 4595 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -27918,8 +28003,8 @@ Cohesion: 0.29
 Nodes (6): 2024-2025 Güz Dönemi, Ders Bilgileri, Not Dağılımı, Ödev Bilgileri, Ödev Süreci, Ödev Tanımı
 
 ### Community 4658 - "Spectral test"
-Cohesion: 0.04
-Nodes (71): Additive generator (Mitchell-Moore) Algorithm A, Algorithm B (Bays-Durham shuffling), Algorithm K (super-random generator), Algorithm M (MacLaren-Marsaglia shuffling), Algorithm S (spectral test), Answers to Exercises (Chapter 3 onward), Shift-register random bit generator (Tausworthe), The Art of Computer Programming Vol. 2: Seminumerical Algorithms (+63 more)
+Cohesion: 0.05
+Nodes (66): Additive generator (Mitchell-Moore) Algorithm A, Algorithm B (Bays-Durham shuffling), Algorithm K (super-random generator), Algorithm M (MacLaren-Marsaglia shuffling), Algorithm S (spectral test), Answers to Exercises (Chapter 3 onward), Shift-register random bit generator (Tausworthe), Chapter 3: Random Numbers (+58 more)
 
 ### Community 4659 - "📚 16.yüzyıldan Günümüze İstanbulda Dans"
 Cohesion: 0.33
@@ -28123,7 +28208,7 @@ Nodes (31): 1.1 Kaba kuvvet, 1.2 Her satıra bir vezir, 1.3 Her satıra ve her s
 
 ### Community 4746 - "Bilgisayarla Görme Projesi Raporu (Image Captioning)"
 Cohesion: 0.04
-Nodes (61): BLEU skoru, Bilgisayarla Görme Projesi Raporu (Image Captioning), Encoder-decoder modeli, Flickr 8k veri seti, Görüntü işleme, Image Captioning (görüntü alt yazılandırma), InceptionV3 encoder, Bilgisayarla görme proje raporu (LaTeX kaynağı) (+53 more)
+Nodes (44): 1. Hafta - 6 Ekim 2022, 2. Hafta - 13 Ekim 2022, 3. Hafta - 20 Ekim 2022, 2D image transformations (reference table), 7. Week - 17 November 2022 Thursday, Classification, Denoising, Example: Solving for Translation (+36 more)
 
 ### Community 4747 - "Detaylı Açıklamalar"
 Cohesion: 0.13
@@ -28150,8 +28235,8 @@ Cohesion: 0.10
 Nodes (24): 4. Hafta - 25 Ekim 2021, AM FM PM, AMI, ASK, B8ZS, FSK, PAM, PCM (+16 more)
 
 ### Community 4753 - "Index of the book (Part 10)"
-Cohesion: 0.06
-Nodes (48): Chaos (Arnold's cat map), Computed tomography, Eigenvalues and eigenvectors, Fractals (application), Games of strategy / game theory, Genetics (autosomal/X-linked inheritance), Orthogonal and orthonormal bases, Hermitian, unitary, normal matrices (+40 more)
+Cohesion: 0.08
+Nodes (38): Chaos (Arnold's cat map), Computed tomography, Eigenvalues and eigenvectors, Fractals (application), Games of strategy / game theory, Genetics (autosomal/X-linked inheritance), Orthogonal and orthonormal bases, Hill ciphers / cryptography (application) (+30 more)
 
 ### Community 4754 - "Ders 22 Genişletilmiş Notu: Topolojik Sıralama: DFS Pop Sırası ve Azalt ve Fethet Yaklaşımı"
 Cohesion: 0.13
@@ -28174,8 +28259,8 @@ Cohesion: 0.13
 Nodes (14): ADSL, ATM, Ders 19 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Frame Relay, Genel Konular, GSM (+6 more)
 
 ### Community 4759 - "Ders 16 Genişletilmiş Notu: İş Parçacıkları: Çoklu İş Parçacığı Modelleri, Pthreads, Amdahl Yasası ve İş Parçacığı Sorunları"
-Cohesion: 0.07
-Nodes (28): 10. İş Parçacığı Kütüphaneleri, 13. Örtük İş Parçacığı Kullanımı, 15. Örnek Sorular, 1. Dersin Planı, 2. Motivasyon: Neden İş Parçacığı?, 3.1 Metin Düzenleyici, 3.2 Web Sunucusu, 3. Örnekler: Metin Düzenleyici ve Web Sunucusu (+20 more)
+Cohesion: 0.06
+Nodes (34): 10. İş Parçacığı Kütüphaneleri, 11.1 Programın Çalışması, 11.2 İş Parçacığı Fonksiyonunun Tipi, 11.3 İş Parçacığını Bitirmek: `pthread_exit` ve `exit`, 11.4 Global Değişken ve Ortak Alan, 11.5 Birleştirilebilir ve Ayrık İş Parçacıkları, 11. Pthreads Örneği: 1'den N'ye Toplam, 13. Örtük İş Parçacığı Kullanımı (+26 more)
 
 ### Community 4760 - "Ders 8 Genişletilmiş Notu: Bilgi Gösterimi: Kurallar, Anlamsal Ağlar, Çerçeveler, Sahneler ve Yapay Sinir Ağları"
 Cohesion: 0.05
@@ -28306,12 +28391,12 @@ Cohesion: 0.12
 Nodes (15): Ders 9 Çalışma Özeti, Ders sonrası notlar, Dersin kalan planı ve süreç, Detaylı Açıklamalar, ER modelini tablolara dönüştürme, Fizibilite ve analiz belgelerinde beklentiler, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+7 more)
 
 ### Community 4812 - ".before"
-Cohesion: 0.10
-Nodes (25): 16.2 Bellek tablosu, Detaylı Açıklamalar, 4.1 Food sınıfı, Dersin Toparlaması, Ders 19 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+17 more)
+Cohesion: 0.09
+Nodes (24): 16.2 Bellek tablosu, Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 4.1 Food sınıfı, Dersin Toparlaması (+16 more)
 
 ### Community 4813 - "Chapter 1: Systems of Linear Equations and Matrices"
-Cohesion: 0.08
-Nodes (39): Balancing Chemical Equations, Chapter 1: Systems of Linear Equations and Matrices, Linear systems with a common coefficient matrix, Determining consistency conditions on b, Elementary row operations, Elementary matrix, Equivalent statements theorem for invertibility (Thm 1.5.3, 1.6.4), Free Variable Theorem for Homogeneous Systems (Thm 1.2.1) (+31 more)
+Cohesion: 0.06
+Nodes (51): Balancing Chemical Equations, Chapter 1: Systems of Linear Equations and Matrices, Linear systems with a common coefficient matrix, Determining consistency conditions on b, Consistent / inconsistent system, Elementary row operations, Elementary matrix, Equivalent statements theorem for invertibility (Thm 1.5.3, 1.6.4) (+43 more)
 
 ### Community 4814 - "Detaylı Açıklamalar"
 Cohesion: 0.14
@@ -28334,8 +28419,8 @@ Cohesion: 0.14
 Nodes (13): Ders 8 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Parametrik eğride alan, Parametrik eğriler ve kutupsal koordinatlar (tekrar) (+5 more)
 
 ### Community 4819 - "OnMapReadyCallback"
-Cohesion: 0.07
-Nodes (28): 11.1 Uygulamanın Çalışması, 11.2 Bağımlılıklar, 11.3 Activity'nin Yapısı, 11.4 Son Bilinen Konumla Harita, 11.5 Harita API Anahtarı, 11.6 Sürekli Güncellemeyle Harita, 11.7 Dönem Projesiyle Bağlantı, 11. Uygulama: MapActivity ile Konum ve Harita (+20 more)
+Cohesion: 0.09
+Nodes (21): 11.3 Activity'nin Yapısı, 12.1 Yapı, 12.2 onMapReady, 12.3 Bağlantı kurulunca: konum isteği, 12.4 onLocationChanged, 12. Kod Örneği: Konumu Sürekli İzleyen Harita, 2.1 XML layout ve Activity kodu, 2.2 Statik ve dinamik ekleme (+13 more)
 
 ### Community 4820 - "Detaylı Açıklamalar"
 Cohesion: 0.14
@@ -28353,9 +28438,9 @@ Nodes (13): Ayrık konvolüsyonda sıfır noktası için kısa yol, Ders 9 Çal�
 Cohesion: 0.14
 Nodes (13): Biçimsel tanım örneği, Ders 4 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dil bulma örnekleri, Genel Konular, Hesaplama dalları: $\{aa\}$ örneği, Hocanın Özellikle Vurguladığı Kısımlar (+5 more)
 
-### Community 4830 - "22011641_burak_atalay/stb_image.h"
-Cohesion: 0.10
-Nodes (28): resample_row_1(), stbi__convert_16_to_8(), stbi__float_postprocess(), stbi__getn(), stbi__hdr_convert(), stbi__hdr_load(), stbi__idct_simd(), stbi_info_from_memory() (+20 more)
+### Community 4830 - "Ders 17 Genişletilmiş Notu: Algoritmaya Giriş ve Akış Diyagramları"
+Cohesion: 0.04
+Nodes (46): 10.10 İç içe döngüler ve değişken adları, 10.1 Genel bakış, 10.2 Başla ve bitir, 10.3 Girdi, 10.4 Çıktı, 10.5 Bağlantılar, 10.6 İşlem, 10.7 Karar (if) (+38 more)
 
 ### Community 4831 - "Ders 8 Genişletilmiş Notu: Sistem Tasarımı: Ön Tasarım, Yapı Diyagramı ve Ayrıntılı Tasarım"
 Cohesion: 0.05
@@ -28375,11 +28460,11 @@ Nodes (13): Azalt ve yönet, Böl ve yönet, Ders 9 Çalışma Özeti, Ders sonr
 
 ### Community 4835 - "Vektörel Çarpım (Cross Product)"
 Cohesion: 0.06
-Nodes (36): Skaler Çarpım (Dot Product), Vektörel Çarpım (Cross Product), Vektörler (Vectors, birim vektörler), Cramer Metodu, Determinant Hesaplama (Sarrus, Kofaktör, Laplace Açılımı), Determinant Özellikleri, Ek Matris (Adjoint) ve Tersin Bulunması, Elementer Matris ve Tersinin Bulunması (+28 more)
+Nodes (35): Skaler Çarpım (Dot Product), Vektörel Çarpım (Cross Product), Vektörler (Vectors, birim vektörler), Cramer Metodu, Determinant Hesaplama (Sarrus, Kofaktör, Laplace Açılımı), Determinant Özellikleri, Ek Matris (Adjoint) ve Tersin Bulunması, Elementer Matris ve Tersinin Bulunması (+27 more)
 
 ### Community 4836 - "blm_5227/Scripts/bootstrap.min.js"
-Cohesion: 0.05
-Nodes (21): B(), D(), F(), getDataAttributes(), I(), j(), M(), N() (+13 more)
+Cohesion: 0.11
+Nodes (16): B(), D(), F(), I(), j(), M(), N(), off() (+8 more)
 
 ### Community 4837 - "Detaylı Açıklamalar"
 Cohesion: 0.14
@@ -28482,12 +28567,12 @@ Cohesion: 0.07
 Nodes (29): 10.1 Karakter kümeleme, 10.2 Gezgin satıcı problemi, 10. SOM Uygulamaları: Karakter Kümeleme ve Gezgin Satıcı Problemi, 1. Rekabetçi Ağlara Giriş, 2. Kümeleme Ağının Yapısı ve Exemplar Vektör, 3. Kohonen Öğrenme Kuralı, 4. Yakınlık Ölçütleri: Öklid Mesafesi ve Açı, 5.1 Sabit ağırlıklı ağlar ve MaxNet'in görevi (+21 more)
 
 ### Community 4863 - "Kalman Filtresi"
-Cohesion: 0.15
-Nodes (23): BLM5112 Olasılıksal Robotik ders planı, Genişletilmiş Kalman Filtresi, FastSLAM, GraphSLAM, Kalman Filtresi, Lokalizasyon, SLAM, Thrun, Burgard, Fox - Probabilistic Robotics (2005) (+15 more)
+Cohesion: 0.27
+Nodes (12): BLM5112 Olasılıksal Robotik ders planı, FastSLAM, GraphSLAM, Lokalizasyon, SLAM, Thrun, Burgard, Fox - Probabilistic Robotics (2005), Boyut laneti (curse of dimensionality), FastSLAM (Olasılıksal Robotik 11) (+4 more)
 
 ### Community 4864 - "İdeal diyot modeli (ON/OFF)"
-Cohesion: 0.11
-Nodes (24): Bölüm 16 alıştırma ve problemleri (diyotlar), Dalgalanma (ripple) hesabı, DC restorer, Diyot denklemi iD = Is(e^(vD/VTH) - 1), Diyotların Analizi (Bölüm 16.3), Geliştirilmiş parçalı doğrusal diyot modeli (0.6 V + Rd), İdeal diyot modeli (ON/OFF), Kenetleme devresi (clamping circuit) (+16 more)
+Cohesion: 0.07
+Nodes (34): Bölüm 16 alıştırma ve problemleri (diyotlar), Dalgalanma (ripple) hesabı, DC restorer, Diyot denklemi iD = Is(e^(vD/VTH) - 1), Diyotların Analizi (Bölüm 16.3), Geliştirilmiş parçalı doğrusal diyot modeli (0.6 V + Rd), İdeal diyot modeli (ON/OFF), Kenetleme devresi (clamping circuit) (+26 more)
 
 ### Community 4865 - "Ders 10 Genişletilmiş Notu: Özyinelemeli Olmayan Algoritmaların Analizi: Döngüleri Toplam Gösterimiyle Saymak"
 Cohesion: 0.05
@@ -28534,16 +28619,16 @@ Cohesion: 0.08
 Nodes (9): 8.1 Amaç: Bir İş Yaptırmak ya da Üyeye Erişmek, 8.2 Parametre Uyumu, 8.3 Etkileşim Diyagramı: client ve kit, 8. Nesneye Mesaj Gönderme, Book, Library, MyInfoClass, Student (+1 more)
 
 ### Community 4876 - ".empty"
-Cohesion: 0.04
-Nodes (53): App Icon (Concentric Circles), Algotur, cards, empty, AG Car Rental logo, logo-small, path, profile (+45 more)
+Cohesion: 0.07
+Nodes (32): 4.1 Yapı ve İlk Değer Verme, 4.2 Boş ve Dolu Kontrolü, 4.3 Neden Adres Gönderiyoruz?, 4.4 `push` Fonksiyonu, 4.5 `return` Olan `if`'ten Sonra Neden `else`?, 4.6 `pop` Fonksiyonu, 4.7 `peek` Fonksiyonu, 4.8 Dinamik Bellek Sorusu (+24 more)
 
 ### Community 4877 - "Chapter 5: Computer Simulations and Monte Carlo Methods"
 Cohesion: 0.09
-Nodes (35): Binomial deviate generation, Exponential distribution generation, Gamma deviate generation (exercise 16), Gamma distribution (Algorithm A), Normal deviate generation, Odd-even method, Poisson deviate generation, Polar method for normal deviates (+27 more)
+Nodes (38): Gamma deviate generation (exercise 16), Normal deviate generation, Probability and Statistics for Computer Scientists (Baron, 3rd ed.), Chapter 4: Continuous Distributions, Chapter 5: Computer Simulations and Monte Carlo Methods, Continuity correction, Example: shared computer Monte Carlo, Exponential-Geometric relation (+30 more)
 
 ### Community 4878 - "Chapter 5 Algorithms (5.1-5.2 start)"
-Cohesion: 0.03
-Nodes (78): Class and object, Encapsulation and information hiding, Information hiding, Algorithm correctness and verification, Algorithm efficiency, Algorithm representation, Assignment statement and operator precedence, Bytecode, CIL and just-in-time compilation (+70 more)
+Cohesion: 0.04
+Nodes (71): Class and object, Encapsulation and information hiding, Algorithm correctness and verification, Algorithm efficiency, Algorithm representation, Assignment statement and operator precedence, Bytecode, CIL and just-in-time compilation, Chapter 6 Programming Languages (+63 more)
 
 ### Community 4879 - "Ders 2 Genişletilmiş Notu: Veri Ön İşleme: Normalizasyon, Veri Yumuşatma ve Eksik Veri"
 Cohesion: 0.06
@@ -28555,27 +28640,27 @@ Nodes (34): 1. Önceki Dersin Tekrarı ve Ham Verinin Özellikleri, 2.1 Tanım v
 
 ### Community 4881 - "Chapter 12 Operating System Design"
 Cohesion: 0.03
-Nodes (74): Battery-Powered Computers, Big Kernel Lock, Binding Time (early vs late binding), Bus-Based UMA Multiprocessors, Cache Coherence Protocol, Caching (path name i-node cache), CC-NUMA, Chapter 8: Multiple Processor Systems (+66 more)
+Nodes (79): Battery-Powered Computers, Big Kernel Lock, Binding Time (early vs late binding), Bus-Based UMA Multiprocessors, Cache Coherence Protocol, Caching (path name i-node cache), CC-NUMA, Chapter 8: Multiple Processor Systems (+71 more)
 
 ### Community 4882 - "C ve C++ Programlama (Deitel)"
-Cohesion: 0.07
-Nodes (31): ANSI C / ISO standardı, Aritmetik Mantık Ünitesi (ALU), Assembly dilleri, Bağlayıcı (linker), Bilgisayar organizasyonu (altı mantıksal birim), C++, C99, C dilinin tarihçesi (BCPL, B, C) (+23 more)
+Cohesion: 0.05
+Nodes (58): Akış grafiği (flowchart), Anahtar kelimeler (C keywords), ANSI C / ISO standardı, Aritmetik Mantık Ünitesi (ALU), Aritmetik operatörler ve operatör önceliği, Arttırma ve azaltma operatörleri (++, --), Assembly dilleri, Atama operatörleri (+=, -= vb.) (+50 more)
 
 ### Community 4883 - "Ders 5 Genişletilmiş Notu: Lokal Arama Algoritmaları: Tepe Tırmanma, Benzetimli Tavlama ve Paralel Tepe Tırmanma"
 Cohesion: 0.06
 Nodes (34): 10. Ayrık ve Sürekli Uzaylar, 11.1 Problem, 11.2 Çok Bileşenli İyilik Fonksiyonu, 11.3 Durum Gösterimi, 11.4 Algoritma, 11.5 Sonuçlar, 11. Uygulama: Bir Alanı Robotla Taramak, 1. Kör, Sezgisel ve Lokal Arama (+26 more)
 
 ### Community 4884 - "csv_to_md.py"
-Cohesion: 0.11
-Nodes (9): CSVInterviewSource, CSVToMarkdownConverter, main(), MarkdownGenerator, OutputPathBuilder, parse_args(), 🛠️ csv_to_md.py Kullanımı, 📂 Klasör Yapısı (+1 more)
+Cohesion: 0.13
+Nodes (5): CSVInterviewSource, CSVToMarkdownConverter, main(), MarkdownGenerator, OutputPathBuilder
 
 ### Community 4885 - "Ders 13 Genişletilmiş Notu: TÜBİTAK 1512 İş Fikri Sunumları (Son Hafta)"
 Cohesion: 0.07
 Nodes (26): 1. Dersin Yapısı, 2. Sunumların Ortak İskeleti, 3.1 Problemden çözüme, 3.2 Ortak teknoloji bileşenleri, 3. İhtiyaç, Çözüm ve Yenilikçi Yön, 4.1 Hedef kitle ve pazar büyüklüğü, 4.2 Pazarlama planı, 4.3 Rakip karşılaştırması (+18 more)
 
 ### Community 4886 - "Ch1 Introduction to Computers, the Internet and the Web"
-Cohesion: 0.09
-Nodes (27): ALU, C How to Program, 7th Edition (Deitel), C++, C program development phases, CERT C Secure Coding Standard, Ch15-24 C++ chapters overview (classes, OOP, templates, streams, exceptions), Ch1 Introduction to Computers, the Internet and the Web, Ch2 Introduction to C Programming (+19 more)
+Cohesion: 0.06
+Nodes (42): ALU, C How to Program, 7th Edition (Deitel), C++, C program development phases, CERT C Secure Coding Standard, Ch15-24 C++ chapters overview (classes, OOP, templates, streams, exceptions), Ch1 Introduction to Computers, the Internet and the Web, Ch2 Introduction to C Programming (+34 more)
 
 ### Community 4887 - "Rasyonel Ajan"
 Cohesion: 0.33
@@ -28614,8 +28699,8 @@ Cohesion: 0.33
 Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 4902 - "Ders 12 Genişletilmiş Notu: Rastgele Sayı Üreteçleri: Çember Desenleri, Seed, Kart Karıştırma, Gauss Dağılımı, Rastgele Yürüyüş ve Monte Carlo ile Pi"
-Cohesion: 0.06
-Nodes (35): 10.1 İki uniform sayının toplamı, 10. Gauss (Normal) Dağılım, 11.1 Problem, 11.2 if'li çözüm, 11.3 if'lerden kurtulmak, 11. Rastgele Yürüyen Robot, 12.1 Algoritma ve soru, 12.2 Çözüm (+27 more)
+Cohesion: 0.04
+Nodes (47): mainPrg, Soru 10 (derste çözüldü, 00:30:50), 10.1 İki uniform sayının toplamı, 10. Gauss (Normal) Dağılım, 11.1 Problem, 11.2 if'li çözüm, 11.3 if'lerden kurtulmak, 11. Rastgele Yürüyen Robot (+39 more)
 
 ### Community 4903 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -29778,8 +29863,8 @@ Cohesion: 0.40
 Nodes (4): 2023-2024 Bahar Dönemi, Proje Bilgileri, Projenin Konusu, Öneri (Varsa)
 
 ### Community 5396 - "bioinfo_06-lmsalignment.pdf"
-Cohesion: 0.19
-Nodes (21): Profile Analysis, ASN.1 Format, Block Analysis, BLOCKS and eMOTIF, CpG Island Model, Expectation-Maximization (EM), FASTA Format, GenBank Format (+13 more)
+Cohesion: 0.21
+Nodes (20): Profile Analysis, ASN.1 Format, Block Analysis, BLOCKS and eMOTIF, Expectation-Maximization (EM), FASTA Format, GenBank Format, Gibbs Sampling (+12 more)
 
 ### Community 5397 - "Week 3: Creational Design Patterns"
 Cohesion: 0.40
@@ -29848,10 +29933,6 @@ Nodes (4): 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydal�
 ### Community 5422 - "2024-2025 Güz Dönemi"
 Cohesion: 0.40
 Nodes (4): 2024-2025 Güz Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Not Bilgileri
-
-### Community 5424 - "9. Görsel Programlamaya Giriş: C# ile Pencere ve Olaylar"
-Cohesion: 0.10
-Nodes (18): 9.1 İki Yol: Sürükle-Bırak ve Kod, 9.2 GUI Nesnesinin Dört Parçası, 9.3 Kodla Pencere: Kalıtım, 9.4 Fare Olayları: MouseMove ve MouseClick, 9.5 Buton ve Controls, 9.6 Metin Kutusu ve Konum Hesabı, 9.7 Butonun Click Olayı, 9.8 Bağlama Mekanizması (+10 more)
 
 ### Community 5425 - "7. Phase 4: End-to-End Compression Pipeline"
 Cohesion: 0.40
@@ -30781,9 +30862,9 @@ Nodes (4): Phoenix arka plan animasyonu: bina silüeti grafiği (xhdpi), Phoenix
 Cohesion: 0.08
 Nodes (30): 2.1 Sorunun anlatımı, 2.2 Tasarım: her iş ayrı bir fonksiyonda, 2.3 Matrisi oluşturma, 2.4 Toplamı ve olasılığı hesaplama, 2.5 Yazdırma ve boşaltma, 2.6 main ve çalıştırma, 2.7 Özet (derste istek üzerine yapıldı), 2. Uygulama 1: Üç Zarın Toplam ve Olasılık Matrisi (+22 more)
 
-### Community 5928 - "Tanzimat'ta ekonomi, toplum ve kültür"
+### Community 5928 - "FIFA 18 Complete Player Dataset (Kaggle)"
 Cohesion: 0.08
-Nodes (26): Alafranga yaşam ve yanlış batılılaşma, Ali Suavi, Demiryolu ve yabancı sermaye, Encümen-i Daniş, Islah-ı Sanayi Komisyonu, Kararname-i Ali (1867), Maarif-i Umumiye Nizamnamesi (1869), Mekteb-i Mülkiye, Galatasaray Sultanisi, Darüşşafaka (+18 more)
+Nodes (43): Tez Kaynak Linkleri, GameAnalytics: Game Data Mining Fundamentals, MIT CMS.300 Game Analysis Guide, Data cleaning (M/K conversion), FIFA 18 Data Mining Thesis (EN), LASSO, NumPy, Pandas (+35 more)
 
 ### Community 5929 - "Detaylı Açıklamalar"
 Cohesion: 0.17
@@ -31002,8 +31083,8 @@ Cohesion: 0.50
 Nodes (3): Mobil Programlamaya Giriş Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
 ### Community 6003 - ".value"
-Cohesion: 0.04
-Nodes (56): 12.1 Tanım ve Bellekteki Yerleşim, 12.2 Kısıtlar, 12.3 Neden unsigned?, 12.4 Tarih Yapısı ve Örnek, 12. Bit Alanları (Bit Field), 10. Son Kontrol ve Üç Aşamalı Özet, 11. Akış Diyagramında Döngü Okları, 1.1 Yerleşme Kuralı (+48 more)
+Cohesion: 0.02
+Nodes (92): 12.1 Tanım ve Bellekteki Yerleşim, 12.2 Kısıtlar, 12.3 Neden unsigned?, 12.4 Tarih Yapısı ve Örnek, 12. Bit Alanları (Bit Field), 10. Son Kontrol ve Üç Aşamalı Özet, 11. Akış Diyagramında Döngü Okları, 1.1 Yerleşme Kuralı (+84 more)
 
 ### Community 6004 - "Yönetim Bilgi Sistemleri Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -31206,8 +31287,8 @@ Cohesion: 0.50
 Nodes (3): İçerik, Laboratuvar Dersleri, Proje Ödevi
 
 ### Community 6099 - "AnnouncementPacket"
-Cohesion: 0.02
-Nodes (36): AnnouncementPacketDAO, BankAccountDAO, CurrencyDAO, AnnouncementPacketHibernateImpl, BankAccountHibernateImpl, CurrencyHibernateImpl, DauHibernateImpl, AnnouncementPacket (+28 more)
+Cohesion: 0.03
+Nodes (18): BankAccountDAO, CurrencyDAO, BankAccountHibernateImpl, CurrencyHibernateImpl, AnnouncementPacket, BankAccountInfo, Currency, AccountExistDauServlet (+10 more)
 
 ### Community 6100 - "Araştırma Yöntemleri ve Bilimsel Etik/slaytlar_notlar/2024/README.md"
 Cohesion: 0.50
@@ -31599,7 +31680,7 @@ Nodes (31): 1.1. Sistem Gereksinimleri ve İş Kuralları, 1. Proje Problem Alan
 
 ### Community 6249 - "Örnek Sorular"
 Cohesion: 0.09
-Nodes (31): 5.1 Problem, 5.2 Build Max Heap Kodu, 5.3 Örnek 1: `5, 7, 6, 4, 8, 9, 1`, 5.4 Örnek 2: `14, 7, 12, 13, 17, 6, 4, 9, 15`, 5. Rastgele Bir Ağaçtan Max Heap Oluşturma, Dersin Toparlaması, Soru 10 (derste sözlü, 00:59:26), Soru 11 (derste sözlü, 01:18:30) (+23 more)
+Nodes (30): 5.1 Problem, 5.2 Build Max Heap Kodu, 5.3 Örnek 1: `5, 7, 6, 4, 8, 9, 1`, 5.4 Örnek 2: `14, 7, 12, 13, 17, 6, 4, 9, 15`, 5. Rastgele Bir Ağaçtan Max Heap Oluşturma, Soru 10 (derste sözlü, 00:59:26), Soru 11 (derste sözlü, 01:18:30), Soru 12 (derste sözlü, 01:22:26) (+22 more)
 
 ### Community 6250 - "Eşdeğer Direnç (Req) Hesabı"
 Cohesion: 0.67
@@ -31830,8 +31911,8 @@ Cohesion: 0.06
 Nodes (31): 1. Yüzdelikler (percentiles), 2.1 Tanım, 2.2 PDF üzerinde yorum, 2.3 Dörttebirlikleri ters CDF ile bulmak, 2.4 Dörttebirlik açıklığı (IQR), 2. Dörttebirlikler ve dörttebirlik açıklığı, 3. Örnek: CPU sürelerinin dörttebirlikleri, 4.1 Tanım (+23 more)
 
 ### Community 6355 - "Yazılım Mühendisliği Ders Slaytları 2025"
-Cohesion: 0.03
-Nodes (74): Yazılım Hakkında Yanılgılar, Ders Notları Readme, CASE sistemi, CMMI, Dördüncü kuşak teknikleri (4GL/4GT), Eski yazılım (Legacy), ISO 9001:2015, ISO/IEC 90003:2018 (+66 more)
+Cohesion: 0.04
+Nodes (68): Çevik süreçler (XP, Scrum), Yazılım Mühendisliği ders notları (Yunus Emre Selçuk), Yazılım mühendisliğine giriş ve yanılgılar, Tasarım kalıpları ve MVC, Maliyet tahmini: COCOMO, FP, Delphi, Yazılım proje yönetimi ve ölçümü, CASE sistemi, CMMI (+60 more)
 
 ### Community 6356 - "Detaylı Açıklamalar"
 Cohesion: 0.18
@@ -31893,17 +31974,17 @@ Nodes (3): next.svg - Next.js framework logosu (SVG), proje boilerplate varlığ
 Cohesion: 0.18
 Nodes (10): Bubble sort: neden her turda bir eleman daha az karşılaştırılır?, Ders 19 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İyileştirilmiş bubble sort'ta `flag`, Karmaşıklık nasıl ifade edilir?, Kontrol (+2 more)
 
-### Community 6457 - "ders_6_ozet (PDF özeti)"
-Cohesion: 0.06
-Nodes (43): Dosya İzinleri chmod, Shell, Priority Scheduling ve Aging, SJF ve SRTF, CPU Utilization, Response Time, Throughput, Turnaround Time (+35 more)
+### Community 6457 - "Shell Programlama (OS_Shell)"
+Cohesion: 0.09
+Nodes (31): Dosya İzinleri chmod, Shell, Shell Programlama (OS_Shell), Bash, chmod ve chown (dosya izinleri), Shell değişkenleri, Kernel, if / for / while / case yapıları (+23 more)
 
 ### Community 6458 - "E-ticaret ürünlerinin çok sınıflı metin sınıflandırması"
-Cohesion: 0.21
-Nodes (15): Online Payment Fraud Detection önerisi, Kaggle online payment fraud veri seti (~10000 örnek), Logistic Regression, Random Forest, Decision Tree, Online ödeme sahtekarlığı tespiti, Online Fraud Detection README, Kaggle online-payment-fraud-detection veri seti, Online ödeme sahtekarlığı tespiti projesi, Kaynak: fatmanurbas/BLM3120-Project-Online-Fraud-Detection-Program- (+7 more)
+Cohesion: 0.26
+Nodes (13): Online Payment Fraud Detection önerisi, Kaggle online payment fraud veri seti (~10000 örnek), Logistic Regression, Random Forest, Decision Tree, Online ödeme sahtekarlığı tespiti, Online Fraud Detection README, Kaggle online-payment-fraud-detection veri seti, Online ödeme sahtekarlığı tespiti projesi, E-commerce metin sınıflandırma önerisi (+5 more)
 
 ### Community 6459 - "bioinfo_08-statistics.pdf"
-Cohesion: 0.05
-Nodes (59): Bayes' Theorem, Bayesian Spam Filters, Boxplot and five-point summary, Interquartile range and 1.5(IQR) outlier rule, Sample median, Sampling and non-sampling errors, Simple random sampling, Descriptive Statistics (+51 more)
+Cohesion: 0.08
+Nodes (43): Bayes' Theorem, Bayesian Spam Filters, Boxplot and five-point summary, Interquartile range and 1.5(IQR) outlier rule, Sample median, Sampling and non-sampling errors, Simple random sampling, Descriptive Statistics (+35 more)
 
 ### Community 6460 - "Detaylı Açıklamalar"
 Cohesion: 0.18
@@ -31955,7 +32036,7 @@ Nodes (3): Ömer Diner - Ödev 3 Raporu (20011017), BLM2512 Ödev-3: Çoklu Önc
 
 ### Community 6476 - "Yapısal Programlama/projeler/2025/burak_basol/kod.c"
 Cohesion: 0.06
-Nodes (67): add_tetramino_to_board(), check_for_fulled_columns(), equalize_tetreminos(), main(), print_board(), print_tetremino(), reset_board(), reset_tetramino() (+59 more)
+Nodes (47): addAuthor(), addBook(), addStudent(), clearScreen(), displaySingleStudentDetail(), forEachStudent(), freeAuthors(), freeBookAuthors() (+39 more)
 
 ### Community 6477 - "BST Üzerinde Meyve Toplama Oyunu Ödevi - Problem Metni (Ödev 2)"
 Cohesion: 0.67
@@ -32099,7 +32180,7 @@ Nodes (6): GlobalParameterDAO, GlobalParameterHibernateImpl, GlobalParameter, Ma
 
 ### Community 6518 - "Ders 19 Genişletilmiş Notu: Uygulama: Thread'ler ve Senkronizasyon, Dosya İşlemleri, Tip Dönüşümü ve İç Sınıflar"
 Cohesion: 0.06
-Nodes (30): 1. Program, Proses ve Thread, 2.1 Thread'siz Hâl: SimpleClass, 2.2 extends Thread ile Thread Oluşturmak, 2.3 start ve run Farkı, 2.4 Çalışma Sırası Belirsizdir, 2.5 join: Thread'lerin Bitmesini Beklemek, 2.6 Öncelik: setPriority, 2.7 implements Runnable ile Thread Oluşturmak (+22 more)
+Nodes (31): 1. Program, Proses ve Thread, 2.1 Thread'siz Hâl: SimpleClass, 2.2 extends Thread ile Thread Oluşturmak, 2.3 start ve run Farkı, 2.4 Çalışma Sırası Belirsizdir, 2.5 join: Thread'lerin Bitmesini Beklemek, 2.6 Öncelik: setPriority, 2.7 implements Runnable ile Thread Oluşturmak (+23 more)
 
 ### Community 6519 - "Priority Polling"
 Cohesion: 1.00
@@ -32365,9 +32446,9 @@ Nodes (3): cs231n notebook_images dataset, Kitten photo (cs231n sample image), G
 Cohesion: 0.67
 Nodes (3): ATUS Processing Execution Output, Cassandra Installation and Run Guide, American Time Use Survey Processing Project
 
-### Community 6683 - "Product"
-Cohesion: 0.03
-Nodes (16): Main, Product, VendingMachine, Customer, IProduct, IShipping, Main, Market (+8 more)
+### Community 6683 - "Customer"
+Cohesion: 0.14
+Nodes (3): Customer, Market, Shipping
 
 ### Community 6692 - "Model Eğitimi Yakınsama ve Performans Analizi (Ödev 3)"
 Cohesion: 1.00
@@ -32577,9 +32658,9 @@ Nodes (3): Alıştırma: 32-bit Komut Kelimesi Formatı Analizi, Komut Formatlar
 Cohesion: 0.67
 Nodes (3): Çok Disiplinli Tasarım Projesi 2022 görsel seti (m_isa_gul), Düzensiz ızgara/bölme diyagramı (g_1.png) - alan paylaşım planı, çok disiplinli tasarım projesi, Düzensiz ızgara/bölme diyagramı (g_2.png) - alan paylaşım planı, çok disiplinli tasarım projesi
 
-### Community 6783 - "run_random_forest.py"
-Cohesion: 0.10
-Nodes (13): evaluate_model(), get_top_confusions(), load_embedding_data(), main(), parse_args(), plot_comparison(), plot_confusion_matrix(), plot_dataset_error_overview() (+5 more)
+### Community 6783 - "LU decomposition"
+Cohesion: 0.07
+Nodes (42): Chapter 28 Matrix Operations, Cubic splines (Problem 28-2), Forward and back substitution, LU-DECOMPOSITION, LUP decomposition, LUP-DECOMPOSITION, LUP-SOLVE, Matrix multiplication and inversion equivalence (Thm 28.1, 28.2) (+34 more)
 
 ### Community 6784 - "Ders 22 Çalışma Özeti"
 Cohesion: 0.20
@@ -32602,12 +32683,12 @@ Cohesion: 0.67
 Nodes (3): Lala Kurumu, Şehzadelerin Sancağa Çıkma Sistemi, Şehzadeler
 
 ### Community 6790 - "stbi__parse_png_file"
-Cohesion: 0.13
-Nodes (23): stbi__addsizes_valid(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__compute_y_16(), stbi__convert_16_to_8(), stbi__convert_format16(), stbi__create_png_alpha_expand8(), stbi__create_png_image() (+15 more)
+Cohesion: 0.24
+Nodes (11): stbi__compute_transparency(), stbi__compute_transparency16(), stbi__create_png_alpha_expand8(), stbi__create_png_image(), stbi__create_png_image_raw(), stbi__de_iphone(), stbi__expand_png_palette(), stbi__get_chunk_header() (+3 more)
 
-### Community 6864 - "BLM4800 Project Proposal Form: TechTalk"
-Cohesion: 0.14
-Nodes (18): Araştırma Yöntemleri ve Bilimsel Etik, Ayşe Dalgalı, Ayşe Dalgalı, Ahmet Akib Gültekin, BLM4800 Introduction to Data Mining, BLM4800 Project Proposal Form: TechTalk, Intents-responses veri seti, LSTM intent sınıflandırma (+10 more)
+### Community 6864 - "Ahmet Elbir"
+Cohesion: 0.11
+Nodes (22): Sayısal Analiz Ders Kayıtları Altyazıları README, Ahmet Elbir (dersi veren akademisyen), Eksik kayıtlar (8., 10., 11. hafta), Hafta - tarih eşlemesi (ders_x.srt), Sayısal Analiz harf notu istatistikleri 2025 (Ahmet Elbir), Sayısal Analiz harf notu istatistikleri 2026 (Ahmet Elbir), Sayısal Analiz harf notu istatistikleri 2026 (Banu Diri), Bağıl değerlendirme ve harf aralıkları dağılımı (+14 more)
 
 ### Community 6891 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.20
@@ -32629,9 +32710,9 @@ Nodes (30): 1.1 Yazılım Projelerinin Başarısızlık Nedenleri ve Proje Yöne
 Cohesion: 0.07
 Nodes (28): 10. `private` Set Metodu ve Şase Numarası Örneği, 11. `finalize()`, Çöp Toplayıcı ve `@Override`, 12.1 Kütüphaneyi Test Etmek, 12. Kütüphane Sınıfı: Kitap Dizisi, Ekleme, Listeleme, 13. Klavyeden Kapasite, Nesne Dizisi ve Bellek Düzeni, 14. Toplu Ekleme: `kitapEkle(Kitap[])` ve Derste Çıkan Hata, 15. Tekrar Alıştırması: Birden Fazla Yazar, 16. Dizinin Sonu, `length` ve Dönüş Değerini Kullanmamak (+20 more)
 
-### Community 7189 - "MainWindow"
-Cohesion: 0.09
-Nodes (5): About_Window, DatasetWindow, MainApplication, MainWindow, OptionsWindow
+### Community 7189 - "jn"
+Cohesion: 0.08
+Nodes (17): A(), B(), C(), D(), E(), m(), r(), v() (+9 more)
 
 ### Community 7190 - "alt seviye programlama/ders_kayitlari/2020-2021/sube_2/README.md"
 Cohesion: 0.20
@@ -32654,12 +32735,12 @@ Cohesion: 0.20
 Nodes (9): 7. Hafta - 15 Kasım 2021 Pazartesi, Akış Kontrolü (Flow Control), Bağlantı Yönetimi, Dur ve Bekle (Stop & Wait) Akış Kontrol Tekniği, Enq/Ack (Enquiry/Acknowlegment), Hata Kontrolü, Kayan Pencere (Sliding Window) Akış Kontrol Tekniği, Sliding Window ARQ (+1 more)
 
 ### Community 7277 - "Yapay Zeka Ders Kayıtları 2022-2023 İndeks"
-Cohesion: 0.03
-Nodes (76): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+68 more)
-
-### Community 7295 - "Potential method"
 Cohesion: 0.08
-Nodes (42): B-tree, B-TREE-CREATE, B-tree height theorem (Theorem 18.1), B-TREE-INSERT, B-TREE-INSERT-NONFULL, B-tree minimum degree t, B-TREE-SEARCH, B-TREE-SPLIT-CHILD (+34 more)
+Nodes (31): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+23 more)
+
+### Community 7295 - "van Emde Boas tree"
+Cohesion: 0.08
+Nodes (34): B-tree, B-TREE-CREATE, B-tree height theorem (Theorem 18.1), B-TREE-INSERT, B-TREE-INSERT-NONFULL, B-tree minimum degree t, B-TREE-SEARCH, B-TREE-SPLIT-CHILD (+26 more)
 
 ### Community 7296 - "Ders 12 Çalışma Özeti"
 Cohesion: 0.22
@@ -32674,12 +32755,12 @@ Cohesion: 0.22
 Nodes (8): Ders 23 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Sınav sorusunda tek döngü ile çarpan, Sıra dizisi ile sıralama, Öğrencilerin derleyiciyle ilgili gözlemleri
 
 ### Community 7305 - "ReportPanel"
-Cohesion: 0.12
-Nodes (6): ReportPanel, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener
+Cohesion: 0.04
+Nodes (17): Main, AddJournalPanel, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, AddSubscriptionPanel, java.awt.event.ActionListener (+9 more)
 
-### Community 7306 - "Chapter 9 Recursion"
-Cohesion: 0.13
-Nodes (23): Activation frame, Case study Finding capital letters, Chapter 8 Programming Projects (strings), Chapter 9 Recursion, count (recursive char count), factorial (recursive), fibonacci (recursive), find_caps (+15 more)
+### Community 7306 - "Ders 27 Genişletilmiş Notu: Dizi Algoritmaları, Karakter Sabitleri ve Karakter Dizileri"
+Cohesion: 0.05
+Nodes (40): 10. Harf frekansı ve sayaç dizisi, 1.1 Problem, 1.2 Akış diyagramı, 1.3 C kodu, 1. Diziye araya eleman ekleme, 2. Global ve yerel değişken, 3. Belirli bir değerden sonraya ekleme, 4.1 Problem ve kısıtlar (+32 more)
 
 ### Community 7307 - "Ders 6 Genişletilmiş Notu: Sanallaştırma Makaleleri Tartışması: Xen, Disco, VMware G/Ç ve Konteyner-KVM Karşılaştırması"
 Cohesion: 0.08
@@ -32702,24 +32783,24 @@ Cohesion: 0.22
 Nodes (8): Ders 27 Çalışma Özeti, Ders sonrası not, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kontrol, Kısa Tekrar Notları, Medyan sınırının bulunması
 
 ### Community 7450 - "FAZ 1 - Data Exploration ve Profil Belirleme"
-Cohesion: 0.09
-Nodes (25): K-Means profil oluşturma ve filtreleme, Chunk size karar raporu, FAZ 2 - Algoritma Eşleştirme, Codec grid search (Huffman, LZW, Arithmetic, BWT+MTF, RLE+Huffman), Baseline karşılaştırması (gzip/bzip2/lzma/zlib), FAZ 3 - Hafif MLP Profil Sınıflandırıcı Eğitimi, MLP Linear(in->32)+ReLU+Dropout+Linear(32->profil), model.pt + scaler.pkl + label_map.json (+17 more)
+Cohesion: 0.05
+Nodes (57): Set A (23) ve Set B (~10) feature extraction, K-Means profil oluşturma ve filtreleme, Chunk size karar raporu, FAZ 2 - Algoritma Eşleştirme, Codec grid search (Huffman, LZW, Arithmetic, BWT+MTF, RLE+Huffman), Baseline karşılaştırması (gzip/bzip2/lzma/zlib), FAZ 3 - Hafif MLP Profil Sınıflandırıcı Eğitimi, MLP Linear(in->32)+ReLU+Dropout+Linear(32->profil) (+49 more)
 
 ### Community 7463 - "Ders 10 Çalışma Özeti"
 Cohesion: 0.22
 Nodes (8): Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Faz açısı neden $(-180°, 180°)$ aralığında tutulur?, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Neden önce kosinüse çevrilir?
 
 ### Community 7464 - "Characteristic equation"
-Cohesion: 0.06
-Nodes (47): Second Order Circuits, Initial and Final Conditions, Complex frequencies s1, s2, Characteristic equation, Solving Linear Recurrence Relations, Fibonacci recurrence, Linear homogeneous recurrence, Initial conditions (+39 more)
+Cohesion: 0.05
+Nodes (69): Wronskian, Second Order Circuits, Initial and Final Conditions, Complex frequencies s1, s2, Characteristic equation, Solving Linear Recurrence Relations, Fibonacci recurrence, Linear homogeneous recurrence (+61 more)
 
 ### Community 7466 - "Ders 6 Çalışma Özeti"
 Cohesion: 0.22
 Nodes (8): Ders 6 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Neden verim %50?, Örnek 22'de neden $R_{TH} = 1$ kΩ?
 
 ### Community 7467 - "Detaylı Açıklamalar"
-Cohesion: 0.13
-Nodes (14): Biçimsel tanım, Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Durma, kabul ve ret, Ev çalışması: $\{a^n b^n c^n : n \ge 1\}$, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+6 more)
+Cohesion: 0.12
+Nodes (15): Biçimsel tanım, Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Durma, kabul ve ret, Ev çalışması: $\{a^n b^n c^n : n \ge 1\}$, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+7 more)
 
 ### Community 7468 - "Soyut Veri Tipi (ADT)"
 Cohesion: 0.07
@@ -32730,8 +32811,8 @@ Cohesion: 0.13
 Nodes (35): k-En Yakın Komşu (kNN), Cell State, Google Colab, CountVectorizer (CV), Ali Can Karaca (danışman), Gate: Forget Gate, Input Gate, LSTM (+27 more)
 
 ### Community 7470 - "Ders 11 Genişletilmiş Notu: Linux Komut Satırı Temelleri ve GCC Kurulumu"
-Cohesion: 0.02
-Nodes (102): 10. Süreçleri İzleme: `ps` ve `top`, 11. Terminal Geçmişi, 12.1 `tail` ve `-n`, 12.2 `tail -f`, 12.3 Çalışan bir süreci bulmak ve durdurmak, 12. Log İzleme: `tail` ve Süreç Sonlandırma, 13. Boru Hattı: `|`, `grep` ve `more`, 14.1 Komut bulunamadığında (+94 more)
+Cohesion: 0.03
+Nodes (82): 11. Terminal Geçmişi, 12.1 `tail` ve `-n`, 12.2 `tail -f`, 12.3 Çalışan bir süreci bulmak ve durdurmak, 12. Log İzleme: `tail` ve Süreç Sonlandırma, 13. Boru Hattı: `|`, `grep` ve `more`, 14.1 Komut bulunamadığında, 14.2 Dağıtım nedir (+74 more)
 
 ### Community 7476 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -32749,9 +32830,9 @@ Nodes (14): Ağaçların Kullanım Alanları, Ağaçta Gezinme, BST'de Arama, BS
 Cohesion: 0.06
 Nodes (30): 1.1 Tanım, 1.2 Sezgisel örnek: üç grubun ortalama ağırlığı, 1.3 Örneklem ortalamasının dağılımı, 1. Örneklem ortalaması, 2. Örneklem ortalamasının yansızlığı, 3.1 Tanım, 3.2 Örneklem ortalamasının varyansı, 3.3 Sonuç (+22 more)
 
-### Community 7480 - "Hocalar"
-Cohesion: 0.08
-Nodes (39): Araştırma Görevlileri, 👨‍🏫 Arş. Grv. Alper Eğitmen, 👨‍🏫 Arş. Grv. Barış Akkuş, 👨‍🏫 Arş. Grv. Begüm Özbay, 👨‍🏫 Arş. Grv. Burak Ahmet Özden, 👩‍🏫 Arş. Grv. Elif Aşıcı, 👩‍🏫 Arş. Grv. Elçin Güveyi, 👨‍🏫 Arş. Grv. Emre Parlak (+31 more)
+### Community 7480 - "👨‍🏫 Prof. Dr. M. Fatih Amasyalı"
+Cohesion: 0.09
+Nodes (23): Anlambilim (semantik), Bölüm 1: Ders Tanıtımı (Hesaplamalı Anlambilim, 2021 notları), Dağılımsal hipotez (Firth, Harris), Dersin kapsamı ve değerlendirme, Formal anlambilim, İstatistiksel anlambilim, Prolog ile çıkarım örneği, Sonlu durum makineleri ile morfolojik çözümleme (+15 more)
 
 ### Community 7481 - "12. Ağ Topolojileri"
 Cohesion: 0.22
@@ -32838,24 +32919,24 @@ Cohesion: 0.21
 Nodes (14): BERT, dbmdz/bert-base-turkish-128k-cased, Naive Bayes ve SVM, Self-attention, Spam mesaj tespiti, Spam Mesaj Tespiti projesi, Trainer API eğitimi, Transfer öğrenimi (+6 more)
 
 ### Community 7502 - "mt"
-Cohesion: 0.16
-Nodes (3): mt, gt(), kt()
+Cohesion: 0.15
+Nodes (4): mt, remove(), gt(), kt()
 
 ### Community 7503 - "Ders 7 Genişletilmiş Notu: Uygulama 1: Döngülerle Sayı İşlemleri ve Hata Ayıklama"
 Cohesion: 0.06
 Nodes (32): 1. Uygulama Dersinin Planı, 2.1 Çözüm fikri, 2.2 Küme parantezi ve bileşik atama, 2.3 Çıktı ve kodun son hali, 2. Problem 1: Tek Sayıların Çarpımı, Çift Sayıların Toplamı, 3.1 Kesme noktası ve satır satır ilerleme, 3.2 Debug ne işe yarar?, 3.3 Karşılaşılan sorunlar (+24 more)
 
 ### Community 7504 - "User"
-Cohesion: 0.16
-Nodes (3): UserDao, UserImp, User
+Cohesion: 0.11
+Nodes (5): UserDao, User, NewUserForm, ActionListener, WindowAdapter
 
 ### Community 7505 - "Detaylı Açıklamalar"
 Cohesion: 0.08
 Nodes (16): Ders 2 Çalışma Özeti, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 1. Perceptron Hatırlatması ve Sorunları, 2. Karar Sınırının Yeri, 3. Destek Vektör Makineleri, 4. Soft Margin ve Gevşek Değişkenler (+8 more)
 
 ### Community 7506 - "Data"
-Cohesion: 0.09
-Nodes (5): DuplicateEntryException, Data, FileParser, Main, Trainer
+Cohesion: 0.14
+Nodes (4): Data, FileParser, Main, Trainer
 
 ### Community 7509 - "Yapısal Programlama Dönem Projesi (ders kayıt sistemi)"
 Cohesion: 0.17
@@ -32874,8 +32955,8 @@ Cohesion: 0.06
 Nodes (34): 10.1 Numaralandırma ve kapsam, 10.2 Düzeyler arası tutarlılık, 10. İkinci düzey ayrıntılı veri akış diyagramı, 11. Araçlar ve VAD'ın yeri, 1. Dersin planı, 2.1 Özellikler nasıl belirlenir?, 2.2 İlişkiler, 2. Bilgi tutulacak şeylerin özellikleri: ilişki ve özellik (+26 more)
 
 ### Community 7513 - "Ders 3 Genişletilmiş Notu: Süper Sayfalar ve Communicating Sequential Processes Makale Tartışması"
-Cohesion: 0.06
-Nodes (33): 10. CSP'nin gerçeklenebilirliği ve günümüze etkisi, 1. Sayfalı bellek, sayfa tablosu ve TLB, 2. Süper sayfa fikri ve kısıtları, 3.1 Bitişiklik neden gerekli?, 3.2 Eski sorunun geri gelmesi, 3.3 Compaction, defragmentation ve garbage collection, 3. Bitişiklik gereksinimi ve compaction sorunu, 4.1 Yer değiştirmeye dayalı tahsis (relocation) (+25 more)
+Cohesion: 0.08
+Nodes (25): 10. CSP'nin gerçeklenebilirliği ve günümüze etkisi, 1. Sayfalı bellek, sayfa tablosu ve TLB, 2. Süper sayfa fikri ve kısıtları, 3.1 Bitişiklik neden gerekli?, 3.2 Eski sorunun geri gelmesi, 3.3 Compaction, defragmentation ve garbage collection, 3. Bitişiklik gereksinimi ve compaction sorunu, 4.1 Yer değiştirmeye dayalı tahsis (relocation) (+17 more)
 
 ### Community 7514 - "Ders 5 Genişletilmiş Notu: Sıralamanın Biçimsel Belirtimi ve OCL (Object Constraint Language)"
 Cohesion: 0.06
@@ -32889,9 +32970,9 @@ Nodes (14): BAOBAB Örneği, Boyer-Moore Algoritması, Boyer-Moore-Horspool Algo
 Cohesion: 0.06
 Nodes (31): 1. Uygulama oturumunun işleyişi, 3.1 Boyutu kullanıcıdan alıp diziyi sonra tanımlamak, 3.2 Makro nedir, neden noktalı virgül konmaz?, 3. Dizi boyutu, makrolar ve önişlemci, 4.1 Problem ve tanım, 4.2 Basit yaklaşım: her elemanın frekansı, 4.3 Başka çözümler, 4. Soru 2: Çoğunluk elemanı, basit yaklaşım (+23 more)
 
-### Community 7517 - "Bölüm 3: C'de yapısal program geliştirme"
+### Community 7517 - ".MusteriMenu"
 Cohesion: 0.08
-Nodes (39): Adres operatörü &, Akış grafiği (flowchart), Anahtar kelimeler (C keywords), Aritmetik operatörler ve operatör önceliği, Arttırma ve azaltma operatörleri (++, --), Atama operatörleri (+=, -= vb.), Birleşik ifade ve blok, Bölüm 2: C ile programlamaya giriş (+31 more)
+Nodes (17): Logger, DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, DefaultTableCellRenderer, ListSelectionListener, ListSelectionListener, ListSelectionListener (+9 more)
 
 ### Community 7518 - "Ders 2 Genişletilmiş Notu: Yazılım Süreçlerinin Genel Adımları, CASE Araçları ve Süreç Modelleri"
 Cohesion: 0.07
@@ -32909,17 +32990,17 @@ Nodes (24): 1. Enterpolasyona Kısa Dönüş, 2. Doğrusal Enterpolasyonun Hatı
 Cohesion: 0.25
 Nodes (7): Binary search'te durma koşulu, Ders 28 Çalışma Özeti, Ders sonrası kontrol, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 7522 - "Ders 15 Genişletilmiş Notu: Uygulama 1: Shell Programlamaya Giriş, Dosya İşlemleri, İzinler, Değişkenler ve Echo"
-Cohesion: 0.06
-Nodes (34): 10. Aritmetik İşlemler: `expr`, 11. Kullanıcıdan Veri Alma: `read`, 12.1 Yıldız: `*`, 12.2 Soru İşareti: `?`, 12. Joker Karakterler: `*` ve `?`, 13. Dosyaya Yazma ve Sona Ekleme: `>` ve `>>`, 14. Linux Dışında Kabuk Betiği, 1. Uygulama Oturumu ve Dönem Planı (+26 more)
+### Community 7522 - "İşletim Sistemleri/ders_kayitlari/2021-2022/sube_3/README.md"
+Cohesion: 0.02
+Nodes (77): 10. Aritmetik İşlemler: `expr`, 11. Kullanıcıdan Veri Alma: `read`, 12.1 Yıldız: `*`, 12.2 Soru İşareti: `?`, 12. Joker Karakterler: `*` ve `?`, 13. Dosyaya Yazma ve Sona Ekleme: `>` ve `>>`, 14. Linux Dışında Kabuk Betiği, 1. Uygulama Oturumu ve Dönem Planı (+69 more)
 
 ### Community 7523 - "03_13_03_2023.md"
 Cohesion: 0.05
 Nodes (37): Çok Değişkenli İstatistiksel Veri Analizi 4. Hafta, Applied Multivariate Statistical Analysis (Johnson & Wichern), 2. Week - 6 March 2023 Monday, Fundamentals of Matrix Algebra, Geçen Hafta Tekrar, Inverse of Matrixes, Matrix ve Vektör Gösterimi, Pearson Correlation (+29 more)
 
 ### Community 7525 - "Paper_01.md"
-Cohesion: 0.13
-Nodes (18): Donanımsal Erişim Kontrolü (Hardware Access Control), Multics ve Honeywell 645, Protection Rings, Ring Gate Yapısı, Segment Descriptor Word (SDW), Segmentli Sanal Bellek (Segmented Virtual Memory), A Hardware Architecture for Implementing Protection Rings, Abbreviations (+10 more)
+Cohesion: 0.12
+Nodes (19): 5. Hafta - 30 Mart 2023 Notları, Donanımsal Erişim Kontrolü (Hardware Access Control), Multics ve Honeywell 645, Protection Rings, Ring Gate Yapısı, Segment Descriptor Word (SDW), Segmentli Sanal Bellek (Segmented Virtual Memory), A Hardware Architecture for Implementing Protection Rings (+11 more)
 
 ### Community 7528 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.25
@@ -32962,12 +33043,12 @@ Cohesion: 0.25
 Nodes (7): Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Sönüm durumları neden böyle adlandırılır?
 
 ### Community 7538 - "1.3 Matrices and Matrix Operations"
-Cohesion: 0.12
-Nodes (25): Column-row expansion of AB, Consistent / inconsistent system, Maxime Bocher (coined 'augmented matrix'), Gotthold Eisenstein (matrix multiplication), James Sylvester (coined 'matrix'), Matrix product as linear combination (Thm 1.3.1), Linear equation, Linear system (sistem of linear equations) (+17 more)
+Cohesion: 0.16
+Nodes (18): Products A A^T and A^T A are symmetric, Column-row expansion of AB, Diagonal matrix, Gotthold Eisenstein (matrix multiplication), James Sylvester (coined 'matrix'), Matrix product as linear combination (Thm 1.3.1), Matrix, size, entries, Matrix form Ax = b of a linear system (+10 more)
 
 ### Community 7539 - "Duygu Analizi (Emotion Classification) README"
-Cohesion: 0.24
-Nodes (13): Comparison Sorts, Comparison Sort Lower Bound Ω(n lg n), HuggingFace dair-ai/emotion dataset, Decision Tree model, Duygu analizi / emotion classification (6 sınıf), KNN model, Logistic Regression model, Naive Bayes model (+5 more)
+Cohesion: 0.05
+Nodes (58): Comparison Sorts, Comparison Sort Lower Bound Ω(n lg n), Ω(n lg n) Lower Bound for Comparison Sorts, ogbl-collab veri seti, Bağlantı Tahmini (Link Prediction), BLM5121 Web Mining Dönem Projesi Önerisi, Common Neighbors yöntemi, GCN yöntemi (+50 more)
 
 ### Community 7540 - "Ders 27 Genişletilmiş Notu: Kitap Önerme Ödevi: Pearson Benzerliğiyle İşbirlikçi Filtreleme; Böl ve Yönet ile En Küçük Eleman"
 Cohesion: 0.07
@@ -33014,8 +33095,8 @@ Cohesion: 0.07
 Nodes (29): 10.1 Tutarlı karma (consistent hashing), 10. Anahtar-Değer Depoları ve Tutarlı Karma, 11. Sütun Tabanlı ve Çizge Depoları, 12.1 İndeks dosyası, 12.2 Sıralı indeks mi, hash indeksi mi?, 12.3 İndeksin değerlendirilmesi, 12. İndekslemeye Giriş, 13. Kümelenmiş ve İkincil İndeksler (+21 more)
 
 ### Community 7551 - "rgb2gray"
-Cohesion: 0.08
-Nodes (22): main(), rgb2gray(), 10.1 Yeniden boyutlandırma, çevirme ve kırpma, 10.2 İşlenmiş görüntüyü kaydetme, 10.3 Renk kanallarını ayrı inceleme, 10.4 RGB'den gri tona dönüşüm, 10.5 Pikselin komşuluğu, 10. Görüntü Üzerinde Temel İşlemler (+14 more)
+Cohesion: 0.07
+Nodes (26): main(), rgb2gray(), 10.1 Yeniden boyutlandırma, çevirme ve kırpma, 10.2 İşlenmiş görüntüyü kaydetme, 10.3 Renk kanallarını ayrı inceleme, 10.4 RGB'den gri tona dönüşüm, 10.5 Pikselin komşuluğu, 10. Görüntü Üzerinde Temel İşlemler (+18 more)
 
 ### Community 7553 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.25
@@ -33057,9 +33138,9 @@ Nodes (28): Biyoenformatiğe Giriş Ders Kayıtları Altyazıları, Biyoenformat
 Cohesion: 0.11
 Nodes (11): Caveats of performance analysis (large constants, caching, system, input dependence), Doubling ratio test, DoublingRatio, DoublingTest, StaticSETofInts, Stopwatch, ThreeSum, ThreeSumFast (+3 more)
 
-### Community 7597 - "storageService.js"
-Cohesion: 0.05
-Nodes (25): Kısa Tekrar Notları, Ders sonrası notlar, nextConfig, { Pool }, File, pool, { v4: uuidv4 }, File (+17 more)
+### Community 7597 - "Multiplexing"
+Cohesion: 0.08
+Nodes (41): ARQ (Go-Back-N ve Selective Reject), Ağ Katmanı Konuları Listesi (Tıkanıklık IP UDP TCP), Asynchronous (Statistical) TDM, End Office / Trunk / Subscriber loop, FDM (Frequency Division Multiplexing), Guard band, İletim Ortamları, İletim ortamı karşılaştırması (+33 more)
 
 ### Community 7606 - "Ders 7 Genişletilmiş Notu: Matris Türleri, Matris Çarpımı ve Determinant Özellikleri Üzerine Soru Çözümü"
 Cohesion: 0.09
@@ -33090,8 +33171,8 @@ Cohesion: 0.12
 Nodes (16): 🔹 Ders 11: Ağaçlar, İkili Ağaç Gezintileri ve İkili Arama Ağacı, 🔹 Ders 13: Heap Veri Yapısı, Heap Oluşturma ve Heap Sort, 🔹 Ders 15: Öncelikli Kuyruklar, Heap Soruları ve Huffman Kodlama, 🔹 Ders 1: Derse Giriş, Algoritma, Veri Yapısı ve Akış Diyagramı Kuralları, 🔹 Ders 21: Vize Sorularının Çözümü, Graf Temelleri ve Asgari Tarama Ağacı, 🔹 Ders 23: Minimum Kapsayan Ağaç: Kruskal ve Prim, Dijkstra ile En Kısa Yol, 🔹 Ders 25: Alt Dizgi Arama: Kaba Kuvvet, Horspool, Boyer-Moore ve Rabin-Karp, 🔹 Ders 26: Karşılaştırmasız Sıralama: Counting Sort, Radix Sort ve Sıralama Algoritmalarının Karşılaştırılması (+8 more)
 
 ### Community 7613 - "Ders 18 Genişletilmiş Notu: Fonksiyonlarla Modüler Tasarım: Kesir İşlemleri, Structure Chart, OBEB ve Min-Max Fonksiyonları"
-Cohesion: 0.05
-Nodes (36): 10. Parametrik Fonksiyonlar ve Flag Değişkeni, 11. Dizide En Büyük ve En Küçük Eleman, 12. Matriste En Büyük ve En Küçük Eleman: Transform and Conquer, 13. En Yakın Nokta Çifti (Closest Pair) Problemine Giriş, 1. Dersin Amacı, 2. Problem: Kesir İşlemleri, 3.1 İlk Liste, 3.2 Toplama ve Çıkarmayı Birleştirmek (+28 more)
+Cohesion: 0.04
+Nodes (56): gcd(), get_value(), kesir_yaz(), main(), minbul(), topla(), 10. Parametrik Fonksiyonlar ve Flag Değişkeni, 11. Dizide En Büyük ve En Küçük Eleman (+48 more)
 
 ### Community 7614 - "📘 Doğal Dil İşlemeye Giriş"
 Cohesion: 0.15
@@ -33130,8 +33211,8 @@ Cohesion: 0.22
 Nodes (9): 1.1 Çalışmanın iddiası, 1.2 Çok sınıflı ve çok etiketli sınıflandırma, 1.3 Duygu sınıflandırmasının üç yaklaşımı, 1.4 Çok etiketli sınıflandırmanın iki yolu, 1.5 Veri setleri, 1.6 Yöntem, 1.7 Sonuçlar, 1.8 Değerlendirme (+1 more)
 
 ### Community 7664 - "Ders 8 Genişletilmiş Notu: Sık Öğe Kümeleri: A-Priori, PCY, Çok Aşamalı ve Çok Karmalı Algoritmalar"
-Cohesion: 0.05
-Nodes (40): 10. Saf Algoritma, 11.1 Üçgen matris yaklaşımı, 11.2 Tablo (üçlü) yaklaşımı, 11.3 Hangisi seçilir?, 11. Çiftleri Bellekte Saymanın İki Yolu, 12.1 Monotonluk, 12.2 İki geçiş, 12.3 A-Priori'nin sorunu (+32 more)
+Cohesion: 0.06
+Nodes (34): 10. Saf Algoritma, 11.1 Üçgen matris yaklaşımı, 11.2 Tablo (üçlü) yaklaşımı, 11.3 Hangisi seçilir?, 11. Çiftleri Bellekte Saymanın İki Yolu, 13.1 Fikir, 13.2 Bitmap, 13.3 İki geçiş (+26 more)
 
 ### Community 7665 - "main fonksiyonu oyun döngüsü"
 Cohesion: 0.10
@@ -33203,19 +33284,19 @@ Nodes (14): BFR algoritması, Birleştirici kümeleme örneği, CURE algoritmas�
 
 ### Community 7685 - "Nesneye Yönelik Programlama/ders_kayitlari/2020-2021/sube_3/README.md"
 Cohesion: 0.02
-Nodes (86): Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kalıtımda nesne oluşturma sırası, Kısa Tekrar Notları, Overload çözümleme (`Se7en` örneği) (+78 more)
+Nodes (71): Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kalıtımda nesne oluşturma sırası, Kısa Tekrar Notları, Overload çözümleme (`Se7en` örneği) (+63 more)
 
 ### Community 7686 - "Ders 6 Genişletilmiş Notu: Pompalama Önsavı Uygulamaları ve Bağlamdan Bağımsız Gramerler"
 Cohesion: 0.06
 Nodes (35): 10.1 İngilizce gramer örneği, 10.2 Üretim kuralları, 10.3 $S \to aSb \mid \varepsilon$, 10. Gramer Kavramı ve İlk Örnekler, 11.1 Türetme gösterimi, 11.2 Gramerin dörtlü tanımı, 11.3 Bir gramerin dili, 11. Biçimsel Tanım ve Bir Gramerin Dili (+27 more)
 
-### Community 7687 - ".showError"
-Cohesion: 0.07
-Nodes (8): RenameDoctorGUI, RenameHospitalGUI, SelectPatientGUI, AddPatientGUI, DeletePatientGUI, RenamePatientGUI, CheckRendezvousGUI, DeleteRendezvousGUI
+### Community 7687 - "repo/blm_2042_savt_proje/src/main/java/savtproje/Utils.java"
+Cohesion: 0.09
+Nodes (8): Bicycle, Rent, Student, BicycleTable, Bicycle, Rent, Student, BicycleTable
 
 ### Community 7689 - "Örnek Sorular"
 Cohesion: 0.04
-Nodes (44): 10.1 Bir İkili Ağaç Heap mi?, 10.2 Min Heap'ten Max Heap'e, 10. Alıştırma Problemleri, 1.1 Slayttaki Örnekler, 1.2 Kardeşler Arasında Sıra Yoktur, 1. Heap Ağacı Nedir?, 2.1 Heapify Ne Demektir?, 2.2 Ekleme ve Silmenin Karmaşıklığı (+36 more)
+Nodes (45): 10.1 Bir İkili Ağaç Heap mi?, 10.2 Min Heap'ten Max Heap'e, 10. Alıştırma Problemleri, 1.1 Slayttaki Örnekler, 1.2 Kardeşler Arasında Sıra Yoktur, 1. Heap Ağacı Nedir?, 2.1 Heapify Ne Demektir?, 2.2 Ekleme ve Silmenin Karmaşıklığı (+37 more)
 
 ### Community 7690 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -33237,6 +33318,10 @@ Nodes (8): 7.1 Big O, 7.2 Big Omega, 7.3 Big Theta, 7.4 Örnek: $\frac{1}{2}n(n-
 Cohesion: 0.29
 Nodes (6): 2026-2027 Güz Dönemi, Ders Bilgileri, Değerlendirme, Dosyalar, Genel Bilgiler, Lab Takvimi
 
+### Community 7705 - ".getPriceCode"
+Cohesion: 0.06
+Nodes (29): 14.1 Fiyat kodu hatası, 14.2 Ücret hesabı hatası, 14. Testlerle hata yakalama, Movie, Rental, 13.1 Kalan kusur, 13.2 Alt sınıflarla çözüm (ekrandan, 01:30:30), 13.3 Bedel: arayüz ve testler (+21 more)
+
 ### Community 7708 - "3. Küresel Yazılım Geliştirmede Genişletilmiş COCOMO II Tabanlı Maliyet Tahmin Modeli"
 Cohesion: 0.06
 Nodes (31): 1.1 Problem: neden yazılım firmaları kâr edemiyor?, 1.2 Önerilen yaklaşım: artırımlı varlık modeli, 1.3 Süreç diyagramı, 1.4 Aşamaların girdi, aktivite, çıktı ve eserleri, 1.5 Sonuç, 1. Yazılım Proje Yönetimi için Artırımlı Varlık Oluşturma Süreç Modeli, 2.1 "Yazılım projelerinin başarı oranı düşüktür" klişesi, 2.2 Genelleştirilmiş çözümün ekip içi faydası (+23 more)
@@ -33250,8 +33335,8 @@ Cohesion: 0.08
 Nodes (25): 1. Böl ve Yönetten Azaltarak Yönetmeye, 2.1 Örnek algoritmalar, 2.2 Topolojik sıralama nedir, 2.3 Komşuluk listesi ve giriş derecesi, 2.4 Elle sıralama, 2.5 Yönlü döngü kuralı, 2.6 Kuyruk ile topolojik sıralama, 2. Sabit Miktarda Azaltma ve Topolojik Sıralama (+17 more)
 
 ### Community 7729 - "RSA şifreleme"
-Cohesion: 0.11
-Nodes (30): Answers to Exercises 4.5.2 (Greatest common divisor), Answers to Exercises 4.5.3 (Analysis of Euclid's algorithm), Answers to Exercises 4.5.4 (Factoring into primes), Binary GCD algoritması (Algorithm B, Stein), Brent sürekli modeli, Continued fraction factoring method (Algorithm E), Sürekli kesirler ve continuant polinomları, Probability that two integers are relatively prime (6/pi^2) (+22 more)
+Cohesion: 0.06
+Nodes (50): Answers to Exercises 4.5.2 (Greatest common divisor), Answers to Exercises 4.5.3 (Analysis of Euclid's algorithm), Answers to Exercises 4.5.4 (Factoring into primes), Answers to Exercises 4.6.2 (Factorization of polynomials), Berlekamp's algorithm for factoring polynomials mod p, Binary GCD algoritması (Algorithm B, Stein), Brent sürekli modeli, Sürekli kesirle çarpanlara ayırma (Algorithm E, Morrison-Brillhart) (+42 more)
 
 ### Community 7730 - "Divide-and-Conquer Yaklaşımı"
 Cohesion: 0.18
@@ -33261,9 +33346,9 @@ Nodes (12): Closest-Pair Problemi Ödevi (HW1 2021-22), Divide-and-Conquer Yakla
 Cohesion: 0.19
 Nodes (26): Bisection(), calculate_function(), delta_control(), derivativer(), factorial(), Gauss_Elimination(), Gauss_Seidel(), get_function() (+18 more)
 
-### Community 7749 - "run_bagging.py"
-Cohesion: 0.11
-Nodes (13): _get_top_confusions(), plot_comparison(), plot_confusion_matrix(), plot_dataset_error_overview(), plot_error_summary(), plot_prediction_distribution(), plot_year_accuracy(), evaluate_model() (+5 more)
+### Community 7749 - "Geometric Distribution"
+Cohesion: 0.07
+Nodes (37): Binomial deviate generation, Exponential distribution generation, Gamma distribution (Algorithm A), Odd-even method, Poisson deviate generation, Polar method for normal deviates, Ratio method for normal deviates, Rectangle-wedge-tail method (+29 more)
 
 ### Community 7750 - "Ders 8 Genişletilmiş Notu: Bağlı Listeden Silme, Dairesel ve Çift Yönlü Bağlı Listeler"
 Cohesion: 0.08
@@ -33273,13 +33358,17 @@ Nodes (24): 10. Çift Yönlü Listede Başa Ekleme, 1. Bağlı Liste İşlemleri
 Cohesion: 0.11
 Nodes (17): Ağacın Tanımı, Ağaç Kopyalama ve Eşitlik, Dengeleme, Derinlik Öncelikli Gezintiler (Depth First Traversal), Ders 11 Çalışma Özeti, Ders Sonrası Notlar, Detaylı Açıklamalar, Dizi ile Ağaç Gösterimi (+9 more)
 
+### Community 7757 - "SubscriptionPlan"
+Cohesion: 0.05
+Nodes (8): CableProvider, Customer, ExistingCustomer, GSMProvider, PossibleCustomer, ServiceProvider, Subscription, SubscriptionPlan
+
 ### Community 7759 - "Ders 19 Genişletilmiş Notu: Özyinelemeli (Recursive) Fonksiyonlar: Beş Uygulama Örneği"
 Cohesion: 0.07
 Nodes (29): 1. Özyinelemeli Fonksiyonlar: Tanım ve Yapı, 2. Çalışma Mantığı: fonk Örneği, 3. Özyinelemeli Fonksiyon Tasarlamak, 4.1 Problem ve main fonksiyonu, 4.2 Bildirim, gerçekleme ve imza, 4.3 Base case, 4.4 Özyinelemeli kısım, 4.5 Değişken adları ve atama (+21 more)
 
 ### Community 7765 - "Ders 3 Çalışma Özeti (ER Modelleme)"
-Cohesion: 0.15
-Nodes (23): Abstract class, Subclass, Superclass, Recursive bağıntı, Rol tanımlama (recursive bağıntılar), Anahtar kavramları (super key, aday, birincil), Bağıntı ve cardinality, Ders 3 Çalışma Özeti: ER Diyagramı Tasarımı (PDF) (+15 more)
+Cohesion: 0.08
+Nodes (45): Abstract class, Subclass, Superclass, Recursive bağıntı, Rol tanımlama (recursive bağıntılar), Anahtar kavramları (super key, aday, birincil), Bağıntı ve cardinality, Ders 3 Çalışma Özeti: ER Diyagramı Tasarımı (PDF) (+37 more)
 
 ### Community 7779 - "Örnek Sorular"
 Cohesion: 0.08
@@ -33290,24 +33379,24 @@ Cohesion: 0.07
 Nodes (29): 10. Çözümlü Örnek: Formülle Çözüm (1. Yol), 11. Çözümlü Örnek: Kaydırma Yöntemi (2. Yol), 12.1 Programda indis sorunu, 12.2 MATLAB'de doğru indislerle çizim, 12.3 Alıştırmanın akademik içeriği, 12. MATLAB ile Konvolüsyon ve Programlama Alıştırması, 13. Sürekli ve Ayrık Konvolüsyonun Karşılaştırılması, 1. Sürekli Konvolüsyonun Tekrarı ve Ayrık Zamana Geçiş (+21 more)
 
 ### Community 7781 - "Bölüm 12 Büyük Sinyal Yükselteçleri"
-Cohesion: 0.07
-Nodes (40): Seri beslemeli A sınıfı yükselteç, AB sınıfı çalışma, AC yük doğrusu, Güç azaltma (derating) eğrisi, B sınıfı yükselteç, B sınıfı maksimum verim %78.54, Beş nokta yöntemi, Bölüm 12 Büyük Sinyal Yükselteçleri (+32 more)
+Cohesion: 0.11
+Nodes (25): Seri beslemeli A sınıfı yükselteç, AB sınıfı çalışma, AC yük doğrusu, Güç azaltma (derating) eğrisi, B sınıfı yükselteç, B sınıfı maksimum verim %78.54, Beş nokta yöntemi, Bölüm 12 Büyük Sinyal Yükselteçleri (+17 more)
 
 ### Community 7782 - "Ders 21 Genişletilmiş Notu: Uygulama: Bağlı Liste ile Kütüphane Raf Yerleştirme"
 Cohesion: 0.07
 Nodes (29): 1.1 Örnek: "Tutunamayanlar", 1.2 İstenen işlemler, 1. Problem: Kitapları Raflara Yerleştirmek, 2. Veri Yapısı Seçimi: Dizi ve Bağlı Liste, 3.1 Kütüphaneler ve makrolar, 3.2 struct node ve typedef, 3.3 Fonksiyon bildirimleri, 3.4 main ve menü (+21 more)
 
 ### Community 7783 - "Detaylı Açıklamalar"
-Cohesion: 0.10
-Nodes (21): 12.1 Öğrencilere Bırakılan Çalışma, 12. Preorder Fonksiyonunu Yazmak, Ağacın Bellekte Gösterimi, Ağaç Terminolojisi, Ağaç Veri Yapısı, Ağaçta Gezinme, Bağlı Liste ile Kuyruk, Ders 11 Çalışma Özeti (+13 more)
+Cohesion: 0.11
+Nodes (19): Ağacın Bellekte Gösterimi, Ağaç Terminolojisi, Ağaç Veri Yapısı, Ağaçta Gezinme, Bağlı Liste ile Kuyruk, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+11 more)
 
 ### Community 7784 - "13. Genlik, Tepeden Tepeye Değer, Ortalama Değer ve RMS"
 Cohesion: 0.29
 Nodes (7): 13.1 Anlık Değer ve Genlik, 13.2 Tepeden Tepeye Değer, 13.3 Ortalama Değer ve DC Ofset, 13.4 RMS Değer, 13.5 Sinüzoidal İşaretin RMS Değeri, 13.6 Şebeke Frekansı, 13. Genlik, Tepeden Tepeye Değer, Ortalama Değer ve RMS
 
 ### Community 7785 - "smartgreenhouse_serverclient/server.py"
-Cohesion: 0.10
-Nodes (17): create_command_parser(), create_room(), exit_room(), join_room(), show_rooms(), Client, createMessageAbout(), Greenhouse (+9 more)
+Cohesion: 0.21
+Nodes (12): Client, createMessageAbout(), Greenhouse, handleGreenhouse(), handleManager(), informer(), Manager, parseManagerCommand() (+4 more)
 
 ### Community 7786 - "Ders 7 Genişletilmiş Notu: Proje Sunumları: Diferansiyel Denklemler için ELM ve Uygulamalı Derin Öğrenme Projeleri"
 Cohesion: 0.07
@@ -33318,8 +33407,8 @@ Cohesion: 0.07
 Nodes (29): 1. Öneri Sistemlerine Giriş, 2.1 Kıtlıktan bolluğa, 2.2 Uzun kuyruk grafiği, 2.3 "Touching the Void" örneği, 2. Uzun Kuyruk (Long Tail) Olgusu, 3.1 Öneri türleri, 3.2 Biçimsel model, 3.3 Fayda matrisi örneği (+21 more)
 
 ### Community 7788 - ".parent"
-Cohesion: 0.05
-Nodes (47): 14.1 Üst Sınıf İstisna Bildirmiyorsa, 14.2 Üst Sınıf İstisna Bildiriyorsa, 14.3 super ile Üst Sınıf Metodunu Çağırmak, 14. Override Edilen Metotlarda İstisna Kuralları, 11.1 Ekleme Her Zaman Yaprağa Yapılır, 11.2 Soru-Cevap: Kök Değiştirilmeli mi?, 11.3 Ekleme Algoritması, 11.4 Adreslerle İzleme (+39 more)
+Cohesion: 0.03
+Nodes (81): 14.1 Üst Sınıf İstisna Bildirmiyorsa, 14.2 Üst Sınıf İstisna Bildiriyorsa, 14.3 super ile Üst Sınıf Metodunu Çağırmak, 14. Override Edilen Metotlarda İstisna Kuralları, 2.1 Fikir ve Örnek, 2.2 Durma Şartları, 2.3 Kod, 2.4 Karmaşıklık (+73 more)
 
 ### Community 7789 - "Sayısal Analiz 2023 Harf Notları ve Sınav İstatistikleri (BLM1022)"
 Cohesion: 0.48
@@ -33341,13 +33430,13 @@ Nodes (30): Sayısal Analiz Ders 14 Altyazı Özeti: Regresyon, Dersin Genel Öz
 Cohesion: 0.20
 Nodes (9): Ders 3 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Ekranlı araçlar yönetmeliği, Ergonomik çalışma alanı, Genel Konular, Güvenlik ve ek kullanım amacı dengesi, Hocanın Özellikle Vurguladığı Kısımlar (+1 more)
 
-### Community 7819 - "DPO Ensembles"
-Cohesion: 0.06
-Nodes (43): YZM4015 Yapay Zekaya Giriş - Ders Programı, Kör Arama, Lokal Arama ve Genetik Algoritmalar, Oyunlar, YZ ve Etik/Hukuk, Üretici modeller, Mehmet Fatih Amasyalı, Notlandırma: 2 ödev %20, vize %20, proje %20, final %40 (+35 more)
+### Community 7819 - "Bölüm 7 Görsel Anlambilim"
+Cohesion: 0.08
+Nodes (29): YZM4015 Yapay Zekaya Giriş - Ders Programı, Kör Arama, Lokal Arama ve Genetik Algoritmalar, Oyunlar, YZ ve Etik/Hukuk, Üretici modeller, Mehmet Fatih Amasyalı, Notlandırma: 2 ödev %20, vize %20, proje %20, final %40 (+21 more)
 
 ### Community 7820 - ".union"
 Cohesion: 0.04
-Nodes (52): Dersin Toparlaması, 2. C'de veri tiplerinin sınıflandırılması, 8.1 enum, 8.2 void hakkında ek not, 8.3 typedef, 8. enum ve typedef, Ders 1 Çalışma Özeti, Detaylı Açıklamalar (+44 more)
+Nodes (44): 1.1 Konuların kısa tanıtımı, 1.2 Kaynaklar, 1. Dersin Amacı ve Kapsamı, 5. Ayrılmış Anahtar Kelimeler, 2. C'de veri tiplerinin sınıflandırılması, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+36 more)
 
 ### Community 7821 - "k-fold cross validation"
 Cohesion: 0.15
@@ -33365,9 +33454,9 @@ Nodes (25): 10.1 Neden hâlâ kullanılıyor?, 10.2 Olumsuzluklar, 10.3 Geçiş 
 Cohesion: 0.09
 Nodes (23): Asymptotic Normality, Confidence interval, Confidence interval and test for population variance, Confidence interval for difference of means, Confidence interval for proportions, Confidence interval for the mean (known sigma), Duality of tests and confidence intervals, F-distribution and comparison of two variances (+15 more)
 
-### Community 7829 - "os"
+### Community 7829 - "argparse"
 Cohesion: 0.01
-Nodes (129): get_detailed_instruct(), load_data(), get_detailed_instruct(), load_data(), euclid_distance(), main(), task_1(), task_2() (+121 more)
+Nodes (97): create_command_parser(), create_room(), exit_room(), join_room(), show_rooms(), Hiperparametre ayarları (Dropout, Weight Decay, LR), plot.py, train.py (+89 more)
 
 ### Community 7830 - "Boyer-Moore algorithm"
 Cohesion: 0.20
@@ -33382,8 +33471,8 @@ Cohesion: 0.06
 Nodes (33): 10.1 Modlar tablosu, 10.2 Elektronik Kod Kitabı (ECB), 10.3 Şifreleme Blok Zincirleme (CBC), 10.4 Şifreleme Geribildirimi (CFB), 10.5 Çıkış Geribildirimi (OFB), 10.6 Sayaç (CTR), 10. Blok şifreleme çalışma modları, 11.1 Dört dağıtım seçeneği (+25 more)
 
 ### Community 7833 - "Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_2/README.md"
-Cohesion: 0.06
-Nodes (28): Binary Heap ile Ekleme ve Çıkarma, Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Farklı Yapılarla Öncelikli Kuyruk, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İkili Ağacın Heap Olup Olmadığını Kontrol Etme (+20 more)
+Cohesion: 0.07
+Nodes (24): Binary Heap ile Ekleme ve Çıkarma, Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Farklı Yapılarla Öncelikli Kuyruk, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İkili Ağacın Heap Olup Olmadığını Kontrol Etme (+16 more)
 
 ### Community 7834 - "5. Evrensel Etik İlkeleri"
 Cohesion: 0.14
@@ -33438,8 +33527,8 @@ Cohesion: 0.22
 Nodes (8): Ders 2 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Genel tavsiyeler, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, "Nasılsınız?" kuralı
 
 ### Community 7848 - "Veri Yapıları ve Algoritmalar Ders Kayıtları 2020-2021 README"
-Cohesion: 0.07
-Nodes (19): Başlangıç koşulları, 🔹 Ders 11 Lab, 🔹 Ders 12 Lab, 🔹 Ders 13 Lab, 🔹 Ders 14 Lab, 🔹 Ders 1 Lab, 🔹 Ders 2 Lab, 🔹 Ders 3 Lab (+11 more)
+Cohesion: 0.08
+Nodes (18): 🔹 Ders 11 Lab, 🔹 Ders 12 Lab, 🔹 Ders 13, 🔹 Ders 13 Lab, 🔹 Ders 14 Lab, 🔹 Ders 1 Lab, 🔹 Ders 2 Lab, 🔹 Ders 3 Lab (+10 more)
 
 ### Community 7849 - "3. Süper sayfalar için şeffaf işletim sistemi desteği"
 Cohesion: 0.08
@@ -33467,7 +33556,11 @@ Nodes (8): 4.1 Makale ve Amaç, 4.2 Arka Plan ve Dil Modelleri, 4.3 Ön Eğitim 
 
 ### Community 7856 - "Kombinezonsal Devreler"
 Cohesion: 0.10
-Nodes (31): XOR Kapısı, Bool cebri aksiyomları, AND kapısı, Bool Cebri, Bool fonksiyonu, Lojik Devreler Ders 2 (2020-2021), Kanonik biçimler arası dönüşüm, Lojik kapılarla gerçekleştirme (+23 more)
+Nodes (30): XOR Kapısı, Bool cebri aksiyomları, AND kapısı, Bool Cebri, Bool fonksiyonu, Lojik Devreler Ders 2 (2020-2021), Kanonik biçimler arası dönüşüm, Lojik kapılarla gerçekleştirme (+22 more)
+
+### Community 7857 - "OSI Referans Modeli"
+Cohesion: 0.08
+Nodes (35): Application layer, Hop count, Network layer, Wireshark Labs, Oturum Katmanı, Sunum Katmanı, Uygulama Katmanı, 3. Hafta - 18 Ekim 2021 (+27 more)
 
 ### Community 7858 - "Makine Öğrenmesi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -33478,8 +33571,8 @@ Cohesion: 0.35
 Nodes (11): deleteMax(), findMax(), freeMatrix(), getMatrix(), heapify(), heapifyMatrix(), main(), printMatrix() (+3 more)
 
 ### Community 7860 - "Bölüm 5 Lojik Kapılar ve Lojik Devreler"
-Cohesion: 0.09
-Nodes (38): Minterm, Alarm devresi (VEYA kapısı), Basitleştirme kanunu, Birleşme kanunu, Boolean temel özellikler, Bölüm 4 Boolean Kuralları ve Lojik İfadelerin Sadeleştirilmesi, Bölüm 5 Lojik Kapılar ve Lojik Devreler, Claude Shannon anahtarlama uygulaması (+30 more)
+Cohesion: 0.06
+Nodes (63): Minterm, 25 bar kodu, 39 bar kodu, 5'te 2 kodu, Aiken kodu (2421), Alarm devresi (VEYA kapısı), Alfasayısal kodlar, Artı 3 (Excess 3) kodu (+55 more)
 
 ### Community 7861 - "Ders 3 Genişletilmiş Notu: Klasik Yinelemeli Süreçler, Çevik Süreçler (XP ve Scrum), Süreç Sertifikasyonu (CMMI) ve Gereksinim Mühendisliğine Giriş"
 Cohesion: 0.08
@@ -33487,7 +33580,7 @@ Nodes (25): 1.1 Sarmal Model (Spiral Model), 1.2 Kazan-Kazan Modeli (Win-Win Mod
 
 ### Community 7862 - "Matrisler (Özdemir 2020 slaytı)"
 Cohesion: 0.07
-Nodes (52): Hermitian Matris ve Kompleks Matrisin Eşlenik Devriği, İdempotent Matris, 2x2 matrisin tersi, [A:I] yöntemiyle ters bulma, Birim matris, Matrisler (Özdemir 2020 slaytı), Elemanter satır operasyonuna karşılık gelen matris, Hermityen matris (+44 more)
+Nodes (53): İdempotent Matris, Matris Çeşitleri (sıfır, kare, köşegen, birim, simetrik vb.), 2x2 matrisin tersi, [A:I] yöntemiyle ters bulma, Birim matris, Matrisler (Özdemir 2020 slaytı), Elemanter satır operasyonuna karşılık gelen matris, Hermityen matris (+45 more)
 
 ### Community 7863 - "Ders 10 Genişletilmiş Notu: Gramer ile Yığıtlı Otomat Denkliği ve Bağlamdan Bağımsız Diller için Pompalama Önsavı"
 Cohesion: 0.06
@@ -33506,8 +33599,8 @@ Cohesion: 0.22
 Nodes (8): Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Tablo üzerinden örnek hesap, Tehlike ve risk farkı
 
 ### Community 7868 - "ödev 1/mert_guler/kod.c"
-Cohesion: 0.32
-Nodes (12): check(), clearScreen(), divide(), loadData(), main(), mainMenu(), printArray(), printSwaps() (+4 more)
+Cohesion: 0.09
+Nodes (30): 7.8 Fonksiyon işaretçisi dizisi, Ders 18 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, main(), recurse() (+22 more)
 
 ### Community 7869 - "Ders 5 Genişletilmiş Notu: Gradyan Düşüm Algoritması: Durma Kriterleri ve En Dik Düşüm Örneği"
 Cohesion: 0.10
@@ -33530,16 +33623,16 @@ Cohesion: 0.13
 Nodes (25): Gruplama ve kümeleme (aggregation), VT Sistem Gerçeklemesi #13: Order ve Join Operatör Gerçeklemeleri, k-tampon Product (BNL), k-tampon Sort, k-way merge, Temel parçala-sırala (basic merge-sort), Replacement selection, Sıralama maliyeti 3*B (+17 more)
 
 ### Community 7875 - "SaS-08 Fourier Transform slaytı"
-Cohesion: 0.06
-Nodes (58): SaS-08 Fourier Transform slaytı, Konvolüsyon özelliği (zamanda konvolüsyon = frekansta çarpma), Fourier dönüşümü özellikleri (ölçekleme, konvolüsyon), Fourier Dönüşümü (analiz/sentez), Frekans cevabı H(jω), Dürtü fonksiyonunun Fourier dönüşümü, sinc fonksiyonu / dikdörtgen darbe dönüşümü, SaS-09 Laplace Transform slaytı (+50 more)
+Cohesion: 0.15
+Nodes (19): SaS-08 Fourier Transform slaytı, Konvolüsyon özelliği (zamanda konvolüsyon = frekansta çarpma), Fourier dönüşümü özellikleri (ölçekleme, konvolüsyon), Fourier Dönüşümü (analiz/sentez), Frekans cevabı H(jω), Dürtü fonksiyonunun Fourier dönüşümü, sinc fonksiyonu / dikdörtgen darbe dönüşümü, SaS-09 Laplace Transform slaytı (+11 more)
 
 ### Community 7894 - "References (S-Z)"
 Cohesion: 0.09
 Nodes (26): Clos network, Data center networking, ECMP (Equal Cost Multi Path), Hierarchical data center architecture, Modular data center (MDC), References (S-Z), Singh 2015 - Jupiter Rising (Google datacenter), Socket programming (+18 more)
 
 ### Community 7895 - "Chapter 13 Sinusoidal Alternating Waveforms"
-Cohesion: 0.06
-Nodes (58): ac meters and instruments, Angular velocity omega=2 pi f, Average value, Bulb savers and surge current, Chapter 13 Sinusoidal Alternating Waveforms, Chapter 13 problems, PSpice VSIN/ISIN sources, C++ program for average value of pulse waveform (+50 more)
+Cohesion: 0.11
+Nodes (34): ac meters and instruments, Angular velocity omega=2 pi f, Average value, Bulb savers and surge current, Chapter 13 Sinusoidal Alternating Waveforms, Chapter 13 problems, PSpice VSIN/ISIN sources, C++ program for average value of pulse waveform (+26 more)
 
 ### Community 7896 - "Ders 8 Genişletilmiş Notu: Yığıtlı Otomatların Biçimsel Tanımı ve Bağlamdan Bağımsız Gramerlerle Denkliği"
 Cohesion: 0.06
@@ -33570,12 +33663,12 @@ Cohesion: 0.46
 Nodes (6): adimAt(), main(), yolBilgisiGetir(), adimAt(), main(), yolBilgisiGetir()
 
 ### Community 7903 - "Doğal Eksponansiyel Fonksiyon (e^x)"
-Cohesion: 0.13
-Nodes (23): 1/u İntegrali (ln|u|), a Tabanlı Logaritma, Analizin Temel Teoremi, Bağıl Büyüme Oranları, Bire-Bir Fonksiyon, Bölüm 7 Transandant Fonksiyonlar, Doğal Eksponansiyel Fonksiyon (e^x), Doğal Logaritma Fonksiyonu (+15 more)
+Cohesion: 0.10
+Nodes (27): 1/u İntegrali (ln|u|), a Tabanlı Logaritma, Analizin Temel Teoremi, Bağıl Büyüme Oranları, Bire-Bir Fonksiyon, Bölüm 7 Transandant Fonksiyonlar, Doğal Eksponansiyel Fonksiyon (e^x), Doğal Logaritma Fonksiyonu (+19 more)
 
-### Community 7904 - "proje/ml.py"
-Cohesion: 0.12
-Nodes (11): category_counts(), char_count(), clean_dataset(), clean_text(), DatasetSummary, load_raw_dataset(), predict_all(), text_stats_by_category() (+3 more)
+### Community 7904 - "datapath"
+Cohesion: 0.06
+Nodes (18): riscvsingle, riscvsingle, riscvsingle, tb_datapath, RiscVSingleCycle, RiscVSingleCycle, RiscVSingleCycle, TB_datapath (+10 more)
 
 ### Community 7905 - "Detaylı Açıklamalar"
 Cohesion: 0.14
@@ -33587,7 +33680,7 @@ Nodes (31): 1. Giriş ve önceki dersle bağlantı, 2.1 Birinci adım: riskleri 
 
 ### Community 7907 - "Ders 3 Genişletilmiş Notu: MapReduce İyileştirmeleri: Combiner, Bölümleme Fonksiyonu ve Hadoop Ekosistemi"
 Cohesion: 0.06
-Nodes (34): 1.1 Üç adım, 1.2 Ekrandaki kelime sayma örneği, 1.3 Sözde kod, 1. MapReduce Programlama Modelinin Tekrarı, 2.1 Mapper, 2.2 Reducer, 2.3 Ana sınıf, 2. Hadoop'ta WordCount Programı (+26 more)
+Nodes (30): 1.1 Üç adım, 1.2 Ekrandaki kelime sayma örneği, 1.3 Sözde kod, 1. MapReduce Programlama Modelinin Tekrarı, 3.1 Mapper tarafı, 3.2 Reducer'ın seçilmesi ve kopyalama, 3.3 Sonuçların HDFS'e yazılması, 3.4 Diyagramdaki eksiklik (+22 more)
 
 ### Community 7908 - "Dizgi Eşleme Algoritmalarının Alfabeye Bağlı Etkinliklerinin Araştırılması (Makale)"
 Cohesion: 0.09
@@ -33642,8 +33735,8 @@ Cohesion: 0.08
 Nodes (23): 1.1 Örnek veriler, 1.2 Eşyaları sırayla eklemek, 1.3 Kâr matrisi $P$, 1. Örnek Problem ve Kâr Matrisi, 2.1 Case 1: hırsız $i$. eşyayı alır, 2.2 Eşyanın alınamaması, 2. İki Durum: Eşyayı Almak ve Alamamak, 3. Özyinelemeli Bağıntı (+15 more)
 
 ### Community 7922 - "YİF 8 Metal-Yarıiletken Kontaklar"
-Cohesion: 0.11
-Nodes (33): n-tipi ve p-tipi yarıiletkenler, Eklemler, İş fonksiyonu ve Schottky bariyeri, Metal-yarıiletken Schottky eklemi, Arınma bölgesi (uzay yükü), İleri ve ters besleme (Schottky), İş fonksiyonu ve elektron alınganlığı, Metal-yarıiletken eklem (+25 more)
+Cohesion: 0.13
+Nodes (29): Arınma bölgesi (uzay yükü), İleri ve ters besleme (Schottky), İş fonksiyonu ve elektron alınganlığı, Metal-yarıiletken eklem, n-tipi ve p-tipi için kontak koşulları, Oluşum (built-in) potansiyeli, Omik kontak, Richardson sabiti ve ters doyma akımı (+21 more)
 
 ### Community 7923 - "Ders 1 Genişletilmiş Notu: Giriş, Sistem Kavramı ve Bilgi Sistemleri"
 Cohesion: 0.07
@@ -33654,28 +33747,28 @@ Cohesion: 0.07
 Nodes (28): 1. Dersin Düzeni: Gönüllü Grupların Test Sunumları, 2.1 Yazılımın tanıtımı, 2.2 Test planının içeriği, 2.3 Hata sınıflandırması ve hata yaşam döngüsü, 2.4 Sorumluluklar, takvim, riskler ve ortam, 2.5 Test sonuç raporu ve test verisi, 2.6 Kullanıcı testleri, 2.7 Sistem testi: Web performans ölçümü (+20 more)
 
 ### Community 7925 - "Applications of Linear Algebra (Chapter 10)"
-Cohesion: 0.09
-Nodes (24): 2x2 Matrix Game Optimal Strategies, Ahmes (Rhind) Papyrus Problem 40, Applications of Linear Algebra (Chapter 10), Archimedes Cattle Problem, Babylonian Tablet Ca MLA 1950, Bakhshali Manuscript, Circle Through Three Points, Conic Section Through Five Points (+16 more)
+Cohesion: 0.05
+Nodes (45): 2x2 Matrix Game Optimal Strategies, Advantages of LU-Decomposition over Gauss-Jordan, Ahmes (Rhind) Papyrus Problem 40, Applications of Linear Algebra (Chapter 10), Archimedes Cattle Problem, Augustin Louis Cauchy, Babylonian Tablet Ca MLA 1950, Bakhshali Manuscript (+37 more)
 
 ### Community 7928 - ".not"
-Cohesion: 0.06
-Nodes (30): 8.1 Ne zaman tasarlanır, ne zaman yürütülür?, 8.2 Vekil kod (stub), 8.3 Birim sınamalarında aranacak hatalar, 8. Birim Sınamaları, 3.1 Sayılar, 3.2 Mantıksal tipler, 3.3 Metinler, 3. Python'un Temel Veri Tipleri (+22 more)
+Cohesion: 0.07
+Nodes (26): 8.1 Ne zaman tasarlanır, ne zaman yürütülür?, 8.2 Vekil kod (stub), 8.3 Birim sınamalarında aranacak hatalar, 8. Birim Sınamaları, 3.1 Sayılar, 3.2 Mantıksal tipler, 3.3 Metinler, 3. Python'un Temel Veri Tipleri (+18 more)
 
 ### Community 7929 - "Ders 13 Genişletilmiş Notu: Disco: Hazır İşletim Sistemlerini Ölçeklenebilir Çok İşlemcilerde Çalıştırmak"
 Cohesion: 0.08
 Nodes (23): 1. Makalenin genel fikri: Disco nedir?, 2. Sanal makinelerin karşılaştığı zorluklar, 3.1 Makaledeki ifade, 3.2 Yetkili komut nedir, neden doğrudan verilemez?, 3. Ek yükler ve yetkili komutlar, 4.1 Makaledeki ifade, 4.2 Cümlenin anlamı, 4. Kaynak yönetimi: boşta döngü, meşgul bekleme ve gerçek hesap (+15 more)
 
-### Community 7932 - "Faz 1: Data Exploration ve Profil Belirleme"
-Cohesion: 0.13
-Nodes (26): Set A (23) ve Set B (~10) feature extraction, Hedef metrikler: Acc>85%, F1>82%, Top-3>95%, <2ms, PRD: Lightweight MLP Based Content-Aware Profile-Based Text Compression, Baseline: gzip, bzip2, lzma, zlib, EDA deney matrisi, Güvenli mod / store raw fallback (confidence<0.7), Faz 0: Kurulum ve Veri Hazırlama, Faz 1: Data Exploration ve Profil Belirleme (+18 more)
+### Community 7932 - "Eşdizimlilik (Collocation)"
+Cohesion: 0.06
+Nodes (38): BERT, Kelime Analojisi (king - man + woman = queen), BERT, Cosine Similarity, İçerik Bağımlı Gösterim (ELMO, BERT), Kelime Gösterilimleri (Banu Diri), Kelime Gömmeleri (Word Embeddings), Vektör Matrisi (Embedding Matrix) (+30 more)
 
 ### Community 7933 - "2021-2022 Bahar Lisans Ders Programı (YTÜ Bilgisayar Mühendisliği)"
 Cohesion: 0.13
 Nodes (27): BLM2042 Sistem Analizi ve Tasarımı, BLM3722 Yazılım Mühendisliği, BLM1012 Yapısal Programlamaya Giriş, BLM1032 Devre Teorisi, BLM2012 Nesneye Yönelik Programlama, BLM2022 Bilgisayar Donanımı, BLM2032 Elektronik Devreler, BLM2502 Hesaplama Kuramı (+19 more)
 
 ### Community 7947 - "Kirchhoff's voltage law (KVL)"
-Cohesion: 0.02
-Nodes (179): Electrical Circuit Analysis, Gustav Kirchhoff, Ammeter and voltmeter design (d'Arsonval movement), Resistive attenuator (T/bridged), Chapter 1: Circuit Variables, Chapter 2: Circuit Elements, Chapter 3: Simple Resistive Circuits, Current as rate of change of charge (i=dq/dt) (+171 more)
+Cohesion: 0.03
+Nodes (106): Ammeter and voltmeter design (d'Arsonval movement), Resistive attenuator (T/bridged), Chapter 2: Circuit Elements, Chapter 3: Simple Resistive Circuits, Current divider, Delta-Wye (Y-Delta) transformation, Independent voltage and current sources, Kirchhoff's current law (KCL) (+98 more)
 
 ### Community 7948 - "Ders 10 Çalışma Özeti"
 Cohesion: 0.33
@@ -33717,9 +33810,9 @@ Nodes (7): 7.1 Problem ve Kavramlar, 7.2 Model, 7.3 Deney, 7.4 Sonuçlar, 7.5 Su
 Cohesion: 0.29
 Nodes (7): 3.1 Çalışmanın Amacı, 3.2 Veri ve Ön İşleme, 3.3 Model ve Yarı Denetimli Döngü, 3.4 Düzeltme Modülü, 3.5 Sonuçlar ve Eleştiri, 3.6 Öğrencinin Projesi Üzerine Konuşma, 3. Üçüncü Sunum: Özgeçmişlerde Yarı Denetimli Varlık İsmi Tanıma
 
-### Community 7958 - "Digital System Design"
-Cohesion: 0.42
-Nodes (9): Aritmetik Ortalama Devresi, ASM Chart, Bit Sayma Devresi, Bölücü Devresi, Enable Girişli Flip-Flop ve Register, Shift-and-Add Çarpıcı, SRAM, Sıralama Devresi (+1 more)
+### Community 7958 - "Information hiding"
+Cohesion: 0.08
+Nodes (37): Command-line arguments (argc, argv), Information hiding, NULL pointer, References and reference parameters, Binary Files, Chapter 11 Text and Binary File Processing, Chapter 12 Programming in the Large, Conditional Compilation (+29 more)
 
 ### Community 7959 - "Ders 12 Lab Çalışma Özeti"
 Cohesion: 0.33
@@ -33738,8 +33831,8 @@ Cohesion: 0.33
 Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8061 - "Activity"
-Cohesion: 0.12
-Nodes (24): Dagger Hilt, Fragment, Activity lifecycle, Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+16 more)
+Cohesion: 0.06
+Nodes (43): Staj Raporu - Mobillium Android Stajı (Muhammet Kayra Bulut), API token, Basic Note App projesi, Dagger Hilt, Dependency Injection, Figma tasarımı, Fragment, Heroku (+35 more)
 
 ### Community 8077 - "11. Ödev 3 Sunumları: Üç Anahtar Kelimeden Cümle Üretimi"
 Cohesion: 0.12
@@ -33754,8 +33847,8 @@ Cohesion: 0.33
 Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8082 - "DSP Homework 4 Form A (2024) - formül tablosu ve sorular"
-Cohesion: 0.33
-Nodes (13): DSP Homework 4 Form A (2024) - formül tablosu ve sorular, DSP Homework 4 Form A (2024) - ödev sorusu, Birim örnek yanıtı h[n], DFT çiftleri ve özellikleri, Doğrusallık ve zamanla değişmezlik, DTFT çiftleri ve özellikleri, Düşük geçiren filtre (LPF), Fourier dönüşümü (FT) özellik tablosu (+5 more)
+Cohesion: 0.31
+Nodes (14): DSP Homework 4 Form A (2024) - formül tablosu ve sorular, DSP Homework 4 Form A (2024) - ödev sorusu, Birim örnek yanıtı h[n], DFT çiftleri ve özellikleri, Doğrusallık ve zamanla değişmezlik, DTFT çiftleri ve özellikleri, Düşük geçiren filtre (LPF), Fourier dönüşümü (FT) özellik tablosu (+6 more)
 
 ### Community 8102 - "Ders 14 Lab Çalışma Özeti"
 Cohesion: 0.33
@@ -33799,7 +33892,7 @@ Nodes (12): Binary Weighted DAC, DAC0830 Entegresi, Parallel ADC (Flash ADC), R/
 
 ### Community 8146 - "android.view.View"
 Cohesion: 0.01
-Nodes (160): View.OnClickListener, View.OnClickListener, LoginApiRequest.ApiCallback, 5.2 Kalıp yapısı, 5.3 Ne zaman kullanılır, 5.4 Karar verilmesi gereken ayrıntılar, 5.5 Kalıbın zayıf yönü, 5. Composite Kalıbı (+152 more)
+Nodes (134): Settings, CompoundButton.OnCheckedChangeListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener (+126 more)
 
 ### Community 8147 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -33810,16 +33903,16 @@ Cohesion: 0.33
 Nodes (5): Ders 5 Lab Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8149 - "readme_guncelleme_arayuzu_python/threadler.py"
-Cohesion: 0.05
-Nodes (30): 2. `degiskenler.py` - Merkezi Konfigürasyon, 3. `main.py` - Ana Uygulama, 5. `threadler.py` - Arka Plan İşlemleri, Arayüz (GUI), Bağımlılıklar, `dersler.json`, Dizin Yapısı, Geliştirici Bağımlılıkları (opsiyonel) (+22 more)
+Cohesion: 0.07
+Nodes (15): 2. `degiskenler.py` - Merkezi Konfigürasyon, 3. `main.py` - Ana Uygulama, 5. `threadler.py` - Arka Plan İşlemleri, Temel Modüller, clear_progress_callback(), request_stop(), set_progress_callback(), ders_adi_normalize() (+7 more)
 
 ### Community 8150 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8151 - "Ders 6 Genişletilmiş Notu: Activity Yaşam Döngüsü, UI Durumunun Saklanması ve Intent'ler"
-Cohesion: 0.06
-Nodes (31): 10.1 E-posta ve takvim örnekleri, 10.2 İşi yapacak uygulama var mı?, 10.3 Intent'i başlatmak, 10. Intent ile Veri Taşıma ve Aktivite Başlatma, 11.1 Proje yapısı, 11.2 Login ekranının XML'i, 11.3 Login.java, 11.4 Manifest (+23 more)
+Cohesion: 0.07
+Nodes (25): 10.1 E-posta ve takvim örnekleri, 10.2 İşi yapacak uygulama var mı?, 10.3 Intent'i başlatmak, 10. Intent ile Veri Taşıma ve Aktivite Başlatma, 11.1 Proje yapısı, 11.2 Login ekranının XML'i, 11.3 Login.java, 11.4 Manifest (+17 more)
 
 ### Community 8152 - "Ders 14 Genişletilmiş Notu: Turing Makinesi Varyasyonları, Evrensel Turing Makinesi ve Sayılabilirlik"
 Cohesion: 0.07
@@ -33862,20 +33955,20 @@ Cohesion: 0.10
 Nodes (19): 1.1 Beklenen ön bilgi, 1.2 Kapsam, 1. Dersin kapsamı ve ön bilgi, 2. Ders akışı: beş bölüm, 3.1 Mikroservis mimarisi ve tasarım kalıpları, 3.2 Sunucusuz mimari, 3.3 Orta katman ve mimari tasarım kalıpları, 3. Modern mimari yaklaşımlar (+11 more)
 
 ### Community 8169 - "Panel De Pon Oyunu"
-Cohesion: 0.09
-Nodes (26): Enis Ögdüm kod.c Panel De Pon, Enis Ögdüm proje README (2025-2026 Güz), 5 element (* / + % O), NxM oyun alanı (en çok 20x20), Oyun modu ve kontrol modu, Oyun sonu koşulu (üst satır dolu), Patlatma hamlesi, Rastgele yeni satır ekleme (+18 more)
+Cohesion: 0.04
+Nodes (55): ANSI C (C89) standardı, addRandomLine, randomFillBoard, step ve choice durum değişkenleri, wait fonksiyonu, Enis Ögdüm kod.c Panel De Pon, Enis Ögdüm proje README (2025-2026 Güz), 5 element (* / + % O) (+47 more)
 
 ### Community 8176 - "Person-Employee-Manager inheritance example"
-Cohesion: 0.14
-Nodes (26): NYP Lab-4A: Staff salary raise with threads and files (24.12.2023), AcademicStaff class (+numberOfCourses*1000), FileUtility (readStaffFromFile/writeStaffToFile), Staff class (increaseSalary), SalaryIncreaseThread (Runnable), Staff.txt: staff input data, Monica Geller (Academic, 1200.0, 4 courses), Rachel Green (Staff, 1000.0) (+18 more)
+Cohesion: 0.22
+Nodes (17): Person-Employee-Manager inheritance example, employees.txt: employee salaries, Monica Geller (1200.0), Rachel Green (1000.0), Ross Geller (1000.0), managers.txt: manager salaries and bonus, Chandler Bing (1000.0, 100.0), Phoebe Buffay (1000.0, 200.0) (+9 more)
 
 ### Community 8177 - "typing"
 Cohesion: 0.02
-Nodes (35): _as_evaluator_array(), compute_hits_at_50(), compute_hits_at_k(), evaluate_link_prediction(), metric_key_for_hits(), get_memory_usage_mb(), ResourceUsage, track_resources() (+27 more)
+Nodes (54): build_adjacency(), iter_edge_pairs(), make_scaled_split(), make_undirected_edge_index(), sample_edges_by_scale(), _sample_sequence(), _shape_of(), _to_python_edges() (+46 more)
 
-### Community 8179 - "Algorithms 1.4 Analysis of Algorithms (Sedgewick & Wayne)"
-Cohesion: 0.18
-Nodes (24): Algorithms 1.4 Analysis of Algorithms (Sedgewick & Wayne), 3-SUM problemi, En iyi/en kötü/ortalama durum, Big-Oh, Big-Theta, Big-Omega, İkili arama (binary search), İkili arama analizi 1+lg N, 3-SUM kaba kuvvet algoritması (N^3), Maliyet modeli (dizi erişimi) (+16 more)
+### Community 8179 - "Ders 6 Genişletilmiş Notu: Bilgisayarın Tarihçesi, Bilgisayar Organizasyonu ve Programlama Dilleri"
+Cohesion: 0.06
+Nodes (36): 10.1 Ana Bellek (RAM), 10.2 ROM ve BIOS, 10.3 İkincil Bellek, 10. Ana Bellek, ROM, BIOS ve İkincil Bellek, 11. Veri Kapasite Birimleri, 12. Analog ve Dijital Veri, 13. Yazılım Katmanları, 14.1 Makine Dili (+28 more)
 
 ### Community 8180 - "maxHeapify.c"
 Cohesion: 0.27
@@ -33893,9 +33986,9 @@ Nodes (20): 1. Sayısal Türevden Sayısal İntegrale, 2. Temel Strateji: Fonksi
 Cohesion: 0.09
 Nodes (22): 1.1 Bölme yöntemi, 1.2 Çarpma yöntemi, 1. Hash Fonksiyonlarının Hatırlatılması, 2.1 Anahtar tekil olmalıdır, 2.2 String anahtarlar, 2.3 Horner yöntemi, 2.4 Bileşik anahtar (compound key), 2.5 Kayan noktalı sayılar (+14 more)
 
-### Community 8216 - "Veritabanı yönetim sistemi (DBMS)"
+### Community 8216 - "Sezgisel Arama ders notu"
 Cohesion: 0.10
-Nodes (23): Veritabanı yönetim sistemi (DBMS), Not dağılımı: 2 vize %40, 2 ödev %20, final %40, lab %20, Veritabanı Yönetimi Ders 2 (2020-2021), Dosya işleme ile DBMS karşılaştırması, Eşzamanlılık ve kilit mekanizmaları, Fiziksel veri bağımsızlığı, Index dosyaları, Merkezi, iki katmanlı ve üç katmanlı client-server mimari (+15 more)
+Nodes (36): Sezgisel baskınlık (h2 baskındır h1), Sezgisel fonksiyon h(n), Kuş uçuşu mesafe sezgisi, Manhattan distance sezgisi, Sekiz taş problemi h1 ve h2, Benzetimli Tavlama, Sezgisel Arama, 8 taş problemi (+28 more)
 
 ### Community 8217 - "3. İkinci Sunum: Twitter'daki Finansal Topluluktan Şirket Olaylarının Tespiti"
 Cohesion: 0.33
@@ -33938,12 +34031,12 @@ Cohesion: 0.33
 Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8227 - "Matematiğin Dili"
-Cohesion: 0.06
-Nodes (55): Sayı sistemleri, Dizi (Sequence), Dizinin Genel Terimi (n. terim), Fonksiyonların bileşkesi, Ayrık Matematik Bölüm 4 Matematik Dili, İlişkiler / bağıntılar, Kümeler, AyrНk_Matematik_BФlБm_4_Matematik_Dili_Soru_ve_Cev_211227_100910 (+47 more)
+Cohesion: 0.05
+Nodes (70): Sayı sistemleri, Dizi (Sequence), Dizinin Genel Terimi (n. terim), Power Set, Fonksiyonların bileşkesi, Ayrık Matematik Bölüm 4 Matematik Dili, İlişkiler / bağıntılar, Kümeler (+62 more)
 
 ### Community 8228 - "blm_2042/client/package.json"
 Cohesion: 0.03
-Nodes (65): dependencies, add, class-variance-authority, clsx, collapsible, dlx, @heroicons/react, lucide-react (+57 more)
+Nodes (67): dependencies, add, class-variance-authority, clsx, collapsible, dlx, @heroicons/react, lucide-react (+59 more)
 
 ### Community 8229 - "Ders 14 Çalışma Özeti"
 Cohesion: 0.33
@@ -33954,8 +34047,8 @@ Cohesion: 0.33
 Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8232 - "Bölüm 8 İntegrasyon Teknikleri"
-Cohesion: 0.07
-Nodes (40): 8.2 Kısmi İntegrasyon, 8.3 Rasyonel Fonksiyonların Kısmi Kesirlerle İntegrasyonu, 8.5 Trigonometrik Dönüşümler, 8.6 İntegral Tabloları ve Bilgisayar Cebir Sistemleri, 8.7 Sayısal İntegrasyon, 8.7 Sayısal İntegrasyon (Yamuklar ve Simpson Kuralı), 8.8 Genelleştirilmiş İntegraller, Belirsiz katsayılar (+32 more)
+Cohesion: 0.06
+Nodes (48): İndirgeme Formülleri (∫cos^n x dx vb.), Kısmi İntegrasyon (Integration by Parts), LAPTÜ Kuralı (Kısmi İntegrasyonda Seçim Sırası), tan(x) ve sec(x) Kuvvetlerinin İntegralleri, Trigonometrik İntegraller (sin^m x cos^n x), 8.2 Kısmi İntegrasyon, 8.3 Rasyonel Fonksiyonların Kısmi Kesirlerle İntegrasyonu, 8.4 Trigonometrik İntegraller (+40 more)
 
 ### Community 8233 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
@@ -34050,16 +34143,16 @@ Cohesion: 0.33
 Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin), Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8260 - "Suffix array (SuffixArray)"
-Cohesion: 0.11
-Nodes (25): Keyword-in-context indexing (KWIC), Longest repeated substring (LRS), Manber-Myers suffix array algorithm, 3-way string quicksort, Substring search, Suffix array (SuffixArray), Suffix sorting, Suffix tree (+17 more)
+Cohesion: 0.06
+Nodes (41): Chapter 6 Context, Book index (Algorithms 4th ed.), Event-driven simulation (CollisionSystem), Chapter 6 exercises, Intractability, Kendall tau distance, Keyword-in-context indexing (KWIC), Longest repeated substring (LRS) (+33 more)
 
 ### Community 8261 - "Detaylı Açıklamalar"
 Cohesion: 0.12
 Nodes (15): 8 taş problemi için sezgisel fonksiyonlar, A* araması, A*'ın optimalliği, Ders 1 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, En iyi ilk arama (best-first search) (+7 more)
 
 ### Community 8262 - "bioinfo_07-phylogenetics.pdf"
-Cohesion: 0.18
-Nodes (22): Bootstrapping, Branch Length Estimation, Cladogram, Distance-Based Methods, Endosymbiosis, Gene Tree vs Species Tree, HIV Subtype Phylogeny, Homoplasy (+14 more)
+Cohesion: 0.12
+Nodes (29): Hierarchical Clustering, Bootstrapping, Branch Length Estimation, Cladogram, Distance-Based Methods, Endosymbiosis, Gene Tree vs Species Tree, HIV Subtype Phylogeny (+21 more)
 
 ### Community 8263 - "Ders 4 Çalışma Özeti"
 Cohesion: 0.33
@@ -34103,7 +34196,7 @@ Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar (Daha Fazla Detay İ
 
 ### Community 8273 - "Ders 10 Genişletilmiş Notu: Risk Yönetimi, Yazılım Sınama Teknikleri ve JUnit ile Birim Sınaması Uygulaması"
 Cohesion: 0.10
-Nodes (20): 1.1 Risk Tanımı: Reaktif (Sonradan) ve Proaktif (Önceden) Yaklaşımlar, 1.2 Yazılım Geliştirme Sürecinde Üç Genel Risk Kategorisi, 1.3 Proaktif Risk Yönetimi Adımları: Risk Tablosu, Etki–Olasılık Grafiği ve Risk Bilgi Sayfası, 1. Yazılım Proje Yönetimi: Risk Yönetimi (Risk Management), 1. Özet Risk Tablosu Oluşturma ve Geniş Katılım İlkesi, 2.1 Sınamanın Amacı, Erken Sınama İlkesi ve Sınama Türleri, 2.2 Birim Sınamaları (Unit Testing), TDD ve Vekil Kod (Stub / Dummy), 2. Etki–Olasılık Grafiği (4 Kadran Analizi) (ekrandan, 00:27:30) (+12 more)
+Nodes (19): 1.1 Risk Tanımı: Reaktif (Sonradan) ve Proaktif (Önceden) Yaklaşımlar, 1.2 Yazılım Geliştirme Sürecinde Üç Genel Risk Kategorisi, 1.3 Proaktif Risk Yönetimi Adımları: Risk Tablosu, Etki–Olasılık Grafiği ve Risk Bilgi Sayfası, 1. Yazılım Proje Yönetimi: Risk Yönetimi (Risk Management), 1. Özet Risk Tablosu Oluşturma ve Geniş Katılım İlkesi, 2.1 Sınamanın Amacı, Erken Sınama İlkesi ve Sınama Türleri, 2.2 Birim Sınamaları (Unit Testing), TDD ve Vekil Kod (Stub / Dummy), 2. Etki–Olasılık Grafiği (4 Kadran Analizi) (ekrandan, 00:27:30) (+11 more)
 
 ### Community 8274 - "Detaylı Açıklamalar"
 Cohesion: 0.17
@@ -34130,20 +34223,20 @@ Cohesion: 0.33
 Nodes (6): 10.1 MaxElement, 10.2 Genel plan, 10.3 UniqueElements, 10.4 Matris çarpımı, 10.5 İkilik gösterimdeki basamak sayısı, 10. Özyinelemesiz Algoritmaların Analizi
 
 ### Community 8280 - "ConnectionWidget"
-Cohesion: 0.05
-Nodes (16): ConnectionWidget, CustomModel, ConnectionWidget, activeDb, ConnectionWidget::ConnectionWidget(), metaDataAction, public, tree (+8 more)
+Cohesion: 0.04
+Nodes (18): Browser, public, ConnectionWidget, CustomModel, ConnectionWidget, activeDb, ConnectionWidget::ConnectionWidget(), metaDataAction (+10 more)
 
-### Community 8281 - "Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_3/README.md"
-Cohesion: 0.06
-Nodes (27): Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Huffman ağacı, Kısa Tekrar Notları (+19 more)
+### Community 8281 - "Detaylı Açıklamalar"
+Cohesion: 0.13
+Nodes (14): Comparison Counting Sort, Counting Sort, Ders 26 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Distribution Counting Sort, Duyurular, Genel Konular (+6 more)
 
 ### Community 8282 - "stbi__malloc_mad3"
-Cohesion: 0.17
-Nodes (17): stbi__addsizes_valid(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__create_png_alpha_expand8(), stbi__create_png_image(), stbi__create_png_image_raw(), stbi__de_iphone(), stbi__do_png() (+9 more)
+Cohesion: 0.13
+Nodes (24): stbi__addsizes_valid(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__compute_y_16(), stbi__convert_format16(), stbi__create_png_alpha_expand8(), stbi__create_png_image(), stbi__create_png_image_raw() (+16 more)
 
 ### Community 8283 - "BLM3010 Bilgisayar Projesi"
 Cohesion: 0.09
-Nodes (32): KURUL-1 Akademisyen Proje Önerileri Listesi (2023-24 Bahar), Göğüs Kanseri Görüntülerinde Alt Tiplerin Sınıflandırılması (GB), Histopatolojik Görüntülerin Derin Öğrenme ile Sınıflandırılması (GB), Ara Proje (BLM3010) başvuruları, Bağlamda Öğrenme (MFA), Bitirme Çalışması (BLM9000) başvuruları, Danışmana göre öğrenci-konu eşleşmeleri (ACK, AEL, BD, EU, FÇ, G1, GB, HİT, HOI, MAG, MEK, MFA, MSA, OA, OK, SV, SY, UK, YES, ZCT), 2023-24 Güz Kurul-2 Proje Kararları Tutanağı (+24 more)
+Nodes (31): KURUL-1 Akademisyen Proje Önerileri Listesi (2023-24 Bahar), Göğüs Kanseri Görüntülerinde Alt Tiplerin Sınıflandırılması (GB), Histopatolojik Görüntülerin Derin Öğrenme ile Sınıflandırılması (GB), Ara Proje (BLM3010) başvuruları, Bağlamda Öğrenme (MFA), Bitirme Çalışması (BLM9000) başvuruları, Danışmana göre öğrenci-konu eşleşmeleri (ACK, AEL, BD, EU, FÇ, G1, GB, HİT, HOI, MAG, MEK, MFA, MSA, OA, OK, SV, SY, UK, YES, ZCT), 2023-24 Güz Kurul-2 Proje Kararları Tutanağı (+23 more)
 
 ### Community 8284 - "skippitygame.c"
 Cohesion: 0.40
@@ -34155,7 +34248,7 @@ Nodes (11): check_all_neighbors(), find_max_neighbor(), findPrise(), getNeighbot
 
 ### Community 8286 - "Bölüm 10: Statistical Inference II"
 Cohesion: 0.05
-Nodes (56): Algoritma analizinde deneysel regresyon (3-sum), Cramer kuralı ile a ve b çözümü, En küçük kareler yaklaşımı, Kısmi türev ile hata minimizasyonu, Kuadratik (parabol) regresyon, Üstel ve kuvvet fonksiyonu regresyonu (logaritma ile doğrusallaştırma), Yapay zekâ ve sayısal yöntemlerin kökenleri, Çoklu Regresyon (+48 more)
+Nodes (53): Algoritma analizinde deneysel regresyon (3-sum), Cramer kuralı ile a ve b çözümü, En küçük kareler yaklaşımı, Kısmi türev ile hata minimizasyonu, Kuadratik (parabol) regresyon, Üstel ve kuvvet fonksiyonu regresyonu (logaritma ile doğrusallaştırma), Yapay zekâ ve sayısal yöntemlerin kökenleri, Çoklu Regresyon (+45 more)
 
 ### Community 8288 - "Ders 12 Çalışma Özeti"
 Cohesion: 0.33
@@ -34198,8 +34291,8 @@ Cohesion: 0.33
 Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 8298 - "BLM4830 Hafta 1"
-Cohesion: 0.13
-Nodes (20): Occupancy Grid Haritalama (Olasılıksal Robotik 9), Inverse sensor model, Log odds gösterimi, Maksimum a posteriori haritalama, Haritalama, Occupancy Grid Mapping, BLM4830 Robot Teknolojisine Giriş (2022), Robot Teknolojisine Giriş README (+12 more)
+Cohesion: 0.16
+Nodes (14): BLM4830 Robot Teknolojisine Giriş (2022), Robot Teknolojisine Giriş README, Robot Teknolojisine Giriş dersi, 3B Haritalama, BLM4830 Hafta 1, Keşif, Navigasyon, P3AT ve Husky robotları (+6 more)
 
 ### Community 8299 - "Matematik 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.40
@@ -34210,8 +34303,8 @@ Cohesion: 0.09
 Nodes (25): 5G Fixed Wireless, Cable Internet Access (HFC), Data Centers and Cloud Computing, Distributed Application, DSL, FTTH and PON, Hosts / End Systems, IETF and RFCs (+17 more)
 
 ### Community 8301 - "Ders 23 Genişletilmiş Notu: İkinci Ara Sınav Sorularının Değerlendirmesi: Matris Eşitliği, Sütun Takası ve Döngü Seçimi"
-Cohesion: 0.12
-Nodes (16): 1. Kaynak Kod Dosyası Bir Metin Dosyasıdır, 2.1 İki çözüm yolu ve verimlilik, 2. Matris Eşitliği Sorusu, 3. Matris Eşitliğinde Döngü Şartını Kurmak, 4. Akışın C ile Kodlanması, 5.1 Sınır kontrolü üzerine bir soru-cevap, 5. Sütun Takası Sorusu, 6. Akış Diyagramı Kurallarının Tekrarı (+8 more)
+Cohesion: 0.11
+Nodes (17): 1. Kaynak Kod Dosyası Bir Metin Dosyasıdır, 2.1 İki çözüm yolu ve verimlilik, 2. Matris Eşitliği Sorusu, 3. Matris Eşitliğinde Döngü Şartını Kurmak, 4. Akışın C ile Kodlanması, 5.1 Sınır kontrolü üzerine bir soru-cevap, 5. Sütun Takası Sorusu, 6. Akış Diyagramı Kurallarının Tekrarı (+9 more)
 
 ### Community 8303 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34230,8 +34323,8 @@ Cohesion: 0.08
 Nodes (25): 🔹 Ders 10: Temel Yüzeyler, Seviye Eğrileri ve Çok Değişkenli Fonksiyonlarda Limit ve Süreklilik, 🔹 Ders 11: Limit ve Süreklilik Tekrarı, Kısmi Türevler, Zincir Kuralı ve Karışık Türevler, 🔹 Ders 12: Vektör ve Düzlem Tekrarı, Zincir Kuralı, Lineerleştirme ve Tam Diferansiyel, 🔹 Ders 13: Teğet Düzlem, Lineerleştirme, Tam Diferansiyel, Ekstremumlar ve Kısıtlı Kısmi Türevler, 🔹 Ders 14: Yönlü Türev, Gradyan ve Vektör Uygulamaları, 🔹 Ders 15: Yönlü Türev, Uzay Eğrileri, Tanım Kümesi ve Limit Üzerine Soru Çözümü, 🔹 Ders 16: Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler, 🔹 Ders 1: Diziler, Sınırlılık, Monotonluk, Dizi Limiti ve Serilere Giriş (+17 more)
 
 ### Community 8307 - "2x2_blm_2512_data_structures_and_algorithms/ödev_4/19011076.c"
-Cohesion: 0.39
-Nodes (5): depthFirstSearch(), find(), kruskal(), main(), uni()
+Cohesion: 0.19
+Nodes (10): Ders 27 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, depthFirstSearch(), find(), kruskal() (+2 more)
 
 ### Community 8308 - "Ders 1 Genişletilmiş Notu: Giriş, Ders Kapsamı ve Temel Kavramlar"
 Cohesion: 0.07
@@ -34262,12 +34355,12 @@ Cohesion: 0.40
 Nodes (4): Eksik Kayıtlar, Hafta Bilgisi, Veri Yapıları ve Algoritmalar Ders Kayıtları Altyazıları, Çalışma Özetleri
 
 ### Community 8315 - "Elementary Linear Algebra, Applications Version (11th ed., Anton & Rorres, 2013)"
-Cohesion: 0.05
-Nodes (50): 7.1 Orthogonal Matrices, 7.2 Orthogonal Diagonalization, Central Conic, Chapter 7: Diagonalization and Quadratic Forms, Chapter 8: General Linear Transformations, Chapter 9: Numerical Methods, Charles Hermite, Composition of Linear Transformations (+42 more)
+Cohesion: 0.06
+Nodes (39): 7.1 Orthogonal Matrices, 7.2 Orthogonal Diagonalization, Chapter 7: Diagonalization and Quadratic Forms, Chapter 8: General Linear Transformations, Chapter 9: Numerical Methods, Charles Hermite, Composition of Linear Transformations, Conjugate Transpose (+31 more)
 
 ### Community 8316 - "Appendix A Verilog reference"
-Cohesion: 0.14
-Nodes (26): always block and sensitivity list, Blocking versus non-blocking assignments, MAX+plusII Compiler, Continuous assignment (assign), Verilog functions and tasks, Gate instantiation, Verilog 2001 generate construct, Graphic Editor (schematic capture) (+18 more)
+Cohesion: 0.08
+Nodes (47): Aliasing problem, always block and sensitivity list, Built-in logic block observer (BILBO), Built-in self-test (BIST), Blocking versus non-blocking assignments, Boundary scan (IEEE 1149.1), Chapter 11: Testing of Logic Circuits, CMOS circuit faults (+39 more)
 
 ### Community 8317 - "blm_5227/Scripts/bootstrap.bundle.min.js"
 Cohesion: 0.10
@@ -34281,9 +34374,9 @@ Nodes (13): Caltech101 veri seti, Local Binary Pattern (LBP), Manhattan mesafesi
 Cohesion: 0.09
 Nodes (28): Fourier Coefficients, Alternative Trigonometric Form of Fourier Series, Chapter 16 Fourier Series, Example 16.1 Fourier Series of a Triangular Waveform, Exponential Form of the Fourier Series, rms Value of a Periodic Function, Amplitude and Phase Spectra, Effect of Symmetry on Fourier Coefficients (+20 more)
 
-### Community 8354 - "Chapter 5: Number Representation and Arithmetic Circuits"
-Cohesion: 0.14
-Nodes (15): Arithmetic overflow, unsigned integers, Arithmetic underflow, Adder/Subtractor Unit, ASCII Character Code, Chapter 5: Number Representation and Arithmetic Circuits, Decimal to Binary Conversion, IEEE Floating-Point Numbers (+7 more)
+### Community 8354 - "Ders 25 Genişletilmiş Notu: Dizilerle Algoritmalar: Rakam Tekrarı, Asal Sayı ve Temel Dizi İşlemleri"
+Cohesion: 0.06
+Nodes (34): 1. Dersin amacı: algoritma sorularını dizilerle çözmek, 2.1 Problem, 2.2 Neden while?, 2.3 Rakamlara ayırma, 2.4 Karşılaştırma döngüleri, 2.5 Hataları birlikte bulmak, 2.6 Akış diyagramı kuralları, 2. Rakamları birbirinden farklı mı? İkili karşılaştırma çözümü (+26 more)
 
 ### Community 8356 - "11011027_mustafa_berkay_mutlu_ödev_3.c"
 Cohesion: 0.39
@@ -34301,9 +34394,9 @@ Nodes (16): calculateTableSize(), createHashTable(), deleteEntry(), displayHashT
 Cohesion: 0.40
 Nodes (4): Eksik Kayıtlar, Hafta Bilgisi, Mikroişlemci Sistemleri ve Assembly Dili Ders Kayıtları Altyazıları, Çalışma Özeti Dosyaları
 
-### Community 8364 - "Euler's theorem"
-Cohesion: 0.10
-Nodes (27): Chapter 31 Number-Theoretic Algorithms, EUCLID (gcd algorithm), Euler's theorem, EXTENDED-EUCLID, Fermat's theorem, Lagrange's theorem (subgroups), Lamé's theorem, Modular arithmetic groups (Zn, Zn*) (+19 more)
+### Community 8364 - "Ders 29 Genişletilmiş Notu: Çok Boyutlu Diziler ve Çok Boyutlu Karakter Dizileri"
+Cohesion: 0.06
+Nodes (34): 10.1 Satırları tek indisle yazdırmak, 10.2 Boyutu aşan dizge, 10.3 Karakter karakter atama ve boş satırlar, 10.4 Adres kontrol eden `while` döngüsü, 10.5 Sütun sütun yazdırma (alıştırma), 10. Karakter matrisi üzerinde C denemeleri, 11. Her satırdaki karakter dizisini ters çevirme, 12. Değişken izleme tablosu (+26 more)
 
 ### Community 8368 - "Mikroişlemciler Lab2 (Güz 2022-2023): 8251 ile Sanal Terminal Haberleşmesi"
 Cohesion: 0.60
@@ -34337,17 +34430,17 @@ Nodes (3): Bilgisayar Bilimlerine Giriş Ders Kayıtları Altyazıları, Eksik K
 Cohesion: 0.50
 Nodes (3): Bilgisayar Bilimlerine Giriş Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 8376 - "Bilgisayar Bilimlerine Giriş Ders Kayıtları"
-Cohesion: 0.50
-Nodes (3): Bilgisayar Bilimlerine Giriş Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler
+### Community 8376 - "Bilgisayar Bilimlerine Giriş/ders_kayitlari/2021-2022/sube_3/README.md"
+Cohesion: 0.04
+Nodes (38): Ders 19 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
 
 ### Community 8377 - "5_LINEER_DONUSUM_SN_SS.pdf"
 Cohesion: 0.17
 Nodes (21): M.Özdemir Lineer Cebir ve Çözümlü Problemler (Altın Nokta, 2020), Lineer Dönüşümlerin Bileşkesi, Çekirdek ve Görüntü Kümesi, Dönme Dönüşümü, Dik İzdüşüm Dönüşümü, Lineer Dönüşüm, Küçültme ve Büyültme Dönüşümü, Öteleme Dönüşümü (lineer değil) (+13 more)
 
 ### Community 8378 - "SchoolBranch"
-Cohesion: 0.07
-Nodes (16): InformationSystem, branches, ClassRoom, SchoolBranch, m_address, m_allClasses, m_isActiveBranch, m_name (+8 more)
+Cohesion: 0.06
+Nodes (17): InformationSystem, branches, Registrar, ClassRoom, SchoolBranch, m_address, m_allClasses, m_isActiveBranch (+9 more)
 
 ### Community 8379 - "blm_2512_data_structures/ödevler/ödev_3/22011641.c"
 Cohesion: 0.40
@@ -34407,11 +34500,11 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders 
 
 ### Community 8394 - "stbi__err"
 Cohesion: 0.31
-Nodes (15): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib(), stbi__parse_zlib_header() (+7 more)
+Nodes (16): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__err(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib() (+8 more)
 
 ### Community 8395 - "Markov Chain"
 Cohesion: 0.07
-Nodes (53): 5.5 Dynamical Systems and Markov Chains, Andrei Andreyevich Markov, Dynamical System, Exchange Matrix, Leontief Closed (Input-Output) Model, Leontief Economic Models, Probability Vector, Regular Stochastic Matrix (+45 more)
+Nodes (55): 5.5 Dynamical Systems and Markov Chains, Andrei Andreyevich Markov, Dynamical System, Exchange Matrix, Leontief Closed (Input-Output) Model, Probability Vector, Regular Stochastic Matrix, Regular Transition Matrix (+47 more)
 
 ### Community 8396 - "somester_proje.c"
 Cohesion: 0.44
@@ -34425,13 +34518,9 @@ Nodes (3): Devre Teorisi ve Elektronik Devreler Ders Kayıtları Altyazıları, 
 Cohesion: 0.33
 Nodes (10): SaS-04 Systems Properties 2020, Systems properties, SaS-04 Systems Properties 2022, Ayrık zamanlı sistemler, Banka hesabı fark denklemi örneği, Doğrusal sistemler, Hafızalı sistemler, Tersinir sistemler (+2 more)
 
-### Community 8399 - "ImageFirstBestSearchHeapUsed.java"
-Cohesion: 0.13
-Nodes (3): NoImageLoadException, ImageService, Main
-
 ### Community 8400 - "K-Means clustering"
-Cohesion: 0.09
-Nodes (21): Naïve Bayes, Unsupervised Clustering, Association rules / market basket, Interestingness measures, KDD süreci, Outlier analysis, Production rules (accuracy ve coverage), Veri madenciliği (KDD) (+13 more)
+Cohesion: 0.05
+Nodes (39): Compression profile (cluster), Naïve Bayes, K-Means clustering, Unsupervised Clustering, Association rules / market basket, Interestingness measures, KDD süreci, Outlier analysis (+31 more)
 
 ### Community 8401 - "Devre Teorisi ve Elektronik Devreler/ders_kayitlari/2024-2025/sube_1/README.md"
 Cohesion: 0.33
@@ -34491,7 +34580,7 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yapısal Programlama Ders Kayıtları
 
 ### Community 8415 - "Yapısal Programlama/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.04
-Nodes (38): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
+Nodes (34): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+26 more)
 
 ### Community 8425 - "Yapısal Programlama Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34557,9 +34646,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lojik Devreler Der
 Cohesion: 0.50
 Nodes (7): chdir(), chdirBefore(), count(), dir(), main(), mkdir(), rmdir()
 
-### Community 8445 - "string"
-Cohesion: 0.01
-Nodes (190): hesapla(), ilkyap(), main(), calculate(), main(), pri(), GetOperatorWeight(), HasHigherPrecedence() (+182 more)
+### Community 8445 - "in to post2.cpp"
+Cohesion: 0.09
+Nodes (21): hesapla(), ilkyap(), main(), calculate(), main(), pri(), GetOperatorWeight(), HasHigherPrecedence() (+13 more)
 
 ### Community 8446 - "Nesneye Yönelik Programlama Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34574,8 +34663,8 @@ Cohesion: 0.49
 Nodes (9): cholesky_y(), cramer_y(), determinant(), gauss_seidal(), jacobi_i(), main(), matris_alma(), yoketme_gauss() (+1 more)
 
 ### Community 8449 - "AnimatedRoutes.tsx"
-Cohesion: 0.09
-Nodes (25): SearchCategory, ALL, MOVIES, USERS, SearchResponse, searchUsersMovies(), App(), PrivacyPolicyPage() (+17 more)
+Cohesion: 0.17
+Nodes (16): SearchCategory, ALL, MOVIES, USERS, SearchResponse, searchUsersMovies(), Props, SearchFilters() (+8 more)
 
 ### Community 8451 - "Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34607,7 +34696,7 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Sistem Analizi ve Tasarımı Ders Kay
 
 ### Community 8473 - "Sistem Analizi ve Tasarımı/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.04
-Nodes (38): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
+Nodes (38): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
 
 ### Community 8474 - "Sistem Analizi ve Tasarımı Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34621,10 +34710,6 @@ Nodes (3): 📚 Ders Müfredatı ve Belge Dizini, 📋 Genel Bilgiler, Veri Yap�
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Veri Yapıları ve Algoritmalar Ders Kayıtları Altyazıları
 
-### Community 8477 - "kisaltMetin"
-Cohesion: 0.16
-Nodes (4): HocaEkleGuncelleWindow, turkce_kucult(), unvan_ve_isim_ayir(), kisaltMetin()
-
 ### Community 8478 - "vya_ödev_1_commands.c"
 Cohesion: 0.42
 Nodes (7): countFolders(), createPathNode(), createTreeNode(), findNode(), main(), showFolders(), showTree()
@@ -34634,8 +34719,8 @@ Cohesion: 0.50
 Nodes (4): BFS Algoritması (BFS(V,E,s)), DFS Algoritması (DFS-VISIT), Minimum Spanning Tree (Asgari Tarama Ağacı), Prim'in MST Algoritması
 
 ### Community 8480 - "Karşıt Madde Labirenti"
-Cohesion: 0.06
-Nodes (57): 3 boyutlu Lab[3][N][M] dizisi, Alternatif güzergah kombinasyonları, BLM1552 Dönem Projesi - Karşıt Madde Labirenti (2017), Karadelik (K), Karşıt hidrojen üretimi, Labirent char matrisi gösterimi, Manuel mod, Otomatik mod (+49 more)
+Cohesion: 0.09
+Nodes (39): 3 boyutlu Lab[3][N][M] dizisi, Alternatif güzergah kombinasyonları, BLM1552 Dönem Projesi - Karşıt Madde Labirenti (2017), Karadelik (K), Karşıt hidrojen üretimi, Labirent char matrisi gösterimi, Manuel mod, Otomatik mod (+31 more)
 
 ### Community 8481 - "Algoritma Analizi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34675,19 +34760,19 @@ Nodes (27): 10. Korunan alanlar için güvenlik ve kontrol dereceleri, 1. Giriş
 
 ### Community 8497 - "JK Flip-Flop"
 Cohesion: 0.04
-Nodes (68): Lecture 11: Counters and Registers, Ripple counter, Sayıcı (counter), Shift register, 4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Taslak), A/B Register + ALU Datapath (Add/Sub/Complement, Taslak), 4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Final), 4-bit JK-FF Uyarma Tablosu ve Karnaugh Haritaları (j3,k3,j2,k2,j1,k1,j0,k0) (+60 more)
+Nodes (73): Boolean operations, Gates, Ardışıl devre sentezi, Ders 12: Ardışıl Devre Tasarımı (Sentez), 1010 dizisi algılayan ardışıl devre örneği, Ardışıl devre analizi (sınav öncesi), 0-7 JK flip-flop'lu mod-8 sayıcı örneği, Platform kişi sayısı (4 kişide boşaltma) JK sorusu (+65 more)
 
 ### Community 8499 - "api-gateway/src/server.js"
-Cohesion: 0.08
-Nodes (19): logger, winston, logger, logger, { v4: uuidv4 }, options, swaggerJsdoc, app (+11 more)
+Cohesion: 0.06
+Nodes (27): logger, winston, logger, logger, { v4: uuidv4 }, options, swaggerJsdoc, authenticate() (+19 more)
 
 ### Community 8500 - "Ders 2 - 8086 Pin Bağlantıları ve Kontrol Sinyalleri"
 Cohesion: 0.50
 Nodes (4): Ders 2 - 8086 Pin Bağlantıları ve Kontrol Sinyalleri, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar
 
-### Community 8501 - "Yüksek mertebe lineer homojen denklem"
-Cohesion: 0.17
-Nodes (22): Wronskian, Chapter 6: Second Order Linear Nonhomogeneous Equations, Bölüm 6: İkinci Mertebe Lineer Homojen Olmayan Denklemler, Bölüm 7: Yüksek Mertebe Lineer Homojen Denklemler, Bölüm 8: Yüksek Mertebe Lineer Homojen Olmayan Denklemler, Complex Roots Case, Euler's Formula (e^{iax} = cos ax + i sin ax), Fundamental Solution Set (+14 more)
+### Community 8501 - "ref_express"
+Cohesion: 0.10
+Nodes (20): app, storage, upload, client, Express, Request, authMiddleware(), verifyAccessToken() (+12 more)
 
 ### Community 8502 - "18. Bilişim Yoluyla da İşlenen Suçlar"
 Cohesion: 0.33
@@ -34770,8 +34855,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıları
 
 ### Community 8522 - "Check Digits"
-Cohesion: 0.12
-Nodes (17): Applications of Congruences (Section 4.5), Check Digits, ISBN-13 Check Digit, Middle-Square Method, Parity Check Bit, Power Generator, Pseudorandom Numbers, Routing Transit Number (RTN) (+9 more)
+Cohesion: 0.09
+Nodes (22): Applications of Congruences (Section 4.5), Check Digits, ISBN-13 Check Digit, Middle-Square Method, Parity Check Bit, Power Generator, Pseudorandom Numbers, Routing Transit Number (RTN) (+14 more)
 
 ### Community 8523 - "20. Mühendisin Sorumlulukları"
 Cohesion: 0.33
@@ -34779,7 +34864,7 @@ Nodes (6): 20.1 Kendine Karşı, 20.2 Topluma Karşı, 20.3 Çevreye Karşı, 20
 
 ### Community 8524 - "unistd"
 Cohesion: 0.01
-Nodes (96): addRandomLine(), calculateDigits(), clear(), controlModeFillBoard(), drawBoard(), drawStats(), drawWhitespace(), explode() (+88 more)
+Nodes (94): addRandomLine(), calculateDigits(), clear(), controlModeFillBoard(), drawBoard(), drawStats(), drawWhitespace(), explode() (+86 more)
 
 ### Community 8525 - "TÜRKÇE 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -34798,8 +34883,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yazılım Mühendisliği Ders Kayıtları Altyazıları
 
 ### Community 8529 - "je"
-Cohesion: 0.22
-Nodes (3): je, Ye(), Qe()
+Cohesion: 0.20
+Nodes (4): je, Ge(), Ye(), Qe()
 
 ### Community 8530 - "Yazılım Mühendisliği Ders Kayıtları"
 Cohesion: 0.50
@@ -34815,15 +34900,15 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yazılım Mühendisliği Ders Kayıtl
 
 ### Community 8533 - "Data compression"
 Cohesion: 0.03
-Nodes (77): Data compression, Binary search tree (chapter 3), BinaryStdIn and BinaryStdOut, Compression ratio, Genomic 2-bit code compression, Huffman compression, Optimality of Huffman code (Proposition U), Hybrid TST (+69 more)
+Nodes (75): Data compression, Binary search tree (chapter 3), BinaryStdIn and BinaryStdOut, Compression ratio, Genomic 2-bit code compression, Huffman compression, Optimality of Huffman code (Proposition U), Hybrid TST (+67 more)
 
 ### Community 8534 - "Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 8535 - "Bölüm 3 Kodlama ve Kodlar"
-Cohesion: 0.06
-Nodes (49): 25 bar kodu, 39 bar kodu, 5'te 2 kodu, Aiken kodu (2421), Alfasayısal kodlar, Artı 3 (Excess 3) kodu, ASCII kodu, Bar (çubuk) kodu (+41 more)
+### Community 8535 - "Temel Ayrık-Zamanlı İşaretler ve Özellikleri"
+Cohesion: 0.15
+Nodes (18): Ek B: Trigonometrik fonksiyonlar ve özdeşlikler, SaS-03 Signals and Systems Properties 2020, Operations on signals, Signals and systems properties, SaS-03 Signals and Systems Properties 2022, Birim dürtü işareti, MATLAB stem ile sinyal çizimi, Operations on signals (zamanda ölçekleme ve öteleme) (+10 more)
 
 ### Community 8536 - "Ders 14 Genişletilmiş Notu: Quiz Hataları, Yığınla Kuyruk ve First Child / Next Sibling Ağaç Gösterimi"
 Cohesion: 0.08
@@ -34867,7 +34952,7 @@ Nodes (48): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Ho
 
 ### Community 8546 - "Bilgisayarla Görme/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.03
-Nodes (49): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+41 more)
+Nodes (54): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+46 more)
 
 ### Community 8549 - "Seminer Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34886,8 +34971,8 @@ Cohesion: 0.12
 Nodes (12): 1. Dersin genel çerçevesi, 2. Doktora seminerinin amacı, 3. Literatür taramasının kapsamı, 4. Makale seçerken atıf sayısı ve yayın yılı, 5. Literatürü gruplayarak ve hiyerarşik sunmak, 6. Seminer dersinin işleyişi, Ders 1 Genişletilmiş Notu: Seminer Dersinin Amacı ve Literatür Taraması, Dersin Toparlaması (+4 more)
 
 ### Community 8553 - "Sayısal Görüntü İşleme 2: Filtreleme ve Kenar Bulma"
-Cohesion: 0.13
-Nodes (26): Sayısal Görüntü İşleme 2: Filtreleme ve Kenar Bulma, Separable kernels, Weighted median filter, Weighted smoothing filters, Linear histogram equalization, Non-linear filters (min, max), Impulse (Dirac) function, Gaussian filter (+18 more)
+Cohesion: 0.08
+Nodes (46): Harris Corner Detection, 4. Week - 27 October 2022 Thursday, SIFT (Scale-Invariant Feature Transform), Sayısal Görüntü İşleme 2: Filtreleme ve Kenar Bulma, Separable kernels, Weighted median filter, Weighted smoothing filters, Linear histogram equalization (+38 more)
 
 ### Community 8554 - "Veri Madenciliğine Giriş Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -34909,9 +34994,9 @@ Nodes (22): authorlist_check_author_exist(), book_is_borrowed(), book_update(), 
 Cohesion: 0.50
 Nodes (4): Ders 12: Hiyerarşik kümeleme, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar
 
-### Community 8559 - "JK Flip-Flop"
-Cohesion: 0.04
-Nodes (89): Ardışıl devreler ve hafıza birimleri, Bayrak (flag) olarak flip-flop kullanımı (mikroişlemci), D flip-flop (Q(t+1)=D), Lojik Devreler Ders 10 (2020-2021) - Flip-flop'lar, Durum/doğruluk tablosu ve Karnaugh ile sadeleştirme, Flip-flop (1 bit saklama, saat işaretli senkron), Laboratuvar saati çakışması düzenlemesi, Saat işareti: yükselen/düşen kenar, seviye tetikleme (+81 more)
+### Community 8559 - "Lojik Devreler Ders 10 (2020-2021) - Flip-flop'lar"
+Cohesion: 0.14
+Nodes (21): Ardışıl devreler ve hafıza birimleri, Bayrak (flag) olarak flip-flop kullanımı (mikroişlemci), D flip-flop (Q(t+1)=D), Lojik Devreler Ders 10 (2020-2021) - Flip-flop'lar, Durum/doğruluk tablosu ve Karnaugh ile sadeleştirme, Flip-flop (1 bit saklama, saat işaretli senkron), Laboratuvar saati çakışması düzenlemesi, Saat işareti: yükselen/düşen kenar, seviye tetikleme (+13 more)
 
 ### Community 8561 - "Ders 13: Birliktelik kuralları"
 Cohesion: 0.50
@@ -35013,9 +35098,9 @@ Nodes (3): 9.1 Örnek: $\frac{1}{2}n(n-1)$ ve $n^2$, 9.2 Örnek: $n!$ ve $2^n$, 
 Cohesion: 0.13
 Nodes (4): build_benchmark_configs(), generate_report_assets(), run_final_benchmark(), write_summary_csv()
 
-### Community 8671 - "IndividualUI"
-Cohesion: 0.04
-Nodes (17): CorporationUI, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+9 more)
+### Community 8671 - "CorporationUI"
+Cohesion: 0.10
+Nodes (9): CorporationUI, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener (+1 more)
 
 ### Community 8779 - "Ders 4 Genişletilmiş Notu: Proje İlerleme Sunumları: Graf Evrişim Ağları, Hücre Sınıflandırma, TransUNet ve Vision Transformer"
 Cohesion: 0.08
@@ -35026,8 +35111,8 @@ Cohesion: 0.11
 Nodes (21): Hafta 11 - Prosedür ve makro, Makro (MACRO/ENDM), Prosedür (PROC NEAR/FAR), Alt Seviye Ödev 1 - DNUM yinelemeli alt yordam, DNUM FAR alt yordamı (yığın parametreli, dinamik programlama), 8086/8088 Instruction Set Reference (Table 5-3–5-5), 8086 Bellek Adresleme Modları (EA/DADDR), Aritmetik Komutlar (ADD,SUB,MUL,DIV,CMP,NEG,INC,DEC) (+13 more)
 
 ### Community 8782 - "İçerik yok (dersle ilgili doküman henüz yok)"
-Cohesion: 0.07
-Nodes (25): 📚 Davranışsal Açıdan Kurumsal İtibar, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri (+17 more)
+Cohesion: 0.04
+Nodes (49): 📚 Davranışsal Açıdan Kurumsal İtibar, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📝 Derse Dair Öneriler, 📚 Ekonomi Politikaları, 📖 Faydalı Olabilecek Kaynaklar (+41 more)
 
 ### Community 8810 - "16. Yangınla Mücadele İlkeleri, Alarm ve Söndürme Prensipleri"
 Cohesion: 0.40
@@ -35046,8 +35131,8 @@ Cohesion: 0.67
 Nodes (3): IN/OUT Assembly Komutları, Isolated I/O Mapping, Çevre Birimleri (Peripheral Devices)
 
 ### Community 8814 - "Elektronik Devreler Kitabı Bölüm 15-17 (İşlemsel Yükselteçler, Regülatörler, Karşılaştırıcılar)"
-Cohesion: 0.05
-Nodes (49): 311 Karşılaştırıcı, 339 Dörtlü Karşılaştırıcı, 347 İşlemsel Yükselteç (BiFET), 555 Zamanlayıcı, Aktif Filtre, Akım Regülasyonu, Alçak Geçiren Aktif Filtre, Ayarlanabilir Gerilim Regülatörü (LM317) (+41 more)
+Cohesion: 0.06
+Nodes (39): 311 Karşılaştırıcı, 339 Dörtlü Karşılaştırıcı, 347 İşlemsel Yükselteç (BiFET), 555 Zamanlayıcı, Aktif Filtre, Alçak Geçiren Aktif Filtre, Açık Çevrim Gerilim Kazancı, Bant Geçiren Filtre (+31 more)
 
 ### Community 8815 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -35074,8 +35159,8 @@ Cohesion: 0.10
 Nodes (19): 1. Dersin Biçimi ve Tartışılan Makale, 2. Tam Sanallaştırmanın Sıkıntıları: ESX Server'dan Hatırlatma, 3. Paravirtualization Fikri ve Hypercall'lar, 4. ABI'ye Dokunmamak, 5. Bellek Sanallaştırması ve TLB, 6.1 Ayrıcalık halkaları, 6.2 Açılış ve kesme tablosu, 6.3 Sistem çağrılarının misafire iletilmesi (+11 more)
 
 ### Community 8827 - "Detaylı Açıklamalar"
-Cohesion: 0.10
-Nodes (20): Algoritma kavramı, Algoritma tasarım yöntemleri, Araya ekleme sıralaması (insertion sort), Bağıntı soruları, Ders sonrası notlar, Detaylı Açıklamalar, Dizgi (string) tersi, Dizi toplamları ve sayı tabanları (+12 more)
+Cohesion: 0.08
+Nodes (24): Algoritma kavramı, Algoritma tasarım yöntemleri, Araya ekleme sıralaması (insertion sort), Bağıntı soruları, Ders 6 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dizgi (string) tersi (+16 more)
 
 ### Community 8828 - "Ders 1 Genişletilmiş Notu: Hesaplama Kuramına Giriş ve Küme Kuramı Temelleri"
 Cohesion: 0.10
@@ -35094,24 +35179,24 @@ Cohesion: 0.28
 Nodes (10): addUser(), checkMessages(), deleteMessage(), deleteUsers(), listContacts(), main(), messageCheckingThread(), sendMessage() (+2 more)
 
 ### Community 8849 - "torch"
-Cohesion: 0.03
-Nodes (43): extract_code_codegen(), extract_code_mistral(), generate_code(), generate_prompt_mistral(), respond(), filter_code(), generate_prompt(), respond() (+35 more)
+Cohesion: 0.02
+Nodes (88): get_detailed_instruct(), load_data(), get_detailed_instruct(), load_data(), filter_code(), generate_prompt(), respond(), run() (+80 more)
 
 ### Community 8852 - "Araştırma Yöntemleri ve Bilimsel Etik"
 Cohesion: 0.22
 Nodes (9): Akademisyen AÖ, Anlamsal Web README, Anlamsal Web, Araştırma Yöntemleri ve Bilimsel Etik, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar (+1 more)
 
 ### Community 8853 - "Prime number"
-Cohesion: 0.10
-Nodes (22): AKS primality test, Base b expansion, Big-Theta estimate, Dirichlet's theorem on primes in arithmetic progressions, Divisibility, Green-Tao theorem, Integer addition algorithm, Integer multiplication algorithm (+14 more)
+Cohesion: 0.09
+Nodes (23): AKS primality test, Algorithmic paradigm, Base b expansion, Big-Theta estimate, Dirichlet's theorem on primes in arithmetic progressions, Divisibility, Green-Tao theorem, Integer addition algorithm (+15 more)
 
-### Community 8854 - "MainFrame"
-Cohesion: 0.10
-Nodes (8): MainFrame, ActionListener, Runnable, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener
+### Community 8854 - "ReportPage"
+Cohesion: 0.09
+Nodes (6): SaleRecord, ReportPage, ActionListener, ActionListener, ActionListener, Runnable
 
 ### Community 8855 - "Katkıda Bulunanlar"
 Cohesion: 0.04
-Nodes (56): Eğrisel İntegraller, Yaprak Dericioğlu, Matematik 2 Enis Ögdüm Notları (2024-2025 Bahar), Esma Nur Çilekaya Course Notes Metadata, Assembly in C (Inline Assembly), Bilgisayar Organizasyonu, Burak Başol, Dr. Öğr. Üyesi Erkan Uslu (+48 more)
+Nodes (56): Eğrisel İntegraller, Yaprak Dericioğlu, Matematik 2 Enis Ögdüm Notları (2024-2025 Bahar), Esma Nur Çilekaya Course Notes Metadata, Assembly in C (Inline Assembly), Bilgisayar Organizasyonu, Dr. Öğr. Üyesi Erkan Uslu, Prof. Furkan Cakmak (+48 more)
 
 ### Community 8858 - "vize2_kodSorusu.c"
 Cohesion: 0.56
@@ -35122,7 +35207,7 @@ Cohesion: 0.10
 Nodes (19): Ağırlıklı, Yönsüz ve Yönlü Graf, Ders 19 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, En Küçük Kapsayan Ağaç, Genel Konular, Graf Nedir, Nerede Kullanılır?, Hocanın Özellikle Vurguladığı Kısımlar (+11 more)
 
 ### Community 8860 - ".search"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (3): AbstractImageSearch, ImageFirstBestSearchHeapUsed, ImageFirstBestSearchStackUsed
 
 ### Community 8861 - "İleri İngilizce 1 Ders Kayıtları Altyazıları"
@@ -35146,16 +35231,16 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, TÜRKÇE 1 Ders Kayıtları
 
 ### Community 8867 - "Ch.10 Mass-Storage Systems (Silberschatz)"
-Cohesion: 0.03
-Nodes (75): Additional-Reference-Bits Algorithm, Bad Blocks (Sector Sparing and Slipping), Boot Block and MBR, C-SCAN Disk Scheduling, Chapter 9 Virtual Memory, Data Striping, Disk Attachment (Host-Attached, NAS, SAN), Enhanced Second-Chance Algorithm (+67 more)
+Cohesion: 0.05
+Nodes (47): Additional-Reference-Bits Algorithm, Bad Blocks (Sector Sparing and Slipping), Boot Block and MBR, C-SCAN Disk Scheduling, Chapter 9 Virtual Memory, Data Striping, Disk Attachment (Host-Attached, NAS, SAN), Enhanced Second-Chance Algorithm (+39 more)
 
 ### Community 8868 - "📘 Biyomedikal İşaret ve Görüntü İşleme"
 Cohesion: 0.22
 Nodes (9): Akademisyen GB, 📘 Biyomedikal İşaret ve Görüntü İşleme, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar (+1 more)
 
 ### Community 8869 - "NYP Lab 3 exam Group A: hospital simulation (11.12.2023)"
-Cohesion: 0.16
-Nodes (26): NYP Lab 3 sınavı hastane simülasyonu, Doctor sınıfı, Hospital sınıfı, SurgeryUnsuccessfulException, ArrayList and linked lists, static and final members, NYP Lab 3 exam Group A: hospital simulation (11.12.2023), assignPatientToDoctor method (+18 more)
+Cohesion: 0.18
+Nodes (23): NYP Lab 3 sınavı hastane simülasyonu, Doctor sınıfı, Hospital sınıfı, SurgeryUnsuccessfulException, NYP Lab 3 exam Group A: hospital simulation (11.12.2023), assignPatientToDoctor method, Doctor class, Hospital class (+15 more)
 
 ### Community 8876 - "Matematik 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35199,7 +35284,7 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders 
 
 ### Community 8895 - "pil"
 Cohesion: 0.02
-Nodes (35): open_new_window(), Database, rle_decode(), rle_encode(), rle_image_compress_column_column(), rle_image_compress_row_row(), rle_image_compress_zigzag(), get_zigzag_data() (+27 more)
+Nodes (27): open_new_window(), DecoderBlock, EncoderBlock, LinkNet, rle_decode(), rle_encode(), rle_image_compress_column_column(), rle_image_compress_row_row() (+19 more)
 
 ### Community 8896 - "BaseComponent"
 Cohesion: 0.12
@@ -35207,7 +35292,7 @@ Nodes (3): BaseComponent, Button, Config
 
 ### Community 8898 - "dizin_yardimcisi.py"
 Cohesion: 0.04
-Nodes (40): gomme_modeli_basari_puanlari_cizdir(), gomme_modeli_conf_matris_cizdir(), gomme_modeli_f1_puanlari_cizdir(), gomme_modeli_precision_puanlari_cizdir(), model_shot_puanlari_cizdir(), get_confusion_matrix_dizini(), get_confusion_matrix_png_yolu(), get_dogruluk_png_yolu() (+32 more)
+Nodes (40): gomme_modeli_basari_puanlari_cizdir(), gomme_modeli_f1_puanlari_cizdir(), gomme_modeli_precision_puanlari_cizdir(), gomme_modeli_recall_puanlari_cizdir(), model_shot_puanlari_cizdir(), get_confusion_matrix_dizini(), get_confusion_matrix_png_yolu(), get_dogruluk_png_yolu() (+32 more)
 
 ### Community 8907 - "file_directory_system.c"
 Cohesion: 0.64
@@ -35233,12 +35318,12 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazı
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Lineer Cebir Ders Kayıtları Altyazıları
 
-### Community 8914 - "7. Fonksiyon işaretçileri"
-Cohesion: 0.12
-Nodes (19): 7.1 `main`'in argümanlarından fonksiyon işaretçisine, 7.2 Tanım, 7.3 Atama kuralları, 7.4 Fonksiyon işaretçisiyle çağrı, 7.5 Nerede kullanılır: delegate benzetmesi, 7.6 Tek fonksiyonla artan ve azalan sıralama, 7.7 Genel toplama örneği, 7.8 Fonksiyon işaretçisi dizisi (+11 more)
+### Community 8914 - "Ders 19 Genişletilmiş Notu: Döngü Türleri, Diziler ve Akış Diyagramı Örnekleri"
+Cohesion: 0.06
+Nodes (33): 1. Akış Diyagramı Elemanlarının Tekrarı, 2.1 While döngüsü, 2.2 Do-while döngüsü, 2.3 Repeat-until, 2.4 Roadrunner ve çakal benzetmesi, 2. Koşullu Döngüler: While, Do-While, Repeat-Until, 3.1 Dizi kavramı, 3.2 İndis ve notasyon (+25 more)
 
 ### Community 8915 - "Ders 7 Genişletilmiş Notu: Dinamik Bellek Yönetimi Uygulamaları (malloc, calloc, realloc, free)"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (21): 1.1 Statik dizi ile dinamik dizi, 1.2 Dört özel fonksiyon, 1. Dinamik Bellek Ayırmaya Kısa Bir Hatırlatma, 3.1 Sorunun anlatımı, 3.2 Çözüm (main içinde), 3.3 Çalıştırma, 3. Uygulama 2: Collatz Fonksiyonu ve realloc ile Büyüyen Sepet Dizisi, 4.1 Sorunun anlatımı (+13 more)
 
 ### Community 8916 - "Lineer Cebir Ders Kayıtları"
@@ -35246,7 +35331,7 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders Kayıtları
 
 ### Community 8917 - "Ders 5 Genişletilmiş Notu: Veritabanı Tasarım Süreci ve Varlık-Bağıntı (ER) Modeli"
-Cohesion: 0.09
+Cohesion: 0.10
 Nodes (21): 10. Fazlalık İçeren Nitelikler ve Üniversite ER Diyagramı, 11.1 Bileşik nitelikler, 11.2 Çok değerli nitelikler, 11.3 Bağıntı setleri ve şema fazlalığı, 11. ER Diyagramından İlişkisel Şemalara, 1. Kavramsal Tasarıma Giriş, 2.1 Veri ihtiyaçları, 2.2 Fonksiyonel gereksinimler (+13 more)
 
 ### Community 8918 - "Ders 17 Genişletilmiş Notu: Çok İş Parçacıklı Programlama (pthread) ve void* ile Genel Fonksiyonlar"
@@ -35271,7 +35356,7 @@ Nodes (5): 11.1 Tanım, 11.2 Banka Örneği, 11.3 Araç Kiralama Örneği, 11.4 
 
 ### Community 8923 - "classifier.c"
 Cohesion: 0.06
-Nodes (59): lg(), aralik_y(), basit_i(), denklem_alma(), denklem_alma_2(), denklem_hesap(), grafik_y(), main() (+51 more)
+Nodes (48): lg(), denklem_alma(), denklem_hesap(), main(), simpson_y(), trapez_y(), adam(), check_occurence() (+40 more)
 
 ### Community 8924 - "GitHub repo berkaygumusay/YTU-CS"
 Cohesion: 0.07
@@ -35293,9 +35378,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 1 Ders K
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazıları
 
-### Community 8929 - "ReportGenerator"
-Cohesion: 0.14
-Nodes (6): ReportGenerator, ReportType, FULL, OCCUPANCY, RESERVATION, REVENUE
+### Community 8929 - "BMÖK 2026 Vize Çözümlü Çıkmış Sorular"
+Cohesion: 0.07
+Nodes (34): Clipping, Circuit breaker, BMÖK 2026 Final Çıkmış Sorular, Convolution Layer görevi, Görüntü histogramı ve kontrast yorumu, Local Binary Partition (LBP) başarısız dokular, Seminer soruları, Yapay sinir ağı çıktı hesabı (y5, y6) (+26 more)
 
 ### Community 8930 - "17. İnternet Bankacılığı Soygunları ve Sosyal Mühendislik"
 Cohesion: 0.40
@@ -35310,8 +35395,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri İngilizce 1 Ders Kayıtları Altyazıları
 
 ### Community 8933 - "Data Abstraction (1.2)"
-Cohesion: 0.07
-Nodes (15): Accumulator ADT, Bag, Date class, Evaluate, FixedCapacityStack, Linear probing deletion, LinearProbingHashST (Algorithm 3.6), Bag (linked-list implementation) (+7 more)
+Cohesion: 0.08
+Nodes (13): Accumulator ADT, Bag, Date class, Evaluate, FixedCapacityStack, Bag (linked-list implementation), Queue (linked-list implementation), Stack (linked-list implementation) (+5 more)
 
 ### Community 8934 - "İleri İngilizce 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -35326,12 +35411,12 @@ Cohesion: 0.57
 Nodes (6): FindMax(), main(), NotGuncelle(), NotGuncellev2(), NotGuncellev3(), YerAc()
 
 ### Community 8938 - "3-CNF-SAT"
-Cohesion: 0.03
-Nodes (100): Polynomial-time reduction, Resizing array Stack, Worst-case performance guarantees, 0-1 knapsack 2-approximation (Problem 35-7), 2-CNF-SAT, 3-CNF-SAT, 3-COLOR problem, APPROX-MIN-WEIGHT-VC (+92 more)
+Cohesion: 0.04
+Nodes (75): Polynomial-time reduction, 0-1 knapsack 2-approximation (Problem 35-7), 2-CNF-SAT, 3-CNF-SAT, 3-COLOR problem, APPROX-MIN-WEIGHT-VC, APPROX-SUBSET-SUM, Approximation ratio (+67 more)
 
 ### Community 8939 - "Directed graph (digraph)"
-Cohesion: 0.08
-Nodes (33): DAG (directed acyclic graph), DepthFirstOrder, Digraph data type, Directed cycle detection, DirectedCycle, Kosaraju's algorithm, KosarajuSCC, Precedence-constrained scheduling (+25 more)
+Cohesion: 0.06
+Nodes (44): AcyclicLP, AcyclicSP, CPM, DAG (directed acyclic graph), DepthFirstOrder, Digraph data type, DijkstraAllPairsSP, DijkstraSP (+36 more)
 
 ### Community 8940 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35357,9 +35442,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Nesneye Yönelik Programlama Ders Kay
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Nesneye Yönelik Programlama Ders Kayıtları
 
-### Community 8959 - "Doğal Dil İşleme"
-Cohesion: 0.22
-Nodes (14): 16011131_4d72b591, Doğal Dil İşleme, predict (kelime sayımı ile spam/ham), pre_process (tokenize, stopword), SMS Spam Collection veri seti, Doğal Dil İşleme: Spam Mail Tespiti, Doğal Dil İşleme Regex Ödevi (Adres Tespiti), /İstanbul adres kalıbı (+6 more)
+### Community 8959 - "Chatbot"
+Cohesion: 0.07
+Nodes (38): Yapay Zeka Dönem Projesi Raporu: Chatbot (AITalk), app.py ve yzproje-ui arayüz, Bilgi Chatbotları, BLEU score, export.py, Eğitim sonucu 100 epoch loss 0.1425 accuracy 0.3635, Hizmet Chatbotları, Kurallara Dayalı Chatbotlar (+30 more)
 
 ### Community 8961 - "Ders 9 Genişletilmiş Notu: İşletim Sistemi Yapıları, Süreç Kavramı, Süreç Durumları, PCB ve Zamanlayıcılar"
 Cohesion: 0.05
@@ -35378,12 +35463,12 @@ Cohesion: 0.14
 Nodes (5): Invitation, Status, ACCEPTED, DECLINED, PENDING
 
 ### Community 8972 - "Sayı Eşleştirme Oyunu"
-Cohesion: 0.05
-Nodes (60): Alperen Ateş 2026 proje raporu, game_menu_automatic, game_menu_manual, gamestate_recursive_solver, gamestate_solver, GameState yapısı, Geri izleme (backtracking), ingame_menu_move (+52 more)
+Cohesion: 0.04
+Nodes (78): Alperen Ateş 2026 proje raporu, game_menu_automatic, game_menu_manual, gamestate_recursive_solver, gamestate_solver, GameState yapısı, Geri izleme (backtracking), ingame_menu_move (+70 more)
 
 ### Community 8973 - "Paket Anahtarlama"
 Cohesion: 0.03
-Nodes (103): Subnet, AAL (ATM Adaptation Layer), ATM, ATM hücresi (53 byte), DLCI, FECN BECN DE (tıkanıklık bitleri), Leaky Bucket, NNI/UNI (+95 more)
+Nodes (121): Subnet, AAL (ATM Adaptation Layer), ATM, ATM hücresi (53 byte), DLCI, FECN BECN DE (tıkanıklık bitleri), Leaky Bucket, NNI/UNI (+113 more)
 
 ### Community 8975 - "Ders 10 Genişletilmiş Notu: Broadcast Receiver'lar"
 Cohesion: 0.09
@@ -35401,13 +35486,13 @@ Nodes (13): 1.10 Engeller ve tehlikeli yerlerin işaretlenmesi, 1.11 Sözlü ile
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri İngilizce 1 Ders Kayıtları Altyazıları
 
-### Community 8983 - "SaS-10 Z Transform 2020"
-Cohesion: 0.17
-Nodes (21): SaS-10 Z Transform 2020, Cascade equivalent H1(z)H2(z), Convolution property (multiplication of z-transforms), Delay property of Z-transform, Feedback difference equation, FIR filter design by zeros, First-order IIR impulse response, Geometric series sum (+13 more)
+### Community 8983 - "BBG Slayt 10 - Ağlar ve İnternet (Brookshear Ch.4)"
+Cohesion: 0.10
+Nodes (34): DNS, Email, Internet protocols (TCP/IP), Operating systems and networking (index), Tim Berners-Lee, Ağ sınıflandırmaları (PAN/LAN/MAN/WAN), Ağ topolojileri (Bus, Star), BBG Slayt 10 - Ağlar ve İnternet (Brookshear Ch.4) (+26 more)
 
 ### Community 8984 - "Kaynaksız Paralel RLC Devresi"
-Cohesion: 0.22
-Nodes (17): Kaynaksız Paralel RLC Devresi, Aşırı sönümlü tepki, Bölüm 10 Sinüzoidal kararlı durum girişi, Bölüm 9 RLC Devresi, Düşük sönümlü tepki, Evirici yükselteç, Kayıpsız LC devresi, Kritik sönümlü tepki (+9 more)
+Cohesion: 0.15
+Nodes (25): Kaynaksız Paralel RLC Devresi, 0- ve 0+ ayrımı, Alıştırmalar Bölüm 8 ve 9, Ardışık anahtarlamalı devreler, Aşırı sönümlü tepki, Bağımlı kaynaklı devre ve negatif zaman sabiti, Bölüm 10 Sinüzoidal kararlı durum girişi, Bölüm 8 Temel RL ve RC Devreleri (+17 more)
 
 ### Community 8985 - "Veri Madenciliği ve Bilgi Keşfi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35430,8 +35515,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Lojik Devreler Ders Kayıtları Altyazıları
 
 ### Community 8990 - "8086 Mikroislemci"
-Cohesion: 0.16
-Nodes (24): 7 parçalı gösterge, Lab 5 8255 ile Şifre Doğrulama Devresi, Port adresi (öğrenci no), Şifre doğrulama, Mikro Lab 1 (2020), Mikro Lab 2 Handshaking Hesap Makinesi, Lab 3 8251 Virtual Terminal İsim Tamamlama, Deney 6 - 8255 ile sayıcı (+16 more)
+Cohesion: 0.15
+Nodes (25): 7 parçalı gösterge, Lab 5 8255 ile Şifre Doğrulama Devresi, Port adresi (öğrenci no), Şifre doğrulama, Mikro Lab 1 (2020), Mikro Lab 2 Handshaking Hesap Makinesi, Lab 3 8251 Virtual Terminal İsim Tamamlama, Deney 6 - 8255 ile sayıcı (+17 more)
 
 ### Community 8991 - "Ders 12 Genişletilmiş Notu: Proje Demoları: Hadoop Kümeleri, HDFS İstemcisi ve MapReduce ile İstatistiksel Fonksiyonlar"
 Cohesion: 0.08
@@ -35506,8 +35591,8 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, TÜRKÇE 1 Ders Kayıtları
 
 ### Community 9012 - "Sunum 7 - Haberleşme Protokolleri"
-Cohesion: 0.08
-Nodes (45): Nicemleme (quantization), ADC (analog-dijital dönüştürücü), Bare metal firmware ve embedded OS firmware, DAC, Dijitalleştirme: örnekleme ve kuantalama, Flash ADC, Gerçek zamanlı sistemler (hard / soft real time), GPOS (+37 more)
+Cohesion: 0.21
+Nodes (19): CAN, CAN mesaj yapısı, Daisy-chain SPI, DS1307 RTC örneği, I2C, MAX232 level shifter, MOSI ve MISO, NMEA mesajları (+11 more)
 
 ### Community 9013 - "Seminer Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35530,28 +35615,28 @@ Cohesion: 0.29
 Nodes (7): 11.1 Akış Diyagramı, 11.2 Register Planı, 11.3 Kod, 11.4 Tanımlar Üzerine Notlar, 11.5 Kodun Adım Adım Açıklaması, 11.6 Doğrulama, 11. Word Dizide Seçmeli Sıralama: SelSort
 
 ### Community 9018 - "EPUTION at SemEval-2018 Task 2 (Zhou et al.)"
-Cohesion: 0.35
-Nodes (11): Data Augment (DA), EPUTION at SemEval-2018 Task 2 (Zhou et al.), FastText sınıflandırıcı, Hierarchical Softmax (Huffman ağacı), Individual User Adaption (IUA), Makro F1 (+%6 iyileşme), Trigram özellikleri, EPUTION: Emoji Prediction with User Adaption (+3 more)
+Cohesion: 0.19
+Nodes (19): Duluth UROP at SemEval-2018 Task 2 (Jin & Pedersen), İki seviyeli soft-voting ensemble (Ensemble1, Ensemble2, Meta), Makro F1 değerlendirme ölçütü, Duluth UROP sistemi (ensemble + oversampling), SMOTE oversampling, Unigram ve bigram özellikleri (CountVectorizer), 500K İngilizce, 100K İspanyolca tweet; 20/19 emoji, Ön işleme: non-ASCII karakterlerin korunması (+11 more)
 
 ### Community 9020 - "teslim/src/experiments/benchmark.py"
 Cohesion: 0.13
 Nodes (4): build_benchmark_configs(), generate_report_assets(), run_final_benchmark(), write_summary_csv()
 
 ### Community 9021 - "NavMeshPrefabInstance"
-Cohesion: 0.15
-Nodes (5): NavMeshPrefabInstanceEditor, NavMeshPrefabInstance, followTransform, navMeshData, trackedInstances
+Cohesion: 0.09
+Nodes (5): LocalNavMeshBuilder, NavMeshPrefabInstance, followTransform, navMeshData, trackedInstances
 
 ### Community 9023 - "Chapter 8: Objectives and outcomes of business innovation"
 Cohesion: 0.36
 Nodes (5): Chapter 8: Objectives and outcomes of business innovation, Oslo Manual 2018 (OECD/EU) - Chapters 6-9, Table 8.1 Innovation objectives and outcomes by area of influence, Table 8.2 Objectives and outcomes for business strategies, Table 8.3 Potential market impacts of business innovation
 
 ### Community 9024 - "Veri Madenciliği 2020-2021 Ders Kayıtları README"
-Cohesion: 0.08
-Nodes (35): A-Priori Algoritması, A-Priori iki geçişli algoritma, Aday k-kümeleri Ck ve Lk, Üçgensel matris yöntemi, Sık Öğe Kümeleri (MMDS Ch.6), Sık öğe kümeleri, Market sepeti modeli, Destek (support) (+27 more)
+Cohesion: 0.07
+Nodes (36): A-Priori Algoritması, A-Priori iki geçişli algoritma, Aday k-kümeleri Ck ve Lk, Üçgensel matris yöntemi, Sık Öğe Kümeleri (MMDS Ch.6), Sık öğe kümeleri, Market sepeti modeli, Destek (support) (+28 more)
 
 ### Community 9025 - "DbManage"
-Cohesion: 0.07
-Nodes (7): AddDependent, AddStudent, Cocuk_islemleri, DbManage, Diger_islemler, showMeals(), Window
+Cohesion: 0.02
+Nodes (30): plot_graphs(), q1_graphs(), q2_graphs(), Ui_MainWindow, draw_fourier_individual_terms(), draw_fourier_signals(), draw_signal_cos(), draw_signal_sin() (+22 more)
 
 ### Community 9038 - "İbrahim Enes Sayın Panel De Pon raporu"
 Cohesion: 0.18
@@ -35577,9 +35662,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Veritabanı Yönetimi Ders Kayıtlar�
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Veritabanı Yönetimi Ders Kayıtları
 
-### Community 9056 - ".exec"
-Cohesion: 0.03
-Nodes (82): 4.1 İki Sistem Çağrısı, 4.2 Kaynak Paylaşımı, 4.3 Çalışma Biçimleri, 4.4 Kabuk Örneği, 4.5 Linux Süreç Ağacı, 4. Süreç Yaratma: fork ve exec, 6.1 "before fork / after fork", 6.2 PID'leri Yazdırmak (+74 more)
+### Community 9056 - "NP-completeness"
+Cohesion: 0.07
+Nodes (33): NP-completeness, Boolean satisfiability (SAT), Cook-Levin theorem, Satisfiability problem, Boolean satisfiability problem, Cook-Levin theorem (boolean satisfiability is NP-complete), Maximum-capacity-augmenting-path maxflow algorithm (Edmonds-Karp), Ellipsoid algorithm (Khachian) (+25 more)
 
 ### Community 9057 - "Veritabanı Yönetimi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35590,20 +35675,20 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri Algoritma Analizi ve Tasarımı Ders Kayıtları Altyazıları
 
 ### Community 9067 - "İleri Algoritma Analizi ve Tasarımı/ders_kayitlari/2022-2023/README.md"
-Cohesion: 0.05
-Nodes (33): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+25 more)
+Cohesion: 0.03
+Nodes (58): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+50 more)
 
-### Community 9068 - "CENG 222 Hafta 8 - İstatistiğe giriş"
-Cohesion: 0.08
-Nodes (32): CENG 222 Hafta 8 - İstatistiğe giriş, Grafiksel istatistik, Kantiller, yüzdelikler, çeyrekler, Kutu grafiği (boxplot), Medyan, Çeyrekler açıklığı (IQR) ve aykırı değerler, Ki-kare dağılımı ve varyans için çıkarım, Güven aralığı ve iki yönlü test dualitesi (+24 more)
+### Community 9068 - "Hipotez testi"
+Cohesion: 0.06
+Nodes (56): CENG 222 Hafta 10 - Hipotez testi, T-testi, CENG 222 Hafta 9 - İstatistiksel çıkarım I, İki ortalama farkı için güven aralığı, Maksimum olabilirlik yöntemi (MLE), Momentler yöntemi, Oran için güven aralığı, Ortalama için güven aralığı (+48 more)
 
 ### Community 9071 - "TÜRKÇE 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıları
 
-### Community 9073 - "proje/gui.py"
-Cohesion: 0.14
-Nodes (5): main(), Window, Kmeans, showWindow, Cosine_simliarity
+### Community 9073 - ".detach"
+Cohesion: 0.06
+Nodes (30): 🔹 Ders 24: Uygulama: POSIX Semaforları, Mesaj Kuyrukları, Paylaşılan Bellek ve Pthreads, 14.1 Problem ve birinci çözüm (ekrandan, 02:26:30), 14.2 İkinci çözüm: Observer kalıbı (ekrandan, 02:30:00), 14. Observer Uygulama Örneği: Müşteri İlişkileri Programı, 11. Örnek Sorular, 9.1 Problem ve ilk çözüm, 9.2 Gereksinimler değişince, 9.3 Observer ile çözüm (+22 more)
 
 ### Community 9076 - "matrisAdimlaRecursiveVersion.c"
 Cohesion: 0.46
@@ -35645,12 +35730,12 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Veri İletişimi v
 Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 9120 - "AirlineException"
-Cohesion: 0.12
-Nodes (4): AirlineException, FlightNotFoundException, InvalidOperationException, SeatNotAvailableException
+### Community 9120 - "Ders 33 Genişletilmiş Notu: Sıralama Algoritmaları: Bubble Sort, Selection Sort ve Temel Yöntemler"
+Cohesion: 0.06
+Nodes (32): 10. Selection Sort: on elemanlı örnek, 11.1 Eşit elemanlar, 11. Selection Sort: C kodu ve eşit elemanlar, 12. Konu dışı: Insertion Sort fikri, 13. Konu dışı: Shell Sort fikri ve hibrit yaklaşım, 14. Soru-cevap: Gerçek sistemler hangi sıralamayı kullanır?, 1. Aramadan sıralamaya, 2.1 Tekrar eden değerler örneği (+24 more)
 
-### Community 9121 - "18011019.c"
-Cohesion: 0.43
+### Community 9121 - "locale"
+Cohesion: 0.07
 Nodes (14): countLine(), deleteLecture(), deleteMember(), lecByStdID_list(), lecByTchID_list(), lectureUpdate(), main(), mevcut() (+6 more)
 
 ### Community 9122 - "Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları"
@@ -35678,8 +35763,8 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Kayıtları
 
 ### Community 9128 - "Link-layer Switch"
-Cohesion: 0.08
-Nodes (26): A day in the life of a Web page request, Address Aggregation, Bob Metcalfe and Ethernet, Chapter 4 Homework Problems, Chapter 6 review questions and problems, CIDR, Data center hierarchical architecture, DHCP (+18 more)
+Cohesion: 0.07
+Nodes (28): A day in the life of a Web page request, Address Aggregation, ALOHAnet and Ethernet Origins, Bob Metcalfe and Ethernet, Chapter 4 Homework Problems, Chapter 6 review questions and problems, CIDR, Data center hierarchical architecture (+20 more)
 
 ### Community 9130 - "Yazılım Mühendisliği Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -35694,8 +35779,8 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Yazılım Mühendisliği Ders Kayıtları
 
 ### Community 9133 - "Ders 20 Genişletilmiş Notu: Kruskal Algoritmasının Tasarımı ve Dijkstra ile En Kısa Yol"
-Cohesion: 0.10
-Nodes (20): 10. Renklendirme Üzerine Bir Soru ve Kullanım Alanları, 1. Dersin Planı ve Açgözlü Algoritmalar, 2.1 Kenarların Sıralanması, 2.2 Etiket Dizisi ile Adım Adım İlerleme, 2.3 Toplam Ağırlık, 2. Kruskal Algoritması Üzerine Yeni Bir Örnek, 3. Etiket Dizisi ve Dört Durum, 5. Kruskal'ın Karmaşıklığı ve Prim ile Karşılaştırılması (+12 more)
+Cohesion: 0.08
+Nodes (25): 10. Renklendirme Üzerine Bir Soru ve Kullanım Alanları, 1. Dersin Planı ve Açgözlü Algoritmalar, 2.1 Kenarların Sıralanması, 2.2 Etiket Dizisi ile Adım Adım İlerleme, 2.3 Toplam Ağırlık, 2. Kruskal Algoritması Üzerine Yeni Bir Örnek, 3. Etiket Dizisi ve Dört Durum, 5. Kruskal'ın Karmaşıklığı ve Prim ile Karşılaştırılması (+17 more)
 
 ### Community 9134 - "Seminer Ders Kayıtları"
 Cohesion: 0.50
@@ -35749,13 +35834,13 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Ka
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders Kayıtları
 
-### Community 9149 - "Mobil Programlamaya Giriş Ders 1 (2020-2021)"
-Cohesion: 0.07
-Nodes (42): Cloud Computing (SaaS, PaaS, IaaS), 5G ve otonom araçlar, ARM ve RISC mimarisi, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+34 more)
+### Community 9149 - "Ders 2 Çalışma Özeti"
+Cohesion: 0.12
+Nodes (24): 5G ve otonom araçlar, ARM ve RISC mimarisi, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Mobil bilgi işlem (+16 more)
 
 ### Community 9150 - "Ağ Teknolojileri 2020-2021 ders kayıtları özeti"
-Cohesion: 0.05
-Nodes (50): Çıkmış sorular, İşletim Sistemleri Ders Kayıtları Altyazıları README, Ali Gökhan Yavuz, Eksik Kayıtlar, Hafta Bilgisi, Ağ Teknolojileri 2020-2021 ders kayıtları özeti, 3-way handshake, Ağ Teknolojileri ders kayıtları 2020-2021 (+42 more)
+Cohesion: 0.08
+Nodes (25): Çıkmış sorular, İşletim Sistemleri Ders Kayıtları Altyazıları README, Ali Gökhan Yavuz, Eksik Kayıtlar, Hafta Bilgisi, Ağ Teknolojileri 2020-2021 ders kayıtları özeti, 3-way handshake, Ağ Teknolojileri ders kayıtları 2020-2021 (+17 more)
 
 ### Community 9151 - "Ders 17 Genişletilmiş Notu: Struct Sınav Sorusu: Oda Dizisi, Komşu Taraması ve Hacme Göre Sıralama"
 Cohesion: 0.10
@@ -35782,8 +35867,8 @@ Cohesion: 0.18
 Nodes (10): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, En olası dizilişi bulmak ve metin üretimi, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İstatistiksel dil modelleri ve Markov varsayımı, Kısa Tekrar Notları, Smoothing (+2 more)
 
 ### Community 9158 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
-Cohesion: 0.05
-Nodes (41): gcd(), get_value(), kesir_yaz(), main(), minbul(), topla(), 5.7 `refine` ve `gcd`, 9. Öklid Algoritması (+33 more)
+Cohesion: 0.08
+Nodes (24): 🔹 Ders 10: Dizilerin Fonksiyonlara Aktarılması, Pointer'lar, Pointer Aritmetiği ve Frekans Hesabı, 🔹 Ders 11: Matrislerin Fonksiyonlara Aktarılması, Seçim Sistemleri, Sayarak Sıralama, Çoğunluk Elemanı ve Simetrik Matris, 🔹 Ders 12: Fonksiyon Çağrısında Tip Dönüşümü ve İteratif Algoritmaların Analizi: Temel İşlem ve T(n), 🔹 Ders 13: İteratif Algoritmaların Analizi: Toplam Formülleri, Geometrik Seri, Rastgele Sayılara Giriş ve Lab-2, 🔹 Ders 19: Fonksiyon Çağrısı ve Stack, En Yakın Çift Problemi, Çöpçatan ve Doktor Senaryoları, Özyinelemeye Giriş, 🔹 Ders 1: Tanışma: Dersin Müfredattaki Yeri, Algoritma Öğrenmek ve Programlama Ortamı, 🔹 Ders 20: Özyinelemeli Fonksiyonlar: Faktöriyel, Hızlı Üs Alma, Recursion Tree, Merge Sort ve Final Projesi, 🔹 Ders 21: Özyinelemeli Algoritmaların Analizi: Recursion Tree, Merge Sort, Recurrence Bağıntıları ve Lab-3 (+16 more)
 
 ### Community 9159 - "3. Çalışanların İSG Eğitimleri Yönetmeliği"
 Cohesion: 0.17
@@ -35794,40 +35879,40 @@ Cohesion: 0.20
 Nodes (5): contains_str(), multiple_integral(), evaluate(), simpsons_rule(), trapezoidal_rule()
 
 ### Community 9161 - "with_aux_heap.c"
-Cohesion: 0.09
-Nodes (32): 2.1 Fikir ve Örnek, 2.2 Durma Şartları, 2.3 Kod, 2.4 Karmaşıklık, 2. Heap Ağacına Eleman Ekleme: Sift Up, Ders 17 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+24 more)
+Cohesion: 0.31
+Nodes (12): buildHeap(), copyArray(), extractMin(), insert(), insertionSort(), isSorted(), main(), merge() (+4 more)
 
 ### Community 9162 - "Veri Madenciliği Ders Kayıtları"
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Veri Madenciliği Ders Kayıtları
 
 ### Community 9163 - "Veri Madenciliğine Giriş/ders_kayitlari/2021-2022/sube_1/README.md"
-Cohesion: 0.05
-Nodes (34): Ders 16 Çalışma Özeti, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 4 Çalışma Özeti, Detaylı Açıklamalar (+26 more)
+Cohesion: 0.04
+Nodes (44): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+36 more)
 
-### Community 9164 - "logging"
-Cohesion: 0.03
-Nodes (33): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, load_split_config(), main(), load_split_config() (+25 more)
+### Community 9164 - "gutenberg_downloader.py"
+Cohesion: 0.02
+Nodes (61): get_CIFAR10_data(), load_CIFAR10(), load_CIFAR_batch(), load_imagenet_val(), load_models(), load_pickle(), load_tiny_imagenet(), blur_image() (+53 more)
 
 ### Community 9165 - "Matematik 2 Ders Kayıtları"
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 2 Ders Kayıtları
 
 ### Community 9166 - "Hafta VII: SQL ile Veri Bütünlüğü ve Güvenlik"
-Cohesion: 0.11
-Nodes (21): Cursor (iterasyon), Veritabanı Yönetimi Ders 10 (2020-2021), Embedded SQL (Gömülü SQL), Empedans Uyumsuzluğu, İndeksler (B-tree, Hash, R-tree), JDBC, Müşteri Silme Bütünlük Trigger Örneği, Stock/Reorder Trigger Örneği (+13 more)
+Cohesion: 0.08
+Nodes (29): Cursor (iterasyon), Veritabanı Yönetimi Ders 10 (2020-2021), Embedded SQL (Gömülü SQL), HTML, Empedans Uyumsuzluğu, İndeksler (B-tree, Hash, R-tree), JDBC, Müşteri Silme Bütünlük Trigger Örneği (+21 more)
 
 ### Community 9167 - "Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 9168 - "Empirical tests"
-Cohesion: 0.16
-Nodes (20): Chi-square test, Collision test (Algorithm S), Coupon collector's test (Algorithm C), Coupon collector's test, Empirical distribution function, Empirical tests, Equidistribution (frequency) test, Factorial number system (+12 more)
+### Community 9168 - "Lojik Devreler Ders 13 (2020-2021)"
+Cohesion: 0.12
+Nodes (32): Lojik Devreler Ders 13 (2020-2021), Adres kod çözücü, BCD (ondalık) sayıcı, Bellek hücresi ve RAM iç mimarisi, Bellekler (Word ve adres yapısı), Cache bellek, Content addressable memory (ilişkisel bellek), Dinamik RAM (DRAM) (+24 more)
 
 ### Community 9169 - "Fibonacci heap"
-Cohesion: 0.04
-Nodes (69): Fibonacci heap, BFS correctness and shortest-path distance (Theorem 22.5), Binomial trees and binomial heaps (Problem 19-2), Breadth-first search (BFS), CASCADING-CUT, CONSOLIDATE, CUT, FIB-HEAP-DECREASE-KEY (+61 more)
+Cohesion: 0.06
+Nodes (52): Fibonacci heap, BFS correctness and shortest-path distance (Theorem 22.5), Binomial trees and binomial heaps (Problem 19-2), Breadth-first search (BFS), Chapter 17 Amortized Analysis, CASCADING-CUT, CONSOLIDATE, CUT (+44 more)
 
 ### Community 9171 - "Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları"
 Cohesion: 0.50
@@ -35873,13 +35958,13 @@ Nodes (3): Devre Teorisi ve Elektronik Devreler Ders Kayıtları Altyazıları, 
 Cohesion: 0.08
 Nodes (20): 1. UML sınıf diyagramı, 2. UML sıralama diyagramı, 3. Etkinlik diyagramı, 4. Durum diyagramı (koltuk), Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular (+12 more)
 
-### Community 9182 - "LLM-MedQA Makale Raporu (Kayra Bulut, Nisan 2025)"
-Cohesion: 0.18
-Nodes (14): Bağlam penceresi, Düşünce zinciri (CoT) ve kendini-tutarlılık, GPT ailesi, Gömmeler (Embeddings), Halüsinasyon ve etik meseleler, LLM-MedQA Makale Raporu (Kayra Bulut, Nisan 2025), LLM-MedQA makalesi, Sağlıkta LLM uygulamaları (+6 more)
+### Community 9182 - "Bölüm 5: Bağlam Farkında Sinirsel Dil Modelleri"
+Cohesion: 0.08
+Nodes (36): Transformers, Bağlam penceresi, Düşünce zinciri (CoT) ve kendini-tutarlılık, GPT ailesi, Gömmeler (Embeddings), Halüsinasyon ve etik meseleler, LLM-MedQA Makale Raporu (Kayra Bulut, Nisan 2025), LLM-MedQA makalesi (+28 more)
 
 ### Community 9183 - "Yazılım Mühendisliği/ders_kayitlari/2022-2023/sube_2/README.md"
 Cohesion: 0.04
-Nodes (38): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
+Nodes (37): Ders 11 Çalışma Özeti, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+29 more)
 
 ### Community 9184 - "9. Ortalama ve Varyansa Dayalı Öz Nitelik Seçimi"
 Cohesion: 0.29
@@ -35905,9 +35990,9 @@ Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazılar
 Cohesion: 0.50
 Nodes (3): Büyük Veri İşleme ve Analizi Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 9196 - "Dersler: haftalık içerik listesi"
+### Community 9196 - "Ders 31 Genişletilmiş Notu: Arama Algoritmaları: Doğrusal Arama, İkili Arama ve Karmaşıklık"
 Cohesion: 0.06
-Nodes (35): 1. Hafta - 4 Ekim 2021, 8. Hafta - 22 Kasım 2021 (vize haftası, ders yok), 9. Hafta - 29 Kasım 2021, Bit yönelimli protokoller, BSC, Data transparency ve DLE, HDLC, HDLC I-S-U frame (+27 more)
+Nodes (30): 1. Arama algoritmalarına giriş, 2.1 Problem ve en kötü durum, 2.2 Hangi döngü?, 2.3 Akış diyagramı, 2.4 İz sürme, 2. Sırasız dizide doğrusal arama, 3.1 Problem, 3.2 İlk tasarım (+22 more)
 
 ### Community 9197 - "Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları"
 Cohesion: 0.50
@@ -35958,8 +36043,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Mikroişlemci Sistemleri Ders Kayıtları Altyazıları
 
 ### Community 9210 - "Büyük Veri İşleme ve Analizi/ders_kayitlari/2020-2021/README.md"
-Cohesion: 0.05
-Nodes (33): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+25 more)
+Cohesion: 0.07
+Nodes (23): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+15 more)
 
 ### Community 9212 - "Mikroişlemci Sistemleri/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.03
@@ -35998,8 +36083,8 @@ Cohesion: 0.33
 Nodes (6): 4.1 Neden normalizasyon?, 4.2 Ondalık ölçekleme (decimal scaling), 4.3 Min-max normalizasyonu, 4.4 Standart sapma (z-score) normalizasyonu, 4.5 Normalizasyon üzerine soru-cevaplar, 4. Normalizasyon
 
 ### Community 9222 - "Mobil Programlamaya Giriş/ders_kayitlari/2022-2023/README.md"
-Cohesion: 0.06
-Nodes (24): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 16 Çalışma Özeti, Ders 1 Çalışma Özeti, Detaylı Açıklamalar (+16 more)
+Cohesion: 0.05
+Nodes (29): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+21 more)
 
 ### Community 9223 - "5. Normalizasyon Örneği"
 Cohesion: 0.33
@@ -36046,8 +36131,8 @@ Cohesion: 0.50
 Nodes (3): Biyoenformatiğe Giriş Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
 ### Community 9237 - "Security audit trail"
-Cohesion: 0.05
-Nodes (44): Agent-based SIEM Configuration, Agentless SIEM Configuration, Alarm processor, Application-level Audit Trail, Audit analyzer, Audit archiver, Audit recorder, Security auditing requirements (+36 more)
+Cohesion: 0.06
+Nodes (35): Agent-based SIEM Configuration, Agentless SIEM Configuration, Alarm processor, Application-level Audit Trail, Audit analyzer, Audit archiver, Audit recorder, Security auditing requirements (+27 more)
 
 ### Community 9238 - "Biyoenformatiğe Giriş/ders_kayitlari/2022-2023/README.md"
 Cohesion: 0.03
@@ -36070,12 +36155,12 @@ Cohesion: 0.08
 Nodes (28): İşletim Sistemleri ders sayfası (README), İşletim Sistemleri (3. sınıf Güz, Zorunlu), OSTEP kitabı önerisi, Gerçek Zamanlı İşletim Sistemi (RTOS), Operating System Concepts 10th (Silberschatz), Çıkmış sorular kaynakları, Öğrenci görüşleri ve zorluk değerlendirmesi, Yapay Zeka Ders Sayfası (3-2) (+20 more)
 
 ### Community 9250 - "Ders 15 Genişletilmiş Notu: Dosya Sistemi Arayüzü (Dosya Kavramı, Erişim Yöntemleri, Dizin Yapıları, Paylaşım ve Koruma) ve Dosya Sistemi Gerçeklemesi (Katmanlı Mimari, FCB, Blok Tahsis Yöntemleri ve Boş Alan Yönetimi)"
-Cohesion: 0.04
-Nodes (49): delete(), display(), game(), main(), 1.1 Yığın Depolamanın Fiziksel Boyutundan Mantıksal Dosya Sistemine Geçiş, 1.3 Dosya Öznitelikleri (File Attributes), 1. Dosya Kavramı (File Concept), Dosya Yapısı ve Dosya Öznitelikleri (File Attributes), 1. Tek Seviyeli Dizin (`Single-Level Directory`) (+41 more)
+Cohesion: 0.05
+Nodes (41): delete(), display(), game(), main(), 1.1 Yığın Depolamanın Fiziksel Boyutundan Mantıksal Dosya Sistemine Geçiş, 1.3 Dosya Öznitelikleri (File Attributes), 1. Dosya Kavramı (File Concept), Dosya Yapısı ve Dosya Öznitelikleri (File Attributes), 2.1 Soyut Veri Tipi Olarak Dosya ve Temel Dosya İşlemleri (+33 more)
 
-### Community 9255 - "Ödev 1: Optimizasyon algoritmalarını karşılaştırma"
-Cohesion: 0.04
-Nodes (67): Kayıp (loss) değer dizileri (stop işaretli, 2. dosya), Kayıp (loss) değer dizileri (stop işaretli, 3. dosya), Business test makaleleri (20), Haber makalesi veri kümesi (business/sport), Business eğitim makaleleri (80), Kelime sözlüğü (5662 kelime, one-hot indeksi), Sport test makaleleri (20), ADAM (Stochastic) (+59 more)
+### Community 9255 - "main.yml (dSYM relocations)"
+Cohesion: 0.12
+Nodes (22): Gradient Descent (GD), Stochastic Gradient Descent (SGD), main.yml (dSYM relocations), adam(), compute_cost(), compute_gradient(), compute_gradient_sgd(), get_weights() (+14 more)
 
 ### Community 9257 - "Nesneye Yönelik Programlama Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -36131,7 +36216,7 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İstatistik ve Olasılık Hesapları 
 
 ### Community 9285 - "Bilgi Erişimi ve Metin İşleme"
 Cohesion: 0.05
-Nodes (65): Bilgi Erişimi ve Metin İşleme, Okapi BM25, Boolean Modeli ve Ters İndeks, Web Veri Madenciliği Sınav Soruları ve Ayrıntılı Çözümler, HITS Otorite ve Göbek, İçerik Tabanlı Filtreleme, Madde-Madde İşbirlikçi Filtreleme, Derece, Arasındalık ve Yakınlık Merkezilği (+57 more)
+Nodes (64): Bilgi Erişimi ve Metin İşleme, Okapi BM25, Boolean Modeli ve Ters İndeks, Web Veri Madenciliği Sınav Soruları ve Ayrıntılı Çözümler, HITS Otorite ve Göbek, İçerik Tabanlı Filtreleme, Madde-Madde İşbirlikçi Filtreleme, Derece, Arasındalık ve Yakınlık Merkezilği (+56 more)
 
 ### Community 9286 - "Ders 4 Genişletilmiş Notu: Insertion Sort'un Durum Analizi ve Büyüme Hızlarının Karşılaştırılması"
 Cohesion: 0.12
@@ -36161,9 +36246,9 @@ Nodes (5): 8.1 Sınıflandırma (classification), 8.2 Kestirim (estimation), 8.3
 Cohesion: 0.40
 Nodes (5): 5.1 Problem ve yöntem, 5.2 Öklid mesafesi, 5.3 Mesafe matrisi, 5.4 Komşu olmayanları saymak, 5. Yöntem 2: Mesafeye Dayalı Çözüm
 
-### Community 9296 - "BaseComponent"
-Cohesion: 0.12
-Nodes (3): BaseComponent, Button, Config
+### Community 9296 - "AdminGirisEkrani"
+Cohesion: 0.09
+Nodes (8): AdminGirisEkrani, MouseAdapter, MouseAdapter, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.MouseAdapter, Runnable
 
 ### Community 9297 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -36247,7 +36332,7 @@ Nodes (4): 7.1 Sınıf etiketli veride çok değişkenli çözüm, 7.2 Hibrit ç
 
 ### Community 9349 - "Bilgisayar Sistemleri ve Ağ Güvenliği/ders_kayitlari/2020-2021/README.md"
 Cohesion: 0.04
-Nodes (34): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 14 Çalışma Özeti, Ders 1 Çalışma Özeti, Detaylı Açıklamalar (+26 more)
+Nodes (39): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+31 more)
 
 ### Community 9373 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -36302,8 +36387,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri Yazılım Mimarisi Ders Kayıtları Altyazıları
 
 ### Community 9388 - "Ders 4 Genişletilmiş Notu: Öğrenci Sunumları: Mikroservislerde Test, Üretime Hazır Servisler ve AWS Lambda ile Dağıtım"
-Cohesion: 0.04
-Nodes (57): 10.1 Sorun: tekrarlanan kod, 10.2 Avantajlar, 10.3 Service mesh deseni, 10. Mikroservis şasisi ve service mesh, 11.1 Örnek mimari, 11.2 Lambda fonksiyonu oluşturma, 11.3 API Gateway ile dışarı açma, 11. AWS Lambda ve API Gateway ile RESTful servis dağıtımı (+49 more)
+Cohesion: 0.03
+Nodes (65): 10.1 Sorun: tekrarlanan kod, 10.2 Avantajlar, 10.3 Service mesh deseni, 10. Mikroservis şasisi ve service mesh, 11.1 Örnek mimari, 11.2 Lambda fonksiyonu oluşturma, 11.3 API Gateway ile dışarı açma, 11. AWS Lambda ve API Gateway ile RESTful servis dağıtımı (+57 more)
 
 ### Community 9389 - "Yapısal Programlama Ders Kayıtları"
 Cohesion: 0.50
@@ -36406,8 +36491,8 @@ Cohesion: 0.50
 Nodes (3): Bilgisayarla Görme Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler
 
 ### Community 9422 - "mlhwtwo.py"
-Cohesion: 0.04
-Nodes (17): classify(), euclidean_distance(), evaluate(), extract_classes(), kfold_partitioner(), knn(), most_common(), partition() (+9 more)
+Cohesion: 0.05
+Nodes (17): Cholesky_Decomposition(), classify(), euclidean_distance(), evaluate(), extract_classes(), kfold_partitioner(), knn(), most_common() (+9 more)
 
 ### Community 9423 - "Nesneye Dayalı Tasarım ve Modelleme Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -36421,9 +36506,9 @@ Nodes (3): Ayrık Matematik Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Veri Sıkıştırma Ders Kayıtları Altyazıları
 
-### Community 9426 - "rungekutta_4.c"
-Cohesion: 0.62
-Nodes (5): calculateODE(), getDifferantialEquation(), main(), rungeKuttaMethod(), writeODE()
+### Community 9426 - "pt"
+Cohesion: 0.16
+Nodes (4): pt, pt, ct(), lt()
 
 ### Community 9427 - "Veri Sıkıştırma/ders_kayitlari/2021-2022/README.md"
 Cohesion: 0.06
@@ -36457,9 +36542,9 @@ Nodes (9): Chapter 4: Measuring business innovation activities, Hierarchy for as
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Sayısal Analiz Ders Kayıtları Altyazıları
 
-### Community 9436 - "minMax"
-Cohesion: 0.14
-Nodes (11): Map, minMax, Reduce, Örnek Sorular, Ders 17 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+3 more)
+### Community 9436 - "ViewEvent"
+Cohesion: 0.11
+Nodes (8): ViewEvent, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener, View.OnClickListener
 
 ### Community 9437 - "Nesneye Yönelik Programlama Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -36479,7 +36564,7 @@ Nodes (3): Alt Seviye Programlama Ders Kayıtları Altyazıları, Eksik Kayıtla
 
 ### Community 9442 - "alt seviye programlama/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.03
-Nodes (53): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+45 more)
+Nodes (48): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+40 more)
 
 ### Community 9443 - "Yapay Zeka/ders_kayitlari/2020-2021/README.md"
 Cohesion: 0.03
@@ -36539,7 +36624,7 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Nesneye Dayalı Tasarım ve Modelleme
 
 ### Community 9458 - "Nesneye Dayalı Tasarım ve Modelleme/ders_kayitlari/2024-2025/README.md"
 Cohesion: 0.03
-Nodes (53): 1. Oturumun Amacı, 2. Örnek Kod: fowler_00 Customer Sınıfı, 3.1 Her kusura karşılık bir eylem, 3.2 Gerekçe ve niyet yazmak, 3.3 İşaretleme tekniği, 3. Kod Kusurlarını İşaretleme ve Eylemleri Gerekçelendirme, Ders 12 Genişletilmiş Notu: Kod Kusuru Analizi Sorusunun Çözüm Yöntemi ve Video Kiralama Örneğinin Son Tasarımı, Dersin Toparlaması (+45 more)
+Nodes (54): 1. Oturumun Amacı, 2. Örnek Kod: fowler_00 Customer Sınıfı, 3.1 Her kusura karşılık bir eylem, 3.2 Gerekçe ve niyet yazmak, 3.3 İşaretleme tekniği, 3. Kod Kusurlarını İşaretleme ve Eylemleri Gerekçelendirme, 4. Son Tasarımın Sınıf Şemasıyla Gösterilmesi, Ders 12 Genişletilmiş Notu: Kod Kusuru Analizi Sorusunun Çözüm Yöntemi ve Video Kiralama Örneğinin Son Tasarımı (+46 more)
 
 ### Community 9459 - "Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları"
 Cohesion: 0.50
@@ -36565,9 +36650,9 @@ Nodes (6): 19.1 REST tabanlı request/response etkileşimi, 19.2 Spring Cloud Co
 Cohesion: 0.15
 Nodes (13): 7.10 Adalet: mahkeme kararları, 7.11 Beyin aktiviteleri, 7.1 Kredi talepleri ve e-ticaret, 7.2 Gen mikrodizilimleri, 7.3 İris, yüz ve parmak izi, 7.4 Ses: kimin sesi, ne diyor, 7.5 İmza, 7.6 Spam tespiti (+5 more)
 
-### Community 9467 - "switch Statement"
-Cohesion: 0.11
-Nodes (17): = versus == Error, break Statement and Fall-Through, Chained Relational Operators Error (0 <= x <= 4), Common Programming Errors in Selection (Sec 4.9), Function comp_tax, if Statements with Compound Statements (Sec 4.4), Controlling Expression (int or char), else Matches Closest Unmatched if (+9 more)
+### Community 9467 - "Ders 27 Genişletilmiş Notu: Uygulama: Acil Servis Öncelikli Hasta Kuyruğu (Yapı, Bağlı Liste, Dosya) ve Makefile"
+Cohesion: 0.07
+Nodes (28): 11. Programın Çalıştırılması, 12.1 Küçük örnek, 12.2 Elle derleme ve bağlama, 12.3 Makefile, 12. Ayrı Derleme, Bağlama ve Makefile, 1. Uygulama Sorusu: Acil Servis Kuyruğu, 2. Neden Bağlı Liste, Neden Yapı?, 3.1 Yapı tanımları (+20 more)
 
 ### Community 9470 - "İleri İngilizce 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -36913,9 +36998,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yapısal Programlama Ders Kayıtları
 Cohesion: 0.06
 Nodes (23): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 17 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+15 more)
 
-### Community 9631 - "Bitirme Çalışması Ders Kayıtları"
-Cohesion: 0.50
-Nodes (3): Bitirme Çalışması Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler
+### Community 9631 - ".end"
+Cohesion: 0.03
+Nodes (73): 3.1 Sona ekleme için son düğümü saklamak, 3.2 Fonksiyonun kodu, 3. Dosyadan Okuyup Bağlı Liste Kurmak, Ders 24 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+65 more)
 
 ### Community 9632 - "Ders 1 Genişletilmiş Notu: Asimptotik Notasyonlar ve Özyinelemeli Algoritmaların Analizine Giriş"
 Cohesion: 0.22
@@ -37017,9 +37102,9 @@ Nodes (13): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri İşletim Sistemleri Ders Kayıtları Altyazıları
 
-### Community 9712 - "Endüktör (bobin)"
-Cohesion: 0.11
-Nodes (20): BLM1032 Kısa Sınav 2 (3 Haziran 2021), Anahtar açılması sonrası iL(t) hesabı (R=40Ω,C=25mF,L=10H), 2023 Lab 7: Endüktans ve RLC devreleri, RLC devreleri ve geçici hal, Anahtarlı RLC devresi t=0 başlangıç koşulları, 2023 Deney 9: AC RL analizi, AC RL devre analizi, Paralel RL devresi (+12 more)
+### Community 9712 - "ERP"
+Cohesion: 0.15
+Nodes (29): Bilgi Sistemi, Bilgi Tabanlı İş Sistemi (BTİS), İşlemsel Bilgi Sistemi (İBS), Karar Destek Sistemi (KDS), Ofis Otomasyon Sistemi (OOS), OLAP, Yönetim Bilgi Sistemi (YBS), Üst Yönetim Bilgi Sistemi (ÜBS) (+21 more)
 
 ### Community 9713 - "İleri İşletim Sistemleri/ders_kayitlari/2020-2021/README.md"
 Cohesion: 0.11
@@ -37053,10 +37138,6 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazı
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Nesneye Yönelik Programlama Ders Kayıtları Altyazıları
 
-### Community 9722 - "concurrent"
-Cohesion: 0.04
-Nodes (18): MatchWithFixedPool, MatchWithPool, MatchWithPoolVerbose, BankSimulation, BankSimulationV2, BankSimulation, BankSimulationV2, MatchWithFixedPool (+10 more)
-
 ### Community 9723 - "TÜRKÇE 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıları
@@ -37066,8 +37147,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Mobil Teknolojiler İçin Veri İşleme Teknikleri Ders Kayıtları Altyazıları
 
 ### Community 9725 - "Nesneye Yönelik Programlama/ders_kayitlari/2020-2021/sube_2/README.md"
-Cohesion: 0.04
-Nodes (46): 1. Oturumun Niteliği, 2. Sorunun Senaryosu: Odalar ve Müşteriler, 3.1 saveBookings, 3.2 customerInfo, 3.3 changeBooking, 3. Management Sınıfı ve Metotları, 4. Beklenen Çıktı ve Hesap, Ders 23 Genişletilmiş Notu: Uygulama Sınavı: Serileştirme ile Otel Rezervasyonu (+38 more)
+Cohesion: 0.03
+Nodes (51): 1. Oturumun Niteliği, 2. Sorunun Senaryosu: Odalar ve Müşteriler, 3.1 saveBookings, 3.2 customerInfo, 3.3 changeBooking, 3. Management Sınıfı ve Metotları, 4. Beklenen Çıktı ve Hesap, Ders 23 Genişletilmiş Notu: Uygulama Sınavı: Serileştirme ile Otel Rezervasyonu (+43 more)
 
 ### Community 9726 - "Ayrık Matematik Ders Kayıtları"
 Cohesion: 0.50
@@ -37126,8 +37207,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yapısal Programlama Ders Kayıtları Altyazıları
 
 ### Community 9741 - "Yapısal Programlama/ders_kayitlari/2020-2021/sube_2/README.md"
-Cohesion: 0.03
-Nodes (48): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 15 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+40 more)
+Cohesion: 0.04
+Nodes (43): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+35 more)
 
 ### Community 9742 - "Yazilim Proje Yönetimi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37163,7 +37244,7 @@ Nodes (38): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Ho
 
 ### Community 9755 - "Veri Madenciliğine Giriş/ders_kayitlari/2020-2021/sube_1/README.md"
 Cohesion: 0.04
-Nodes (38): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
+Nodes (38): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
 
 ### Community 9758 - "Yazılım Kalite ve Test Süreci Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37173,29 +37254,29 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yazılım Kalite ve Test Süreci Ders
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri İngilizce 1 Ders Kayıtları Altyazıları
 
-### Community 9760 - "Detaylı Açıklamalar"
-Cohesion: 0.10
-Nodes (20): Başa Ekleme, Başa Ekleme, Başa Ekleme (Insert at Front), Dairesel Bağlı Liste (Circular Linked List), Dairesel Listeyi Yazdırma, Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar (+12 more)
+### Community 9760 - "BLM3041 Hafta I: VTYS Giriş, Temel Kavramlar"
+Cohesion: 0.12
+Nodes (29): ACID, Ders 1 Çalışma Özeti: Veritabanı Temelleri (PDF), 4 temel dosya tipi (veri, indeks, log, veri sözlüğü), B-tree ve hash organizasyonları, Metadata / veri sözlüğü, NoSQL, Veri, Kontrollü veri tekrarı (+21 more)
 
 ### Community 9761 - "1. CQRS: motivasyon ve sorgu gerçekleştirmenin zorlukları"
 Cohesion: 0.40
 Nodes (5): 1.1 Mevcut yaklaşım: API composition, 1.2 `findOrderHistory()` örneği, 1.3 `findAvailableRestaurants()` örneği, 1.4 Komut ile sorgunun aynı yerde olmasının sorunu, 1. CQRS: motivasyon ve sorgu gerçekleştirmenin zorlukları
 
 ### Community 9762 - "stbi__parse_png_file"
-Cohesion: 0.13
-Nodes (24): stbi__addsizes_valid(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__compute_y_16(), stbi__convert_format16(), stbi__create_png_alpha_expand8(), stbi__create_png_image(), stbi__create_png_image_raw() (+16 more)
+Cohesion: 0.11
+Nodes (39): stbi__addsizes_valid(), stbi__bitcount(), stbi__bmp_load(), stbi__compute_transparency(), stbi__compute_transparency16(), stbi__convert_format(), stbi__convert_format16(), stbi__create_png_alpha_expand8() (+31 more)
 
 ### Community 9764 - "BGP"
-Cohesion: 0.08
-Nodes (26): AS-PATH, Autonomous System, BGP, BGP routing policy, Border Gateway Protocol (BGP), Chapter 5 Network Layer Control Plane (sections 5.3-5.8), Chapter 5 problems and assignments, External BGP (eBGP) (+18 more)
+Cohesion: 0.10
+Nodes (21): AS-PATH, Autonomous System, BGP, BGP routing policy, Chapter 5 Network Layer Control Plane (sections 5.3-5.8), Chapter 5 problems and assignments, Gateway and internal routers, ICMP (+13 more)
 
 ### Community 9765 - "Logic Gates"
 Cohesion: 0.06
-Nodes (48): Combinational Circuits, Full Adder, Half Adder, Logic Gates, Majority Voting Circuit, Threshold Gate, Boolean Algebra Identities (identity, complement, commutative, distribution, involution, absorption, associative, de Morgan), Abstraction ve Three -y's (Hierarchy, Modularity, Regularity) (+40 more)
+Nodes (49): Moore's Law, Combinational Circuits, Full Adder, Half Adder, Logic Gates, Majority Voting Circuit, Threshold Gate, Boolean Algebra Identities (identity, complement, commutative, distribution, involution, absorption, associative, de Morgan) (+41 more)
 
 ### Community 9766 - "Index (A-Z)"
-Cohesion: 0.07
-Nodes (32): AIMD, Connectionless multiplexing and demultiplexing, Diffie-Hellman algorithm, Dynamic Host Configuration Protocol (DHCP), Fast recovery, FIFO, FIFO Queueing, HTTP/3 (+24 more)
+Cohesion: 0.09
+Nodes (25): Border Gateway Protocol (BGP), Diffie-Hellman algorithm, Dynamic Host Configuration Protocol (DHCP), External BGP (eBGP), FIFO, FIFO Queueing, Index (A-Z), Internal BGP (iBGP) (+17 more)
 
 ### Community 9768 - "Veritabanı Yönetimi Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37229,13 +37310,13 @@ Nodes (48): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Ho
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Türkçe 2 Ders Kayıtları Altyazıları
 
-### Community 9782 - "Ders 14 Genişletilmiş Notu: Yapılar (struct) ve Bağlı Liste Gerçeklemesi"
+### Community 9782 - "GenerateEquation"
 Cohesion: 0.10
-Nodes (20): 10. Listeyi Yazdırmak, 11. Yeni Düğüm Oluşturmak, 12. Listenin Sonuna Eklemek, 13. scanf ile Yapı Alanına Doğrudan Okuma Denemesi, 14. Araya Eleman Eklemek: insert_after, 15. Listeyi Boşaltmak: freeList, 1. Bölümün Planı, 2. Yapı Neden Gerekir? (+12 more)
+Nodes (4): GenerateEquation, QDialog, WindowAdapter, WindowAdapter
 
-### Community 9783 - "Ders 9 Genişletilmiş Notu: NextGenPOS Tasarım Modeli (Durum, Tasarım Sınıf ve Sıralama Şemaları) ve Yazılım Ölçütlerine Giriş"
+### Community 9783 - "MusteriKayitEkrani"
 Cohesion: 0.10
-Nodes (19): 1.1 Durum Şemasında Odak Varlığın, Durumların ve Olayların Belirlenmesi, 1.2 Canlı Derste Çizilen Kasa Durum Şeması ve Tasarım Kararları, 1.3 Öğrenci Sorusu (Bitiş Durumu) ve Ders Notlarındaki Şema ile Karşılaştırma, 1. `barkodGir(barkod: String)` Sıralama Şeması (ekrandan, 01:35:25), 1. NextGenPOS Kasa Varlığı İçin UML Durum Şeması (State Diagram) Tasarımı, 2.1 `Kasa`, `Şube`, `Satış`, `SatışKalemi`, `Ürün` ve `Ödeme` Sınıflarının Zenginleştirilmesi, 2.2 Tamamlanmış Tasarım Sınıf Şeması ve Ders Notlarıyla Karşılaştırma, 2.3 Üç Temel İşlem İçin UML Sıralama Şemaları (Sequence Diagrams) (+11 more)
+Nodes (7): MusteriKayitEkrani, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.MouseAdapter, Runnable, MouseAdapter, MouseAdapter
 
 ### Community 9784 - "Türkçe 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -37282,7 +37363,7 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Veri Madenciliği Ders Kayıtları
 
 ### Community 9797 - "Ders 2 Genişletilmiş Notu: Koruma Halkaları ve Donanımla Erişim Denetimi (Multics Makalesi)"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (15): 1. Dersin Biçimi: Makale Tartışması, 2. Makalenin Kurduğu Sistem: Ölçütler ve Segmentli Sanal Bellek, 3. Makalenin Ana Motivasyonu: Erişim Denetimi, 4. 1972'den Bugüne: Intel Korumalı Kipi ve Linux Halkaları, 4.1 Linux'ta Ring 0 ve Ring 3, 4.2 Hangi Mimari?, 5. Bu Yapıdan Önce Erişim Denetimi, 6. Bir Makale Nasıl Okunmalı? (+7 more)
 
 ### Community 9798 - "Veri Madenciliği Ders Kayıtları"
@@ -37366,8 +37447,8 @@ Cohesion: 0.25
 Nodes (8): 6.1 Çok renkli bir fotoğraf, 6.2 Tek değerin baskın olduğu bir görüntü (C ile), 6.3 Gri seviyeli görüntü testi, 6.4 RGB görüntünün tek boyutlu listeye çevrilmesi, 6.5 Kanal kanal Huffman (MATLAB), 6.6 Farklı ton dağılımlı üç görüntü, 6.7 Metin üzerinde Huffman, 6. Diğer Görüntü Projeleri ve Sonuçlar
 
 ### Community 9823 - "Parçacık Filtresi"
-Cohesion: 0.18
-Nodes (21): Parçacık Filtresi, Box-Muller metodu, Central Limit Theorem ile örnekleme, Discrete Bayes filtresi, Parametrik Olmayan Filtreler (Olasılıksal Robotik 5), Histogram filtresi, Resampling / Importance sampling, Ters dönüşüm ile örnekleme (+13 more)
+Cohesion: 0.30
+Nodes (12): Parçacık Filtresi, Box-Muller metodu, Central Limit Theorem ile örnekleme, Discrete Bayes filtresi, Parametrik Olmayan Filtreler (Olasılıksal Robotik 5), Histogram filtresi, Resampling / Importance sampling, Ters dönüşüm ile örnekleme (+4 more)
 
 ### Community 9824 - "İleri İngilizce 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37398,8 +37479,8 @@ Cohesion: 0.50
 Nodes (3): Algoritma Analizi Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
 ### Community 9831 - "Algoritma Analizi/ders_kayitlari/2020-2021/sube_1/README.md"
-Cohesion: 0.05
-Nodes (33): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+25 more)
+Cohesion: 0.04
+Nodes (38): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
 
 ### Community 9832 - "Yapay Zeka Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37438,8 +37519,8 @@ Cohesion: 0.67
 Nodes (4): kruskal(), main(), printTree(), sort()
 
 ### Community 9842 - "Symmetric encryption"
-Cohesion: 0.04
-Nodes (73): Affine Cipher, Autokey Cipher, Block Cipher, Cryptanalysis, Cryptography (Section 4.6), Cryptosystem, Frequency Analysis, Vigenère Cipher (+65 more)
+Cohesion: 0.03
+Nodes (94): Hill Şifreleme Algoritması Raporu (Ali Emre Nebiler, Emre Arslanoğlu), Determinant ve mod 26 aralarında asal olma kısıtı, Hibrit Sistemler (SSL/TLS), Hill Şifreleme (Hill Cipher), Hill Algoritması Karmaşıklığı O(M*N), Sezar, Vigenere, Vernam, Playfair ile Kıyaslama, Anahtar Matrisinin Tersi (Kofaktör, mod 26), Simetrik Şifreleme (+86 more)
 
 ### Community 9844 - "Matematik 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -37457,9 +37538,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İLERİ İNGİLİZCE 2 Ders Kayıtlar
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İLERİ İNGİLİZCE 2 Ders Kayıtları
 
-### Community 9848 - "Detaylı Açıklamalar"
-Cohesion: 0.11
-Nodes (18): Bir ağacın BST olup olmadığını kontrol etme, Bir ağacın heap (max heap) olup olmadığını kontrol etme, Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Ev çalışması, Genel Konular, Heap ile öncelikli kuyruk işlemleri (+10 more)
+### Community 9848 - "Veri Yapıları ve Algoritmalar/ders_kayitlari/2022-2023/sube_1/README.md"
+Cohesion: 0.04
+Nodes (46): Bir ağacın BST olup olmadığını kontrol etme, Bir ağacın heap (max heap) olup olmadığını kontrol etme, Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Ev çalışması, Genel Konular, Heap ile öncelikli kuyruk işlemleri (+38 more)
 
 ### Community 9850 - "Lineer Cebir Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -37470,16 +37551,16 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders Kayıtları
 
 ### Community 9852 - "Fiziksel Katman"
-Cohesion: 0.11
-Nodes (24): Bakır Kablolar (Koaksiyel UTP STP), Analog sinyaller, Attenuation (zayıflama, dB), UTP kategorileri (Cat5e vb.), Desibel (dB), DCE (Data Circuit-terminating Equipment), Delay (gecikme), Dijital sinyaller (+16 more)
+Cohesion: 0.10
+Nodes (25): Printed circuit boards, Power supply noise and bypass capacitors, Reflections and terminations, Bakır Kablolar (Koaksiyel UTP STP), Analog sinyaller, Attenuation (zayıflama, dB), Desibel (dB), DCE (Data Circuit-terminating Equipment) (+17 more)
 
 ### Community 9854 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 9855 - "Ödev 2: Tez Yılı Tahmininde Kolektif Öğrenme"
-Cohesion: 0.15
-Nodes (20): Embedding bilgileri (1024 boyut), PCA uygulanmamış ham 1024 embedding, Embedding bilgileri (128 boyut), L2 normalize edilmiş embeddingler, PCA boyut indirgeme, Embedding bilgileri (256 boyut), En iyi veriseti abstract, accuracy 0.0738, Random Forest sonuç raporu (embed 1024) (+12 more)
+### Community 9855 - "2019/Untitled1.cpp"
+Cohesion: 0.11
+Nodes (16): main(), main(), matrisCarp(), matrisTopla(), matrisYaz(), _tmain(), matrisCarp(), matrisTopla() (+8 more)
 
 ### Community 9857 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -37657,9 +37738,9 @@ Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları, 📚 Ders 
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Elektronik Devreler Ders Kayıtları Altyazıları, Hafta Bilgisi
 
-### Community 9952 - "Company XML dosyası"
-Cohesion: 0.19
-Nodes (19): BaseX programı, Company XML dosyası, Ders 11 Lab: XQuery (altyazı), Örnek: tüm çalışan bilgileri, Örnek: Elizabeth akrabalı çalışanın yöneticisi (3 tablo), Örnek: Franklin Wong'un çalıştığı proje numaraları (2 tablo), Örnek: Operating System projesi ve Software departmanı kesişimi, Örnek: Sales departmanı ofisleri, alfabetik sıralı (+11 more)
+### Community 9952 - "📖 Dersler"
+Cohesion: 0.07
+Nodes (24): Matematik 1, 🗓 1. Yıl - Bahar, 🗓 1. Yıl - Güz, 🗓 3. Yıl - Bahar, 🗓 4. Yıl - Bahar, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (28 oy), 📘 Bilgisayar Projesi (+16 more)
 
 ### Community 9953 - "Elektronik Devreler Ders Kayıtları"
 Cohesion: 0.50
@@ -37806,8 +37887,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yapısal Programlama Ders Kayıtları Altyazıları
 
 ### Community 10095 - "İşletim Sistemleri/ders_kayitlari/2024-2025/README.md"
-Cohesion: 0.03
-Nodes (60): 10.1 wait1.c, 10.2 wait2.c: fazladan bir wait, 10. wait ile Eşzamanlama, 11. kill ile Proses Sonlandırma, 12. Ders Sonundaki Sorular, 1. Uygulamanın Kapsamı, 2. Program, Proses ve Proses Tablosu, 3. fork ile Proses Oluşturma (+52 more)
+Cohesion: 0.04
+Nodes (38): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+30 more)
 
 ### Community 10096 - "Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları"
 Cohesion: 0.50
@@ -37917,9 +37998,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Veri İletişimi v
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Yazılım Mühendisliği Ders Kayıtları Altyazıları
 
-### Community 10123 - "Yazılım Mühendisliği/ders_kayitlari/2020-2021/sube_2/README.md"
-Cohesion: 0.09
-Nodes (19): 1. Yazılım Proje Yönetimi İlkeleri, Kişi Etkenleri ve Takım Yapıları, 2. Süreç Ölçütleri ve Maliyet Tahmin Modelleri (Delphi, Analiz, Walston-Felix, COCOMO, PNR), 3. Sınama Amaçlı Yapılanma, Sınama Basamakları ve Resmi Gözden Geçirme (IEEE 1028), Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+11 more)
+### Community 10123 - "Ders 11 Çalışma Özeti"
+Cohesion: 0.22
+Nodes (8): 1. Yazılım Proje Yönetimi İlkeleri, Kişi Etkenleri ve Takım Yapıları, 2. Süreç Ölçütleri ve Maliyet Tahmin Modelleri (Delphi, Analiz, Walston-Felix, COCOMO, PNR), 3. Sınama Amaçlı Yapılanma, Sınama Basamakları ve Resmi Gözden Geçirme (IEEE 1028), Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 10124 - "Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları"
 Cohesion: 0.50
@@ -38653,9 +38734,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Türkçe 2 Ders Kayıtları Altyazıl
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 2 Ders Kayıtları Altyazıları
 
-### Community 10320 - "5. Seri Soruları"
-Cohesion: 0.11
-Nodes (18): 5.10 Örnek 22: İntegral testi, $\sum\dfrac1{n\left(1+(\ln n)^2\right)}$, 5.11 Örnek 23: $\frac1{3^n}$ ve $\frac1{\sqrt[3]n}$ içeren seri, 5.12 Örnek 24: Karşılaştırma testi, $\sum\dfrac1{n+2^n}$, 5.13 Oran ve kök testleri, 5.14 Örnek 25: Karışık karakter soruları, 5.15 Örnek 26: Mutlak değerli karşılaştırma, 5.16 Örnek 27: $\sum(-1)^n\dfrac{n+1}{n+4}$, 5.17 Örnek 28: Kök testi, $\sum\dfrac n{e^n}$ (+10 more)
+### Community 10320 - "V"
+Cohesion: 0.09
+Nodes (3): R, V, Y
 
 ### Community 10321 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -38866,8 +38947,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazıları
 
 ### Community 10379 - "DateTime"
-Cohesion: 0.03
-Nodes (43): ChangeCaptioningDataset, ImageCaptioningDataset, levir_cc_dataloader(), rsicd_data_loader(), analyze_class_level_agreement(), analyze_model_agreement(), get_predictions(), load_embeddings() (+35 more)
+Cohesion: 0.05
+Nodes (31): analyze_class_level_agreement(), analyze_model_agreement(), get_predictions(), load_embeddings(), load_model(), main(), plot_agreement_matrix(), evaluate_ensemble() (+23 more)
 
 ### Community 10380 - "Matematik 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -38902,8 +38983,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 
 ### Community 10389 - "Toplu madde disiplini (lumped matter discipline)"
-Cohesion: 0.06
-Nodes (37): Gerilim Bölücü Devre, Kirchhoff Akım Yasası (KCL), Kirchhoff Gerilim Yasası (KVL), Lab 2 Raporu - Yusuf Safa Köksal (KCL, KVL, Gerilim Bölücü Devre), Düğüm Gerilimi (Node Voltage) Analizi, Lab 3 Raporu - Yusuf Safa Köksal (Çevre Akımları ve Düğüm Gerilimi Analizi), Çevre (Mesh) Akımları Yöntemi, Birinci derece geçici rejimler (dizin konusu) (+29 more)
+Cohesion: 0.07
+Nodes (35): Gerilim Bölücü Devre, Kirchhoff Akım Yasası (KCL), Kirchhoff Gerilim Yasası (KVL), Lab 2 Raporu - Yusuf Safa Köksal (KCL, KVL, Gerilim Bölücü Devre), Düğüm Gerilimi (Node Voltage) Analizi, Lab 3 Raporu - Yusuf Safa Köksal (Çevre Akımları ve Düğüm Gerilimi Analizi), Çevre (Mesh) Akımları Yöntemi, Birinci derece geçici rejimler (dizin konusu) (+27 more)
 
 ### Community 10390 - "Matematik 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -39070,8 +39151,8 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Lineer Cebir Ders Kayıtları
 
 ### Community 10432 - "Term Projesi: CNN ile imge sınıflandırma ve benzer imge getirme"
-Cohesion: 0.15
-Nodes (20): Convolution Layer görevi, Convolution Layer, 3 evrişimli katman + 2 Dense CNN, Fashion-MNIST CNN_Model, Fully-connected katman öznitelik vektörü, Keras, Oxford Buildings veriseti, Term Projesi: CNN ile imge sınıflandırma ve benzer imge getirme (+12 more)
+Cohesion: 0.16
+Nodes (19): Convolution Layer, 3 evrişimli katman + 2 Dense CNN, Fashion-MNIST CNN_Model, Fully-connected katman öznitelik vektörü, Keras, Oxford Buildings veriseti, Term Projesi: CNN ile imge sınıflandırma ve benzer imge getirme, VGG-16 ImageNet ağırlıkları (+11 more)
 
 ### Community 10433 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39117,9 +39198,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıl
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, TÜRKÇE 1 Ders Kayıtları
 
-### Community 10444 - "Matrix"
-Cohesion: 0.28
-Nodes (16): gamestate_recursive_solver(), gamestate_solver(), matrix_duplicate(), matrix_generator(), matrix_has_dead_end(), matrix_init(), matrix_is_full(), matrix_is_solved() (+8 more)
+### Community 10444 - "Chapter 8 BJT Small-Signal Analysis"
+Cohesion: 0.11
+Nodes (24): re = 26 mV / IE, BJT amplifier troubleshooting with oscilloscope, CE emitter-bias configuration (bypassed/unbypassed), Common-emitter fixed-bias configuration, Chapter 8 BJT Small-Signal Analysis, Chapter 9 FET Small-Signal Analysis, Example 8.13 complete hybrid CE, Example 8.1 fixed-bias numeric (+16 more)
 
 ### Community 10445 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -39143,7 +39224,7 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 1 Ders K
 
 ### Community 10450 - "conio"
 Cohesion: 0.02
-Nodes (64): binarySearch(), main(), main(), fakt(), main(), findMax(), main(), main() (+56 more)
+Nodes (62): binarySearch(), main(), main(), fakt(), main(), findMax(), main(), main() (+54 more)
 
 ### Community 10451 - "Ders 8 Genişletilmiş Notu: Seminer Sunumları: Hata Yüzeyi Analizi ve Tek Hücre RNA Dizileme"
 Cohesion: 0.08
@@ -39153,9 +39234,9 @@ Nodes (24): 1. Hata parametre yüzeylerine giriş, 2.1 Doğrusal yol deneyi (201
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İLERİ İNGİLİZCE 2 Ders Kayıtları
 
-### Community 10453 - "User"
-Cohesion: 0.03
-Nodes (33): UserNotificationsController, MovieCommentMapper, NotificationMapper, UserActivityMapper, UserFriendRequestMapper, UserMapper, Notification, NotificationType (+25 more)
+### Community 10453 - "org.springframework.data.domain.Page"
+Cohesion: 0.02
+Nodes (48): UserMessageController, MovieCommentMapper, MovieFrontMapper, NotificationMapper, PrivateMessageMapper, UserActivityMapper, UserFriendRequestMapper, UserMapper (+40 more)
 
 ### Community 10454 - "Chapter 19 Güç Kaynakları"
 Cohesion: 0.29
@@ -39198,8 +39279,8 @@ Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler
 
 ### Community 10464 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
-Cohesion: 0.04
-Nodes (48): Akış Diyagramı, Arama Kodu, Boyer-Moore Yaklaşımı, Ders 24 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dizgi Arama Problemi, Durum 1: Uyuşmayan Karakter Desende Yok (+40 more)
+Cohesion: 0.09
+Nodes (23): 🔹 Ders 10: Ödev Soru-Cevap Saati, 🔹 Ders 11: Bağlı Liste ile Kuyruk, Ağaç Terminolojisi ve İkili Ağaçta Gezinme, 🔹 Ders 12: Quiz ve Ödev Çözümleri: Renk Histogramı, Dinamik Bellek ve Yığınla Kelime Çözme, 🔹 Ders 13: İkili Arama Ağacı, Heap Ağacı ve Heap Sort, 🔹 Ders 14: Quiz Hataları, Yığınla Kuyruk ve First Child / Next Sibling Ağaç Gösterimi, 🔹 Ders 18: Ödev Çözümü Duyurusu, 🔹 Ders 19: Graflara Giriş, Komşuluk Matrisi ve Listesi, Prim ve Kruskal ile En Küçük Kapsayan Ağaç, 🔹 Ders 1: Algoritma Tasarım İlkeleri, Doğrusal Arama, Eratosthenes Kalburu ve Sıralı Dizilerin Birleştirilmesi (+15 more)
 
 ### Community 10465 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39242,8 +39323,8 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 2 Ders Kayıtları
 
 ### Community 10475 - "Enes Genç Panel De Pon dönem projesi raporu"
-Cohesion: 0.11
-Nodes (22): addRandomLine, BORDER çerçeve karakterleri, controlModeFillBoard, drawBoard, drawStats, Enes Genç Panel De Pon dönem projesi raporu, explode fonksiyonu, gameCanContinue (+14 more)
+Cohesion: 0.14
+Nodes (18): BORDER çerçeve karakterleri, controlModeFillBoard, drawBoard, drawStats, Enes Genç Panel De Pon dönem projesi raporu, explode fonksiyonu, gameCanContinue, mainMenu (+10 more)
 
 ### Community 10476 - "Lineer Cebir Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39369,13 +39450,13 @@ Nodes (14): countDeclaredVariables(), doubleHash(), errorCheck(), freeSymbolTabl
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İLERİ İNGİLİZCE 2 Ders Kayıtları
 
-### Community 10508 - "Kitap"
-Cohesion: 0.11
-Nodes (4): 2. UML sınıf diyagramı, Kitap, Kitaplik, Raf
+### Community 10508 - "VIBA Ders Notları (Veri İletişimi ve Bilgisayar Ağları, 2026)"
+Cohesion: 0.12
+Nodes (26): Tıkanıklık kontrolü, ARP, Devre anahtarlama (Circuit Switching), Datagram, DHCP (DORA), VIBA Ders Notları (Veri İletişimi ve Bilgisayar Ağları, 2026), ICMP (ping, traceroute), IDS / IPS sistemleri (+18 more)
 
 ### Community 10509 - "Symbol table (ST API)"
-Cohesion: 0.02
-Nodes (107): Binary search (rank), Algorithms, 4th Edition (Sedgewick & Wayne), Booksite algs4.cs.princeton.edu, Brute-force search, Binary search trees, Chapter 6 Context, Depth-first and breadth-first search, Chapter 4 Graphs (+99 more)
+Cohesion: 0.03
+Nodes (80): Binary search (rank), Algorithms, 4th Edition (Sedgewick & Wayne), Booksite algs4.cs.princeton.edu, Brute-force search, Binary search trees, Depth-first and breadth-first search, Chapter 4 Graphs, Hash tables (+72 more)
 
 ### Community 10510 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39422,12 +39503,12 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 2 Ders Kayıtları
 
 ### Community 10521 - "Lectures Index"
-Cohesion: 0.10
-Nodes (26): Z. Cihan Tayşi, Araçlar Arası Haberleşme dersi, Araçlar Arası Haberleşme README, Araştırma Yöntemleri ve Bilimsel Etik dersi, Ders Mesleki Açıdan Gerekli Mi yıldız puanı, Dersi Kolay Geçer Miyim yıldız puanı, Araştırma Yöntemleri ve Bilimsel Etik README, Dersin amaçları ve kapsamı (+18 more)
+Cohesion: 0.05
+Nodes (58): Z. Cihan Tayşi, Araçlar Arası Haberleşme dersi, Araçlar Arası Haberleşme README, Araştırma Yöntemleri ve Bilimsel Etik dersi, Ders Mesleki Açıdan Gerekli Mi yıldız puanı, Dersi Kolay Geçer Miyim yıldız puanı, Araştırma Yöntemleri ve Bilimsel Etik README, Dersin amaçları ve kapsamı (+50 more)
 
-### Community 10522 - "Ders 5 Genişletilmiş Notu: Alan Modeli Oluşturulması, Nesneye Yönelik Tasarım Ölçütleri, Bağlaşım (Coupling) ve Uyum (Cohesion)"
-Cohesion: 0.11
-Nodes (18): 1. Nesneye Yönelik Çözümleme Süreci: Sınıfların Belirlenmesi ve 3 Seçim Kuralı, 2. NextGenPOS Örneğinde Aday Varlıkların Elenmesi ve Sınıf/Üye Alan Kararları, 3.1 Üye Alanların Veri Tipleri ve Hesaplanan Alan Tartışması, 3.2 `Satış Kalemi` Sınıfının Zorunluluğu ve *Primitive Obsession* Kusuru, 3.3 Sınıflar Arası İlişkilerin Yönü ve Çokluk (Multiplicity) Kuralları, 3. Alan Modelinin (UML Sınıf Şeması) Çizilmesi, Satış Kalemi ve Primitive Obsession, 4. Çözümleme Sürecinin Belgelendirilmesi (Artefact'ler), 5.1 Tasarım Ölçütleri (Design Criteria) (+10 more)
+### Community 10522 - "Yazılım Mühendisliği/ders_kayitlari/2020-2021/sube_2/README.md"
+Cohesion: 0.03
+Nodes (56): 1. Nesneye Yönelik Çözümleme Süreci: Sınıfların Belirlenmesi ve 3 Seçim Kuralı, 2. NextGenPOS Örneğinde Aday Varlıkların Elenmesi ve Sınıf/Üye Alan Kararları, 3.1 Üye Alanların Veri Tipleri ve Hesaplanan Alan Tartışması, 3.2 `Satış Kalemi` Sınıfının Zorunluluğu ve *Primitive Obsession* Kusuru, 3.3 Sınıflar Arası İlişkilerin Yönü ve Çokluk (Multiplicity) Kuralları, 3. Alan Modelinin (UML Sınıf Şeması) Çizilmesi, Satış Kalemi ve Primitive Obsession, 4. Çözümleme Sürecinin Belgelendirilmesi (Artefact'ler), 5.1 Tasarım Ölçütleri (Design Criteria) (+48 more)
 
 ### Community 10523 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -39449,9 +39530,9 @@ Nodes (17): Menü ekranı, BLM3520 Ödev-2 yönergesi (2020-2021 Bahar), Soru ek
 Cohesion: 0.60
 Nodes (5): elemanEkle(), elemanSil(), listeleriYazdir(), main(), siraliYazdir()
 
-### Community 10528 - "Bağıl değerlendirme (harf aralıkları)"
-Cohesion: 0.13
-Nodes (21): Bilgisayar Bilimlerine Giriş (BLM1011), 2022-2023 güz Final harf aralıkları (G1), Dr.Öğr.Üyesi Göksel BİRİCİK, 2022-2023 güz harf aralıkları (MAG), 2024-2025 güz harf aralıkları (G1), 2024-2025 güz harf aralıkları (MAG), 2025-2026 güz harf aralıkları (HİT), Doç.Dr. Hafiza İrem TÜRKMEN ÇİLİNGİR (+13 more)
+### Community 10528 - "hüsamettin_ışıktaş/create_embeddings.py"
+Cohesion: 0.11
+Nodes (12): apply_pca(), apply_pca_to_embeddings(), create_embeddings(), generate_embeddings_info(), load_model(), main(), mean_pooling(), parse_args() (+4 more)
 
 ### Community 10529 - "stbi__err"
 Cohesion: 0.31
@@ -39494,8 +39575,8 @@ Cohesion: 0.33
 Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 10540 - "Etik ve Hukuk"
-Cohesion: 0.12
-Nodes (18): Büyük Dil Modeli, Cinsiyet Önyargısı Doktor Bilmecesi, Etik ve Hukuk, GPT-3, Kişisel Veri ve Gizlilik, Manipülasyon, Next Token Prediction, Self-supervised Öğrenme (+10 more)
+Cohesion: 0.18
+Nodes (12): Etik ve Hukuk, Kişisel Veri ve Gizlilik, Manipülasyon, Sorumluluk Sorunu (Otonom Araç), Yapay Zeka'nın Etik Hukuk ilişkileri, Etik ve hukuk tanımları, Kişisel verilerin sahibi ve gizlilik, Korelasyon nedensellik değildir (+4 more)
 
 ### Community 10541 - "Ders 1 Çalışma Özeti"
 Cohesion: 0.33
@@ -39509,13 +39590,13 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İLERİ İNGİLİZCE 2 Ders Kayıtlar
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İLERİ İNGİLİZCE 2 Ders Kayıtları
 
-### Community 10544 - "hüsamettin_ışıktaş/src/data/preprocessing.py"
-Cohesion: 0.20
-Nodes (8): build_adjacency(), iter_edge_pairs(), make_scaled_split(), make_undirected_edge_index(), sample_edges_by_scale(), _sample_sequence(), _shape_of(), _to_python_edges()
+### Community 10544 - "mt"
+Cohesion: 0.16
+Nodes (3): mt, gt(), kt()
 
 ### Community 10545 - "VYA 01: Algoritma Mantığı ders notu (Gökhan Güven)"
-Cohesion: 0.09
-Nodes (24): Armstrong sayıları (küp toplamı), Faktöriyel ve Stirling formülü, Fibonacci (dizili ve dizisiz), Goldbach sanısı, Karşıt örnek ve ispat (Euler toplam tahmini), Pi ve e seri açılımları, Sayı arama (ilk/son/tüm geçişler), x^n hesaplama (+16 more)
+Cohesion: 0.05
+Nodes (40): Armstrong sayıları (küp toplamı), Faktöriyel ve Stirling formülü, Fibonacci (dizili ve dizisiz), Goldbach sanısı, Karşıt örnek ve ispat (Euler toplam tahmini), Pi ve e seri açılımları, Sayı arama (ilk/son/tüm geçişler), x^n hesaplama (+32 more)
 
 ### Community 10546 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
@@ -39553,13 +39634,13 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Ka
 Cohesion: 0.09
 Nodes (22): 1. Kod Kusurlarını Kod Üzerinde Bulmak ve Adlandırmak, 2. Soru 1: Havayolu Sadakat Kartı ve Kalıp Seçimi, 3. State Kalıbı Neden En Uygun?, 4. Chain of Responsibility Tartışması, 5.1 Prototype bu soruda nasıl uygulanır?, 5.2 Prototype'ın dezavantajları, 5.3 Prototype'ta kalıtım yoktur, 5. Prototype Tartışması (+14 more)
 
-### Community 10555 - "hüsamettin_ışıktaş/src/experiments/results.py"
-Cohesion: 0.19
-Nodes (7): aggregate_results(), load_result(), load_results(), result_filename(), save_result(), _to_serializable(), utc_timestamp()
+### Community 10555 - "GirisAyrimi"
+Cohesion: 0.11
+Nodes (7): GirisAyrimi, MouseAdapter, MouseAdapter, java.awt.event.ActionListener, java.awt.event.MouseAdapter, java.awt.event.MouseAdapter, Runnable
 
-### Community 10556 - "stbi__zbuf"
-Cohesion: 0.31
-Nodes (16): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__err(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib() (+8 more)
+### Community 10556 - "Makine Öğrenmesi 2025-2026 Güz Ödev 1 Tanımı"
+Cohesion: 0.13
+Nodes (25): Lojistik Regresyon ile İşe Alım Tahmini raporu (Muhammed Kayra Bulut), Makine Öğrenmesi 2025-2026 Güz Ödev 1 Tanımı, Aşırı uyum (overfitting) gözlenmedi, İkili çapraz-entropi kaybı, Erken durdurma (500-700 döngü), Lojistik Regresyon ile İşe Alım Tahmini raporu (Muhammed Kayra Bulut), Tabakalı (stratified) 60/20/20 bölme, Tablo 1 bölümlere göre ölçütler (test acc 0.85, F1 0.88) (+17 more)
 
 ### Community 10557 - "Lineer Cebir Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39617,9 +39698,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Ka
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazıları
 
-### Community 10571 - "fix_entrypoint.py"
-Cohesion: 0.17
-Nodes (8): get_merged_df(), get_samples_different_entry_point(), main(), replace_entry_point(), write_jsonl_with_df(), fix_solutions(), get_code_from_solution(), main()
+### Community 10571 - "Ders 1 Altyazısı (14 Ekim 2020)"
+Cohesion: 0.12
+Nodes (23): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 1 Altyazısı (14 Ekim 2020), ASCII ve Unicode kodları, BCD (binary coded decimal) (+15 more)
 
 ### Community 10572 - "Matematik 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -39642,8 +39723,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 2 Ders Kayıtları Altyazıları
 
 ### Community 10578 - "BLM5121 Web Mining Term Project Assignment (Göksel Okandan copy)"
-Cohesion: 0.22
-Nodes (18): BLM5121 Web Mining Term Project Assignment (Göksel Okandan copy), Common Neighbors method, GCN method, Hits@50 Performance Comparison Chart (Common Neighbors vs MLP vs GCN across 10/50/100% data scale), MLP method, Dataset Manager GUI Screenshot (placeholder, not yet filled), BLM5121 Web Mining Term Project Assignment (Hüsamettin Işıktaş copy), Data Acquisition Module (+10 more)
+Cohesion: 0.12
+Nodes (27): Prof. Dr. Gökhan Bilgin (Ders Yürütücüsü), K-Fold Çapraz Geçerleme (Performans Değerlendirme), Model Seçimi ve Sınıflandırıcılar (Bayes, Naive Bayes, k-NN, Yapay Sinir Ağları), Muhammed Kayra Bulut (Öğrenci, 25501805), Pattern Recognition (Örüntü Tanıma), Topluluk Öğrenmesi (Ensemble Learning), Öznitelik / Öznitelik Vektörü (Feature / Feature Vector), Öznitelik Çıkarımı (PCA, LDA) (+19 more)
 
 ### Community 10579 - "Matematik 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -39681,9 +39762,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazı
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 1 Ders Kayıtları
 
-### Community 10588 - "arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder"
-Cohesion: 0.03
-Nodes (84): Adaptive profile-based text compression system, Arithmetic coding, Bits per byte (BPB) metric, Compression profile (cluster), arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder, CodecResult, compress, _compress_order0 (+76 more)
+### Community 10588 - "supervised_algorithm_selection_v2.py - Supervised algorithm selection v2 (XGBoost)"
+Cohesion: 0.06
+Nodes (41): Adaptive profile-based text compression system, Bits per byte (BPB) metric, model_io.py - Phase 3 model artifact save/load helpers, load_model_artifacts, save_model_artifacts, profile_classifier.py - Runtime profile classifier (Phase 3 model), ProfileClassifier, AdaptiveCompressor (+33 more)
 
 ### Community 10589 - "Matematik 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39693,17 +39774,17 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 1 Ders Kayıtları Altyazı
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıları
 
-### Community 10591 - "algoritma_analizi/ödev_3/21011022.c"
-Cohesion: 0.27
-Nodes (13): createHashTable(), findDeclaredVariables(), findNextPrime(), h1(), h2(), hash(), hornersMethod(), insert() (+5 more)
+### Community 10591 - "Abstract classes"
+Cohesion: 0.11
+Nodes (24): Interface, Multiple Inheritance (via Interfaces), Polymorphism / Override, Abstract classes, NYP Hafta 6 - Abstract Class, Interface, Enum, Enum sınıfları (Size, Tariff), Interfaces, Item/Clothing/Toy örneği (+16 more)
 
 ### Community 10592 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 
-### Community 10593 - "Chapter 5 C Functions"
-Cohesion: 0.07
-Nodes (45): Argument coercion and usual arithmetic conversion, Automatic storage duration, Chapter 5 C Functions, Function (C module), Function call, Function call stack, rand and pseudorandom numbers, Recursive factorial (+37 more)
+### Community 10593 - "IndividualUI"
+Cohesion: 0.13
+Nodes (5): IndividualUI, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener
 
 ### Community 10594 - "Detaylı Açıklamalar"
 Cohesion: 0.11
@@ -39841,9 +39922,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 2 Ders K
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıları
 
-### Community 10629 - "teslim/src/data/preprocessing.py"
-Cohesion: 0.20
-Nodes (8): build_adjacency(), iter_edge_pairs(), make_scaled_split(), make_undirected_edge_index(), sample_edges_by_scale(), _sample_sequence(), _shape_of(), _to_python_edges()
+### Community 10629 - "Boylestad Electronic Devices and Circuit Theory"
+Cohesion: 0.15
+Nodes (5): Boylestad Electronic Devices and Circuit Theory, Chapter 10 Systems Approach - Effects of Rs and RL, FET Small-Signal Summary Table (Table 9.1), Output impedance rd, Systems Approach Summary Table (Table 10.1)
 
 ### Community 10630 - "TÜRKÇE 1 Ders Kayıtları"
 Cohesion: 0.50
@@ -39873,10 +39954,6 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Türkçe 2 Ders Kayıtları Altyazıl
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Kayıtları
 
-### Community 10637 - "ChatService"
-Cohesion: 0.06
-Nodes (20): client, redis, ChatController, chatService, Chat, chatParticipantSchema, chatSchema, mongoose (+12 more)
-
 ### Community 10638 - "İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
@@ -39889,9 +39966,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İLERİ İNGİLİZ
 Cohesion: 0.17
 Nodes (11): Bilgi sistemi ve bileşenleri, Ders 1 Çalışma Özeti, Ders kaynakları ve plan, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+3 more)
 
-### Community 10641 - "Ders 7 Lab SQL Injection DVWA (Altyazı)"
-Cohesion: 0.22
-Nodes (18): Anti-CSRF Token (Impossible), CONCAT ile Kolon Birleştirme, Ders 7 Lab SQL Injection DVWA (Altyazı), Dropdown Savunması (Medium), DVWA (Damn Vulnerable Web Application), DVWA Güvenlik Seviyeleri (Low/Medium/High/Impossible), Escape (Medium), Girdi Doğrulama Web Sunucusunda Yapılır (+10 more)
+### Community 10641 - "FET Biasing (Chapter 6)"
+Cohesion: 0.13
+Nodes (23): Bias Design Operations, Bias Stabilization and Stability Factors S(ICO), S(VBE), S(β), BJT-JFET combination networks, Common-gate / VSS bias configuration, DC Bias with Voltage (Collector) Feedback, DC Biasing of BJTs, Emitter-Stabilized Bias Circuit, FET Biasing (Chapter 6) (+15 more)
 
 ### Community 10642 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -39937,9 +40014,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, TÜRKÇE 1 Ders Kayıtları Altyazıl
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, TÜRKÇE 1 Ders Kayıtları
 
-### Community 10653 - "limits"
-Cohesion: 0.04
-Nodes (80): main(), primsAlgorithm(), printMatrix(), printMST(), readMatrix(), valueMST(), main(), prim() (+72 more)
+### Community 10653 - "blm_1031/proje/main.c"
+Cohesion: 0.23
+Nodes (17): autoPlayGame(), calculatePoints(), displayMaze(), displayScoreboard(), freeMaze(), is_valid_move(), isNicknameUniqueBinary(), loadMapFromTxt() (+9 more)
 
 ### Community 10654 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -40006,16 +40083,16 @@ Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Kayıtları
 
 ### Community 10670 - "Temel Olasılık ve Bayes Filtresi (Olasılıksal Robotik 1)"
-Cohesion: 0.10
-Nodes (35): CENG 222 Hafta 9 - İstatistiksel çıkarım I, İki ortalama farkı için güven aralığı, Maksimum olabilirlik yöntemi (MLE), Momentler yöntemi, Oran için güven aralığı, Ortalama için güven aralığı, Pareto örneği (momentler), Poisson MLE (+27 more)
+Cohesion: 0.28
+Nodes (13): Bayes Filtresi, Bayes kuralı (prior/posterior), Belief (inanç), CORRECTION adımı, Temel Olasılık ve Bayes Filtresi (Olasılıksal Robotik 1), HMM / Dinamik Bayes ağı, Ortak ve koşullu olasılık, Ölçüm modeli (+5 more)
 
-### Community 10671 - "Kütüphane Yönetim Sistemi (BLM1031 dönem projesi)"
-Cohesion: 0.46
-Nodes (7): Bağlı liste ve struct, C dili, CSV dosyaları ile veri kalıcılığı, Kitap yönetimi, Kütüphane Yönetim Sistemi (BLM1031 dönem projesi), Ödünç alma ve iade, Üye yönetimi
+### Community 10671 - "Library Automation System"
+Cohesion: 0.23
+Nodes (14): Bağlı liste ve struct, C dili, CSV dosyaları ile veri kalıcılığı, Kitap yönetimi, Kütüphane Yönetim Sistemi (BLM1031 dönem projesi), Ödünç alma ve iade, Üye yönetimi, CSV tabanlı dosya depolama (+6 more)
 
 ### Community 10672 - "Counting sort O(T)"
-Cohesion: 0.10
-Nodes (21): Arama algoritmaları, İstenen eleman sayısı akış diyagramı, Dizide elemanın kaç kez geçtiğini bulma, İzleme tablosu (n=8, ara=1, sonuç 2), BLM1011 Proje Ödevi tanımı 2025-2026, Teslim şablonu ve kopya kuralları, Binary search O(log n), Counting sort O(T) (+13 more)
+Cohesion: 0.06
+Nodes (36): Arama algoritmaları, İstenen eleman sayısı akış diyagramı, Dizide elemanın kaç kez geçtiğini bulma, İzleme tablosu (n=8, ara=1, sonuç 2), BLM1011 Proje Ödevi tanımı 2025-2026, Teslim şablonu ve kopya kuralları, Binary search O(log n), Counting sort O(T) (+28 more)
 
 ### Community 10673 - "İleri İngilizce 1 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -40049,9 +40126,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Matematik 1 Ders K
 Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler
 
-### Community 10682 - "YTU-BBG Final Project README (Terminal Matrix Match & Pop Game)"
-Cohesion: 0.09
-Nodes (25): ANSI C (C89) standardı, Yer değiştirme (temp ile swap), External merge sort, Kumarbaz simülasyonu (Monte Carlo), Matris zinciri çarpım sırası, Matris çarpımı O(n*p*m), Yapısal Programlamaya Giriş Ders 11 (Amasyalı), Temp'siz swap (+17 more)
+### Community 10682 - "number_match_game_with_c/main.c"
+Cohesion: 0.13
+Nodes (21): createBoard(), drawBoard(), drawPath(), gameMenu(), main(), readFromFile(), runGameManuel(), score() (+13 more)
 
 ### Community 10683 - "Student"
 Cohesion: 0.19
@@ -40086,8 +40163,8 @@ Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Matematik 2 Ders Kayıtları Altyazıları
 
 ### Community 10691 - "Sistem Analizi ve Tasarımı kitabı (Kalıpsız, Papatya) - bölüm 12-17"
-Cohesion: 0.05
-Nodes (39): Ardışıl Diyagram, Aşırı Yükleme (Overloading), Başlangıç İşlemleri, Bütünleme Testi, Dağıtılmış Geçiş, Dereceli Geçiş, Programlama dili seçimi, Sistem Analizi ve Tasarımı kitabı (Kalıpsız, Papatya) - bölüm 12-17 (+31 more)
+Cohesion: 0.04
+Nodes (46): Ardışıl Diyagram, Aşırı Yükleme (Overloading), Başlangıç İşlemleri, Bağlantı (Association), Birleştirme (Composition), Bütünleme Testi, Dağıtılmış Geçiş, Dereceli Geçiş (+38 more)
 
 ### Community 10692 - "Matematik 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -40113,9 +40190,9 @@ Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, İleri İngilizce 1 Ders Kayıtları 
 Cohesion: 0.50
 Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İleri İngilizce 1 Ders Kayıtları
 
-### Community 10698 - "Optimizasyon Ödevi Raporu (Burak Başol)"
-Cohesion: 0.05
-Nodes (57): A.txt ekonomi cümleleri veri kümesi, İkili metin sınıflandırma veri kümesi (ekonomi/spor), Ekonomi sınıfı (para arzı, vergi, faiz, enflasyon), B.txt spor cümleleri veri kümesi, Spor sınıfı (futbol, basketbol, tenis), binaryTextClassificationC README, Tek katmanlı perceptron (tanh), Trigram tokenizasyon (TRI) (+49 more)
+### Community 10698 - "Habil Coban Proje Raporu"
+Cohesion: 0.12
+Nodes (27): A.txt ekonomi cümleleri veri kümesi, İkili metin sınıflandırma veri kümesi (ekonomi/spor), Ekonomi sınıfı (para arzı, vergi, faiz, enflasyon), B.txt spor cümleleri veri kümesi, Spor sınıfı (futbol, basketbol, tenis), binaryTextClassificationC README, Tek katmanlı perceptron (tanh), Trigram tokenizasyon (TRI) (+19 more)
 
 ### Community 10699 - "İLERİ İNGİLİZCE 2 Ders Kayıtları"
 Cohesion: 0.50
@@ -40134,8 +40211,8 @@ Cohesion: 0.29
 Nodes (7): 11.1 Genel akış, 11.2 Eflatun (MÖ 427-347), 11.3 Aristo, 11. Etiğin Tarihsel Gelişimi: Antik Yunan, Aristo'nun adalet anlayışı, Erdem ve altın orta, Eudaimonia
 
 ### Community 10703 - "BLM5121 Web Mining Term Project Assignment (Göksel Okandan copy)"
-Cohesion: 0.09
-Nodes (29): Eğri Uydurma (Curve Fitting), En Küçük Kareler Metodu, Microsoft Excel ile Sayısal Çözüm, Kare Matrisin Tersi (minör, kofaktör, adjoint, determinant), Lineer Düzeltme (Linear Regression), Lineerleştirme Dönüşümü (ln alma, karekök alma), Misal 4.1.1: Doğru Uydurma (10 nokta), Misal 6.1.1.1: 3x3 Matrisin Tersi (+21 more)
+Cohesion: 0.11
+Nodes (23): Eğri Uydurma (Curve Fitting), En Küçük Kareler Metodu, Microsoft Excel ile Sayısal Çözüm, Kare Matrisin Tersi (minör, kofaktör, adjoint, determinant), Lineer Düzeltme (Linear Regression), Lineerleştirme Dönüşümü (ln alma, karekök alma), Misal 4.1.1: Doğru Uydurma (10 nokta), Misal 6.1.1.1: 3x3 Matrisin Tersi (+15 more)
 
 ### Community 10704 - "Ders 13 Çalışma Özeti"
 Cohesion: 0.33
@@ -40170,8 +40247,8 @@ Cohesion: 0.10
 Nodes (19): Bağıntı ve gösterimleri, Bileşke örneği, Denklik bağıntısı, Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Geçişme (+11 more)
 
 ### Community 10712 - "DataTables/dataTables.select.min.js"
-Cohesion: 0.22
-Nodes (8): i(), p(), r(), s(), v(), x(), y(), z()
+Cohesion: 0.25
+Nodes (7): p(), r(), s(), v(), x(), y(), z()
 
 ### Community 10713 - "Ders 21 Çalışma Özeti"
 Cohesion: 0.33
@@ -40201,13 +40278,13 @@ Nodes (14): Akış diyagramında döngü okları, C karşılığı, Ders 2 Çal�
 Cohesion: 0.33
 Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 10720 - "GUI"
-Cohesion: 0.12
-Nodes (11): contract(), ForwardArgs, GUI, 6. Activity Result API, 15.1 Uygulamanın davranışı, 15.2 Camera.java, 15.3 Kodun anlatımı, 15.4 Arada sorulan soru (+3 more)
+### Community 10720 - ".launch"
+Cohesion: 0.25
+Nodes (8): contract(), 6. Activity Result API, 15.1 Uygulamanın davranışı, 15.2 Camera.java, 15.3 Kodun anlatımı, 15.4 Arada sorulan soru, 15. Android Studio: Kamera ile Fotoğraf Alma (ActivityResultLauncher), Örnek Sorular
 
-### Community 10721 - "Sayısal Görüntü İşleme 3: Keskinleştirme, Köşe Bulma, Morfoloji"
-Cohesion: 0.19
-Nodes (19): Harris Corner Detection, 4. Week - 27 October 2022 Thursday, SIFT (Scale-Invariant Feature Transform), Sayısal Görüntü İşleme 3: Keskinleştirme, Köşe Bulma, Morfoloji, Closing, Dilation, Erosion, Grayscale morphology (+11 more)
+### Community 10721 - "BLM3580 Sistem Programlama Ders 3 - Web programlama HTML CSS"
+Cohesion: 0.14
+Nodes (23): DTD (Document Type Definition), XML Schema (XSD), BLM3580 Sistem Programlama Ders 3 - Web programlama HTML CSS, CSS, Etiketleme dilleri, HTML, HTML5, HTML belge yapısı (+15 more)
 
 ### Community 10722 - "Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -40245,9 +40322,9 @@ Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları, 📚 Ders 
 Cohesion: 0.50
 Nodes (3): Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları, Eksik Kayıtlar, Hafta Bilgisi
 
-### Community 10731 - "Logical Volume Management (LVM)"
-Cohesion: 0.13
-Nodes (22): Logical volume (LV), lvextend, Logical Volume Management (LVM), LVM creating guided exercise, LVM extending guided exercise, LVM review lab, Physical extent (PE), Physical volume (PV) (+14 more)
+### Community 10731 - "Controlling Access to Files with ACLs"
+Cohesion: 0.06
+Nodes (49): Access Control Lists (ACL), Default ACLs, ACL Mask, ACL Permission Precedence, ACL Review Lab (shares/cases), ACL Secure Guided Exercise, Controlling Access to Files with ACLs, Default ACL (+41 more)
 
 ### Community 10732 - "Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları"
 Cohesion: 0.50
@@ -40273,9 +40350,9 @@ Nodes (3): 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Türkçe 2 Ders Ka
 Cohesion: 0.20
 Nodes (8): _compute_peak_memory(), _deduplicate_by_seed(), _load_multi_seed_from_json(), load_test_df(), main(), table_main(), table_multiseed(), table_runtime()
 
-### Community 10739 - "MailSender.java"
-Cohesion: 0.11
-Nodes (3): MailSender, MailUtil, SpringEnvironment
+### Community 10739 - "mehmet_ali_duran/train.c"
+Cohesion: 0.17
+Nodes (18): addDictionary(), allocateMemoryChar(), allocateMemoryInteger(), deleteApostrophe(), deleteChar(), deletePuncAndNumbers(), dotProduct(), freeMemoryChar() (+10 more)
 
 ### Community 10740 - "Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları"
 Cohesion: 0.50
@@ -40321,29 +40398,29 @@ Nodes (16): 10. `toString()` metodunu ezme, 1. Paketler ve `import`, 2. Bilgi gi
 Cohesion: 0.18
 Nodes (13): Aktif pull-up, Bölüm 6 MOSFET Anahtarı, Doyma disiplini, Evirici anahtarlama analizi (W/L koşulu), Lojik kapılarda güç tüketimi, MOSFET S modeli, MOSFET SR modeli, NAND kapısı statik analizi (+5 more)
 
-### Community 10752 - "Context: algorithms in applications"
-Cohesion: 0.15
-Nodes (16): Context: algorithms in applications, Longest common prefix (lcp), Longest repeated substring, Operations research, Intractability and P=NP?, Suffix arrays, Suffix sort solution, Algorithm (step-by-step well-defined instructions) (+8 more)
+### Community 10752 - "Epilogue (Design and Analysis of Algorithms)"
+Cohesion: 0.05
+Nodes (39): B-tree, B-tree cost model (page and probe), Page API for B-tree, BTreeSET implementation (Algorithm 6.12), Context: algorithms in applications, Longest common prefix (lcp), Longest repeated substring, Operations research (+31 more)
 
 ### Community 10753 - "Veri Sıkıştırma/ödevler/2023/makale_sunum/onder_gormez/readme.md"
 Cohesion: 0.11
 Nodes (18): Aritmetik kodlama, Profil bazlı grid search (algoritma x parametre), LZW, LZW, Veri Sıkıştırma - İstatistiksel Yöntemler 5.3, Seminer Makale Özeti - Önder Görmez, Amacı nedir?, Conclusion (+10 more)
 
-### Community 10754 - "UrunViewModel"
-Cohesion: 0.12
-Nodes (17): RafViewModel, AnlıkKapasite, Id, Kapasite, UrunRafViewModel, Id, Raf, RafId (+9 more)
+### Community 10754 - "Ödev 1 BLM2022 (2022 Bahar)"
+Cohesion: 0.13
+Nodes (16): Mano Kime Bölüm 7 şekil ve tablolar (yazmaçlar), Mikroişlemler, Yazmaç yük kontrolü, Yazmaç aktarımı ve RTL, Kaydırmalı yazmaç, Yazmaçlar ve yazmaç aktarımları, Saat geçitleme, Yük kontrollü geri besleme (+8 more)
 
-### Community 10755 - "Leontief Input-Output Model"
-Cohesion: 0.12
-Nodes (16): Augustin Louis Cauchy, Consumption Matrix, Determinant by Row Reduction, Determinant of Elementary Matrix (Thm 2.2.4), Determinant of Triangular Matrix (Thm 2.1.2), Determinant Product Rule det(AB)=det(A)det(B), Determinant Test for Invertibility (Thm 2.3.3), Determinant Under Elementary Row Operations (Thm 2.2.3) (+8 more)
+### Community 10755 - "Musteri"
+Cohesion: 0.10
+Nodes (4): Musteri, 15.1 Kalıp seçiminde genel ilkeler, 15.2 Öğrencilerin yorumları, 15. Birinci Ara Sınav Soruları Üzerine Tasarım Kalıbı Tartışması
 
 ### Community 10756 - "ödev1/sait/20011024.c"
 Cohesion: 0.27
 Nodes (16): calculateHeight(), calculateLength(), createFastLinkedList(), createInitialLinkedList(), createLinkedList(), createNode(), freeAllLinkedLists(), insert() (+8 more)
 
-### Community 10757 - "Sayısal Analiz Dönem Projesi 2026 Tanımı"
-Cohesion: 0.18
-Nodes (16): 2026 Alperen Proje README, Sayısal Analiz 2025-2026 Bahar, Hoca Ahmet Elbir, 1 kişilik, zor proje, Sayısal Analiz Dönem Projesi 2026 Tanımı, Bisection (2026 proje konusu), Cholesky (ALU) Yöntemi (2026 proje konusu), Gauss Seidal (2026 proje konusu), Gregory Newton Enterpolasyonu (2026 proje konusu), Kodlama kuralları: tek C dosyası, malloc ve struct zorunlu, break/continue/goto yasak (+8 more)
+### Community 10757 - "arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder"
+Cohesion: 0.10
+Nodes (22): Arithmetic coding, arithmetic_codec.py - Order-0/1/2 Arithmetic encoder/decoder, CodecResult, compress, _compress_order0, _compress_order1, _compress_order2, _decode_bitstream (+14 more)
 
 ### Community 10758 - "functions.c"
 Cohesion: 0.17
@@ -40354,12 +40431,12 @@ Cohesion: 0.16
 Nodes (20): Analog büyüklük, Analog gösterge, Analog işaret, Analog-Sayısal Çevirici (ADC), Analog sistem, Ardışıl (sequential) sayısal sistemler, Bellek (storage) sistemleri, Bileşik (combinational) sayısal sistemler (+12 more)
 
 ### Community 10760 - "Ayrık Matematik/ders_kayitlari/2020-2021/sube_1/README.md"
-Cohesion: 0.08
-Nodes (19): Ayrık ve sürekli, Ders 1 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Doğruluk tabloları, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+11 more)
+Cohesion: 0.06
+Nodes (24): Ayrık ve sürekli, Ders 1 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Doğruluk tabloları, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+16 more)
 
-### Community 10761 - "Örnek Sorular"
-Cohesion: 0.12
-Nodes (16): Soru 10 (derste sözlü, 01:56:34), Soru 11 (derste sözlü, 01:56:46), Soru 12 (derste sözlü, 01:57:33), Soru 13 (derste sözlü, 01:58:05), Soru 14 (derste sözlü, 01:59:50), Soru 15 (derste sözlü, 02:02:11), Soru 1 (derste sözlü, 00:10:10), Soru 2 (derste sözlü, 00:44:15) (+8 more)
+### Community 10761 - "Rastogi & Bansal: Diabetes prediction model using data mining techniques (makale)"
+Cohesion: 0.16
+Nodes (22): Rastogi & Bansal: Diabetes prediction model using data mining techniques (makale), Accuracy, Confusion matrix, sensitivity, accuracy, Data mining teknikleri, Diyabetin etkileri (görme, böbrek, karaciğer, kalp), Diyabet türleri (Tip 1, Tip 2, gestasyonel), Kaggle diabetes veri seti, Logistic Regression (%82.46) (+14 more)
 
 ### Community 10762 - "3. Derin Öğrenme Tabanlı Hibrit Tavsiye Sistemleri"
 Cohesion: 0.15
@@ -40377,17 +40454,17 @@ Nodes (11): 2.1 Sanal makinelerle çok düğümlü küme, 2.2 Docker ile küme, 
 Cohesion: 0.13
 Nodes (14): Dairesel Bağlantılı Liste ve Josephus Problemi, Ders 7 Çalışma Özeti, Ders Sonrası Notlar, Detaylı Açıklamalar, Diziler ve Kaydırma Maliyeti, Eleman Ekleme, Eleman Silme, Genel Konular (+6 more)
 
-### Community 10766 - "dataset_helper.py"
-Cohesion: 0.15
-Nodes (7): get_dataset_dir(), get_feature_ranking(), get_top_features(), load_processed_dataset(), normalize_scores(), save_selected_dataset(), split_features_target()
+### Community 10766 - "BaseComponent"
+Cohesion: 0.12
+Nodes (3): BaseComponent, Button, Config
 
 ### Community 10767 - "Detaylı Açıklamalar"
 Cohesion: 0.15
 Nodes (12): Ders 6 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Değerlendirme: Precision ve Recall, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, IR Modellerinin Tekrarı (Türkçe), Kısa Tekrar Notları (+4 more)
 
-### Community 10768 - "📘 Atatürk İlkeleri ve İnkılap Tarihi 1"
-Cohesion: 0.18
-Nodes (12): 4. Sınıf Güz, 📘 Atatürk İlkeleri ve İnkılap Tarihi 1, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Dönemin Zorunlu Dersleri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler (+4 more)
+### Community 10768 - "swiper-bundle.min.js"
+Cohesion: 0.30
+Nodes (18): a(), c(), d(), e(), i(), k(), l(), m() (+10 more)
 
 ### Community 10769 - "BLM3520 Ödev-2 yönergesi (2019-2020 Bahar)"
 Cohesion: 0.14
@@ -40398,12 +40475,12 @@ Cohesion: 0.12
 Nodes (16): BackButton, build, CharacterBox, _CharacterBoxState, ChooseScreen, counter, createState, DoneButton (+8 more)
 
 ### Community 10771 - "XQuery"
-Cohesion: 0.04
-Nodes (86): DTD (Document Type Definition), HTML, XML, XML Parser (DOM, SAX), XML Schema, XPath ve XQuery, Attribute ve element farkı, BasicX programı (+78 more)
+Cohesion: 0.05
+Nodes (78): XML Schema, BaseX programı, Company XML dosyası, Ders 11 Lab: XQuery (altyazı), Örnek: tüm çalışan bilgileri, Örnek: Elizabeth akrabalı çalışanın yöneticisi (3 tablo), Örnek: Franklin Wong'un çalıştığı proje numaraları (2 tablo), Örnek: Operating System projesi ve Software departmanı kesişimi (+70 more)
 
-### Community 10772 - "Matematik 2/ders_kayitlari/2022-2023/sube_23/README.md"
-Cohesion: 0.04
-Nodes (46): Basit zincir kuralı, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İkiden fazla değişkenli fonksiyonlar, Kısa Tekrar Notları (+38 more)
+### Community 10772 - "Detaylı Açıklamalar"
+Cohesion: 0.14
+Nodes (13): Basit zincir kuralı, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İkiden fazla değişkenli fonksiyonlar, Kısa Tekrar Notları (+5 more)
 
 ### Community 10774 - "BLM3620 DSP Lecture 3 - Spectrum Representation"
 Cohesion: 0.12
@@ -40413,21 +40490,33 @@ Nodes (21): BLM3620 DSP Lecture 3 - Spectrum Representation, Amplitude Modulatio
 Cohesion: 0.18
 Nodes (6): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Logger
 
-### Community 10777 - "Ders 3 İşletim Sistemleri 2020-2021 altyazısı"
-Cohesion: 0.11
-Nodes (17): Ders 3 İşletim Sistemleri 2020-2021 altyazısı, Asimetrik multiprocessing, Bilgisayar sisteminin dört bileşeni, BIOS, Bootstrap / bootloader, Cache memory (caching), Depolama hiyerarşisi, Firmware (+9 more)
+### Community 10776 - "je"
+Cohesion: 0.21
+Nodes (4): je, Ge(), Ye(), Qe()
+
+### Community 10777 - "Direct Memory Access (DMA)"
+Cohesion: 0.03
+Nodes (74): Bus, Chapter 2 Data Manipulation, Controllers, CPU (ALU, control unit, registers), Device drivers, Embedded systems, Handshaking and status word, Kernel (+66 more)
 
 ### Community 10778 - "Ders 5 Genişletilmiş Notu: Ödev Sunumları: GRPO ile Ödül Fonksiyonu Tasarımı ve Model Birleştirme"
 Cohesion: 0.13
 Nodes (15): 1. Ödevin Çerçevesi ve Ortak Kurulum, 2. Veri Alt Kümesinin Seçimi, 3.1 Talimat mı, örnek mi?, 3.2 Önce gerekçe, sonra cevap, 3.3 Format neden istenir?, 3. Prompt ve Çıktı Formatı, 6.1 Soru başına cevap sayısı (num_generations), 6.2 KL ıraksaması (+7 more)
 
-### Community 10779 - "ödev 3/mehmet_ali_duran/kod.c"
-Cohesion: 0.30
-Nodes (14): checkInvalidDeclaration(), countCharOccurrences(), findTableSize(), findVariableNumber(), h(), h1(), h2(), horner() (+6 more)
+### Community 10779 - "MAT1320 Week 14: Eigenvalues, Eigenvectors, Diagonalization, Cayley-Hamilton"
+Cohesion: 0.11
+Nodes (21): Hermitian, unitary, normal matrices, Quadratic forms and optimization, Chapter 5 Supplementary Exercises, Companion Matrix, Constrained Extremum Theorem, Hessian Matrix, Ludwig Otto Hesse, Positive Definite Quadratic Form (+13 more)
 
 ### Community 10780 - "Section 1.8 Proof Methods and Strategy"
 Cohesion: 0.16
 Nodes (12): 3x+1 Conjecture, Andrew Wiles, Chomp Game, Constructive Existence Proof, Domino Tiling of Checkerboards, Fermat's Last Theorem, Nonconstructive Existence Proof, Polyominoes (+4 more)
+
+### Community 10781 - "Chapter 7 BJT Transistor Modeling"
+Cohesion: 0.14
+Nodes (20): ElDev 09 BJT Transistor Modeling, Common-emitter konfigürasyonu, Hybrid equivalent model, re transistor modeli, hfe (ac beta), Chapter 7 BJT Transistor Modeling, Amplifier conversion efficiency, Example 7.5 CE re model (+12 more)
+
+### Community 10782 - "Transconductance gm"
+Cohesion: 0.16
+Nodes (21): ElDev 12 FET Amplifiers, FET small-signal modeli, Transconductance gm, Important parameters Zi, Zo, Av, Ai, Chapter 9 FET Small-Signal Analysis, Depletion-Type MOSFET Small-Signal Analysis, Designing FET Amplifier Networks, Drain Resistance rd (+13 more)
 
 ### Community 10783 - "Lab 4 - C ile Assembly: 2B Konvolüsyon"
 Cohesion: 0.20
@@ -40450,24 +40539,24 @@ Cohesion: 0.21
 Nodes (12): authorlist_init(), borrow_deinit(), borrow_file_read(), borrow_print(), borrowlist_add_back(), borrowlist_deinit(), borrowlist_file_read(), borrowlist_init() (+4 more)
 
 ### Community 10789 - "Gider Yönetim Sistemi Proje Raporu 2025"
-Cohesion: 0.05
-Nodes (59): Nesneye yönelik tasarım, Etkinlik Şemaları (Activity Diagrams), Sıralama Şemaları (Sequence Diagrams), Aktör, CBO, CK ölçütleri (Chidamber-Kemerer), DIT, Durum şemaları (State diagrams) (+51 more)
+Cohesion: 0.03
+Nodes (89): Abbott dilsel analiz (isimleri seç), Domain Model (görsel sözlük), Domain Modeling (Larman), UML ilişkileri ve çokluk (multiplicity), Nitelik yönergeleri, UP artifact'leri, Writing Use Cases (Larman), Elementary Business Process yönergesi (+81 more)
 
 ### Community 10790 - "2025-2026 Güz Dönemi"
 Cohesion: 0.50
 Nodes (3): 2025-2026 Güz Dönemi, Ders Bilgileri, Not Bilgileri
 
 ### Community 10791 - "Result"
-Cohesion: 0.18
+Cohesion: 0.20
 Nodes (3): MaxIterationAmountExceededException, SearchException, Result
 
-### Community 10792 - "hüsamettin_ışıktaş/src/train.py"
-Cohesion: 0.15
-Nodes (3): build_parser(), config_from_args(), main()
+### Community 10792 - "devDependencies"
+Cohesion: 0.10
+Nodes (21): devDependencies, eslint, eslint-config-airbnb-typescript, eslint-import-resolver-typescript, eslint-plugin-import, jest, nodemon, supertest (+13 more)
 
-### Community 10793 - "Detaylı Açıklamalar"
-Cohesion: 0.14
-Nodes (13): `counter` örneğinde yarış durumu, Ders 19 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Peterson çözümü (iki süreç) (+5 more)
+### Community 10793 - "ödev1.py"
+Cohesion: 0.20
+Nodes (17): analyze_mutation_rate(), analyze_population_size(), calculate_similarity(), crossover(), fitness_function(), genetic_algorithm(), next_gen(), on_key() (+9 more)
 
 ### Community 10794 - "Ders 12 Çalışma Özeti"
 Cohesion: 0.33
@@ -40493,17 +40582,17 @@ Nodes (9): 6.1 Foreground servis bildirimleri, 6.2 Gönderim sınırı (post lim
 Cohesion: 0.14
 Nodes (28): Hatching Chick at SemEval-2018 Task 2 (Coster et al.), Context-specific emoji are most predictable, Optimized English model (F1 21.4 eval), Linear SVM with SGDClassifier, Initial model selection (LR, LSTM, RF, SVM), Overfitting on trial data; cross-validation suggested, Optimized Spanish model (F1 18.7 eval), TF-IDF word n-gram features (+20 more)
 
-### Community 10801 - "Model Karşılaştırma Tablosu"
-Cohesion: 0.13
-Nodes (14): ABSTRACT Veriseti, CONCAT Veriseti, Embed Size Karşılaştırması (Ortalama), Genel Özet - En İyi Sonuçlar, Model Karşılaştırma Tablosu, Model Karşılaştırması (Ortalama), TITLE Veriseti, Özet (abstract) veriseti en iyi performans (+6 more)
+### Community 10801 - "je"
+Cohesion: 0.22
+Nodes (3): je, Ye(), Qe()
 
 ### Community 10802 - "in to post3.cpp"
 Cohesion: 0.31
 Nodes (12): em(), ev(), fu(), hp(), lfas(), main(), od(), op() (+4 more)
 
-### Community 10803 - "PRD: Lightweight MLP Based Content-Aware Profile-Based Text Compression System"
-Cohesion: 0.14
-Nodes (18): Rastgele sayısal kayıt veri seti (JSON, 71 kayıt), records dizisi: id, name, values, metadata, Hafif MLP profil sınıflandırıcı (auto-encoder yerine), PRD: Lightweight MLP Based Content-Aware Profile-Based Text Compression System, Profil-algoritma eşleştirme, Kitap seviyesinde train/val/test bölme, Chunk size keşfi (40KB hipotezi), Huffman, LZW, Aritmetik, BWT+MTF (+10 more)
+### Community 10803 - "Üniversite Ders Notları README Oluşturucu - Ajan Kılavuzu"
+Cohesion: 0.10
+Nodes (20): Arayüz (GUI), Bağımlılıklar, `dersler.json`, Dizin Yapısı, Geliştirici Bağımlılıkları (opsiyonel), Google Form Entegrasyonu, `hocalar.json`, İlişkili Proje (+12 more)
 
 ### Community 10804 - "Detaylı Açıklamalar"
 Cohesion: 0.12
@@ -40511,15 +40600,15 @@ Nodes (16): Bubble Sort (Kabarcık Sıralaması), Ders 3 Çalışma Özeti, Ders
 
 ### Community 10805 - "stbi_inline"
 Cohesion: 0.31
-Nodes (16): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__err(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib() (+8 more)
+Nodes (15): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib(), stbi__parse_zlib_header() (+7 more)
 
 ### Community 10806 - "Detaylı Açıklamalar"
 Cohesion: 0.13
 Nodes (14): 4 karakterlik değişken adı, Art arda üç 1 gelince hata, Beş durumlu makinede çıktı bulma, Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+6 more)
 
-### Community 10807 - "AddJournalPanel"
-Cohesion: 0.16
-Nodes (5): AddJournalPanel, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener, java.awt.event.ActionListener
+### Community 10807 - "Binary Heap"
+Cohesion: 0.11
+Nodes (20): d-ary Heap, Heap (binary heap, array representation), MAX-HEAPIFY, Priority Queue (heap implementation), Chapter 6 Heapsort, Young Tableau, Binary Heap, Heapsort (Algorithm 2.7) (+12 more)
 
 ### Community 10808 - "Detaylı Açıklamalar"
 Cohesion: 0.10
@@ -40577,37 +40666,37 @@ Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.18
 Nodes (11): Soru 10: Parseval teoreminin yorumu, Soru 1: Frekans uzayının önemi, Soru 2: Euler eşitliği, Soru 3: $e^{jn2\pi}$'nin değeri ve periyodiklik, Soru 4: İdeal alçak geçiren filtrenin impuls cevabı, Soru 5: Filtreleri adlandırma, Soru 6: İntegralin ayrık karşılığı, Soru 7: Birim impulsun DTFT'si ve yorumu (+3 more)
 
-### Community 10824 - "Lectures Index"
+### Community 10824 - "Ödev 1: Optimizasyon algoritmalarını karşılaştırma"
 Cohesion: 0.13
-Nodes (20): ATUS Processing Project, Önder'in markdown notları, Week 2 Lecture Notes - Big Data Analytics, Hafta 4 - 25 Ekim 2022 (ders yapılamadı), Week 5 Lecture Notes - YARN and Hadoop, Week 7 Lecture Notes - Hadoop and NoSQL, Week 8 Lecture Notes - NoSQL and Cassandra, Hafta 9 - 29 Kasım 2022 (TODO) (+12 more)
+Nodes (15): Kayıp (loss) değer dizileri (stop işaretli, 2. dosya), Kayıp (loss) değer dizileri (stop işaretli, 3. dosya), Kelime sözlüğü (5662 kelime, one-hot indeksi), ADAM (Stochastic), Grafikler (plots.ipynb, python görselleştirme), Adam, Eğitim/test bölme %80/%20, Harf 3-gram token (bonus) (+7 more)
 
 ### Community 10825 - "split_data.py"
 Cohesion: 0.18
 Nodes (7): _get_class_indices(), load_and_split_data(), _process_class_splits(), _read_data(), save_data_to_files(), save_single_dataset(), _split_indices_for_class()
 
-### Community 10826 - "jn"
-Cohesion: 0.02
-Nodes (99): createBoard(), drawBoard(), drawPath(), gameMenu(), main(), readFromFile(), runGameManuel(), score() (+91 more)
+### Community 10826 - "Ders 11 Genişletilmiş Notu: k-En Yakın Komşu, NumPy, Pandas ve scikit-learn ile Sınıflandırma"
+Cohesion: 0.03
+Nodes (57): 10.1 Colab ortamı, 10.2 Kısaltma neden kullanılır, 10.3 DataFrame'i CSV'ye yazma ve indirme, 10.4 Excel yazma ve okuma, 10. Google Colab ile Uygulama, 11.1 Dosya okuma sorunu ve çözüm, 11.2 head, tail, describe ve sütun adları, 11.3 iloc ve loc ile seçim (+49 more)
 
-### Community 10827 - "van Emde Boas tree"
-Cohesion: 0.18
-Nodes (13): proto-vEB structure, PROTO-VEB-MINIMUM, PROTO-VEB-SUCCESSOR, Reduced-space vEB tree (RS-vEB, Problem 20-1), Direct addressing bit vector, Superimposed tree of degree sqrt(u), Superimposed binary tree of bits, van Emde Boas tree (+5 more)
+### Community 10827 - "extend"
+Cohesion: 0.14
+Nodes (6): Core_Datapath, Core_Datapath, processor, processor, processor, processor
 
 ### Community 10828 - "Detaylı Açıklamalar"
 Cohesion: 0.14
 Nodes (13): 1. Yönlü türev soruları, 2. Doğru, düzlem ve uzaklık, 3. Kısmi türevin tanımla hesabı, 4. Kuvvet serisi (2016 final), 5. Seviye eğrisi ve gradyan, 6. Uzay eğrileri, 7. Tanım kümesi ve limit, Ders 15 Çalışma Özeti (+5 more)
 
 ### Community 10829 - "Detaylı Açıklamalar"
-Cohesion: 0.14
-Nodes (13): C# ile GUI ve olay işleme, Calendar ve fabrika metodu, Ders 18 Çalışma Özeti, Detaylı Açıklamalar, Dosya ve dosya biçimi, File sınıfı ve yollar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+5 more)
+Cohesion: 0.09
+Nodes (16): C# ile GUI ve olay işleme, Calendar ve fabrika metodu, Ders 18 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dosya ve dosya biçimi, File sınıfı ve yollar, Genel Konular (+8 more)
 
 ### Community 10830 - "11. Risk Analizi Yöntemleri"
 Cohesion: 0.18
 Nodes (11): 11.10 Ön tehlike analizi ve matris türleri, 11.1 Nicel ve nitel yöntemler, 11.2 Kontrol listesi (checklist), 11.3 Fine-Kinney, 11.4 Olası hata türleri ve etki analizi (FMEA), 11.5 Hata ağacı analizi, 11.6 Tehlike ve çalışılabilirlik analizi (HAZOP), 11.7 Olay ağacı analizi (+3 more)
 
-### Community 10831 - "Detaylı Açıklamalar"
-Cohesion: 0.14
-Nodes (13): Ayrık zaman örneği 1, Ayrık zaman örneği 2, Birim darbe cevabı ve frekans cevabı, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, FIR filtreler, Fourier dönüşümünün uygulamaları (+5 more)
+### Community 10831 - "Introduction to Machine Learning (Karslıgil 2025)"
+Cohesion: 0.18
+Nodes (20): Clustering slaytları (Unsupervised Learning), Clustering, Mesafe metrikleri, Elbow Method / WCSS, k-Means (Lloyd algoritması), Silhouette Score, Unsupervised Learning, Artificial Intelligence (+12 more)
 
 ### Community 10832 - "doubly.c"
 Cohesion: 0.57
@@ -40635,23 +40724,23 @@ Nodes (19): Carrillo-Lipman Bounds, CLUSTALW / CLUSTALX, DIALIGN, Dynamic Progra
 
 ### Community 10840 - "stdlib"
 Cohesion: 0.00
-Nodes (339): charBul(), main(), main(), rastgeleBuyuk(), KARESEL_HATA(), main(), BykElemanCikar(), EnBykBul() (+331 more)
+Nodes (316): charBul(), main(), main(), modAlRef(), modAlValue(), main(), rastgeleBuyuk(), KARESEL_HATA() (+308 more)
 
 ### Community 10841 - "Detaylı Açıklamalar"
-Cohesion: 0.13
-Nodes (15): Ders sonrası notlar, Detaylı Açıklamalar, Döngü kontrolü: etiket dizisi, Graf nerelerde kullanılır?, Karmaşıklıklar, Komşuluk listesi, Komşuluk matrisi, Kruskal algoritması (+7 more)
+Cohesion: 0.10
+Nodes (19): Ders 19 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Döngü kontrolü: etiket dizisi, Genel Konular, Graf nerelerde kullanılır?, Hocanın Özellikle Vurguladığı Kısımlar, Karmaşıklıklar (+11 more)
 
-### Community 10842 - "Ders 7 Genişletilmiş Notu: Nesneye Yönelik Çözümleme Uygulaması (Süreli Yayın Yönetim Yazılımı: Kullanım Senaryosu, Use Case Şeması ve Alan Modeli)"
-Cohesion: 0.12
-Nodes (16): 1. Uygulama Problemi: Süreli Yayın Yönetim Yazılımı Gereksinimleri, 2.1 Öğrenci Çözümleri Üzerinden Kritik Geri Bildirimler, 2.2 Hocanın Örnek Kullanım Senaryosu Çözümü, 2.3 Kullanım Senaryosu Hakkında Öğrenci Soruları ve Cevaplar, 2. Kullanım Senaryosu (Use Case) Metninin Hazırlanması ve Öğrenci Çözümlerinin Değerlendirilmesi, 3.1 Öğrenci Şeması Üzerinden "İnce Kırılım (Granularity)" Eleştirisi, 3.2 Hocanın Doğaçlama Şeması ve Çözüm PDF'indeki 4 Şema Alternatifi, 3. UML Kullanım Şemasının (Use Case Diagram) Çizilmesi ve Kırılım İlkeleri (+8 more)
+### Community 10842 - "Huffman kodlama"
+Cohesion: 0.13
+Nodes (19): Lineer Cebir ders sayfası README, Çıkmış sorular kaynağı, Esma Ekmekçi el yazısı notu, Öğrenci görüşleri, Yıldız oylaması (kolaylık ve mesleki gereklilik), Açgözlü (Greedy) Algoritmalar, Veri Sıkıştırma Final Proje Konuları, Huffman kodlama (+11 more)
 
 ### Community 10843 - "9. Mobil Hesaplamanın Dezavantajları ve Enerji Tüketimi"
 Cohesion: 0.29
 Nodes (7): 9.1 Dezavantajlar, 9.2 Mobil işletim sisteminin yönettiği bileşenler, 9.3 En çok enerji tüketen bileşenler, 9.4 Eski telefonlar sensör düğümü olarak, 9.5 Ekranın enerjisini azaltmak, 9.6 Diğer enerji tasarrufu yöntemleri, 9. Mobil Hesaplamanın Dezavantajları ve Enerji Tüketimi
 
-### Community 10844 - "teslim/src/train.py"
-Cohesion: 0.15
-Nodes (3): build_parser(), config_from_args(), main()
+### Community 10844 - "Association"
+Cohesion: 0.25
+Nodes (19): NYP Hafta 3 - İlişkiler: Association ve Dependency, NYP Hafta 4 - Aggregation ve Composition, Association (sahiplik), Cardinality (çokluk), Dependency (bağımlılık), NYP Hafta 3 - İlişkiler: Association ve Dependency, Nesneler ve sınıflar arası ilişkiler, Tek yönlü association (+11 more)
 
 ### Community 10845 - "Ders 2 Genişletilmiş Notu: Kör Arama Algoritmaları ve Sezgisel Aramaya Giriş"
 Cohesion: 0.12
@@ -40687,7 +40776,7 @@ Nodes (17): Bioinformatics 10 - Introduction to Statistics, Doğruluk, kesinlik,
 
 ### Community 10855 - "java.sql.Connection"
 Cohesion: 0.01
-Nodes (37): Suggestion, ActionListener, ActionListener, Runnable, Vehicle, VehicleStock, Warehouse, DealerVehiclePage (+29 more)
+Nodes (44): DBConnector, AddCarToStockPage, ActionListener, Runnable, Dealer, Vehicle, VehicleStock, Warehouse (+36 more)
 
 ### Community 10856 - "Win32 API programmer interface"
 Cohesion: 0.13
@@ -40730,8 +40819,8 @@ Cohesion: 0.20
 Nodes (4): LoginActivity, LoginActivityController, View.OnClickListener, LoginActivityView
 
 ### Community 10866 - "Kütüphane otomasyonu (dosya tabanlı)"
-Cohesion: 0.14
-Nodes (16): Fonksiyon pointer kullanımı, Lab-4 Gantt Çizelgesi (YPG 2022), Kitap işlemleri modülü, C ile Kütüphane Uygulaması, Öğrenci işlemleri modülü, Yazar işlemleri modülü, Dönem Projesi BLM2031 Kütüphane Otomasyonu (v0, 2022-23), CSV dosya depolama (+8 more)
+Cohesion: 0.22
+Nodes (10): Fonksiyon pointer kullanımı, Kitap işlemleri modülü, C ile Kütüphane Uygulaması, Öğrenci işlemleri modülü, Yazar işlemleri modülü, Dönem Projesi BLM2031 Kütüphane Otomasyonu (v0, 2022-23), CSV dosya depolama, Kütüphane otomasyonu (dosya tabanlı) (+2 more)
 
 ### Community 10867 - "3. UML Diyagramları Üzerinden Tasarım Değerlendirmeleri"
 Cohesion: 0.13
@@ -40745,9 +40834,9 @@ Nodes (13): Ders 22 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklama
 Cohesion: 0.16
 Nodes (18): Amplifier classes (A, B, AB, C, D), Amplifier efficiency, Bölüm 16: Power Amplifiers, Class B amplifier, Class C amplifier, Class D amplifier, Complementary-symmetry circuit, Crossover distortion (+10 more)
 
-### Community 10871 - ".main_gui"
+### Community 10870 - "Kisi"
 Cohesion: 0.16
-Nodes (8): ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener
+Nodes (3): AnonimKisi, IndirimliKisi, Kisi
 
 ### Community 10872 - "lab 4/mehmet_ali_duran/kod.cpp"
 Cohesion: 0.46
@@ -40769,37 +40858,33 @@ Nodes (11): determineM(), determineType(), getKey(), insert(), isPrime(), lookUp
 Cohesion: 0.14
 Nodes (13): Banka transferi sorusunun çözümü, Deadlock ile başa çıkma, Ders 26 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Güvenli durum ve kaçınma, Hocanın Özellikle Vurguladığı Kısımlar (+5 more)
 
-### Community 10878 - ".main_gui"
-Cohesion: 0.16
-Nodes (8): ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener
+### Community 10878 - "1. Hafta - 2 Mart 2022 Çarşamba"
+Cohesion: 0.12
+Nodes (18): Yazılım Hakkında Yanılgılar, Ders Notları Readme, 1. Hafta - 2 Mart 2022 Çarşamba, 1. Vize - 20 Nisan 2022 Çarşamba - Yazılı, 2. Vize - 25 Mayıs 2022 Çarşamba - Test, Eski Yazılım (Legacy Software), Final Sınavı - Yazılı, Free (Özgür) / Açık Kaynak (Open Source) Software (+10 more)
 
 ### Community 10879 - "Detaylı Açıklamalar"
 Cohesion: 0.14
 Nodes (13): Adres bağlama, Bitişik bellek ayırma, Bölümleme, Ders 28 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dinamik yükleme ve dinamik bağlama, Genel Konular (+5 more)
 
-### Community 10880 - "14. Komşuluk Listesinin C ile Gerçekleştirilmesi"
-Cohesion: 0.18
-Nodes (9): 14.1 Yapılar, 14.2 `createGraph`, 14.3 `createNode`, 14.4 `addEdge` ve Başa Ekleme, 14.5 Tam Program, 14.6 Ağırlık Nereye Yazılır?, 14. Komşuluk Listesinin C ile Gerçekleştirilmesi, Graph (+1 more)
-
-### Community 10881 - "Controlling Access to Files with ACLs"
-Cohesion: 0.26
-Nodes (14): Access Control Lists (ACL), Default ACLs, ACL Mask, ACL Permission Precedence, ACL Review Lab (shares/cases), ACL Secure Guided Exercise, Controlling Access to Files with ACLs, Default ACL (+6 more)
+### Community 10881 - "Kuvvet Serisi (Power Series)"
+Cohesion: 0.20
+Nodes (18): Kuvvet Serileri İçin Çarpım Teoremi, Kuvvet Serisi (Power Series), Yakınsaklık Yarıçapı (Radius of Convergence), Airy denklemi, Bölüm 10: Tekil Noktalar, Bölüm 9: Kuvvet Serileri ve Düzgün Noktalar, Euler denklemi (Cauchy-Euler), Indicial denklem ve kuvvet üsleri (+10 more)
 
 ### Community 10882 - "Mutexes"
 Cohesion: 0.18
 Nodes (12): Busy waiting / spin lock, Futexes, Hybrid thread implementations, Threads in the Kernel, Mutexes, Priority inversion problem, Pthreads mutexes, Scheduler Activations (upcalls) (+4 more)
 
-### Community 10883 - "Detaylı Açıklamalar"
-Cohesion: 0.14
-Nodes (13): Algoritma değerlendirme, Ders 23 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Gerçek zamanlı zamanlama, Hocanın Özellikle Vurguladığı Kısımlar, İş parçacığı zamanlaması (+5 more)
+### Community 10883 - "mnist-digits.txt veri dosyası"
+Cohesion: 0.12
+Nodes (17): mnist-digits.txt veri dosyası, mnist-digits.txt (MNIST el yazısı rakam verisi, sayısal piksel değerleri), MNIST, MNIST digits veri kümesi (mnist-digits.txt, parça 26/99), MNIST rakam piksel verisi (normalize 0-1), MNIST rakam verisi (4200 örnek, 784 öznitelik, 10 sınıf), Normalize edilmiş piksel vektörleri (0-1, 28x28), mnist-digits.txt (MNIST digit pixel data, slice 50/99) (+9 more)
 
 ### Community 10884 - "bootstrap/js/bootstrap.min.js"
 Cohesion: 0.13
 Nodes (12): i(), lt(), s(), _t(), i(), s(), t(), G() (+4 more)
 
-### Community 10885 - "Detaylı Açıklamalar"
-Cohesion: 0.13
-Nodes (14): Algoritma tasarım adımları, C karşılıkları, Ders 1 Çalışma Özeti, Ders sonrası notlar, Dersin amacı ve kapsamı (01:51:18 sonrası), Detaylı Açıklamalar, Düşünme sorusu: hash tablosunda ortalama yerleşme adımı (ekrandan, 01:47:00), Eratosthenes kalburu ile asal sayılar (+6 more)
+### Community 10885 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
+Cohesion: 0.11
+Nodes (18): 🔹 Ders 12: Bağlam Değişimi, Süreç Yaratma ve Sonlandırma: fork, exec, wait, Zombi ve Öksüz Süreçler, 🔹 Ders 14: Süreçler Arası İletişim: Paylaşımlı Bellek, Mesaj Geçirme, POSIX, Mach, Soketler, RPC ve Borular, 🔹 Ders 15: Uygulama 1: Shell Programlamaya Giriş, Dosya İşlemleri, İzinler, Değişkenler ve Echo, 🔹 Ders 16: İş Parçacıkları: Çoklu İş Parçacığı Modelleri, Pthreads, Amdahl Yasası ve İş Parçacığı Sorunları, 🔹 Ders 17: Uygulama 2: Shell Programlama, Pipe, tr, awk, Koşullar, Döngüler ve case, 🔹 Ders 19: Süreç Senkronizasyonu: Yarış Durumu, Kritik Bölge, Peterson Çözümü, Donanım Desteği, Mutex ve Semafor, 🔹 Ders 1: Dersin İşleyişi, İşletim Sistemine Giriş, Kesmeler, Depolama Hiyerarşisi ve Çok İşlemcili Sistemler, 🔹 Ders 20: Uygulama 3: fork, exec, wait, Zombi ve Öksüz Süreçler ve Pipe ile Süreçler Arası İletişim (+10 more)
 
 ### Community 10886 - "2. Dersin Konularına Genel Bakış"
 Cohesion: 0.18
@@ -40814,8 +40899,8 @@ Cohesion: 0.31
 Nodes (13): BERT (ince ayar), İki veri seti: 5 sınıflı küçük, 20 sınıflı büyük (Kaggle), DeepMoji (Felbo et al.), Emoji Prediction in Tweets using BERT (Nusrat et al.), F1 metriği (%75 doğruluk), FLAN (instruction tuning), GPT-3 ve GPT-2, Hugging Face Transformers kütüphanesi (+5 more)
 
 ### Community 10889 - ".attr"
-Cohesion: 0.06
-Nodes (25): Ders 26 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 6.1 Kütüphane ve İş Parçacığı Kimliği, 6.2 Fonksiyon Adlarındaki Alt Çizgi, 6.3 pthread_create (+17 more)
+Cohesion: 0.11
+Nodes (16): Ders 26 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 6.1 Kütüphane ve İş Parçacığı Kimliği, 6.2 Fonksiyon Adlarındaki Alt Çizgi, 6.3 pthread_create (+8 more)
 
 ### Community 10890 - "linkedreverse.c"
 Cohesion: 0.62
@@ -40862,8 +40947,8 @@ Cohesion: 0.56
 Nodes (8): addElement(), createSkipList(), deleteElement(), elemanBul(), freeBeforeHead(), getRandomLink(), main(), printList()
 
 ### Community 10903 - "TCP segment structure"
-Cohesion: 0.12
-Nodes (18): TCP Acknowledgment Number, Cumulative Acknowledgment, DevRTT, EstimatedRTT (EWMA), Fast retransmit, Is TCP GBN or SR? (hybrid), Maximum Segment Size (MSS), Piggybacked Acknowledgment (+10 more)
+Cohesion: 0.24
+Nodes (10): DevRTT, EstimatedRTT (EWMA), Fast retransmit, Is TCP GBN or SR? (hybrid), Round-Trip Time Estimation, Selective Acknowledgment (RFC 2018), TCP ACK Generation Recommendation (RFC 5681), TCP Reliable Data Transfer (+2 more)
 
 ### Community 10904 - "ödev 3/mehmet ali duran/kod.c"
 Cohesion: 0.40
@@ -40889,9 +40974,9 @@ Nodes (7): 10.1 Açık kaynaklı yazılım, 10.2 Soğan modeli, 10.3 Artılar ve
 Cohesion: 0.13
 Nodes (14): Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Rekürans bağıntılarının sınıflandırılması, Rekürans bağıntısı nedir? (+6 more)
 
-### Community 10910 - "Gradient Descent Slaytları (STAT 479, Raschka)"
-Cohesion: 0.19
-Nodes (13): Dört-Kol Mekanizması Problemi, Jacobian Matrisi, Lineer Olmayan Denklem Sistemleri, ADALINE (Widrow & Hoff 1960), Reverse Mode Auto-Differentiation / Backpropagation, Chain Rule (Zincir Kuralı), Computation Graph (PyTorch), Türev (Differential Calculus) (+5 more)
+### Community 10910 - "stbi_inline"
+Cohesion: 0.31
+Nodes (15): stbi__bit_reverse(), stbi__bitreverse16(), stbi__compute_huffman_codes(), stbi__fill_bits(), stbi__parse_huffman_block(), stbi__parse_uncompressed_block(), stbi__parse_zlib(), stbi__parse_zlib_header() (+7 more)
 
 ### Community 10911 - "blm_2512_codes/ödev_1.c"
 Cohesion: 0.39
@@ -40901,13 +40986,13 @@ Nodes (10): leftRightPrinter(), lockCreator2(), lockNum(), lockSetter(), main(),
 Cohesion: 0.36
 Nodes (9): countKeys(), create_hash(), findPrime(), hash_function(), insert(), main(), print_hash(), readAndCreateTable() (+1 more)
 
-### Community 10913 - "Detaylı Açıklamalar"
-Cohesion: 0.14
-Nodes (13): Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Eşitsizliklerle verilen bölgeler, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kartezyen ve kutupsal dönüşüm, Kutupsal eğri çizimi (+5 more)
+### Community 10913 - "BLM3041 Hafta III: İlişkisel Cebir II ve SQL'e Giriş"
+Cohesion: 0.18
+Nodes (18): Birleşim, kesişim, fark, Seçim (σ), Aggregate ve Group By (ℱ), ALTER, DROP, INSERT, UPDATE, DELETE, BETWEEN, BLM3041 Hafta III: İlişkisel Cebir II ve SQL'e Giriş, Bölme (division), DISTINCT ve ALL (+10 more)
 
-### Community 10914 - "FinanceList"
-Cohesion: 0.22
-Nodes (3): FinanceList, JTable, ActionListener
+### Community 10914 - "SupervisorPage"
+Cohesion: 0.04
+Nodes (17): CarList, JTable, CustomerList, JTable, FinanceList, JTable, ActionListener, SupervisorPage (+9 more)
 
 ### Community 10915 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -40921,41 +41006,45 @@ Nodes (14): Analog Electronics Homework 2 (2020), Kenetleyici (clamper) devreler
 Cohesion: 0.14
 Nodes (8): ActionListener, Runnable, ActionListener, Runnable, ActionListener, Runnable, ActionListener, Runnable
 
-### Community 10918 - "semanage fcontext"
-Cohesion: 0.22
-Nodes (12): ausearch / audit.log AVC, chcon, httpd_sys_content_t type, restorecon, RH134 Ch.5 Managing SELinux Security, sealert / setroubleshoot, SELinux booleans guided exercise (httpd_enable_homedirs), SELinux file contexts guided exercise (/custom Apache) (+4 more)
+### Community 10918 - "hüsamettin_ışıktaş/src/evaluation/significance.py"
+Cohesion: 0.16
+Nodes (7): bootstrap_ci(), collect_hits_by_method_scale(), compare_methods(), format_bootstrap_table(), format_significance_table(), mann_whitney_u(), _normal_cdf()
 
 ### Community 10919 - "Emoji Prediction and Model Analysis with NLP (Bitirme Raporu, Bedrettin Şamil Öztürk)"
 Cohesion: 0.21
 Nodes (13): BERTurk (bert-base-turkish-128k-uncased), bi-LSTM modeli, Veri üretimi ile veri artırımı (gpt-3.5-turbo, Mistral-7B-Instruct), Emoji Prediction and Model Analysis with NLP (Bitirme Raporu, Bedrettin Şamil Öztürk), Google Colab Pro ortamı, KNN sınıflandırıcı, Karışıklık matrisi, accuracy, precision, recall, F1, PsychExp veri kümesi (7 duygu etiketi) (+5 more)
 
-### Community 10920 - "Tanzimat Dönemi (1839-1876)"
+### Community 10920 - "teslim/src/experiments/results.py"
 Cohesion: 0.19
-Nodes (14): Fuat Paşa, İltizam sisteminin kaldırılması, Islahat Fermanı (1856), Kırım Savaşı (1853-1856), Âli Paşa, Mecelle, Mustafa Reşit Paşa, Nizamiye Mahkemeleri (+6 more)
+Nodes (7): aggregate_results(), load_result(), load_results(), result_filename(), save_result(), _to_serializable(), utc_timestamp()
 
-### Community 10921 - "Detaylı Açıklamalar"
+### Community 10921 - "Matematik 2/ders_kayitlari/2022-2023/sube_23/README.md"
+Cohesion: 0.04
+Nodes (44): Ardışık (iki katlı) limit ve çift yol testi, Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Kısmi türevlere giriş (+36 more)
+
+### Community 10922 - "teslim/src/evaluation/significance.py"
+Cohesion: 0.16
+Nodes (7): bootstrap_ci(), collect_hits_by_method_scale(), compare_methods(), format_bootstrap_table(), format_significance_table(), mann_whitney_u(), _normal_cdf()
+
+### Community 10923 - "YI-hafta 2-3"
+Cohesion: 0.14
+Nodes (14): Yİ FIZIGI _soru çözümleri-2, Taranmış soru çözümleri (CamScanner), YI-hafta 2-3, Asal (saf) yarıiletkenler, Bant yapısı ve yasak band aralığı, Durum yoğunluğu ve taşıyıcı konsantrasyonu, Kütle etkisi yasası, n-tipi ve p-tipi yarıiletkenler (+6 more)
+
+### Community 10924 - "Bölüm 4: ML'de Yeni Yaklaşımlar (ML v2)"
+Cohesion: 0.18
+Nodes (18): Adversarial attacks, Aktif örnekleme, Aktif öğrenme (active learning), Az sayıda örnekle eğitim (one/zero-shot), Bağlam içi öğrenme (in-context learning), Bölüm 4: ML'de Yeni Yaklaşımlar (ML v2), GAN (üretici çekişmeli ağlar), Gürültü ile düzenlileştirme (+10 more)
+
+### Community 10925 - "Places"
+Cohesion: 0.11
+Nodes (18): Places, Address, AverageRating, CategoryId, CityId, CreatedDate, Description, Id (+10 more)
+
+### Community 10926 - "5. Canlı Kodlama 1: İki Kelimenin Sözlükteki Sırası"
 Cohesion: 0.13
-Nodes (14): Ardışık (iki katlı) limit ve çift yol testi, Ders 10 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Kısmi türevlere giriş (+6 more)
+Nodes (15): 5.1 Kelimeleri Okumak, 5.2 Algoritmayı Birlikte Bulmak, 5.3 Kod, 5.4 Çıktıyı Güzelleştirmek, 5.5 NULL ile Karşılaştırma Uyarısı, 5. Canlı Kodlama 1: İki Kelimenin Sözlükteki Sırası, Açık kalan sorun: kelimenin sonundan sonrasını okumak, Ders 25 Çalışma Özeti (+7 more)
 
-### Community 10922 - "parted partition editor"
-Cohesion: 0.23
-Nodes (13): /etc/fstab persistent mounts, GPT partitioning scheme, MBR partitioning scheme, mkfs.xfs / XFS file system, mkswap / swapon / swapoff, parted partition editor, RH134 Ch.6 Managing Basic Storage, Storage partitions guided exercise (+5 more)
-
-### Community 10923 - "YI-hafta-7-soru çözümü"
-Cohesion: 0.33
-Nodes (6): Yİ FIZIGI _soru çözümleri-2, Taranmış soru çözümleri (CamScanner), Asal (saf) yarıiletkenler, YI-hafta-7-soru çözümü, Hall katsayısı ve iletkenlik tipi, Yarıiletken fiziği soru çözümleri
-
-### Community 10924 - "a2/cs231n/optim.py"
-Cohesion: 0.15
-Nodes (4): adam(), rmsprop(), sgd(), sgd_momentum()
-
-### Community 10925 - "assignment2/cs231n/optim.py"
-Cohesion: 0.15
-Nodes (4): adam(), rmsprop(), sgd(), sgd_momentum()
-
-### Community 10927 - "Dealer"
-Cohesion: 0.02
-Nodes (29): Dealer, SaleRecord, CustomerReportPage, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener (+21 more)
+### Community 10927 - "CustomerReportPage"
+Cohesion: 0.10
+Nodes (7): CustomerReportPage, ActionListener, ActionListener, ActionListener, ActionListener, ActionListener, Runnable
 
 ### Community 10928 - "Ders 1 Genişletilmiş Notu: Ölçü Birimleri, Temel Devre Kavramları, Devre Elemanları ve Ohm Yasası"
 Cohesion: 0.22
@@ -40973,17 +41062,17 @@ Nodes (5): degeroku(), kare(), main(), sort(), swap()
 Cohesion: 0.14
 Nodes (13): Dairesel Kuyruk, Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dizi ile Normal Kuyruk, Ekstra Alan Kullanmadan Yığını Ters Çevirme, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+5 more)
 
-### Community 10932 - "Architecture Guide (ogbl-collab link prediction)"
-Cohesion: 0.15
-Nodes (13): Common Neighbors baseline, Architecture Guide (ogbl-collab link prediction), GCN modeli, Hits@50 metriği (OGB Evaluator), MLP baseline, Bilgi erişimi (TF-IDF, BM25), Birliktelik kuralı madenciliği ve Apriori, Akış madenciliği ve Bloom filtreleri (+5 more)
+### Community 10932 - "Linear Congruential Method"
+Cohesion: 0.12
+Nodes (16): Chinese remainder algorithm, Choice of modulus, Coveyou's method, Mixed congruential method (c≠0), Computation mod w+1, Multiplicative congruential method (c=0), Order of a modulo m, Period of a sequence (+8 more)
 
 ### Community 10933 - "NoteList"
 Cohesion: 0.23
 Nodes (4): NoteList, AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener, DialogInterface.OnClickListener
 
-### Community 10934 - "Parser"
-Cohesion: 0.23
-Nodes (12): Code generator, Code optimization, Coercion and strongly typed languages, Grammar and syntax diagrams, Lexical analysis, Lexical analyzer, Parser, Symbol table (+4 more)
+### Community 10934 - "SubscriberUI"
+Cohesion: 0.18
+Nodes (3): SubscriberUI, java.awt.event.ActionListener, java.awt.event.ActionListener
 
 ### Community 10935 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.33
@@ -40998,8 +41087,8 @@ Cohesion: 0.33
 Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 10938 - "Mesleki Hukuk ve Etik Dönem Projesi: Normatif Etik Nedir?"
-Cohesion: 0.39
-Nodes (12): Normatif Etik Nedir? dönem projesi (Kayra Bulut, 20011901), R. Freeman, Erdem ahlakı, Freeman paydaş tanımı, Mesleki Hukuk ve Etik Dönem Projesi: Normatif Etik Nedir?, Normatif bağlılık, Normatif etik, Normatif paydaş teorisi (+4 more)
+Cohesion: 0.20
+Nodes (21): Normatif Etik Nedir? dönem projesi (Kayra Bulut, 20011901), R. Freeman, Erdem ahlakı, Freeman paydaş tanımı, Mesleki Hukuk ve Etik Dönem Projesi: Normatif Etik Nedir?, Normatif bağlılık, Normatif etik, Normatif paydaş teorisi (+13 more)
 
 ### Community 10939 - "BookAuthorList"
 Cohesion: 0.27
@@ -41009,9 +41098,9 @@ Nodes (10): bookauthor_deinit(), bookauthor_file_read(), bookauthor_init(), book
 Cohesion: 0.42
 Nodes (8): copyArray(), insertionSort(), isSorted(), main(), merge(), mergeSortKWay(), shuffle(), testTheSortingAlgorithm()
 
-### Community 10941 - "k_means.py"
-Cohesion: 0.23
-Nodes (6): assign_new_centers(), assign_samples_to_clusters(), calculate_jaccard_similarity(), find_cluster(), find_representative_sample(), read_dataset()
+### Community 10941 - "Bilgisayarla Görme Projesi Raporu (Image Captioning)"
+Cohesion: 0.21
+Nodes (17): BLEU skoru, Bilgisayarla Görme Projesi Raporu (Image Captioning), Encoder-decoder modeli, Flickr 8k veri seti, Görüntü işleme, Image Captioning (görüntü alt yazılandırma), InceptionV3 encoder, Bilgisayarla görme proje raporu (LaTeX kaynağı) (+9 more)
 
 ### Community 10942 - "🎯 Derslerin Detaylı Özetleri ve Kazanımları"
 Cohesion: 0.17
@@ -41022,8 +41111,8 @@ Cohesion: 0.17
 Nodes (11): Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kütüphane masa ve mola takip sistemi, Kısa Tekrar Notları, Online bankacılık sistemi (+3 more)
 
 ### Community 10944 - "Appendix A Summations"
-Cohesion: 0.24
-Nodes (12): Appendix A Summations, Arithmetic series, Bounding summations (induction, splitting, integrals), Geometric series, GREEDY-SET-COVER, Harmonic number, Harmonic series, Telescoping series (+4 more)
+Cohesion: 0.19
+Nodes (15): Appendix A Summations, Arithmetic series, Bounding summations (induction, splitting, integrals), Geometric series, GREEDY-SET-COVER, Harmonic number, Harmonic series, Set-covering problem (+7 more)
 
 ### Community 10945 - "7. Zincir Kuralı ile Çıkış Ağırlığının Türetilmesi"
 Cohesion: 0.29
@@ -41037,9 +41126,9 @@ Nodes (7): 12.1 Yöntemlerin kısa karşılaştırması, 12.2 Gradyan, 12.3 Hess
 Cohesion: 0.22
 Nodes (9): 4.1 Tanım ve Motivasyon, 4.2 Isomap (Tenenbaum vd., 2000), 4.3 Yerel Doğrusal Gömme (LLE, Roweis ve Saul, 2000), 4.4 Laplacian Eigenmaps ve Hessian Eigenmaps, 4.5 Örnek Dışı (Out-of-Sample) Problemi, 4.6 Sınıflandırmada Manifold Öğrenme, 4.7 Sonuçlar, 4.8 Öz Nitelik Azaltma Başarıyı Nasıl Artırır? (+1 more)
 
-### Community 10948 - "ChatbotGUI"
-Cohesion: 0.20
-Nodes (3): ChatbotGUI, main(), preprocess_text()
+### Community 10948 - "CNN Part 1 slaytları"
+Cohesion: 0.17
+Nodes (17): CNN Part 1 slaytları, Aktivasyon fonksiyonları (Sigmoid, tanh, ReLU), AlexNet (2012), Convolution katmanında backpropagation, Batch size (SGD, mini-batch), Convolution katmanı (filtre, stride, padding), Ne kadar eğitmeli: overfitting/underfitting, Elle tasarlanmış görüntü özellikleri (HOG, SIFT, color histogram, BoW) (+9 more)
 
 ### Community 10949 - "5. Çok Dilli (Cross-Lingual) Kelime Vektörleri"
 Cohesion: 0.22
@@ -41057,9 +41146,9 @@ Nodes (14): Ayrıntılı proje planı şablonu, Ders 11 Çalışma Özeti, Ders 
 Cohesion: 0.53
 Nodes (7): createNewNode(), deleteNode(), findMin(), freeTree(), inorder(), insertNode(), main()
 
-### Community 10953 - "matcherFromTokens"
-Cohesion: 0.20
-Nodes (12): addCombinator(), condense(), createPositionalPseudo(), elementMatcher(), markFunction(), matcherFromGroupMatchers(), matcherFromTokens(), multipleContexts() (+4 more)
+### Community 10953 - "Özellik Seçimi: Online News Popularity Karşılaştırmalı Analiz raporu"
+Cohesion: 0.18
+Nodes (17): Aşırı öğrenme analizi (tespit edilmedi), Filtreleme (Pearson) - %64.31, kw_avg_avg ortak özellik, L2 regularization, Online News Popularity veri kümesi (39.644 makale), Özellik Seçimi: Online News Popularity Karşılaştırmalı Analiz raporu, Gömülü Random Forest - %62.78, Sarmalayıcı RFE 15 özellik - %65.10 (+9 more)
 
 ### Community 10954 - "Chapter 4 DC Biasing BJTs"
 Cohesion: 0.19
@@ -41073,9 +41162,9 @@ Nodes (7): Karmaşık sayılar ve fazörler, Sinüzoidal işaretler, RMS, faz fa
 Cohesion: 0.20
 Nodes (10): 7.1 Neden maliyet tahmini?, 7.2 Bilirkişi takdiri (Expert Estimation), 7.3 Delphi yöntemi, 7.4 Analiz yöntemi, 7.5 İstatistiksel modeller, 7.6 Araçlarla ilgili hatırlatma, 7. Maliyet Tahmin Yöntemleri, COCOMO modeli (+2 more)
 
-### Community 10957 - "Animation"
-Cohesion: 0.18
-Nodes (12): adoptValue(), ajaxConvert(), ajaxHandleResponses(), Animation(), createFxNow(), createTween(), defaultPrefilter(), done() (+4 more)
+### Community 10957 - "Ders 10 Genişletilmiş Notu: Kod Kusurları: Divergent Change, Shotgun Surgery, Primitive Obsession, Feature Envy ve Video Kiralama Refactoring Örneği"
+Cohesion: 0.12
+Nodes (16): 10. Kod Kusurlarından Anti-Pattern'lere, 1.1 Hocanın benzetmesi, 1.2 Örnekler, 1.3 Çözüm, 1. Divergent Change ve Shotgun Surgery, 2. Primitive Obsession (İlkel Tiplerin Aşırı Kullanımı), 3. Replace Data Value with Object, 4. Replace Type Code with Class (+8 more)
 
 ### Community 10958 - "ödev_2_runge_kutta_4/22011641.c"
 Cohesion: 0.46
@@ -41096,10 +41185,6 @@ Nodes (9): Akademisyen MUK, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Y
 ### Community 10962 - "Restoran sipariş takip / yönetim sistemi"
 Cohesion: 0.15
 Nodes (13): Kaynak: toomuchsena/system-analysis-and-design-project, toomuchsena/system-analysis-and-design-project GitHub reposu, Müşteri, çalışan, yönetici anketleri, Değerlendirme ağırlıkları, Restoran sipariş takip sistemi proje raporu 2023 (BLM2042), Proje ekibi ve görev dağılımı, Gereksinim analizi (kullanım kolaylığı, raporlanabilirlik), Restoran sipariş takip / yönetim sistemi (+5 more)
-
-### Community 10963 - "Detaylı Açıklamalar"
-Cohesion: 0.17
-Nodes (11): Ders 21 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Filozoflar: basit çözüm ve kilitlenme, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Monitörle filozoflar (+3 more)
 
 ### Community 10964 - "İnterpolasyon (eğri uydurma)"
 Cohesion: 0.17
@@ -41149,9 +41234,9 @@ Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.33
 Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 10977 - "Örnek Sorular"
-Cohesion: 0.17
-Nodes (12): Soru 10 (ekrandan, 02:45:00), Soru 11 (derste sözlü, 01:46:02), Soru 1 (ekrandan, 00:30:00), Soru 2 (derste sözlü, 00:54:55), Soru 3 (ekrandan, 01:25:00), Soru 4 (ekrandan, 01:30:00 ve 01:35:00), Soru 5 (derste sözlü, 01:35:46), Soru 6 (ekrandan, 01:40:00) (+4 more)
+### Community 10977 - "Mutlak / Şartlı Yakınsaklık"
+Cohesion: 0.18
+Nodes (16): Mukayese (Karşılaştırma) Testi, p-Serisi, Karşılaştırma testleri, Seri 2, p-serisi testi, Kuvvet serisi, Seri 3, Yakınsaklık aralığı ve yarıçapı (+8 more)
 
 ### Community 10978 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -41161,9 +41246,13 @@ Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 10981 - "6. Galeri Örneği: Dizilerle Çokluk"
-Cohesion: 0.22
-Nodes (9): 6.1 Sınıf Şemasını Okumak, 6.2 Alanlar ve Yapıcı, 6.3 Araba Ekleme, 6.4 Arama ve Method Overloading, 6.5 Silme: Kaydırma İşlemi, 6.6 Satma, 6.7 Test Sınıfı, 6. Galeri Örneği: Dizilerle Çokluk (+1 more)
+### Community 10980 - "malisoylu/kod.c"
+Cohesion: 0.35
+Nodes (15): bisection(), fx_hesapla(), fx_oku(), gaussElimination(), gaussSeidal(), grafik(), GregoryNewton(), matrisInvers() (+7 more)
+
+### Community 10981 - "Detaylı Açıklamalar"
+Cohesion: 0.12
+Nodes (15): Aggregation, Composition, Ders 9 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, `extends` ve `super`: `Person`, `Employee`, `Manager`, Galeri örneği (composition), Genel Konular (+7 more)
 
 ### Community 10982 - "Shell Programlama Uygulaması (Ders 6)"
 Cohesion: 0.21
@@ -41213,13 +41302,13 @@ Nodes (5): First_Question(), Fourth_Question(), main(), Second_Question(), Third
 Cohesion: 0.14
 Nodes (16): Aktarım katmanı (Bölüm 3), Cerf ve Kahn TCP/IP, Go-Back-N (GBN), Güvenilir veri aktarımı ilkeleri, MSS ve MTU, Multiplexing ve demultiplexing, Pipelined protokoller, Pipelining (+8 more)
 
-### Community 10998 - "Detaylı Açıklamalar"
-Cohesion: 0.17
-Nodes (11): 1. Yazılımın Doğası, Yaşam Döngüsü ve Zamanla Yetersizleşmesi, 2. Yazılım Türleri ve Standartlar, 3. Eski Yazılım (*Legacy Software*) ve Yenilenme Nedenleri, 4. Yazılımı Etkileyen Eğilimler, 5. Yazılım Hakkındaki Yanılgılar ve Proje Başarı Oranları, 6. Nesneye Yönelik Tasarım Kalıpları ve Kod Kalitesi Kavramları, Ders 1 Çalışma Özeti, Detaylı Açıklamalar (+3 more)
+### Community 10997 - "ImageService.java"
+Cohesion: 0.11
+Nodes (3): Main, Repository, ImageService
 
-### Community 10999 - "Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 2"
-Cohesion: 0.14
-Nodes (20): Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Bilgileri, Ders tipi zorunlu 4. sınıf güz, Öğrenci görüşleri ve yıldız oylaması, 18. yüzyıl sonunda Osmanlı durumu, Asakir-i Mansure-i Muhammediyye, Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 2, Hariciye Nezareti, İlk nüfus sayımı (+12 more)
+### Community 10999 - "Tanzimat Dönemi (1839-1876)"
+Cohesion: 0.04
+Nodes (56): Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Bilgileri, Ders tipi zorunlu 4. sınıf güz, Öğrenci görüşleri ve yıldız oylaması, 18. yüzyıl sonunda Osmanlı durumu, Asakir-i Mansure-i Muhammediyye, Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 2, Hariciye Nezareti, İlk nüfus sayımı (+48 more)
 
 ### Community 11000 - "vya_ödev_1_search.c"
 Cohesion: 0.47
@@ -41253,13 +41342,13 @@ Nodes (11): 1. Yüksek Uyum, Tasarım Kalıpları (Design Patterns) ve Tasarım�
 Cohesion: 0.46
 Nodes (6): initialize_output(), main(), print_matrix(), read_kernel(), read_matrix(), write_output()
 
-### Community 11008 - "autorun_defaults.sh"
-Cohesion: 0.27
-Nodes (11): build_customer_churn(), build_spotify_churn(), eval_customer_churn(), eval_spotify_churn(), print_usage(), autorun_defaults.sh script, customer_churn field_types (int int float float str str str bool bool int bool), Churn classification task (+3 more)
-
 ### Community 11009 - "Detaylı Açıklamalar"
 Cohesion: 0.14
 Nodes (13): AES'in yapısı ve S-box, Akış şifreleme ve RC4, Blok şifreleme çalışma modları (ekrandan, 00:55:00), Ders 13 Çalışma Özeti, DES ve 3DES, Detaylı Açıklamalar, Feistel ağı, Genel Konular (+5 more)
+
+### Community 11010 - "Detaylı Açıklamalar"
+Cohesion: 0.12
+Nodes (16): Ara (Infix) İfadeyi Son (Postfix) İfadeye Çevirme, Bağlı Listeyle Kuyruk, Dairesel Kuyruk (Circular Queue), Derleyicinin İki Yığınla Hesaplaması, Ders sonrası notlar, Detaylı Açıklamalar, Dinamik Bellek Sorusu, Dizi ile Yığın Gerçekleştirme (+8 more)
 
 ### Community 11011 - "Detaylı Açıklamalar"
 Cohesion: 0.17
@@ -41269,17 +41358,17 @@ Nodes (11): 4+1 görünüm modeli ve mimari stiller, Ayrıştırma ilkeleri ve e
 Cohesion: 0.26
 Nodes (9): ClosestPointsV3(), FindDistance(), ClosestPointsV4(), DiziMinMaxBul(), FindDistance(), Frekansbul(), KimlerOlecek(), main() (+1 more)
 
-### Community 11013 - "Bilgisayar Mühendisliği Bölümü Oryantasyon Eğitimi"
-Cohesion: 0.15
-Nodes (15): Bilgisayar Mühendisliği Bölümü, Bilgisayar Mühendisliği Bölümü Oryantasyon Eğitimi, Bölüm araştırma alanları ve grupları, Elektrik-Elektronik Fakültesi, Farabi Erasmus Mevlana, İletişim ve şikayet çözüm sırası, Laboratuvar kullanım kuralları, Sınav kuralları (+7 more)
+### Community 11013 - "ödev2/onder_gormez/main.c"
+Cohesion: 0.23
+Nodes (11): compareZeroAndOne(), convertToString(), getRequiredBitCountForSigned(), getRequiredBitCountForUnsigned(), main(), isStackEmpty(), isStackFull(), peekValueFromStack() (+3 more)
 
-### Community 11014 - "Term project requirements.txt (pinned deps)"
-Cohesion: 0.17
-Nodes (12): gradio package, graphviz package, matplotlib package, numpy package, pandas package, Term project requirements.txt (pinned deps), datasets package, nltk package (+4 more)
+### Community 11014 - "ödev 2/mehmet_ali_duran/kod.c"
+Cohesion: 0.28
+Nodes (13): createArray(), createMinHeap(), createRandomNumbers(), extractMin(), insertMinHeap(), kWayMergeSort(), main(), mergeKSortedArrays() (+5 more)
 
-### Community 11016 - "Detaylı Açıklamalar"
-Cohesion: 0.13
-Nodes (14): Araç kiralama uygulaması, Ders 12 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Fitness center otomasyonu, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+6 more)
+### Community 11016 - "teslim/src/data/loader.py"
+Cohesion: 0.18
+Nodes (5): CollabDataBundle, _configure_torch_dataset_loading(), load_collab_data_bundle(), load_collab_dataset(), load_edge_split()
 
 ### Community 11017 - "answer_1.c"
 Cohesion: 0.33
@@ -41289,57 +41378,49 @@ Nodes (9): chYaz(), hesapla(), main(), oncelik(), pop(), push(), pushop(), strin
 Cohesion: 0.09
 Nodes (30): 6. Sona Ekleme ve İlk Denemedeki Hata, 7. head Ne Zaman Değişir?, Ders 11 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+22 more)
 
-### Community 11020 - "Detaylı Açıklamalar"
-Cohesion: 0.13
-Nodes (14): Boyer-Moore Kodu, Boyer-Moore Yöntemi, Boyer-Moore Örneği, Ders 22 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+6 more)
+### Community 11020 - "hüsamettin_ışıktaş/src/data/loader.py"
+Cohesion: 0.18
+Nodes (5): CollabDataBundle, _configure_torch_dataset_loading(), load_collab_data_bundle(), load_collab_dataset(), load_edge_split()
 
 ### Community 11021 - "framework"
 Cohesion: 0.17
 Nodes (3): TestAll, TestOfAllClasses, TestOfAllClasses
 
-### Community 11022 - "CreatePlaylistActivity"
-Cohesion: 0.26
-Nodes (4): CreatePlaylistActivity, View.OnClickListener, TypeToken<List<MyPlayList>>, View.OnClickListener
+### Community 11022 - "AudioModel"
+Cohesion: 0.02
+Nodes (37): CreatePlaylistActivity, View.OnClickListener, TypeToken<List<MyPlayList>>, View.OnClickListener, CreatePlayListAdapter, View.OnClickListener, ViewHolder, MainActivity (+29 more)
 
-### Community 11023 - "CreatePlaylistActivity"
-Cohesion: 0.26
-Nodes (4): CreatePlaylistActivity, View.OnClickListener, TypeToken<List<MyPlayList>>, View.OnClickListener
+### Community 11023 - "Ders 14 - Filtre Tasarımı Temelleri"
+Cohesion: 0.24
+Nodes (16): Enerji ve güç işaretleri, Esma'nın ss notları, Fourier serisi ve Fourier dönüşümü, Konvolüsyon ve impuls response, Sinyaller ve sistemler notları, Sistem özellikleri (hafıza, nedensellik, kararlılık, zamanda değişmezlik, lineerlik), Ders 14 - Filtre Tasarımı Temelleri, Frekans Yanıtı (+8 more)
 
-### Community 11025 - "C File Processing"
-Cohesion: 0.18
-Nodes (11): C File Processing, File Matching Exercise, Files and Streams, fopen and fclose, fprintf and fscanf, fseek, fwrite and fread, printf/scanf Conversion Specifiers (Ch.9 exercises), Random-Access Files (+3 more)
-
-### Community 11026 - "src/naive_bayes.py"
-Cohesion: 0.33
-Nodes (9): calculate_probability_for(), calculate_probability_for_all_features(), filter_samples_by(), get_class_samples(), get_feature_column_names(), init_prediction_counts(), predict_all_samples(), predict_sample() (+1 more)
-
-### Community 11027 - "stbi__uint16"
-Cohesion: 0.32
-Nodes (7): stbi__compute_y_16(), stbi__convert_8_to_16(), stbi__convert_format16(), stbi__jpeg_dequantize(), stbi__jpeg_finish(), stbi__load_and_postprocess_16bit(), stbi__uint16 *stbi_load_from_file_16(FILE *f, int *x, int *y, int *comp, int req_comp)()
+### Community 11027 - "Detaylı Açıklamalar"
+Cohesion: 0.12
+Nodes (16): Bir kayıt satırından ne öğrenilir?, Bölüm (episode) tanımlama, Ders sonrası notlar, Detaylı Açıklamalar, HITS'in dezavantajları, HITS'te taban küme nasıl kurulur?, Kullanıcı işlem veritabanı, Kullanıcı tanımlama (+8 more)
 
 ### Community 11028 - "hüsamettin_ışıktaş/src/ui/page_algorithm_runner.py"
 Cohesion: 0.21
 Nodes (3): _command_for_runner(), render_algorithm_runner(), _run_single_experiment()
 
 ### Community 11029 - "Contact"
-Cohesion: 0.02
-Nodes (39): DatabaseContract, PlayerAnswersContract, PlayersContract, QuestionsContract, CreateOrEditContactActivity, MessageActivity, Runnable, SearchResultsActivity (+31 more)
+Cohesion: 0.01
+Nodes (60): ValueEventListener, View.OnClickListener, OnCompleteListener<Void>, View.OnClickListener, Continuation<UploadTask.TaskSnapshot,Task<Uri>>, OnCompleteListener<Uri>, OnFailureListener, DatabaseContract (+52 more)
 
 ### Community 11030 - "Detaylı Açıklamalar"
 Cohesion: 0.18
 Nodes (10): Ders 25 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İki Eğri Arasında Kalan Alan, Kutupsal Denklem ve Noktalar, Kuvvet Serileri (+2 more)
 
-### Community 11031 - "GameState"
-Cohesion: 0.29
-Nodes (9): gamestate_file_pop(), gamestate_file_push(), gamestate_file_write(), gamestate_from_lastheader(), gamestate_pop_matrix(), gamestate_to_lastheader(), gamestate_top_matrix(), ingame_menu_undo() (+1 more)
+### Community 11031 - "Detaylı Açıklamalar"
+Cohesion: 0.13
+Nodes (14): Analog ve dijital, Bellek modeli ve adresler, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Dönüşüm örnekleri, Excess gösterimi, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+6 more)
 
 ### Community 11032 - "Örnek Sorular"
 Cohesion: 0.18
 Nodes (11): Soru 10 (derste sözlü, 02:24:57), Soru 1 (derste sözlü, 00:36:52), Soru 2 (derste sözlü, 00:41:28), Soru 3 (derste sözlü, 00:47:42), Soru 4 (derste sözlü, 01:58:32 ve 01:59:07), Soru 5 (derste sözlü, 02:16:16), Soru 6 (derste sözlü, 02:18:20), Soru 7 (derste sözlü, 02:30:13) (+3 more)
 
-### Community 11033 - "BLM3510 Yapay Zeka 2025 Bahar projesi"
-Cohesion: 0.24
-Nodes (10): BLM3510 2025 Proje README (Yapay Sinir Ağları ile Görsel Tahminleme), 25x25 ikili matris, BLM3510 Yapay Zeka 2025 Bahar projesi, CNN (Convolutional Neural Network), Görev 1 iki nokta mesafesi, Görev 2 en yakın iki nokta mesafesi, Görev 3 en uzak iki nokta mesafesi, Görev 4 nokta sayısı sınıflandırma (+2 more)
+### Community 11033 - "Ünite 13 C Önişlemcisi"
+Cohesion: 0.17
+Nodes (15): assert makrosu, DEBUG ile koşullu hata ayıklama, #define makro, #define sembolik sabit, #error, #line, Makro argümanlarında parantez kullanımı, Makro ve fonksiyon karşılaştırması (+7 more)
 
 ### Community 11034 - "7. İş Sözleşmesi ve Türleri"
 Cohesion: 0.29
@@ -41355,7 +41436,7 @@ Nodes (7): 2.1 Toz türleri, 2.2 Hastalığa yakalanmayı etkileyen kişisel etk
 
 ### Community 11037 - "BLM3061-MSAD README"
 Cohesion: 0.11
-Nodes (23): Kaynak: burakataly/YTU-CE, Hafta 5 Assembly Program Tipleri, Kesim (SEGMENT) tanımları, Lab 1 EXE Tipi Program: OBP Hesaplama ve Sıralama, OBP hesaplama (vize 0.4, final 0.6), Yuvarlama (round), Kaynak: burakataly/YTU-CE, Hafta 5 - Assembly program tipleri (EXE/COM) (+15 more)
+Nodes (22): Hafta 5 Assembly Program Tipleri, Kesim (SEGMENT) tanımları, Lab 1 EXE Tipi Program: OBP Hesaplama ve Sıralama, OBP hesaplama (vize 0.4, final 0.6), Yuvarlama (round), Kaynak: burakataly/YTU-CE, Hafta 5 - Assembly program tipleri (EXE/COM), COM tipi programlar (+14 more)
 
 ### Community 11038 - "4. Gürültü"
 Cohesion: 0.29
@@ -41365,9 +41446,9 @@ Nodes (7): 4.1 Tanım, 4.2 Gürültünün etkileri, 4.3 Gürültüden korunma, 4
 Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11040 - "Veritabanı uygulama dersi 1: DDL/DML"
-Cohesion: 0.25
-Nodes (11): CREATE DATABASE, CREATE TABLE ve sütun veri tipleri, DDL komutları (CREATE, ALTER), Tablolar ve ilişkisel veri, Veritabanı uygulama dersi 1: DDL/DML, ALTER TABLE, DDL komutları, DML komutları (+3 more)
+### Community 11040 - "Databases (Ch 9)"
+Cohesion: 0.07
+Nodes (37): Birthday paradox and hash clustering, Chapter 9 Database Systems, Commit/Rollback Protocol, Database Fundamentals, Maintaining Database Integrity, Database Model, Social Impact of Database Technology, Databases (Ch 9) (+29 more)
 
 ### Community 11041 - "Ders 10 Çalışma Özeti"
 Cohesion: 0.33
@@ -41381,17 +41462,17 @@ Nodes (6): add(), create(), display(), hour_sort(), main(), sort()
 Cohesion: 0.50
 Nodes (6): display(), main(), readFromFile(), sort(), split(), writeToFiles()
 
-### Community 11044 - "digital_signal_and_image_processing_using_matlab/README.md"
-Cohesion: 0.31
-Nodes (9): 2D Fourier dönüşümü fft2 fftshift, create_h(M, A) impulse response, Discrete-Time Convolution and Audio Echo System Analysis (MATLAB), Frequency-Domain Noise Removal from Images Using 2D Fourier Transform, MSE ile myConv doğrulaması, myConv(x, nx, y, ny), Notch filtre (gürültü tepe noktaları), system_direct(x, M, A) (+1 more)
+### Community 11044 - "nonlinear_equation_solving.c"
+Cohesion: 0.37
+Nodes (14): aralik_y(), basit_i(), denklem_alma(), denklem_alma_2(), denklem_hesap(), grafik_y(), main(), newton_r() (+6 more)
 
 ### Community 11045 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11046 - "Ders 4 Çalışma Özeti"
-Cohesion: 0.18
-Nodes (8): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, İleri Yazılım Mimarisi Ders Kayıtları & Çalışma Özetleri
+### Community 11046 - "Sunum 8 - Analog Sensörlerden Veri Toplama ve Dönüştürücüler"
+Cohesion: 0.23
+Nodes (15): Nicemleme (quantization), ADC (analog-dijital dönüştürücü), DAC, Dijitalleştirme: örnekleme ve kuantalama, Flash ADC, Sigma-Delta ADC, Successive Approximation (SAR) ADC, ADXL335 ivmeölçer (+7 more)
 
 ### Community 11047 - "Ders 1 Çalışma Özeti"
 Cohesion: 0.33
@@ -41413,21 +41494,25 @@ Nodes (8): 10.1 Satış ve kâr tahminleri ölçülebilir olmalı, 10.2 Pazar b�
 Cohesion: 0.17
 Nodes (12): 10.10 İçeriğin yayımdan çıkarılması ve erişimin engellenmesi (Madde 9), 10.11 Özel hayatın gizliliği nedeniyle erişimin engellenmesi (Madde 9/A), 10.1 Ortaya çıkışı ve amacı, 10.2 Bilgilendirme yükümlülüğü (Madde 3), 10.3 İçerik sağlayıcı (Madde 4), 10.4 Yer sağlayıcı (Madde 5), 10.5 Erişim sağlayıcı (Madde 6), 10.6 Erişim Sağlayıcıları Birliği (Madde 6/A) (+4 more)
 
-### Community 11052 - "3. Merkezi Eğilim Ölçüleri"
-Cohesion: 0.18
-Nodes (11): 3.10 Mod ve üçünün karşılaştırması, 3.1 Tanım, 3.2 Hangi ölçü seçilmeli?, 3.3 Olasılık tanımıyla ortalama, 3.4 Aritmetik ortalama, 3.5 Geometrik ve harmonik ortalama, 3.6 Ortalamalar arasındaki eşitsizlik, 3.7 Ağırlıklı aritmetik ortalama (+3 more)
+### Community 11052 - "Lojik Devreler-2 (2020) - Fourier, Nyquist, sayı sistemleri"
+Cohesion: 0.16
+Nodes (15): BCD ve kodlama (Excess-3, Aiken, Gray), Lojik Devreler-2 (2020) - Fourier, Nyquist, sayı sistemleri, Hata sezme (parity, LRC, CRC, Hamming), İşaretli ve kayan noktalı sayı gösterimi, Nicemleme ve bit sayısı, Nyquist frekansı (Fs >= 2 Fmax), 1 ve 2 tümleyen aritmetiği, Sayı sistemleri (ikili, sekizlik, onaltılık) (+7 more)
 
 ### Community 11053 - "Detaylı Açıklamalar"
 Cohesion: 0.15
 Nodes (12): Ders 13 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Gereksinim analizi bölümünde görülenler, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Proje planı bölümünde görülenler (+4 more)
 
-### Community 11054 - "Örnek Sorular"
-Cohesion: 0.18
-Nodes (11): Soru 10: Global hizalama matrisinden hizalamaları bulma (E2), Soru 1: Hangi hizalama daha iyi?, Soru 2: Dot plot algoritması, Soru 3: Dot plot'ta desen, Soru 4: Dot plot'tan global hizalama, Soru 5: Kayan ortalama filtresi, Soru 6: Global ve lokal hizalamada geri izlemenin başlangıcı, Soru 7: Global hizalama matrisi (+3 more)
+### Community 11054 - "Product"
+Cohesion: 0.17
+Nodes (3): Main, Product, VendingMachine
 
 ### Community 11056 - "Ders 14 - Veri Görselleştirme"
-Cohesion: 0.21
-Nodes (17): Veri görselleştirme, Görselleştirmenin avantajları, Kutu grafiği ile hata/aykırı değer tespiti, Bant genişliği ve görsel sistem, Ders 14 - Veri Görselleştirme, Köpeklerin koku ile kanser tespiti, Veri ve bilgi görselleştirme, Algı (perception) ve beş duyu (+9 more)
+Cohesion: 0.29
+Nodes (13): Görselleştirmenin avantajları, Kutu grafiği ile hata/aykırı değer tespiti, Bant genişliği ve görsel sistem, Ders 14 - Veri Görselleştirme, Köpeklerin koku ile kanser tespiti, Veri ve bilgi görselleştirme, Algı (perception) ve beş duyu, Bir resim bin kelimeye değer mi? (+5 more)
+
+### Community 11057 - "4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Final)"
+Cohesion: 0.15
+Nodes (15): 4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Taslak), A/B Register + ALU Datapath (Add/Sub/Complement, Taslak), 4-bit JK-FF Fonksiyon Üreteci Devresi (I1-I4 Seçimli, Final), 4-bit JK-FF Uyarma Tablosu ve Karnaugh Haritaları (j3,k3,j2,k2,j1,k1,j0,k0), A/B Register + ALU Datapath (Add/Sub/Complement, Final), Soru 1: 4-bit JK-FF Sayaç Tasarımı (M1,M2 Mod Seçimli, Enable'lı), Soru 2: ALU/Register Kontrol Birimi (CON, IN Opcode, A/B Register, Full Adder), IN Opcode Tablosu (0000-1101: tar<-con, src, A+B, A-B, B-A, +1, -1, complement...) (+7 more)
 
 ### Community 11058 - "Ders 7 Çalışma Özeti"
 Cohesion: 0.33
@@ -41442,28 +41527,28 @@ Cohesion: 0.15
 Nodes (13): 1. Projenin Çerçevesi, 4.1 Uygulama ve test planı, 4.2 Doğrulama kuralları ve Theory/Fact, 4.3 Kullanıcı testi (Swagger), 4. Kitapçı Web API'si: xUnit ile Parametreli Negatif Test, 7.1 Gereksinimler ve kullanım senaryoları, 7.2 Kullanıcı testi, 7.3 Entegrasyon testi (Postman) (+5 more)
 
 ### Community 11061 - "Detaylı Açıklamalar"
-Cohesion: 0.18
-Nodes (10): Chain of Responsibility, Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Facade, Flyweight, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kimya Fabrikası Örneği (+2 more)
+Cohesion: 0.13
+Nodes (14): Dairesel Kuyrukta Yeni Elemanın Yeri, Ders 14 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, First Child / Next Sibling Gösterimi, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+6 more)
 
-### Community 11062 - "Sanayi Devrimi"
-Cohesion: 0.10
-Nodes (21): 1838 Baltalimanı Ticaret Antlaşması, Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 1, Beykoz kağıt fabrikası, Denizcilik Yasası (1651), Dış borçlanma ve Düyun-u Umumiye, Fabrika sistemi, Feshane, Hamidiye Kağıt Fabrikası (+13 more)
+### Community 11062 - "Tanzimat'ta ekonomi, toplum ve kültür"
+Cohesion: 0.05
+Nodes (49): 1838 Baltalimanı Ticaret Antlaşması, Atatürk İlkeleri ve İnkılap Tarihi 1 - Ders 1, Beykoz kağıt fabrikası, Denizcilik Yasası (1651), Dış borçlanma ve Düyun-u Umumiye, Fabrika sistemi, Feshane, Hamidiye Kağıt Fabrikası (+41 more)
 
-### Community 11063 - "07 - Etik yönergeleri"
-Cohesion: 0.33
-Nodes (12): Dilimleme, 07 - Etik yönergeleri, Dünyadan etik ihlal örnekleri (Darsee, Summerlin, Hwang Woo-suk), Etik kurulları (oluşum, görev, usul), Haksız yazarlık, İntihal, Sahtecilik, Tekrar yayım (+4 more)
+### Community 11063 - "Credit Card Fraud Detection IEEE formatı rapor"
+Cohesion: 0.23
+Nodes (15): Credit Card Fraud Detection proje sunumu (Önder Görmez), KNN, LightGBM / CatBoost (gelecek çalışma), Başarı sırası KNN>RF>DT>LR>SVM>NB, SMOTE / oversampling / undersampling (gelecek çalışma), %80 train %20 test bölmesi, SVM (Grid Search), Credit Card Fraud Detection IEEE formatı rapor (+7 more)
 
 ### Community 11064 - "Veri Madenciliği ve Bilgi Keşfi/slaytlar_notlar/2023/onder_gormez markdown/08_20_11_2023.md"
 Cohesion: 0.13
 Nodes (14): K-Nearest Neighbors (KNN), 8. Week - 20 November 2023 Monday, Bootstrap Method, Classification: Alternative Techniques, Commmon Distance Measures, Data Splitting Methods, Hold-out Method, Instance Based Learning (K-Nearest Neighbors) (+6 more)
 
-### Community 11065 - "II. Abdülhamit dönemi başlangıcı"
-Cohesion: 0.26
-Nodes (12): 93 Harbi (1877-1878 Osmanlı-Rus Savaşı), Ayastefanos Antlaşması, Berlin Antlaşması, Birinci Meşrutiyet (1876), Doğu Sorunu, Düyun-u Umumiye İdaresi, II. Abdülhamit dönemi başlangıcı, Kanun-i Esasi (+4 more)
+### Community 11065 - "Optimizasyon Ödevi Raporu (Burak Başol)"
+Cohesion: 0.24
+Nodes (13): AdaGrad, Adam, Cosmos e5 Large anlamsal temsil, Cosmos Gemma 9b T1 ile veri üretimi (500 soru, iyi/kötü cevap), e5 Large (çok dilli) anlamsal temsil, Geri yayılım (backpropagation), Görselleştirme ve sonuçlar (tSNE, doğruluk grafikleri), Optimizasyon Ödevi Raporu (Burak Başol) (+5 more)
 
 ### Community 11066 - "gutenberg_downloader.py - Project Gutenberg downloader"
-Cohesion: 0.10
-Nodes (23): manifest.py - CSV manifest read/write helpers, read_manifest, write_manifest, clean_text.py - Text normalization and Gutenberg cleanup, clean_text, normalize_utf8, normalize_whitespace, reject_reason_for_text (+15 more)
+Cohesion: 0.07
+Nodes (32): manifest.py - CSV manifest read/write helpers, read_manifest, write_manifest, clean_text.py - Text normalization and Gutenberg cleanup, clean_text, normalize_utf8, normalize_whitespace, reject_reason_for_text (+24 more)
 
 ### Community 11067 - "ödev 4/sinem_sarak/kod.c"
 Cohesion: 0.46
@@ -41510,8 +41595,8 @@ Cohesion: 0.46
 Nodes (7): checkPalindrom(), isEmpty(), isFull(), main(), pop(), printStack(), push()
 
 ### Community 11078 - "Improving Command-line Productivity"
-Cohesion: 0.31
-Nodes (9): Bash Shell Script, Improving Command-line Productivity, Exit Codes ($?), Bash for Loop, grep command, if/then/elif/else Conditional Structures, Quoting Special Characters (backslash, single, double quotes), Shebang (#!/bin/bash) (+1 more)
+Cohesion: 0.10
+Nodes (26): anacrontab, at / atd deferred jobs, Bash Shell Script, Improving Command-line Productivity, Scheduling Future Tasks, Tuning System Performance, Classroom Environment (workstation, servera, serverb), User crontab recurring jobs (+18 more)
 
 ### Community 11079 - "linkedoddeven.c"
 Cohesion: 0.62
@@ -41521,25 +41606,21 @@ Nodes (5): createNode(), enterArray(), main(), oddEven(), traverse()
 Cohesion: 0.18
 Nodes (11): Users, CreatedDate, Email, Id, IsActive, Name, Password, ProfilePhoto (+3 more)
 
-### Community 11081 - "BLM3120 Term Project README"
-Cohesion: 0.31
-Nodes (11): Apriori algorithm (max-k), CAR support/confidence/lift thresholds, CBA (Class Association Rules) classifier, main.py CLI (GUI, process_dataset, decision_tree, CBA, naive_bayesian), Decision Tree (binary splitting, entropy/Gini), Entropy-based discretization of numeric features, Gradio GUI (visualization, performance plots), Graphviz dot decision tree rendering (+3 more)
-
 ### Community 11082 - "1. Yazılımı Etkileyen Eğilimler"
 Cohesion: 0.25
 Nodes (8): 1.1 Yaygınlaşan bilgi işlem, 1.2 Yaygınlaşan haberleşme ağı, 1.3 Özgür yazılım ve açık kaynak yazılım, 1.4 Takım çalışması zorunluluğu, 1.5 Küreselleşme, 1.6 Ekonomik krizler, 1. Yazılımı Etkileyen Eğilimler, Gevşek ekip
 
-### Community 11083 - "hafta4_3_recrsv1.c"
-Cohesion: 0.27
-Nodes (7): Detaylı Açıklamalar, main(), recurse(), MSD Radix Sort, allocate(), list(), main()
+### Community 11083 - "Detaylı Açıklamalar"
+Cohesion: 0.14
+Nodes (13): Ayrık zaman konvolüsyonu: ters çevir, kaydır, çarp, topla, Birim dürtü cevabı ve süperpozisyon integrali, Ders 5 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Konvolüsyonun uygulamaları ve maliyeti (+5 more)
 
 ### Community 11084 - "Ödev-4 Tanımı: Sosyal Ağda Influencer Tespiti"
 Cohesion: 0.28
 Nodes (9): Basel Kelziye - Ödev4 Raporu (BFS ile Influencer Tespiti), BFS ile In-degree ve Yol Sayımı (O(V^3)), Kayra Bulut - Ödev4 Raporu (BFS Queue ile Influencer Tespiti), BFS Queue tabanlı In-degree Hesaplama (O(V*E)), Muhammet Ali Şen - Ödev4 Raporu (Adjacency Matrix ile Influencer/Bot Tespiti), DFS ile Dolaylı Takipçi Sayımı (O(V+E)), Ödev-4 Tanımı: Sosyal Ağda Influencer Tespiti, Influencer Tespiti (In-degree Eleme + Toplam Bağlantı Sayımı) (+1 more)
 
-### Community 11085 - "org.springframework.boot.test.context.SpringBootTest"
-Cohesion: 0.27
-Nodes (3): SocialApplicationTests, ListopiaApplicationTests, BackendApplicationTests
+### Community 11085 - "Detaylı Açıklamalar"
+Cohesion: 0.14
+Nodes (13): Ders 15 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Huffman ağacı, Kısa Tekrar Notları (+5 more)
 
 ### Community 11086 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.20
@@ -41549,9 +41630,9 @@ Nodes (8): 13.1 Tanım, 13.2 Örnek, 13. Replace Array with Object, Ders 11 Çal
 Cohesion: 0.40
 Nodes (5): 6.1 İsim ve yıl sistemi (Harvard sistemi), 6.2 Alfabe-sayı sistemi, 6.3 Atıf sırası sistemi, 6.4 APA stili, 6. Kaynak Gösterme Sistemleri
 
-### Community 11089 - "BLM5121 Web Mining Dönem Projesi Önerisi"
-Cohesion: 0.38
-Nodes (10): ogbl-collab veri seti, Bağlantı Tahmini (Link Prediction), BLM5121 Web Mining Dönem Projesi Önerisi, Common Neighbors yöntemi, GCN yöntemi, Haftalık Zaman Çizelgesi, Hits@50 metriği, MLP yöntemi (+2 more)
+### Community 11089 - "lcd.py"
+Cohesion: 0.14
+Nodes (9): 9.1 POSIX Semaforları: İsimli (`Named`) ve İsimsiz (`Unnamed`) Semaforlar, 9.2 System V Semaforları ve Paylaşımlı Bellek ile Üretici-Tüketici, 9.3 Pthreads ile Çoklu İş Parçacığı (Multithreading) Programlama, 9.4 Pthreads Mutex Kilitleri ve Koşul Değişkenleri Uygulaması (`Ex_6` ve `Watcher` Örneği), 9. Laboratuvar Uygulaması: POSIX ve System V Semaforları ile Pthreads Senkronizasyon Örnekleri, Birleştirilebilir (`Joinable`) ve Ayrık (`Detached`) İş Parçacıkları (`Ex_4`), İş Parçacığı Oluşturma, Sonlandırma ve Argüman Aktarımı (`Ex_1` ve `Ex_2`), Örnek 1: İsimli İkili Semafor ile İki Prosesin Senkronizasyonu (`Ex_3_semA.c` ve `Ex_3_semB.c`, ekrandan, 02:26:00) (+1 more)
 
 ### Community 11090 - "2. Sentinel-2 Görüntülerinde Bulut Giderme: DSen2-CR"
 Cohesion: 0.25
@@ -41565,21 +41646,21 @@ Nodes (7): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.25
 Nodes (8): 6.1 FOTA, 6.2 Önerilen yöntem: ana hat, 6.3 Biçimler ve kod çözme, 6.4 Kodlama şemaları, 6.5 Deltadaki kopya bilgilerinin kullanılması, 6.6 Deneysel sonuçlar, 6.7 Sonuç, 6. Sunum 5: FOTA için Program Kodu Sıkıştırma (CodeComp)
 
-### Community 11093 - "Bir Noktadaki Türev Tanımı (Limit Tanımı)"
-Cohesion: 0.22
-Nodes (9): Logaritmik Türev Yöntemi, Kapalı Fonksiyonun Türevi (Kapalı Türetme Yöntemi), Lineerleştirme ve Diferansiyel, Türev Alma Kuralları (toplam, çarpım, bölüm, zincir kuralı), Yüksek Basamaktan (Mertebe) Türevler, Türev Varlığı ve Süreklilik İlişkisi, Değişim Oranları ve Eğrilerin Teğetleri, Bir Eğrinin Teğet ve Normal Doğrusu (+1 more)
+### Community 11093 - "1.Computer Networks and the Internet.pdf"
+Cohesion: 0.14
+Nodes (13): Ağ güvenliği (DoS, packet sniffing, IP spoofing), Ağ kenarı (network edge), Ağ çekirdeği (network core), Devre anahtarlama (FDM, TDM), Erişim ağları (kablo, DSL, WiFi, hücresel), Fiziksel ortam, Internet: nuts and bolts görünümü, Internet: servis görünümü (+5 more)
 
-### Community 11094 - "Chapter 11 Regression"
-Cohesion: 0.21
-Nodes (14): Adjusted R-square, ANOVA F-test, ANOVA and R-square, Categorical predictors and dummy variables, Linear regression (intercept and slope), Model building / variable selection, Multivariate regression (matrix approach), Overfitting a model (+6 more)
+### Community 11094 - "hüsamettin_ışıktaş/src/experiments/configs.py"
+Cohesion: 0.19
+Nodes (4): ExperimentConfig, get_default_config(), get_method_config(), validate_config()
 
 ### Community 11095 - "Örnek Sorular"
 Cohesion: 0.22
 Nodes (9): Soru 1 (ekrandan, 00:30:00), Soru 2 (ekrandan, 00:40:00), Soru 3 (ekrandan, 00:50:00), Soru 4 (ekrandan, 01:00:00), Soru 5 (derste sözlü, 00:55:20), Soru 6 (ekrandan, 01:45:00), Soru 7 (derste sözlü, 02:15:37), Soru 8 (ekrandan, 02:25:00) (+1 more)
 
-### Community 11096 - "Red Hat System Administration II (RH134, RHEL 8.0) Workbook"
-Cohesion: 0.28
-Nodes (9): Tuning System Performance, Classroom Environment (workstation, servera, serverb), Red Hat System Administration II (RH134, RHEL 8.0) Workbook, localectl and language packs (langpacks), nice and renice process priority, RHCSA certification, Linux Process Scheduling (SCHED_NORMAL, time-slicing), Static vs Dynamic Tuning (+1 more)
+### Community 11096 - "teslim/src/experiments/configs.py"
+Cohesion: 0.19
+Nodes (4): ExperimentConfig, get_default_config(), get_method_config(), validate_config()
 
 ### Community 11097 - "Content Distribution Network (CDN)"
 Cohesion: 0.19
@@ -41593,13 +41674,13 @@ Nodes (9): 7.1 Başlangıç durumu: R komutu, 7.2 Makine kodunun çözülmesi, 7
 Cohesion: 0.29
 Nodes (7): 11.1 Boş dize kabul edilir mi?, 11.2 Tek $a$ ve her makinenin kendi yığıtı, 11.3 $aa$ girişi, 11.4 Genel çalışma, 11.5 Kabul edilen giriş: $abba$, 11.6 Reddedilen giriş: $abbb$, 11. PDA örneği: $v v^R$ ve paralel makineler
 
-### Community 11100 - "Ders 7 Çalışma Özeti"
-Cohesion: 0.22
-Nodes (8): 1. Süreli Yayın Yönetim Yazılımı Gereksinimleri ve Kullanım Senaryosu Metni, 2. UML Kullanım Şeması (Use Case Diagram) Çözümleri, 3. Alan Modeli (Metotsuz UML Sınıf Şemaları) ve 3 Tasarım Alternatifi, Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11100 - "Blogs"
+Cohesion: 0.14
+Nodes (14): Blogs, Article, Blogs1, Blogs11, Blogs2, Blogs3, CreatedDate, Id (+6 more)
 
 ### Community 11101 - ".findByID"
-Cohesion: 0.20
-Nodes (9): 5.1 Öğrencilerin soruları, 5.2 `p` neyi gösteriyordu?, 5.3 Düzeltilmiş sürüm, 5. Silme Kodundaki Şüphe ve Düzeltme, Ders 18 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+1 more)
+Cohesion: 0.18
+Nodes (10): 3. Kimliğe Göre Arama ve Fonksiyon Adı Çakışması, 5.1 Öğrencilerin soruları, 5.2 `p` neyi gösteriyordu?, 5.3 Düzeltilmiş sürüm, 5. Silme Kodundaki Şüphe ve Düzeltme, Ders 18 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+2 more)
 
 ### Community 11102 - "3. Sunum 2: Görüntü Manipülasyonu ve Tespit Yöntemleri"
 Cohesion: 0.14
@@ -41617,9 +41698,13 @@ Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11106 - "Embedding boyutu 128"
-Cohesion: 0.22
-Nodes (9): En iyi veriseti abstract, accuracy 0.0790, Random Forest sonuç raporu (embed 128), En iyi veriseti abstract, accuracy 0.0717, Bagging, Bagging sonuç raporu (embed 128), Random Subspace modeli, embed_size 128, Random Subspace sonuçları (embed 128), Accuracy: title 0.0574, abstract 0.0789, concat 0.0752 (+1 more)
+### Community 11106 - "ödev_2/main.py"
+Cohesion: 0.23
+Nodes (12): calc_hsv(), calc_similar(), calc_y(), calculate_train_histograms(), cosine_method(), disp_image(), display_top_images(), euclidean_norm() (+4 more)
+
+### Community 11107 - "Ders 21 Çalışma Özeti"
+Cohesion: 0.18
+Nodes (11): 3.1 Kaynak, nesne ve çalıştırılabilir dosya, 3.2 Dosyalar okunabilir mi?, 3.3 Dosya adları, 3. Derleme süreci ve dosya türleri, Ders 21 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar (+3 more)
 
 ### Community 11108 - "Ders 10 Çalışma Özeti"
 Cohesion: 0.33
@@ -41629,21 +41714,25 @@ Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.33
 Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
+### Community 11110 - "cholsky.py"
+Cohesion: 0.18
+Nodes (7): create_L(), create_U(), create_UL(), create_vector(), print_cholesky(), substitution(), print_matrix()
+
 ### Community 11111 - "Ders 14 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11112 - "9. k-En Yakın Komşu (k-NN) Sınıflayıcı"
-Cohesion: 0.22
-Nodes (9): 9.1 Örnek tabanlı sınıflayıcılar, 9.2 Yöntemin gerektirdikleri ve adımları, 9.3 Uzaklık ve oylama, 9.4 Voronoi diyagramı ve 1-NN, 9.5 $k$ değerinin seçimi, 9.6 Ölçekleme, 9.7 Tembel öğrenici, 9.8 k-NN'in verimliliğini artırmak (+1 more)
+### Community 11112 - "linear_system_iterative_methods.py"
+Cohesion: 0.21
+Nodes (7): gauss_seidel(), jacobi_iteration(), get_coef_list(), get_diagonally_dominant_order_of_rows(), prepare_for_iteration(), print_iteration(), get_all_permutations()
 
 ### Community 11114 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11115 - "ödev_1_15011053/15011053.c"
-Cohesion: 0.39
-Nodes (6): find(), main(), newNode(), popEnd(), push(), size()
+### Community 11115 - "Struct_1.c"
+Cohesion: 0.26
+Nodes (10): allocateList(), main(), setValues(), writeComplexNumber(), writeList(), Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+2 more)
 
 ### Community 11116 - "diferansiyel_denklemler/ödev_2/21011022.c"
 Cohesion: 0.42
@@ -41657,9 +41746,9 @@ Nodes (13): AKS sorting network, Batcher odd-even merging network, Bitonic seque
 Cohesion: 0.33
 Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11119 - "6. Doğrusal Denklem Takımlarına Giriş: Matrisler"
-Cohesion: 0.29
-Nodes (7): 6.1 Neden doğrusal denklem takımları?, 6.2 Matrislerin bellekte yerleşimi, 6.3 Matris türleri, 6.4 Matris eşitliği, 6.5 Kofaktör, adjoint ve ters matris, 6.6 Toplama, çıkarma ve bölme, 6. Doğrusal Denklem Takımlarına Giriş: Matrisler
+### Community 11119 - "mert_guler/Shipping.java"
+Cohesion: 0.17
+Nodes (4): IShipping, Main, Shipping, IShipping
 
 ### Community 11120 - "4. Ödül Fonksiyonu Tasarımları"
 Cohesion: 0.22
@@ -41701,17 +41790,13 @@ Nodes (8): eleman_ekle(), eleman_say(), ilk_ekleme(), main(), menu(), search(), 
 Cohesion: 0.50
 Nodes (6): createGraph(), createNode(), komsuDugumListeleme(), main(), mergeGraphs(), sorgulama()
 
-### Community 11132 - "SettingsActivity"
-Cohesion: 0.33
-Nodes (3): SettingsActivity, BottomNavigationView.OnNavigationItemSelectedListener, CompoundButton.OnCheckedChangeListener
+### Community 11132 - "PersonelMVCUII/Scripts/bootstrap.min.js"
+Cohesion: 0.31
+Nodes (11): at(), e(), i(), l(), n(), o(), r(), s() (+3 more)
 
-### Community 11133 - "Top-down memoization"
-Cohesion: 0.25
-Nodes (6): BOTTOM-UP-CUT-ROD, EXTENDED-BOTTOM-UP-CUT-ROD, LOOKUP-CHAIN, MEMOIZED-CUT-ROD, MEMOIZED-MATRIX-CHAIN, PRINT-CUT-ROD-SOLUTION
-
-### Community 11134 - "Detaylı Açıklamalar"
-Cohesion: 0.15
-Nodes (12): Bool cebri ve fonksiyonlar, Ders 3 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İspat örneği: dağılma, Karnaugh haritası (+4 more)
+### Community 11133 - "ödev2/onder_gormez/21501035.c"
+Cohesion: 0.45
+Nodes (11): compareZeroAndOne(), convertToString(), getRequiredBitCountForSigned(), getRequiredBitCountForUnsigned(), isStackEmpty(), isStackFull(), main(), peekValueFromStack() (+3 more)
 
 ### Community 11135 - "14. Weka ile Uygulama"
 Cohesion: 0.18
@@ -41721,9 +41806,13 @@ Nodes (11): 14.10 Weka ne zaman kullanılır?, 14.1 Weka nedir?, 14.2 Veri kayna
 Cohesion: 0.22
 Nodes (8): Ders 12 Çalışma Özeti, Ders sonrası notlar, Derste analiz edilen döngüler, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Çift yönlü selection sort'un karşılaştırma sayısı
 
-### Community 11138 - "Hipotez testi"
-Cohesion: 0.42
-Nodes (12): Birinci Tip Hata ve Anlamlılık Düzeyi, CENG 222 Hafta 10 - Hipotez testi, T-testi, CENG 222 2024 Hafta 10 - Hipotez testi, Güven aralığı ve test ilişkisi, Hipotez testi, İki yönlü / tek yönlü alternatifler, p-değeri (+4 more)
+### Community 11137 - "ödev 1/burak_basol/kod.c"
+Cohesion: 0.29
+Nodes (12): cross_over(), evaluate(), file_Init(), generate_population(), main(), mutation(), read_images(), save_best_individual() (+4 more)
+
+### Community 11138 - "Örnek Sorular"
+Cohesion: 0.15
+Nodes (13): Soru 10: Dengesiz bölme, Soru 11: Rastgele tahminin doğruluğu, Soru 12: Karar ağacıyla sürekli değer tahmini, Soru 1: Entropi değerleri, Soru 2: Kök özniteliğini bilgi kazancıyla seçme, Soru 3: Alt düğümlerde en iyi öznitelik, Soru 4: Örnek sınıflandırma, Soru 5: Sürekli öznitelikte aday eşikler (+5 more)
 
 ### Community 11139 - "hafta6_0_link_list.c"
 Cohesion: 0.50
@@ -41733,29 +41822,33 @@ Nodes (6): add_element(), create_list_element(), delete_element(), find(), inser
 Cohesion: 0.18
 Nodes (11): Eşitlik özgürlük kardeşlik, Fransız Devrimi (1789), Milliyetçilik ideolojisi, Montesquieu, Napolyon Bonapart, Napolyon Savaşları, Osmanlı İmparatorluğu'na etkiler, Rousseau (+3 more)
 
-### Community 11142 - "Ders 4 Çalışma Özeti"
-Cohesion: 0.25
-Nodes (7): Ders 4 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Konvolüsyon mu, korelasyon mu?, Kısa Tekrar Notları
+### Community 11142 - "Vertex-cover problem"
+Cohesion: 0.21
+Nodes (11): APPROX-TSP-TOUR, APPROX-VERTEX-COVER, Hamiltonian cycle NP-completeness reduction (vertex cover widgets), Minimum-weight vertex cover via linear programming, Theorem 34.14 TSP is NP-complete, Theorem 35.3 General TSP inapproximability, Triangle inequality, Vertex-cover problem (+3 more)
 
 ### Community 11145 - "GitIslemleriWindow"
-Cohesion: 0.08
-Nodes (4): GitIslemButton, GitIslemleriWindow, HocaDersAdlariWindow, sirala_ve_ayir()
+Cohesion: 0.05
+Nodes (5): GitIslemButton, GitIslemleriWindow, CustomProgressDialogWithCancel, HocaDersAdlariWindow, sirala_ve_ayir()
 
 ### Community 11146 - "3. Analiz Modeli: Çember ve Merkezindeki Veri Sözlüğü"
 Cohesion: 0.25
 Nodes (8): 3.1 Veri Nesne Tanımı, 3.2 Süreç Tanımı, 3.3 Kontrol Tanımı, 3.4 Dilimler Birbirini Etkiler, 3.5 Veri Sözlüğü, 3.6 Herkes Bu Kadar Ayrıntılı Yapıyor mu?, 3.7 Bu Dersin Kapsamı, 3. Analiz Modeli: Çember ve Merkezindeki Veri Sözlüğü
 
-### Community 11147 - "domManip"
-Cohesion: 0.32
-Nodes (8): buildFragment(), disableScript(), DOMEval(), domManip(), getAll(), remove(), restoreScript(), setGlobalEval()
+### Community 11147 - "2023/batuhan odçıkın/batuhan odçıkın.c"
+Cohesion: 0.33
+Nodes (11): add_tetramino_to_board(), check_for_fulled_columns(), equalize_tetreminos(), main(), print_board(), print_tetremino(), reset_board(), reset_tetramino() (+3 more)
+
+### Community 11148 - "proje_1/code.c"
+Cohesion: 0.33
+Nodes (11): bilgisayarTahmin(), boyutBelirle(), degerlendir(), hafizadanCikar(), hafizayaAl(), kartiAc(), kartlariYazdir(), main() (+3 more)
 
 ### Community 11149 - "proje/21011084.c"
 Cohesion: 0.57
 Nodes (6): charToInt(), getNode(), insertNode(), main(), search(), searchNumber()
 
-### Community 11150 - "proje/kayra/kod.c"
-Cohesion: 0.43
-Nodes (6): delay(), main(), matrisPrint(), mySwitchCase(), solveMaze(), solveMazeUtil()
+### Community 11150 - "Ders 4 Çalışma Özeti"
+Cohesion: 0.17
+Nodes (11): Ders 4 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Duyurular, Genel Konular, Geometrik seriden açılımlar, Hocanın Özellikle Vurguladığı Kısımlar, Kuvvet serisi ve yakınsaklık aralığı (+3 more)
 
 ### Community 11151 - "5. Elektrik Akımı ve Su Benzetmesi"
 Cohesion: 0.40
@@ -41785,9 +41878,9 @@ Nodes (7): cozumVarMi(), main(), menu(), renkleriYazdir(), rotate(), sifirDizisi
 Cohesion: 0.18
 Nodes (11): Ratings, CreatedDate, Id, IsActive, PlaceId, Ratings1, Ratings11, Ratings2 (+3 more)
 
-### Community 11158 - "Scheduling Future Tasks"
-Cohesion: 0.39
-Nodes (8): anacrontab, at / atd deferred jobs, Scheduling Future Tasks, User crontab recurring jobs, sysstat-collect.timer, System cron: /etc/crontab, /etc/cron.d, cron.daily, systemd timer units, systemd-tmpfiles temporary file management
+### Community 11158 - "16. Bölüm Sonu Soru-Cevapları"
+Cohesion: 0.17
+Nodes (12): 16.10 Gerçel Sayılarda Niceleyiciler, 16.11 "Hot and Muggy" Sorusu, 16.1 "not" Kullanmadan Olumsuzunu Yazmak, 16.2 Final, Alıştırmalar ve Dersten A, 16.3 "if $p$ then $q$" Biçimine Çevirmek, 16.4 Değeri Bilinmeyen Önerme, 16.5 Sembolik İfadeye ve Kelimelere Çevirmek, 16.6 Totoloji mi? (+4 more)
 
 ### Community 11159 - "3. Fermi Paradoksu"
 Cohesion: 0.33
@@ -41797,9 +41890,9 @@ Nodes (6): 3.1 Paradoksun tanımı, 3.2 Kanıtların yokluğu, 3.3 Olasılık he
 Cohesion: 0.33
 Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11161 - "Chapter 10 Controlling the Boot Process"
-Cohesion: 0.36
-Nodes (8): Chapter 10 Controlling the Boot Process, GRUB2 boot loader, initramfs, rd.break root password reset, Repairing file system issues at boot (fstab), Rescue and emergency targets, RHEL 8 boot process, systemd targets
+### Community 11161 - "Graf boyama ve kromatik polinomlar"
+Cohesion: 0.27
+Nodes (12): AyrНk Matematik-BФlБm 7-Graflar_231227_122414, AyrНk Matematik-BФlБm 8_Kromatik Polinomlar_231226_231535, Ayrık Matematik-Bölüm 6-Graflar ve Kromatik Polinomlar, Deletion-contraction yöntemi, Graf boyama, Graf boyama ve kromatik polinomlar, K4 kromatik polinomu, Kromatik polinom (+4 more)
 
 ### Community 11162 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
@@ -41829,9 +41922,9 @@ Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.33
 Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11169 - "Duluth UROP at SemEval-2018 Task 2 (Jin & Pedersen)"
-Cohesion: 0.46
-Nodes (8): Duluth UROP at SemEval-2018 Task 2 (Jin & Pedersen), İki seviyeli soft-voting ensemble (Ensemble1, Ensemble2, Meta), Makro F1 değerlendirme ölçütü, Duluth UROP sistemi (ensemble + oversampling), SMOTE oversampling, Unigram ve bigram özellikleri (CountVectorizer), 500K İngilizce, 100K İspanyolca tweet; 20/19 emoji, Ön işleme: non-ASCII karakterlerin korunması
+### Community 11169 - "Ders 11 Çalışma Özeti"
+Cohesion: 0.18
+Nodes (10): 2.1 Kilitlenme (Deadlock) Nedir ve Sorumluluk Kimdedir?, 2.2 Sistem Modeli (System Model), 2.3 Deadlock Karakterizasyonu: Dört Zorunlu Şart, 2. Kilitlenme (Deadlock) Kavramı, Sistem Modeli ve Dört Zorunlu Şart, İki Semaforlu Klasik Deadlock Örneği, Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+2 more)
 
 ### Community 11170 - "Ders 1 Çalışma Özeti"
 Cohesion: 0.33
@@ -41848,6 +41941,10 @@ Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 ### Community 11173 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11174 - "ödev_2/main.c"
+Cohesion: 0.36
+Nodes (10): getHashAdress(), getMin(), isInHashTable(), levensteinEditDistance(), main(), readDictionary(), readHashedDictionary(), readInputs() (+2 more)
 
 ### Community 11175 - "Ders 6 Çalışma Özeti"
 Cohesion: 0.33
@@ -41870,8 +41967,8 @@ Cohesion: 0.25
 Nodes (8): 3.1 GFS nedir?, 3.2 Tasarım varsayımları, 3.3 Gecikme mi, bant genişliği mi?, 3.4 Neden tek master?, 3.5 Okuma ve yazmada master araya giriyor mu?, 3.6 Master çökerse ne olur?, 3.7 Dosya sistemi mutasyonları, 3. Google File System (GFS)
 
 ### Community 11180 - "DEMOS Link ve Mesajlaşma Sistemi"
-Cohesion: 0.23
-Nodes (13): 5. Hafta - 30 Mart 2023 Notları, DEMOS/MP, Load Balancing, Location-Independent Links, Message Forwarding ve Forwarding Address, Migration Adımları, Channels, DEMOS Link ve Mesajlaşma Sistemi (+5 more)
+Cohesion: 0.26
+Nodes (12): DEMOS/MP, Load Balancing, Location-Independent Links, Message Forwarding ve Forwarding Address, Migration Adımları, Channels, DEMOS Link ve Mesajlaşma Sistemi, Link Tipleri (Request, Resource, Reply, General) (+4 more)
 
 ### Community 11181 - "12. Gerilim ve Güç"
 Cohesion: 0.50
@@ -41897,25 +41994,37 @@ Nodes (4): 6.1 Sınıflandırma, 6.2 Ampermetre ve voltmetrenin bağlanması, 6.
 Cohesion: 0.22
 Nodes (9): 12.1 Birinci Nesil: Makine Kodu, 12.2 İkinci Nesil: Assembly Dilleri, 12.3 Üçüncü Nesil: Yüksek Seviyeli Diller, 12.4 Nesneye Dayalı Programlama, 12.5 Yorumlayıcı (Interpreter), 12.6 Yeni Bir Dil Bilgisayara Nasıl "Tanımlanır"?, 12.7 Dördüncü Nesil: Özel Amaçlı Diller, 12.8 Beşinci Nesil: Belirli Amaca Yönelik Diller (+1 more)
 
-### Community 11187 - "Random Subspace"
-Cohesion: 0.29
-Nodes (8): En iyi veriseti abstract, accuracy 0.0789, Random Subspace sonuç raporu (embed 128), Random Subspace, Bagging, Hiperparametre optimizasyonu çıktısı (embed 1024), Bagging, GridSearchCV (CV=3), Hiperparametre optimizasyonu çıktısı (embed 128)
+### Community 11187 - "QUIC"
+Cohesion: 0.18
+Nodes (12): AIMD, Connectionless multiplexing and demultiplexing, Fast recovery, HTTP/3, QUIC, QUIC Streams, Macroscopic Description of TCP Reno Throughput, Stream Control Transmission Protocol (SCTP) (+4 more)
+
+### Community 11189 - "User"
+Cohesion: 0.04
+Nodes (10): Book, Identifiable, User, ProcessManager, IPorcessManager, Process, ProcessManager, Repository (+2 more)
+
+### Community 11190 - "Örnek Sorular"
+Cohesion: 0.17
+Nodes (12): Soru 1, Soru 10, Soru 11, Soru 2, Soru 3, Soru 4, Soru 5, Soru 6 (+4 more)
 
 ### Community 11191 - "Doyma Bölgesi"
 Cohesion: 0.33
 Nodes (9): Aktif Bölge, Doyma Akımı ICsat, Doyma Bölgesi, Kesim Bölgesi, Sabit Polarma Devresi, Transistör Anahtarlama Devreleri, Yük Doğrusu Analizi, Çalışma Noktası Q-point (+1 more)
 
 ### Community 11192 - "İleri İşletim Sistemleri/ders_kayitlari/2022-2023/README.md"
-Cohesion: 0.08
-Nodes (18): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+10 more)
+Cohesion: 0.07
+Nodes (23): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+15 more)
 
 ### Community 11193 - "Detaylı Açıklamalar"
 Cohesion: 0.15
 Nodes (12): Apriori algoritması, Ders 3 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Motivasyon: çapraz satış ve üst satış (+4 more)
 
-### Community 11194 - "CustomEvents"
-Cohesion: 0.25
-Nodes (6): CustomEvents, CallEventOccurred, ContactsListChanged, ContactUpdated, SmsEventOccurred, SpeedDialUpdated
+### Community 11194 - ".initialize"
+Cohesion: 0.17
+Nodes (4): ActionListener, ActionListener, WindowAdapter, Runnable
+
+### Community 11195 - "Ev fiyat aralığı önerisi"
+Cohesion: 0.21
+Nodes (12): BLM2041 Ödev-1 Konvolüsyon, PyQt GUI, Sinüs-kosinüs Fourier katsayıları, Ev fiyatı projesi önerisi (House Price Assignment), SVC, Karar Ağacı, Random Forest, KNN, XGBoost, Kaggle kc-house-data veri seti, Ev fiyat aralığı önerisi, Ev fiyatı projesi README (+4 more)
 
 ### Community 11196 - "Detaylı Açıklamalar"
 Cohesion: 0.15
@@ -41929,21 +42038,21 @@ Nodes (5): add_Candidate(), best_Candidate(), borderline_candidate_count(), elig
 Cohesion: 0.22
 Nodes (9): build, _counter, createState, _incrementCounter, main, MyApp, MyHomePage, _MyHomePageState (+1 more)
 
-### Community 11199 - "resource_path.py"
-Cohesion: 0.25
-Nodes (3): get_app_dir(), get_data_dir(), get_resource_path()
+### Community 11199 - "Makale Raporu: Seyahat Satıcısı Problemi (Nisan 2024)"
+Cohesion: 0.20
+Nodes (12): Makale Raporu: Seyahat Satıcısı Problemi (Nisan 2024), Karınca kolonisi optimizasyonu, Brute-force çözüm, Gen, kromozom, popülasyon, Hamilton çevresi, Kombinatorik patlama, LKH-3, MTSP (Çoklu Seyahat Eden Satıcı) (+4 more)
 
 ### Community 11200 - "Ders 19 Çalışma Özeti"
 Cohesion: 0.25
 Nodes (7): Ders 19 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Çöpçatan, doktor ve faktöriyel kodları
 
-### Community 11201 - "linkedlist.c"
-Cohesion: 0.57
-Nodes (5): add(), delete(), insert(), main(), print()
+### Community 11201 - "Ders 9 - Ayrık Zamanlı Fourier Dönüşümü (DTFT)"
+Cohesion: 0.47
+Nodes (12): Ders 9 - Ayrık Zamanlı Fourier Dönüşümü (DTFT), DTFT, DTFT Periyodikliği, DTFT Çiftleri, DTFT Özellikleri, Fark Denkleminden Frekans Yanıtı, İdeal Alçak Geçiren Filtre, İdeal Yüksek ve Bant Geçiren Filtre (+4 more)
 
-### Community 11202 - "Ders 26 Çalışma Özeti"
-Cohesion: 0.25
-Nodes (7): Ders 26 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Formüllerin ve sonuçların kontrolü, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11204 - "Detaylı Açıklamalar"
+Cohesion: 0.18
+Nodes (10): 1. Vize Soruları (A Grubu), Ders 20 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, İki Katlı İntegraller, İntegrasyon Sırasını Değiştirme (+2 more)
 
 ### Community 11206 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.33
@@ -41960,6 +42069,10 @@ Nodes (5): Ders 17 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 ### Community 11209 - "jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
 Cohesion: 0.36
 Nodes (5): f(), n(), p(), a(), u()
+
+### Community 11210 - "SaS-10 Aliasing and Sampling slaytı"
+Cohesion: 0.25
+Nodes (11): SaS-10 Aliasing and Sampling slaytı, Aliasing (örtüşme), Sayısal (normalize) frekans, Sayısal spektrum ve katlanma, Örnekleme teoremi (Shannon/Nyquist), Mali Lale Güz Ödev 2 notu, Güz 2021 Ödev 2 README, Güz 2021 Ödev-2 tanımı (DTMF) (+3 more)
 
 ### Community 11211 - "Ders 25 Çalışma Özeti"
 Cohesion: 0.33
@@ -42013,6 +42126,10 @@ Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.52
 Nodes (5): horspool(), main(), read_to_an_array(), replaceWord(), shift_table()
 
+### Community 11226 - "8. EXE Tipi Programların Yapısı"
+Cohesion: 0.18
+Nodes (11): 8.10 Yığın boyunun seçimi ve ASSUME, 8.1 Programların sınıflandırılması, 8.2 Çalışma akışı, 8.3 İskelet, 8.4 Yığın segmenti, 8.5 Veri segmenti, 8.6 Kod segmenti ve FAR prosedür, 8.7 Dönüş adresinin yığına yazılması (+3 more)
+
 ### Community 11227 - "8. Big O Gösterimi"
 Cohesion: 0.22
 Nodes (9): 8.1 Tanım, 8.2 En yakın üst sınırı vermek, 8.3 Katsayı bularak ispat, 8.4 Slayttaki örnek: $x^2+2x+1=O(x^2)$, 8.5 Grafiksel gösterim, 8.6 Sıralı arama ve karmaşıklık tablosu, 8.7 Fonksiyonları büyüme mertebesine göre sıralama, 8.8 $2^n = O(n!)$ mi? (+1 more)
@@ -42020,6 +42137,10 @@ Nodes (9): 8.1 Tanım, 8.2 En yakın üst sınırı vermek, 8.3 Katsayı bularak
 ### Community 11229 - "Homework2.c"
 Cohesion: 0.52
 Nodes (6): addFileNameToHash(), convertTextToKey(), getAllText(), hashFunction(), main(), moveFileToDirectory()
+
+### Community 11230 - "Kalman Filtresi"
+Cohesion: 0.31
+Nodes (11): Genişletilmiş Kalman Filtresi, Kalman Filtresi, Kovaryans ve scatter plot, Kovaryans, Gauss ve Kalman Filtresi (Olasılıksal Robotik 2), Min. varyanslı doğrusal tahmin birleşimi (correction örneği), Gaussian rassal değişken işlemleri, Prediction örneği (varyans artar), 1B robot Kalman örneği (+3 more)
 
 ### Community 11231 - "Ders 4 Çalışma Özeti"
 Cohesion: 0.33
@@ -42029,13 +42150,9 @@ Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.04
 Nodes (43): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Ders 16 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular (+35 more)
 
-### Community 11233 - "Ders 8 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
-### Community 11234 - "Kayra el yazısı notu - Sürekli rastgele değişkenler"
-Cohesion: 0.46
-Nodes (8): Sürekli rastgele değişken, Kayra el yazısı notu - Sürekli rastgele değişkenler, Beklenen değer (sürekli), CDF (sürekli), Elektronik bileşen ömrü örneği, PDF, Sürekli r.d. fonksiyonları, Varyans (sürekli)
+### Community 11233 - "Gömülü sistemler ve RTOS ders notu"
+Cohesion: 0.25
+Nodes (11): Bare metal firmware ve embedded OS firmware, Gerçek zamanlı sistemler (hard / soft real time), GPOS, Gömülü sistem (embedded system), Gömülü sistemler ve RTOS ders notu, IoT ağ teknolojileri (Bluetooth, WiFi, Zigbee, LoRa), IoT mimarisi (algılama, ağ, uygulama katmanları), Kernel latency (interrupt, handler, scheduler) (+3 more)
 
 ### Community 11236 - "teslim/src/ui/page_algorithm_runner.py"
 Cohesion: 0.21
@@ -42053,13 +42170,13 @@ Nodes (7): addPath(), allocVisited(), delay(), dfs(), initialize(), initVisited(
 Cohesion: 0.36
 Nodes (6): delay(), dfs(), main(), print_maze(), yol_bul(), Ödev 4 Tanım - Kruskal MST Güncelleme (malişen ikinci kopya)
 
-### Community 11240 - "Bölüm 1: Ders Tanıtımı (Hesaplamalı Anlambilim, 2021 notları)"
-Cohesion: 0.36
-Nodes (9): Anlambilim (semantik), Bölüm 1: Ders Tanıtımı (Hesaplamalı Anlambilim, 2021 notları), Dağılımsal hipotez (Firth, Harris), Dersin kapsamı ve değerlendirme, Formal anlambilim, İstatistiksel anlambilim, Prolog ile çıkarım örneği, Sonlu durum makineleri ile morfolojik çözümleme (+1 more)
+### Community 11240 - "Örnek Sorular"
+Cohesion: 0.18
+Nodes (11): Soru 10 (ekrandan, 00:59:00), Soru 1 (ekrandan, 01:09:00), Soru 2 (ekrandan, 01:14:00), Soru 3 (derste sözlü, 01:10:26), Soru 4 (ekrandan, 01:19:00 ve 01:24:00), Soru 5 (ekrandan, 00:12:06), Soru 6 (derste sözlü, 00:07:24), Soru 7 (derste sözlü, 00:09:07) (+3 more)
 
 ### Community 11241 - "Personnel"
-Cohesion: 0.15
-Nodes (3): Lodging, Main, Personnel
+Cohesion: 0.04
+Nodes (9): Apartment, Lodging, Main, Personnel, Apartment, IViewable, Lodging, Main (+1 more)
 
 ### Community 11242 - "BLM2022 - Bilgisayar Donanımı - Ödev 1"
 Cohesion: 0.11
@@ -42081,21 +42198,21 @@ Nodes (9): 3.1 Tanım, 3.2 Bir meslek, üyeleri seviyesinde saygındır, 3.3 Ama
 Cohesion: 0.33
 Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11247 - "BLM3061 Lab 5 (2024): 8255 ile Sayıcı/Şifre Doğrulama Tasarımı"
-Cohesion: 0.38
-Nodes (7): BLM3061 Lab 5 (2024): 8255 ile Sayıcı/Şifre Doğrulama Tasarımı, 8255 PÇA (programlanabilir çevre arabirimi), Öğrenci numarasına göre port adresi: 100H + 8*(No % 200), Şifre doğrulama devresi (8 anahtar, 7 parçalı gösterge, sıfırlama butonu), Lab 5 README (Yusuf Safa Köksal, boş şablon, 2024-2025 Güz), Lab 5 (2025): 8255 ile 7 Segment Gösterge Tasarımı, 8255 PÇA ile 7 segment gösterge, 8 tuşlu giriş
+### Community 11247 - "BLM3061 Lab 5 - 8255 ile Sayıcı Tasarımı (şifre doğrulama)"
+Cohesion: 0.21
+Nodes (14): 74273 sekizli D flip-flop, 8255 PPI (PÇA), BLM3061 Lab 5 - 8255 ile Sayıcı Tasarımı (şifre doğrulama), Port adres hesabı 100H + 8*(ÖğrenciNo%200), Negatif tetiklemeli sıfırlama butonu, Şifre doğrulama devresi, BLM3061 Lab 5 (2024): 8255 ile Sayıcı/Şifre Doğrulama Tasarımı, 8255 PÇA (programlanabilir çevre arabirimi) (+6 more)
 
 ### Community 11248 - "1/23011610.c"
 Cohesion: 0.52
 Nodes (5): main(), partition(), quicksort(), readInput(), swap()
 
-### Community 11249 - "Ders 17 Çalışma Özeti"
-Cohesion: 0.29
-Nodes (6): Ders 17 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11249 - "Ders 23 Genişletilmiş Notu: Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam)"
+Cohesion: 0.18
+Nodes (10): 1. Laboratuvarın Bağlamı, 2.1 Senaryo, 2.2 Programın Akışı, 2. Problem: Ampul ve Butonlar, 3. Özyineleme Şartı, 5. Sayısal Örnek, 6. Çözüm Yaklaşımı, Ders 23 Genişletilmiş Notu: Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam) (+2 more)
 
-### Community 11250 - "Veritabanı Yönetimi Ders 6 Lab (2020-2021) altyazı"
-Cohesion: 0.29
-Nodes (7): Toplam fonksiyonları (SUM, MAX, MIN, AVG, COUNT), companydb şirket veri tabanı, Veritabanı Yönetimi Ders 6 Lab (2020-2021) altyazı, IN iç içe sorgu, Aynı tabloyu iki kez kullanma (E1/E2 yönetici sorgusu), Sequence (CREATE SEQUENCE, nextval), View (CREATE VIEW)
+### Community 11250 - "Ders 1 Genişletilmiş Notu: Dersin Tanıtımı, Amacı ve Kapsamı"
+Cohesion: 0.20
+Nodes (9): 1. Dersin amacı, 2. Dersin içeriği, 3. Konuların sırası, 4. Öğrenim çıktıları, 5. Kaynaklar, 6. Bu derse nasıl çalışılmalı, Ders 1 Genişletilmiş Notu: Dersin Tanıtımı, Amacı ve Kapsamı, Dersin Toparlaması (+1 more)
 
 ### Community 11251 - "6. Mikroişlemcilerin Tarihsel Gelişimi"
 Cohesion: 0.22
@@ -42112,6 +42229,10 @@ Nodes (6): main(), printList(), readFromFile(), sortData(), splitData(), writeTo
 ### Community 11255 - "lab_4/22011049.c"
 Cohesion: 0.46
 Nodes (6): display(), main(), readFromFile(), sort(), split(), writeToFiles()
+
+### Community 11256 - "matchinggame.c"
+Cohesion: 0.42
+Nodes (9): autoMode(), draw(), fill_array_randomly(), GetPositions(), isBlank(), main(), manuelmode(), readFromFile() (+1 more)
 
 ### Community 11257 - "Detaylı Açıklamalar"
 Cohesion: 0.17
@@ -42214,12 +42335,16 @@ Cohesion: 0.17
 Nodes (8): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, 📚 Ders Kayıtları Dizini, 📋 Genel Bilgiler, Yazılım Kalite ve Test Süreci Ders Kayıtları & Çalışma Özetleri
 
 ### Community 11282 - "4.1 Positional Number Systems"
-Cohesion: 0.29
-Nodes (11): Balanced ternary notation, Complex base i-1 (Penney) system, Ten's/nines' complement, two's/ones' complement, Mixed-radix and factorial number systems, Negative-base (negadecimal, negabinary) systems, History of number systems (Babylonian, Maya, Hindu-Arabic, Leibniz binary), Positional notation (radix b), Quater-imaginary base 2i system (+3 more)
+Cohesion: 0.11
+Nodes (25): Balanced ternary notation, Complex base i-1 (Penney) system, The Art of Computer Programming Vol. 2: Seminumerical Algorithms, Chapter 4 Arithmetic, Ten's/nines' complement, two's/ones' complement, Dekker's single-precision based double precision, Double-precision calculations (4.2.3), Program D: Double-precision division (+17 more)
 
 ### Community 11283 - "6. Telif Hakkı, Eser ve Eser Sahibinin Hakları"
 Cohesion: 0.25
 Nodes (8): 6.1 Telif hakkının tanımı, 6.2 Bir yapıtın eser sayılmasının koşulları, 6.3 İlim ve edebiyat eseri olarak bilgisayar programı, 6.4 İşleme ve derleme eserler, 6.5 Eser sahibi, 6.6 Manevi ve mali haklar, 6.7 Hakların devri, 6. Telif Hakkı, Eser ve Eser Sahibinin Hakları
+
+### Community 11284 - "Bode Diagram"
+Cohesion: 0.22
+Nodes (10): Appendix D The Decibel, Appendix E Bode Diagrams, Bode Diagram, Complex Poles and Zeros Bode, Corner Frequency, Damping Coefficient, dBm, Decibel (+2 more)
 
 ### Community 11285 - "answer_1_yedek_dizi_ile.c"
 Cohesion: 0.33
@@ -42229,9 +42354,9 @@ Nodes (9): aa(), chYaz(), hesapla(), main(), oncelik(), pop(), push(), pushop() 
 Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11287 - "📚 Hukukun Genel Kavramları"
-Cohesion: 0.29
-Nodes (6): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hukukun Genel Kavramları, ℹ️ Ders Bilgileri, 😔 İçerik yok, Hukukun Genel Kavramları README
+### Community 11287 - "Bias Stabilization (4.12)"
+Cohesion: 0.31
+Nodes (9): Chapter 4 DC Biasing BJT problems, PSpice Windows BJT bias analysis (4.13), Emitter-bias configuration, Feedback-bias configuration, Fixed-bias configuration (BJT), S(beta) stability factor, S(ICO) stability factor, S(VBE) stability factor (+1 more)
 
 ### Community 11288 - "2021_lab4.c"
 Cohesion: 0.57
@@ -42257,9 +42382,9 @@ Nodes (6): bubbleSort(), dosyadanUcuslariAl(), main(), swap(), ucusYazdir(), yen
 Cohesion: 0.47
 Nodes (3): init(), isEmpty(), isFull()
 
-### Community 11295 - "9. Okuma, Yazma ve Dizin İşlemleri"
+### Community 11295 - "Chapter 10 Systems Approach - Effects of Rs and RL"
 Cohesion: 0.29
-Nodes (7): 9.1 Uygulamaya özel dosya yaratma ve yazma, 9.2 Dosyadan okuma, 9.3 Geçici ve cache dosyaları, 9.4 Dizin işlemleri, 9.5 Birden çok external storage volume, 9.6 Boş alan kontrolü, 9. Okuma, Yazma ve Dizin İşlemleri
+Nodes (10): BJT CB Networks, BJT CE Networks with Rs and RL, BJT Emitter-Follower Networks, Chapter 10 Systems Approach - Effects of Rs and RL, Combined Effect of Rs and RL, Effect of Load Impedance RL, Effect of Source Impedance Rs, FET Networks with Rs and RL (+2 more)
 
 ### Community 11296 - "lab_4/21011084.c"
 Cohesion: 0.46
@@ -42273,13 +42398,13 @@ Nodes (5): Ders 24 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.33
 Nodes (5): Ders 27 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11300 - "📚 Satış Yönetimi"
-Cohesion: 0.29
-Nodes (6): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Satış Yönetimi, Satış Yönetimi README
+### Community 11299 - "Lab2-20011041.c"
+Cohesion: 0.36
+Nodes (8): allocateSquareMatrix(), fillMatrixWithRandomNumbers(), findSumsAndWrite(), freeSquareMatrix(), generateRandomNumber(), main(), printSqMatrixWithSums(), reallocateSquareMatrixBigger()
 
-### Community 11301 - "📚 Tüketici Davranışı"
-Cohesion: 0.29
-Nodes (6): Tüketici Davranışı README, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Tüketici Davranışı
+### Community 11301 - "BLM2012 Course Project 2023: Multiplication Table Practice (due 01.06.2023)"
+Cohesion: 0.38
+Nodes (10): BLM2012 Course Project 2023: Multiplication Table Practice (due 01.06.2023), Exercise mode axb with N random questions, Multiplication table practice game for children, GUI requirement, jUnit tests requirement (min 4), Login with parent (admin) and child users, Parent reporting screen (tab-separated export), Speed and accuracy scores and high score table (+2 more)
 
 ### Community 11302 - "Ders 4 Çalışma Özeti"
 Cohesion: 0.33
@@ -42289,9 +42414,9 @@ Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.46
 Nodes (6): delay(), main(), matrisPrint(), mySwitchCase(), solveMaze(), solveMazeUtil()
 
-### Community 11304 - "6. Davranışsal diyagramlar"
-Cohesion: 0.18
-Nodes (11): 6.10 Davranışsal diyagramların özeti, 6.1 Kullanım senaryosu (use case) diyagramı, 6.2 Kullanım senaryosunun yazılması, 6.3 Bağlam (context) diyagramı, 6.4 Ardışıl (sequence) diyagram, 6.5 İletişim (communication) diyagramı, 6.6 Aktivite diyagramı, 6.7 Genel etkileşim (interaction overview) diyagramı (+3 more)
+### Community 11304 - "images.js"
+Cohesion: 0.20
+Nodes (9): App Icon (Concentric Circles), Algotur, cards, empty, AG Car Rental logo, logo-small, path, profile (+1 more)
 
 ### Community 11305 - "lab 4/yusuf_safa_koksal/kod.cpp"
 Cohesion: 0.46
@@ -42301,17 +42426,17 @@ Nodes (6): initialize_output(), main(), print_matrix(), read_kernel(), read_matr
 Cohesion: 0.29
 Nodes (6): Türk İdare Tarihi README, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk İdare Tarihi
 
-### Community 11307 - "Mat_1320_Exercises_9_10.pdf"
-Cohesion: 0.47
-Nodes (5): P2 Polinom Uzayında Altuzay, R2/R3 Altuzay Testi, Dik Vektörler ve Aralarındaki Açı, Paralelkenarda Vektör Toplamı, Vektörel Çarpım ve İç Çarpım
+### Community 11308 - "HMW3 Boyer Moore/17011086.c"
+Cohesion: 0.31
+Nodes (9): Arama Kodu, Genel Konular, 🔹 Ders 24: Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Trie, abs_sub(), BoyerMoore(), BoyerMoore_noncase(), main(), replace() (+1 more)
 
 ### Community 11309 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11310 - "7.6 Bağıl Büyüme Oranları"
-Cohesion: 0.67
-Nodes (6): 7.6 Bağıl Büyüme Oranları, Büyük-O gösterimi, Hızlı/yavaş/aynı oranda büyüme (limit oranı ile karşılaştırma), İkili arama O(log2 n), Küçük-o gösterimi, Sıralı arama O(n)
+### Community 11310 - "16. Sözde Komutların Ayrıntıları"
+Cohesion: 0.20
+Nodes (10): 16.1 OFFSET, TYPE, SIZE, LENGTH, 16.2 PAGE, TITLE, SEGMENT ve hizalama, 16.3 ORG ve ASSUME, 16.4 DB ve DW ayrıntıları; little endian, 16.5 EQU, DUP ve ?, 16.6 TYPEDEF ve PTR, 16.7 LABEL, 16.8 Yordam ve makro tekrarı (+2 more)
 
 ### Community 11311 - "Ders 16 Çalışma Özeti"
 Cohesion: 0.33
@@ -42325,9 +42450,9 @@ Nodes (6): main(), partition(), printArray(), quickSort(), read_txt(), swap()
 Cohesion: 0.40
 Nodes (6): Kayra Bulut - Ödev3 Raporu (Hash Tablosu), Ödev-3 Tanımı Kopyası: Hashing ile Arama Motoru, Ödev-3 Tanımı: Hashing ile Arama Motoru, Horner Kuralı + Linear Probing ile Hash Tablosu, Ödev-3 Tanımı Kopyası: Hashing ile Arama Motoru, socialNET.txt - Website/Anahtar Kelime Veri Seti
 
-### Community 11314 - "Detaylı Açıklamalar"
-Cohesion: 0.18
-Nodes (10): Ders 7 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Dizi ters çevirme ve palindrom, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Pisagor üçlüsü, ikinci yöntem (+2 more)
+### Community 11314 - "7. Gereksinim Mühendisliğinin Adımları"
+Cohesion: 0.20
+Nodes (10): 7.1 Müşterinin Katılımı, 7.2 Başlangıç (Inception), 7.3 Bilgi Toplama (Elicitation), 7.4 İşleme (Elaboration), 7.5 Gereksinimlerin Sınıflandırılması, 7.6 Pazarlık (Negotiation), 7.7 Tanımlama (Specification), 7.8 Doğrulama (Validation) (+2 more)
 
 ### Community 11315 - "basic_stack.c"
 Cohesion: 0.67
@@ -42337,29 +42462,25 @@ Nodes (4): main(), pop(), push(), stackinit()
 Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11318 - "sysdiagrams"
-Cohesion: 0.33
-Nodes (6): sysdiagrams, definition, diagram_id, name, principal_id, version
+### Community 11319 - "Örüntü Tanıma Makale Özeti"
+Cohesion: 0.20
+Nodes (9): Bayes Sınıflandırıcısı, Destek Vektör Makineleri, ICA, k-NN, LDA, PCA, Topluluk Öğrenmesi, Çok Katmanlı Algılayıcı (+1 more)
 
-### Community 11319 - "Ders 12 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
-### Community 11320 - "Ders 19 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 19 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11320 - "Ders 2 Çalışma Özeti"
+Cohesion: 0.20
+Nodes (9): Bellek adresleme örneği, Ders 2 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Görüntü boyutu örneği, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları (+1 more)
 
 ### Community 11322 - "10. Koreografi tabanlı saga"
 Cohesion: 0.40
 Nodes (5): 10.1 Mantık, 10.2 E-ticaret örneği, 10.3 Hata durumu, 10.4 Artılar ve eksiler, 10. Koreografi tabanlı saga
 
-### Community 11323 - "Ders 1 Çalışma Özeti"
+### Community 11323 - "4.2 Directed Graphs (Sedgewick-Wayne)"
 Cohesion: 0.33
-Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+Nodes (9): Strong components, Strong connectivity, Adjacency-lists digraph representation, Depth-first search in digraphs, Digraph (yönlü graf), 4.2 Directed Graphs (Sedgewick-Wayne), Mark-sweep garbage collector, Reachability (+1 more)
 
-### Community 11324 - "Ders 9 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11324 - "proje_1.c"
+Cohesion: 0.42
+Nodes (8): blueToBoard(), displayBoard(), greenToBoard(), main(), redToBoard(), rollTheDice(), update(), yellowToBoard()
 
 ### Community 11325 - "11. Orkestrasyon tabanlı saga"
 Cohesion: 0.40
@@ -42373,13 +42494,13 @@ Nodes (5): 11.1 Test nedir?, 11.2 Testin önemi, 11.3 Otomatik testler ve test �
 Cohesion: 0.40
 Nodes (5): 6.1 Kitaptaki çıkış noktası, 6.2 Avantajlar ve maliyet, 6.3 Monolitik cehennem, 6.4 Önce sorunun kaynağını değerlendirmek, 6. Neden bir monoliti yeniden yapılandıralım?
 
-### Community 11328 - "SELinux (Security Enhanced Linux)"
-Cohesion: 0.33
-Nodes (6): getenforce / setenforce, SELinux (Security Enhanced Linux), /etc/selinux/config, SELinux context (user, role, type, level), SELinux modes (Enforcing, Permissive, Disabled), SELinux targeted policy
+### Community 11328 - "Chapter 7: Response of First-Order RL and RC Circuits (Problems 7.10-7.107)"
+Cohesion: 0.31
+Nodes (9): Sönüm alpha ve rezonans frekansi omega0, Asiri, kritik ve alt sönümlü cevap, Chapter 7: Response of First-Order RL and RC Circuits (Problems 7.10-7.107), Chapter 8: Natural and Step Responses of RLC Circuits (Problems 8.1-8.68), Indüktör enerjisi w = 1/2 L i^2, RC devresi cevabi, RL devresi dogal cevabi i(t)=I0 e^(-t/tau), Thevenin direnci ile tau hesabi (+1 more)
 
-### Community 11329 - "CENG 222 Hafta 11 - Ki-kare testleri"
-Cohesion: 0.64
-Nodes (8): CENG 222 Hafta 11 - Ki-kare testleri, CENG 222 2024 Hafta 11 - Ki-kare testleri, Adil zar örneği, Aktarım hataları Poisson testi, Bağımsızlık testi, Dağılım uyum testi, Ki-kare testi, Spam ve görüntü eki örneği
+### Community 11329 - "4. Tekrarlama (Sabit Nokta) Yöntemi"
+Cohesion: 0.22
+Nodes (9): 4.1 Fikir, 4.2 Grafiksel yorum, 4.3 $x^2 - 9x - 10 = 0$ için farklı $g(x)$'ler, 4.4 Uygunluk (yakınsama) testi, 4.5 Örnek: $\sin x + x - 1 = 0$, $[0,1]$, 4.6 Durma koşulları, 4.7 Örnek: $x^5 + x - 3 = 0$, 4.8 Örnek: $x^2 - 2x - 3 = 0$, $x_0 = 4$ (+1 more)
 
 ### Community 11330 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
@@ -42409,17 +42530,17 @@ Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.57
 Nodes (6): deQueue(), enQueue(), initQueue(), isEmpty(), isFull(), main()
 
-### Community 11337 - "Bölüm 8 Temel RL ve RC Devreleri"
-Cohesion: 0.15
-Nodes (17): 0- ve 0+ ayrımı, Alıştırmalar Bölüm 8 ve 9, Ardışık anahtarlamalı devreler, Bağımlı kaynaklı devre ve negatif zaman sabiti, Bölüm 8 Temel RL ve RC Devreleri, Darbe genişliği ve periyot durumları, Dijital entegre devrelerde frekans sınırı, Dikdörtgen darbe fonksiyonu (+9 more)
+### Community 11337 - "Sürülen RL devresi"
+Cohesion: 0.47
+Nodes (6): Dikdörtgen darbe fonksiyonu, Doğal tepki, Entegre edici çarpan yöntemi, Sürülen RL devresi, Tam tepki, Zorlanmış tepki
 
 ### Community 11338 - "2020/sparseMatrix.c"
 Cohesion: 0.70
 Nodes (4): create_sparse(), main(), print_sparse(), read_matrix()
 
-### Community 11339 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11339 - "Ders 12 Lab: Öğrenci numarasına göre desen yakalayan devre"
+Cohesion: 0.36
+Nodes (9): 5 bitlik desen yakalama devresi, Doğruluk tablosu ve simülasyon doğrulaması, Durum diyagramı (Mealy/Moore), Son hane tek: D, çift: JK flip-flop, Kullanılmayan durumlar için don't care (X), Ders 12 Lab: Öğrenci numarasına göre desen yakalayan devre, Cebirsel veya Karnaugh ile sadeleştirme, Logisim ve Digital simülatörleri (+1 more)
 
 ### Community 11341 - "Ders 12 Çalışma Özeti"
 Cohesion: 0.33
@@ -42433,9 +42554,13 @@ Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11344 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11344 - "NYP Lab-4A: Staff salary raise with threads and files (24.12.2023)"
+Cohesion: 0.39
+Nodes (9): NYP Lab-4A: Staff salary raise with threads and files (24.12.2023), AcademicStaff class (+numberOfCourses*1000), FileUtility (readStaffFromFile/writeStaffToFile), Staff class (increaseSalary), SalaryIncreaseThread (Runnable), Staff.txt: staff input data, Monica Geller (Academic, 1200.0, 4 courses), Rachel Green (Staff, 1000.0) (+1 more)
+
+### Community 11345 - "Ders 4 Çalışma Özeti"
+Cohesion: 0.22
+Nodes (8): 1. Gereksinim Mühendisliği Adımları (7 Aşamalı Süreç), 2. Nesneye Yönelik Çözümleme, Kullanım Öyküleri ve NextGenPOS Örneği, 3. UML Kullanım Şemaları (Use Case Diagrams), Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11346 - "Clinic Reservation Information System (CRS)"
 Cohesion: 0.20
@@ -42445,17 +42570,13 @@ Nodes (10): Mert Güler 2024-2025 Güz NYP projesi, Hastane Randevu Sistemi (Jav
 Cohesion: 0.48
 Nodes (4): distance(), main(), selectionSort(), swap()
 
-### Community 11348 - "structured_programming/lablar/lab_2_20011017.c"
-Cohesion: 0.52
-Nodes (6): freeArray(), function(), initializeArray(), main(), printArray(), reallocArray()
+### Community 11348 - "7. Dış Kalite Ölçütleri"
+Cohesion: 0.22
+Nodes (9): 7.1 Doğruluk ve etkinlik, 7.2 Güvenilirlik ve MTBF, 7.3 Güvenlik, 7.4 Bütünlük, 7.5 Uyarlanabilirlik, 7.6 Hassaslık, 7.7 Sağlamlık, 7.8 Kullanılabilirlik (+1 more)
 
 ### Community 11349 - "lab_20011099.c"
 Cohesion: 0.62
 Nodes (5): find(), main(), printPlayers(), readPlayers(), sirala()
-
-### Community 11350 - "Ders 13 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11351 - "6. İçerik Tabanlı Öneri Sistemleri"
 Cohesion: 0.20
@@ -42537,9 +42658,9 @@ Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.48
 Nodes (4): distance(), main(), selectionSort(), swap()
 
-### Community 11372 - "Ders 12 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11372 - "BlogCardViewModel"
+Cohesion: 0.22
+Nodes (7): BlogCardViewModel, Article, Author, CoverPhoto, CreatedDate, Id, Title
 
 ### Community 11373 - "Ders 12 Çalışma Özeti"
 Cohesion: 0.33
@@ -42549,6 +42670,10 @@ Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
+### Community 11375 - "5. Yapısal diyagramlar"
+Cohesion: 0.22
+Nodes (9): 5.1 Sınıf diyagramı, 5.2 Nesne diyagramı, 5.3 Kompozit yapı diyagramı, 5.4 Bileşen (component) diyagramı, 5.5 Barındırma (deployment) diyagramı, 5.6 Paket diyagramı, 5.7 Profil diyagramı, 5.8 Yapısal diyagramların özeti (+1 more)
+
 ### Community 11376 - "Batuhan Yılmaz Panel De Pon sömestir projesi raporu"
 Cohesion: 0.28
 Nodes (9): Batuhan Yılmaz Panel De Pon sömestir projesi raporu, Boşluk karakteri '.', do-while giriş doğrulama, Oyun mod seçimi (1 oyun 2 kontrol), rastgele_olusum fonksiyonu, yatay_say ve dikey_say sayaçları, yazdirma fonksiyonu, Yerçekimi iki işaretçi yöntemi (+1 more)
@@ -42557,9 +42682,9 @@ Nodes (9): Batuhan Yılmaz Panel De Pon sömestir projesi raporu, Boşluk karakt
 Cohesion: 0.50
 Nodes (9): BBG Slayt 6 - Dizi İşlemleri, Dizide eleman arama, Dizide toplam ve maksimum, Diziden eleman silme, Diziye eleman ekleme, İkinci en küçük eleman, Kaydırma (shift) ile ekleme/silme, Ortalamadan büyük elemanların indisleri (+1 more)
 
-### Community 11378 - "Ders 5 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11378 - "report_helper.py"
+Cohesion: 0.31
+Nodes (3): generate_analysis_report(), generate_feature_table(), generate_score_comment()
 
 ### Community 11379 - "5. LOCUS Dağıtık İşletim Sistemi"
 Cohesion: 0.33
@@ -42609,6 +42734,10 @@ Nodes (7): 12.1 Mobil veri her zaman büyük veri midir?, 12.2 3V ve 4V, 12.3 Be
 Cohesion: 0.33
 Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
+### Community 11391 - "Detaylı Açıklamalar"
+Cohesion: 0.22
+Nodes (8): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Extract Method ve Long Method, Hocanın Özellikle Vurguladığı Kısımlar, JUnit ile birim sınaması, Kısa Tekrar Notları, Refactoring ve kalite, Replace Temp with Query
+
 ### Community 11392 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
@@ -42616,6 +42745,10 @@ Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 ### Community 11393 - "Seminer ve Meslek Etiği dersi README"
 Cohesion: 0.47
 Nodes (6): Akademisyenler BD, HOİ, 3. sınıf Güz, Zorunlu, Seminer ve Meslek Etiği dersi README, Sunum sonuna kaynakça konmazsa puan kırılır, Sunum değerlendirme kriterleri, Dönem sonu sunum ve rapor
+
+### Community 11394 - "Konum Belirleme (Olasılıksal Robotik 8)"
+Cohesion: 0.42
+Nodes (9): Aktif ve pasif konum belirleme, Augmented Monte Carlo konum belirleme, Konum Belirleme (Olasılıksal Robotik 8), EKF konum belirleme, Konum belirleme problemleri, Markov konum belirleme, Monte Carlo konum belirleme, Pozisyon takibi / global konum / kaçırılmış robot (+1 more)
 
 ### Community 11395 - "lab_4_code.c"
 Cohesion: 0.70
@@ -42625,17 +42758,17 @@ Nodes (4): ganttDraw(), letterControl(), main(), timeControl()
 Cohesion: 0.33
 Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11398 - "4. CMMI İlgi Alanları, Tarihçe ve Çevik Süreçler"
-Cohesion: 0.29
-Nodes (7): 4.1 Süreç Alanları, 4.2 Üç İlgi Alanı, 4.3 Tarihçe, 4.4 CMMI ve Çevik Süreçler, 4.5 Continuous ve Staged, 4.6 Akredite Kurumların Sorgulanması, 4. CMMI İlgi Alanları, Tarihçe ve Çevik Süreçler
+### Community 11398 - "8. Arasındalık Merkeziliği"
+Cohesion: 0.22
+Nodes (9): 8.1 Sezgi: X ve Y, 8.2 Formül, 8.3 Yıldız örneği, 8.4 Doğrusal örnek: A–B–C–D–E, 8.5 7 düğümlü graf, 8.6 Krediyi paylaşmak: 3,5 nereden geliyor?, 8.7 Arasındalıkla görselleştirme, 8.8 Düşük derece, yüksek arasındalık (+1 more)
 
-### Community 11399 - "Ders 2 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11399 - "Veri akışı"
+Cohesion: 0.36
+Nodes (9): Akışta Sayma - DGIM (MMDS Ch.4), Bucket (kova) yapısı, Son k bitteki 1'leri sayma, DGIM algoritması, Veri Akışı Madenciliği (MMDS Ch.4), Ad-hoc sorgular, Veri akışı, Kayan pencere (+1 more)
 
-### Community 11400 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11400 - "16. Tekrar ve ek konular: açıklama satırları, taşınabilirlik, biçim belirteçleri"
+Cohesion: 0.25
+Nodes (8): 16.1 İşlenen konuların özeti, 16.2 Açıklama satırları, 16.3 Yeniden derleme ve taşınabilirlik, 16.4 ANSI C standardı, 16.5 Birden fazla kaynak dosya, 16.6 Biçim belirteçleri, 16.7 void tipi, 16. Tekrar ve ek konular: açıklama satırları, taşınabilirlik, biçim belirteçleri
 
 ### Community 11402 - "Ders 4 Çalışma Özeti"
 Cohesion: 0.33
@@ -42645,17 +42778,21 @@ Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11404 - "Chunk size kararı (40KB hipotezi, EDA ile seçim)"
-Cohesion: 0.40
-Nodes (6): 4 byte blok header, Chunk size kararı (40KB hipotezi, EDA ile seçim), 4 byte blok header (profil, algoritma, param, boyut), Phase 1 Chunk Size Decision (512 chars), Seçilen chunk size 512 karakter, final_score = 0.60 silhouette + 0.25 coverage + 0.15 entropy_balance
+### Community 11404 - "4. Dolaysız Yöntemler: Gauss Yok Etme (Eliminasyon) Yöntemi"
+Cohesion: 0.25
+Nodes (8): 4.1 "Eliminasyon" ne demek?, 4.2 Yöntemin adımları, 4.3 Her lineer denklem sistemini çözer mi?, 4.4 Neden üst üçgen matris?, 4.5 Geri yerine koyma örneği, 4.6 Sıfırlama mantığı, 4.7 Sayısal örnek, 4. Dolaysız Yöntemler: Gauss Yok Etme (Eliminasyon) Yöntemi
 
-### Community 11406 - "Ders 8 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11405 - "11. Dev-C++ uygulaması: adresler, işaretçiler ve işaretçi aritmetiği"
+Cohesion: 0.25
+Nodes (8): 11.1 Kodun kurulması, 11.2 a'ya ve adresine farklı yollardan ulaşmak, 11.3 "Bu nereden çıktı?" İşaretçinin kendi adresi, 11.4 * ve & birbirini götürür, 11.5 İşaretçi aritmetiği: pa + 1, 11.6 char işaretçisinde artış, 11.7 Öğrenci sorusu: %d ile okumak, 11. Dev-C++ uygulaması: adresler, işaretçiler ve işaretçi aritmetiği
+
+### Community 11406 - "Ders 2 Çalışma Özeti"
+Cohesion: 0.25
+Nodes (7): Ders 2 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, `n = m++ * m++` neden tutarsız?
 
 ### Community 11407 - "HMW1 Cache Buffer/17011086.c"
-Cohesion: 0.61
-Nodes (7): algorithm(), clear(), del(), main(), print(), push(), push2()
+Cohesion: 0.33
+Nodes (11): algorithm(), clear(), del(), main(), print(), push(), push2(), 5.1 $k$ değerinin seçimi (+3 more)
 
 ### Community 11408 - "1. Diferansiyel Denklemlerin Sinir Ağlarıyla Çözümü: PINN, DGM ve ELM"
 Cohesion: 0.29
@@ -42665,17 +42802,17 @@ Nodes (7): 1.1 Çıkış noktası: Evrensel yaklaşım teoremi, 1.2 PINN ve Deep
 Cohesion: 0.29
 Nodes (7): 2.1 Problem ve veri seti, 2.2 Benzer çalışmalar, 2.3 Öznitelik mühendisliği ve ön işleme, 2.4 Model, 2.5 Sonuçlar, 2.6 Hocanın önerileri, 2. Hibrit CNN-LSTM ile İnsan Aktivitesi Tanıma
 
-### Community 11410 - "dice_prob.c"
-Cohesion: 0.60
-Nodes (5): calc_prob(), free_matrix(), initialize_matrix(), main(), print_probs()
+### Community 11410 - "News Articles veri kümesi (Kaggle, sport/business)"
+Cohesion: 0.25
+Nodes (5): Business test makaleleri (20), Haber makalesi veri kümesi (business/sport), Business eğitim makaleleri (80), Sport test makaleleri (20), News Articles veri kümesi (Kaggle, sport/business)
 
 ### Community 11411 - "graph_init_weighted.c"
 Cohesion: 0.48
 Nodes (4): addEdge(), create(), createNode(), main()
 
-### Community 11412 - "Ders 10 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11412 - "languages_and_finite_automata_class_06.pdf"
+Cohesion: 0.36
+Nodes (6): Düzenli dillerin standart gösterimleri, Kesişim kapanışı (De Morgan), Tümleyen kapanışı, CFL karar verilebilir özellikleri, CYK algoritması, Düzenli kapanışın uygulamaları (CFL)
 
 ### Community 11413 - "treetraversal.c"
 Cohesion: 0.62
@@ -42685,25 +42822,25 @@ Nodes (5): createNode(), inorderTraversal(), main(), postorderTraversal(), preor
 Cohesion: 0.70
 Nodes (4): det(), main(), randomMatris(), yazdir()
 
-### Community 11415 - "8. Algısal Özetleme: aHash, dHash, pHash, wHash (Sekizinci Sunum)"
-Cohesion: 0.29
-Nodes (7): 8.1 Kriptografik Hash'ten Algısal Hash'e, 8.2 Benzerlik Kararı, 8.3 Algısal Hash'in Özellikleri, 8.4 Genel İş Akışı, 8.5 Temel Algoritmalar, 8.6 Karşılaştırmalı Bir Çalışma, 8. Algısal Özetleme: aHash, dHash, pHash, wHash (Sekizinci Sunum)
+### Community 11415 - "Veri Yapıları ve Algoritmalar/ödevler/2022/proje/basel/20011906.c"
+Cohesion: 0.50
+Nodes (7): delay(), determine_dimension_of_maze(), dfs(), elmalari_yerlestir(), main(), print_matrix(), read_maze_from_txt_to_matrix()
 
-### Community 11416 - "ödev_3_15011053/15011053.c"
+### Community 11416 - "4.3 Dört Temel Dizin Mimarisi"
+Cohesion: 0.25
+Nodes (8): 1. Tek Seviyeli Dizin (`Single-Level Directory`), 2. İki Seviyeli Dizin (`Two-Level Directory`), 3. Ağaç Yapılı Dizinler (`Tree-Structured Directories`, ekrandan, 00:35:00), 4.1 Dizin (Directory) Kavramı ve Disk Bölümleme (Partitions / Volumes), 4.2 Dizin Üzerinde Yapılan İşlemler ve Dizin Kullanım Amaçları, 4.3 Dört Temel Dizin Mimarisi, 4. Dizin Yapısı (Directory Structure), Disk Bölümleri ve Dizin Mimarileri, 4. Çevrimsiz Çizge (`Acyclic-Graph`) ve Genel Çizge (`General Graph`) Dizinleri
+
+### Community 11417 - "8254/8253 Programlanabilir Zamanlayıcı"
 Cohesion: 0.39
-Nodes (7): badCharRule(), compareTwo(), main(), manipulate(), search(), shiftAndWrite(), toLower()
+Nodes (8): Ödev 8 - LAB7 8253/8254 Müzik Çalma, DELAY prosedürü (LOOP, NEAR), Müzik parçası çalma devresi (Proteus), 8254 Sayıcı ile 1 sn Periyodik Pulse Sorusu, İki Sayıcıyı Ardışık Bağlama (2000 x 1000), 8254/8253 Programlanabilir Zamanlayıcı, Mod 2 (Rate Generator), CNTR0/CNTR1/CNTR2 ve Kontrol Yazmacı Adresleri
 
-### Community 11417 - "11. Hopscotch Hashing"
-Cohesion: 0.29
-Nodes (7): 11.1 Fikir, 11.2 Arama, 11.3 Ekleme Örneği, 11.4 Silme, 11.5 Hop Bitmap Gösterimi, 11.6 Bitmap ile Ekleme Örneği, 11. Hopscotch Hashing
+### Community 11418 - "VİBA 2024-2025 Ödevi: Data Link Layer CRC / Stop&Wait uygulaması"
+Cohesion: 0.36
+Nodes (8): OSI Data Link Layer, VİBA 2024-2025 Ödevi: Data Link Layer CRC / Stop&Wait uygulaması, Checksum ve data transparency, 16. derece CRC (x^16+x^15+x^2+1), 100 bitlik frame bölme, C++ GUI uygulaması, Hata benzetimi (kayıp %10, bozulma %20, ACK kaybı %15, checksum hatası %5), Stop&Wait akış kontrolü
 
-### Community 11418 - "hafta5_eg3.c"
-Cohesion: 0.70
-Nodes (4): f1(), f2(), f3(), main()
-
-### Community 11419 - "Ders 11 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11419 - "4. Üçüncü Sunum: İnsan Kaynakları Sistemi (İki Muhasebe Programı)"
+Cohesion: 0.25
+Nodes (8): 4.1 Kabuller ve Gruba Özgü Ekleme, 4.2 Süreç Modeli Sorusu ve Ekip, 4.3 Risk Tablosu, 4.4 Kullanım Senaryosu ve Use Case Belgesi, 4.5 İzlenebilirlik ve Sınıf Diyagramı, 4.6 Durum, Etkinlik ve Sıralama Diyagramları, 4.7 Birim Testleri, 4. Üçüncü Sunum: İnsan Kaynakları Sistemi (İki Muhasebe Programı)
 
 ### Community 11420 - "linked_list_example.c"
 Cohesion: 0.62
@@ -42713,33 +42850,29 @@ Nodes (5): appendNode(), createNode(), freeList(), main(), printList()
 Cohesion: 0.42
 Nodes (8): findMin(), generateRandomArray(), insertionSort(), kWayMergeSort(), main(), merge(), testKWayMergeSort(), writeResultsToFile()
 
-### Community 11422 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11422 - "Uygulanan İyileştirmeler"
+Cohesion: 0.25
+Nodes (8): 1. 5-Fold Stratified Cross Validation, 2. KNN Imputer, 3. Class Weights, 4. Pipeline Yaklaşımı, 5. Parametre Optimizasyonu, 6. MLP Classifier Eklendi, SLİDE 14: METODOLOJİK İYİLEŞTİRMELER, Uygulanan İyileştirmeler
 
 ### Community 11423 - "yapisal_uyg1.c"
 Cohesion: 0.70
 Nodes (4): bubbleSort(), countElement(), findElementIndices(), main()
 
-### Community 11424 - "Örnek Sorular"
-Cohesion: 0.22
-Nodes (9): Soru 1: FAR yordamda parametrelerin BP'ye göre yeri, Soru 2: Özyinelemeli EBOB (zorunlu olmayan ödev), Soru 3: Word dizisinin toplamı neye sığar?, Soru 4: Dizinin minimum, ortalama ve maksimumu, Soru 5: Kod segmentleri birleşince EXTRN ve NEAR, Soru 6: Reset vektörü, Soru 7: 16 bitlik bölmede taşma örneği, Soru 8: Kesme vektör tablosunun boyutu ve yeri (+1 more)
+### Community 11424 - "Seçilen Modeller"
+Cohesion: 0.25
+Nodes (8): 1. **Logistic Regression**, 2. **Support Vector Machine (SVM)**, 3. **Naïve Bayes**, 4. **Random Forest**, 5. **MLP Classifier** ⭐ (YENİ), Ortak Özellikler, Seçilen Modeller, SLİDE 9: MODEL SEÇİMİ VE METODOLOJİ
 
-### Community 11425 - "9. Örnek 1: İki 16 Bitlik Sayının 32 Bitlik Toplamı"
-Cohesion: 0.22
-Nodes (9): 9.1 Veri tanımları, 9.2 Birinci deneme: tip uyuşmazlığı, 9.3 Sonucun düşük 16 biti: WORD PTR, 9.4 Yüksek 16 bit için adres hesabı, 9.5 İkinci çözüm: JC ve JMP, 9.6 Bir öğrencinin önerisi: DEC ve INC, 9.7 Üçüncü çözüm: boş kola göre koşul, 9.8 Dördüncü çözüm: ADC (+1 more)
+### Community 11425 - "9. CSP'nin yedi temel önerisi"
+Cohesion: 0.25
+Nodes (8): 9.1 Korumalı komutlar ve belirsizlik, 9.2 Paralel komut, 9.3 Giriş ve çıkış komutları, 9.4 Adlandırılmış haberleşme ve tamponsuz bekleme, 9.5 Giriş korumaları, 9.6 Tekrarlı komutun sonlanması, 9.7 Örüntü eşleme ile filtreleme, 9. CSP'nin yedi temel önerisi
 
 ### Community 11426 - "2. Graf evrişim ağları ile göğüs görüntüsü sınıflandırma"
 Cohesion: 0.33
 Nodes (6): 2.1 Tam bağlantılı katmandan graf katmanına, 2.2 Komşuluk ve derece matrisleri, 2.3 Normalleştirilmiş graf evrişimi, 2.4 Graf kurma yaklaşımları ve GCN türleri, 2.5 Görüntü verisinde graf öğrenmesi, 2. Graf evrişim ağları ile göğüs görüntüsü sınıflandırma
 
-### Community 11428 - "Ders 12 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
-### Community 11429 - "Ders 4 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11428 - "9. Dilbilgisinden modele: ağaç yapraklarını sayma örneği"
+Cohesion: 0.25
+Nodes (8): 9.1 Yöntem, 9.2 Problem ve senaryo, 9.3 Adım 1: İsimlerden aday sınıflara, 9.4 Adım 2: Sıfatlardan özelliklere, 9.5 Adım 3-4: Fiillerden işlemlere ve sorumlulukların atanması, 9.6 Adım 5: Durum fiillerinden ilişkilere, 9.7 Gerçek gereksinim belgeleri, 9. Dilbilgisinden modele: ağaç yapraklarını sayma örneği
 
 ### Community 11430 - "12. Sezgisel Arama ve En İyi İlk Arama"
 Cohesion: 0.40
@@ -42785,21 +42918,17 @@ Nodes (6): 11.1 Sınıflandırma, 11.2 Kayan nokta ve sabit nokta, 11.3 İşaret
 Cohesion: 0.33
 Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11441 - "📚 Ekonomi Politikaları"
-Cohesion: 0.29
-Nodes (6): 📝 Derse Dair Öneriler, 📚 Ekonomi Politikaları, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, Ekonomi Politikaları README
+### Community 11441 - "11. Karar Ağacı"
+Cohesion: 0.25
+Nodes (8): 11.1 Model Bir Ağaç Veri Yapısıdır, 11.2 Ağacın Kurulması, 11.3 Modelle Tahmin, 11.4 Tek Bir Doğru Ağaç Yoktur, 11.5 Ağaçtan Kural Çıkarma, 11.6 Böl ve Yönet, 11.7 Nitelik Seçiminin Sezgisi: Yanlış Yerleşen Örnekler, 11. Karar Ağacı
 
-### Community 11442 - "Ders 26 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 26 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11442 - "8. Gerçekleştirme Sorunları (1): Frontier, Fetcher, Parser, Depo"
+Cohesion: 0.25
+Nodes (8): 8.1 Aynı Sayfayı Tekrar İndirmemek, 8.2 Frontier Listesinin Hızlı Büyümesi, 8.3 Fetcher: Zaman Aşımı, 8.4 Fetcher: Yalnız İşlenebilir Doküman Türleri, 8.5 Fetcher: Boyut Sınırı, 8.6 Ayrıştırma (Parsing) ve DOM Ağacı, 8.7 Depo ve Metin İşleme, 8. Gerçekleştirme Sorunları (1): Frontier, Fetcher, Parser, Depo
 
 ### Community 11443 - "ConstantPointer.c"
 Cohesion: 0.47
 Nodes (3): f(), f2(), main()
-
-### Community 11444 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11445 - "Ders 1 Çalışma Özeti"
 Cohesion: 0.33
@@ -42821,13 +42950,13 @@ Nodes (4): Soru 1 (ekrandan, 00:20:00 ve 00:30:00), Soru 2 (derste sözlü, 00:4
 Cohesion: 0.33
 Nodes (5): Ders 20 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11450 - "Ders 9 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11450 - "Ders 20 Çalışma Özeti"
+Cohesion: 0.25
+Nodes (7): Ders 20 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Üs alma sürümlerinin denenmesi
 
-### Community 11451 - "Ders 7 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11451 - "Ders 21 Çalışma Özeti"
+Cohesion: 0.25
+Nodes (7): Ders 21 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Laboratuvar 3 için dinamik programlama çözümü
 
 ### Community 11452 - "Ders 26 Çalışma Özeti"
 Cohesion: 0.33
@@ -42857,13 +42986,13 @@ Nodes (3): 5.1 Algoritma, 5.2 Sayısal güncelleme örneği, 5. Q-Learning algor
 Cohesion: 0.43
 Nodes (4): elemanekle(), main(), selectionSort(), swap()
 
-### Community 11459 - "linkedlistdouble.c"
-Cohesion: 0.60
-Nodes (4): main(), newNode(), traverseLeft(), traverseRight()
+### Community 11459 - "Ders 6 Çalışma Özeti"
+Cohesion: 0.25
+Nodes (7): Ders 6 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, En büyük iki not programı, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11460 - "linked_list_2.cpp"
-Cohesion: 0.40
-Nodes (3): n, next, x
+### Community 11460 - "Appendix B Sets, relations, functions, graphs, trees"
+Cohesion: 0.38
+Nodes (7): Appendix B Sets, relations, functions, graphs, trees, Free trees (Theorem B.2), Functions: injection, surjection, bijection, Directed and undirected graphs, Relations: equivalence relation and partial order, Rooted, ordered, binary and k-ary trees, Set operations and laws (DeMorgan)
 
 ### Community 11461 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -42876,6 +43005,10 @@ Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 ### Community 11464 - "rotateArray.c"
 Cohesion: 0.60
 Nodes (5): haveARN(), leftRotate(), main(), printArray(), rotateByOne()
+
+### Community 11465 - "Monoton Dizi"
+Cohesion: 0.33
+Nodes (7): EBAS (En Büyük Alt Sınır), EKÜS (En Küçük Üst Sınır), Monoton Dizi, Sınırlı Dizi, Dizi Tanımı, Monoton Dizi Teoremi, Sınırlı Dizi (EBAS/EKÜS)
 
 ### Community 11466 - "diffproject_2/22011049.c"
 Cohesion: 0.60
@@ -42921,6 +43054,10 @@ Nodes (5): 7.1 Birleştirme yöntemleri, 7.2 Birleştirmenin sonuçları, 7.3 Ö
 Cohesion: 0.40
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
+### Community 11477 - "newton_raphson_method.c"
+Cohesion: 0.57
+Nodes (6): derivativeValue(), functionValue(), main(), newtonRaphson(), printPolynomial(), readPolynomial()
+
 ### Community 11478 - "Lab3-20011901.c"
 Cohesion: 0.43
 Nodes (4): elemanekle(), main(), selectionSort(), swap()
@@ -42941,13 +43078,17 @@ Nodes (6): addPlayer(), bubbleSortMaas(), findMinOrMax(), main(), makePlayer(), 
 Cohesion: 0.40
 Nodes (5): 7.1 Tarih ve bağlam, 7.2 Neden dağıtık dosya sistemi?, 7.3 Üç kategori, 7.4 Gevşek bağlı ağ neden tercih edilmedi?, 7. ITC Dağıtık Dosya Sistemi: Amaç ve Sınıflandırma
 
-### Community 11483 - "Ders 6 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11483 - "proje_ödev/simpsons_rule.c"
+Cohesion: 0.57
+Nodes (6): functionValue(), main(), printPolynomial(), readPolynomial(), simpson13(), simpson38()
 
-### Community 11485 - "yapısal_programlama/lab_4/21011022.c"
-Cohesion: 0.83
-Nodes (3): girdiAl(), listeYazdir(), main()
+### Community 11484 - "Lab 3/Uygulama 3.c"
+Cohesion: 0.48
+Nodes (4): distance(), main(), selectionSort(), swap()
+
+### Community 11485 - "sınav 3/Uygulama 3.c"
+Cohesion: 0.48
+Nodes (4): distance(), main(), selectionSort(), swap()
 
 ### Community 11486 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -42961,9 +43102,9 @@ Nodes (4): degistirDizi(), main(), toplaDiziv1(), toplaDiziv2()
 Cohesion: 0.33
 Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11489 - "7. Kitaplık ve Raf sınıfları: nesne dizileri"
-Cohesion: 0.50
-Nodes (4): 7.1 Kitaplık constructor'ı, 7.2 Raf sınıfı, 7. Kitaplık ve Raf sınıfları: nesne dizileri, raf()
+### Community 11489 - "yap_prog_gir_gant_diyagramı_lab_4.c"
+Cohesion: 0.52
+Nodes (6): isKodlari(), isZamanlari(), kodKontrol(), main(), yazdirGantDiyagrami(), zamanKontrol()
 
 ### Community 11491 - "ypg/lab_4/main.c"
 Cohesion: 0.39
@@ -43009,17 +43150,17 @@ Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 Cohesion: 0.70
 Nodes (4): FindCommonFactor(), FindPrime(), FindPrimeFactor(), main()
 
-### Community 11502 - "TopRec.c"
-Cohesion: 0.70
-Nodes (4): DiziTopRecurse(), ElemanAraRecurse(), main(), TopRecurse()
+### Community 11502 - "yap_prog_gir_minor_matrix_lab_3.c"
+Cohesion: 0.48
+Nodes (5): detRes(), main(), printMatrix(), randMatrix(), recursiveMinor()
 
-### Community 11503 - "Chapter 12 Installing Red Hat Enterprise Linux"
-Cohesion: 0.67
-Nodes (4): Anaconda installer, Chapter 12 Installing Red Hat Enterprise Linux, Kickstart, ksvalidator
+### Community 11503 - "myUyg-3butWithTeacher.c"
+Cohesion: 0.48
+Nodes (4): distance(), main(), selectionSort(), swap()
 
-### Community 11505 - "Uyg-2/odev2.c"
-Cohesion: 0.83
-Nodes (3): main(), sadelestir(), topla()
+### Community 11505 - "blm_1012_introduction_to_procedural_programming/lablar/lab_4/lab_4.c"
+Cohesion: 0.38
+Nodes (6): Lab-4 Gantt Çizelgesi (YPG 2022), Dizi ile linkli liste (head, link sütunu), fonk1(), fonk2(), main(), Gantt Çizelgesi
 
 ### Community 11506 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -43037,41 +43178,41 @@ Nodes (4): findWork(), get_data(), main(), printWork()
 Cohesion: 0.36
 Nodes (8): OOP Autopark Project README, OOP Autopark Projesi (BLM2012 dönem projesi), BLM2012 Project Work V1.1 (Autopark), Autopark sınıfı (addVehicle, isParked, vehicleEnters, vehicleExits), Proje kuralları: max 2 kişi, konsol 100 / GUI 120 puan, Eclipse, en az 2 jUnit testi, Subscription (isValid, tarih aralığı), Kademeli saatlik otopark ücreti (55 dk ücretsiz, 1s35dk bir saat), Araç türleri: Regular, Subscribed, Official
 
-### Community 11511 - "yp_uyg1_s2v2.c"
-Cohesion: 0.83
-Nodes (3): main(), multiplyByTwo(), printMatrix()
+### Community 11511 - "blm_1031/lab_4/main.c"
+Cohesion: 0.52
+Nodes (6): dosyadanOku(), dosyaOlustur(), ekle(), listeyiGoster(), main(), raporOlustur()
 
 ### Community 11513 - "vya_ödev_1_casus.c"
 Cohesion: 0.43
 Nodes (6): createCode(), isEmpty(), isFull(), main(), pop(), push()
 
-### Community 11514 - "findtriplets_recursive.c"
-Cohesion: 0.83
-Nodes (3): findTriplets(), main(), printTriplet()
+### Community 11514 - "structural_programming/lab_2/main.c"
+Cohesion: 0.52
+Nodes (6): hacim_hesapla(), main(), matrisi_free(), matrisi_yazdir(), satir_ekle(), urun_ekle()
 
-### Community 11517 - "Paralel Tepe Tırmanma ve Genetik Algoritma ile Sudoku Çözücü raporu (2015)"
-Cohesion: 0.10
-Nodes (23): Genetik algoritma ile Sudoku çözücü, YTU Yapay Zeka Projesi 2013-2014, Genetic Sudoku Solver README, Kaynak notu (brkzr/Genetic-sudoku-solver), brkzr/Genetic-sudoku-solver deposu, Kaynak notu (AbdullahKayahan/sudokuSolverAI), AbdullahKayahan/sudokuSolverAI deposu, Çaprazlama fonksiyonu (+15 more)
+### Community 11517 - "Genetik algoritma ile Sudoku çözücü"
+Cohesion: 0.50
+Nodes (5): Genetik algoritma ile Sudoku çözücü, YTU Yapay Zeka Projesi 2013-2014, Genetic Sudoku Solver README, Kaynak notu (brkzr/Genetic-sudoku-solver), brkzr/Genetic-sudoku-solver deposu
 
 ### Community 11518 - "3. Göğüs röntgeni veri setleri ve Graph Learning"
 Cohesion: 0.50
 Nodes (4): 3.1 RSNA COVID-19 X-ray verisi, 3.2 Diğer göğüs röntgeni veri setleri (ekrandan, 00:10:00), 3.3 Graph Learning (ekrandan, 00:15:00), 3. Göğüs röntgeni veri setleri ve Graph Learning
 
-### Community 11519 - "2. Birinci Sunum: Yazılım Evi İnsan Kaynakları Sistemi"
-Cohesion: 0.25
-Nodes (8): 2.1 Amaç, Kabuller ve Kısıtlar, 2.2 Proje Takvimi, 2.3 Use Case Diyagramı ve Senaryolar, 2.4 İzlenebilirlik ve Risk Tablosu, 2.5 Sınıf Diyagramları, 2.6 Sıralama, Etkinlik ve Durum Diyagramları, 2.7 Birim Testleri, 2. Birinci Sunum: Yazılım Evi İnsan Kaynakları Sistemi
+### Community 11519 - "runge_kutta_4method.c"
+Cohesion: 0.57
+Nodes (5): degerleriAl(), fonksiyonuAl(), hesaplama(), kiHesaplama(), main()
 
 ### Community 11520 - "5. Servikal hücre segmentasyonu ve segmentasyon veri setleri"
 Cohesion: 0.50
 Nodes (4): 5.1 GAN tabanlı segmentasyon, 5.2 Gösterilen veri seti (ekrandan, 00:30:00), 5.3 Hocanın önerdiği segmentasyon veri setleri, 5. Servikal hücre segmentasyonu ve segmentasyon veri setleri
 
-### Community 11521 - "vize1_kodSorusu.c"
-Cohesion: 0.60
-Nodes (5): createMatrix(), findMax(), main(), printMatrix(), replaceMaxAndDiagonal()
+### Community 11521 - "datapath"
+Cohesion: 0.29
+Nodes (3): TB_ALU32, datapath, TB_ALU32
 
-### Community 11522 - "getWidthOrHeight"
-Cohesion: 0.67
-Nodes (3): augmentWidthOrHeight(), curCSS(), getWidthOrHeight()
+### Community 11522 - "blm_2512/lablar/lab_2.c"
+Cohesion: 0.62
+Nodes (5): addLinkedLists(), createNode(), freeList(), main(), push()
 
 ### Community 11523 - "matris_gez.c"
 Cohesion: 0.70
@@ -43093,29 +43234,33 @@ Nodes (4): 7.1 MLP ile ek deney, 7.2 MLP'yi taban öğrenici yapan bir çalışm
 Cohesion: 0.50
 Nodes (4): 5.1 Reward hacking, 5.2 Gözlenen davranışlar, 5.3 Dengeli tasarım, 5. Ödül Hilesi ve Modelin Davranışı
 
-### Community 11528 - "5. Dördüncü Sunum: Seyahat Acentesi Biletleme Sistemi (C++ ve GoogleTest)"
-Cohesion: 0.25
-Nodes (8): 5.1 Proje Bilgi Formu ve İhtiyaçlar, 5.2 Gantt Diyagramı ve Süreç Modeli, 5.3 Use Case Diyagramı, 5.4 Sınıf Diyagramı, 5.5 Sıralama Diyagramı, 5.6 Durum ve Etkinlik Diyagramları, 5.7 Birim Testleri (GoogleTest), 5. Dördüncü Sunum: Seyahat Acentesi Biletleme Sistemi (C++ ve GoogleTest)
+### Community 11528 - "lab2/mert_guler/kod.c"
+Cohesion: 0.62
+Nodes (5): addLinkedLists(), createNode(), freeList(), main(), push()
 
-### Community 11529 - "blm_1012_introduction_to_procedural_programming/lablar/lab_3/lab_3.c"
-Cohesion: 0.60
-Nodes (5): getMatrix(), main(), printMatrix(), printRoute(), totalRoute()
+### Community 11529 - "circular_linkedlist.c"
+Cohesion: 0.57
+Nodes (5): add(), delete(), insert(), main(), print()
 
-### Community 11530 - "Ders 1 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11530 - "doubly_linkedlist.c"
+Cohesion: 0.57
+Nodes (5): add(), delete(), insert(), main(), print()
 
-### Community 11531 - "5. Sınıf Şeması (Class Diagram)"
-Cohesion: 0.25
-Nodes (8): 5.1 Sınıf kutusu ve analist bakışı, 5.2 Çalışan ve Erişim sınıfları, 5.3 Kalıtım: çalışan türleri ve başhekim, 5.4 Hasta, Randevu ve "gizli bilgi", 5.5 Reçete ve İlaç: aggregation, 5.6 Hastane, Bölüm ve Çalışan: composition ve aggregation, 5.7 Şemanın metin hâli, 5. Sınıf Şeması (Class Diagram)
+### Community 11531 - "Veri Tabanı Ders Notları 2: ER ve UML"
+Cohesion: 0.52
+Nodes (7): VT tasarım prosesi, Veri Tabanı Ders Notları 2: ER ve UML, Varlık ve varlık kümesi, Varlık-Bağıntı (ER) modeli, Bağıntı ve bağıntı kümesi, UML diyagramları, Zayıf varlık kümeleri
 
-### Community 11532 - "resolve"
-Cohesion: 0.67
-Nodes (3): Identity(), resolve(), Thrower()
+### Community 11532 - "8. Yedinci Sunum: Medya Takip Sistemi (Abonelik ve Onay Akışı)"
+Cohesion: 0.29
+Nodes (7): 8.1 Kabuller ve Kısıtlar, 8.2 Zaman Çizelgesi ve Risk, 8.3 Abonelik Senaryosu ve Diyagramı, 8.4 İzlenebilirlik ve Sınıf Diyagramlarının Aşaması, 8.5 Sıralama, Etkinlik ve Durum Diyagramları, 8.6 Birim Testleri, 8. Yedinci Sunum: Medya Takip Sistemi (Abonelik ve Onay Akışı)
 
 ### Community 11533 - "9. Sınıf sayısını azaltan ek denemeler"
 Cohesion: 0.67
 Nodes (3): 9.1 Dönemlere ayırma, 9.2 Kümeleme ve diğer öneriler, 9. Sınıf sayısını azaltan ek denemeler
+
+### Community 11535 - "Classical Shortest Path vs Q-Learning Comparison"
+Cohesion: 0.52
+Nodes (7): shortest_path Kaynak, gokerguner/shortest_path, Classical Shortest Path vs Q-Learning Comparison, Dijkstra, shortest_path README (Bitirme Tezi), Floyd-Warshall, Graph class (main.py)
 
 ### Community 11536 - "Ders 10 Çalışma Özeti"
 Cohesion: 0.33
@@ -43145,17 +43290,33 @@ Nodes (4): get_values(), main(), sort_and_print(), swap()
 Cohesion: 0.33
 Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11543 - "14. Gözlemlenebilir servisler"
-Cohesion: 0.25
-Nodes (8): 14.1 Altı gözlemlenebilirlik modeli, 14.2 Sağlık denetimi API'si, 14.3 Günlük toplama, 14.4 Dağıtık izleme, 14.5 Uygulama metrikleri, 14.6 İstisna izleme, 14.7 Denetim günlüğü, 14. Gözlemlenebilir servisler
+### Community 11543 - "Veri azaltma slaytı"
+Cohesion: 0.33
+Nodes (7): Boyut Laneti, Kirli veri, Veri ön işleme slaytı, Veri kalitesi boyutları, Ön işleme görevleri, Veri azaltma slaytı, Öznitelik seçimi
 
 ### Community 11544 - "2. Sunum 1: Öneri Sistemleri"
 Cohesion: 0.25
 Nodes (8): 2.1 Öneri sistemlerine neden ihtiyaç var?, 2.2 İçerik tabanlı filtreleme, 2.3 İşbirlikçi filtreleme, 2.4 Hibrit filtreleme, 2.5 Öneri sistemlerinin sorunları, 2.6 Literatürdeki çalışmalar, 2.7 Sonuç, 2. Sunum 1: Öneri Sistemleri
 
+### Community 11545 - "18. Android Studio ile İlk Proje"
+Cohesion: 0.29
+Nodes (7): 18.1 Proje oluşturma ve Gradle, 18.2 Uygulamayı çalıştırma, 18.3 Android Studio arayüzü, 18.4 Hello World projesinin yapısı, 18.5 HelloWorldActivity sınıfı, 18.6 Soru-cevaplar, 18. Android Studio ile İlk Proje
+
 ### Community 11547 - "ödev_2_median_finding/11011027_mustafa_berkay_mutlu.c"
 Cohesion: 0.53
 Nodes (4): FindMedian(), main(), PivotChoose2(), Swap()
+
+### Community 11548 - "12. SharedPreferences"
+Cohesion: 0.29
+Nodes (7): 12.1 İki metot, 12.2 SharedPreferences ile saved instance state farkı, 12.3 Yazma, 12.4 apply() ile commit() farkı, 12.5 Okuma ve varsayılan değer, 12.6 Diğer metotlar ve Preferences kütüphanesi, 12. SharedPreferences
+
+### Community 11549 - "8. Pi Algoritmasını Adım Adım İyileştirmek"
+Cohesion: 0.29
+Nodes (7): 8.1 Birinci Sürüm: İki Kollu `if`, 8.2 İkinci Sürüm: Ortak İşi `if`'in Üstüne Almak, 8.3 Üçüncü Sürüm: İşaret Değişkeni, 8.4 Dördüncü Sürüm: İlk Terimi Döngüden Çıkarmak, 8.5 Soru: Büyük Sayıları Toplamak Daha mı Pahalı?, 8.6 Soru: `i`'yi İkişer Artırıp İki İşlem Yapsak?, 8. Pi Algoritmasını Adım Adım İyileştirmek
+
+### Community 11550 - "Ders 25 Çalışma Özeti"
+Cohesion: 0.29
+Nodes (6): Ders 25 Çalışma Özeti, Ders sonrası notlar, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11551 - "Ders 23 Çalışma Özeti"
 Cohesion: 0.33
@@ -43177,21 +43338,37 @@ Nodes (5): backTracking(), main(), sameColumn(), sameRow(), yazdir()
 Cohesion: 0.70
 Nodes (3): addNode(), main(), printList()
 
+### Community 11556 - "2. Paylaşımlı hesaplamanın tarihçesi"
+Cohesion: 0.33
+Nodes (6): 2.1 Batch processing (toplu işleme), 2.2 Operatör ve job control language, 2.3 Interactive processing ve real-time processing, 2.4 Time-sharing ve multiprogramming, 2.5 Çok işlemcili makineler, 2. Paylaşımlı hesaplamanın tarihçesi
+
+### Community 11557 - "Ders 17 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 17 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
 ### Community 11558 - "ödev_2_20011047.c"
 Cohesion: 0.60
 Nodes (5): getInputFromUser(), main(), makePartition(), makeSwap(), matchKeysAndLocks()
 
-### Community 11560 - "adjecancymatrix.c"
-Cohesion: 0.60
-Nodes (3): addEdge(), initialize(), main()
+### Community 11560 - "Ders 29 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 29 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11562 - "KullaniciViewModel"
-Cohesion: 0.40
-Nodes (5): KullaniciViewModel, Id, KullaniciAdi, Rol, Sifre
+### Community 11561 - "2. Newton-Raphson Yöntemi"
+Cohesion: 0.33
+Nodes (6): 2.1 Yöntemin özellikleri, 2.2 Geometrik fikir: teğetle yaklaşmak, 2.3 Formülün türetilmesi (teğet doğrusu ile), 2.4 Kutu (konteyner) problemi, 2.5 Taylor serisinden türetme, 2. Newton-Raphson Yöntemi
 
-### Community 11563 - "Uygulama2.c"
-Cohesion: 0.70
-Nodes (4): insert(), main(), print_list(), show_zerocols()
+### Community 11562 - "Ders 1 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11563 - "Ders 7 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11564 - "bisection_method.c"
+Cohesion: 0.67
+Nodes (5): bisection(), functionValue(), main(), printPolynomial(), readPolynomial()
 
 ### Community 11565 - "bbg2-uy4/uyg5.c"
 Cohesion: 0.83
@@ -43201,21 +43378,49 @@ Nodes (3): BykBul(), main(), MutlakDegerAl()
 Cohesion: 0.83
 Nodes (3): DizidenBykBul(), main(), MutlakDegerAl()
 
+### Community 11567 - "gregory_newton_interpolation.c"
+Cohesion: 0.60
+Nodes (5): factorial(), function(), gregoryNewton(), main(), readValues()
+
 ### Community 11568 - "BLM3520 2022-2023 Dönem Projesi: Öğrenci Ev Arkadaşı Eşleştirme"
 Cohesion: 0.25
 Nodes (8): Muhammet Ali Şen 20011701 StuMateApp proje raporu kapağı, StuMateApp (GitHub: shenmali/StuMateApp), BLM3520 2022-2023 Dönem Projesi: Öğrenci Ev Arkadaşı Eşleştirme, Eşleşme talebi, Firebase authentication, Harita ve locationmanager, Profil oluşturma ve fotoğraf yükleme, Recyclerview ve cardview listeleme
 
-### Community 11571 - "yapısal_programlama/lab_1/lab_1.c"
-Cohesion: 0.83
-Nodes (3): enler(), main(), sirala()
+### Community 11569 - "inverse_matrix.c"
+Cohesion: 0.73
+Nodes (5): detCalculation(), inverseMatrix(), main(), printMatrix(), readMatrix()
+
+### Community 11570 - "regula_falsi_method.c"
+Cohesion: 0.67
+Nodes (5): functionValue(), main(), printPolynomial(), readPolynomial(), regulaFalsi()
+
+### Community 11571 - "proje_ödev/trapezoidal_rule.c"
+Cohesion: 0.60
+Nodes (5): functionValue(), main(), printPolynomial(), readPolynomial(), trapezoidal()
 
 ### Community 11572 - "algoritma_analizi/ödevler/ödev_2/21011084.c"
 Cohesion: 0.70
 Nodes (4): main(), matchKeysAndLocks(), partition(), swap()
 
+### Community 11573 - "soru 3/ramazan_pirinc/kod.c"
+Cohesion: 0.60
+Nodes (5): CreateMatrix(), ExtendandFill(), FreeMemory(), main(), PrintMatrix()
+
 ### Community 11574 - "Ders 24 Çalışma Özeti"
 Cohesion: 0.25
 Nodes (7): Ders 24 Çalışma Özeti, Ders sonrası notlar, Derste yazılan kodların denenmesi, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11575 - "Ders 15 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 15 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11576 - "Ders 25 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 25 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11577 - "aeroplane_info_read_in_file.c"
+Cohesion: 0.67
+Nodes (4): durum_oku(), main(), pist_yazdir(), printlist()
 
 ### Community 11578 - "5. Obezite Düzeyi Sınıflandırması ve Kategorik Veri Kodlaması"
 Cohesion: 0.33
@@ -43225,45 +43430,61 @@ Nodes (6): 5.1 Veri seti, 5.2 One-hot kodlama tartışması, 5.3 Korelasyon, 5.4
 Cohesion: 0.33
 Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11580 - "2. Başarısız Aramada Beklenen Deneme Sayısı"
-Cohesion: 0.33
-Nodes (6): 2.1 Teorem, 2.2 İspatın Fikri, 2.3 Rastgele Değişken ve Olaylar, 2.4 Üst Sınır, 2.5 Sonucun Yorumu, 2. Başarısız Aramada Beklenen Deneme Sayısı
+### Community 11580 - "lab 3/yusuf_safa_koksal/kod.c"
+Cohesion: 0.60
+Nodes (5): calculateDiscountedPrice(), calculatePrice(), findDiscountPercent(), main(), showProducts()
 
 ### Community 11581 - "2. Android'de Çalışma Ortamı, Paketleme ve Geliştirme Araçları"
 Cohesion: 0.40
 Nodes (5): 2.1 Java Virtual Machine'den Android Runtime'a, 2.2 Just-in-time ve Ahead-of-time Derleme, 2.3 APK ve Android App Bundle, 2.4 Diller, SDK ve NDK, 2. Android'de Çalışma Ortamı, Paketleme ve Geliştirme Araçları
 
-### Community 11582 - "Ders 10 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11582 - "introductiontostructuredprogramming/lablar/lab_3_20011017.c"
+Cohesion: 0.60
+Nodes (5): calculateDeterminant(), generateRandomMatris(), main(), minor(), printMatris()
 
 ### Community 11583 - "9. Mobil Uygulama Geliştirmede Kısıtlar: Veri Aktarımı ve Depolama"
 Cohesion: 0.40
 Nodes (5): 9.1 Verinin Merkeze Aktarım Zamanı, 9.2 Yarıda Kalan Aktarım, 9.3 Bağlantı Türleri Arasında Geçiş, 9.4 Veri Depolama: iOS ve Android, 9. Mobil Uygulama Geliştirmede Kısıtlar: Veri Aktarımı ve Depolama
 
-### Community 11584 - "Ders 11 Çalışma Özeti"
+### Community 11584 - "lab_5_20011017.c"
+Cohesion: 0.67
+Nodes (4): dosyaOku(), main(), ogrenciyiDosyayaYaz(), raporYazdir()
+
+### Community 11585 - "lab_3_code.c"
+Cohesion: 0.73
+Nodes (5): detCalculation(), main(), minorMatrix(), printMatrix(), randomMatrix()
+
+### Community 11586 - "Principle of Inclusion-Exclusion"
+Cohesion: 0.40
+Nodes (6): Derangements (Dn), Euler phi function via inclusion-exclusion, Principle of Inclusion-Exclusion, Counting Onto Functions, 8.5 Inclusion-Exclusion, 8.6 Applications of Inclusion-Exclusion
+
+### Community 11587 - "Unit Delay Element (Birim Gecikme Elemanı)"
+Cohesion: 0.33
+Nodes (6): Ayrık Zamanlı Sinyal (Discrete-Time Signal), BIBO Kararlılık (BIBO Stability), Doğrusallık (Linearity), Nedensellik (Causality), Unit Delay Element (Birim Gecikme Elemanı), Zamanla Değişmezlik (Time-Invariance)
+
+### Community 11588 - "Ders 11 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11585 - "Ders 4 Çalışma Özeti"
+### Community 11589 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
-Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11586 - "Ders 5 Çalışma Özeti"
+### Community 11590 - "Ders 3 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11591 - "Ders 5 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
-### Community 11587 - "Ders 7 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
-### Community 11591 - "9. Ayrıntılı tasarım"
-Cohesion: 0.29
-Nodes (7): 9.1 Tanım ve kapsam, 9.2 Çıktı tasarımı, 9.3 Girdi tasarımı, 9.4 Girdi kodlaması, 9.5 Veri tabanı tasarımı, 9.6 Ara birim tasarımı, 9. Ayrıntılı tasarım
 
 ### Community 11592 - "ödev_1_visualstudio/main.cpp"
 Cohesion: 0.83
 Nodes (3): main(), readImage(), writeImage()
+
+### Community 11593 - "lab4/mert_guler/kod.c"
+Cohesion: 0.47
+Nodes (3): findCousins(), findInfo(), main()
 
 ### Community 11594 - "3. Ağ yapısı, enerji ve ağ ömrü"
 Cohesion: 0.50
@@ -43293,17 +43514,33 @@ Nodes (4): 7.1 Temel tehditler, 7.2 Güvenlik ilkeleri, 7.3 Kısıtlı kaynaklar
 Cohesion: 0.50
 Nodes (4): 8.1 Kötücül yazılımı nasıl anlarız?, 8.2 Sandbox ve emülatör analizi, 8.3 GAN ile sentetik veri, 8. Mobil Kötücül Yazılım Tespiti ve GAN
 
-### Community 11604 - "ödev 2/sinem_sarak/kod.c"
-Cohesion: 0.48
-Nodes (5): generateRandomArray(), kWayMergeSort(), main(), merge(), swap()
+### Community 11601 - "agc_2.c"
+Cohesion: 0.60
+Nodes (4): josephus(), main(), newNode(), traverse()
 
-### Community 11605 - "4. Kural Madenciliğinin Maliyeti"
-Cohesion: 0.33
-Nodes (6): 4.1 Kaba kuvvet yaklaşımı, 4.2 Aynı öğe kümesinden çıkan kurallar, 4.3 Altı işlemli örnek, 4.4 Öğe kümesi kafesi ve alt küme sayısı, 4.5 Kaba kuvvetin karmaşıklığı, 4. Kural Madenciliğinin Maliyeti
+### Community 11602 - "era.c"
+Cohesion: 0.60
+Nodes (5): countPrimes(), eratosthenes(), main(), printIndex(), printPrimes()
 
-### Community 11606 - "Ders 10 Çalışma Özeti"
+### Community 11603 - "linkedlistdblcrcl.c"
+Cohesion: 0.60
+Nodes (4): main(), newNode(), traverseLeft(), traverseRight()
+
+### Community 11604 - "prefix_to_postfix_converter.c"
+Cohesion: 0.67
+Nodes (4): main(), pop(), push(), stackinit()
+
+### Community 11605 - "Ders 13 Çalışma Özeti"
 Cohesion: 0.33
-Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11606 - "Ders 25 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 25 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11607 - "Ders 5 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11608 - "Ders 13 Çalışma Özeti"
 Cohesion: 0.33
@@ -43313,45 +43550,73 @@ Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.33
 Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11610 - "Ders 15 Çalışma Özeti"
+### Community 11610 - "Ders 8 Çalışma Özeti"
 Cohesion: 0.33
-Nodes (5): Ders 15 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11611 - "Ders 2 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11612 - "Ders 3 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
-
 ### Community 11613 - "NAT"
 Cohesion: 0.33
 Nodes (7): CIDR, DHCP, End-to-end argument, IP addressing and subnets, IPv6, NAT, BGP
 
-### Community 11619 - "bogosort.c"
-Cohesion: 0.70
-Nodes (4): bogoSort(), isSorted(), main(), printArray()
+### Community 11614 - "Ders 10 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11620 - "6. Sınıf diyagramı: özellikler, işlemler, parametreler"
-Cohesion: 0.29
-Nodes (7): 6.1 Sınıf kutusu, 6.2 Özellikler, 6.3 İşlemler, 6.4 Parametreler ve dönüş değerleri, 6.5 Tartışma: `kaydır` bir değer döndürmeli mi?, 6.6 1–100 kısıtı UML'de gösterilemez, 6. Sınıf diyagramı: özellikler, işlemler, parametreler
+### Community 11615 - "Ders 11 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11621 - "Bublesort.c"
-Cohesion: 0.70
-Nodes (4): bubleSort(), main(), printArray(), sortOrder()
+### Community 11616 - "Ders 12 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11622 - "seperateChaining.c"
-Cohesion: 0.60
-Nodes (3): createNode(), insert(), main()
+### Community 11617 - "Ders 13 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11618 - "Ders 2 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11619 - "Ders 3 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11620 - "Ders 5 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11621 - "Ders 6 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11622 - "Ders 7 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 7 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11623 - "o_rnekkod.c"
 Cohesion: 0.70
 Nodes (4): bubleSort(), main(), printArray(), sortOrder()
 
+### Community 11624 - "Ödev 1 Raporu: Genetik algoritma ile resim yeniden oluşturma (Diner, Çaycı)"
+Cohesion: 0.67
+Nodes (6): Ödev 1 Raporu: Genetik algoritma ile resim yeniden oluşturma (Diner, Çaycı), Hiperparametreler resimler arası aktarılamaz, Fitness değeri, Genetik algoritma deneyleri, Popülasyon boyutu, Mutasyon oranı
+
+### Community 11625 - "Ders 5 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
 ### Community 11626 - "8. Bileşenler arası ilişkiler"
 Cohesion: 0.29
 Nodes (7): 8.1 Üç ilişki türü, 8.2 Senaryolardaki alt eylemler, 8.3 Görünen satır sayısı ilişkisi, 8.4 Şu ana kadarki model, 8.5 Hangi satırlar görünecek?, 8.6 Kulp boyutu ilişkisi, 8. Bileşenler arası ilişkiler
+
+### Community 11627 - "Ders 6 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11628 - "10. Video Duvarı Arıza Tespiti: CNN mi, Histogram mı?"
 Cohesion: 0.40
@@ -43389,29 +43654,45 @@ Nodes (5): 8.1 Öneri sistemleri ve otomatik kodlayıcılar, 8.2 Veri ve tür-oy
 Cohesion: 0.40
 Nodes (5): 9.1 Amaç ve iki aşamalı arama, 9.2 Grid Search ve Bayes araması, 9.3 Zaman adımı seçimi, 9.4 Model ve sonuçlar, 9. Bitcoin Fiyat Tahmininde Grid Search ve Bayes Optimizasyonu
 
-### Community 11637 - "3. Algısal Hash: Literatür ve Nesne Takibi (Üçüncü Sunum)"
+### Community 11637 - "Ders 1 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11638 - "9. DEMOS/MP'de Proses Göçü: Amaçlar ve Adımlar"
+Cohesion: 0.33
+Nodes (6): 9.1 Göçün amaçları, 9.2 Göçün sekiz adımı, 9.3 Makaledeki şekil: üç işlemcili örnek, 9.4 Akademiden günlük hayata, 9.5 Elektrik kesintisi ve high availability, 9. DEMOS/MP'de Proses Göçü: Amaçlar ve Adımlar
+
+### Community 11639 - "Ders 12 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 12 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11640 - "Ders 3 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11641 - "Ders 4 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11642 - "7. State Uygulama Örneği: PIM Yazılımında Temiz ve Kirli Durum"
+Cohesion: 0.33
+Nodes (6): 7.1 Problem (ekrandan, 00:50:00), 7.2 Sınıf şeması, 7.3 Durumların kodu (ekrandan, 00:48:20), 7.4 İşaretleyici (marker) sınıf, 7.5 PIMApplication'da işin duruma yaptırılması, 7. State Uygulama Örneği: PIM Yazılımında Temiz ve Kirli Durum
+
+### Community 11643 - "Occupancy Grid Haritalama (Olasılıksal Robotik 9)"
+Cohesion: 0.60
+Nodes (6): Occupancy Grid Haritalama (Olasılıksal Robotik 9), Inverse sensor model, Log odds gösterimi, Maksimum a posteriori haritalama, Haritalama, Occupancy Grid Mapping
+
+### Community 11644 - "Real-Time Classification of Fraudulent Reviews Using Supervised and Deep Learning"
 Cohesion: 0.40
-Nodes (5): 3.1 Algısal Hash Nedir?, 3.2 Birinci ve İkinci Makale: İçerik Moderasyonu, 3.3 Üçüncü Makale: Ön Plan Tespiti ve Algısal Hash ile Görsel Takip, 3.4 Dördüncü Makale: LHash ve LDHash, 3. Algısal Hash: Literatür ve Nesne Takibi (Üçüncü Sunum)
+Nodes (6): Kaynak: GkslOkn/YTU_CE_Web_Mining_Term_Project, Classification and Study of Fradulent and Genuine Reviews (proposal), YTU CE Web Mining Term Project README, Bidirectional LSTM, Real-Time Classification of Fraudulent Reviews Using Supervised and Deep Learning, Sahte yorum (fraudulent review) tespiti
 
-### Community 11638 - "6. Çakışmaya Dayanıklı Hash Fonksiyonları: Tasarım ve Tarihçe (Altıncı Sunum)"
-Cohesion: 0.40
-Nodes (5): 6.1 Kriptografik Hash ve Sınıflandırma, 6.2 Çakışma Tanımı ve Koşullar, 6.3 Temel Tasarım Yapıları, 6.4 Algoritmaların Tarihçesi, 6. Çakışmaya Dayanıklı Hash Fonksiyonları: Tasarım ve Tarihçe (Altıncı Sunum)
+### Community 11645 - "Ders 1 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11639 - "10. UML sınıf modelinin ayrıntıları"
-Cohesion: 0.29
-Nodes (7): 10.1 Sınıf diyagramında neler bulunur?, 10.2 Sınıf kutusu ve soyut sınıf, 10.3 Özellikler alanı, 10.4 İşlemler alanı, 10.5 Örnek sınıflar, 10.6 İleri sınıf öğeleri, 10. UML sınıf modelinin ayrıntıları
-
-### Community 11640 - "10. Önerme mantığı"
-Cohesion: 0.29
-Nodes (7): 10.1 Önerme nedir?, 10.2 Bağlaçlar, 10.3 Doğruluk tablosu, 10.4 Operatör öncelikleri, 10.5 Doğal dilden önerme mantığına, 10.6 De Morgan kanunu ve denk ifadeler, 10. Önerme mantığı
-
-### Community 11645 - "2x1_blm_2031_structured_programming/lab_2.c"
-Cohesion: 0.83
-Nodes (3): Fonk_satir_topla(), Fonk_sutun_topla(), main()
-
-### Community 11646 - "Örnek Sorular"
-Cohesion: 0.29
-Nodes (7): Soru 1: Durum mu olay mı?, Soru 2: Kasabadaki arabaların durum sayısı, Soru 3: SOS tahtasının durum sayısı, Soru 4: Garaj kapısında düğmeye basılınca ne olmalı?, Soru 5: Zaman göstergesinde kaç farklı durum olabilir?, Soru 6: Hangi mimari stil?, Örnek Sorular
+### Community 11646 - "12. A-Priori Algoritması"
+Cohesion: 0.33
+Nodes (6): 12.1 Monotonluk, 12.2 İki geçiş, 12.3 A-Priori'nin sorunu, 12.4 Bellekten kazanmak için yeniden numaralama, 12.5 Genel akış ve daha büyük kümeler, 12. A-Priori Algoritması
 
 ### Community 11647 - "23011606.cpp"
 Cohesion: 0.83
@@ -43425,13 +43706,17 @@ Nodes (7): Domain Model, Chat (varlık), ChatParticipant (varlık), File (varlı
 Cohesion: 0.50
 Nodes (4): 11.1 Veri ve transfer öğrenme, 11.2 MobileNetV2 mimarisi, 11.3 Sonuçlar, 11. MobileNetV2 ile Meyve Tazelik Sınıflandırması
 
-### Community 11651 - "16-MatrisFunc.c"
-Cohesion: 0.83
-Nodes (3): main(), toplaMatv2(), toplaMatv2ForMat2()
+### Community 11650 - "Ders 11 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 11 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
-### Community 11652 - "Büyük metin sabit.c"
-Cohesion: 0.83
-Nodes (3): KMP(), main(), tekrarhesap()
+### Community 11651 - "Ders 2 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11652 - "Ders 6 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 11654 - "Notification Service README"
 Cohesion: 0.29
@@ -43453,29 +43738,133 @@ Nodes (7): 2.1 Test edilen uygulama ve gereksinimler, 2.2 Test planı ve birim t
 Cohesion: 0.29
 Nodes (7): 2.1 Uygulama ve gereksinimler, 2.2 Test stratejisi ve test edilen öğeler, 2.3 Negatif testler ve sonuçlar, 2.4 Jira biçimli test case tablosu, 2.5 Proje dışı otomasyon örnekleri: Selenium ve Postman, 2.6 Hocanın değerlendirmesi, 2. ATM otomasyonu: negatif testler, Jira biçimi, Selenium ve Postman
 
+### Community 11659 - "Ders 3 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 3 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11660 - "Ders 4 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11661 - "Ders 9 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11662 - "Ders 4 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11663 - "Ders 5 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 5 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11664 - "Ders 8 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11665 - "Ders 6 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 6 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11666 - "Ders 8 Çalışma Özeti"
+Cohesion: 0.33
+Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11667 - "17. Bir C Programının Derlenme Aşamaları"
+Cohesion: 0.33
+Nodes (6): 17.1 Örnek Program, 17.2 Komut Satırında Gezinmek, 17.3 PATH: `gcc` Neden Bulunamadı?, 17.4 `gcc` Komutları, 17.5 Dört Aşama, 17. Bir C Programının Derlenme Aşamaları
+
+### Community 11669 - "5. Hızlı Üs Alma"
+Cohesion: 0.33
+Nodes (6): 5.1 Düz Döngüyle Kuvvet, 5.2 Basamakları Birer Birer Atlamamak, 5.3 Üssün İkilik Açılımı, 5.4 Adım Sayısı: $\log n$, 5.5 Kodlama Üzerine Sorular, 5. Hızlı Üs Alma
+
+### Community 11670 - "UsRec.c"
+Cohesion: 0.60
+Nodes (3): main(), UsRecurse(), UsRecurseV3()
+
+### Community 11671 - "bbg2-uy4/uyg7.c"
+Cohesion: 0.70
+Nodes (4): KareAlRef(), KareAlValue(), KupAlRef(), main()
+
+### Community 11672 - "BBG2-2016/uyg7.c"
+Cohesion: 0.70
+Nodes (4): KareAlRef(), KareAlValue(), KupAlRef(), main()
+
+### Community 11673 - "2018-Bahar/lab4.c"
+Cohesion: 0.70
+Nodes (4): fillMatrix(), main(), searchPattern(), searchPattern1()
+
 ### Community 11674 - "yapısal_programlama/lab_2/lab_2.c"
 Cohesion: 0.60
 Nodes (5): diziAl(), diziYazdir(), main(), maxUzunlukBul(), yeniDiziOlustur()
 
-### Community 11675 - "Ders 9 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11676 - "inverse.c"
+Cohesion: 0.90
+Nodes (4): detrminant(), kofaktor(), main(), transpoze()
 
-### Community 11681 - "Ders 14 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 14 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11677 - "gauss_seidel_method.c"
+Cohesion: 0.80
+Nodes (4): gaussSeidel(), main(), printMatrix(), readMatrix()
 
-### Community 11687 - "Ders 2 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 2 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11678 - "soru 2/ramazan_pirinc/kod.c"
+Cohesion: 0.70
+Nodes (3): main(), print_Students(), sort_by_name()
 
-### Community 11690 - "Ders 1 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 1 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11679 - "lab 2/mehmet_ali_duran/kod.c"
+Cohesion: 0.70
+Nodes (4): asteriksDoldur(), genislet(), main(), printKelimeler()
 
-### Community 11691 - "Ders 8 Çalışma Özeti"
-Cohesion: 0.33
-Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+### Community 11680 - "lab 3/mehmet_ali_duran/kod.c"
+Cohesion: 0.70
+Nodes (4): indirimliTutarHesapla(), main(), tutarHesapla(), urunListele()
+
+### Community 11681 - "introduction_to_procedural_programming/lablar/lab_4/lab_4.c"
+Cohesion: 0.60
+Nodes (4): fonksiyon1(), fonksiyon2(), İş zamanlama çizelgesi (dizi tabanlı linkli liste), main()
+
+### Community 11682 - "introductiontostructuredprogramming/lablar/lab_4_20011017.c"
+Cohesion: 0.70
+Nodes (4): ganttDraw(), isFinishBigger(), isUnique(), main()
+
+### Community 11683 - "ödev-2/mehmet_ali_duran/kod.c"
+Cohesion: 0.70
+Nodes (4): calculate_derivative(), calculate_k(), calculate_new_iter(), main()
+
+### Community 11685 - "divide_n_conquer_algorithms_c/code.c"
+Cohesion: 0.70
+Nodes (4): lock_generator(), main(), match(), partition()
+
+### Community 11686 - "11. $e^x$ Serisi"
+Cohesion: 0.40
+Nodes (5): 11.1 Birinci Sürüm: İç İçe Üç Döngü, 11.2 İkinci Sürüm: İki İç Döngüyü Birleştirmek, 11.3 Üçüncü Sürüm: Önceki Turdaki Değeri Kullanmak, 11.4 Çalışma Soruları, 11. $e^x$ Serisi
+
+### Community 11687 - "18. `scanf` ve Giriş Tamponu"
+Cohesion: 0.40
+Nodes (5): 18.1 Sorun: Enter Tamponda Kalıyor, 18.2 İki Çözüm, 18.3 Karakter Okurken Aynı Sorun, 18.4 `%s` ve `%[^\n]` Farkı, 18. `scanf` ve Giriş Tamponu
+
+### Community 11688 - "4. Stirling Formülü: Yaklaşık Çözümün Bedeli"
+Cohesion: 0.40
+Nodes (5): 4.1 İşlem Sayısı, 4.2 Doğrusaldan Yavaş Büyüyen Fonksiyonlar, 4.3 Bellek ve Doğruluk, 4.4 Yaklaşık Çözüm Nerede İşe Yarar: Faktöriyelin Türevi, 4. Stirling Formülü: Yaklaşık Çözümün Bedeli
+
+### Community 11689 - "2017/odev2.c"
+Cohesion: 0.83
+Nodes (3): main(), sadelestir(), topla()
+
+### Community 11690 - "1x2_blm_1022_numerical_analysis/gregorynewton.c"
+Cohesion: 0.83
+Nodes (3): fakt(), main(), payHesapla()
+
+### Community 11691 - "sortBu2.c"
+Cohesion: 0.83
+Nodes (3): enterArray(), main(), printArray()
+
+### Community 11692 - "yp_uyg1_s2.c"
+Cohesion: 0.83
+Nodes (3): main(), multiplyByTwo(), printMatrix()
+
+### Community 11693 - "structural_programming/lab_1/lab_1.c"
+Cohesion: 0.83
+Nodes (3): main(), matrisgirisi(), matriskontrolu()
 
 ### Community 11695 - "Ders 3 Çalışma Özeti"
 Cohesion: 0.33
@@ -43488,6 +43877,14 @@ Nodes (5): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoca
 ### Community 11697 - "Ders 9 Çalışma Özeti"
 Cohesion: 0.33
 Nodes (5): Ders 9 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
+
+### Community 11699 - "15PowRec.c"
+Cohesion: 0.83
+Nodes (3): main(), powRv1(), powRv2()
+
+### Community 11700 - "Proje.c"
+Cohesion: 0.83
+Nodes (3): drawBoard(), main(), readFromFile()
 
 ### Community 11701 - "3. Web Tabanlı Kart Oyunu: Kara Kutu, Jest, Cypress ve Lighthouse"
 Cohesion: 0.33
@@ -43521,37 +43918,9 @@ Nodes (5): Ders 19 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 Cohesion: 0.40
 Nodes (3): Kelime sayısı ve boşluk temizleme, BLM1011 Ödev III (2021), Metin dosyasında kelime sayma ve boşluk sadeleştirme
 
-### Community 11717 - "Tekrarlama Metodu (Fixed-Point Iteration)"
-Cohesion: 0.40
-Nodes (5): Tekrarlama Metodu (Fixed-Point Iteration), Yakınsama Şartı |g(xi)-g(xi-1)|/|xi-xi-1| <= L < 1, Misal 3.3.5: x^3 - x - 1 = 0, Misal 3.3.3: x^2 = e^x / 4 İki Kök, Misal 3.3.1: sin x + x = 1 Tekrarlama
-
-### Community 11720 - "linked_list_1.cpp"
-Cohesion: 0.40
-Nodes (3): n, next, x
-
 ### Community 11735 - "5. Anomali Tespit Servisi: Birim, Entegrasyon ve Sistem Testi"
 Cohesion: 0.40
 Nodes (5): 5.1 Modülün işlevleri, 5.2 SRS, 5.3 Test planı ve efor tahmini, 5.4 Testlerin çalıştırılması, 5. Anomali Tespit Servisi: Birim, Entegrasyon ve Sistem Testi
-
-### Community 11739 - "2016/mod.c"
-Cohesion: 0.83
-Nodes (3): main(), modAlRef(), modAlValue()
-
-### Community 11741 - "2015/Lab5-ugy3/mod.c"
-Cohesion: 0.83
-Nodes (3): main(), modAlRef(), modAlValue()
-
-### Community 11742 - "BBG2-2016/uyg5.c"
-Cohesion: 0.83
-Nodes (3): BykBul(), main(), MutlakDegerAl()
-
-### Community 11743 - "kesir.c"
-Cohesion: 0.83
-Nodes (3): main(), sadelestir(), topla()
-
-### Community 11746 - "odev2 (1).c"
-Cohesion: 0.83
-Nodes (3): main(), sadelestir(), topla()
 
 ### Community 11747 - "Uyg-2/Untitled2.cpp"
 Cohesion: 0.83
@@ -43561,17 +43930,9 @@ Nodes (3): main(), sadelestir(), topla()
 Cohesion: 0.83
 Nodes (3): main(), sadelestir(), topla()
 
-### Community 11758 - "yapısal_programlamaya_giriş/lab_4/21011022.c"
-Cohesion: 0.83
-Nodes (3): main(), veriGir(), yazdir()
-
 ### Community 11762 - "Algoritmalar/binarysearch.c"
 Cohesion: 0.83
 Nodes (3): binarySearch(), getElements(), main()
-
-### Community 11764 - "agc_3.c"
-Cohesion: 0.83
-Nodes (3): main(), numOf1(), printMatrix()
 
 ### Community 11770 - "4. Bilimsel Yazımın İlkeleri ve Kökeni"
 Cohesion: 0.50
@@ -43589,23 +43950,19 @@ Nodes (4): 10.1 Erişim, 10.2 Yazar Araması ve Atıf Raporu, 10.3 Konu Araması
 Cohesion: 0.50
 Nodes (4): 5.1 RNA dizileme, 5.2 Veri ve temel problem, 5.3 Analiz akışı, 5. Tek hücre RNA dizileme: temel kavramlar ve analiz akışı
 
-### Community 11775 - "lab 4/kod.c"
-Cohesion: 0.83
-Nodes (3): getInfo(), main(), printChart()
-
 ## Ambiguous Edges - Review These
 - `First-Class User-Level Threads` → `ERN Network (Odtü, Ege, Yıldız, Boğaziçi)`  [AMBIGUOUS]
   Lisansüstü/İleri İşletim Sistemleri/slaytlar_notlar/2023/onder_gormez markdown/07_13_04_2023.md · relation: conceptually_related_to
 - `Basel Kelziye - Ödev-1 El Yazısı Çözümü (taranmış, kısmen okunaksız)` → `HW1 2022-2023: Asymptotic/Mathematical Analysis Ödevi (19.10.2022)`  [AMBIGUOUS]
   3-1/Algoritma Analizi/ödevler/2022/ödev1/basel_cozum.pdf · relation: references
+- `Compiler (Syntax/Semantic Analiz)` → `Linux Terminal Komutları (ls, cp, mv, chmod, chown)`  [AMBIGUOUS]
+  1-1/Bilgisayar Bilimlerine Giriş/slaytlar_notlar/2020/slaytlar/63.-ALGORİTMA.pdf · relation: conceptually_related_to
 - `Constants and variable containers` → `Binary number systems`  [AMBIGUOUS]
   Mesleki Seçmeli 1/Biyoenformatiğe Giriş/slaytlar/2023/bioinfo_03-perl.pdf · relation: conceptually_related_to
 - `Böl ve Yönet (Divide and Conquer)` → `Circular Linked List - Döngüsel Silme Problemi (Josephus benzeri)`  [AMBIGUOUS]
   2-2/Veri Yapıları ve Algoritmalar/ödevler/2016/mustafa_güneş/datastructuresandalgorithms/circularlinkedlist/Description.txt · relation: semantically_similar_to
 - `Sorting problem` → `Sieve of Eratosthenes`  [AMBIGUOUS]
   1-1/Bilgisayar Bilimlerine Giriş/kitaplar/TheDesignandAnalysis.pdf · relation: conceptually_related_to
-- `Compiler (Syntax/Semantic Analiz)` → `Linux Terminal Komutları (ls, cp, mv, chmod, chown)`  [AMBIGUOUS]
-  1-1/Bilgisayar Bilimlerine Giriş/slaytlar_notlar/2020/slaytlar/63.-ALGORİTMA.pdf · relation: conceptually_related_to
 - `BIRYAZ (1 değerini 7-segmente yazma dalı)` → `STROBE (OBF sinyalini port 65h/61h üzerinden yollama)`  [AMBIGUOUS]
   3-1/Mikroişlemci Sistemleri ve Assembly Dili/alt seviye programlama/lablar_kodlar/2020/4/o╠êrnek2/code.txt · relation: calls
 - `Erkan Uslu Hoca (Lab Grubu Yürütücüsü)` → `Ödev: Lojik Anahtar ile Binary Değerin Yarısı/İki Katı 7-Segment Gösterimi`  [AMBIGUOUS]
@@ -43625,22 +43982,22 @@ Nodes (3): getInfo(), main(), printChart()
 
 ## Knowledge Gaps
 - **26948 isolated node(s):** `data`, `next`, `data`, `next`, `data` (+26943 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 104439 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **3903 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 104875 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **3905 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Özyineleme (recursion)` connect `Yapısal Programlamaya Giriş 2020-2021 Ders Kayıtları (BLM1012, Dr. Ahmet Elbir, Şube 2)` to `Dizi (array)`, `Chapter 9 Recursion`, `Problem Solving and Program Design in C (Hanly, Koffman, 7th Ed.)`, `slaytlar.pdf`, `Answers to Odd-Numbered Exercises (Rosen 7e, ch.5-11)`, `Bilgisayar Bilimlerine Giriş BLM1011 (2020-2021, Doç. Dr. M. Amaç Güvensan)`, `Recursion.pdf (BBG2 Ders 8, Amasyalı)`, `Bölüm 3: C'de yapısal program geliştirme`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
+- **Why does `Özyineleme (recursion)` connect `Yapısal Programlamaya Giriş 2020-2021 Ders Kayıtları (BLM1012, Dr. Ahmet Elbir, Şube 2)` to `Dizi (array)`, `Insertion Sort`, `Problem Solving and Program Design in C (Hanly, Koffman, 7th Ed.)`, `slaytlar.pdf`, `Ch1 Introduction to Computers, the Internet and the Web`, `Chapter 5 C Functions`, `Recursion.pdf (BBG2 Ders 8, Amasyalı)`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **What connects `data`, `next`, `data` to the rest of the system?**
   _26948 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `stdio` be split into smaller, more focused modules?**
-  _Cohesion score 0.0023476250525430852 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.002367630352384087 - nodes in this community are weakly interconnected._
 - **Why does `Sayısal Analiz Dönem Projesi (Ayşe Sude Cami)` connect `Newton-Raphson Yöntemi` to `sayisalanaliz.c`?**
-  _High betweenness centrality (0.050) - this node is a cross-community bridge._
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Should `android.database.sqlite.SQLiteDatabase` be split into smaller, more focused modules?**
-  _Cohesion score 0.024521072796934867 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.027131782945736434 - nodes in this community are weakly interconnected._
 
 ### Low-confidence Hints
 _AMBIGUOUS edges — the extractor was unsure. Verify before acting on these._
