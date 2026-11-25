@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki İş Sağlığı ve Güvenliği 1 (BLM1991 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Adem Altay
+* **Dersi Veren Akademisyen:** Öğr. Gör. Dr. Adem Altay
 
 Kayıt arşivindeki ilk ders kaydı 12 Ekim 2021 Salı gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
