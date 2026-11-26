@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Yapısal Programlama (BLM2031 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Yunus Emre Selçuk
+* **Dersi Veren Akademisyen:** Dr. Öğr. Üyesi Yunus Emre Selçuk (ders 1-7), Dr. Ahmet Elbir (ders 9-13)
 
 Kayıt arşivindeki ilk ders kaydı 18 Ekim 2021 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 

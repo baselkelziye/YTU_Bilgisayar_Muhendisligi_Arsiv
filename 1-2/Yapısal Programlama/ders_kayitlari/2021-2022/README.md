@@ -6,4 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Yunus Emre Selçuk | [sube_1/](sube_1/) |
 | 2 | Güz | Ahmet Elbir | [sube_2/](sube_2/) |
-| 3 | Güz | Yunus Emre Selçuk | [sube_3/](sube_3/) |
+| 3 | Güz | Dr. Öğr. Üyesi Yunus Emre Selçuk (ders 1-7), Dr. Ahmet Elbir (ders 9-13) | [sube_3/](sube_3/) |
