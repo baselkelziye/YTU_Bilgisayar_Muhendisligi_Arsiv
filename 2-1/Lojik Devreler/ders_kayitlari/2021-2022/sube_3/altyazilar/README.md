@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Lojik Devreler (BLM2611 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Prof. Dr. Gökhan Bilgin
+* **Dersi Veren Akademisyen:** Prof. Dr. Gökhan Bilgin (ders 1, 15-23), Doç. Dr. Hamza Osman İlhan (ders 6, 11, 25-28)
 
 Kayıt arşivindeki ilk ders kaydı 11 Ekim 2021 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
