@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Seminer (BLM2051 - 3. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Yunus Emre Selçuk
+* **Dersi Veren Akademisyen:** Dr. Öğr. Üyesi Yunus Emre Selçuk
 
 Kayıt arşivindeki ilk ders kaydı 13 Ekim 2021 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
