@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Banu Diri | [sube_1/](sube_1/) |
-| 3 | Güz | Ahmet Elbir | [sube_3/](sube_3/) |
+| 3 | Güz | Dr. Ahmet Elbir (ders 1-6), Prof. Dr. Banu Diri (ders 7-10) | [sube_3/](sube_3/) |

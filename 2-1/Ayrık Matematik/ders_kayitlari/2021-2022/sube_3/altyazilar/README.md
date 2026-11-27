@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Ayrık Matematik (BLM2521 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Ahmet Elbir
+* **Dersi Veren Akademisyen:** Dr. Ahmet Elbir (ders 1-6), Prof. Dr. Banu Diri (ders 7-10)
 
 Kayıt arşivindeki ilk ders kaydı 12 Ekim 2021 Salı gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
