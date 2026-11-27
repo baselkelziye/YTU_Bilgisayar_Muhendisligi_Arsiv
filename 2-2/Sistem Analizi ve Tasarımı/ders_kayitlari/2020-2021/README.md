@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Bahar | Prof. Dr. Oya Kalıpsız | [sube_1/](sube_1/) |
-| 2 | Bahar | Göksel Biricik | [sube_2/](sube_2/) |
+| 2 | Bahar | Dr. Öğr. Üyesi Göksel Biricik | [sube_2/](sube_2/) |
