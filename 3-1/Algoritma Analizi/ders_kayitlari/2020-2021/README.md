@@ -5,5 +5,5 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Prof. Dr. M. Elif Karslıgil | [sube_1/](sube_1/) |
-| 1 | Bahar | Ahmet Elbir | [sube_1_bahar/](sube_1_bahar/) |
+| 1 | Bahar | Öğr. Gör. Dr. Ahmet Elbir | [sube_1_bahar/](sube_1_bahar/) |
 | 2 | Güz | Doç. Dr. M. Amaç Güvensan | [sube_2/](sube_2/) |
