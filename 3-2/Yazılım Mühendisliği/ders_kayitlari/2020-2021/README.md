@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | Oya Kalıpsız | [sube_1/](sube_1/) |
+| 1 | Bahar | Prof. Dr. Oya Kalıpsız | [sube_1/](sube_1/) |
 | 2 | Bahar | Yunus Emre Selçuk | [sube_2/](sube_2/) |
