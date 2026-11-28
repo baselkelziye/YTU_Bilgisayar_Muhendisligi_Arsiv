@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | Ziya Cihan Taysi | [sube_1/](sube_1/) |
+| 1 | Güz | Dr. Ziya Cihan Tayşi | [sube_1/](sube_1/) |
 | 3 | Güz | Dr. Ziya Cihan Tayşi (vize öncesi), Dr. Furkan Çakmak (vize sonrası) | [sube_3/](sube_3/) |
