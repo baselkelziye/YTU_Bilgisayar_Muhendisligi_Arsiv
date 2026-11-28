@@ -5,4 +5,4 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 2 | Güz | Serkan Ayvaz | [sube_2/](sube_2/) |
-| 3 | Güz | Mustafa Utku Kalay | [sube_3/](sube_3/) |
+| 3 | Güz | Serkan Ayvaz (ders 2-4), Mustafa Utku Kalay (ders 6-11) | [sube_3/](sube_3/) |

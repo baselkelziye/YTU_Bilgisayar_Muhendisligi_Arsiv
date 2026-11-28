@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Veritabanı Yönetimi (BLM3041 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Mustafa Utku Kalay
+* **Dersi Veren Akademisyen:** Serkan Ayvaz (ders 2-4), Mustafa Utku Kalay (ders 6-11)
 
 Kayıt arşivindeki ilk ders kaydı 4 Kasım 2021 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
